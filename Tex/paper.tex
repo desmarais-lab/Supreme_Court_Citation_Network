@@ -1,0 +1,163 @@
+\documentclass[headsepline=true, abstracton]{scrartcl}
+%\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{verbatim}
+\usepackage[a4paper,text={140mm,215mm},centering,headsep=10mm,footskip=10mm]{geometry}
+\usepackage[urlcolor=black,colorlinks=true,linkcolor=black,citecolor=black,bookmarks]{hyperref}
+\usepackage{aliascnt}
+\usepackage{lmodern}
+\usepackage{mdwlist}
+\usepackage{listings}
+\usepackage[activate]{pdfcprot}
+\usepackage{graphicx}
+\usepackage{slashed}
+\usepackage{mathrsfs}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{oldgerm}
+\usepackage{setspace}
+\usepackage{dsfont}
+%\usepackage{mathtools}
+\usepackage[all]{xy}
+\usepackage{cite}
+\usepackage{url}
+\pagestyle{headings}
+\newcommand{\myclearpage}{\clearpage}
+\newcommand\independent{\protect\mathpalette{\protect\independenT}{\perp}}
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+\newenvironment{gelaber}{}{}
+\newenvironment{preamble}{}{}
+\newcommand{\tostar}{\overset{*}{\lower0.5em\hbox{$\smash{\scriptscriptstyle\rightharpoonup}$}}}
+\newtheorem{mydef}{Definition}
+\newtheorem{bem}{Bemerkung}
+\usepackage{tikz}
+\newcommand\circlearound[1]{%
+  \tikz[baseline]\node[draw,shape=circle,anchor=base] {#1} ;}
+  
+\begin{document}
+
+\setcounter{section}{-1}
+
+\renewcommand{\refname}{Bibliography}
+
+
+\onehalfspacing
+\setlength{\headsep}{15mm}
+
+
+\thispagestyle{plain}
+
+\title{\Large Analyzing the Supreme Court Citation Network}
+\maketitle
+
+\begin{abstract}
+\noindent 
+\end{abstract}
+
+
+ \section*{Introduction}
+ 
+ Coming...
+ 
+ \section*{The Exponential Random Configuration Model}
+Let $c(t)\in \{0,1\}^N$ be a vector indicating which Supreme Court case has been cited at time $t$, where $c_i(t)=1, i \in \{1, \dots , N\}$ indicates that the $i$th case has been cited at time $t$ and $c_i(t)=0$ indicates that the $i$th case has not been cited at time $t$. Furthermore, let
+$$\mathcal{C}_t(N)=\{c(t)\in \{0,1\}^N: c_i(t)\in \{0,1\} \}$$ 
+be the set of all possible citation combinations at time $t$. Note that the cardinality of $\mathcal{C}_t(N)$ increases exponentially for every newly added case, which results in $2^N$ elements.\\
+The probability function of the ERCM is defined as
+\begin{equation}
+P_{\theta}(c(t)~|~c(t-))=\cfrac{\exp\big(\theta^T\cdot h\big(c(t)~|~c(t-)\big)\big)}{\sum_{c(t)^*\in \mathcal{C}}\exp\big(\theta^T\cdot h\big(c(t)~|~c(t-)\big)\big)}
+\label{ercm}
+\end{equation}
+where $c_{t-}\in \{0,1\}^{N \times (t-1)}$ is a matrix that indicates which cases have been citing in each other before time $t$, $\theta \in \mathbb{R}^q$ is a q-dimensional vector of parameters,  $h: \mathcal{C}_t(N) \to \mathbb{R}^q ~, ~ \c(t) \to (h_1(c(t)), \dots , h_q(c(t)))^T$ is a q-dimensional vector of different statistics and $\kappa(\theta) := \sum_{c(t)^*\in \mathcal{C}}\exp(\theta^T\cdot h(c(t)|c(t-)))$ is a normalization constant that ensures that (\ref{ercm}) defines a probability function on $\mathcal{C}_t$.\\[0.3cm]
+
+% Network Statistics
+The generative process of a model are informed by
+the decision regarding which network statistics $h(\cdot)$ are incorporated. We include the following statistics for the Supreme Court citation network:
+$$h_{edges}:\mathcal{C}(N)\to \mathbb{R}~~~, ~~~c(t) \to \sum_{i=1}^Nc_i(t)$$
+the number of citations made at time $t$. 
+$$h_{outstar}:\mathcal{C}(N)\to \mathbb{R}~~~, ~~~c(t) \to \sum_{j<i}^Nc_i(t)\cdot c_j(t) \cdot \sqrt{\dfrac{(t-a)(t-a-b)}{t^2}}$$
+the number of weighted outstars occuring at time $t$. We argue that it should me more likely to cite more recent cases than cases that have been decided further in the past. For the weight 
+$$w(a,b):= \sqrt{\dfrac{(t-a)(t-a-b)}{t^2}}$$
+we define $a$ and $b$ as the elapsed time since case $i$ and $j$ have been introduced to the network.
+$$h_{triangle}:\mathcal{C}(N)\to \mathbb{R}~~~, ~~~c(t) \to \sum_{j<i}^Nc_i(t)\cdot c_j(t) \cdot
+c_j(t_{-i}) \cdot w(a,b)$$
+where $c_j(t_{-i})$ indicates whether case $j$ was cited at the time case $i$ was introduced into the network. Just as for the outstar statistic, we include a weighting factor to favor more recent cases. \\[0.3cm]
+
+
+%Change Statistic
+The individual entries $c_i(t)$ can be taken as a manifestation of single Bernoulli variables $C_i(t)$. This interpretation allows the following calculation regarding the conditional distribution of $C_i(t)$:
+%
+\begin{eqnarray*}
+\dfrac{P_{\theta}(C_i(t)=1 ~|~ C_i(t)^c=c_i(t)^c)}{P_{\theta}(C_i(t)=0 ~|~ C_i(t)^c=c_i(t)^c)} &=&
+\dfrac{P_{\theta}(C_i(t)=1 ~,~ C_i(t)^c=c_i(t)^c)}{P_{\theta}(C_i(t)=0 ~,~ C_i(t)^c=c_i(t)^c)} \\
+                           &=&\dfrac{P_{\theta}(C(t)= c_i^+(t))}{P_{\theta}(C(t)=c_i^-(t))}\\
+                           &=&\dfrac{\exp(\theta^T \cdot h(c_i^+(t)~|~c(t-)))}{\exp(\theta^T \cdot h(c_i^-(t)~|~c(t-)))}\\
+                           &=& \exp(\theta^T \cdot (h(c_i^+(t)~|~c(t-)) - h(c_i^-(t)~|~c(t-)))
+\end{eqnarray*}
+%
+This implies the following equation:
+%
+\begin{equation}
+\text{logit}(P_{\theta}(C_i(t)=1 ~|~ C_i(t)^c=c_i(t)^c))= \theta^T \cdot (h(c_i^+(t)~~|c(t-)) - h(c_i^-(t)~|~c(t-)))
+\label{Logit}
+\end{equation}
+In the equation above the following notations were used:
+%
+\begin{itemize}
+\item $c_i^+(t)$ emerges from $c(t)$, while assuming $c_i(t)=1$
+\item $c_i^-(t)$ emerges from $c(t)$, while assuming $c_i(t)=0$
+\item The condition $C_i(t)^c=c_i(t)^c$ is short for: $C_j(t)=c_j(t)$ for all $j\in \{1,\dots,N\}$ with $i \neq j$
+\item The expression $(\Delta c_i)(t):=h(c_i^+(t)~|~c(t-)) - h(c_i^-(t))$ is called the \textit{change statistic}. The $k$th component of $(\Delta c_i)(t)$ captures the difference between citation networks $c_i^+(t)$ and $c_i^-(t)$ on the $k$th integrated statistic in the model
+\end{itemize}
+
+
+\section*{Estimation}
+
+% Pseudo Likelihood
+\subsection*{Maximum Pseudo-Likelihood Estimator}
+One can assume that the dyads are independent of each other, which means that
+the random variables $C_i(t)$ inside the random vector $C(t)$ are independent of each other.
+In this case, the equation (\ref{Logit}) reduces to
+$$logit(P_{\theta}(C_i(t) = 1)) = \theta^T \cdot (\Delta c_i)(t)$$
+This corresponds with the logistic regression approach, where the observations of
+the dependent variables are simply edge values of the observed citation vector,
+and the observations of the covariate values are given as the scores of every single
+change statistic. Therefore, the resulting likelihood function is of the following form:
+\begin{equation}
+\text{lik}(\theta)= P_{\theta}(C(t)=c(t))= \prod_{i} \dfrac{ \exp \left(\theta^T \Delta(c_i)(t) \right)}{1+\exp \left(\theta^T \Delta(c_i)(t) \right)}
+\label{PseudoLik}
+\end{equation}
+
+\subsection*{Maximum Likelihood Estimator}
+The more rigorous technique is to estimate the parameters directly with the log-likelihood function derived from (\ref{ercm}), which has the following form:
+%
+\begin{equation}
+\text{loglik}(\theta)=\theta^T \cdot h(c(t)| c(t-))-\log(\kappa(\theta))
+\label{loglik}
+\end{equation}
+%
+The problem resulting from estimating the parameters with (\ref{loglik}) is that the term
+%
+$$\kappa(\theta):= \sum_{c(t)^* \in \mathcal{C}(N)} \exp(\theta^T \cdot h(c(t)^*|c(t-)))$$ 
+%
+which sums up the weighted statistics of all possible binar vectors of length $N$, has to be evaluated. 
+
+\subsection*{MCMC}
+
+ \section*{Results/Discussion}
+
+
+   
+\newpage
+
+
+\bibliography{bib} 
+\bibliographystyle{plain}
+
+
+\end{document}
