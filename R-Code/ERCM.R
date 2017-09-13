@@ -36,10 +36,10 @@ for(i in 1:209946){
 
 ## down-weighted triangle statistic 1787
 
-triangles<- function(c_t){
+triangles<- function(c_t, time_t){
   # get right colum of time t
-  col.is.a.match <- apply(citation.matrix, 2, identical, c_t)
-  time_t<- which(col.is.a.match)
+  #col.is.a.match <- apply(citation.matrix, 2, identical, c_t)
+  #time_t<- which(col.is.a.match)
   
   # which rows have an entry 1
   citation.row<- which(c_t == 1)
@@ -73,9 +73,9 @@ edges<- function(c_t){
 }
 
 # down-weighted outstar statistic
-outstar<- function(c_t){
-  col.is.a.match <- apply(citation.matrix, 2, identical, c_t)
-  time_t<- which(col.is.a.match)
+outstar<- function(c_t, time_t){
+  #col.is.a.match <- apply(citation.matrix, 2, identical, c_t)
+  #time_t<- which(col.is.a.match)
   
   # which rows have an entry 1
   citation.row<- which(c_t == 1)
@@ -93,10 +93,64 @@ outstar<- function(c_t){
       year.c_t_a <- scc1[citation.row[j],4]
       year.c_t_a_b <- scc1[citation.row[i],4]
       
-      ost.count <- ost.count + sqrt(((year.c_t-year.c_t_a+1)*(year.c_t-year.c_t_a_b+1)/year.c_t^2))
+      ost.count <- ost.count + ((year.c_t-year.c_t_a+1)*sqrt((year.c_t-year.c_t_a_b+1)/year.c_t^2))
       
       }
   }
   return(ost.count)
 }
 
+############### Estimation
+
+# Pseudolikelihood
+
+# estimate coefficients for time t=1431 | condition on years before 1869
+
+# get vector c1431
+time.t<- 5000
+
+cit.mat.row<- which(scc1[,71]==time.t) # could be multiple rows
+#c1431<- citation.matrix[1:max(cit.mat.row), 1431] 
+ct<- citation.matrix[,time.t]
+
+# create matrix to store results, such that we can fit a logistic regression model; edges is intercept -> no column for edges
+
+change.mat<- matrix(0, max(cit.mat.row), 3)
+colnames(change.mat)<- c("citation", "outstar", "triangle")
+
+# fill in right values
+
+change.mat[,1]<- ct[1:max(cit.mat.row)]
+
+# calculate change statistics
+for(i in 1:max(cit.mat.row)){
+  if(i %% 250 == 0) cat("Starting iteration", i, "\n")
+  #print(i)
+  c_t.plus<- ct
+  c_t.minus<- ct
+  c_t.plus[i]<-1
+  c_t.minus[i]<-0
+  
+  triangles.plus<- triangles(c_t.plus, time.t)
+  triangles.minus<- triangles(c_t.minus, time.t)
+  change.mat[i,3]<- triangles.plus-triangles.minus
+  
+  outstar.plus<- outstar(c_t.plus, time.t)
+  outstar.minus<- outstar(c_t.minus, time.t)
+  change.mat[i,2]<- outstar.plus-outstar.minus
+  
+}
+
+# exclude the last entry (can't cite yourself) if only one case enters network at time t
+if(length(cit.mat.row)==1){
+change.mat<- change.mat[-cit.mat.row,]
+}
+
+
+#save as data.frame
+change.dat<- as.data.frame(change.mat)
+
+# fit logistic regression
+
+model5000<- glm(citation~outstar+triangle, data=change.dat, family="binomial")
+summary(model5000)
