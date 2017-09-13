@@ -73,7 +73,7 @@ The probability function of the ERCM is defined as
 P_{\theta}(c(t)~|~c(t-))=\cfrac{\exp\big(\theta^T\cdot h\big(c(t)~|~c(t-)\big)\big)}{\sum_{c(t)^*\in \mathcal{C}}\exp\big(\theta^T\cdot h\big(c(t)~|~c(t-)\big)\big)}
 \label{ercm}
 \end{equation}
-where $c_{t-}\in \{0,1\}^{N \times (t-1)}$ is a matrix that indicates which cases have been citing in each other before time $t$, $\theta \in \mathbb{R}^q$ is a q-dimensional vector of parameters,  $h: \mathcal{C}_t(N) \to \mathbb{R}^q ~, ~ \c(t) \to (h_1(c(t)), \dots , h_q(c(t)))^T$ is a q-dimensional vector of different statistics and $\kappa(\theta) := \sum_{c(t)^*\in \mathcal{C}}\exp(\theta^T\cdot h(c(t)|c(t-)))$ is a normalization constant that ensures that (\ref{ercm}) defines a probability function on $\mathcal{C}_t$.\\[0.3cm]
+where $c(t-)\in \{0,1\}^{N \times (t-1)}$ is a matrix that indicates which cases have been citing in each other before time $t$, $\theta \in \mathbb{R}^q$ is a q-dimensional vector of parameters,  $h: \mathcal{C}_t(N) \to \mathbb{R}^q ~, ~ \c(t) \to (h_1(c(t)), \dots , h_q(c(t)))^T$ is a q-dimensional vector of different statistics and $\kappa(\theta) := \sum_{c(t)^*\in \mathcal{C}}\exp(\theta^T\cdot h(c(t)|c(t-)))$ is a normalization constant that ensures that (\ref{ercm}) defines a probability function on $\mathcal{C}_t$.\\[0.3cm]
 
 % Network Statistics
 The generative process of a model are informed by
@@ -81,7 +81,7 @@ the decision regarding which network statistics $h(\cdot)$ are incorporated. We 
 $$h_{edges}:\mathcal{C}(N)\to \mathbb{R}~~~, ~~~c(t) \to \sum_{i=1}^Nc_i(t)$$
 the number of citations made at time $t$. 
 $$h_{outstar}:\mathcal{C}(N)\to \mathbb{R}~~~, ~~~c(t) \to \sum_{j<i}^Nc_i(t)\cdot c_j(t) \cdot \sqrt{\dfrac{(t-a)(t-a-b)}{t^2}}$$
-the number of weighted outstars occuring at time $t$. We argue that it should me more likely to cite more recent cases than cases that have been decided further in the past. For the weight 
+the number of weighted outstars occuring at time $t$. We argue that it should be more likely to cite more recent cases than cases that have been decided further in the past. For the weight 
 $$w(a,b):= \sqrt{\dfrac{(t-a)(t-a-b)}{t^2}}$$
 we define $a$ and $b$ as the elapsed time since case $i$ and $j$ have been introduced to the network.
 $$h_{triangle}:\mathcal{C}(N)\to \mathbb{R}~~~, ~~~c(t) \to \sum_{j<i}^Nc_i(t)\cdot c_j(t) \cdot
@@ -145,9 +145,50 @@ The problem resulting from estimating the parameters with (\ref{loglik}) is that
 %
 $$\kappa(\theta):= \sum_{c(t)^* \in \mathcal{C}(N)} \exp(\theta^T \cdot h(c(t)^*|c(t-)))$$ 
 %
-which sums up the weighted statistics of all possible binar vectors of length $N$, has to be evaluated. 
+which sums up the weighted statistics of all possible binar vectors of length $N$, has to be evaluated. However, the cardinality of $\mathcal{C}(N)$ (\#$(\mathcal{C})=2^N$) is incredibly large and a direkt calculation of this sum is for already small $N$ not feasible. \\[0.3cm]
+An solution for this limitation is based on the following consideration: Fix a vector of parameters $\theta_0 \in \Theta$ from the underlying parameter range $\Theta$ and compute for $\theta \in \Theta$ the expected value
+%
+\begin{eqnarray*}
+\mathbb{E}_{\theta_0}\left[ \exp\left((\theta - \theta_0)^T \cdot \Gamma(C(t))\right) \right]&=& 
+\sum_{c(t) \in \mathcal{C}(N)}\exp\left((\theta - \theta_0)^T \cdot \Gamma(c(t))\right)\cdot \mathbb{P}_{\theta_0}(C(t)=c(t))\\
+&=& \sum_{c(t) \in \mathcal{C}(N)}\exp\left((\theta - \theta_0)^T \cdot \Gamma(c(t))\right)\cdot 
+\frac{\exp(\theta_0^T \cdot \Gamma(c(t)))}{\kappa(\theta_0)}\\
+&=& \frac{1}{\kappa(\theta_0)} \sum_{c(t) \in \mathcal{C}(N)}\exp\left(\theta^T \cdot \Gamma(c(t))\right)\\
+&=&\frac{\kappa(\theta)}{\kappa(\theta_0)}
+\end{eqnarray*}
+%
+This equation offers the following possibility: If one draws $L$ random vectors $c^{(1)}(t), \dots ,c^{(L)}(t)$ out of a distribution $\mathbb{P}_{\theta_0}$ appropriately, one gets with the law of big numbers and a big enough sample $L$ the following relation:
+%
+\begin{equation}
+\frac{1}{L}\cdot \sum_{i=1}^{L}  \exp\left((\theta - \theta_0)^T \cdot \Gamma(c^{(i)}(t))\right)
+~~\approx~~ \mathbb{E}_{\theta_0}\left[ \exp\left((\theta - \theta_0)^T \cdot \Gamma(C(t))\right) \right] = \frac{\kappa(\theta)}{\kappa(\theta_0)}
+\label{konver}
+\end{equation}
+%
+This approximate can then be used to approximate the log likelihood function.\\[0.4cm]
+Next, we will discuss how a sufficient number of suitable drawings $c^{(1)}(t), \dots ,c^{(L)}(t)$ can be sampled from the distribution $\mathbb{P}_{\theta_0}$. \\
+For this purpose, the Markov Chain Monte Carlo (MCMC) methods can be used.
+\subsection*{Metropolis Hastings for the ERCM}\label{networksimulation}
+To be able to compute the approximate likelihood function one needs a sufficiently large number of random vectors from the distribution $\mathbb{P}_{\theta_0}$. Snijders \cite{Snijders.2002b} introduces an approach to sample random networks for the ERGM framework by using \textit{MCMC methods}. We adapt this approach for sampling appropriate binary vectors for the ERCM. \\[0.4cm]
+\textit{Metropolis-Hastings Algorithm}\\\\
+Choose any vector $c^{(0)}(t) \in \mathcal{C}(N)$ to start with (e.g., the observed vector). For $k \in \{0,...,L-1\}$ recursively proceed as follows:\\
+\begin{enumerate}
+\item Randomly choose a number $i\in \{1,\dots, N\}$
+\item Compute, using the equation (\ref{Logit}) the value
+$$\pi := \dfrac{\mathbb{P}_{\theta}(C_{i}(t) \neq c_{i}^{(k)}(t) ~| ~C_i(t)^c=c_i(t)^c)}{\mathbb{P}_{\theta}(C_{i}(t) = c_{i}^{(k)}(t) ~| ~C_i(t)^c=c_i(t)^c)}$$
+\item Define $\delta:= \min\{1, \pi\}$ and draw a random number $Z$ from Bin$(1, \delta)$. If
+\begin{itemize}
+\item $Z=0$, let $c^{(k+1)}(t) := c^{(k)}(t)$ 
+\item $Z=1$, define $c^{(k+1)}(t)$ as
+$$c_{p}^{(k+1)}(t)=\begin{cases}
+1-c_{p}^{(k)}(t)& \text{if}~ p=i \\
+c_{p}^{(k)}(t) &\text{if}~ p \neq i 
+\end{cases}$$
+\end{itemize}
+\item Start at step 1 with $c^{(k+1)}(t)$.
+\end{enumerate}
+The first $B \ll L$ vectors are discarded as Burn-In.
 
-\subsection*{MCMC}
 
  \section*{Results/Discussion}
 
