@@ -112,7 +112,7 @@ In the equation above the following notations were used:
 \item $c_i^+(t)$ emerges from $c(t)$, while assuming $c_i(t)=1$
 \item $c_i^-(t)$ emerges from $c(t)$, while assuming $c_i(t)=0$
 \item The condition $C_i(t)^c=c_i(t)^c$ is short for: $C_j(t)=c_j(t)$ for all $j\in \{1,\dots,N\}$ with $i \neq j$
-\item The expression $(\Delta c_i)(t):=h(c_i^+(t)~|~c(t-)) - h(c_i^-(t))$ is called the \textit{change statistic}. The $k$th component of $(\Delta c_i)(t)$ captures the difference between citation networks $c_i^+(t)$ and $c_i^-(t)$ on the $k$th integrated statistic in the model
+\item The expression $(\Delta c_i)(t):=h(c_i^+(t)~|~c(t-)) - h(c_i^-(t)~|~c(t-))$ is called the \textit{change statistic}. The $k$th component of $(\Delta c_i)(t)$ captures the difference between citation networks $c_i^+(t)$ and $c_i^-(t)$ on the $k$th integrated statistic in the model
 \end{itemize}
 
 
@@ -168,9 +168,31 @@ This equation offers the following possibility: If one draws $L$ random vectors 
 This approximate can then be used to approximate the log likelihood function.\\[0.4cm]
 Next, we will discuss how a sufficient number of suitable drawings $c^{(1)}(t), \dots ,c^{(L)}(t)$ can be sampled from the distribution $\mathbb{P}_{\theta_0}$. \\
 For this purpose, the Markov Chain Monte Carlo (MCMC) methods can be used.
-\subsection*{Metropolis Hastings for the ERCM}\label{networksimulation}
+\subsection*{Gibbs sampling for the ERCM}
 To be able to compute the approximate likelihood function one needs a sufficiently large number of random vectors from the distribution $\mathbb{P}_{\theta_0}$. Snijders \cite{Snijders.2002b} introduces an approach to sample random networks for the ERGM framework by using \textit{MCMC methods}. We adapt this approach for sampling appropriate binary vectors for the ERCM. \\[0.4cm]
-\textit{Metropolis-Hastings Algorithm}\\\\
+\textit{Gibbs sampling}\\\\
+Choose any vector $c^{(0)}(t) \in \mathcal{C}(N)$ (e.g. observed vector). Afterwards, the length $L$ of the respective sub-sequence is determined. For $k \in \{0,...,L-1\}$ execute the following steps recursively (here the vector in its $k$th iteration is denoted as $c^{(k)}(t)$):\\
+\begin{enumerate}
+\item Randomly choose a number $i \in \{1,\dots, N\}$
+\item Compute using the likelihood the value 
+$$\pi:= \mathbb{P}_{\theta}(C_{i}(t)=1 | C_{i}^c(t)=(c_{i}^{(k)}(t))^c)=\cfrac{\exp(\theta^T\cdot \Delta(c_i)(t))}{1+\exp(\theta^T\cdot \Delta(c_i)(t))}$$
+\item Draw a random number $Z$ from Bin$(1, \pi)$. If
+\begin{itemize}
+\item $Z=0$, define $c^{(k+1)}(t)$ via
+$$c_{p}^{(k+1)}(t)=\begin{cases}
+0& \text{if}~ p=i \\
+c_{p}^{(k)}(t) &\text{if}~ p \neq i 
+\end{cases}$$
+\item $Z=1$, define $c^{(k+1)}(t)$ via
+$$c_p^{(k+1)}(t)=\begin{cases}
+1& \text{if}~ p=i \\
+c_p^{(k)}(t) &\text{if}~ p \neq i 
+\end{cases}$$
+\end{itemize}
+\item Start at step 1 with $c^{(k+1)}(t)$.
+\end{enumerate}
+\noindent The depicted algorithm provides a sequence of random vectors $c^{(0)}(t),...,c^{(L)}(t)$. Since the orignial vector was chosen randomly and the first simulated vectors are very dependent on the chosen mvector (only one entry is changed per iteration!), usually the first $B$ networks, where $N \ll B \ll L$, are discarded as the so called \textit{Burn-In}.
+\subsection*{Metropolis Hastings for the ERCM}\label{networksimulation}
 Choose any vector $c^{(0)}(t) \in \mathcal{C}(N)$ to start with (e.g., the observed vector). For $k \in \{0,...,L-1\}$ recursively proceed as follows:\\
 \begin{enumerate}
 \item Randomly choose a number $i\in \{1,\dots, N\}$
