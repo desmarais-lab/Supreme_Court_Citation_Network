@@ -2,6 +2,7 @@
 
 scc1<- scc
 
+
 # create empty adjacency matrix
 memory.limit(30000)
 adjacency.matrix<- matrix(0, 26803, 26803)
@@ -25,16 +26,16 @@ adjacency.matrix<- adjacency.matrix[17987:26803, 17987:26803]
 
 # write function that cuts out the necessary adjacency matrix for a time t
 
-AM.t<- function(time.t){ # first id with MQ scores is 3136, last 5251
+#AM.t<- function(time.t){ # first id with MQ scores is 3136, last 5251
   # what is the id of the case/cases that entered the network at time t
-  latest.case<- max(which(time.t==scc1[, 71]))
-  AM<- adjacency.matrix[1:(latest.case-17986), 1:(latest.case-17986)]
-  return(AM)
-}
+#  latest.case<- max(which(time.t==scc1[, 71]))
+#  AM<- adjacency.matrix[1:(latest.case-17986), 1:(latest.case-17986)]
+#  return(AM)
+#}
 
 
 #### statistics
-time.t<- 5251
+time.t<- 3500
 latest.case<- max(which(time.t==scc1[, 71]))
 year.latest.case <- scc1[latest.case, 4]
 
@@ -48,8 +49,30 @@ lines(age,decayFun(age,0.05),col="blue",lwd=2)
 lines(age,decayFun(age,0.025),col="grey60",lwd=2)
 legend("topright",legend=c("1","0.25","0.10","0.05","0.025"),lwd=2,col=c("black","red","green","blue","grey60"),title="Beta")
 
+#######################################
+# adjust Am.t such that it can also cut mq.matrix into the right shape
 
-A<- AM.t(time.t)
+# mod=1 adjacency matrix, mod=2, Marting Quinn score matrix, mod=3 Issue are, mod=4, Year difference matrix
+AM.t<- function(time.t, mod){ # first id with MQ scores is 3136, last 5251
+  # what is the id of the case/cases that entered the network at time t
+  latest.case<- max(which(time.t==scc1[, 71]))
+  AM<- adjacency.matrix[1:(latest.case-17986), 1:(latest.case-17986)]
+  MQ<- mq.matrix[1:(latest.case-17986), 1:(latest.case-17986)]
+  IA <- same.issue.area[1:(latest.case-17986), 1:(latest.case-17986)]
+  YD <- year.diff.matrix[1:(latest.case-17986), 1:(latest.case-17986)]
+  if(mod==1){
+    return(AM)}
+  if(mod==2){
+    return(MQ)}
+  if(mod==3){
+    return(IA)}
+  if(mod==4){
+    return(YD)}
+}
+
+
+
+A<- AM.t(time.t, 1)
 ##################################
 ### triangles
 
@@ -59,7 +82,7 @@ count.citation.triangles <- function(A,age,beta){
   # weight edge by the age of the sender
   ageMat <- matrix(decayFun(age,beta),nrow(A),nrow(A),byrow=T)
   A <- t(A)*ageMat
-  B <- t(A)%*%A
+  B <- t(A)%*%A # this step takes a long time for large matrices
   sum(A*B) 
 }
 
@@ -91,27 +114,6 @@ count.citation.outstars(A, year.latest.case-scc1[17987:latest.case, 4], 0.025)
 # number of edges statistic
 edges<- function(A){
   sum(A)
-}
-
-#######################################
-# adjust Am.t such that it can also cut mq.matrix into the right shape
-
-# mod=1 adjacency matrix, mod=2, Marting Quinn score matrix, mod=3 Issue are, mod=4, Year difference matrix
-AM.t<- function(time.t, mod){ # first id with MQ scores is 3136, last 5251
-  # what is the id of the case/cases that entered the network at time t
-  latest.case<- max(which(time.t==scc1[, 71]))
-  AM<- adjacency.matrix[1:(latest.case-17986), 1:(latest.case-17986)]
-  MQ<- mq.matrix[1:(latest.case-17986), 1:(latest.case-17986)]
-  IA <- same.issue.area[1:(latest.case-17986), 1:(latest.case-17986)]
-  YD <- year.diff.matrix[1:(latest.case-17986), 1:(latest.case-17986)]
-  if(mod==1){
-    return(AM)}
-  if(mod==2){
-    return(MQ)}
-  if(mod==3){
-    return(IA)}
-  if(mod==4){
-    return(YD)}
 }
 
 
@@ -179,34 +181,42 @@ year.stat(AM.t(3300,1), AM.t(3300,4))
 
 ############### Pseudolikelihood
 
-# estimate coefficients for time t=1431 | condition on years before 1869
 
-# get vector c1431
-time.t<- 1000
+
+# set time point, range [3136, 5251]
+time.t<- 3239
 number.cases.at.t<- length(which(time.t==scc1[, 71]))
 latest.case<- max(which(time.t==scc1[, 71]))
 year.latest.case <- scc1[latest.case, 4]
 
 # get adjacency matrix for this given year
-A <- AM.t(time.t)
+A <- AM.t(time.t, 1)
+# issue Area Matrix
+IA<- AM.t(time.t, 3)
+# MQ score matrix
+MQ<- AM.t(time.t, 2)
+# year diff matrix
+YD<- AM.t(time.t, 4)
+
+# fill in right values into change.mat. change.mat will play the role of a dataframe for glm
+d<- dim(A)[1]
 
 # create matrix to store results, such that we can fit a logistic regression model; edges is intercept -> no column for edges
 
-change.mat<- matrix(0, number.cases.at.t*latest.case, 3) # 3 statistics (edges, outstars, triangles)
-colnames(change.mat)<- c("citation", "outstar", "triangle")
+change.mat<- matrix(0, number.cases.at.t*d, 6) # 3 statistics (edges, outstars, triangles)
+colnames(change.mat)<- c("citation", "outstar", "triangle", "issuearea", "MQscore", "yeardiff")
 
-# fill in right values
-d<- dim(A)[1]
 
-change.mat[,1]<- c(A[,(d-number.cases.at.t+1):d])
+change.mat[,1]<- c(A[(d-number.cases.at.t+1):d,]) # enters particular vaues of matrix row wise
 
-age<- year.latest.case-scc1[1:latest.case, 4]
+age<- year.latest.case-scc1[17987:latest.case, 4]
 # change statistic matrix
 for(j in (d-number.cases.at.t+1):d){
+  print(j)
   # calculate change statistics
-  for(i in 1:latest.case){
+  for(i in 1:d){
     #print(i)
-    if(i %% 250 == 0) cat("Starting iteration", i, "\n")
+    #if(i %% 250 == 0) cat("Starting iteration", i, "\n")
     #print(i)
     A.plus<- A
     A.minus<- A
@@ -215,14 +225,26 @@ for(j in (d-number.cases.at.t+1):d){
     
     triangles.plus<- count.citation.triangles(A.plus,age=age,0.025)
     triangles.minus<- count.citation.triangles(A.minus,age=age,0.025)
-    change.mat[(j-1)*latest.case+i,3]<- triangles.plus-triangles.minus
+    change.mat[(j-(d-number.cases.at.t+1))*d+i,3]<- triangles.plus-triangles.minus # add value into right row in change.mat
     
-    outstar.plus<- count.citation.outstars(A.minus,age=age,0.025)
+    outstar.plus<- count.citation.outstars(A.plus,age=age,0.025)
     outstar.minus<- count.citation.outstars(A.minus,age=age,0.025)
-    change.mat[(j-1)*latest.case+i,2]<- outstar.plus-outstar.minus
+    change.mat[(j-(d-number.cases.at.t+1))*d+i,2]<- outstar.plus-outstar.minus # add value into right row in change.mat
+    
+    issue.plus <- issue.area.stat(A.plus, IA )
+    issue.minus <- issue.area.stat(A.minus, IA )
+    change.mat[(j-(d-number.cases.at.t+1))*d+i,4]<- issue.plus-issue.minus
+    
+    mq.plus<- mq.stat(A.plus, MQ)
+    mq.minus<- mq.stat(A.minus, MQ)
+    change.mat[(j-(d-number.cases.at.t+1))*d+i,5]<- mq.plus-mq.minus
+    
+    year.diff.plus<- year.stat(A.plus, YD)
+    year.diff.minus<- year.stat(A.minus, YD)
+    change.mat[(j-(d-number.cases.at.t+1))*d+i,6]<- year.diff.plus-year.diff.minus
     
     # loops are not considered
-    if(i==j){change.mat[(j-1)*latest.case+i,2:3]<- 0}
+    if(i==j){change.mat[(j-(d-number.cases.at.t+1))*d+i,2:6]<- 0}
     
   }
 }
@@ -232,62 +254,71 @@ change.dat<- as.data.frame(change.mat)
 
 # fit logistic regression
 
-modelMPLE<- glm(citation~outstar+triangle, data=change.dat, family="binomial")
+modelMPLE<- glm(citation~outstar+triangle+issuearea+MQscore+yeardiff, data=change.dat, family="binomial")
 summary(modelMPLE)
 
-
+################################################
 ################################################
 ## MCMLE
+################################################
+################################################
 
-
-
-time.t<- 200
+# set time point, range [3136, 5251]
+time.t<- 3180
 number.cases.at.t<- length(which(time.t==scc1[, 71]))
 latest.case<- max(which(time.t==scc1[, 71]))
 year.latest.case <- scc1[latest.case, 4]
 
 # get adjacency matrix for this given year
-A <- AM.t(time.t)
-A.obs <- A
-A.core<-A[,-((d-number.cases.at.t+1):d)]
-
+A <- AM.t(time.t, 1)
 # dimension of A 
 d<- dim(A)[1]
 
+# indicate that A is the observed matrix
+A.obs <- A
+# matrix is everything but the rows that belong to the cases that entered the network at time.t
+A.core<-A[-((d-number.cases.at.t+1):d),]
+
+# issue Area Matrix
+IA<- AM.t(time.t, 3)
+# MQ score matrix
+MQ<- AM.t(time.t, 2)
+# year diff matrix
+YD<- AM.t(time.t, 4)
+
 ##### Gibbs sampling
 
-# set theta vector
-#theta<- rep(0,3)
 # if MPLE has been calculated
 #theta.old<- modelMPLE$coefficients
 theta<- modelMPLE$coefficients
 
-# ow
-theta<- c(0,0,0)
-theta.old<- c(0,0,0) # for optim, this is theta_0
+# if MPLE wasn't calculated, set vector to 0
+theta<- c(0,0,0, 0, 0, 0)
+theta.old<- c(0,0,0, 0, 0, 0) # for optim, this is theta_0
 
 # age
-age<- year.latest.case-scc1[1:latest.case, 4]
+age<- year.latest.case-scc1[17987:latest.case, 4]
 
 # draw m networks
 m<-2
 
-# create empty list to save vectors; just save vectors for memory issues, and attach vectors to adjacency matrix later
+# create empty list to save vectors; just save vectors for memory issues, and attach vectors to core matrix A.core later
 sampled.vector.list<- list()
 
 for(j in 1:m){
-  if(j %% 1 == 0) cat("Iteration j", j, "\n")
+  if(j %% 1 == 0) cat("Simulating network number", j, "\n")
   for(k in (d-number.cases.at.t+1):d){
     if(k %% 1 == 0) cat("Iteration k", k, "\n")
     # calculate change statistics
-    for(i in 1:latest.case){
-      print(i)
-      if(i %% 250 == 0) cat("Starting iteration", i, "\n")
+    for(i in 1:d){
       #print(i)
+      #if(i %% 250 == 0) cat("Starting iteration", i, "\n")
+      #print(i)
+      # define A.plus and A.minus
       A.plus<- A
       A.minus<- A
-      A.plus[i,k]<-1
-      A.minus[i,k]<-0
+      A.plus[k,i]<-1
+      A.minus[k,i]<-0
       
       triangles.plus<- count.citation.triangles(A.plus,age=age,0.025)
       triangles.minus<- count.citation.triangles(A.minus,age=age,0.025)
@@ -295,17 +326,30 @@ for(j in 1:m){
       outstar.plus<- count.citation.outstars(A.minus,age=age,0.025)
       outstar.minus<- count.citation.outstars(A.minus,age=age,0.025)
       
-      pi<- exp(theta[1]*1+theta[2]*(outstar.plus-outstar.minus)+theta[3]*(triangles.plus-triangles.minus))/(1+exp(theta[1]*1+theta[2]*(outstar.plus-outstar.minus)+theta[3]*(triangles.plus-triangles.minus)))
+      issue.plus <- issue.area.stat(A.plus, IA )
+      issue.minus <- issue.area.stat(A.minus, IA )
       
-      # draw from Bin (1,pi)
+      mq.plus<- mq.stat(A.plus, MQ)
+      mq.minus<- mq.stat(A.minus, MQ)
+      
+      year.diff.plus<- year.stat(A.plus, YD)
+      year.diff.minus<- year.stat(A.minus, YD)
+      
+      
+      pi<- exp(theta[1]*1+theta[2]*(outstar.plus-outstar.minus)+theta[3]*(triangles.plus-triangles.minus)+ theta[4]*(issue.plus-issue.minus)+
+                 theta[5]*(mq.plus-mq.minus)+theta[6]*(year.diff.plus-year.diff.minus))/(1+
+                 exp(theta[1]*1+theta[2]*(outstar.plus-outstar.minus)+theta[3]*(triangles.plus-triangles.minus)+ theta[4]*(issue.plus-issue.minus)+
+                       theta[5]*(mq.plus-mq.minus)+theta[6]*(year.diff.plus-year.diff.minus)))
+      
+      # draw one sample from Bin (1,pi)
       Z= rbinom(1,1,pi)
       
       # change vector
-      if(Z==1){A[i,k]<- 1}
-      if(Z==0){A[i,k]<- 0}
+      if(Z==1){A[k,i]<- 1}
+      if(Z==0){A[k,i]<- 0}
       
     }
-    sampled.vector.list[[j]]<- A[,(d-number.cases.at.t+1):d]
+    sampled.vector.list[[j]]<- A[(d-number.cases.at.t+1):d,] # just save the rows that can change
   }
 }
 
@@ -316,18 +360,101 @@ for(j in 1:m){
 ###################################################################
 # optimzie theta
 
+# create the normalizing constant
+xna<- paste("(par[1]-theta.old[1])*edges(cbind(A.core, sampled.vector.list[[", 1:m,"]]))+
+            (par[2]-theta.old[2])*count.citation.outstars(cbind(A.core, sampled.vector.list[[",1:m, "]]), age, 0.025)+ 
+            (par[3]-theta.old[3])*count.citation.triangles(cbind(A.core, sampled.vector.list[[", 1:m,"]]), age, 0.025)+
+            (par[4]-theta.old[4])*issue.area.stat(cbind(A.core, sampled.vector.list[[", 1:m, "]]))+
+            (par[5]-theta.old[5])*mq.stat(cbind(A.core, sampled.vector.list[[", 1:m, "]]))+
+            (par[6]-theta.old[6])*year.stat(cbind(A.core, sampled.vector.list[[", 1:m, "]]))", sep="", collapse="+" )
+fmla <- as.formula(paste("y ~", paste(xna, collapse= "+")))
+# fmla[[3]] #right hand side of formula
+
 
 hat.kappa.theta <- function(data, par){
   
-  -(par[1]*edges(A.obs)+ par[2]*count.citation.outstars(A.obs, age, 0.025)+par[3]*count.citation.triangles(A.obs, age, 0.025)-
-      log(exp((par[1]-theta.old[1])*edges(cbind(A.core, sampled.vector.list[[1]]))+(par[2]-theta.old[2])*count.citation.outstars(cbind(A.core, sampled.vector.list[[1]]), age, 0.025)+
-                (par[3]-theta.old[3])*count.citation.triangles(cbind(A.core, sampled.vector.list[[1]]), age, 0.025))+
-            exp((par[1]-theta.old[1])*edges(cbind(A.core, sampled.vector.list[[2]]))+(par[2]-theta.old[2])*count.citation.outstars(cbind(A.core, sampled.vector.list[[2]]), age, 0.025)+
-                  (par[3]-theta.old[3])*count.citation.triangles(cbind(A.core, sampled.vector.list[[2]]), age, 0.025))) )    
+  -(par[1]*edges(A.obs)+ par[2]*count.citation.outstars(A.obs, age, 0.025)+par[3]*count.citation.triangles(A.obs, age, 0.025)+
+      par[4]*issue.area.stat(A.obs, IA)+ par[5]*mq.stat(A.obs, MQ)+ par[6]*year.stat(A.obs, YD)-
+      log(as.expression(fmla[[3]])) )    
 }
 
 
 optim(par=theta, hat.kappa.theta, data=sampled.vector.list)
 
 
+################
+x<- 42
+y<- 33
 
+eval(parse(text = "x+y"))
+# 75
+
+
+x<-4
+y<- x*10
+y
+
+z<- quote(y<- x*10)
+
+
+##################
+
+ff <- y ~ z + x + w
+tt <- terms(ff)
+tt
+delete.response(tt)
+drop.terms(tt, 2:3, keep.response = TRUE)
+tt[-1]
+tt[2:3]
+reformulate(attr(tt, "term.labels"))
+
+## keep LHS :
+reformulate("x*w", ff[[2]])
+fS <- surv(ft, case) ~ a + b
+f1<-reformulate(c("a", "b*f"))
+
+## using non-syntactic names:
+reformulate(c("`P/E`", "`% Growth`"), response = as.name("+-"))
+
+stopifnot(identical(      ~ var, reformulate("var")),
+          identical(~ a + b + c, reformulate(letters[1:3])),
+          identical(  y ~ a + b, reformulate(letters[1:2], "y"))
+)
+
+
+
+# try paste
+w<-paste("log(y + 1) +", paste("x", collapse=""))
+w1<- noquote(w)
+qq<-as.function(alist(y=, x=,w1))
+
+qq(2,4)
+
+as.function(paste("log(y+1)+", "x"))
+
+foo<- function(x,y){w1}
+
+w<-paste("log(y + 1) +", paste("x", collapse=""))
+w1<- noquote(w)
+a<-alist(y=, x=)
+a[[3]]<- w1
+qq<-as.function(a)
+qq(2,3)
+
+
+############# use this!
+xnam <- paste("x[", 1:25, "]", sep="")
+fmla <- as.formula(paste("y ~ ", paste(xnam, collapse= "+")))
+fmla[[3]]
+########################
+l<-2
+
+xna<- paste("(par[1]-theta.old[1])*edges(cbind(A.core, sampled.vector.list[[", 1:l,"]]))+(par[2]-theta.old[2])*count.citation.outstars(cbind(A.core, sampled.vector.list[[",
+            1:l, "]]), age, 0.025)+ (par[3]-theta.old[3])*count.citation.triangles(cbind(A.core, sampled.vector.list[[", 1:l,"]]), age, 0.025)", sep="" )
+fmla <- as.formula(paste("y ~ ", paste(xna, collapse= "+")))
+fmla[[3]]
+
+exp((par[1]-theta.old[1])*edges(cbind(A.core, sampled.vector.list[[1]]))+(par[2]-theta.old[2])*count.citation.outstars(cbind(A.core, sampled.vector.list[[1]]), age, 0.025)+
+      (par[3]-theta.old[3])*count.citation.triangles(cbind(A.core, sampled.vector.list[[1]]), age, 0.025))
+
+# try to load formula.tools package
