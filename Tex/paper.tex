@@ -25,6 +25,10 @@
 %\usepackage{mathtools}
 \usepackage[all]{xy}
 \usepackage{cite}
+%\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{algorithm2e}
 \usepackage{url}
 \pagestyle{headings}
 \newcommand{\myclearpage}{\clearpage}
@@ -38,6 +42,7 @@
 \usepackage{tikz}
 \newcommand\circlearound[1]{%
   \tikz[baseline]\node[draw,shape=circle,anchor=base] {#1} ;}
+ 
   
 \begin{document}
 
@@ -170,28 +175,44 @@ Next, we will discuss how a sufficient number of suitable drawings $c^{(1)}(t), 
 For this purpose, the Markov Chain Monte Carlo (MCMC) methods can be used.
 \subsection*{Gibbs sampling for the ERCM}
 To be able to compute the approximate likelihood function one needs a sufficiently large number of random vectors from the distribution $\mathbb{P}_{\theta_0}$. Snijders \cite{Snijders.2002b} introduces an approach to sample random networks for the ERGM framework by using \textit{MCMC methods}. We adapt this approach for sampling appropriate binary vectors for the ERCM. \\[0.4cm]
-\textit{Gibbs sampling}\\\\
-Choose any vector $c^{(0)}(t) \in \mathcal{C}(N)$ (e.g. observed vector). Afterwards, the length $L$ of the respective sub-sequence is determined. For $k \in \{0,...,L-1\}$ execute the following steps recursively (here the vector in its $k$th iteration is denoted as $c^{(k)}(t)$):\\
-\begin{enumerate}
-\item Randomly choose a number $i \in \{1,\dots, N\}$
-\item Compute using the likelihood the value 
-$$\pi:= \mathbb{P}_{\theta}(C_{i}(t)=1 | C_{i}^c(t)=(c_{i}^{(k)}(t))^c)=\cfrac{\exp(\theta^T\cdot \Delta(c_i)(t))}{1+\exp(\theta^T\cdot \Delta(c_i)(t))}$$
-\item Draw a random number $Z$ from Bin$(1, \pi)$. If
-\begin{itemize}
-\item $Z=0$, define $c^{(k+1)}(t)$ via
-$$c_{p}^{(k+1)}(t)=\begin{cases}
-0& \text{if}~ p=i \\
-c_{p}^{(k)}(t) &\text{if}~ p \neq i 
-\end{cases}$$
-\item $Z=1$, define $c^{(k+1)}(t)$ via
-$$c_p^{(k+1)}(t)=\begin{cases}
-1& \text{if}~ p=i \\
-c_p^{(k)}(t) &\text{if}~ p \neq i 
-\end{cases}$$
-\end{itemize}
-\item Start at step 1 with $c^{(k+1)}(t)$.
-\end{enumerate}
-\noindent The depicted algorithm provides a sequence of random vectors $c^{(0)}(t),...,c^{(L)}(t)$. Since the orignial vector was chosen randomly and the first simulated vectors are very dependent on the chosen mvector (only one entry is changed per iteration!), usually the first $B$ networks, where $N \ll B \ll L$, are discarded as the so called \textit{Burn-In}.
+\textit{Gibbs sampling}\\
+%Choose any vector $c^{(0)}(t) \in \mathcal{C}(N)$ (e.g. observed vector). Afterwards, the length $L$ of the respective sub-sequence is determined. For $k \in \{0,...,L-1\}$ execute the following steps recursively (here the vector in its $k$th iteration is denoted as $c^{(k)}(t)$):\\
+
+\begin{algorithm}[H]
+ Choose any vector $c^{(0)}(t) \in \mathcal{C}(N)$ (e.g. observed vector)\\
+ \For{i in 1:N}{
+  Compute $\pi:= \cfrac{\exp(\theta^T\cdot \Delta(c_i)(t))}{1+\exp(\theta^T\cdot \Delta(c_i)(t))}$\\
+  Draw a random number Z from Bin(1,$\pi$)\\
+  \eIf{Z=1}{
+   set $c^{(k+1)}_i = 1$ and $c^{(k+1)}_j=c^{(k)}_j$, if $i\neq j$
+   }{
+   set $c^{(k+1)}_i = 0$ and $c^{(k+1)}_j=c^{(k)}_j$, if $i\neq j$
+  }
+ }
+ Start all over using $c^{(k+1)}$\\[0.3cm]
+ \caption{Simulation of vectors of $\mathbb{P}_\theta$ using Gibbs sampling}
+\end{algorithm}
+\vspace{0.5cm}
+%\begin{enumerate}
+%\item Randomly choose a number $i \in \{1,\dots, N\}$
+%\item Compute using the likelihood the value 
+%$$\pi:= \mathbb{P}_{\theta}(C_{i}(t)=1 | C_{i}^c(t)=(c_{i}^{(k)}(t))^c)=\cfrac{\exp(\theta^T\cdot \Delta(c_i)(t))}{1+\exp(\theta^T\cdot \Delta(c_i)(t))}$$
+%\item Draw a random number $Z$ from Bin$(1, \pi)$. %If
+%\begin{itemize}
+%\item $Z=0$, define $c^{(k+1)}(t)$ via
+%$$c_{p}^{(k+1)}(t)=\begin{cases}
+%0& \text{if}~ p=i \\
+%c_{p}^{(k)}(t) &\text{if}~ p \neq i 
+%\end{cases}$$
+%\item $Z=1$, define $c^{(k+1)}(t)$ via
+%$$c_p^{(k+1)}(t)=\begin{cases}
+%1& \text{if}~ p=i \\
+%c_p^{(k)}(t) &\text{if}~ p \neq i 
+%\end{cases}$$
+%\end{itemize}
+%\item Start at step 1 with $c^{(k+1)}(t)$.
+%\end{enumerate}
+\noindent Using the depicted algorithm, a sequence of random vectors $c^{(0)}(t),...,c^{(L)}(t)$ can be simulated. Since the orignial vector was chosen randomly and the first simulated vectors are very dependent on the chosen mvector (only one entry is changed per iteration!), usually the first $B$ vectors, where $N \ll B \ll L$, are discarded as the so called \textit{Burn-In}.
 \subsection*{Metropolis Hastings for the ERCM}\label{networksimulation}
 Choose any vector $c^{(0)}(t) \in \mathcal{C}(N)$ to start with (e.g., the observed vector). For $k \in \{0,...,L-1\}$ recursively proceed as follows:\\
 \begin{enumerate}
