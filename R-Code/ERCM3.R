@@ -1,4 +1,6 @@
 # requires scc_data_merging
+library(combinat)
+
 
 scc1<- scc
 
@@ -90,6 +92,35 @@ count.citation.triangles <- function(A,age,beta){
 count.citation.triangles(A, year.latest.case-scc1[17987:latest.case, 4], 0.025)
 
 
+# alternativ function to count weighted citation triangles
+count.triangles<- function(A, age, beta){
+  # decay vector
+  decay<- decayFun(age, 0.025)
+  # set number of triangles = 0
+  triangles <-0
+  # loop through all the cases that entered the network at time.t
+  for(i in (latest.case-17986-number.cases.at.t):(latest.case-17986)){
+    # which cases are cited by case i
+    ones<- which(A[i,]==1)
+    # what are all the twostars that case i has formed
+    if(length(ones)>= 2){
+    twostars<- t(combn(ones,2))
+    l<- dim(twostars)[1]
+    # loop through twostars to count triangles
+    for(k in 1:l){
+      #add triangles
+      triangles<- triangles +A[twostars[k,1],twostars[k,2]]*sqrt(decay[twostars[k,1]]*decay[twostars[k,2]])
+    } # end for k
+    
+    } # end if
+  } # end for i
+  
+  return(triangles)
+} # end function
+
+count.triangles(A, age, 0.025)
+
+
 ##################################
 ### outstar
 
@@ -105,6 +136,36 @@ count.citation.outstars <- function(A, age, beta){
 
 # test
 count.citation.outstars(A, year.latest.case-scc1[17987:latest.case, 4], 0.025)
+
+
+
+# alternativ function to count weighted citation outstars
+count.outstars<- function(A, age, beta){
+  # decay vector
+  decay<- decayFun(age, 0.025)
+  # set number of triangles = 0
+  outstars <-0
+  # loop through all the cases that entered the network at time.t
+  for(i in (latest.case-17986-number.cases.at.t):(latest.case-17986)){
+    # which cases are cited by case i
+    ones<- which(A[i,]==1)
+    # what are all the twostars that case i has formed
+    if(length(ones)>= 2){
+      twostars<- t(combn(ones,2))
+      l<- dim(twostars)[1]
+      # loop through twostars to count weighted outstars
+      for(k in 1:l){
+        #add outstars
+        outstars<- outstars +sqrt(decay[twostars[k,1]]*decay[twostars[k,2]])
+      } # end for k
+      
+    } # end if
+  } # end for i
+  
+  return(outstars)
+} # end function
+
+count.outstars(A, age, 0.025)
 
 
 ####################################
@@ -184,7 +245,7 @@ year.stat(AM.t(3300,1), AM.t(3300,4))
 
 
 # set time point, range [3136, 5251]
-time.t<- 3239
+time.t<- 5000
 number.cases.at.t<- length(which(time.t==scc1[, 71]))
 latest.case<- max(which(time.t==scc1[, 71]))
 year.latest.case <- scc1[latest.case, 4]
@@ -217,18 +278,17 @@ for(j in (d-number.cases.at.t+1):d){
   for(i in 1:d){
     #print(i)
     #if(i %% 250 == 0) cat("Starting iteration", i, "\n")
-    #print(i)
     A.plus<- A
     A.minus<- A
     A.plus[i,j]<-1
     A.minus[i,j]<-0
     
-    triangles.plus<- count.citation.triangles(A.plus,age=age,0.025)
-    triangles.minus<- count.citation.triangles(A.minus,age=age,0.025)
+    triangles.plus<- count.triangles(A.plus,age=age,0.025)
+    triangles.minus<- count.triangles(A.minus,age=age,0.025)
     change.mat[(j-(d-number.cases.at.t+1))*d+i,3]<- triangles.plus-triangles.minus # add value into right row in change.mat
     
-    outstar.plus<- count.citation.outstars(A.plus,age=age,0.025)
-    outstar.minus<- count.citation.outstars(A.minus,age=age,0.025)
+    outstar.plus<- count.outstars(A.plus,age=age,0.025)
+    outstar.minus<- count.outstars(A.minus,age=age,0.025)
     change.mat[(j-(d-number.cases.at.t+1))*d+i,2]<- outstar.plus-outstar.minus # add value into right row in change.mat
     
     issue.plus <- issue.area.stat(A.plus, IA )
@@ -382,79 +442,136 @@ hat.kappa.theta <- function(data, par){
 optim(par=theta, hat.kappa.theta, data=sampled.vector.list)
 
 
-################
-x<- 42
-y<- 33
-
-eval(parse(text = "x+y"))
-# 75
-
-
-x<-4
-y<- x*10
-y
-
-z<- quote(y<- x*10)
+#####################################################################
+#####################################################################
+########## 2nd try
+#####################################################################
+#####################################################################
 
 
-##################
+# set time point, range [3136, 5251]
+time.t<- 3240
+number.cases.at.t<- length(which(time.t==scc1[, 71]))
+latest.case<- max(which(time.t==scc1[, 71]))
+year.latest.case <- scc1[latest.case, 4]
 
-ff <- y ~ z + x + w
-tt <- terms(ff)
-tt
-delete.response(tt)
-drop.terms(tt, 2:3, keep.response = TRUE)
-tt[-1]
-tt[2:3]
-reformulate(attr(tt, "term.labels"))
+# get adjacency matrix for this given year
+A <- AM.t(time.t, 1)
+# dimension of A 
+d<- dim(A)[1]
 
-## keep LHS :
-reformulate("x*w", ff[[2]])
-fS <- surv(ft, case) ~ a + b
-f1<-reformulate(c("a", "b*f"))
+# indicate that A is the observed matrix
+A.obs <- A
+# matrix is everything but the rows that belong to the cases that entered the network at time.t
+A.core<-A[-((d-number.cases.at.t+1):d),]
 
-## using non-syntactic names:
-reformulate(c("`P/E`", "`% Growth`"), response = as.name("+-"))
+# issue Area Matrix
+IA<- AM.t(time.t, 3)
+# MQ score matrix
+MQ<- AM.t(time.t, 2)
+# year diff matrix
+YD<- AM.t(time.t, 4)
 
-stopifnot(identical(      ~ var, reformulate("var")),
-          identical(~ a + b + c, reformulate(letters[1:3])),
-          identical(  y ~ a + b, reformulate(letters[1:2], "y"))
-)
+#################
+# MCMLE
+
+# initialize theta_0
+theta_0 <- c(-5.2, -3.5, -3, 0.5, -0.28, -0.19)
+
+# age
+age<- year.latest.case-scc1[17987:latest.case, 4]
+
+# draw m networks using Gibbs sampling
+m <-2
+
+# create empty list to save vectors; just save vectors for memory issues, and attach vectors to core matrix A.core later
+sampled.vector.list<- list()
+
+for(j in 1:m){
+  if(j %% 1 == 0) cat("Simulating network number", j, "\n")
+  for(k in (d-number.cases.at.t+1):d){
+    if(k %% 1 == 0) cat("Iteration k", k, "\n")
+    # calculate change statistics
+    for(i in 1:d){
+      #print(i)
+      #if(i %% 250 == 0) cat("Starting iteration", i, "\n")
+      #print(i)
+      # define A.plus and A.minus
+      A.plus<- A
+      A.minus<- A
+      A.plus[k,i]<-1
+      A.minus[k,i]<-0
+      
+      triangles.plus<- count.triangles(A.plus,age=age,0.025)
+      triangles.minus<- count.triangles(A.minus,age=age,0.025)
+      
+      outstar.plus<- count.outstars(A.minus,age=age,0.025)
+      outstar.minus<- count.outstars(A.minus,age=age,0.025)
+      
+      issue.plus <- issue.area.stat(A.plus, IA )
+      issue.minus <- issue.area.stat(A.minus, IA )
+      
+      mq.plus<- mq.stat(A.plus, MQ)
+      mq.minus<- mq.stat(A.minus, MQ)
+      
+      year.diff.plus<- year.stat(A.plus, YD)
+      year.diff.minus<- year.stat(A.minus, YD)
+      
+      
+      pi<- exp(theta_0[1]*1+theta_0[2]*(outstar.plus-outstar.minus)+theta_0[3]*(triangles.plus-triangles.minus)+ theta_0[4]*(issue.plus-issue.minus)+
+                 theta_0[5]*(mq.plus-mq.minus)+theta_0[6]*(year.diff.plus-year.diff.minus))/
+        (1+ exp(theta_0[1]*1+theta_0[2]*(outstar.plus-outstar.minus)+theta_0[3]*(triangles.plus-triangles.minus)+ 
+                  theta_0[4]*(issue.plus-issue.minus)+theta_0[5]*(mq.plus-mq.minus)+theta_0[6]*(year.diff.plus-year.diff.minus)))
+      
+      # draw one sample from Bin (1,pi)
+      Z= rbinom(1,1,pi)
+      
+      # change vector
+      if(Z==1){A[k,i]<- 1}
+      if(Z==0){A[k,i]<- 0}
+      
+    }
+    sampled.vector.list[[j]]<- A[(d-number.cases.at.t+1):d,] # just save the rows that can change
+  }
+}
+
+# end gibbs sampling
+
+###############
+# Calculation of Gamma_m, a m x 6 matrix of network statistics for the simulated networks
+
+# create Gamma_m
+gamma_m<- matrix(0, m, 6)
+colnames(gamma_m)<- c("edges", "outstars", "triangles", "issue.are", "martin.quinn", "year")
+rownames(gamma_m)<- 1:m
+
+# fill gamma_m with values
+for(i in 1:m){
+  N<- rbind(A.core, sampled.vector.list[[i]])
+  gamma_m[i,1]<- sum(N)
+  gamma_m[i,2]<- count.outstars(N,age=age,0.025)
+  gamma_m[i,3]<- count.triangles(N,age=age,0.025)
+  gamma_m[i,4]<- issue.area.stat(N, IA )
+  gamma_m[i,5]<- mq.stat(N, MQ)
+  gamma_m[i,6]<- year.stat(N, YD)
+}
+
+# create vector Gamma_N with values of the observed network
+gamma_N<- matrix(0, 1, 6)
+colnames(gamma_N)<- c("edges", "outstars", "triangles", "issue.are", "martin.quinn", "year")
+
+gamma_N[1,1]<- sum(A.obs)
+gamma_N[1,2]<- count.outstars(A.obs,age=age,0.025)
+gamma_N[1,3]<- count.triangles(A.obs,age=age,0.025)
+gamma_N[1,4]<- issue.area.stat(A.obs, IA )
+gamma_N[1,5]<- mq.stat(A.obs, MQ)
+gamma_N[1,6]<- year.stat(A.obs, YD)
 
 
+# function for optim
 
-# try paste
-w<-paste("log(y + 1) +", paste("x", collapse=""))
-w1<- noquote(w)
-qq<-as.function(alist(y=, x=,w1))
+ercm_iter<- function(theta, gamma_m, gamma_N, theta_0){
+  -sum(c(theta[1],theta[2],theta[3],theta[4],theta[5], theta[6])*gamma_N)+log(sum(exp(gamma_m%*%(c(theta[1],theta[2],theta[3],theta[4],theta[5], theta[6])- theta_0))))
+}
 
-qq(2,4)
-
-as.function(paste("log(y+1)+", "x"))
-
-foo<- function(x,y){w1}
-
-w<-paste("log(y + 1) +", paste("x", collapse=""))
-w1<- noquote(w)
-a<-alist(y=, x=)
-a[[3]]<- w1
-qq<-as.function(a)
-qq(2,3)
-
-
-############# use this!
-xnam <- paste("x[", 1:25, "]", sep="")
-fmla <- as.formula(paste("y ~ ", paste(xnam, collapse= "+")))
-fmla[[3]]
-########################
-l<-2
-
-xna<- paste("(par[1]-theta.old[1])*edges(cbind(A.core, sampled.vector.list[[", 1:l,"]]))+(par[2]-theta.old[2])*count.citation.outstars(cbind(A.core, sampled.vector.list[[",
-            1:l, "]]), age, 0.025)+ (par[3]-theta.old[3])*count.citation.triangles(cbind(A.core, sampled.vector.list[[", 1:l,"]]), age, 0.025)", sep="" )
-fmla <- as.formula(paste("y ~ ", paste(xna, collapse= "+")))
-fmla[[3]]
-
-exp((par[1]-theta.old[1])*edges(cbind(A.core, sampled.vector.list[[1]]))+(par[2]-theta.old[2])*count.citation.outstars(cbind(A.core, sampled.vector.list[[1]]), age, 0.025)+
-      (par[3]-theta.old[3])*count.citation.triangles(cbind(A.core, sampled.vector.list[[1]]), age, 0.025))
-
-# try to load formula.tools package
+optim(par=theta, fn= ercm_iter, gamma_N=gamma_N, gamma_m=gamma_m, theta_0=theta_0, method="BFGS")
