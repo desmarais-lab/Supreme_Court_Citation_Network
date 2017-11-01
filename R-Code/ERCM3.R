@@ -2,10 +2,10 @@
 library(combinat)
 
 
-scc1<- scc
+#scc1<- scc
+# scc1 only considers cases from term 1937 on
 
-
-# create empty adjacency matrix
+# create empty adjacency matrix (full AM for all cases from the beginning)
 memory.limit(30000)
 adjacency.matrix<- matrix(0, 26803, 26803)
 
@@ -58,10 +58,10 @@ legend("topright",legend=c("1","0.25","0.10","0.05","0.025"),lwd=2,col=c("black"
 AM.t<- function(time.t, mod){ # first id with MQ scores is 3136, last 5251
   # what is the id of the case/cases that entered the network at time t
   latest.case<- max(which(time.t==scc1[, 71]))
-  AM<- adjacency.matrix[1:(latest.case-17986), 1:(latest.case-17986)]
-  MQ<- mq.matrix[1:(latest.case-17986), 1:(latest.case-17986)]
-  IA <- same.issue.area[1:(latest.case-17986), 1:(latest.case-17986)]
-  YD <- year.diff.matrix[1:(latest.case-17986), 1:(latest.case-17986)]
+  AM<- adjacency.matrix[1:latest.case, 1:latest.case]
+  MQ<- mq.matrix[1:latest.case, 1:latest.case]
+  IA <- same.issue.area[1:latest.case, 1:latest.case]
+  YD <- year.diff.matrix[1:latest.case, 1:latest.case]
   if(mod==1){
     return(AM)}
   if(mod==2){
@@ -99,7 +99,7 @@ count.triangles<- function(A, age, beta){
   # set number of triangles = 0
   triangles <-0
   # loop through all the cases that entered the network at time.t
-  for(i in (latest.case-17986-number.cases.at.t):(latest.case-17986)){
+  for(i in (latest.case-number.cases.at.t):(latest.case)){
     # which cases are cited by case i
     ones<- which(A[i,]==1)
     # what are all the twostars that case i has formed
@@ -146,7 +146,7 @@ count.outstars<- function(A, age, beta){
   # set number of triangles = 0
   outstars <-0
   # loop through all the cases that entered the network at time.t
-  for(i in (latest.case-17986-number.cases.at.t):(latest.case-17986)){
+  for(i in (latest.case-number.cases.at.t):(latest.case)){
     # which cases are cited by case i
     ones<- which(A[i,]==1)
     # what are all the twostars that case i has formed
@@ -206,7 +206,7 @@ issue.area.stat(AM.t(3300,1), AM.t(3300,3))
 #########################################
 ## Martin Quinn score
 # 8817 is dimension of adjaceny matrix
-mq.matrix <- matrix(rep(scc1[17987:26803,72], 8817), 8817, 8817)
+mq.matrix <- matrix(rep(scc1[,72], 8817), 8817, 8817)
 
 
 mq.stat <- function(A, MQ){
@@ -222,10 +222,10 @@ year.diff.matrix<- matrix(0, 8817, 8817)
 for(i in 17987:26803){ # calculation takes a while
   if(i %% 100 == 0) cat("Starting iteration", i, "\n")
   # year for sender
-  year.sender <- scc1[i, 4]
+  year.sender <- scc[i, 4]
   for(j in 17987:26803){
     # year for receiver
-    year.receiver <- scc1[j, 4]
+    year.receiver <- scc[j, 4]
     year.diff.matrix[i-17986,j-17986]<- abs(year.sender- year.receiver)
   }
 }
@@ -245,8 +245,9 @@ year.stat(AM.t(3300,1), AM.t(3300,4))
 
 
 # set time point, range [3136, 5251]
-time.t<- 5000
+time.t<- 3225
 number.cases.at.t<- length(which(time.t==scc1[, 71]))
+number.cases.at.t
 latest.case<- max(which(time.t==scc1[, 71]))
 year.latest.case <- scc1[latest.case, 4]
 
@@ -270,7 +271,7 @@ colnames(change.mat)<- c("citation", "outstar", "triangle", "issuearea", "MQscor
 
 change.mat[,1]<- c(A[(d-number.cases.at.t+1):d,]) # enters particular vaues of matrix row wise
 
-age<- year.latest.case-scc1[17987:latest.case, 4]
+age<- year.latest.case-scc1[1:latest.case, 4]
 # change statistic matrix
 for(j in (d-number.cases.at.t+1):d){
   print(j)
@@ -317,14 +318,15 @@ change.dat<- as.data.frame(change.mat)
 modelMPLE<- glm(citation~outstar+triangle+issuearea+MQscore+yeardiff, data=change.dat, family="binomial")
 summary(modelMPLE)
 
-################################################
-################################################
-## MCMLE
-################################################
-################################################
+#####################################################################
+#####################################################################
+########## MCMLE
+#####################################################################
+#####################################################################
+
 
 # set time point, range [3136, 5251]
-time.t<- 3180
+time.t<- 3225
 number.cases.at.t<- length(which(time.t==scc1[, 71]))
 latest.case<- max(which(time.t==scc1[, 71]))
 year.latest.case <- scc1[latest.case, 4]
@@ -346,151 +348,33 @@ MQ<- AM.t(time.t, 2)
 # year diff matrix
 YD<- AM.t(time.t, 4)
 
-##### Gibbs sampling
-
-# if MPLE has been calculated
-#theta.old<- modelMPLE$coefficients
-theta<- modelMPLE$coefficients
-
-# if MPLE wasn't calculated, set vector to 0
-theta<- c(0,0,0, 0, 0, 0)
-theta.old<- c(0,0,0, 0, 0, 0) # for optim, this is theta_0
-
-# age
-age<- year.latest.case-scc1[17987:latest.case, 4]
-
-# draw m networks
-m<-2
-
-# create empty list to save vectors; just save vectors for memory issues, and attach vectors to core matrix A.core later
-sampled.vector.list<- list()
-
-for(j in 1:m){
-  if(j %% 1 == 0) cat("Simulating network number", j, "\n")
-  for(k in (d-number.cases.at.t+1):d){
-    if(k %% 1 == 0) cat("Iteration k", k, "\n")
-    # calculate change statistics
-    for(i in 1:d){
-      #print(i)
-      #if(i %% 250 == 0) cat("Starting iteration", i, "\n")
-      #print(i)
-      # define A.plus and A.minus
-      A.plus<- A
-      A.minus<- A
-      A.plus[k,i]<-1
-      A.minus[k,i]<-0
-      
-      triangles.plus<- count.citation.triangles(A.plus,age=age,0.025)
-      triangles.minus<- count.citation.triangles(A.minus,age=age,0.025)
-      
-      outstar.plus<- count.citation.outstars(A.minus,age=age,0.025)
-      outstar.minus<- count.citation.outstars(A.minus,age=age,0.025)
-      
-      issue.plus <- issue.area.stat(A.plus, IA )
-      issue.minus <- issue.area.stat(A.minus, IA )
-      
-      mq.plus<- mq.stat(A.plus, MQ)
-      mq.minus<- mq.stat(A.minus, MQ)
-      
-      year.diff.plus<- year.stat(A.plus, YD)
-      year.diff.minus<- year.stat(A.minus, YD)
-      
-      
-      pi<- exp(theta[1]*1+theta[2]*(outstar.plus-outstar.minus)+theta[3]*(triangles.plus-triangles.minus)+ theta[4]*(issue.plus-issue.minus)+
-                 theta[5]*(mq.plus-mq.minus)+theta[6]*(year.diff.plus-year.diff.minus))/(1+
-                 exp(theta[1]*1+theta[2]*(outstar.plus-outstar.minus)+theta[3]*(triangles.plus-triangles.minus)+ theta[4]*(issue.plus-issue.minus)+
-                       theta[5]*(mq.plus-mq.minus)+theta[6]*(year.diff.plus-year.diff.minus)))
-      
-      # draw one sample from Bin (1,pi)
-      Z= rbinom(1,1,pi)
-      
-      # change vector
-      if(Z==1){A[k,i]<- 1}
-      if(Z==0){A[k,i]<- 0}
-      
-    }
-    sampled.vector.list[[j]]<- A[(d-number.cases.at.t+1):d,] # just save the rows that can change
-  }
-}
-
-# end gibbs sampling
-###############################################################
-
-
-###################################################################
-# optimzie theta
-
-# create the normalizing constant
-xna<- paste("(par[1]-theta.old[1])*edges(cbind(A.core, sampled.vector.list[[", 1:m,"]]))+
-            (par[2]-theta.old[2])*count.citation.outstars(cbind(A.core, sampled.vector.list[[",1:m, "]]), age, 0.025)+ 
-            (par[3]-theta.old[3])*count.citation.triangles(cbind(A.core, sampled.vector.list[[", 1:m,"]]), age, 0.025)+
-            (par[4]-theta.old[4])*issue.area.stat(cbind(A.core, sampled.vector.list[[", 1:m, "]]))+
-            (par[5]-theta.old[5])*mq.stat(cbind(A.core, sampled.vector.list[[", 1:m, "]]))+
-            (par[6]-theta.old[6])*year.stat(cbind(A.core, sampled.vector.list[[", 1:m, "]]))", sep="", collapse="+" )
-fmla <- as.formula(paste("y ~", paste(xna, collapse= "+")))
-# fmla[[3]] #right hand side of formula
-
-
-hat.kappa.theta <- function(data, par){
-  
-  -(par[1]*edges(A.obs)+ par[2]*count.citation.outstars(A.obs, age, 0.025)+par[3]*count.citation.triangles(A.obs, age, 0.025)+
-      par[4]*issue.area.stat(A.obs, IA)+ par[5]*mq.stat(A.obs, MQ)+ par[6]*year.stat(A.obs, YD)-
-      log(as.expression(fmla[[3]])) )    
-}
-
-
-optim(par=theta, hat.kappa.theta, data=sampled.vector.list)
-
-
-#####################################################################
-#####################################################################
-########## 2nd try
-#####################################################################
-#####################################################################
-
-
-# set time point, range [3136, 5251]
-time.t<- 3240
-number.cases.at.t<- length(which(time.t==scc1[, 71]))
-latest.case<- max(which(time.t==scc1[, 71]))
-year.latest.case <- scc1[latest.case, 4]
-
-# get adjacency matrix for this given year
-A <- AM.t(time.t, 1)
-# dimension of A 
-d<- dim(A)[1]
-
-# indicate that A is the observed matrix
-A.obs <- A
-# matrix is everything but the rows that belong to the cases that entered the network at time.t
-A.core<-A[-((d-number.cases.at.t+1):d),]
-
-# issue Area Matrix
-IA<- AM.t(time.t, 3)
-# MQ score matrix
-MQ<- AM.t(time.t, 2)
-# year diff matrix
-YD<- AM.t(time.t, 4)
-
-#################
+############################################
 # MCMLE
+############################################
 
-# initialize theta_0
-theta_0 <- c(-5.2, -3.5, -3, 0.5, -0.28, -0.19)
+
+# initialize theta_0 (use MPLE)
+theta_0 <- summary(modelMPLE)$coef[,1]
+# value for theta (such that optim has a starting point. I used the MPLE as well)
+theta <- theta_0
 
 # age
-age<- year.latest.case-scc1[17987:latest.case, 4]
+age<- year.latest.case-scc1[1:latest.case, 4]
 
+#######################################
+# start for loop for MCMLE estimation
+
+for(h in 1:20){
 # draw m networks using Gibbs sampling
-m <-2
+m <-10
 
 # create empty list to save vectors; just save vectors for memory issues, and attach vectors to core matrix A.core later
 sampled.vector.list<- list()
-
+print("sampling")
 for(j in 1:m){
   if(j %% 1 == 0) cat("Simulating network number", j, "\n")
   for(k in (d-number.cases.at.t+1):d){
-    if(k %% 1 == 0) cat("Iteration k", k, "\n")
+    #if(k %% 1 == 0) cat("Iteration k", k, "\n")
     # calculate change statistics
     for(i in 1:d){
       #print(i)
@@ -549,8 +433,8 @@ rownames(gamma_m)<- 1:m
 for(i in 1:m){
   N<- rbind(A.core, sampled.vector.list[[i]])
   gamma_m[i,1]<- sum(N)
-  gamma_m[i,2]<- count.outstars(N,age=age,0.025)
-  gamma_m[i,3]<- count.triangles(N,age=age,0.025)
+  gamma_m[i,2]<- count.citation.outstars(N,age=age,0.025)
+  gamma_m[i,3]<- count.citation.triangles(N,age=age,0.025)
   gamma_m[i,4]<- issue.area.stat(N, IA )
   gamma_m[i,5]<- mq.stat(N, MQ)
   gamma_m[i,6]<- year.stat(N, YD)
@@ -561,8 +445,8 @@ gamma_N<- matrix(0, 1, 6)
 colnames(gamma_N)<- c("edges", "outstars", "triangles", "issue.are", "martin.quinn", "year")
 
 gamma_N[1,1]<- sum(A.obs)
-gamma_N[1,2]<- count.outstars(A.obs,age=age,0.025)
-gamma_N[1,3]<- count.triangles(A.obs,age=age,0.025)
+gamma_N[1,2]<- count.citation.outstars(A.obs,age=age,0.025)
+gamma_N[1,3]<- count.citation.triangles(A.obs,age=age,0.025)
 gamma_N[1,4]<- issue.area.stat(A.obs, IA )
 gamma_N[1,5]<- mq.stat(A.obs, MQ)
 gamma_N[1,6]<- year.stat(A.obs, YD)
@@ -574,4 +458,186 @@ ercm_iter<- function(theta, gamma_m, gamma_N, theta_0){
   -sum(c(theta[1],theta[2],theta[3],theta[4],theta[5], theta[6])*gamma_N)+log(sum(exp(gamma_m%*%(c(theta[1],theta[2],theta[3],theta[4],theta[5], theta[6])- theta_0))))
 }
 
-optim(par=theta, fn= ercm_iter, gamma_N=gamma_N, gamma_m=gamma_m, theta_0=theta_0, method="BFGS")
+theta_0<- optim(par=theta, fn= ercm_iter, gamma_N=gamma_N, gamma_m=gamma_m, theta_0=theta_0, method="BFGS")$par
+
+print(theta_0)
+} # end MCMLE for loop
+
+
+
+
+
+######################################################
+### term period 1986-2005, chief justice: WH Rehnquist
+######################################################
+
+
+# I condition on the first term where rehnquist was chief justice 1986
+
+
+adjacency.matrix.rehnquist <- adjacency.matrix[7148:8817, 7148:8817]
+dim(adjacency.matrix.rehnquist)
+sum(adjacency.matrix.rehnquist)
+
+scc2<- scc1
+scc2<- scc2[7148:8817,]
+# time.t correponds to id and latest.case is the last row.number for a given id
+# time start 4754, end 5251
+
+# mod=1 adjacency matrix, mod=2, Marting Quinn score matrix, mod=3 Issue are, mod=4, Year difference matrix
+AM.t.rehnquist<- function(time.t, mod){ # first id with MQ scores is 3136, last 5251
+  # what is the id of the case/cases that entered the network at time t
+  latest.case<- max(which(time.t==scc2[, 71]))
+  AM<- adjacency.matrix[1:latest.case, 1:latest.case]
+  MQ<- mq.matrix[7148:(7147+latest.case), 7148:(7147+latest.case)]
+  IA <- same.issue.area[7148:(7147+latest.case), 7148:(7147+latest.case)]
+  YD <- year.diff.matrix[7148:(7147+latest.case), 7148:(7147+latest.case)]
+  if(mod==1){
+    return(AM)}
+  if(mod==2){
+    return(MQ)}
+  if(mod==3){
+    return(IA)}
+  if(mod==4){
+    return(YD)}
+}
+
+
+
+# set time point, range [4754, 5251]
+time.t<- 4754
+
+#for(g in 4718:time.t){
+number.cases.at.t<- length(which(time.t==scc1[, 71]))
+number.cases.at.t
+latest.case<- max(which(time.t==scc2[, 71]))
+year.latest.case <- scc2[latest.case, 4]
+
+# get adjacency matrix for this given year
+A <- AM.t.rehnquist(time.t, 1)
+# dimension of A 
+d<- dim(A)[1]
+
+# indicate that A is the observed matrix
+A.obs <- A
+# matrix is everything but the rows that belong to the cases that entered the network at time.t
+A.core<-A[-((d-number.cases.at.t+1):d),]
+
+# issue Area Matrix
+IA<- AM.t.rehnquist(time.t, 3)
+# MQ score matrix
+MQ<- AM.t.rehnquist(time.t, 2)
+# year diff matrix
+YD<- AM.t.rehnquist(time.t, 4)
+
+
+# initialize theta_0 (use MPLE)
+theta_0 <- summary(modelMPLE)$coef[,1]
+# value for theta (such that optim has a starting point. I used the MPLE as well)
+theta <- theta_0
+
+# age
+age<- year.latest.case-scc2[1:latest.case, 4]
+
+#######################################
+# start for loop for MCMLE estimation
+
+for(h in 1:20){
+  # draw m networks using Gibbs sampling
+  m <-10
+  
+  # create empty list to save vectors; just save vectors for memory issues, and attach vectors to core matrix A.core later
+  sampled.vector.list<- list()
+  print("sampling")
+  for(j in 1:m){
+    if(j %% 1 == 0) cat("Simulating network number", j, "\n")
+    for(k in (d-number.cases.at.t+1):d){
+      #if(k %% 1 == 0) cat("Iteration k", k, "\n")
+      # calculate change statistics
+      for(i in 1:d){
+        #print(i)
+        #if(i %% 250 == 0) cat("Starting iteration", i, "\n")
+        #print(i)
+        # define A.plus and A.minus
+        A.plus<- A
+        A.minus<- A
+        A.plus[k,i]<-1
+        A.minus[k,i]<-0
+        
+        triangles.plus<- count.triangles(A.plus,age=age,0.025)
+        triangles.minus<- count.triangles(A.minus,age=age,0.025)
+        
+        outstar.plus<- count.outstars(A.minus,age=age,0.025)
+        outstar.minus<- count.outstars(A.minus,age=age,0.025)
+        
+        issue.plus <- issue.area.stat(A.plus, IA )
+        issue.minus <- issue.area.stat(A.minus, IA )
+        
+        mq.plus<- mq.stat(A.plus, MQ)
+        mq.minus<- mq.stat(A.minus, MQ)
+        
+        year.diff.plus<- year.stat(A.plus, YD)
+        year.diff.minus<- year.stat(A.minus, YD)
+        
+        
+        pi<- exp(theta_0[1]*1+theta_0[2]*(outstar.plus-outstar.minus)+theta_0[3]*(triangles.plus-triangles.minus)+ theta_0[4]*(issue.plus-issue.minus)+
+                   theta_0[5]*(mq.plus-mq.minus)+theta_0[6]*(year.diff.plus-year.diff.minus))/
+          (1+ exp(theta_0[1]*1+theta_0[2]*(outstar.plus-outstar.minus)+theta_0[3]*(triangles.plus-triangles.minus)+ 
+                    theta_0[4]*(issue.plus-issue.minus)+theta_0[5]*(mq.plus-mq.minus)+theta_0[6]*(year.diff.plus-year.diff.minus)))
+        
+        # draw one sample from Bin (1,pi)
+        Z= rbinom(1,1,pi)
+        
+        # change vector
+        if(Z==1){A[k,i]<- 1}
+        if(Z==0){A[k,i]<- 0}
+        
+      }
+      sampled.vector.list[[j]]<- A[(d-number.cases.at.t+1):d,] # just save the rows that can change
+    }
+  }
+  
+  # end gibbs sampling
+  
+  ###############
+  # Calculation of Gamma_m, a m x 6 matrix of network statistics for the simulated networks
+  
+  # create Gamma_m
+  gamma_m<- matrix(0, m, 6)
+  colnames(gamma_m)<- c("edges", "outstars", "triangles", "issue.are", "martin.quinn", "year")
+  rownames(gamma_m)<- 1:m
+  
+  # fill gamma_m with values
+  for(i in 1:m){
+    N<- rbind(A.core, sampled.vector.list[[i]])
+    gamma_m[i,1]<- sum(N)
+    gamma_m[i,2]<- count.citation.outstars(N,age=age,0.025)
+    gamma_m[i,3]<- count.citation.triangles(N,age=age,0.025)
+    gamma_m[i,4]<- issue.area.stat(N, IA )
+    gamma_m[i,5]<- mq.stat(N, MQ)
+    gamma_m[i,6]<- year.stat(N, YD)
+  }
+  
+  # create vector Gamma_N with values of the observed network
+  gamma_N<- matrix(0, 1, 6)
+  colnames(gamma_N)<- c("edges", "outstars", "triangles", "issue.are", "martin.quinn", "year")
+  
+  gamma_N[1,1]<- sum(A.obs)
+  gamma_N[1,2]<- count.citation.outstars(A.obs,age=age,0.025)
+  gamma_N[1,3]<- count.citation.triangles(A.obs,age=age,0.025)
+  gamma_N[1,4]<- issue.area.stat(A.obs, IA )
+  gamma_N[1,5]<- mq.stat(A.obs, MQ)
+  gamma_N[1,6]<- year.stat(A.obs, YD)
+  
+  
+  # function for optim
+  
+  ercm_iter<- function(theta, gamma_m, gamma_N, theta_0){
+    -sum(c(theta[1],theta[2],theta[3],theta[4],theta[5], theta[6])*gamma_N)+log(sum(exp(gamma_m%*%(c(theta[1],theta[2],theta[3],theta[4],theta[5], theta[6])- theta_0))))
+  }
+  
+  theta_0<- optim(par=theta, fn= ercm_iter, gamma_N=gamma_N, gamma_m=gamma_m, theta_0=theta_0, method="BFGS")$par
+  
+  print(theta_0)
+} # end MCMLE for loop
+

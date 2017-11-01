@@ -133,8 +133,10 @@ MQ.scores <- as.data.frame(read_csv("justices.csv"))
 
 scc1<- scc
 scc1$meanMSscores<- 0
+d<- dim(scc1)[1]
+rownames(scc1)<- 1:26803
 
-for ( i in 17987:26803){
+for ( i in 17987:26803){ # row 17987 is when term 1937 begins
   if(i %% 1000 == 0) cat("Starting Iteration", i, "\n")
   # which columns relate to case i in the 
   case.rows<- which(scc1[i,2]==SCDB_justice[,7])
@@ -149,8 +151,8 @@ for ( i in 17987:26803){
       # get id of the justice
       justice.id <- SCDB_justice[case.rows[j],54]
       #print(justice.id)
-      # get year of case
-      case.year <- scc1[i,4]
+      # get year of term
+      case.year <- scc1[i,27]
       #print(case.year)
       # get row from which to take MS.score based on year and ID
       row.with.MQ.score <- which(MQ.scores[,1]==case.year & MQ.scores[,2]==justice.id)
@@ -169,7 +171,9 @@ for ( i in 17987:26803){
 }
 
 scc<- scc1
-rm(scc1)
+# Let scc be the full data set and scc1 be the data from term 1937 on
+
+scc1<- scc1[-(1:17986),]
 
 
 ##########################################################################
