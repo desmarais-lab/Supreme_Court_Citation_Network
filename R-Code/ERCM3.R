@@ -631,8 +631,13 @@ for(h in 1:20){
   
   
   # function for optim
+  # gamma_m - n.sim x n.stat x n.t array
+  # gamma_N - n.t x n.stat matrix
+  # ll = 0
+  # for(t in k:T) ll = ll + what_you_already_have(t)
   
   ercm_iter<- function(theta, gamma_m, gamma_N, theta_0){
+    # put for loop in here
     -sum(c(theta[1],theta[2],theta[3],theta[4],theta[5], theta[6])*gamma_N)+log(sum(exp(gamma_m%*%(c(theta[1],theta[2],theta[3],theta[4],theta[5], theta[6])- theta_0))))
   }
   
