@@ -93,7 +93,8 @@ scc1 <- transform(scc1,id=as.numeric(factor(time_t)))
 scc<- scc1
 rm(scc1, days, date, x)
 
-
+###################################################
+######## MQ scores
 #### read in justice centered data set
 
 SCDB1_justice <- read_csv("SCDB1_justice.csv")
@@ -132,8 +133,10 @@ MQ.scores <- as.data.frame(read_csv("justices.csv"))
 
 scc1<- scc
 scc1$meanMSscores<- 0
+d<- dim(scc1)[1]
+rownames(scc1)<- 1:26803
 
-for ( i in 17987:26803){
+for ( i in 17987:26803){ # row 17987 is when term 1937 begins
   if(i %% 1000 == 0) cat("Starting Iteration", i, "\n")
   # which columns relate to case i in the 
   case.rows<- which(scc1[i,2]==SCDB_justice[,7])
@@ -148,8 +151,8 @@ for ( i in 17987:26803){
       # get id of the justice
       justice.id <- SCDB_justice[case.rows[j],54]
       #print(justice.id)
-      # get year of case
-      case.year <- scc1[i,4]
+      # get year of term
+      case.year <- scc1[i,27]
       #print(case.year)
       # get row from which to take MS.score based on year and ID
       row.with.MQ.score <- which(MQ.scores[,1]==case.year & MQ.scores[,2]==justice.id)
@@ -168,7 +171,9 @@ for ( i in 17987:26803){
 }
 
 scc<- scc1
-rm(scc1)
+# Let scc be the full data set and scc1 be the data from term 1937 on
+
+scc1<- scc1[-(1:17986),]
 
 
 ##########################################################################
@@ -262,3 +267,53 @@ for(i in 1:209946){
 
 # cases.same.time 1327 out of 209946
 
+
+
+
+##############################################
+# does i cite j when time.i< time.j? Total 25 cases
+# cases from 1938 on: 11
+
+#############################################
+
+# total cases
+i.greater.j <- 0
+
+for (i in 1:216738){
+  if(i %% 1000 == 0) cat("Starting iteration", i, "\n")
+  # rows of sender and receiver case in data
+  s<-which(edgelist[i,1]==scc[,1])
+  r<- which(edgelist[i,2]==scc[,1])
+  if(sum(s)>0 & sum(r)> 0){
+  # time sender and receiver case entered the network
+  time.s<- scc[s,71]
+  time.r<- scc[r, 71]
+  # if time of sender case is older than time of receiver case add 1
+  if(time.s < time.r){
+    print(time.s)
+    print(time.r)
+    i.greater.j<- i.greater.j +1
+  }}
+}
+
+
+# cases from 1938 on
+i.greater.j <- 0
+
+for (i in 1:216738){
+  if(i %% 1000 == 0) cat("Starting iteration", i, "\n")
+  # rows of sender and receiver case in data
+  s<-which(edgelist[i,1]==scc[,1])
+  r<- which(edgelist[i,2]==scc[,1])
+  if(sum(s)>0 & sum(r)> 0){
+    if(s> 18805 & r> 18805 ){
+    # time sender and receiver case entered the network
+    time.s<- scc[s,71]
+    time.r<- scc[r, 71]
+    # if time of sender case is older than time of receiver case add 1
+    if(time.s < time.r){
+      print(time.s)
+      print(time.r)
+      i.greater.j<- i.greater.j +1
+    }}}
+}
