@@ -48,6 +48,61 @@ count.triangles.sim<- function(A, age, beta, i){
 } # end function
 
 
+#######################################
+
+# for the optimization we require network statistics that do not only calculate the change statistic, but the entire statistic
+
+count.citation.triangles.sim <- function(A,age,beta){
+  # decay vector
+  decay<- decayFun(age, 0.025)
+  # set number of triangles = 0
+  triangles <-0
+  
+  d<- dim(A)[1]
+  for(i in 2:d){
+    # which cases are cited by case i
+    ones<- which(A[i,]==1)
+    # what are all the twostars that case i has formed
+    if(length(ones)>= 2){
+      twostars<- t(combn(ones,2))
+      l<- dim(twostars)[1]
+      # loop through twostars to count triangles
+      for(k in 1:l){
+        #add triangles
+        triangles<- triangles +A[twostars[k,2],twostars[k,1]]*sqrt(decay[twostars[k,1]]*decay[twostars[k,2]])
+      } # end for k
+      
+    } # end if
+  } # end i
+  return(triangles)
+}
+
+count.citation.outstars.sim <- function(A, age, beta){
+  # decay vector
+  decay<-  decayFun(age, 0.025)
+  # set number of triangles = 0
+  outstars <-0
+  
+  d<- dim(A)[1]
+  for(i in 2:d){
+    # which cases are cited by case i
+    ones<- which(A[i,]==1)
+    # what are all the twostars that case i has formed
+    if(length(ones)>= 2){
+      twostars<- t(combn(ones,2))
+      l<- dim(twostars)[1]
+      # loop through twostars to count weighted outstars
+      for(k in 1:l){
+        #add outstars
+        outstars<- outstars +sqrt(decay[twostars[k,1]]*decay[twostars[k,2]])
+      } # end for k
+      
+    } # end if
+  } # end i
+  return(outstars)
+}
+
+
 
 # simulate a citation network of dimension 100
 
@@ -56,17 +111,36 @@ rownames(CN)<- 1:100
 colnames(CN)<- 1:100
 
 # set coefficients
-theta<- c(-2, -1, 1)
+theta.true<- c(-2, -1, 1)
 
 # count.outstar and count.triangle requires an age vector
 # create a vector of years
 year.vector<- c(rep(2007:2016, times=1, each=10))
 
+
+########################################################################
+###
+###  start simulation study
+###
+########################################################################
+
+MPLE.results<- matrix(0, 100, 3)
+colnames(MPLE.results)<-c("edges", 'twostars', 'triangles')
+
+MCMLE.results<- matrix(0, 100, 3)
+colnames(MCMLE.results)<-c("edges", 'twostars', 'triangles')
+
+set.seed(333)
+
+for(u in 1:10){
+
+
 #####################################################
 # use gibbs sampling to simulate citation networks
-set.seed(333)
+  if(u %% 1 == 0) cat("Iteration #", u, "\n")
+print("simulating a new network")
 for(l in 1:10){
-  if(l %% 1 == 0) cat("Starting iteration", l, "\n")
+  #if(l %% 1 == 0) cat("Starting iteration", l, "\n")
 for (i in 2:100){ # each row of matrix CN
   for (j in 1:(i-1)){ # max column that can have a 1 in the citation matrix (lower triangle matrix)
     CN.plus<- CN
@@ -84,8 +158,8 @@ for (i in 2:100){ # each row of matrix CN
     outstar.plus<- count.outstars.sim(CN.plus,age=age,0.025, i=i)
     outstar.minus<- count.outstars.sim(CN.minus,age=age,0.025, i=i)
     
-    pi<- exp(theta[1]*1+theta[2]*(outstar.plus-outstar.minus)+theta[3]*(triangles.plus-triangles.minus))/
-      (1+ exp(theta[1]*1+theta[2]*(outstar.plus-outstar.minus)+theta[3]*(triangles.plus-triangles.minus)))
+    pi<- exp(theta.true[1]*1+theta.true[2]*(outstar.plus-outstar.minus)+theta.true[3]*(triangles.plus-triangles.minus))/
+      (1+ exp(theta.true[1]*1+theta.true[2]*(outstar.plus-outstar.minus)+theta.true[3]*(triangles.plus-triangles.minus)))
     
     # draw one sample from Bin (1,pi)
     Z= rbinom(1,1,pi)
@@ -96,7 +170,7 @@ for (i in 2:100){ # each row of matrix CN
     
   } # end j
 } #end i
-  print(sum(CN))
+ # print(sum(CN))
 } #end l
 
 
@@ -108,6 +182,7 @@ for (i in 2:100){ # each row of matrix CN
 
 A<- CN
 
+print("MPLE")
 
 # create matrix to store results, such that we can fit a logistic regression model; edges is intercept -> no column for edges
 
@@ -151,8 +226,8 @@ change.dat<- as.data.frame(change.mat)
 # fit logistic regression
 
 modelMPLE<- glm(citation~outstar+triangle, data=change.dat, family="binomial")
-summary(modelMPLE) # good results
-
+MPLE.results[u,]<-summary(modelMPLE)$coefficient[,1] # good results
+print(summary(modelMPLE)$coefficient[,1])
 
 #####################################################
 #### MCMLE
@@ -163,24 +238,28 @@ summary(modelMPLE) # good results
 A<- CN
 A.obs<- CN
 
+print("MCMLE")
 
 # fix theta_0 as the MPLE estimate
 theta_0 <- summary(modelMPLE)$coef[,1]
 
 theta<- summary(modelMPLE)$coef[,1]
 
+# set sum of absolute differences for while loop
+imp<-1
+iter<- 1
 ##########################################
-for(b in 1:3){
-  print(b)
+while(imp > 0.01 ){
+  if(iter %% 1 == 0) cat("MCMLE iteration #", iter, "\n")
 # list for sampled citation networks
 sampled.network.list<- list()
 
 # first simulate m networks
-m<- 10
+m<- 20
 
 set.seed(333)
 for(l in 1:m){
-  if(l %% 1 == 0) cat("Simulating network #", l, "\n")
+  #if(l %% 1 == 0) cat("Simulating network #", l, "\n")
   for (i in 2:100){ # each row of matrix CN
     for (j in 1:(i-1)){ # max column that can have a 1 in the citation matrix (lower triangle matrix)
       A.plus<- A
@@ -213,59 +292,6 @@ for(l in 1:m){
   sampled.network.list[[l]]<- A
 } #end l
 
-#######################################
-
-# for the optimization we require network statistics that do not only calculate the change statistic, but the entire statistic
-
-count.citation.triangles.sim <- function(A,age,beta){
-  # decay vector
-  decay<- decayFun(age, 0.025)
-  # set number of triangles = 0
-  triangles <-0
-  
-  d<- dim(A)[1]
-  for(i in 2:d){
-  # which cases are cited by case i
-  ones<- which(A[i,]==1)
-  # what are all the twostars that case i has formed
-  if(length(ones)>= 2){
-    twostars<- t(combn(ones,2))
-    l<- dim(twostars)[1]
-    # loop through twostars to count triangles
-    for(k in 1:l){
-      #add triangles
-      triangles<- triangles +A[twostars[k,2],twostars[k,1]]*sqrt(decay[twostars[k,1]]*decay[twostars[k,2]])
-    } # end for k
-    
-  } # end if
-  } # end i
-  return(triangles)
-}
-
-count.citation.outstars.sim <- function(A, age, beta){
-  # decay vector
-  decay<-  decayFun(age, 0.025)
-  # set number of triangles = 0
-  outstars <-0
-  
-  d<- dim(A)[1]
-  for(i in 2:d){
-  # which cases are cited by case i
-  ones<- which(A[i,]==1)
-  # what are all the twostars that case i has formed
-  if(length(ones)>= 2){
-    twostars<- t(combn(ones,2))
-    l<- dim(twostars)[1]
-    # loop through twostars to count weighted outstars
-    for(k in 1:l){
-      #add outstars
-      outstars<- outstars +sqrt(decay[twostars[k,1]]*decay[twostars[k,2]])
-    } # end for k
-    
-  } # end if
-  } # end i
-  return(outstars)
-}
 
 ###############################################
 ## create arrays for optimization, gamma_m includes the network statistcs for every time t for every simulated network m
@@ -316,12 +342,27 @@ ercm_iter<- function(theta, gamma_m, gamma_N, theta_0){
 
 ###################################################################
 ## optim
-
+theta.old<- theta
 theta<- optim(par=theta, fn= ercm_iter, gamma_N=gamma_N, gamma_m=gamma_m, theta_0=theta_0, method="BFGS")$par
+
+#print(theta)
+
+MCMLE.results[u,]<- theta
+
+## calculate improvement
+imp<- sum(abs(theta-theta.old))
+cat("MCMLE improved by", imp, "\n")
+
+# iteration +1
+
+iter<- iter +1
+
+
+} # end while loop
 
 print(theta)
 
-}
+} # end simulation study loop
 
 
 
@@ -329,13 +370,8 @@ print(theta)
 
 
 
-
-
-
-
-
-A.plus<- A
-A.minus<- A
+A.plus<- CN
+A.minus<- CN
 A.plus[i,j]<-1
 A.minus[i,j]<-0
 
