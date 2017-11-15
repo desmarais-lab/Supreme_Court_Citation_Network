@@ -1,0 +1,232 @@
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=100:00:00
+#PBS -m abe
+#PBS -M schmid@psu.edu
+#PBS -l mem=128GB
+#PBS -j oe
+
+
+cd /storage/work/cxs5700/SCC_paper/MPLE
+
+echo " "
+echo " "
+echo "Job started on `hostname` at `date`"
+
+module load R/3.2.0
+
+R --vanilla <<STOP > scc_mple.out
+
+# get data
+load(file="SC_MPLE.RData")
+
+
+############################################################
+###   Citation Network
+############################################################
+
+# get adjacency.matrix from ERCM 3
+
+# I decided to condition on the 10 years from 1937-1946 when Hughes and Stone were chief justices: lines 1:1395 in scc1, id's 1:213
+
+A<- adjacency.matrix
+
+# vector that indicates which year each case was decided
+year.vector<- scc1[,4]
+
+###########################################################
+# calculation of matrix of change statistics
+
+# first for the core matrix (cases/years that are conditioned on, see line 124)
+change.mat<- matrix(0,1,11)
+colnames(change.mat)<- c("citation", "outstar", "triangle", "mqscore", "issuearea", "yeardiff",
+                         "HFStone", "FMVinson", "EWarren", "WEBurger", "WRehnquist")
+
+for(u in 1:3){ # 1:213 <- time points that are conditioned on
+  print(u)
+  time.t<- u
+  number.cases.at.t<- length(which(time.t==scc1[, 71]))
+  latest.case<- max(which(time.t==scc1[, 71]))
+  year.latest.case <- scc1[latest.case, 4]
+  
+  # age vector for yearly decay in outstar and triangle statistic
+  age<- year.vector[latest.case]-year.vector[1:latest.case]
+  
+  # create empty matrices to store change statistics
+  triangle.change<- matrix(0, number.cases.at.t, latest.case)
+  outstar.change<- matrix(0, number.cases.at.t, latest.case)
+  mq.score.change<- matrix(0, number.cases.at.t, latest.case)
+  issue.area.change<- matrix(0, number.cases.at.t, latest.case)
+  year.diff.change<-matrix(0, number.cases.at.t, latest.case)
+  hfstone.change<- matrix(0, number.cases.at.t, latest.case)
+  fmvinson.change<- matrix(0, number.cases.at.t, latest.case)
+  ewarren.change<- matrix(0, number.cases.at.t, latest.case)
+  weburger.change<- matrix(0, number.cases.at.t, latest.case)
+  wrehnquist.change<- matrix(0, number.cases.at.t, latest.case)
+  
+  # cut out corresponding entries in adjacency.matrix
+  if(number.cases.at.t==1){
+  AM<- t(as.matrix(adjacency.matrix[((latest.case-number.cases.at.t+1):latest.case), 1:latest.case]))
+  } else{
+  AM<- adjacency.matrix[((latest.case-number.cases.at.t+1):latest.case), 1:latest.case]
+  }
+  
+  # calculate and save change statistics 
+  for(i in (latest.case-number.cases.at.t+1):latest.case){
+  for (j in 1:latest.case){ 
+    
+    if(i!=j){
+    A.plus<- A[1:latest.case, 1:latest.case]
+    A.minus<- A[1:latest.case, 1:latest.case]
+    A.plus[i,j]<-1
+    A.minus[i,j]<-0
+    
+    # MQscore Matrix with same dimensions as A.plus and A.minus
+    MQ<- mq.matrix[1:latest.case, 1:latest.case]
+    
+    # Issue Area Matrix with same dimensions as A.plus and A.minus
+    IA<- same.issue.area[1:latest.case, 1:latest.case]
+    
+    # Issue Area Matrix with same dimensions as A.plus and A.minus
+    YD<- year.diff.matrix[1:latest.case, 1:latest.case]
+    
+    # chief justice matrices with same dimensions as A.plus and A.minus
+    HFS<- HFStone[1:latest.case, 1:latest.case]
+    FMV<- FMVinson[1:latest.case, 1:latest.case]
+    EW<- EWarren[1:latest.case, 1:latest.case]
+    WEB<- WEBurger[1:latest.case, 1:latest.case]
+    WR<- WRehnquist[1:latest.case, 1:latest.case]
+    
+    # year diff
+    age<- year.vector[latest.case]-year.vector[1:latest.case]
+    
+    # change statistic triangles
+    triangles.plus<- count.triangles.sim(A.plus,age=age,0.025, i=i)
+    triangles.minus<- count.triangles.sim(A.minus,age=age,0.025, i=i)
+    triangle.change[i-latest.case+number.cases.at.t,j]<- triangles.plus-triangles.minus # add value into right row in change.mat
+    
+    # change statistic outstar
+    outstar.plus<- count.outstars.sim(A.plus,age=age,0.025, i=i)
+    outstar.minus<- count.outstars.sim(A.minus,age=age,0.025, i=i)
+    outstar.change[i-latest.case+number.cases.at.t,j]<- outstar.plus-outstar.minus # add value into right row in change.mat
+    
+    # change statistic MQ score
+    mq.plus<- mq.stat(A.plus, MQ)
+    mq.minus<- mq.stat(A.minus, MQ)
+    mq.score.change[i-latest.case+number.cases.at.t,j]<- mq.plus-mq.minus
+    
+    # change.statistic Issue Area
+    ia.plus<- issue.area.stat(A.plus, IA)
+    ia.minus<- issue.area.stat(A.minus, IA)
+    issue.area.change[i-latest.case+number.cases.at.t,j]<- ia.plus-ia.minus
+    
+    # change.statistic Year Diff
+    yd.plus<- year.stat(A.plus, YD)
+    yd.minus<- year.stat(A.minus, YD)
+    year.diff.change[i-latest.case+number.cases.at.t,j]<- yd.plus-yd.minus
+    
+    # change statistic for chief justices
+    stone.plus<- mq.stat(A.plus, HFS)
+    stone.minus<- mq.stat(A.minus, HFS)
+    hfstone.change[i-latest.case+number.cases.at.t,j]<- stone.plus-stone.minus
+    
+    vinson.plus<- mq.stat(A.plus, FMV)
+    vinson.minus<- mq.stat(A.minus, FMV)
+    fmvinson.change[i-latest.case+number.cases.at.t,j]<- vinson.plus-vinson.minus
+    
+    warren.plus<- mq.stat(A.plus, EW)
+    warren.minus<- mq.stat(A.minus, EW)
+    ewarren.change[i-latest.case+number.cases.at.t,j]<- warren.plus-warren.minus
+    
+    burger.plus<- mq.stat(A.plus, WEB)
+    burger.minus<- mq.stat(A.minus, WEB)
+    weburger.change[i-latest.case+number.cases.at.t,j]<- burger.plus-burger.minus
+    
+    rehnquist.plus<- mq.stat(A.plus, WR)
+    rehnquist.minus<- mq.stat(A.minus, WR)
+    wrehnquist.change[i-latest.case+number.cases.at.t,j]<- rehnquist.plus-rehnquist.minus
+    
+    } # end if
+    else{
+      triangle.change[i-latest.case+number.cases.at.t,j]<- NA
+      outstar.change[i-latest.case+number.cases.at.t,j]<- NA
+      AM[i-latest.case+number.cases.at.t,j] <- NA
+      mq.score.change[i-latest.case+number.cases.at.t,j]<- NA
+      issue.area.change[i-latest.case+number.cases.at.t,j]<- NA
+      year.diff.change[i-latest.case+number.cases.at.t,j]<- NA
+      hfstone.change[i-latest.case+number.cases.at.t,j]<- NA
+      fmvinson.change[i-latest.case+number.cases.at.t,j]<- NA
+      ewarren.change[i-latest.case+number.cases.at.t,j]<- NA
+      weburger.change[i-latest.case+number.cases.at.t,j]<- NA
+      wrehnquist.change[i-latest.case+number.cases.at.t,j]<- NA
+        }
+  } # end j
+  } # end i
+  
+  # delete loops
+  AM.vec<- as.vector(t(AM))
+  AM.vec <- AM.vec[!is.na(AM.vec)]
+  
+  triangle.change.vec<- as.vector(t(triangle.change))
+  triangle.change.vec<- triangle.change.vec[!is.na(triangle.change.vec)]
+  
+  outstar.change.vec<- as.vector(t(outstar.change))
+  outstar.change.vec<- outstar.change.vec[!is.na(outstar.change.vec)]
+  
+  mq.score.change.vec<- as.vector(t(mq.score.change))
+  mq.score.change.vec<- mq.score.change.vec[!is.na(mq.score.change.vec)]
+  
+  issue.area.change.vec<- as.vector(t(issue.area.change))
+  issue.area.change.vec<- issue.area.change.vec[!is.na(issue.area.change.vec)]
+  
+  year.diff.change.vec<- as.vector(t(year.diff.change))
+  year.diff.change.vec<- year.diff.change.vec[!is.na(year.diff.change.vec)]
+  
+  hfstone.change.vec<- as.vector(t(hfstone.change))
+  hfstone.change.vec<- hfstone.change.vec[!is.na(hfstone.change.vec)]
+  
+  fmvinson.change.vec<- as.vector(t(fmvinson.change))
+  fmvinson.change.vec<- fmvinson.change.vec[!is.na(fmvinson.change.vec)]
+  
+  ewarren.change.vec<- as.vector(t(ewarren.change))
+  ewarren.change.vec<- ewarren.change.vec[!is.na(ewarren.change.vec)]
+  
+  weburger.change.vec<- as.vector(t(weburger.change))
+  weburger.change.vec<- weburger.change.vec[!is.na(weburger.change.vec)]
+  
+  wrehnquist.change.vec<- as.vector(t(wrehnquist.change))
+  wrehnquist.change.vec<- wrehnquist.change.vec[!is.na(wrehnquist.change.vec)]
+  
+  # length of vector
+  l<- length(triangle.change.vec)
+  
+  # auxiliary matrix to combine with change.mat
+  aux.mat <- matrix(0, l, 11)
+  
+  aux.mat[,1]<- AM.vec
+  aux.mat[,3]<- triangle.change.vec
+  aux.mat[,2]<- outstar.change.vec
+  aux.mat[,4]<- mq.score.change.vec
+  aux.mat[,5]<- issue.area.change.vec
+  aux.mat[,6]<- year.diff.change.vec
+  aux.mat[,7]<- hfstone.change.vec
+  aux.mat[,8]<- fmvinson.change.vec
+  aux.mat[,9]<- ewarren.change.vec
+  aux.mat[,10]<- weburger.change.vec
+  aux.mat[,11]<- wrehnquist.change.vec
+  
+  change.mat<- rbind(change.mat, aux.mat)
+  
+  #delete first initial row
+  if(u==1){
+    change.mat<- change.mat[-1,]
+  }
+  write.csv(change.mat, file = "changemat.csv")
+  }
+
+
+
+
+STOP
+echo " "
+echo "Job Ended at `date`"
+echo " "

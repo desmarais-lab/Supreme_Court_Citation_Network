@@ -1,0 +1,74 @@
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=24:00:00
+#PBS -m abe
+#PBS -M schmid@psu.edu
+#PBS -l mem=128GB
+#PBS -j oe
+
+
+cd /storage/work/cxs5700/SCC_paper/MPLE
+
+echo " "
+echo " "
+echo "Job started on `hostname` at `date`"
+
+module load R/3.2.0
+
+R --vanilla <<STOP > scc_mple.out
+
+# get data
+change.mat<- read.csv("changemat.csv", header=TRUE)
+
+#m<- max(which(change.mat[,12]==75))
+#change.mat<- change.mat[1:m,]
+
+# nonparametric bootstrap resampling
+nboot <- 200 # this number should be 200 or higher
+ncoef <- 6
+boot.results <- matrix(NA,nboot,ncoef)
+# need to weight by the number of potential edges in a time period
+n.per.time <- table(change.mat[,12])
+# get unique sender times, over which to weight
+unique.sender.times <- as.numeric(names(n.per.time))
+# calculate weights for weighted resampling of times
+time.weights <- n.per.time/sum(n.per.time)
+
+set.seed(44445)
+# loop over bootstrap iterations (easily paralellize)
+for(b in 1:nboot){
+  print(b)
+  # sample time periods with replacement
+  time.periods.b <- sample(unique.sender.times,length(unique.sender.times),prob=time.weights,rep=T)
+  # construct the data for iteration b
+  data.b <- list()
+  for(k in 1:length(time.periods.b)){
+    t<- time.periods.b[k]
+    data.b[[k]] <- subset(change.mat,change.mat[,12]==t)
+  }
+  # collapse into a matrix
+  data.b <- do.call('rbind',data.b)
+  # convert to data frame
+  data.b <- data.frame(data.b)
+  # run mple
+  mple.est.b <- glm(citation~outstar+triangle+issuearea+mqscore+yeardiff, data=data.b, family="binomial")
+  # store results
+  boot.results[b,] <- coef(mple.est.b)
+  
+}
+
+write.csv(boot.results, file = "bootresults132.csv")
+
+
+### take percentiles
+quantile(boot.results[,1], probs=c(0.975, 0.025))
+quantile(boot.results[,2], probs=c(0.975, 0.025))
+quantile(boot.results[,3], probs=c(0.975, 0.025))
+quantile(boot.results[,4], probs=c(0.975, 0.025))
+quantile(boot.results[,5], probs=c(0.975, 0.025))
+quantile(boot.results[,6], probs=c(0.975, 0.025))
+
+
+STOP
+echo " "
+echo "Job Ended at `date`"
+echo " "
