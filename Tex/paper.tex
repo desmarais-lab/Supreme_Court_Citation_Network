@@ -13,6 +13,7 @@
 \usepackage{lmodern}
 \usepackage{mdwlist}
 \usepackage{listings}
+\usepackage[table,xcdraw]{xcolor}
 \usepackage[activate]{pdfcprot}
 \usepackage{graphicx}
 \usepackage{slashed}
@@ -233,9 +234,60 @@ c_{p}^{(k)}(t) &\text{if}~ p \neq i
 The first $B \ll L$ vectors are discarded as Burn-In.
 
 
- \section*{Results/Discussion}
+ \section*{Results}
+  \subsection*{Descriptive Results}
+ The supreme court citation network from $1937 - 2005$ consists of $8817$ cases which got voted at 2116 different time points. The network has a total of $93,263$ ties, of which 452 are mutual. The number of triangles in the network is $211,855$. The in- and outdegree distribution is visualized in figures \ref{indegree_dist} and \ref{outdegree_dist}. The maximum indegree is $190$ and the maximum outdegree is $159$.
+ 
 
+\begin{figure}
+\includegraphics[scale=0.5]{degree_distribution}
+\caption{The in- and outdegree distribution of the Supreme Court Citation Network from 1937 - 2005. There are cases with an indegree >50, but they are not captured in this figure.}
+ \label{degree_dist}
+\vspace{-.25cm}
+\end{figure}
 
+   
+\subsection*{Inferential Results}
+
+\begin{table}[]
+\centering
+\begin{tabular}{|
+>{\columncolor[HTML]{C0C0C0}}l |l|l|l|}
+\hline
+{\color[HTML]{333333} } & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Estimate} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Lower Bound} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Upper Bound} \\ \hline
+Edges                   & -5.364                                                 & -5.411                                                     & -4.155                                                     \\ \hline
+Instar(2)               & 0.031                                                   & 0.025                                                      & 0.037                                                      \\ \hline
+Outstar(2)              & 0.016                                                   & -0.004                                                      & 0.017                                                      \\ \hline
+Mutual                  & 4.472                                                   & 3.821                                                 & 5.069                                                      \\ \hline
+Triangle                & 1.275                                                   & 1.194                                                      & 1.401                                                      \\ \hline
+MQ Score                & 0.174                                                   & 0.082                                                      & 0.244                                                      \\ \hline
+Same Issue Area         & 1.113                                                   & 0.972                                                      & 1.152                                                      \\ \hline
+Year Difference         & -0.092                                                   & -0.114                                                     & -0.085                                                          \\ \hline
+\end{tabular}
+\caption{Bootstrappped MPLE Results for the timep period when Fred M. Vinson was chief justice.}
+\label{bootMPLE_vinson}
+\end{table}   
+ 
+ 
+\begin{table}[]
+\centering
+\begin{tabular}{|
+>{\columncolor[HTML]{C0C0C0}}l |l|l|l|}
+\hline
+{\color[HTML]{333333} } & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Estimate} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Lower Bound} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Upper Bound} \\ \hline
+Edges                   & -3.571                                                 & -3.597                                                     & -3.460                                                     \\ \hline
+Instar(2)               & 0.014                                                   & 0.013                                                      & 0.016                                                      \\ \hline
+Outstar(2)              & 0.001                                                   & -0.001                                                      & 0.004                                                      \\ \hline
+Mutual                  & 9.678                                                   & 8.308                                                 & 11.261                                                      \\ \hline
+Triangle                & 1.526                                                   & 1.417                                                      & 1.527                                                      \\ \hline
+MQ Score                & -0.0001                                                   & -0.043                                                      & 0.012                                                      \\ \hline
+Same Issue Area         & 0.826                                                   & 0.718                                                      & 0.822                                                      \\ \hline
+Year Difference         & -0.017                                                   & -0.018                                                     & -0.015                                                          \\ \hline
+\end{tabular}
+\caption{Bootstrappped MPLE Results for the timep period when William Rehnquist was chief justice.}
+\label{bootMPLE_vinson}
+\end{table}  
+ 
    
 \newpage
 
