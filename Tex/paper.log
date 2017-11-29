@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.24)  22 NOV 2017 16:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.24)  29 NOV 2017 08:15
 entering extended mode
 **paper.tex
 
@@ -1198,17 +1198,7 @@ s\tikzlibrarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1 (rcs-revision 1.2)
 )))
 ("C:\Users\Geiler Typ\Desktop\PSU\Bruce Desmarais\Supreme Court Citation Projec
-t\Tex\paper.aux"
-
-LaTeX Warning: Label `bootMPLE_vinson' multiply defined.
-
-
-LaTeX Warning: Label `bootMPLE_vinson' multiply defined.
-
-
-LaTeX Warning: Label `bootMPLE_vinson' multiply defined.
-
-)
+t\Tex\paper.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
@@ -1626,101 +1616,165 @@ LaTeX Warning: Reference `indegree_dist' on page 6 undefined on input line 239.
 LaTeX Warning: Reference `outdegree_dist' on page 6 undefined on input line 239
 .
 
-<degree_distribution.pdf, id=60, 844.15375pt x 597.23125pt>
+
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[6] <degree_distribution.pdf, id=71, 844.15375pt x 597.23125pt>
 File: degree_distribution.pdf Graphic file (type pdf)
 
 <use degree_distribution.pdf>
-Package pdftex.def Info: degree_distribution.pdf used on input line 243.
+Package pdftex.def Info: degree_distribution.pdf used on input line 259.
 (pdftex.def)             Requested size: 422.07584pt x 298.61488pt.
 
-Overfull \hbox (23.73726pt too wide) in paragraph at lines 243--244
+Overfull \hbox (23.73726pt too wide) in paragraph at lines 259--260
+[][]
+ []
+
+<number_cases.pdf, id=72, 844.15375pt x 597.23125pt>
+File: number_cases.pdf Graphic file (type pdf)
+ <use number_cases.pdf>
+Package pdftex.def Info: number_cases.pdf used on input line 266.
+(pdftex.def)             Requested size: 422.07584pt x 298.61488pt.
+
+Overfull \hbox (23.73726pt too wide) in paragraph at lines 266--267
 [][]
  []
 
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 252.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 272.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 292.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 314.
-
-
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[6]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[7pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.334 \newpage
-              pdfTeX warning (ext4): destination with the same identifier (name
-{table.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.334 \newpage
-               <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme Court C
-itation Project/Tex/degree_distribution.pdf>]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[8pdfTeX warning (ext4): destination with the same identifier (name{table.2}) h
+[7pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
 as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.334 \newpage
-              pdfTeX warning (ext4): destination with the same identifier (name
-{table.3}) has been already used, duplicate ignored
+l.271 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.334 \newpage
-              pdfTeX warning (ext4): destination with the same identifier (name
-{table.4}) has been already used, duplicate ignored
+l.271 
+       <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme Court Citation 
+Project/Tex/degree_distribution.pdf>]
+<number_citations.pdf, id=96, 844.15375pt x 597.23125pt>
+File: number_citations.pdf Graphic file (type pdf)
+
+<use number_citations.pdf>
+Package pdftex.def Info: number_citations.pdf used on input line 273.
+(pdftex.def)             Requested size: 422.07584pt x 298.61488pt.
+
+Overfull \hbox (23.73726pt too wide) in paragraph at lines 273--274
+[][]
+ []
+
+
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[8pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.334 \newpage
+l.278 
+       <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme Court Citation 
+Project/Tex/number_cases.pdf>]
+<number_votes_supporting.pdf, id=118, 844.15375pt x 597.23125pt>
+File: number_votes_supporting.pdf Graphic file (type pdf)
+
+<use number_votes_supporting.pdf>
+Package pdftex.def Info: number_votes_supporting.pdf used on input line 280.
+(pdftex.def)             Requested size: 422.07584pt x 298.61488pt.
+
+Overfull \hbox (23.73726pt too wide) in paragraph at lines 280--281
+[][]
+ []
+
+
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.285 
+       <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme Court Citation 
+Project/Tex/number_citations.pdf>]
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[10pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.286 \newpage
+               <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme Court C
+itation Project/Tex/number_votes_supporting.pdf>]
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[11pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.370 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.3
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.370 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.4
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.370 
+      ]
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[12pdfTeX warning (ext4): destination with the same identifier (name{table.5}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.394 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name
+{table.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.394 \newpage
               ]
 No file paper.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 341.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 341.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 401.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 401.
 
 ("C:\Users\Geiler Typ\Desktop\PSU\Bruce Desmarais\Supreme Court Citation Projec
 t\Tex\paper.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 341.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 341.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 401.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 401.
 Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 341.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 401.
  ) 
 Here is how much of TeX's memory you used:
- 24131 strings out of 493921
- 420585 string characters out of 3144861
- 611119 words of memory out of 3000000
- 26880 multiletter control sequences out of 15000+200000
+ 24165 strings out of 493921
+ 421172 string characters out of 3144861
+ 606939 words of memory out of 3000000
+ 26902 multiletter control sequences out of 15000+200000
  123412 words of font info for 92 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  64i,14n,60p,3233b,402s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1741,9 +1795,9 @@ am Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files
 X 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
 type1/public/lm/lmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
 /amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (8 pages, 261702 bytes).
+Output written on paper.pdf (12 pages, 356903 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 35 named destinations out of 1000 (max. 500000)
- 12306 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 237 PDF objects out of 1000 (max. 8388607)
+ 44 named destinations out of 1000 (max. 500000)
+ 12321 words of extra memory for PDF output out of 14400 (max. 10000000)
 

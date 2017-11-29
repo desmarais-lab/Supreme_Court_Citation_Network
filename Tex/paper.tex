@@ -236,98 +236,158 @@ The first $B \ll L$ vectors are discarded as Burn-In.
 
  \section*{Results}
   \subsection*{Descriptive Results}
- The supreme court citation network from $1937 - 2005$ consists of $8817$ cases which got voted at 2116 different time points. The network has a total of $93,263$ ties, of which 452 are mutual. The number of triangles in the network is $211,855$. The in- and outdegree distribution is visualized in figures \ref{indegree_dist} and \ref{outdegree_dist}. The maximum indegree is $190$ and the maximum outdegree is $159$.
- 
+The supreme court citation network from $1937 - 2005$ consists of $8817$ cases which got voted at $2116$ different time points. The network has a total of $93,263$ ties, of which 452 are mutual. The number of triangles in the network is $211,855$. The in- and outdegree distribution is visualized in figures \ref{indegree_dist} and \ref{outdegree_dist}. The maximum indegree is $190$ and the maximum outdegree is $159$.
 
-\begin{figure}
+\begin{table}[H]
+\centering
+\begin{tabular}{|
+>{\columncolor[HTML]{C0C0C0}}l |l|l|l|}
+\hline
+{\color[HTML]{333333} } & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Terms} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Total Number Cases} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Cases/Term} \\ \hline
+CE Hughes*              & 1937 - 1941                                          & 629                                                               & 125.5                                                     \\ \hline
+HF Stone                & 1942 - 1946                                          & 766                                                               & 153.2                                                     \\ \hline
+FM Vinson               & 1946 - 1953                                          & 788                                                               & 98.5                                                      \\ \hline
+E Warren                & 1954 - 1969                                          & 2159                                                              & 127.0                                                     \\ \hline
+WE Burger               & 1970 - 1986                                          & 2805                                                              & 155.8                                                     \\ \hline
+W Rehnquist**            & 1987 - 2001                                          & 1670                                                              & 83.5                                                      \\ \hline
+\end{tabular}
+\caption[caption]{For the time range of interest (1937 - 2001) this table displays the chief justices, the time range they served as chief justice, the number of cases in their time range as well as the average number of cases per year.\\\hspace{\textwidth} * CE Hughes served as chief justice from 1930 - 1941. \\\hspace{\textwidth} ** W Rehnquist served as chief justice from 1987 - 2005.}
+\label{my-label}
+\end{table}
+
+\begin{figure}[H]
 \includegraphics[scale=0.5]{degree_distribution}
-\caption{The in- and outdegree distribution of the Supreme Court Citation Network from 1937 - 2005. There are cases with an indegree >50, but they are not captured in this figure.}
+\caption{The in- and outdegree distribution of the Supreme Court Citation Network from 1937 - 2001. There are cases with an indegree >50, but they are not captured in this figure.}
  \label{degree_dist}
 \vspace{-.25cm}
 \end{figure}
 
-   
+\begin{figure}[H]
+\includegraphics[scale=0.5]{number_cases}
+\caption{Number of cases in each term. Different colors indicate different chief justices.}
+ \label{number_cases}
+\vspace{-.25cm}
+\end{figure}  
+  
+ \begin{figure}[H]
+\includegraphics[scale=0.5]{number_citations}
+\caption{Number of citations for the 1937-2001 time period. Citations for cases prior 1937 are not considered in this figure. Different colors indicate different chief justices.}
+ \label{number_citations}
+\vspace{-.25cm}
+\end{figure}  
+  
+  \begin{figure}[H]
+\includegraphics[scale=0.5]{number_votes_supporting}
+\caption{Number of Votes that were supporting cases between 1937-2001. Different colors indicate terms with different chief justices. }
+ \label{number_supporting}
+\vspace{-.25cm}
+\end{figure}  
+  
+\newpage 
+  
 \subsection*{Inferential Results}
 
-\begin{table}[]
+\begin{table}[H]
 \centering
 \begin{tabular}{|
 >{\columncolor[HTML]{C0C0C0}}l |l|l|l|}
 \hline
 {\color[HTML]{333333} } & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Estimate} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Lower Bound} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Upper Bound} \\ \hline
-Edges                   & -5.445                                                 & -5.514                                                     & -5.296                                                     \\ \hline
-Instar(2)               & 0.033                                                   & 0.028                                                      & 0.040                                                      \\ \hline
-Outstar(2)              & 0.015                                                   & -0.001                                                      & 0.016                                                      \\ \hline
-Mutual                  & 4.717                                                   & 4.093                                                 & 5.422                                                      \\ \hline
-Triangle                & 1.337                                                   & 1.251                                                      & 1.475                                                      \\ \hline
-MQ Score                & -0.009                                                   & -0.035                                                      & 0.087                                                      \\ \hline
-Same Issue Area         & 1.205                                                   & 1.064                                                      & 1.237                                                      \\ \hline
-Year Difference         & -0.076                                                   & -0.101                                                     & -0.072                                                          \\ \hline
+Edges                   & -5.319                                                 & -5.392                                                     & -5.243                                                     \\ \hline
+Instar(2)               & 0.018                                                   & 0.017                                                      & 0.019                                                      \\ \hline
+Outstar(2)              & 0.018                                                  & 0.016                                                      & 0.022                                                      \\ \hline
+Mutual                  & 3.179                                                   & 2.694                                                 & 3.565                                                      \\ \hline
+Triangle                & 1.531                                                   & 1.493                                                      & 1.563                                                      \\ \hline
+MQ Score                & 0.041                                                   & 0.018                                                      & 0.063                                                      \\ \hline
+Same Issue Area         & 1.061                                                   & 1.028                                                      & 1.099                                                      \\ \hline
+Year Difference         & 0.010                                                   & 0.008                                                     & 0.013                                                          \\ \hline
 \end{tabular}
-\caption{Bootstrappped MPLE Results for the timep period when Fred M. Vinson was chief justice.}
+\caption{Bootstrappped MPLE Results for the time period 1937-2001}
+\label{bootMPLE_total}
+\end{table}   
+
+
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|
+>{\columncolor[HTML]{C0C0C0}}l |l|l|l|}
+\hline
+{\color[HTML]{333333} } & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Estimate} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Lower Bound} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Upper Bound} \\ \hline
+Edges                   & -5.391                                                 & -5.506                                                     & -5.244                                                     \\ \hline
+Instar(2)               & 0.035                                                   & 0.028                                                      & 0.042                                                      \\ \hline
+Outstar(2)              & 0.015                                                   & 0.0003                                                      & 0.017                                                      \\ \hline
+Mutual                  & 4.785                                                   & 3.616                                                 & 5.749                                                      \\ \hline
+Triangle                & 1.377                                                   & 1.271                                                      & 1.513                                                      \\ \hline
+MQ Score                & -0.018                                                   & -0.095                                                      & 0.061                                                      \\ \hline
+Same Issue Area         & 1.229                                                   & 1.126                                                      & 1.327                                                      \\ \hline
+Year Difference         & -0.077                                                   & -0.096                                                     & -0.061                                                          \\ \hline
+\end{tabular}
+\caption{Bootstrappped MPLE Results for the time period when Fred M. Vinson was chief justice.}
 \label{bootMPLE_vinson}
 \end{table}   
  
 
-\begin{table}[]
+\begin{table}[H]
 \centering
 \begin{tabular}{|
 >{\columncolor[HTML]{C0C0C0}}l |l|l|l|}
 \hline
 {\color[HTML]{333333} } & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Estimate} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Lower Bound} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Upper Bound} \\ \hline
-Edges                   & -5.042                                                 & -5.107                                                     & -4.952                                                     \\ \hline
-Instar(2)               & 0.028                                                   & 0.026                                                      & 0.033                                                      \\ \hline
-Outstar(2)              & 0.018                                                   & 0.017                                                      & 0.022                                                      \\ \hline
-Mutual                  & 3.158                                                   & 1.469                                                 & 3.508                                                      \\ \hline
-Triangle                & 1.500                                                   & 1.391                                                      & 1.506                                                      \\ \hline
-MQ Score                & -0.106                                                   & -0.142                                                      & -0.067                                                      \\ \hline
-Same Issue Area         & 1.334                                                   & 1.274                                                      & 1.378                                                      \\ \hline
-Year Difference         & -0.031                                                   & -0.040                                                     & -0.029                                                          \\ \hline
+Edges                   & -5.032                                                 & -5.140                                                     & -4.931                                                     \\ \hline
+Instar(2)               & 0.028                                                   & 0.025                                                      & 0.032                                                      \\ \hline
+Outstar(2)              & 0.018                                                   & 0.015                                                      & 0.022                                                      \\ \hline
+Mutual                  & 3.166                                                   & 1.826                                                 & 4.565                                                      \\ \hline
+Triangle                & 1.520                                                   & 1.449                                                      & 1.599                                                      \\ \hline
+MQ Score                & -0.101                                                   & -0.149                                                      & -0.052                                                      \\ \hline
+Same Issue Area         & 1.349                                                   & 1.289                                                      & 1.408                                                      \\ \hline
+Year Difference         & -0.031                                                   & -0.038                                                     & -0.026                                                          \\ \hline
 \end{tabular}
-\caption{Bootstrappped MPLE Results for the timep period when Earl Warren was chief justice.}
-\label{bootMPLE_vinson}
+\caption{Bootstrappped MPLE Results for the time period when Earl Warren was chief justice.}
+\label{bootMPLE_warren}
 \end{table}
 
 
-\begin{table}[]
+\begin{table}[H]
 \centering
 \begin{tabular}{|
 >{\columncolor[HTML]{C0C0C0}}l |l|l|l|}
 \hline
 {\color[HTML]{333333} } & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Estimate} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Lower Bound} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Upper Bound} \\ \hline
-Edges                   & -3.961                                                 & -4.036                                                     & -3.911                                                     \\ \hline
-Instar(2)               & 0.016                                                   & 0.014                                                      & 0.037                                                      \\ \hline
-Outstar(2)              & 0.004                                                   & 0.003                                                      & 0.006                                                      \\ \hline
-Mutual                  & 2.528                                                   & 1.193                                                 & 3.007                                                      \\ \hline
-Triangle                & 1.372                                                   & 1.248                                                      & 1.341                                                      \\ \hline
-MQ Score                & -0.084                                                   & -0.096                                                      & -0.054                                                      \\ \hline
-Same Issue Area         & 0.957                                                   & 0.917                                                      & 0.995                                                      \\ \hline
+Edges                   & -3.952                                                 & -4.017                                                     & -3.882                                                     \\ \hline
+Instar(2)               & 0.015                                                   & 0.013                                                      & 0.016                                                      \\ \hline
+Outstar(2)              & 0.004                                                   & 0.002                                                      & 0.006                                                      \\ \hline
+Mutual                  & 2.558                                                   & 1.425                                                 & 3.719                                                      \\ \hline
+Triangle                & 1.383                                                   & 1.333                                                      & 1.440                                                      \\ \hline
+MQ Score                & -0.084                                                   & -0.101                                                      & -0.059                                                      \\ \hline
+Same Issue Area         & 0.959                                                   & 0.911                                                      & 1.008                                                      \\ \hline
 Year Difference         & -0.017                                                   & -0.019                                                     & -0.015                                                          \\ \hline
 \end{tabular}
-\caption{Bootstrappped MPLE Results for the timep period when Warren E. Burger was chief justice.}
-\label{bootMPLE_vinson}
+\caption{Bootstrappped MPLE Results for the time period when Warren E. Burger was chief justice.}
+\label{bootMPLE_burger}
 \end{table}   
  
 
 
  
-\begin{table}[]
+\begin{table}[H]
 \centering
 \begin{tabular}{|
 >{\columncolor[HTML]{C0C0C0}}l |l|l|l|}
 \hline
 {\color[HTML]{333333} } & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Estimate} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Lower Bound} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Upper Bound} \\ \hline
-Edges                   & -3.618                                                 & -3.666                                                     & -3.539                                                     \\ \hline
-Instar(2)               & 0.015                                                   & 0.014                                                      & 0.016                                                      \\ \hline
-Outstar(2)              & 0.001                                                   & -0.002                                                      & 0.004                                                      \\ \hline
-Mutual                  & 9.667                                                   & 8.218                                                 & 11.253                                                      \\ \hline
-Triangle                & 1.546                                                   & 1.433                                                      & 1.551                                                      \\ \hline
-MQ Score                & -0.007                                                   & -0.023                                                      & 0.032                                                      \\ \hline
-Same Issue Area         & 0.852                                                   & 0.751                                                      & 0.846                                                      \\ \hline
+Edges                   & -3.614                                                 & -3.701                                                     & -3.525                                                     \\ \hline
+Instar(2)               & 0.015                                                   & 0.013                                                      & 0.016                                                      \\ \hline
+Outstar(2)              & 0.002                                                   & -0.002                                                      & 0.004                                                      \\ \hline
+Mutual                  & 9.635                                                  & 6.426                                                 & 10.834                                                      \\ \hline
+Triangle                & 1.551                                                   & 1.489                                                      & 1.620                                                      \\ \hline
+MQ Score                & -0.007                                                   & -0.039                                                      & 0.028                                                      \\ \hline
+Same Issue Area         & 0.855                                                   & 0.794                                                      & 0.916                                                      \\ \hline
 Year Difference         & -0.016                                                   & -0.018                                                     & -0.014                                                          \\ \hline
 \end{tabular}
-\caption{Bootstrappped MPLE Results for the timep period when William Rehnquist was chief justice.}
-\label{bootMPLE_vinson}
+\caption{Bootstrappped MPLE Results for the time period when William Rehnquist was chief justice.}
+\label{bootMPLE_rehnquist}
 \end{table}  
  
    
