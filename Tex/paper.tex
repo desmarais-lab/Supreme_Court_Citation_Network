@@ -66,11 +66,17 @@
 \end{abstract}
 
 
- \section*{Introduction}
+ \section{Introduction}
  
 Majority opinions written by the US Supreme Court exercise their authority and influence, in part, through their roles as precedents in future Supreme Court decisions and opinions [CITES]. Research on the nature of {\em Stare Decisis}---the Court's reliance on precedent---has been mixed, with some finding that past opinions influence and constrain future opinions [CITES], and others finding that, while referenced in opinions, past cases do not effect the Court's current behavior [CITES].  
+
+
+\section{Network Approaches to Studying Citations}
+
+\textbf{TED}, would you write a section that covers the ways in which network scholars have studied citations in the past, focusing on scientific papers, patents, and court cases? 
+
  
- \section*{The Exponential Random Configuration Model}
+ \section{The Exponential Random Configuration Model}
 Let $c(t)\in \{0,1\}^N$ be a vector indicating which Supreme Court case has been cited at time $t$, where $c_i(t)=1, i \in \{1, \dots , N\}$ indicates that the $i$th case has been cited at time $t$ and $c_i(t)=0$ indicates that the $i$th case has not been cited at time $t$. Furthermore, let
 $$\mathcal{C}_t(N)=\{c(t)\in \{0,1\}^N: c_i(t)\in \{0,1\} \}$$ 
 be the set of all possible citation combinations at time $t$. Note that the cardinality of $\mathcal{C}_t(N)$ increases exponentially for every newly added case, which results in $2^N$ elements.\\
@@ -122,7 +128,7 @@ In the equation above the following notations were used:
 \end{itemize}
 
 
-\section*{Estimation}
+\section{Estimation}
 
 % Pseudo Likelihood
 \subsection*{Maximum Pseudo-Likelihood Estimator}
@@ -234,7 +240,7 @@ c_{p}^{(k)}(t) &\text{if}~ p \neq i
 The first $B \ll L$ vectors are discarded as Burn-In.
 
 
- \section*{Results}
+ \section{Results}
   \subsection*{Descriptive Results}
 The supreme court citation network from $1937 - 2005$ consists of $8817$ cases which got voted at $2116$ different time points. The network has a total of $93,263$ ties, of which 452 are mutual. The number of triangles in the network is $211,855$. The in- and outdegree distribution is visualized in figures \ref{indegree_dist} and \ref{outdegree_dist}. The maximum indegree is $190$ and the maximum outdegree is $159$.
 
@@ -284,8 +290,22 @@ W Rehnquist**            & 1987 - 2001                                          
 \end{figure}  
   
 \newpage 
+
+
+
   
-\subsection*{Inferential Results}
+\subsection{Inferential Results}
+
+
+\textbf{Model updates}
+\begin{itemize}
+\item Add sender issue area and receiver issue area node covariates (i.e., nodeifactor and nodeofactor applied to issue area). 
+\item In the GLM, multiply each variable by the sender time covariate.
+\item Write the bootstrap coefficients to a file, send to Bruce so he can write up a code for summarizing the over-time trends in effects.
+\item Add a receiver variable (i.e., nodeicov) that equals the absolute difference between the maximum MQ score of a justice in the majority and a minimum MQ score of a justice in the majority.
+\item Add a receiver variable (nodeicov) equivalent to the number of justices in the majority
+ 
+\end{itemize}
 
 \begin{table}[H]
 \centering
