@@ -12,6 +12,7 @@
 \usepackage{aliascnt}
 \usepackage{lmodern}
 \usepackage{mdwlist}
+\usepackage{natbib}
 \usepackage{listings}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage[activate]{pdfcprot}
@@ -47,7 +48,7 @@
   
 \begin{document}
 
-\setcounter{section}{-1}
+
 
 \renewcommand{\refname}{Bibliography}
 
@@ -68,8 +69,7 @@
 
  \section{Introduction}
  
-Majority opinions written by the US Supreme Court exercise their authority and influence, in part, through their roles as precedents in future Supreme Court decisions and opinions [CITES]. Research on the nature of {\em Stare Decisis}---the Court's reliance on precedent---has been mixed, with some finding that past opinions influence and constrain future opinions [CITES], and others finding that, while referenced in opinions, past cases do not effect the Court's current behavior [CITES].  
-
+Majority opinions written by the United States Supreme Court exercise their authority and influence, in part, through their roles as precedents in future Supreme Court decisions and opinions. The findings regarding the extent and exact nature of the influences of precedent have been mixed, but the balance of the literature finds that past decisions exert some form of influence on the justices' decision making \citep{knight1996norm,gillman2001s,richards2002jurisprudential,hansford2006politics,bailey2008does,bailey2011constrained}. Despite a considerable body of research that focuses on the way in which relevant precedents shape decision making on the Court, relatively little work has focused on understanding which past opinions are cited by an opinion. Our focus in this paper is to provide what is, to our knowledge, the first comprehensive analysis of exactly which cases are cited by a case. We follow \citet{fowler2007network} and \citet{fowler2008authority}, and treat the citations between cases as forming a network. 
 
 \section{Network Approaches to Studying Citations}
 
@@ -181,7 +181,7 @@ This approximate can then be used to approximate the log likelihood function.\\[
 Next, we will discuss how a sufficient number of suitable drawings $c^{(1)}(t), \dots ,c^{(L)}(t)$ can be sampled from the distribution $\mathbb{P}_{\theta_0}$. \\
 For this purpose, the Markov Chain Monte Carlo (MCMC) methods can be used.
 \subsection*{Gibbs sampling for the ERCM}
-To be able to compute the approximate likelihood function one needs a sufficiently large number of random vectors from the distribution $\mathbb{P}_{\theta_0}$. Snijders \cite{Snijders.2002b} introduces an approach to sample random networks for the ERGM framework by using \textit{MCMC methods}. We adapt this approach for sampling appropriate binary vectors for the ERCM. \\[0.4cm]
+To be able to compute the approximate likelihood function one needs a sufficiently large number of random vectors from the distribution $\mathbb{P}_{\theta_0}$. Snijders \citet{Snijders.2002b} introduces an approach to sample random networks for the ERGM framework by using \textit{MCMC methods}. We adapt this approach for sampling appropriate binary vectors for the ERCM. \\[0.4cm]
 \textit{Gibbs sampling}\\
 %Choose any vector $c^{(0)}(t) \in \mathcal{C}(N)$ (e.g. observed vector). Afterwards, the length $L$ of the respective sub-sequence is determined. For $k \in \{0,...,L-1\}$ execute the following steps recursively (here the vector in its $k$th iteration is denoted as $c^{(k)}(t)$):\\
 
@@ -415,7 +415,7 @@ Year Difference         & -0.016                                                
 
 
 \bibliography{bib} 
-\bibliographystyle{plain}
+\bibliographystyle{apsr}
 
 
 \end{document}

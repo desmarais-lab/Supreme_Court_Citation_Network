@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: paper.aux
+The style file: apsr.bst
+Database file #1: bib.bib
+Warning--I didn't find a database entry for "Snijders.2002b"
+You've used 8 entries,
+            2874 wiz_defined-function locations,
+            693 strings with 6021 characters,
+and the built_in function-call counts, 35878 in all, are:
+= -- 5895
+> -- 426
+< -- 0
++ -- 2782
+- -- 150
+* -- 3067
+:= -- 7157
+add.period$ -- 32
+call.type$ -- 8
+change.case$ -- 104
+chr.to.int$ -- 8
+cite$ -- 8
+duplicate$ -- 132
+empty$ -- 283
+format.name$ -- 155
+if$ -- 6462
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 10
+newline$ -- 37
+num.names$ -- 93
+pop$ -- 37
+preamble$ -- 1
+purify$ -- 120
+quote$ -- 0
+skip$ -- 113
+stack$ -- 0
+substring$ -- 8326
+swap$ -- 24
+text.length$ -- 112
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 28
+warning$ -- 0
+while$ -- 193
+width$ -- 0
+write$ -- 110
+(There was 1 warning)
