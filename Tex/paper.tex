@@ -69,12 +69,39 @@
 
  \section{Introduction}
  
-Majority opinions written by the United States Supreme Court exercise their authority and influence, in part, through their roles as precedents in future Supreme Court decisions and opinions. The findings regarding the extent and exact nature of the influences of precedent have been mixed, but the balance of the literature finds that past decisions exert some form of influence on the justices' decision making \citep{knight1996norm,gillman2001s,richards2002jurisprudential,hansford2006politics,bailey2008does,bailey2011constrained}. Despite a considerable body of research that focuses on the way in which relevant precedents shape decision making on the Court, relatively little work has focused on understanding which past opinions are cited by an opinion. Our focus in this paper is to provide what is, to our knowledge, the first comprehensive analysis of exactly which cases are cited by a case. We follow \citet{fowler2007network} and \citet{fowler2008authority}, and treat the citations between cases as forming a network. 
+ 
+ 
+ 
+Majority opinions written by the United States Supreme Court exercise their authority and influence, in part, through their roles as precedents in future Supreme Court decisions and opinions. The findings regarding the extent and exact nature of the influences of precedent have been mixed, but the balance of the literature finds that past decisions exert some form of influence on the justices' decision making \citep{knight1996norm,gillman2001s,richards2002jurisprudential,hansford2006politics,bailey2008does,bailey2011constrained}. Despite a considerable body of research that focuses on the way in which relevant precedents shape decision making on the Court, relatively little work has focused on understanding which past opinions are cited by an opinion. Our focus in this paper is to provide what is, to our knowledge, the first comprehensive analysis of exactly which cases are cited by a case. We follow an emerging body of work on legal citations, and treat the system of citations as a network \citep[e.g., ][]{fowler2007network, fowler2008authority,bommarito2009law,lupu2012precedent,pelc2014politics}. 
+
+
+
+\section{Prior work on court citations}
+
+Measures of citations have been used in several recent studies of courts...\citet{hinkle2016transmission} study the citations between US state supreme courts.
 
 \section{Network Approaches to Studying Citations}
 
 \textbf{TED}, would you write a section that covers the ways in which network scholars have studied citations in the past, focusing on scientific papers, patents, and court cases? 
 
+
+\section{Complex Dependence in Court Citations}
+
+\textbf{Transitivity:} Discussing past edges in the citation network leads to transitivity. If i cites j, it is also likely to discuss the cases on which j is based.
+
+The statute thus addresses the risk of a morally unjustifiable death sentence, not by minimizing it as precedent unmistakably requires, but by guaranteeing that in equipoise cases the risk will be realized, by ?placing a ?thumb [on] death?s side of the scale,? ? Sochor v. Florida, 504 U. S. 527, 532 (1992) (quoting Stringer v. Black, 503 U. S. 222, 232 (1992); alteration in original).
+
+https://supreme.justia.com/cases/federal/us/548/163/dissent2.html
+
+
+``Never before the decision in Union Gas had we suggested that the bounds of Article III could be expanded by Congress operating pursuant to any constitutional provision other than the Fourteenth Amendment. Indeed, it had seemed fundamental that Congress could not expand the jurisdiction of the federal courts beyond the bounds of Article III. Marbury v. Madison, 1 Cranch 137 (1803). The plurality's citation of prior decisions for support was based upon what we believe to be a misreading of precedent. See Union Gas, 491 U. S., at 40-41 (SCALIA, J., dissenting). The plurality claimed support for its decision from a case holding the unremarkable, and completely unrelated, proposition that the States may waive their sovereign immunity, see id., at 14-15 (citing Parden v. Terminal Railway of Ala. Docks Dept., 377 U. S. 184 (1964)), and cited as precedent propositions that had been merely assumed for the sake of argument in earlier cases, see 491 U. S., at 15 (citing Welch v. Texas Dept. of Highways and Public Transp., 483 U. S., at 475-476, and n. 5, and County of Oneida v. Oneida Indian Nation of N. Y., 470 U. S., at 252).''
+
+https://supreme.justia.com/cases/federal/us/517/44/case.html
+
+
+Mutuality:
+
+\textbf{Also popularity} If j served as precedent for i, j is authoritative regarding the rule of i, and should also be cited.
  
  \section{The Exponential Random Configuration Model}
 Let $c(t)\in \{0,1\}^N$ be a vector indicating which Supreme Court case has been cited at time $t$, where $c_i(t)=1, i \in \{1, \dots , N\}$ indicates that the $i$th case has been cited at time $t$ and $c_i(t)=0$ indicates that the $i$th case has not been cited at time $t$. Furthermore, let
