@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 DEC 2017 15:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 DEC 2017 20:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1709,23 +1709,127 @@ LaTeX Font Info:    Try loading font information for T1+lmtt on input line 110.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
+
+./paper.tex:120: Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 ... nothing in the record to indicate that §
+                                                   28.04 will have any diffe...
+
+? 
+
+./paper.tex:120: Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 ...ant difference between their claim that §
+                                                   28.04 is invalid on overb...
+
+? 
+
+./paper.tex:120: Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 ...o entertain an overbreadth challenge to §
+                                                   28.04. Pp. 466 U. S. 796-...
+
+? 
+
+./paper.tex:124: Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.124 ...he statutory provisions now codified at §
+                                                   1985 were originally enac...
+
+? 
+
+./paper.tex:124: Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.124 ...ed at § 1985 were originally enacted as §
+                                                   2 of the Civil Rights Act...
+
+? 
+
+./paper.tex:124: Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.124 ...Government (including the first part of §
+                                                   1985(2)) -- unlike those ...
+
+? 
+
+./paper.tex:124: Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.124 ...e concern (including the second part of §
+                                                   1985(2) and the part of §...
+
+? 
+
+./paper.tex:124: Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.124 ...econd part of § 1985(2) and the part of §
+                                                   1985(3) involved in Griff...
+
+? 
+
+./paper.tex:124: Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.124 ...cable here, and, given the structure of §
+                                                   2 of the 1871 Act, it is ...
+
+? 
+
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [3]
 
-LaTeX Warning: Command \c invalid in math mode on input line 127.
+LaTeX Warning: Command \c invalid in math mode on input line 139.
 
 
-LaTeX Warning: Reference `ercm' on page 4 undefined on input line 127.
+LaTeX Warning: Reference `ercm' on page 4 undefined on input line 139.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--128
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--141
+Underfull \hbox (badness 10000) in paragraph at lines 138--140
 
  []
 
@@ -1734,35 +1838,43 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [4]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 163.
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
 
- (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmr.fd
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 163.
-
-
-LaTeX Warning: Reference `Logit' on page 5 undefined on input line 176.
+ []
 
 
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [5]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 175.
 
-LaTeX Warning: Reference `ercm' on page 6 undefined on input line 188.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 175.
 
 
-LaTeX Warning: Reference `loglik' on page 6 undefined on input line 195.
+LaTeX Warning: Reference `Logit' on page 6 undefined on input line 188.
 
 
-Overfull \hbox (19.03404pt too wide) in alignment at lines 202--209
+LaTeX Warning: Reference `ercm' on page 6 undefined on input line 200.
+
+
+LaTeX Warning: Reference `loglik' on page 6 undefined on input line 207.
+
+
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[6]
+Overfull \hbox (19.03404pt too wide) in alignment at lines 214--221
  [][][] []
  []
 
 
-Overfull \hbox (41.39403pt too wide) in paragraph at lines 209--213
+Overfull \hbox (41.39403pt too wide) in paragraph at lines 221--225
 \T1/lmr/m/n/10.95 This equa-tion of-fers the fol-low-ing pos-si-bil-ity: If one
  draws $\OML/lmm/m/it/10.95 L$ \T1/lmr/m/n/10.95 ran-dom vec-tors $\OML/lmm/m/i
 t/10.95 c[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 t\OT1/lmr/m/n/10.95 )\OML/lm
@@ -1771,16 +1883,11 @@ m/m/it/10.95 ; [] ; c[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 t\OT1/lmr/m/n/10
  []
 
 
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[6]
-
 Package natbib Warning: Citation `Snijders.2002b' on page 7 undefined on input 
-line 223.
+line 235.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--226
+Underfull \hbox (badness 10000) in paragraph at lines 235--238
 
  []
 
@@ -1788,54 +1895,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--226
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[7pdfTeX warning (ext4): destination with the same identifier (name{algocf.1}) 
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 275--277
+
+ []
+
+
+LaTeX Warning: Reference `Logit' on page 8 undefined on input line 278.
+
+
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[8pdfTeX warning (ext4): destination with the same identifier (name{algocf.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.262 \subsection
-                 *{Metropolis Hastings for the ERCM}\label{networksimulation}]
-Underfull \hbox (badness 10000) in paragraph at lines 263--265
+l.287 \end{cases}$$
+                   ]
 
- []
-
-
-LaTeX Warning: Reference `Logit' on page 8 undefined on input line 266.
-
-
-LaTeX Warning: Reference `indegree_dist' on page 8 undefined on input line 284.
+LaTeX Warning: Reference `indegree_dist' on page 9 undefined on input line 296.
 
 
 
-LaTeX Warning: Reference `outdegree_dist' on page 8 undefined on input line 284
+LaTeX Warning: Reference `outdegree_dist' on page 9 undefined on input line 296
 .
 
 Class scrartcl Info: Workaround for not recommended usage of \\ or
-(scrartcl)           \newlinein caption text  on input line 299.
+(scrartcl)           \newlinein caption text  on input line 311.
 Class scrartcl Info: Workaround for not recommended usage of \\ or
-(scrartcl)           \newlinein caption text  on input line 299.
-
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[8] <degree_distribution.pdf, id=82, 844.15375pt x 597.23125pt>
+(scrartcl)           \newlinein caption text  on input line 311.
+<degree_distribution.pdf, id=79, 844.15375pt x 597.23125pt>
 File: degree_distribution.pdf Graphic file (type pdf)
 
 <use degree_distribution.pdf>
-Package pdftex.def Info: degree_distribution.pdf used on input line 304.
+Package pdftex.def Info: degree_distribution.pdf used on input line 316.
 (pdftex.def)             Requested size: 422.07584pt x 298.61488pt.
 
-Overfull \hbox (23.73726pt too wide) in paragraph at lines 304--305
-[][]
- []
-
-<number_cases.pdf, id=83, 844.15375pt x 597.23125pt>
-File: number_cases.pdf Graphic file (type pdf)
- <use number_cases.pdf>
-Package pdftex.def Info: number_cases.pdf used on input line 311.
-(pdftex.def)             Requested size: 422.07584pt x 298.61488pt.
-
-Overfull \hbox (23.73726pt too wide) in paragraph at lines 311--312
+Overfull \hbox (23.73726pt too wide) in paragraph at lines 316--317
 [][]
  []
 
@@ -1848,22 +1946,37 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.316 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-1}) has been already used, duplicate ignored
+l.321 
+      ] <number_cases.pdf, id=88, 844.15375pt x 597.23125pt>
+File: number_cases.pdf Graphic file (type pdf)
+
+<use number_cases.pdf>
+Package pdftex.def Info: number_cases.pdf used on input line 323.
+(pdftex.def)             Requested size: 422.07584pt x 298.61488pt.
+
+Overfull \hbox (23.73726pt too wide) in paragraph at lines 323--324
+[][]
+ []
+
+
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[10pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.316 
+l.328 
        <./degree_distribution.pdf>]
-<number_citations.pdf, id=106, 844.15375pt x 597.23125pt>
+<number_citations.pdf, id=110, 844.15375pt x 597.23125pt>
 File: number_citations.pdf Graphic file (type pdf)
 
 <use number_citations.pdf>
-Package pdftex.def Info: number_citations.pdf used on input line 318.
+Package pdftex.def Info: number_citations.pdf used on input line 330.
 (pdftex.def)             Requested size: 422.07584pt x 298.61488pt.
 
-Overfull \hbox (23.73726pt too wide) in paragraph at lines 318--319
+Overfull \hbox (23.73726pt too wide) in paragraph at lines 330--331
 [][]
  []
 
@@ -1871,21 +1984,21 @@ Overfull \hbox (23.73726pt too wide) in paragraph at lines 318--319
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[10pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+[11pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.323 
+l.335 
        <./number_cases.pdf>]
-<number_votes_supporting.pdf, id=128, 844.15375pt x 597.23125pt>
+<number_votes_supporting.pdf, id=132, 844.15375pt x 597.23125pt>
 File: number_votes_supporting.pdf Graphic file (type pdf)
 
 <use number_votes_supporting.pdf>
-Package pdftex.def Info: number_votes_supporting.pdf used on input line 325.
+Package pdftex.def Info: number_votes_supporting.pdf used on input line 337.
 (pdftex.def)             Requested size: 422.07584pt x 298.61488pt.
 
-Overfull \hbox (23.73726pt too wide) in paragraph at lines 325--326
+Overfull \hbox (23.73726pt too wide) in paragraph at lines 337--338
 [][]
  []
 
@@ -1893,60 +2006,60 @@ Overfull \hbox (23.73726pt too wide) in paragraph at lines 325--326
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[11pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
+[12pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.330 
+l.342 
        <./number_citations.pdf>]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[12pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+[13pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.331 \newpage
+l.343 \newpage
                <./number_votes_supporting.pdf>]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[13pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
+[14pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.409 
+l.421 
       pdfTeX warning (ext4): destination with the same identifier (name{table.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.409 
+l.421 
       ]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[14pdfTeX warning (ext4): destination with the same identifier (name{table.4}) 
+[15pdfTeX warning (ext4): destination with the same identifier (name{table.4}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.453 \newpage
+l.465 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {table.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.453 \newpage
+l.465 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {table.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.453 \newpage
+l.465 \newpage
               ] (./paper.bbl)
 
 Package natbib Warning: There were undefined citations.
@@ -1955,21 +2068,21 @@ Package natbib Warning: There were undefined citations.
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[15]
+[16]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 460.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 460.
+[17]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 472.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 472.
  (./paper.aux
 
 Package natbib Warning: Citation(s) may have changed.
 (natbib)                Rerun to get citations correct.
 
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 460.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 460.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 472.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 472.
 
 
 Package rerunfilecheck Warning: File `paper.out' has changed.
@@ -1985,20 +2098,20 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 460.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 472.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 25178 strings out of 492995
- 439863 string characters out of 6132704
+ 25179 strings out of 492995
+ 439870 string characters out of 6132704
  664391 words of memory out of 5000000
  28139 multiletter control sequences out of 15000+600000
  123731 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,14n,60p,8843b,10673s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,14n,60p,8843b,10740s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.en
 c}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
 texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/20
@@ -2018,10 +2131,10 @@ al/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/
 2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-
 dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2017/texmf-dist/fonts
 /type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (16 pages, 404058 bytes).
+Output written on paper.pdf (17 pages, 406547 bytes).
 PDF statistics:
- 281 PDF objects out of 1000 (max. 8388607)
- 224 compressed objects within 3 object streams
- 64 named destinations out of 1000 (max. 500000)
+ 285 PDF objects out of 1000 (max. 8388607)
+ 227 compressed objects within 3 object streams
+ 65 named destinations out of 1000 (max. 500000)
  12321 words of extra memory for PDF output out of 14400 (max. 10000000)
 
