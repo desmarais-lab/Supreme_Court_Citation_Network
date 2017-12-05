@@ -1,0 +1,90 @@
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=24:00:00
+#PBS -m abe
+#PBS -M schmid@psu.edu
+#PBS -l mem=128GB
+#PBS -j oe
+
+
+cd /storage/work/cxs5700/SCC_paper/MPLE
+
+echo " "
+echo " "
+echo "Job started on `hostname` at `date`"
+
+module load R/3.2.0
+
+R --vanilla <<STOP > scc_mple_canned.out
+
+# get data
+load(file="ERCM_MPLE_canned.RData")
+
+install.packages("statnet", Sys.getenv("R_LIBS_USER"), repos = "http://cran.case.edu" )
+library(statnet)
+
+
+
+# id = time.periods
+# number of time periods
+time.periods <- 20
+
+# number of cases
+cases <- max(which(time.periods==cases.total))
+
+# simple assignment of time periods to cases
+case.time <- cases.total[1:cases]
+
+
+# going to need a sender time matrix covariate
+sender.time <- matrix(case.time,length(case.time),length(case.time),byrow=F)
+# a receiver time covariate
+receiver.time <- matrix(case.time,length(case.time),length(case.time),byrow=T)
+
+# Store the data for MPLE in a year-by-year list
+mple.data <- list()
+
+# loop over time periods to construct data for mple
+for(t in 1:time.periods){ # time.periods
+  # extract the network up to time t
+  net.t <- network(adjacency.matrix[which(case.time <= t),which(case.time <= t)])
+  # subset MQ matrix
+  mq.t <- mq.matrix[which(case.time <= t),which(case.time <= t)]
+  # subset same issue matrix
+  same.issue.area.t <- same.issue.area[which(case.time <= t),which(case.time <= t)]
+  # subset year diff matrix
+  year.diff.t <- year.diff.matrix[which(case.time <= t),which(case.time <= t)]
+  # subset sender time matrix
+  sender.time.t <- sender.time[which(case.time <= t),which(case.time <= t)]
+  # subset receiver time matrix
+  receiver.time.t <- receiver.time[which(case.time <= t),which(case.time <= t)]
+  # use ergmMPLE to create data for time t
+  data.t <- ergmMPLE(net.t~edges+istar(2)+mutual+ostar(2)+triangle+edgecov(mq.t)+edgecov(same.issue.area.t)+edgecov(year.diff.t)+edgecov(sender.time.t)+edgecov(receiver.time.t))
+  # combine into a matrix
+  data.t <- cbind(data.t[[1]],data.t[[2]])
+  # add dependent variable label
+  colnames(data.t)[1] <- "edgeij"
+  # subset the data for this year to include nodes with sender time t
+  data.t <- data.t[which(data.t[,"edgecov.sender.time.t"] >= data.t[,"edgecov.receiver.time.t"] & data.t[,"edgecov.sender.time.t"] == t),]
+  # store in the list
+  mple.data[[t]] <- data.t
+  print(t)
+}
+
+
+
+# collapse list into a data frame
+mple.data <- data.frame(do.call('rbind',mple.data))
+
+write.csv(mple.data, file = "mpledata.csv")
+
+# estimate mple
+mple.est <- glm(edgeij ~ istar2+ostar2+mutual+triangle+ edgecov.mq.t+ edgecov.same.issue.area.t+ edgecov.year.diff.t,family=binomial,data=mple.data)
+summary(mple.est)
+
+
+
+
+STOP
+echo " "
+echo "Job Ended at `date`"
+echo " "
