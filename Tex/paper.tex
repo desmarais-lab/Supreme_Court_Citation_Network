@@ -59,7 +59,7 @@
 
 \thispagestyle{plain}
 
-\title{\Large Modeling Complexity in the \\ Supreme Court Citation Network}
+\title{\Large Analyzing the Supreme Court Citation Network}
 \maketitle
 
 \begin{abstract}
@@ -359,157 +359,66 @@ W Rehnquist**            & 1987 - 2001                                          
 \end{itemize}
 
 
-
 \begin{table}[H]
+\footnotesize
 \centering
 \begin{tabular}{|
->{\columncolor[HTML]{EFEFEF}}l |l|l|l|l|}
+>{\columncolor[HTML]{EFEFEF}}l |l|l|l|l|} 
 \hline
-                                       & \cellcolor[HTML]{EFEFEF}Estimate & \cellcolor[HTML]{EFEFEF}Lower Bound & \cellcolor[HTML]{EFEFEF}Upper Bound & \cellcolor[HTML]{EFEFEF}Significance \\ \hline
-Edges                                  & -5.151                           & -5.269                              & -5.038                              & *                                    \\ \hline
-Instar(2)                              & 0.00026                          & 0.00023                             & 0.00030                             & *                                    \\ \hline
-Outstar(2)                             & 0.00010                          & 0.00004                             & 0.00018                             & *                                    \\ \hline
-Mutual                                 & 0.190                            & 0.139                               & 0.260                               & *                                    \\ \hline
-Triangle                               & 0.039                            & 0.038                               & 0.041                               & *                                    \\ \hline
-Martin Quinn Score                     & -0.0017                          & -0.0021                             & -0.0010                             & *                                    \\ \hline
-Same Issue Area Homophily              & 0.027                            & 0.026                               & 0.028                               & *                                    \\ \hline
-Year Difference                        & -0.0005                          & -0.0006                             & -0.0004                             & *                                    \\ \hline
-$(\text{Year Differnce})^2$            & 7.498e-08                        & 4.629e-08                           & 1.057e-07                           & *                                    \\ \hline
-{\small Receiver Abs Diff MQ Score in Majority} & 0.002                            & -0.005                              & 0.009                               &                                      \\ \hline
-{\small Receiver Number Justices in Majority}   & -0.012                           & -0.022                              & -0.0002                             & *                                    \\ \hline
-Receiver  Sender Year                  & 0.0005                           & 0.0004                              & 0.0006                              & *                                    \\ \hline
-Sender Same Issue Area 2               & 0.155                            & 0.091                               & 0.214                               & *                                    \\ \hline
-Sender Same Issue Area 3               & -0.095                           & -0.189                              & -0.008                              & *                                    \\ \hline
-Sender Same Issue Area 4               & 0.401                            & 0.324                               & 0.481                               & *                                    \\ \hline
-Sender Same Issue Area 5               & 0.262                            & 0.089                               & 0.450                               & *                                    \\ \hline
-Sender Same Issue Area 6               & 0.350                            & 0.222                               & 0.472                               & *                                    \\ \hline
-Sender Same Issue Area 7               & 0.438                            & 0.361                               & 0.520                               & *                                    \\ \hline
-Sender Same Issue Area 8               & 0.064                            & 0.002                               & 0.128                               & *                                    \\ \hline
-Sender Same Issue Area 9               & 0.181                            & 0.123                               & 0.244                               & *                                    \\ \hline
-Sender Same Issue Area 10              & 0.305                            & 0.224                               & 0.380                               & *                                    \\ \hline
-Sender Same Issue Area 11              & -0.187                           & -0.371                              & -0.003                              & *                                    \\ \hline
-Sender Same Issue Area 12              & -0.244                           & -0.348                              & -0.149                              & *                                    \\ \hline
-Sender Same Issue Area 13              & -0.022                           & -0.270                              & 0.202                               &                                      \\ \hline
-Sender Same Issue Area 14              & -0.418                           & -0.613                              & -0.269                              & *                                    \\ \hline
-Receiver Same Issue Area 2             & 0.204                            & 0.126                               & 0.278                               & *                                    \\ \hline
-Receiver Same Issue Area 3             & 0.077                            & -0.030                              & 0.183                               &                                      \\ \hline
-Receiver Same Issue Area 4             & 0.459                            & 0.352                               & 0.573                               & *                                    \\ \hline
-Receiver Same Issue Area 5             & 0.320                            & 0.094                               & 0.529                               & *                                    \\ \hline
-Receiver Same Issue Area 6             & 0.411                            & 0.194                               & 0.615                               & *                                    \\ \hline
-Receiver Same Issue Area 7             & 0.391                            & 0.312                               & 0.480                               & *                                    \\ \hline
-Receiver Same Issue Area 8             & 0.210                            & 0.146                               & 0.274                               & *                                    \\ \hline
-Receiver Same Issue Area 9             & 0.230                            & 0.161                               & 0.315                               & *                                    \\ \hline
-Receiver Same Issue Area 10            & 0.495                            & 0.393                               & 0.569                               & *                                    \\ \hline
-Receiver Same Issue Area 11            & 0.196                            & -0.033                              & 0.389                               &                                      \\ \hline
-Receiver Same Issue Area 12            & 0.177                            & 0.026                               & 0.348                               & *                                    \\ \hline
-Receiver Same Issue Area 13            & 0.896                            & 0.555                               & 1.194                               & *                                    \\ \hline
-Receiver Same Issue Area 14            & -0.137                           & -0.645                              & 0.233                               &                                      \\ \hline
+                                                   & \cellcolor[HTML]{EFEFEF}Estimate & \cellcolor[HTML]{EFEFEF}Lower Bound & \cellcolor[HTML]{EFEFEF}Upper Bound & \cellcolor[HTML]{EFEFEF}Significance \\
+                                                    \hline
+Edges                                              & -5.533                           & -5.733                              & -5.388                              & *                                    \\ \hline
+Instar(2)                                          & 0.031                            & 0.027                               & 0.036                               & *                                    \\ \hline
+Outstar(2)                                         & 0.022                            & 0.020                               & 0.032                               & *                                    \\ \hline
+Mutual                                             & 3.316                            & 2.622                               & 3.983                               & *                                    \\ \hline
+Triangle                                           & 1.490                            & 1.410                               & 1.560                               & *                                    \\ \hline
+Martin Quinn Score                                 & 0.080                            & 0.022                               & 0.126                               & *                                    \\ \hline
+Same Issue Area Homophily                          & 1.378                            & 1.313                               & 1.451                               & *                                    \\ \hline
+Year Difference                                    & -0.077                           & -0.090                              & -0.064                              & *                                    \\ \hline
+$(\text{Year Differnce})^2$                        & 0.0029                           & 0.0025                              & 0.0032                              & *                                    \\ \hline
+Receiver Abs Diff MQ Score in Majority             & -0.030                           & -0.048                              & -0.014                              & *                                    \\ \hline
+Receiver Number Justices in Majority               & -0.115                           & -0.135                              & -0.089                              & *                                    \\ \hline
+Receiver  Sender Year                              & 0.0007                           & 0.0006                              & 0.0009                              & *                                    \\ \hline
+Sender Same Issue Area 2                           & 0.162                            & 0.105                               & 0.217                               & *                                    \\ \hline
+Sender Same Issue Area 3                           & -0.317                           & -0.403                              & -0.236                              & *                                    \\ \hline
+Sender Same Issue Area 4                           & 0.497                            & 0.426                               & 0.570                               & *                                    \\ \hline
+Sender Same Issue Area 5                           & 0.332                            & 0.174                               & 0.495                               & *                                    \\ \hline
+Sender Same Issue Area 6                           & 0.527                            & 0.402                               & 0.635                               & *                                    \\ \hline
+Sender Same Issue Area 7                           & 0.327                            & 0.251                               & 0.394                               & *                                    \\ \hline
+Sender Same Issue Area 8                           & 0.076                            & 0.021                               & 0.129                               & *                                    \\ \hline
+Sender Same Issue Area 9                           & 0.261                            & 0.209                               & 0.315                               & *                                    \\ \hline
+Sender Same Issue Area 10                          & 0.369                            & 0.301                               & 0.432                               & *                                    \\ \hline
+Sender Same Issue Area 11                          & -0.046                           & -0.233                              & 0.151                               &                                      \\ \hline
+Sender Same Issue Area 12                          & 0.0073                           & -0.075                              & 0.089                               &                                      \\ \hline
+Sender Same Issue Area 13                          & 0.381                            & 0.162                               & 0.564                               & *                                    \\ \hline
+Sender Same Issue Area 14                          & 0.151                            & -0.019                              & 0.300                               &                                      \\ \hline
+Receiver Same Issue Area 2                         & 0.231                            & 0.166                               & 0.300                               & *                                    \\ \hline
+Receiver Same Issue Area 3                         & -0.101                           & -0.209                              & -0.006                              & *                                    \\ \hline
+Receiver Same Issue Area 4                         & 0.516                            & 0.425                               & 0.612                               & *                                    \\ \hline
+Receiver Same Issue Area 5                         & 0.351                            & 0.183                               & 0.534                               & *                                    \\ \hline
+Receiver Same Issue Area 6                         & 0.461                            & 0.284                               & 0.628                               & *                                    \\ \hline
+Receiver Same Issue Area 7                         & 0.361                            & 0.281                               & 0.437                               & *                                    \\ \hline
+Receiver Same Issue Area 8                         & 0.153                            & 0.097                               & 0.221                               & *                                    \\ \hline
+Receiver Same Issue Area 9                         & 0.279                            & 0.221                               & 0.346                               & *                                    \\ \hline
+Receiver Same Issue Area 10                        & 0.492                            & 0.413                               & 0.570                               & *                                    \\ \hline
+Receiver Same Issue Area 11                        & 0.247                            & 0.056                               & 0.411                               & *                                    \\ \hline
+Receiver Same Issue Area 12                        & 0.339                            & 0.246                               & 0.430                               & *                                    \\ \hline
+Receiver Same Issue Area 13                        & 1.060                            & 0.845                               & 1.239                               & *                                    \\ \hline
+Receiver Same Issue Area 14                        & 0.557                            & 0.255                               & 0.793                               & *                                    \\ \hline
+Instar(2) $\times$ Sender Year                     & -0.00025                         & -0.00034                            & -0.00017                            & *                                    \\ \hline
+Outstar(2) $\times$ Sender Year                    & -0.00036                         & -0.00056                            & -0.00028                            & *                                    \\ \hline
+Mutual $\times$ Sender Year                        & -0.010                           & -0.043                              & 0.029                               &                                      \\ \hline
+Triangle $\times$ Sender Year                      & -0.0004                          & -0.0021                             & 0.0016                              &                                      \\ \hline
+Martin Quinn Score $\times$ Sender Year            & -0.0025                          & -0.0035                             & -0.0013                             & *                                    \\ \hline
+Same Issue Area $\times$ Sender Year               & -0.0058                          & -0.0076                             & -0.0043                             & *                                    \\ \hline
+Year Difference $\times$ Sender Year               & 0.0004                           & 0.0002                              & 0.0007                              & *                                    \\ \hline
+$\text{Year Difference}^2 \times$ Sender Year      & -0.000037                        & -0.000044                           & -0.000030                           & *                                    \\ \hline
+MQ Score in Majority $\times$ Sender Year & 0.0013                           & 0.0009                              & 0.0017                              & *                                    \\ \hline
+Justices in Majority $\times$ Sender Year   & 0.0029                           & 0.0023                              & 0.0035                              & *                                    \\ \hline
 \end{tabular}
-\caption{Bootstrapped MPLE Results for the time period 1937-2001}
-\label{bootMPLE_total}
+\caption{Bootstrapped MPLE Results for the time period $1937-2001$. A '*' indicates that the 2.5th and 97.5th quantile of the variable does not include '0' and as a result is statistically significant.}
+\label{my-label}
 \end{table}
-
-
-\begin{table}[H]
-\centering
-\begin{tabular}{|
->{\columncolor[HTML]{EFEFEF}}l |l|l|l|l|}
-\hline
-                                            & \cellcolor[HTML]{EFEFEF}Estimate & \cellcolor[HTML]{EFEFEF}Lower Bound & \cellcolor[HTML]{EFEFEF}Upper Bound & \cellcolor[HTML]{EFEFEF}Significance \\ \hline
-Edges                                       & -4.524                           & -4.736                              & -4.331                              & *                                    \\ \hline
-Instar(2)                                   & 0.00041                          & 0.00038                             & 0.00045                             & *                                    \\ \hline
-Outstar(2)                                  & 0.00012                          & 0.00007                             & 0.00017                             & *                                    \\ \hline
-Mutual                                      & 0.060                            & 0.034                               & 0.089                               & *                                    \\ \hline
-Triangle                                    & 0.033                            & 0.032                               & 0.035                               & *                                    \\ \hline
-Martin Quinn Score                          & -0.0001                          & -0.0007                             & 0.0006                              &                                      \\ \hline
-Same Issue Area Homophily                   & 0.025                            & 0.024                               & 0.026                               & *                                    \\ \hline
-Year Difference                             & -0.001                           & -0.0012                             & -0.0009                             & *                                    \\ \hline
-$(\text{Year Differnce})^2$                 & 4.108e-07                        & 3.413e-07                           & 4.909e-07                           & *                                    \\ \hline
-{\small Receiver Abs Diff MQ Score in Majority} & 0.036                            & 0.027                               & 0.047                               & *                                    \\ \hline
-{\small Receiver Number Justices in Majority}        & -0.004                           & -0.018                              & 0.011                               &                                      \\ \hline
-Receiver  Sender Year                       & -0.040                           & -0.0002                             & 0.0001                              &                                      \\ \hline
-Sender Same Issue Area 2                    & 0.172                            & 0.098                               & 0.249                               & *                                    \\ \hline
-Sender Same Issue Area 3                    & -0.187                           & -0.301                              & -0.067                              & *                                    \\ \hline
-Sender Same Issue Area 4                    & 0.535                            & 0.424                               & 0.625                               & *                                    \\ \hline
-Sender Same Issue Area 5                    & 0.662                            & 0.439                               & 0.860                               & *                                    \\ \hline
-Sender Same Issue Area 6                    & 0.656                            & 0.468                               & 0.831                               & *                                    \\ \hline
-Sender Same Issue Area 7                    & 0.478                            & 0.353                               & 0.598                               & *                                    \\ \hline
-Sender Same Issue Area 8                    & 0.255                            & 0.176                               & 0.336                               & *                                    \\ \hline
-Sender Same Issue Area 9                    & 0.385                            & 0.301                               & 0.469                               & *                                    \\ \hline
-Sender Same Issue Area 10                   & 0.431                            & 0.295                               & 0.548                               & *                                    \\ \hline
-Sender Same Issue Area 11                   & 0.165                            & -0.204                              & 0.444                               &                                      \\ \hline
-Sender Same Issue Area 12                   & 0.168                            & 0.016                               & 0.302                               & *                                    \\ \hline
-Sender Same Issue Area 13                   & 0.694                            & 0.162                               & 1.102                               & *                                    \\ \hline
-Sender Same Issue Area 14                   & -0.054                           & -0.525                              & 0.325                               &                                      \\ \hline
-Receiver Same Issue Area 2                  & 0.212                            & 0.122                               & 0.311                               & *                                    \\ \hline
-Receiver Same Issue Area 3                  & -0.140                           & -0.291                              & 0.017                               &                                      \\ \hline
-Receiver Same Issue Area 4                  & 0.538                            & 0.375                               & 0.699                               & *                                    \\ \hline
-Receiver Same Issue Area 5                  & 0.426                            & 0.189                               & 0.653                               & *                                    \\ \hline
-Receiver Same Issue Area 6                  & 0.512                            & 0.197                               & 0.777                               & *                                    \\ \hline
-Receiver Same Issue Area 7                  & 0.510                            & 0.385                               & 0.649                               & *                                    \\ \hline
-Receiver Same Issue Area 8                  & 0.372                            & 0.283                               & 0.468                               & *                                    \\ \hline
-Receiver Same Issue Area 9                  & 0.243                            & 0.134                               & 0.347                               & *                                    \\ \hline
-Receiver Same Issue Area 10                 & 0.555                            & 0.388                               & 0.709                               & *                                    \\ \hline
-Receiver Same Issue Area 11                 & -0.318                           & -0.847                              & 0.094                               &                                      \\ \hline
-Receiver Same Issue Area 12                 & 0.626                            & 0.478                               & 0.798                               & *                                    \\ \hline
-Receiver Same Issue Area 13                 & 1.342                            & 0.561                               & 1.696                               & *                                    \\ \hline
-Receiver Same Issue Area 14                 & NA                               & NA                                  & NA                                  &                                      \\ \hline
-\end{tabular}
-\caption{Bootstrapped MPLE Results for the time period when Warren E. Burger was chief justice.}
-\label{bootMPLE_burger}
-\end{table}
-
- 
-
-\begin{table}[H]
-\centering
-\begin{tabular}{|
->{\columncolor[HTML]{EFEFEF}}l |l|l|l|l|}
-\hline
-                                       & \cellcolor[HTML]{EFEFEF}Estimate & \cellcolor[HTML]{EFEFEF}Lower Bound & \cellcolor[HTML]{EFEFEF}Upper Bound & \cellcolor[HTML]{EFEFEF}Significance \\ \hline
-Edges                                  & -4.271                           & -4.735                              & -3.779                              & *                                    \\ \hline
-Instar(2)                              & 0.00034                          & 0.00030                             & 0.00037                             & *                                    \\ \hline
-Outstar(2)                             & 0.0001                           & 0.00004                             & 0.00015                             & *                                    \\ \hline
-Mutual                                 & 0.200                            & 0.123                               & 0.231                               & *                                    \\ \hline
-Triangle                               & 0.028                            & 0.027                               & 0.029                               & *                                    \\ \hline
-Martin Quinn Score                     & -0.0002                          & -0.0008                             & 0.0006                              &                                      \\ \hline
-Same Issue Area Homophily              & 0.0018                           & 0.016                               & 0.019                               & *                                    \\ \hline
-Year Difference                        & -0.0007                          & -0.0008                             & -0.0006                             & *                                    \\ \hline
-$(\text{Year Differnce})^2$            & 1.326e-07                        & 1.003e-07                           & 1.677e-07                           & *                                    \\ \hline
-{\small Receiver Abs Diff MQ Score in Majority} & -0.0003                          & -0.012                              & 0.013                               &                                     \\ \hline
-{\small Receiver Number Justices in Majority}   & 0.025                            & 0.006                               & 0.041                               & *                                     \\ \hline
-Receiver  Sender Year                  & 0.00001                          & -0.0002                             & 0.0002                              &                                      \\ \hline
-Sender Same Issue Area 2               & 0.202                            & 0.101                               & 0.302                               & *                                    \\ \hline
-Sender Same Issue Area 3               & -0.304                           & -0.449                              & -0.159                              & *                                    \\ \hline
-Sender Same Issue Area 4               & 0.443                            & 0.310                               & 0.586                               & *                                    \\ \hline
-Sender Same Issue Area 5               & 0.141                            & -0.104                              & 0.378                               &                                     \\ \hline
-Sender Same Issue Area 6               & 0.774                            & 0.568                               & 0.962                               & *                                    \\ \hline
-Sender Same Issue Area 7               & 0.604                            & 0.477                               & 0.732                               & *                                    \\ \hline
-Sender Same Issue Area 8               & 0.467                            & 0.384                               & 0.564                               & *                                    \\ \hline
-Sender Same Issue Area 9               & 0.390                            & 0.292                               & 0.495                               & *                                    \\ \hline
-Sender Same Issue Area 10              & 0.450                            & 0.316                               & 0.591                               & *                                    \\ \hline
-Sender Same Issue Area 11              & 0.062                            & -0.341                              & 0.376                               &                                      \\ \hline
-Sender Same Issue Area 12              & 0.512                            & 0.353                               & 0.674                               & *                                    \\ \hline
-Sender Same Issue Area 13              & 0.602                            & 0.238                               & 0.915                               & *                                    \\ \hline
-Sender Same Issue Area 14              & 1.442                            & 0.761                               & 1.908                               &  *                                    \\ \hline
-Receiver Same Issue Area 2             & 0.171                            & 0.040                               & 0.317                               & *                                    \\ \hline
-Receiver Same Issue Area 3             & -0.127                           & -0.310                              & 0.049                               &                                      \\ \hline
-Receiver Same Issue Area 4             & 0.326                            & 0.143                               & 0.480                               & *                                    \\ \hline
-Receiver Same Issue Area 5             & 0.338                            & 0.037                               & 0.613                               & *                                    \\ \hline
-Receiver Same Issue Area 6             & 0.371                            & 0.117                               & 0.596                               & *                                    \\ \hline
-Receiver Same Issue Area 7             & 0.305                            & 0.137                               & 0.453                               & *                                    \\ \hline
-Receiver Same Issue Area 8             & 0.284                            & 0.166                               & 0.405                               & *                                    \\ \hline
-Receiver Same Issue Area 9             & 0.398                            & 0.271                               & 0.523                               & *                                    \\ \hline
-Receiver Same Issue Area 10            & 0.419                            & 0.264                               & 0.591                               & *                                    \\ \hline
-Receiver Same Issue Area 11            & 0.670                            & 0.395                               & 0.914                               & *                                    \\ \hline
-Receiver Same Issue Area 12            & 0.490                            & 0.287                               & 0.687                               & *                                    \\ \hline
-Receiver Same Issue Area 13            & 1.045                            & 0.816                               & 1.247                               & *                                    \\ \hline
-Receiver Same Issue Area 14            & NA                               & NA                                  & NA                                  &                                      \\ \hline
-\end{tabular}
-\caption{Bootstrapped MPLE Results for the time period when William Rehnquist was chief justice.}
-\label{bootMPLE_rehnquist}
-\end{table}
-   
 \newpage
 
 
