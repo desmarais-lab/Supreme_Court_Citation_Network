@@ -7,7 +7,7 @@
 \usepackage{amsthm}
 \usepackage{enumerate}
 \usepackage{verbatim}
-\usepackage[a4paper,text={140mm,215mm},centering,headsep=10mm,footskip=10mm]{geometry}
+\usepackage[a4paper,text={160mm,215mm},centering,headsep=10mm,footskip=10mm]{geometry}
 \usepackage[urlcolor=black,colorlinks=true,linkcolor=black,citecolor=black,bookmarks]{hyperref}
 \usepackage{aliascnt}
 \usepackage{lmodern}
@@ -74,39 +74,18 @@
  
 Majority opinions written by the United States Supreme Court exercise their authority and influence, in part, through their roles as precedents in future Supreme Court decisions and opinions. The findings regarding the extent and exact nature of the influences of precedent have been mixed, but the balance of the literature finds that past decisions exert some form of influence on the justices' decision making \citep{knight1996norm,gillman2001s,richards2002jurisprudential,hansford2006politics,bailey2008does,bailey2011constrained}. Despite a considerable body of research that focuses on the way in which relevant precedents shape decision making on the Court, relatively little work has focused on understanding which past opinions are cited by an opinion. Our focus in this paper is to provide what is, to our knowledge, the first comprehensive analysis of exactly which cases are cited by a case. We follow an emerging body of work on legal citations, and treat the system of citations as a network \citep[e.g., ][]{fowler2007network, fowler2008authority,bommarito2009law,lupu2012precedent,pelc2014politics}. 
 
-We are not the first to study what predicts citations on the Supreme Court...
+We are not the first to ask what predicts the citations in US Supreme Court Opinions. Indeed, a voluminous body of work has sought to explain how many times an opinion is cited \citep[e.g.,][]{cross2010determinants,benjamin2012standing}, when in a lifecycle an opinion is cited \citep[e.g.,][]{black2013citation,spriggs2001explaining}, and how many cases are cited by an opinion \citep[e.g.,][]{lupu2013strategic}---all focused on the US Supreme Court. One common feature of the research design in all of these studies is that the observations are at the case or case-time level. The outcome variables in these analyses are defined as measures of the number of citations to a case over a period of time, the number of citations to a case at a particular time, or a measurement on the cases cited by a case. None of these studies treats citation in its micro-level form---as a relationship between two opinions, the citing opinion and the cited opinion. We are aware of one prior study, \citet{clark2010locating}, in which a statistical model is used to analyze dyadic citations between cases. However, citet{clark2010locating} uses a dyadic latent variable model in order to estimate ideal points for Supreme Court Opinions, but does not use any explanatory variables to predict the formation of citation ties between opinions. We build upon this literature both methodologically and substantively. Methodologically, we develop a novel statistical framework for modeling directed dyadic citations. Second, we apply this methodology to a half-century of directed dyadic citations between US Supreme Court opinions.
 
 
-We are the first to examine at the level of the citation, and, as a result, be able to incorporate complex dependence into our explanation of citations.
+There exist two broad reasons why empirical analyses of citations are best defined on the directed dyad level, not the case level. The first is that directed dyadic analyses can test both dyadic and case-level hypotheses. For example, case-level analyses can model whether opinions supported by a liberal majority coalition are more likely than those supported by a conservative majority coalition to be cited heavily in the future, but they cannot precisely model whether liberal cases will be cited more by liberal cases than by conservative cases. Thus, the first reason for analyzing citations at the dyadic level it to expand the set of hypotheses that can be represented in the model. The second reason for studying citations at the directed dyadic level is that, as articulated in the growing literature on legal citation networks, citations form complex networks in which a citation at one point in time may influence future citations. This phenomenon of complex dependence is very common in networks of many types, but processes specific to Supreme Court citations create interdependence in citations. For example, if opinion $i$ relies heavily on opinion $j$ as precedent, opinion $i$ is likely to discuss the legal basis for opinion $j$, and as a consequence cite some of the opinions cited by opinion $j$. Suppose opinion $k$ is cited by opinion $j$. Opinion $k$ is more likely to be cited by opinion $i$ because opinion $i$ relies heavily on $j$, and opinion $j$ cites $k$.  This is a special case of a very common process on networks referred to as ``triad closure''. Complex dependence is theoretically interesting on its own merits, but the effects of covariates cannot be reliably identified---either in terms of coefficient values or standard errors---without accounting for the interdependence inherent in networks \citep{desmaraisstatistical}. 
+
+In what follows we develop a theoretical case that citations on the US Supreme Court are characterized by forms of complex dependence that are common in networks. We then develop an extension of a model---the exponential random graph model---that can incorporate both exogenous covariates and complex forms of interdependence into a directed dyadic analysis of citations. Finally, we develop and estimate a specification of this model in an analysis of US Supreme Court citations between 1937 and 2001. We find robust support for the inherent complexity underpinning the formation of citation ties, and show that incorporating complex dependence into the model of citation formation significantly improves the model's predictive performance.
 
 
-\section{Prior work on court citations}
 
-Measures of citations have been used in several recent studies of courts...\citet{hinkle2016transmission} study the citations between US state supreme courts.
+\section{Complex Interdependence in Supreme Court Citations}
 
-\begin{itemize}
-
-\item \citet{clark2010locating} Estimates a latent coordinate model of supreme court opinions based on the network of supreme court citations. Find that the majority opinion falls at the ideal point of the median member of the majority coalition. Account for negative citations. WE COULD USE THIS DATASET AS A SECOND APPLICATION
-
-\item \citet{cross2010determinants} Look at the total number of citations to Supreme Court opinions over a ten year period of the Rehnquist Court. (case level).  Found case issue area, opinion ideology, opinion author, vote margin was not significant. Negative citations decreased future positive citations.
-
-\item \citet{black2013citation} Study the number of citations to a case over time, in order to understand the lifecycle of citation rates.  Show that the rate of citations to a case goes down very quickly. THE EFFECT OF AN INDEPENDENT VARIABLE ON A PRECEDENT IS DEPENDENT UPON THE AGE OF THE CASE.
-
-\item \citet{benjamin2012standing} Study the propensity for cases to be overruled and cited in other negative ways. They find that cases with large and broad majorities rare less likely to be cited negatively.
-
-\item \citet{spriggs2001explaining} Find that cases are more likely to be overruled when the Court is ideologically distant from the median justice in the majority coalition that decided the case, when the legal issues under consideration are complex, whn the cases ha been negatively treated previously, when there were many concurring opinions, and less likely to be overruled if it was a unanimous coalition.
-
-\item \citet{lupu2013strategic} The hub score, which is a measure of the degree to which a case cites other important cases increases with salience [GET THE AMICUS BRIEFS, NYT COUNTS]. Lower if stautory cases. Increases with ideological variance of the majority coalition.  Increases with the number of concurring opinions. 
-
-\end{itemize}
-
-
-\section{Network Approaches to Studying Citations}
-
-\textbf{TED}, would you write a section that covers the ways in which network scholars have studied citations in the past, focusing on scientific papers, patents, and court cases? 
-
-
-\section{Complex Dependence in Court Citations}
+When it comes to the development and testing of theory, the defining feature of networks is that the fundamental element under study---the relationship between two units (i.e., the citation from one opinion to another) is a piece of a complex web of relations that cannot be fully understood without considering how the singular relationship fits into that complex web.
 
 \textbf{Transitivity:} Discussing past edges in the citation network leads to transitivity. If i cites j, it is also likely to discuss the cases on which j is based.
 
@@ -145,6 +124,10 @@ https://supreme.justia.com/cases/federal/us/466/789/
 ''No allegations of racial or class-based invidiously discriminatory animus are required to establish a cause of action under the first part of  1985(2). The statutory provisions now codified at \S 1985 were originally enacted as \S 2 of the Civil Rights Act of 1871, and the substantive meaning of the 1871 Act has not been changed. The provisions relating to institutions and processes of the Federal Government (including the first part of \S 1985(2)) -- unlike those encompassing activity that is usually of primary state concern (including the second part of \S 1985(2) and the part of \P 1985(3) involved in Griffin, supra -- contain no language requiring that the conspirators act with intent to deprive their victims of the equal protection of the laws. Thus, the reasoning of Griffin is not applicable here, and, given the structure of \S 2 of the 1871 Act, it is clear''
 
 https://supreme.justia.com/cases/federal/us/460/719/
+
+\section{Network Approaches to Studying Citations}
+
+\textbf{TED}, would you write a section that covers the ways in which network scholars have studied citations in the past, focusing on scientific papers, patents, and court cases? 
 
 
  
@@ -198,6 +181,7 @@ In the equation above the following notations were used:
 \item The condition $C_i(t)^c=c_i(t)^c$ is short for: $C_j(t)=c_j(t)$ for all $j\in \{1,\dots,N\}$ with $i \neq j$
 \item The expression $(\Delta c_i)(t):=h(c_i^+(t)~|~c(t-)) - h(c_i^-(t)~|~c(t-))$ is called the \textit{change statistic}. The $k$th component of $(\Delta c_i)(t)$ captures the difference between citation networks $c_i^+(t)$ and $c_i^-(t)$ on the $k$th integrated statistic in the model
 \end{itemize}
+
 
 
 \section{Estimation}
@@ -312,6 +296,28 @@ c_{p}^{(k)}(t) &\text{if}~ p \neq i
 The first $B \ll L$ vectors are discarded as Burn-In.
 
 
+
+\section{Prior work on court citations}
+
+Measures of citations have been used in several recent studies of courts...\citet{hinkle2016transmission} study the citations between US state supreme courts.
+
+\begin{itemize}
+
+\item \citet{clark2010locating} Estimates a latent coordinate model of supreme court opinions based on the network of supreme court citations. Find that the majority opinion falls at the ideal point of the median member of the majority coalition. Account for negative citations. WE COULD USE THIS DATASET AS A SECOND APPLICATION
+
+\item \citet{cross2010determinants} Look at the total number of citations to Supreme Court opinions over a ten year period of the Rehnquist Court. (case level).  Found case issue area, opinion ideology, opinion author, vote margin was not significant. Negative citations decreased future positive citations.
+
+\item \citet{black2013citation} Study the number of citations to a case over time, in order to understand the lifecycle of citation rates.  Show that the rate of citations to a case goes down very quickly. THE EFFECT OF AN INDEPENDENT VARIABLE ON A PRECEDENT IS DEPENDENT UPON THE AGE OF THE CASE.
+
+\item \citet{benjamin2012standing} Study the propensity for cases to be overruled and cited in other negative ways. They find that cases with large and broad majorities rare less likely to be cited negatively.
+
+\item \citet{spriggs2001explaining} Find that cases are more likely to be overruled when the Court is ideologically distant from the median justice in the majority coalition that decided the case, when the legal issues under consideration are complex, whn the cases ha been negatively treated previously, when there were many concurring opinions, and less likely to be overruled if it was a unanimous coalition.
+
+\item \citet{lupu2013strategic} The hub score, which is a measure of the degree to which a case cites other important cases increases with salience [GET THE AMICUS BRIEFS, NYT COUNTS]. Lower if stautory cases. Increases with ideological variance of the majority coalition.  Increases with the number of concurring opinions. 
+
+\end{itemize}
+
+
  \section{Results}
   \subsection*{Descriptive Results}
 The supreme court citation network from $1937 - 2005$ consists of $8817$ cases which got voted at $2116$ different time points. The network has a total of $93,263$ ties, of which 452 are mutual. The number of triangles in the network is $211,855$. The in- and outdegree distribution is visualized in figures \ref{indegree_dist} and \ref{outdegree_dist}. The maximum indegree is $190$ and the maximum outdegree is $159$.
@@ -380,6 +386,7 @@ W Rehnquist**            & 1987 - 2001                                          
 \end{itemize}
 
 
+
 \begin{table}[H]
 \footnotesize
 \centering
@@ -441,6 +448,29 @@ Justices in Majority $\times$ Sender Year   & 0.0029                           &
 \label{my-label}
 \end{table}
 \newpage
+
+
+  \begin{figure}[H]
+  \begin{tabular}{cc}
+ (a) MQ Score Difference & (b) Ideological Breadth \\
+\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/mq_coef_trend.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/absdiffmq_coef_trend.pdf} \\
+ 
+  (c) Same Issue & (d) Majority Size \\
+\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/sameissue_coef_trend.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/numberjusticespro_coef_trend.pdf} \\
+ 
+   (e) Reciprocity & (f) Transitivity \\
+\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/mutual_coef_trend.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/triangle_coef_trend.pdf} \\
+ 
+    (g) Sociality & (h) Popularity \\
+\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/o2star_coef_trend.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/i2star_coef_trend.pdf} \\
+ 
+ 
+\end{tabular}
+\caption{Effects}
+ \label{fig:coeftrends}
+\vspace{-.25cm}
+\end{figure} 
+
 
 
 \bibliography{bib} 
