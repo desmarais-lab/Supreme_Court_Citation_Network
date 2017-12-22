@@ -27,7 +27,7 @@ Type 'q()' to quit R.
 > set.seed(333)
 > 
 > # MPLE
-> mple.est <- glm(edgeij ~ istar2+ostar2+mutual+triangle+ edgecov.mq.t+ edgecov.same.issue.area.t+ edgecov.year.diff.t +I(edgecov.year.diff.t^2) +
+> mple.est <- glm(edgeij ~ istar2+ostar2+mutual+triangle+ edgecov.mq.t+ edgecov.same.issue.area.t+ edgecov.year.diff.t +edgecov.year.diff.square.t +  
 +                 nodeicov.AbsDiffMQscores+ nodeicov.NumberJusticesPro+ nodeocov.sender.time + nodeifactor.SameIssueArea.2+ nodeifactor.SameIssueArea.3+ 
 +                 nodeifactor.SameIssueArea.4+nodeifactor.SameIssueArea.5+ nodeifactor.SameIssueArea.6+ nodeifactor.SameIssueArea.7+ 
 +                 nodeifactor.SameIssueArea.8+nodeifactor.SameIssueArea.9+  nodeifactor.SameIssueArea.10+
@@ -35,13 +35,15 @@ Type 'q()' to quit R.
 +                 nodeofactor.SameIssueArea.2+ nodeofactor.SameIssueArea.3+ nodeofactor.SameIssueArea.4+nodeofactor.SameIssueArea.5+ 
 +                 nodeofactor.SameIssueArea.6+nodeofactor.SameIssueArea.7+
 +                 nodeofactor.SameIssueArea.8+nodeofactor.SameIssueArea.9+nodeofactor.SameIssueArea.10+ nodeofactor.SameIssueArea.11+ 
-+                 nodeofactor.SameIssueArea.12+ nodeofactor.SameIssueArea.13+nodeofactor.SameIssueArea.14,family=binomial,data=mpledata)
++                 nodeofactor.SameIssueArea.12+ nodeofactor.SameIssueArea.13+nodeofactor.SameIssueArea.14+
++                 instar2_sendertime+outstar2_sendertime+ mutual_sendertime+ triangle_sendertime+mq_sendertime +sameissuearea_sendertime+
++                 yeardiff_sendertime + yeardiffsquare_sendertime+ AbsDiffMQscores_sendertime + NumberJusticesPro_sendertime,family=binomial,data=mpledata)
 > summary(mple.est)
 
 Call:
 glm(formula = edgeij ~ istar2 + ostar2 + mutual + triangle + 
     edgecov.mq.t + edgecov.same.issue.area.t + edgecov.year.diff.t + 
-    I(edgecov.year.diff.t^2) + nodeicov.AbsDiffMQscores + nodeicov.NumberJusticesPro + 
+    edgecov.year.diff.square.t + nodeicov.AbsDiffMQscores + nodeicov.NumberJusticesPro + 
     nodeocov.sender.time + nodeifactor.SameIssueArea.2 + nodeifactor.SameIssueArea.3 + 
     nodeifactor.SameIssueArea.4 + nodeifactor.SameIssueArea.5 + 
     nodeifactor.SameIssueArea.6 + nodeifactor.SameIssueArea.7 + 
@@ -54,61 +56,74 @@ glm(formula = edgeij ~ istar2 + ostar2 + mutual + triangle +
     nodeofactor.SameIssueArea.7 + nodeofactor.SameIssueArea.8 + 
     nodeofactor.SameIssueArea.9 + nodeofactor.SameIssueArea.10 + 
     nodeofactor.SameIssueArea.11 + nodeofactor.SameIssueArea.12 + 
-    nodeofactor.SameIssueArea.13 + nodeofactor.SameIssueArea.14, 
-    family = binomial, data = mpledata)
+    nodeofactor.SameIssueArea.13 + nodeofactor.SameIssueArea.14 + 
+    instar2_sendertime + outstar2_sendertime + mutual_sendertime + 
+    triangle_sendertime + mq_sendertime + sameissuearea_sendertime + 
+    yeardiff_sendertime + yeardiffsquare_sendertime + AbsDiffMQscores_sendertime + 
+    NumberJusticesPro_sendertime, family = binomial, data = mpledata)
 
 Deviance Residuals: 
     Min       1Q   Median       3Q      Max  
--8.4904  -0.1511  -0.1334  -0.1201   3.3623  
+-8.4904  -0.1507  -0.1018  -0.0765   3.7064  
 
 Coefficients:
                                Estimate Std. Error  z value Pr(>|z|)    
-(Intercept)                  -5.151e+00  3.107e-02 -165.781  < 2e-16 ***
-istar2                        2.632e-04  9.857e-06   26.704  < 2e-16 ***
-ostar2                        1.011e-04  1.016e-05    9.945  < 2e-16 ***
-mutual                        1.901e-01  1.077e-02   17.648  < 2e-16 ***
-triangle                      3.896e-02  1.409e-04  276.432  < 2e-16 ***
-edgecov.mq.t                 -1.675e-03  1.346e-04  -12.451  < 2e-16 ***
-edgecov.same.issue.area.t     2.716e-02  3.139e-04   86.538  < 2e-16 ***
-edgecov.year.diff.t          -5.162e-04  2.555e-05  -20.207  < 2e-16 ***
-I(edgecov.year.diff.t^2)      7.498e-08  9.938e-09    7.545 4.54e-14 ***
-nodeicov.AbsDiffMQscores      1.661e-03  2.549e-03    0.652 0.514612    
-nodeicov.NumberJusticesPro   -1.178e-02  3.993e-03   -2.950 0.003174 ** 
-nodeocov.sender.time          4.951e-04  1.431e-05   34.601  < 2e-16 ***
-nodeifactor.SameIssueArea.2   1.550e-01  1.992e-02    7.784 7.04e-15 ***
-nodeifactor.SameIssueArea.3  -9.504e-02  2.544e-02   -3.735 0.000188 ***
-nodeifactor.SameIssueArea.4   4.015e-01  2.962e-02   13.557  < 2e-16 ***
-nodeifactor.SameIssueArea.5   2.624e-01  7.003e-02    3.747 0.000179 ***
-nodeifactor.SameIssueArea.6   3.504e-01  6.011e-02    5.829 5.58e-09 ***
-nodeifactor.SameIssueArea.7   4.383e-01  2.422e-02   18.099  < 2e-16 ***
-nodeifactor.SameIssueArea.8   6.438e-02  1.764e-02    3.649 0.000263 ***
-nodeifactor.SameIssueArea.9   1.809e-01  1.974e-02    9.164  < 2e-16 ***
-nodeifactor.SameIssueArea.10  3.045e-01  2.849e-02   10.690  < 2e-16 ***
-nodeifactor.SameIssueArea.11 -1.869e-01  7.372e-02   -2.535 0.011230 *  
-nodeifactor.SameIssueArea.12 -2.440e-01  2.688e-02   -9.079  < 2e-16 ***
-nodeifactor.SameIssueArea.13 -2.192e-02  1.166e-01   -0.188 0.850942    
-nodeifactor.SameIssueArea.14 -4.176e-01  7.457e-02   -5.600 2.14e-08 ***
-nodeofactor.SameIssueArea.2   2.041e-01  1.904e-02   10.718  < 2e-16 ***
-nodeofactor.SameIssueArea.3   7.662e-02  2.394e-02    3.201 0.001369 ** 
-nodeofactor.SameIssueArea.4   4.587e-01  2.823e-02   16.251  < 2e-16 ***
-nodeofactor.SameIssueArea.5   3.202e-01  5.471e-02    5.853 4.83e-09 ***
-nodeofactor.SameIssueArea.6   4.112e-01  5.433e-02    7.570 3.74e-14 ***
-nodeofactor.SameIssueArea.7   3.910e-01  2.539e-02   15.401  < 2e-16 ***
-nodeofactor.SameIssueArea.8   2.098e-01  1.735e-02   12.092  < 2e-16 ***
-nodeofactor.SameIssueArea.9   2.295e-01  1.944e-02   11.803  < 2e-16 ***
-nodeofactor.SameIssueArea.10  4.845e-01  2.702e-02   17.932  < 2e-16 ***
-nodeofactor.SameIssueArea.11  1.959e-01  6.258e-02    3.129 0.001751 ** 
-nodeofactor.SameIssueArea.12  1.769e-01  2.720e-02    6.502 7.94e-11 ***
-nodeofactor.SameIssueArea.13  8.964e-01  8.180e-02   10.958  < 2e-16 ***
-nodeofactor.SameIssueArea.14 -1.369e-01  1.227e-01   -1.116 0.264609    
+(Intercept)                  -5.533e+00  5.415e-02 -102.180  < 2e-16 ***
+istar2                        3.126e-02  1.666e-03   18.764  < 2e-16 ***
+ostar2                        2.227e-02  8.820e-04   25.250  < 2e-16 ***
+mutual                        3.316e+00  2.128e-01   15.583  < 2e-16 ***
+triangle                      1.490e+00  1.162e-02  128.274  < 2e-16 ***
+edgecov.mq.t                  8.021e-02  1.438e-02    5.576 2.46e-08 ***
+edgecov.same.issue.area.t     1.378e+00  2.520e-02   54.699  < 2e-16 ***
+edgecov.year.diff.t          -7.680e-02  4.375e-03  -17.556  < 2e-16 ***
+edgecov.year.diff.square.t    2.856e-03  1.374e-04   20.792  < 2e-16 ***
+nodeicov.AbsDiffMQscores     -2.990e-02  7.653e-03   -3.907 9.33e-05 ***
+nodeicov.NumberJusticesPro   -1.147e-01  9.197e-03  -12.468  < 2e-16 ***
+nodeocov.sender.time          7.231e-04  4.347e-05   16.637  < 2e-16 ***
+nodeifactor.SameIssueArea.2   1.619e-01  1.985e-02    8.155 3.48e-16 ***
+nodeifactor.SameIssueArea.3  -3.174e-01  2.638e-02  -12.032  < 2e-16 ***
+nodeifactor.SameIssueArea.4   4.972e-01  2.944e-02   16.888  < 2e-16 ***
+nodeifactor.SameIssueArea.5   3.321e-01  6.421e-02    5.173 2.31e-07 ***
+nodeifactor.SameIssueArea.6   5.270e-01  5.801e-02    9.085  < 2e-16 ***
+nodeifactor.SameIssueArea.7   3.274e-01  2.626e-02   12.465  < 2e-16 ***
+nodeifactor.SameIssueArea.8   7.570e-02  1.854e-02    4.083 4.45e-05 ***
+nodeifactor.SameIssueArea.9   2.611e-01  2.016e-02   12.953  < 2e-16 ***
+nodeifactor.SameIssueArea.10  3.688e-01  2.949e-02   12.506  < 2e-16 ***
+nodeifactor.SameIssueArea.11 -4.606e-02  7.559e-02   -0.609 0.542293    
+nodeifactor.SameIssueArea.12  7.297e-03  2.876e-02    0.254 0.799707    
+nodeifactor.SameIssueArea.13  3.807e-01  1.105e-01    3.447 0.000567 ***
+nodeifactor.SameIssueArea.14  1.507e-01  7.993e-02    1.885 0.059441 .  
+nodeofactor.SameIssueArea.2   2.312e-01  1.907e-02   12.123  < 2e-16 ***
+nodeofactor.SameIssueArea.3  -1.007e-01  2.505e-02   -4.020 5.81e-05 ***
+nodeofactor.SameIssueArea.4   5.161e-01  2.815e-02   18.332  < 2e-16 ***
+nodeofactor.SameIssueArea.5   3.505e-01  5.000e-02    7.010 2.38e-12 ***
+nodeofactor.SameIssueArea.6   4.610e-01  5.269e-02    8.749  < 2e-16 ***
+nodeofactor.SameIssueArea.7   3.607e-01  2.768e-02   13.030  < 2e-16 ***
+nodeofactor.SameIssueArea.8   1.528e-01  1.842e-02    8.297  < 2e-16 ***
+nodeofactor.SameIssueArea.9   2.793e-01  1.989e-02   14.047  < 2e-16 ***
+nodeofactor.SameIssueArea.10  4.915e-01  2.750e-02   17.872  < 2e-16 ***
+nodeofactor.SameIssueArea.11  2.467e-01  6.473e-02    3.811 0.000139 ***
+nodeofactor.SameIssueArea.12  3.386e-01  2.965e-02   11.419  < 2e-16 ***
+nodeofactor.SameIssueArea.13  1.060e+00  7.842e-02   13.519  < 2e-16 ***
+nodeofactor.SameIssueArea.14  5.571e-01  1.336e-01    4.169 3.05e-05 ***
+instar2_sendertime           -2.533e-04  3.426e-05   -7.392 1.45e-13 ***
+outstar2_sendertime          -3.613e-04  2.220e-05  -16.272  < 2e-16 ***
+mutual_sendertime            -9.905e-03  1.063e-02   -0.932 0.351457    
+triangle_sendertime          -4.114e-04  2.965e-04   -1.387 0.165302    
+mq_sendertime                -2.519e-03  3.473e-04   -7.253 4.08e-13 ***
+sameissuearea_sendertime     -5.765e-03  6.372e-04   -9.047  < 2e-16 ***
+yeardiff_sendertime           4.289e-04  9.228e-05    4.648 3.35e-06 ***
+yeardiffsquare_sendertime    -3.727e-05  2.542e-06  -14.663  < 2e-16 ***
+AbsDiffMQscores_sendertime    1.334e-03  1.808e-04    7.377 1.62e-13 ***
+NumberJusticesPro_sendertime  2.948e-03  2.231e-04   13.213  < 2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 (Dispersion parameter for binomial family taken to be 1)
 
     Null deviance: 814534  on 2751486  degrees of freedom
-Residual deviance: 369216  on 2751449  degrees of freedom
-AIC: 369292
+Residual deviance: 335137  on 2751439  degrees of freedom
+AIC: 335233
 
 Number of Fisher Scoring iterations: 8
 
@@ -143,7 +158,7 @@ Number of Fisher Scoring iterations: 8
 +   # convert to data frame
 +   data.b <- data.frame(data.b)
 +   # run mple
-+   mple.est.b <- glm(edgeij ~ istar2+ostar2+mutual+triangle+ edgecov.mq.t+ edgecov.same.issue.area.t+ edgecov.year.diff.t +I(edgecov.year.diff.t^2) +
++   mple.est.b <- glm(edgeij ~ istar2+ostar2+mutual+triangle+ edgecov.mq.t+ edgecov.same.issue.area.t+ edgecov.year.diff.t +edgecov.year.diff.square.t + 
 +                 nodeicov.AbsDiffMQscores+ nodeicov.NumberJusticesPro+ nodeocov.sender.time + nodeifactor.SameIssueArea.2+ nodeifactor.SameIssueArea.3+ 
 +                 nodeifactor.SameIssueArea.4+nodeifactor.SameIssueArea.5+ nodeifactor.SameIssueArea.6+ nodeifactor.SameIssueArea.7+ 
 +                 nodeifactor.SameIssueArea.8+nodeifactor.SameIssueArea.9+  nodeifactor.SameIssueArea.10+
@@ -151,7 +166,9 @@ Number of Fisher Scoring iterations: 8
 +                 nodeofactor.SameIssueArea.2+ nodeofactor.SameIssueArea.3+ nodeofactor.SameIssueArea.4+nodeofactor.SameIssueArea.5+ 
 +                 nodeofactor.SameIssueArea.6+nodeofactor.SameIssueArea.7+
 +                 nodeofactor.SameIssueArea.8+nodeofactor.SameIssueArea.9+nodeofactor.SameIssueArea.10+ nodeofactor.SameIssueArea.11+ 
-+                 nodeofactor.SameIssueArea.12+ nodeofactor.SameIssueArea.13+nodeofactor.SameIssueArea.14,family=binomial,data=data.b)
++                 nodeofactor.SameIssueArea.12+ nodeofactor.SameIssueArea.13+nodeofactor.SameIssueArea.14+
++                 instar2_sendertime+outstar2_sendertime+ mutual_sendertime+ triangle_sendertime+mq_sendertime +sameissuearea_sendertime+
++                 yeardiff_sendertime + yeardiffsquare_sendertime+ AbsDiffMQscores_sendertime + NumberJusticesPro_sendertime ,family=binomial,data=data.b)
 +   # store results
 +   boot.results[b,] <- coef(mple.est.b)
 + }
@@ -661,28 +678,148 @@ Number of Fisher Scoring iterations: 8
 > ### take percentiles
 > quantile(boot.results[,1], probs=c(0.975, 0.025), na.rm = TRUE)
     97.5%      2.5% 
--5.037355 -5.268770 
+-5.388519 -5.733347 
 > quantile(boot.results[,2], probs=c(0.975, 0.025), na.rm = TRUE)
-       97.5%         2.5% 
-0.0002952158 0.0002296819 
+     97.5%       2.5% 
+0.03570938 0.02711080 
 > quantile(boot.results[,3], probs=c(0.975, 0.025), na.rm = TRUE)
-       97.5%         2.5% 
-1.802744e-04 3.808133e-05 
+     97.5%       2.5% 
+0.03163489 0.01968318 
 > quantile(boot.results[,4], probs=c(0.975, 0.025), na.rm = TRUE)
-    97.5%      2.5% 
-0.2595332 0.1393121 
+   97.5%     2.5% 
+3.983306 2.622224 
 > quantile(boot.results[,5], probs=c(0.975, 0.025), na.rm = TRUE)
-     97.5%       2.5% 
-0.04050653 0.03779210 
+   97.5%     2.5% 
+1.560499 1.410356 
 > quantile(boot.results[,6], probs=c(0.975, 0.025), na.rm = TRUE)
-       97.5%         2.5% 
--0.001026657 -0.002199204 
-> quantile(boot.results[,7], probs=c(0.975, 0.025), na.rm = TRUE)
      97.5%       2.5% 
-0.02832068 0.02599844 
+0.12621068 0.02181346 
+> quantile(boot.results[,7], probs=c(0.975, 0.025), na.rm = TRUE)
+   97.5%     2.5% 
+1.450951 1.313399 
 > quantile(boot.results[,8], probs=c(0.975, 0.025), na.rm = TRUE)
+      97.5%        2.5% 
+-0.06379051 -0.08974192 
+> quantile(boot.results[,9], probs=c(0.975, 0.025), na.rm = TRUE)
+      97.5%        2.5% 
+0.003236416 0.002455175 
+> quantile(boot.results[,10], probs=c(0.975, 0.025), na.rm = TRUE)
+      97.5%        2.5% 
+-0.01358462 -0.04787346 
+> quantile(boot.results[,11], probs=c(0.975, 0.025), na.rm = TRUE)
+      97.5%        2.5% 
+-0.08904891 -0.13544270 
+> quantile(boot.results[,12], probs=c(0.975, 0.025), na.rm = TRUE)
+       97.5%         2.5% 
+0.0008725874 0.0005951635 
+> quantile(boot.results[,13], probs=c(0.975, 0.025), na.rm = TRUE)
+    97.5%      2.5% 
+0.2165656 0.1049314 
+> quantile(boot.results[,14], probs=c(0.975, 0.025), na.rm = TRUE)
+     97.5%       2.5% 
+-0.2357901 -0.4027452 
+> quantile(boot.results[,15], probs=c(0.975, 0.025), na.rm = TRUE)
+    97.5%      2.5% 
+0.5698093 0.4260695 
+> quantile(boot.results[,16], probs=c(0.975, 0.025), na.rm = TRUE)
+    97.5%      2.5% 
+0.4945340 0.1737265 
+> quantile(boot.results[,17], probs=c(0.975, 0.025), na.rm = TRUE)
+    97.5%      2.5% 
+0.6354969 0.4023700 
+> quantile(boot.results[,18], probs=c(0.975, 0.025), na.rm = TRUE)
+    97.5%      2.5% 
+0.3943877 0.2506844 
+> quantile(boot.results[,19], probs=c(0.975, 0.025), na.rm = TRUE)
+     97.5%       2.5% 
+0.12913928 0.02109169 
+> quantile(boot.results[,20], probs=c(0.975, 0.025), na.rm = TRUE)
+    97.5%      2.5% 
+0.3148650 0.2091323 
+> quantile(boot.results[,21], probs=c(0.975, 0.025), na.rm = TRUE)
+    97.5%      2.5% 
+0.4321417 0.3009423 
+> quantile(boot.results[,22], probs=c(0.975, 0.025), na.rm = TRUE)
+     97.5%       2.5% 
+ 0.1514796 -0.2331728 
+> quantile(boot.results[,23], probs=c(0.975, 0.025), na.rm = TRUE)
+      97.5%        2.5% 
+ 0.08877304 -0.07547626 
+> quantile(boot.results[,24], probs=c(0.975, 0.025), na.rm = TRUE)
+    97.5%      2.5% 
+0.5638387 0.1624670 
+> quantile(boot.results[,25], probs=c(0.975, 0.025), na.rm = TRUE)
+      97.5%        2.5% 
+ 0.29997821 -0.01890542 
+> quantile(boot.results[,26], probs=c(0.975, 0.025), na.rm = TRUE)
+    97.5%      2.5% 
+0.2966350 0.1661767 
+> quantile(boot.results[,27], probs=c(0.975, 0.025), na.rm = TRUE)
+       97.5%         2.5% 
+-0.006060048 -0.208888927 
+> quantile(boot.results[,28], probs=c(0.975, 0.025), na.rm = TRUE)
+    97.5%      2.5% 
+0.6117822 0.4250653 
+> quantile(boot.results[,29], probs=c(0.975, 0.025), na.rm = TRUE)
+    97.5%      2.5% 
+0.5344127 0.1825563 
+> quantile(boot.results[,30], probs=c(0.975, 0.025), na.rm = TRUE)
+    97.5%      2.5% 
+0.6283759 0.2842277 
+> quantile(boot.results[,31], probs=c(0.975, 0.025), na.rm = TRUE)
+    97.5%      2.5% 
+0.4366470 0.2813952 
+> quantile(boot.results[,32], probs=c(0.975, 0.025), na.rm = TRUE)
+     97.5%       2.5% 
+0.22108115 0.09653297 
+> quantile(boot.results[,33], probs=c(0.975, 0.025), na.rm = TRUE)
+    97.5%      2.5% 
+0.3458369 0.2213872 
+> quantile(boot.results[,34], probs=c(0.975, 0.025), na.rm = TRUE)
+    97.5%      2.5% 
+0.5698204 0.4129023 
+> quantile(boot.results[,35], probs=c(0.975, 0.025), na.rm = TRUE)
+     97.5%       2.5% 
+0.41054269 0.05575888 
+> quantile(boot.results[,36], probs=c(0.975, 0.025), na.rm = TRUE)
+    97.5%      2.5% 
+0.4304120 0.2463124 
+> quantile(boot.results[,37], probs=c(0.975, 0.025), na.rm = TRUE)
+    97.5%      2.5% 
+1.2391770 0.8447559 
+> quantile(boot.results[,38], probs=c(0.975, 0.025), na.rm = TRUE)
+    97.5%      2.5% 
+0.7929875 0.2552976 
+> quantile(boot.results[,39], probs=c(0.975, 0.025), na.rm = TRUE)
         97.5%          2.5% 
--0.0004455212 -0.0005970892 
+-0.0001674119 -0.0003450985 
+> quantile(boot.results[,40], probs=c(0.975, 0.025), na.rm = TRUE)
+        97.5%          2.5% 
+-0.0002841980 -0.0005621639 
+> quantile(boot.results[,41], probs=c(0.975, 0.025), na.rm = TRUE)
+      97.5%        2.5% 
+ 0.02912127 -0.04330063 
+> quantile(boot.results[,42], probs=c(0.975, 0.025), na.rm = TRUE)
+       97.5%         2.5% 
+ 0.001626082 -0.002109415 
+> quantile(boot.results[,43], probs=c(0.975, 0.025), na.rm = TRUE)
+       97.5%         2.5% 
+-0.001271764 -0.003547373 
+> quantile(boot.results[,44], probs=c(0.975, 0.025), na.rm = TRUE)
+       97.5%         2.5% 
+-0.004336395 -0.007621255 
+> quantile(boot.results[,45], probs=c(0.975, 0.025), na.rm = TRUE)
+       97.5%         2.5% 
+0.0006939670 0.0001631382 
+> quantile(boot.results[,46], probs=c(0.975, 0.025), na.rm = TRUE)
+        97.5%          2.5% 
+-2.988074e-05 -4.436343e-05 
+> quantile(boot.results[,47], probs=c(0.975, 0.025), na.rm = TRUE)
+       97.5%         2.5% 
+0.0017700917 0.0009268867 
+> quantile(boot.results[,48], probs=c(0.975, 0.025), na.rm = TRUE)
+      97.5%        2.5% 
+0.003509929 0.002322757 
 > 
 > 
 > 
