@@ -4,45 +4,45 @@ The top-level auxiliary file: paper.aux
 The style file: apsr.bst
 Database file #1: bib.bib
 Warning--I didn't find a database entry for "Snijders.2002b"
-You've used 12 entries,
+You've used 18 entries,
             2874 wiz_defined-function locations,
-            721 strings with 6885 characters,
-and the built_in function-call counts, 52114 in all, are:
-= -- 8532
-> -- 633
+            758 strings with 7894 characters,
+and the built_in function-call counts, 75590 in all, are:
+= -- 12369
+> -- 904
 < -- 0
-+ -- 4007
-- -- 223
-* -- 4443
-:= -- 10412
-add.period$ -- 49
-call.type$ -- 12
-change.case$ -- 156
-chr.to.int$ -- 12
-cite$ -- 12
-duplicate$ -- 202
-empty$ -- 437
-format.name$ -- 230
-if$ -- 9392
++ -- 5777
+- -- 320
+* -- 6445
+:= -- 15141
+add.period$ -- 73
+call.type$ -- 18
+change.case$ -- 234
+chr.to.int$ -- 18
+cite$ -- 18
+duplicate$ -- 292
+empty$ -- 655
+format.name$ -- 329
+if$ -- 13611
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 14
-newline$ -- 54
-num.names$ -- 141
-pop$ -- 52
+missing$ -- 20
+newline$ -- 78
+num.names$ -- 211
+pop$ -- 70
 preamble$ -- 1
-purify$ -- 180
+purify$ -- 270
 quote$ -- 0
-skip$ -- 176
+skip$ -- 254
 stack$ -- 0
-substring$ -- 12028
-swap$ -- 39
-text.length$ -- 168
+substring$ -- 17420
+swap$ -- 51
+text.length$ -- 252
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 44
+type$ -- 68
 warning$ -- 0
-while$ -- 293
+while$ -- 441
 width$ -- 0
-write$ -- 167
+write$ -- 245
 (There was 1 warning)

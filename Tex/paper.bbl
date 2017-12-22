@@ -12,6 +12,17 @@ Bailey, Michael~A \harvardand\ Forrest Maltzman. 2011.
   make}.
 \newblock Princeton University Press.
 
+\harvarditem{Benjamin \harvardand\ Desmarais}{2012}{benjamin2012standing}
+Benjamin, Stuart~Minor \harvardand\ Bruce~A Desmarais. 2012.
+\newblock ``Standing the test of time: The breadth of majority coalitions and
+  the fate of us supreme court precedents.'' {\em Journal of Legal Analysis}
+  4(2):445--469.
+
+\harvarditem{Black \harvardand\ Spriggs}{2013}{black2013citation}
+Black, Ryan~C \harvardand\ James~F Spriggs. 2013.
+\newblock ``The Citation and Depreciation of US Supreme Court Precedent.'' {\em
+  Journal of Empirical Legal Studies} 10(2):325--358.
+
 \harvarditem[Bommarito~II, Katz \harvardand\ Zelner]{Bommarito~II, Katz
   \harvardand\ Zelner}{2009}{bommarito2009law}
 Bommarito~II, Michael~J, Daniel Katz \harvardand\ Jon Zelner. 2009.
@@ -19,6 +30,17 @@ Bommarito~II, Michael~J, Daniel Katz \harvardand\ Jon Zelner. 2009.
   of the united states supreme court corpus (1791-2005).  In {\em Proceedings
   of the 12th international conference on artificial intelligence and law}.
 \newblock ACM pp.~234--235.
+
+\harvarditem{Clark \harvardand\ Lauderdale}{2010}{clark2010locating}
+Clark, Tom~S \harvardand\ Benjamin Lauderdale. 2010.
+\newblock ``Locating Supreme Court opinions in doctrine space.'' {\em American
+  Journal of Political Science} 54(4):871--890.
+
+\harvarditem{Cross}{2010}{cross2010determinants}
+Cross, Frank~B. 2010.
+\newblock ``Determinants of citations to Supreme Court opinions (and the
+  remarkable influence of Justice Scalia).'' {\em Supreme Court Economic
+  Review} 18(1):177--202.
 
 \harvarditem{Fowler \harvardand\ Jeon}{2008}{fowler2008authority}
 Fowler, James~H \harvardand\ Sangick Jeon. 2008.
@@ -61,6 +83,11 @@ Lupu, Yonatan \harvardand\ Erik Voeten. 2012.
   citations by the European court of human rights.'' {\em British Journal of
   Political Science} 42(2):413--439.
 
+\harvarditem{Lupu \harvardand\ Fowler}{2013}{lupu2013strategic}
+Lupu, Yonatan \harvardand\ James~H Fowler. 2013.
+\newblock ``Strategic citations to precedent on the US Supreme Court.'' {\em
+  The Journal of Legal Studies} 42(1):151--186.
+
 \harvarditem{Pelc}{2014}{pelc2014politics}
 Pelc, Krzysztof~J. 2014.
 \newblock ``The politics of precedent in international law: A social network
@@ -70,5 +97,10 @@ Pelc, Krzysztof~J. 2014.
 Richards, Mark~J \harvardand\ Herbert~M Kritzer. 2002.
 \newblock ``Jurisprudential regimes in Supreme Court decision making.'' {\em
   American Political Science Review} 96(2):305--320.
+
+\harvarditem{Spriggs \harvardand\ Hansford}{2001}{spriggs2001explaining}
+Spriggs, James~F \harvardand\ Thomas~G Hansford. 2001.
+\newblock ``Explaining the overruling of US Supreme Court precedent.'' {\em The
+  Journal of Politics} 63(4):1091--1111.
 
 \end{thebibliography}
