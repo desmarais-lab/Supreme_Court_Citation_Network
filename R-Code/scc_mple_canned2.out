@@ -1,0 +1,662 @@
+
+R version 3.4.0 (2017-04-21) -- "You Stupid Darkness"
+Copyright (C) 2017 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> 
+> # get data
+> load(file="ERCM_MPLE_canned.RData")
+> 
+> #install.packages("statnet", Sys.getenv("R_LIBS_USER"), repos = "http://cran.case.edu" )
+> library(statnet)
+> 
+> mq.matrix[is.na(mq.matrix)]<- 0
+> 
+> # id = time.periods
+> # number of time periods
+> time.periods <- 818
+> 
+> cases.total<- scc1[,71]
+> year.total <- scc1[,4]-1936 #-1936 => the first year 1937 is 1, 1938 is 2 aso 
+> 
+> # number of cases
+> cases <- max(which(time.periods==cases.total))
+> 
+> # simple assignment of time periods to cases
+> case.time <- cases.total[1:cases]
+> years <- year.total[1:cases] 
+> 
+> # going to need a sender time matrix covariate
+> sender.time <- matrix(case.time,length(case.time),length(case.time),byrow=F)
+> # a receiver time covariate
+> receiver.time <- matrix(case.time,length(case.time),length(case.time),byrow=T)
+> # and a unique dyad id to prevent ergmMPLE from using weights
+> dyad.id <- matrix(runif(length(case.time)^2),length(case.time),length(case.time))
+> # year
+> year <- matrix(years, length(case.time),length(case.time),byrow=F)
+> 
+> year.diff.square<- year.diff.matrix^2
+> 
+> # Store the data for MPLE in a year-by-year list
+> mple.data <- list()
+> 
+> # loop over time periods to construct data for mple
+> for(t in 382:time.periods){ # time.periods
++   # extract the network up to time t
++   net.t <- network(adjacency.matrix[which(case.time <= t),which(case.time <= t)])
++   # subset MQ matrix
++   mq.t <- mq.matrix[which(case.time <= t),which(case.time <= t)]
++   # subset same issue matrix
++   same.issue.area.t <- same.issue.area[which(case.time <= t),which(case.time <= t)]
++   # subset year diff matrix
++   year.diff.t <- year.diff.matrix[which(case.time <= t),which(case.time <= t)]
++   # subset year diff matrix square
++   year.diff.square.t <- year.diff.square[which(case.time <= t),which(case.time <= t)]
++   # subset sender time matrix
++   sender.time.t <- sender.time[which(case.time <= t),which(case.time <= t)]
++   # subset receiver time matrix
++   receiver.time.t <- receiver.time[which(case.time <= t),which(case.time <= t)]
++   # subset unique dyad id matrix
++   dyad.id.t <- dyad.id[which(case.time <= t),which(case.time <= t)]
++   # subset year matrix
++   year.t<- year[which(case.time <= t),which(case.time <= t)]
++ 
++   #### set vertex attributes
++   # same issue area
++   net.t <- set.vertex.attribute(net.t,"SameIssueArea", scc1[which(case.time <= t),57])
++   # abs diff of MQ score
++   net.t <- set.vertex.attribute(net.t,"AbsDiffMQscores", scc1[which(case.time <= t),79])
++   # number justices that voted for the case
++   net.t <- set.vertex.attribute(net.t,"NumberJusticesPro", scc1[which(case.time <= t),68])
++   # number justices that voted for the case
++   net.t <- set.vertex.attribute(net.t,"sender.time", sender.time.t[,1])
++   # use ergmMPLE to create data for time t
++   data.t <- ergmMPLE(net.t~edges+istar(2)+mutual+ostar(2)+triangle+edgecov(mq.t)+edgecov(same.issue.area.t)+edgecov(year.diff.t)+ edgecov(year.diff.square.t )+edgecov(sender.time.t)+edgecov(receiver.time.t)+
++                       edgecov(dyad.id.t)+ edgecov(year.t) +nodeocov('sender.time')+ nodeicov('AbsDiffMQscores')+ nodeicov('NumberJusticesPro')+ nodeifactor('SameIssueArea', base=1)+ nodeofactor('SameIssueArea', base=1))
++   # combine into a matrix
++   data.t <- cbind(data.t[[1]],data.t[[2]])
++   # add dependent variable label
++   colnames(data.t)[1] <- "edgeij"
++   # subset the data for this year to include nodes with sender time t
++   data.t <- data.t[which(data.t[,"edgecov.sender.time.t"] >= data.t[,"edgecov.receiver.time.t"] & data.t[,"edgecov.sender.time.t"] == t),]
++   # store in the list
++   mple.data[[t-381]] <- data.t
++   print(t)
++ }
+[1] 382
+[1] 383
+[1] 384
+[1] 385
+[1] 386
+[1] 387
+[1] 388
+[1] 389
+[1] 390
+[1] 391
+[1] 392
+[1] 393
+[1] 394
+[1] 395
+[1] 396
+[1] 397
+[1] 398
+[1] 399
+[1] 400
+[1] 401
+[1] 402
+[1] 403
+[1] 404
+[1] 405
+[1] 406
+[1] 407
+[1] 408
+[1] 409
+[1] 410
+[1] 411
+[1] 412
+[1] 413
+[1] 414
+[1] 415
+[1] 416
+[1] 417
+[1] 418
+[1] 419
+[1] 420
+[1] 421
+[1] 422
+[1] 423
+[1] 424
+[1] 425
+[1] 426
+[1] 427
+[1] 428
+[1] 429
+[1] 430
+[1] 431
+[1] 432
+[1] 433
+[1] 434
+[1] 435
+[1] 436
+[1] 437
+[1] 438
+[1] 439
+[1] 440
+[1] 441
+[1] 442
+[1] 443
+[1] 444
+[1] 445
+[1] 446
+[1] 447
+[1] 448
+[1] 449
+[1] 450
+[1] 451
+[1] 452
+[1] 453
+[1] 454
+[1] 455
+[1] 456
+[1] 457
+[1] 458
+[1] 459
+[1] 460
+[1] 461
+[1] 462
+[1] 463
+[1] 464
+[1] 465
+[1] 466
+[1] 467
+[1] 468
+[1] 469
+[1] 470
+[1] 471
+[1] 472
+[1] 473
+[1] 474
+[1] 475
+[1] 476
+[1] 477
+[1] 478
+[1] 479
+[1] 480
+[1] 481
+[1] 482
+[1] 483
+[1] 484
+[1] 485
+[1] 486
+[1] 487
+[1] 488
+[1] 489
+[1] 490
+[1] 491
+[1] 492
+[1] 493
+[1] 494
+[1] 495
+[1] 496
+[1] 497
+[1] 498
+[1] 499
+[1] 500
+[1] 501
+[1] 502
+[1] 503
+[1] 504
+[1] 505
+[1] 506
+[1] 507
+[1] 508
+[1] 509
+[1] 510
+[1] 511
+[1] 512
+[1] 513
+[1] 514
+[1] 515
+[1] 516
+[1] 517
+[1] 518
+[1] 519
+[1] 520
+[1] 521
+[1] 522
+[1] 523
+[1] 524
+[1] 525
+[1] 526
+[1] 527
+[1] 528
+[1] 529
+[1] 530
+[1] 531
+[1] 532
+[1] 533
+[1] 534
+[1] 535
+[1] 536
+[1] 537
+[1] 538
+[1] 539
+[1] 540
+[1] 541
+[1] 542
+[1] 543
+[1] 544
+[1] 545
+[1] 546
+[1] 547
+[1] 548
+[1] 549
+[1] 550
+[1] 551
+[1] 552
+[1] 553
+[1] 554
+[1] 555
+[1] 556
+[1] 557
+[1] 558
+[1] 559
+[1] 560
+[1] 561
+[1] 562
+[1] 563
+[1] 564
+[1] 565
+[1] 566
+[1] 567
+[1] 568
+[1] 569
+[1] 570
+[1] 571
+[1] 572
+[1] 573
+[1] 574
+[1] 575
+[1] 576
+[1] 577
+[1] 578
+[1] 579
+[1] 580
+[1] 581
+[1] 582
+[1] 583
+[1] 584
+[1] 585
+[1] 586
+[1] 587
+[1] 588
+[1] 589
+[1] 590
+[1] 591
+[1] 592
+[1] 593
+[1] 594
+[1] 595
+[1] 596
+[1] 597
+[1] 598
+[1] 599
+[1] 600
+[1] 601
+[1] 602
+[1] 603
+[1] 604
+[1] 605
+[1] 606
+[1] 607
+[1] 608
+[1] 609
+[1] 610
+[1] 611
+[1] 612
+[1] 613
+[1] 614
+[1] 615
+[1] 616
+[1] 617
+[1] 618
+[1] 619
+[1] 620
+[1] 621
+[1] 622
+[1] 623
+[1] 624
+[1] 625
+[1] 626
+[1] 627
+[1] 628
+[1] 629
+[1] 630
+[1] 631
+[1] 632
+[1] 633
+[1] 634
+[1] 635
+[1] 636
+[1] 637
+[1] 638
+[1] 639
+[1] 640
+[1] 641
+[1] 642
+[1] 643
+[1] 644
+[1] 645
+[1] 646
+[1] 647
+[1] 648
+[1] 649
+[1] 650
+[1] 651
+[1] 652
+[1] 653
+[1] 654
+[1] 655
+[1] 656
+[1] 657
+[1] 658
+[1] 659
+[1] 660
+[1] 661
+[1] 662
+[1] 663
+[1] 664
+[1] 665
+[1] 666
+[1] 667
+[1] 668
+[1] 669
+[1] 670
+[1] 671
+[1] 672
+[1] 673
+[1] 674
+[1] 675
+[1] 676
+[1] 677
+[1] 678
+[1] 679
+[1] 680
+[1] 681
+[1] 682
+[1] 683
+[1] 684
+[1] 685
+[1] 686
+[1] 687
+[1] 688
+[1] 689
+[1] 690
+[1] 691
+[1] 692
+[1] 693
+[1] 694
+[1] 695
+[1] 696
+[1] 697
+[1] 698
+[1] 699
+[1] 700
+[1] 701
+[1] 702
+[1] 703
+[1] 704
+[1] 705
+[1] 706
+[1] 707
+[1] 708
+[1] 709
+[1] 710
+[1] 711
+[1] 712
+[1] 713
+[1] 714
+[1] 715
+[1] 716
+[1] 717
+[1] 718
+[1] 719
+[1] 720
+[1] 721
+[1] 722
+[1] 723
+[1] 724
+[1] 725
+[1] 726
+[1] 727
+[1] 728
+[1] 729
+[1] 730
+[1] 731
+[1] 732
+[1] 733
+[1] 734
+[1] 735
+[1] 736
+[1] 737
+[1] 738
+[1] 739
+[1] 740
+[1] 741
+[1] 742
+[1] 743
+[1] 744
+[1] 745
+[1] 746
+[1] 747
+[1] 748
+[1] 749
+[1] 750
+[1] 751
+[1] 752
+[1] 753
+[1] 754
+[1] 755
+[1] 756
+[1] 757
+[1] 758
+[1] 759
+[1] 760
+[1] 761
+[1] 762
+[1] 763
+[1] 764
+[1] 765
+[1] 766
+[1] 767
+[1] 768
+[1] 769
+[1] 770
+[1] 771
+[1] 772
+[1] 773
+[1] 774
+[1] 775
+[1] 776
+[1] 777
+[1] 778
+[1] 779
+[1] 780
+[1] 781
+[1] 782
+[1] 783
+[1] 784
+[1] 785
+[1] 786
+[1] 787
+[1] 788
+[1] 789
+[1] 790
+[1] 791
+[1] 792
+[1] 793
+[1] 794
+[1] 795
+[1] 796
+[1] 797
+[1] 798
+[1] 799
+[1] 800
+[1] 801
+[1] 802
+[1] 803
+[1] 804
+[1] 805
+[1] 806
+[1] 807
+[1] 808
+[1] 809
+[1] 810
+[1] 811
+[1] 812
+[1] 813
+[1] 814
+[1] 815
+[1] 816
+[1] 817
+[1] 818
+> 
+> save.image("MPLE2.RData")
+> 
+> #### matrices have different dimensions due to nodeifactor and nodeofactor -> put all matrices into the right dimension
+> l<- length(mple.data)
+> mple.data.same<- list()
+> for(i in 1:l){
++   rowM<- dim(mple.data[[i]])[1]
++   d<- dim(mple.data[[i]])[2]
++   
++   aux.matrix<- matrix(0, rowM, 43)
++   colnames(aux.matrix)<- c( "edgeij", "edges", "istar2",  "mutual",  "ostar2",  "triangle", "edgecov.mq.t", "edgecov.same.issue.area.t",   
++            "edgecov.year.diff.t", "edgecov.year.diff.square.t",  "edgecov.sender.time.t",  "edgecov.receiver.time.t",  "edgecov.dyad.id.t",  "edgecov.year.t", "nodeocov.sender.time", "nodeicov.AbsDiffMQscores",
++             "nodeicov.NumberJusticesPro", "nodeifactor.SameIssueArea.2","nodeifactor.SameIssueArea.3","nodeifactor.SameIssueArea.4","nodeifactor.SameIssueArea.5",
++            "nodeifactor.SameIssueArea.6","nodeifactor.SameIssueArea.7","nodeifactor.SameIssueArea.8","nodeifactor.SameIssueArea.9","nodeifactor.SameIssueArea.10",
++            "nodeifactor.SameIssueArea.11","nodeifactor.SameIssueArea.12","nodeifactor.SameIssueArea.13","nodeifactor.SameIssueArea.14", "nodeofactor.SameIssueArea.2",
++            "nodeofactor.SameIssueArea.3","nodeofactor.SameIssueArea.4","nodeofactor.SameIssueArea.5","nodeofactor.SameIssueArea.6","nodeofactor.SameIssueArea.7",
++            "nodeofactor.SameIssueArea.8","nodeofactor.SameIssueArea.9","nodeofactor.SameIssueArea.10","nodeofactor.SameIssueArea.11","nodeofactor.SameIssueArea.12",
++            "nodeofactor.SameIssueArea.13","nodeofactor.SameIssueArea.14")
++    
++   aux.matrix[,1:17]<- mple.data[[i]][, 1:17]  
++   # enter columns of mple.data into the right column in aux.matrix
++   for(j in 18:d){
++     col.in.aux.matrix<- which(colnames(aux.matrix)==colnames(mple.data[[i]])[j])
++     aux.matrix[,col.in.aux.matrix]<- mple.data[[i]][,j]
++   }
++   # save auxiliary matrix with right dimension into new list
++   mple.data.same[[i]]<- aux.matrix
++   }
+> 
+> 
+> # collapse list into a data frame
+> mple.data <- data.frame(do.call('rbind',mple.data.same))
+> 
+> 
+> 
+> write.csv(mple.data, file = "mpledata2.csv")
+> 
+> # estimate mple
+> mple.est <- glm(edgeij ~ istar2+ostar2+mutual+triangle+ edgecov.mq.t+ edgecov.same.issue.area.t+ edgecov.year.diff.t +edgecov.year.diff.square.t +
++                 nodeicov.AbsDiffMQscores+ nodeicov.NumberJusticesPro + nodeocov.sender.time+ nodeifactor.SameIssueArea.2+ nodeifactor.SameIssueArea.3+ 
++                 nodeifactor.SameIssueArea.4+nodeifactor.SameIssueArea.5+ nodeifactor.SameIssueArea.6+ nodeifactor.SameIssueArea.7+ 
++                 nodeifactor.SameIssueArea.8+nodeifactor.SameIssueArea.9+  nodeifactor.SameIssueArea.10+
++                 nodeifactor.SameIssueArea.11+ nodeifactor.SameIssueArea.12+ nodeifactor.SameIssueArea.13+nodeifactor.SameIssueArea.14+ 
++                 nodeofactor.SameIssueArea.2+ nodeofactor.SameIssueArea.3+ nodeofactor.SameIssueArea.4+nodeofactor.SameIssueArea.5+ 
++                 nodeofactor.SameIssueArea.6+nodeofactor.SameIssueArea.7+
++                 nodeofactor.SameIssueArea.8+nodeofactor.SameIssueArea.9+nodeofactor.SameIssueArea.10+ nodeofactor.SameIssueArea.11+ 
++                 nodeofactor.SameIssueArea.12+ nodeofactor.SameIssueArea.13+nodeofactor.SameIssueArea.14,family=binomial,data=mple.data)
+> summary(mple.est)
+
+Call:
+glm(formula = edgeij ~ istar2 + ostar2 + mutual + triangle + 
+    edgecov.mq.t + edgecov.same.issue.area.t + edgecov.year.diff.t + 
+    edgecov.year.diff.square.t + nodeicov.AbsDiffMQscores + nodeicov.NumberJusticesPro + 
+    nodeocov.sender.time + nodeifactor.SameIssueArea.2 + nodeifactor.SameIssueArea.3 + 
+    nodeifactor.SameIssueArea.4 + nodeifactor.SameIssueArea.5 + 
+    nodeifactor.SameIssueArea.6 + nodeifactor.SameIssueArea.7 + 
+    nodeifactor.SameIssueArea.8 + nodeifactor.SameIssueArea.9 + 
+    nodeifactor.SameIssueArea.10 + nodeifactor.SameIssueArea.11 + 
+    nodeifactor.SameIssueArea.12 + nodeifactor.SameIssueArea.13 + 
+    nodeifactor.SameIssueArea.14 + nodeofactor.SameIssueArea.2 + 
+    nodeofactor.SameIssueArea.3 + nodeofactor.SameIssueArea.4 + 
+    nodeofactor.SameIssueArea.5 + nodeofactor.SameIssueArea.6 + 
+    nodeofactor.SameIssueArea.7 + nodeofactor.SameIssueArea.8 + 
+    nodeofactor.SameIssueArea.9 + nodeofactor.SameIssueArea.10 + 
+    nodeofactor.SameIssueArea.11 + nodeofactor.SameIssueArea.12 + 
+    nodeofactor.SameIssueArea.13 + nodeofactor.SameIssueArea.14, 
+    family = binomial, data = mple.data)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-8.4904  -0.1325  -0.1036  -0.0869   3.7180  
+
+Coefficients: (1 not defined because of singularities)
+                               Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                  -6.3860991  0.0981581 -65.059  < 2e-16 ***
+istar2                        0.0312657  0.0013723  22.783  < 2e-16 ***
+ostar2                        0.0190084  0.0010489  18.122  < 2e-16 ***
+mutual                        3.0632536  0.2863145  10.699  < 2e-16 ***
+triangle                      1.5272835  0.0110646 138.033  < 2e-16 ***
+edgecov.mq.t                  0.0504882  0.0141352   3.572 0.000355 ***
+edgecov.same.issue.area.t     1.4592825  0.0247349  58.997  < 2e-16 ***
+edgecov.year.diff.t          -0.0542645  0.0053282 -10.184  < 2e-16 ***
+edgecov.year.diff.square.t    0.0007900  0.0002141   3.689 0.000225 ***
+nodeicov.AbsDiffMQscores      0.0172235  0.0064774   2.659 0.007836 ** 
+nodeicov.NumberJusticesPro    0.0094925  0.0088511   1.072 0.283512    
+nodeocov.sender.time          0.0014869  0.0001172  12.684  < 2e-16 ***
+nodeifactor.SameIssueArea.2   0.2124282  0.0459404   4.624 3.76e-06 ***
+nodeifactor.SameIssueArea.3  -0.4932001  0.0581111  -8.487  < 2e-16 ***
+nodeifactor.SameIssueArea.4   0.7131593  0.0674868  10.567  < 2e-16 ***
+nodeifactor.SameIssueArea.5   0.6279390  0.2748672   2.285 0.022341 *  
+nodeifactor.SameIssueArea.6   0.1364789  0.1838007   0.743 0.457762    
+nodeifactor.SameIssueArea.7   0.2609784  0.0547952   4.763 1.91e-06 ***
+nodeifactor.SameIssueArea.8  -0.0789438  0.0407906  -1.935 0.052948 .  
+nodeifactor.SameIssueArea.9   0.1922569  0.0444757   4.323 1.54e-05 ***
+nodeifactor.SameIssueArea.10  0.3754073  0.0633503   5.926 3.11e-09 ***
+nodeifactor.SameIssueArea.11 -0.1898669  0.1972009  -0.963 0.335643    
+nodeifactor.SameIssueArea.12 -0.0566222  0.0618033  -0.916 0.359579    
+nodeifactor.SameIssueArea.13  0.5247297  0.3046428   1.722 0.084989 .  
+nodeifactor.SameIssueArea.14  0.2805871  0.1829471   1.534 0.125102    
+nodeofactor.SameIssueArea.2   0.3544232  0.0434108   8.164 3.23e-16 ***
+nodeofactor.SameIssueArea.3  -0.0088699  0.0499113  -0.178 0.858948    
+nodeofactor.SameIssueArea.4   0.8436539  0.0799822  10.548  < 2e-16 ***
+nodeofactor.SameIssueArea.5  -1.0062575  0.3558632  -2.828 0.004689 ** 
+nodeofactor.SameIssueArea.6   0.6872180  0.1681407   4.087 4.37e-05 ***
+nodeofactor.SameIssueArea.7   0.4735732  0.0555696   8.522  < 2e-16 ***
+nodeofactor.SameIssueArea.8   0.2328579  0.0404772   5.753 8.78e-09 ***
+nodeofactor.SameIssueArea.9   0.3126325  0.0447670   6.984 2.88e-12 ***
+nodeofactor.SameIssueArea.10  0.5286920  0.0629231   8.402  < 2e-16 ***
+nodeofactor.SameIssueArea.11  0.3702356  0.1871609   1.978 0.047910 *  
+nodeofactor.SameIssueArea.12  0.5351869  0.0624742   8.567  < 2e-16 ***
+nodeofactor.SameIssueArea.13  1.4165310  0.3850946   3.678 0.000235 ***
+nodeofactor.SameIssueArea.14         NA         NA      NA       NA    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 154125  on 698409  degrees of freedom
+Residual deviance:  75005  on 698373  degrees of freedom
+AIC: 75079
+
+Number of Fisher Scoring iterations: 8
+
+> 
+> 
+> 
+> 
