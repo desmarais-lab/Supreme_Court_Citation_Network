@@ -1,0 +1,17 @@
+ 
+ 
+Job started on comp-sc-0126.acib.production.int.aci.ics.psu.edu at Fri Dec  8 11:02:16 EST 2017
+Lmod has detected the following error: The following module(s) are unknown:
+"R/3.2.0"
+
+Please check the spelling or version number. Also try "module spider ..."
+
+
+
+
+Warning message:
+glm.fit: fitted probabilities numerically 0 or 1 occurred 
+There were 50 or more warnings (use warnings() to see the first 50)
+ 
+Job Ended at Sun Dec 10 13:56:54 EST 2017
+ 
