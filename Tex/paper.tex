@@ -85,7 +85,7 @@ In what follows we develop a theoretical case that citations on the US Supreme C
 
 \section{Complex Interdependence in Supreme Court Citations}
 
-When it comes to the development and testing of theory, the defining feature of networks is that the fundamental element under study---the relationship between two units (i.e., the citation from one opinion to another) is a piece of a complex web of relations that cannot be fully understood without considering how the singular relationship fits into that complex web.
+When it comes to the development and testing of theory, the defining feature of networks is that the fundamental element under study---the relationship between two units (i.e., the citation from one opinion to another) is a piece of a complex web of relations. The formation (or lack thereof) of that relationship cannot be fully understood without considering how the relationship fits into the complex web. Analytical designs that account only for covariates in explaining tie formation
 
 \textbf{Transitivity:} Discussing past edges in the citation network leads to transitivity. If i cites j, it is also likely to discuss the cases on which j is based.
 
@@ -471,6 +471,32 @@ Justices in Majority $\times$ Sender Year   & 0.0029                           &
 \vspace{-.25cm}
 \end{figure} 
 
+
+\subsection{Predictive Performance}
+
+Our case for studying legal citaions at the directed dyadic level hinges upon the contribution to modeling offered by incorporating network dependence. To quantify this contribution, we use out-of-sample prediction [CITES]. Predicting out-of-sample offers an unbiased and general purpose way to evaluate the contribution, in terms of model fit, of one or more terms/parameters in a model. Unlike in-sample measures of model fit, out-of-sample methods are highly robust in avoiding overfitting, and work when we cannot accurately calculate the value of the likelihood function, as in the current case. 
+
+In our prediction experiment we randomly split the directed dyads into an 80\% training set and a 20\% test set. The parameters of the model are estimated using the directed dyads in the training set, and the parameters are used to form the conditional probability of a tie for all of the directed dyads in the test set. Directed dyads for which the conditional probability of a tie exceeds 0.5 are predicted to be citations. The experiment is run with the full model, and with a model that excludes all of the dependence terms (i.e., all terms involving reciprocity, in and out stars, and triangles)---the independent dyads model. We run this experiment for 10 iterations. Predictive performance is evaluated with three common and related measures---precision (i.e., the proportion of predicted citations that are actually citations), recall (the proportion of actual citations that are predicted to be citations), and the F1 score (the harmonic mean of precision and recall). All three measures are bounded between 0 and 1, with higher scores indicating better performance.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{rllll}
+\hline \hline
+& \multicolumn{2}{c}{Independent Model} & \multicolumn{2}{c}{Full Model} \\
+  \hline
+ & mean & range & mean & range \\ 
+  \hline
+precision & 0.5499 & (0.5384, 0.5619) & 0.8605 & (0.8526, 0.8666) \\ 
+  recall & 0.0827 & (0.0811, 0.0843) & 0.5858 & (0.5817, 0.5891) \\ 
+  F1 score & 0.1438 & (0.141, 0.1463) & 0.6971 & (0.6941, 0.7008) \\ 
+   \hline \hline
+\end{tabular}
+\caption{The predictive performance of the directed dyadic models, over ten 80/20 train/test splits.}
+\label{tab:prediction}
+\end{table}
+
+
+We see from Table \ref{tab:prediction} that, based on all three measures, the predictive performance of the model improves dramatically from adding the network dependence terms. The recall of the full model is particularly impressive, indicating that it recovers over half of the actual citations in the test set. This provides clear evidence that the full model, which includes covariates and network dependence terms, represents a more accurate and complete model of the process of citation formation in US Supreme Court opinions.
 
 
 \bibliography{bib} 
