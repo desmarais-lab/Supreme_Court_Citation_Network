@@ -3,47 +3,87 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: paper.aux
 The style file: apsr.bst
 Database file #1: bib.bib
+Repeated entry---line 933 of file bib.bib
+ : @article{lupu2012precedent
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 943 of file bib.bib
+ : @article{lupu2013strategic
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 953 of file bib.bib
+ : @article{pelc2014politics
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 963 of file bib.bib
+ : @article{knight1996norm
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 979 of file bib.bib
+ : @article{hinkle2016transmission
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1009 of file bib.bib
+ : @article{bommarito2010distance
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1019 of file bib.bib
+ : @article{fowler2008authority
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1029 of file bib.bib
+ : @article{fowler2007network
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1056 of file bib.bib
+ : @article{karrer2009random
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1436 of file bib.bib
+ : @article{lupu2012precedent
+ :                           ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Snijders.2002b"
 Warning--empty publisher in desmaraisstatistical
-You've used 19 entries,
+You've used 58 entries,
             2874 wiz_defined-function locations,
-            763 strings with 8051 characters,
-and the built_in function-call counts, 80169 in all, are:
-= -- 13127
-> -- 955
+            992 strings with 15057 characters,
+and the built_in function-call counts, 286635 in all, are:
+= -- 47280
+> -- 3463
 < -- 0
-+ -- 6137
-- -- 338
-* -- 6832
-:= -- 16056
-add.period$ -- 77
-call.type$ -- 19
-change.case$ -- 247
-chr.to.int$ -- 19
-cite$ -- 20
-duplicate$ -- 310
-empty$ -- 691
-format.name$ -- 347
-if$ -- 14438
++ -- 22503
+- -- 1205
+* -- 24893
+:= -- 56710
+add.period$ -- 236
+call.type$ -- 58
+change.case$ -- 754
+chr.to.int$ -- 58
+cite$ -- 59
+duplicate$ -- 921
+empty$ -- 2069
+format.name$ -- 1263
+if$ -- 51636
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 21
-newline$ -- 82
-num.names$ -- 223
-pop$ -- 80
+missing$ -- 60
+newline$ -- 241
+num.names$ -- 682
+pop$ -- 194
 preamble$ -- 1
-purify$ -- 285
+purify$ -- 870
 quote$ -- 0
-skip$ -- 264
+skip$ -- 822
 stack$ -- 0
-substring$ -- 18482
-swap$ -- 52
-text.length$ -- 266
+substring$ -- 67250
+swap$ -- 150
+text.length$ -- 812
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 72
+type$ -- 228
 warning$ -- 1
-while$ -- 464
+while$ -- 1398
 width$ -- 0
-write$ -- 258
-(There were 2 warnings)
+write$ -- 813
+(There were 10 error messages)

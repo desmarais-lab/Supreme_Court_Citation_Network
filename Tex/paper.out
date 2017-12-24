@@ -1,9 +1,13 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Complex Interdependence in Supreme Court Citations}{}% 2
 \BOOKMARK [1][-]{section.3}{Network Approaches to Studying Citations}{}% 3
-\BOOKMARK [1][-]{section.4}{The Exponential Random Configuration Model}{}% 4
-\BOOKMARK [1][-]{section.5}{Estimation}{}% 5
-\BOOKMARK [1][-]{section.6}{Prior work on court citations}{}% 6
-\BOOKMARK [1][-]{section.7}{Results}{}% 7
-\BOOKMARK [2][-]{subsection.7.1}{Inferential Results}{section.7}% 8
-\BOOKMARK [2][-]{subsection.7.2}{Predictive Performance}{section.7}% 9
+\BOOKMARK [1][-]{section.4}{Extra Notes}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{Broader definitions of citation networks}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{Weighted edges and multiplexity}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.3}{Misc. notes}{section.4}% 7
+\BOOKMARK [1][-]{section.5}{The Exponential Random Configuration Model}{}% 8
+\BOOKMARK [1][-]{section.6}{Estimation}{}% 9
+\BOOKMARK [1][-]{section.7}{Prior work on court citations}{}% 10
+\BOOKMARK [1][-]{section.8}{Results}{}% 11
+\BOOKMARK [2][-]{subsection.8.1}{Inferential Results}{section.8}% 12
+\BOOKMARK [2][-]{subsection.8.2}{Predictive Performance}{section.8}% 13
