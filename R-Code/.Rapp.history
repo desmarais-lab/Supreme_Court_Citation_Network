@@ -1,0 +1,5 @@
+load("/Users/bbd5087/Box Sync/Box/Research/Supreme_Court_Citation_Network/R-Code/supreme.RData")
+ls()
+library(network)
+scnetwork
+table(get.vertex.attribute(scnetwork,"year"))
