@@ -160,15 +160,14 @@ Researchers from several fields have used network analysis to analyze citations-
  \section{The Citation Temporal Exponential Random Graph Model}
 We build upon existing methods for network analysis to define a model that fits the constraints to which Supreme Court citation networks are subject. The Supreme Court citation network is nearly a directed acyclic graph---a graph in which there can be no loops/cycles (e.g., ties cannot be reciprocated, which would constitute a two-node loop). If two cases are decided in different terms, the later case can cite the earlier case, but not the reverse. However, as noted above, if two opinions are written in the same term, they can cite each other reciprocally. We implement a version of the temporal exponential random graph model (TERGM)---a model that is commonly used for longitudinal network data [CITES]---that is subject to the constraints specific to the Supreme Court citation network. The TERGM is a model that can simultaneously incorporate structural dependencies such as transitivity and reciprocity and exogenous covariates  (e.g. the issue area of the citing case, the ideological distance between the opinion authors of the two cases in the dyad) to explain tie formation. If the ties do not depend upon each other, and the coefficients associated with the structural dependencies are either assumed or estimated to be zero, the TERGM reduces to a logistic regression in which the observation is a directed dyad [CITE OLD PA].  In this section we describe the citation TERGM (c-TERGM), and explain estimation methods. 
 
-Let $c_ij \in \{0,1\}$ be a binary indicator of whether case $i$ cites $j$. Furthermore, let
-$$\mathcal{C}_t(N)=\{c(t)\in \{0,1\}^N: c_i(t)\in \{0,1\} \}$$ 
-be the set of all possible citation combinations at time $t$. Note that the cardinality of $\mathcal{C}_t(N)$ increases exponentially for every newly added case, which results in $2^N$ elements.\\
-The probability function of the ERCM is defined as
+Let $c_{ij} \in \{0,1\}$ be a binary indicator of whether case $i$ cites $j$. Furthermore, let
+$$\mathcal{C}_t=\{c(t)\in \{0,1\}^{N_t}: c_{ij}(t)\in \{0,1\} \}$$ 
+be the set of all possible citation combinations for opinions issued in term $t$, where $c_{ij}(t)$ is a binary indicator of whether case $i$ cites case $j$, and case $i$ is decided at time $t$. Note that the cardinality of $\mathcal{C}_t$ increases exponentially for every newly added case.\\ The probability function of the c-TERGM  is defined as
 \begin{equation}
-P_{\theta}(c(t)~|~c(t-))=\cfrac{\exp\big(\theta^T\cdot h\big(c(t)~|~c(t-)\big)\big)}{\sum_{c(t)^*\in \mathcal{C}}\exp\big(\theta^T\cdot h\big(c(t)~|~c(t-)\big)\big)}
+P_{\theta}(c(t)~|~c(t-))=\cfrac{\exp\big(\theta^T\cdot h\big(c(t)~|~c(t-)\big)\big)}{\sum_{z(t)^*\in \mathcal{C}}\exp\big(\theta^T\cdot h\big(z(t)~|~c(t-)\big)\big)}
 \label{ercm}
 \end{equation}
-where $c(t-)\in \{0,1\}^{N \times (t-1)}$ is a matrix that indicates which cases have been citing in each other before time $t$, $\theta \in \mathbb{R}^q$ is a q-dimensional vector of parameters,  $h: \mathcal{C}_t(N) \to \mathbb{R}^q ~, ~ \c(t) \to (h_1(c(t)), \dots , h_q(c(t)))^T$ is a q-dimensional vector of different statistics and $\kappa(\theta) := \sum_{c(t)^*\in \mathcal{C}}\exp(\theta^T\cdot h(c(t)|c(t-)))$ is a normalization constant that ensures that (\ref{ercm}) defines a probability function on $\mathcal{C}_t$.\\[0.3cm]
+where $c(t-)$ is a matrix that indicates the citations among cases decided before time $t$, $\theta \in \mathbb{R}^q$ is a $q$-dimensional vector of parameters,  $h: \mathcal{C}_t \to \mathbb{R}^q ~, ~ \c(t) \to (h_1(c(t)), \dots , h_q(c(t)))^T$ is a q-dimensional vector of different statistics and $\kappa(\theta) := \sum_{z(t)^*\in \mathcal{C}}\exp\big(\theta^T\cdot h\big(z(t)~|~c(t-)\big))$ is a normalization constant that ensures that (\ref{ercm}) defines a probability function on $\mathcal{C}_t$.\\[0.3cm]
 
 % Network Statistics
 The generative process of a model are informed by
