@@ -160,29 +160,32 @@ Researchers from several fields have used network analysis to analyze citations-
  \section{The Citation Temporal Exponential Random Graph Model}
 We build upon existing methods for network analysis to define a model that fits the constraints to which Supreme Court citation networks are subject. The Supreme Court citation network is nearly a directed acyclic graph---a graph in which there can be no loops/cycles (e.g., ties cannot be reciprocated, which would constitute a two-node loop). If two cases are decided in different terms, the later case can cite the earlier case, but not the reverse. However, as noted above, if two opinions are written in the same term, they can cite each other reciprocally. We implement a version of the temporal exponential random graph model (TERGM)---a model that is commonly used for longitudinal network data [CITES]---that is subject to the constraints specific to the Supreme Court citation network. The TERGM is a model that can simultaneously incorporate structural dependencies such as transitivity and reciprocity and exogenous covariates  (e.g. the issue area of the citing case, the ideological distance between the opinion authors of the two cases in the dyad) to explain tie formation. If the ties do not depend upon each other, and the coefficients associated with the structural dependencies are either assumed or estimated to be zero, the TERGM reduces to a logistic regression in which the observation is a directed dyad [CITE OLD PA].  In this section we describe the citation TERGM (c-TERGM), and explain estimation methods. 
 
-Let $c_{ij} \in \{0,1\}$ be a binary indicator of whether case $i$ cites $j$. Furthermore, let
-$$\mathcal{C}_t=\{c(t)\in \{0,1\}^{N_t}: c_{ij}(t)\in \{0,1\} \}$$ 
-be the set of all possible citation combinations for opinions issued in term $t$, where $c_{ij}(t)$ is a binary indicator of whether case $i$ cites case $j$, and case $i$ is decided at time $t$. Note that the cardinality of $\mathcal{C}_t$ increases exponentially for every newly added case.\\ The probability function of the c-TERGM  is defined as
+Let $C$ be the case-to-case adjacency matrix such that $C_{ij} \in \{0,1\}$ is a binary indicator of whether case $i$ cites $j$. Furthermore, let
+$$\mathcal{C} =\{C \in \{0,1\}^{(N \cdot (N-1))/2}: C_{ij} \in \{0,1\} \}$$ 
+be the set of all possible adjacency matrices among $N$ cases. Note that the cardinality of $\mathcal{C}$ increases exponentially for every newly added case. The probability function of the c-TERGM  is defined as
 \begin{equation}
-P_{\theta}(c(t)~|~c(t-))=\cfrac{\exp\big(\theta^T\cdot h\big(c(t)~|~c(t-)\big)\big)}{\sum_{z(t)^*\in \mathcal{C}}\exp\big(\theta^T\cdot h\big(z(t)~|~c(t-)\big)\big)}
+P_{\theta}(C)=\cfrac{\exp\big(\theta^T\cdot h\big(C)\big)\big)}{\sum_{Z^*\in \mathcal{C}}\exp\big(\theta^T\cdot h\big(Z^*)\big)\big)}
 \label{ercm}
 \end{equation}
-where $c(t-)$ is a matrix that indicates the citations among cases decided before time $t$, $\theta \in \mathbb{R}^q$ is a $q$-dimensional vector of parameters,  $h: \mathcal{C}_t \to \mathbb{R}^q ~, ~ \c(t) \to (h_1(c(t)), \dots , h_q(c(t)))^T$ is a q-dimensional vector of different statistics and $\kappa(\theta) := \sum_{z(t)^*\in \mathcal{C}}\exp\big(\theta^T\cdot h\big(z(t)~|~c(t-)\big))$ is a normalization constant that ensures that Equation (\ref{ercm}) defines a probability function on $\mathcal{C}_t$.
+where $\theta \in \mathbb{R}^q$ is a $q$-dimensional vector of parameters,  $h: \mathcal{C} \to \mathbb{R}^q$ is a q-dimensional vector of different statistics and $\kappa(\theta) := \sum_{Z^*\in \mathcal{C}}\exp\big(\theta^T\cdot h\big(Z^*)\big)$ is a normalization constant that ensures that Equation (\ref{ercm}) defines a probability function on $\mathcal{C}$.
 
 % Network Statistics
 The c-TERGM is specified through 
 the decision regarding which network statistics $h(\cdot)$ to incorporate. We include the following statistics for the Supreme Court citation network, which are derived from the interdependence hypotheses described in the previous section:
-$$h_{edges}:\mathcal{C}_t\to \mathbb{R}~~~, ~~~c(t) \to \sum_{i(t)} c_{ij}, $$
-the number of citations made at time $t$, where $i(t)$ is the set of opinions issued at time $t$.  $h_{edges}$ performs the function of an intercept, and models the expected value of any given edge.
-$$h_{outstar}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~c(t) \to \sum_{i(t)} {\sum_{j \neq i} c_{ij} \choose 2} $$
-the number of out-two-stars occuring at time $t$. An out-two-star is a configuration in which one node sends to two other nodes. The number of these configurations grows quadratically as the origins of ties concentrate on a few highly active/social senders. The out-two-stars configuration is commonly used to model sociality in ERGMs.
-$$h_{instar}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~c(t) \to \sum_{j(t)} {\sum_{i \neq j} c_{ij} \choose 2} $$
-the number of in-two-stars occuring at time $t$. An in-two-star is a configuration in which one node receives ties from two other nodes. The number of these configurations grows quadratically as the destinations of ties concentrate on a few highly popular recipients. The out-two-stars configuration is commonly used to model popularity in ERGMs. [HERE]
+$$h_{edges}:\mathcal{C} \to \mathbb{R}~~~, ~~~C \to \sum_{ij} C_{ij}, $$
+the number of citations.  $h_{edges}$ performs the function of an intercept, and models the expected value of any given edge.
+$$h_{outstar}:\mathcal{C} \to \mathbb{R}~~~, ~~~C \to \sum_{i=1}^N {\sum_{j \neq i} c_{ij} \choose 2} $$
+the number of out-two-stars. An out-two-star is a configuration in which one node sends to two other nodes. The number of these configurations grows quadratically as the origins of ties concentrate on a few highly active/social senders. The out-two-stars configuration is commonly used to model sociality in ERGMs.
+$$h_{instar}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C \to \sum_{j=1}^N {\sum_{i \neq j} c_{ij} \choose 2} $$
+the number of in-two-stars. An in-two-star is a configuration in which one node receives ties from two other nodes. The number of these configurations grows quadratically as the destinations of ties concentrate on a few highly popular recipients. The out-two-stars configuration is commonly used to model popularity in ERGMs.
+\begin{align*}
+h_{triangle}:\mathcal{C} \to \mathbb{R}~~~, ~~~C \to & \sum_{j<i<k} C_{ij}\cdot C_{jk} \cdot C_{ki} + C_{ji}\cdot C_{jk} \cdot C_{ki} + C_{ij}\cdot C_{kj} \cdot C_{ki} \\ & + C_{ji}\cdot C_{kj} \cdot C_{ki} + C_{ij}\cdot C_{jk} \cdot C_{ik} + C_{ji}\cdot C_{jk} \cdot C_{ik}  \\ & + C_{ij}\cdot C_{kj} \cdot C_{ik} + C_{ji}\cdot C_{kj} \cdot C_{ik},  
+\end{align*}
+The number of triangles in the network.  Triangles measure triad closure, as discussed above. $$h_{covariate}:\mathcal{C} \to \mathbb{R}~~~, ~~~C \to \sum_{ij} C_{ij}X_{ij}, $$ the effect of an exogenous covariate ($X$). We include several exogenous covariates based on this standard statistic formulation. These covariates are discussed below.
+
+The structure of this model is very similar to a conventional (T)ERGM setup. The main difference is that  $\mathcal{C}$ excludes adjacency matrices in which there are loops that include edges sent at different time points. Loops can exist in the Supreme Court citation network, but only among cases decided in the same term. We estimate the c-TERGM via bootstrapped pseudolikelihood, as introduced by [CITE PHYSICA]. 
 
 
-$$h_{triangle}:\mathcal{C}(N)\to \mathbb{R}~~~, ~~~c(t) \to \sum_{j<i}^Nc_i(t)\cdot c_j(t) \cdot
-c_j(t_{-i}) \cdot w(a,b)$$
-where $c_j(t_{-i})$ indicates whether case $j$ was cited at the time case $i$ was introduced into the network. Just as for the outstar statistic, we include a weighting factor to favor more recent cases. \\[0.3cm]
 
 
 \section{Prior work on court citations}
