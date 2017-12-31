@@ -188,27 +188,27 @@ The structure of this model is very similar to a conventional (T)ERGM setup. The
 
 
 
-\section{Prior work on court citations}
+\section{Correlates of Legal Citations}
 
-Theorizing that legal citations arise through network interdependence processes  represents a potential contribution to the literature. To demonstrate the value of our contribution we must also incorporate established non-network processes that have been found to affect legal citations. We incorporate these processes through the specification of $h_{covariate}$ to be included in the c-TERGM. 
+Theorizing that legal citations arise through network interdependence processes  represents a potential contribution to the literature. To demonstrate the value of our contribution we must also incorporate established non-network processes that have been found to affect legal citations. We incorporate these processes through the specification of $h_{covariate}$  terms to be included in the c-TERGM. 
 
+We incorporate a statistic to model the degree to which cases cite those that are similar in terms of the ideological positions of the justices who supported the decision. We account for this effect following citet{spriggs2001explaining}, who find that cases are more likely to be overruled when the Court is ideologically distant from the median justice in the majority coalition that decided the case. \citet{clark2010locating} estimates a latent coordinate model of Cupreme Court opinions based on the network of case-to-case citations. They find that the majority opinion falls at the ideal point of the median member of the majority coalition in the case. We include a covariate term in which $X_{ij}$ is the absolute difference between the Martin-Quinn [CITE MQ] scores of the median justices in the majority coalitions for cases $i$ and $j$. We expect this variable to have a negative effect, which would correspond to cases citing those to which they are ideologically similar.%WE COULD USE THIS DATASET AS A SECOND APPLICATION
 
-\begin{itemize}
+We include two sets of dummy variables that account for the issue areas of cases. In one set of dummy variable---sender intercepts---the variable $X_{ij}$ indicates the issue area of the sending case ($i$). In the set of receiver intercepts $X_{ij}$ indicates the issue are of the receiver case. Issue area data comes from the Supreme Court Database (SCDB) [CITE SCDB]. We include these variables because \citet{cross2010determinants} find that the number of citations to Supreme Court opinions depends heavily on the issue area of the case.
 
-\item \citet{clark2010locating} Estimates a latent coordinate model of supreme court opinions based on the network of supreme court citations. Find that the majority opinion falls at the ideal point of the median member of the majority coalition. Account for negative citations. WE COULD USE THIS DATASET AS A SECOND APPLICATION
+We model the way in which citations to a case depend upon the age of a case. For this we use a second-order polynomial in which one covariate $X_{ij}$ is defined as the age of case $j$ at the time that case $i$ is decided, and another term in which $X_{ij}$ is the squared age of case $j$ at the time that case $i$ is decided. We include these covariates because \citet{black2013citation} find that the number of citations to a Supreme Court case over time depends significantly on the age of the case, characterized by a sharp drop off and leveling out with age. 
 
-\item \citet{cross2010determinants} Look at the total number of citations to Supreme Court opinions over a ten year period of the Rehnquist Court. (case level).  Found case issue area, opinion ideology, opinion author, vote margin was not significant. Negative citations decreased future positive citations.
+\citet{benjamin2012standing} Study the propensity for cases to be overruled and cited in other negative ways. They find that cases with majority coalitions that are large and ideologically broad are less likely to be cited negatively. In our data we do not differentiate between negative and positive citaitons, but since the overwhelming majority of citations are positive, we hypothesize that the effects they found will be reversed in our analysis. We include one covariate in which $X_{ij}$ is the number of justices in the majority coalition for case $j$. We also include another covariate in which $X_{ij}$ is the absolute difference between the maximum and minimum ideal points of the justices in the majority coalition for case $j$. We expect both of these covariates to have positive effects.
 
-\item \citet{black2013citation} Study the number of citations to a case over time, in order to understand the lifecycle of citation rates.  Show that the rate of citations to a case goes down very quickly. THE EFFECT OF AN INDEPENDENT VARIABLE ON A PRECEDENT IS DEPENDENT UPON THE AGE OF THE CASE.
+%%%% DONT DELETE THESE COMMENTS, INCLUDE IDEAS FOR ADDITIONAL COVARIATES %%%%%
 
-\item \citet{benjamin2012standing} Study the propensity for cases to be overruled and cited in other negative ways. They find that cases with large and broad majorities rare less likely to be cited negatively.
+%\citet{cross2010determinants} find that the number of citations to Supreme Court opinions over a ten year period of the Rehnquist Court. (case level).  Found case issue area, opinion ideology, opinion author, vote margin was not significant. Negative citations decreased future positive citations.
 
-\item \citet{spriggs2001explaining} Find that cases are more likely to be overruled when the Court is ideologically distant from the median justice in the majority coalition that decided the case, when the legal issues under consideration are complex, whn the cases ha been negatively treated previously, when there were many concurring opinions, and less likely to be overruled if it was a unanimous coalition.
+%\item \citet{black2013citation} Study the number of citations to a case over time, in order to understand the lifecycle of citation rates.  Show that the rate of citations to a case goes down very quickly. THE EFFECT OF AN INDEPENDENT VARIABLE ON A PRECEDENT IS DEPENDENT UPON THE AGE OF THE CASE.
 
-\item \citet{lupu2013strategic} The hub score, which is a measure of the degree to which a case cites other important cases increases with salience [GET THE AMICUS BRIEFS, NYT COUNTS]. Lower if stautory cases. Increases with ideological variance of the majority coalition.  Increases with the number of concurring opinions. 
+% \item \citet{spriggs2001explaining} Find that cases are more likely to be overruled when the Court is ideologically distant from the median justice in the majority coalition that decided the case, when the legal issues under consideration are complex, whn the cases ha been negatively treated previously, when there were many concurring opinions, and less likely to be overruled if it was a unanimous coalition.
 
-\end{itemize}
-
+%\item \citet{lupu2013strategic} The hub score, which is a measure of the degree to which a case cites other important cases increases with salience [GET THE AMICUS BRIEFS, NYT COUNTS]. Lower if stautory cases. Increases with ideological variance of the majority coalition.  Increases with the number of concurring opinions. 
 
  \section{Results}
   \subsection*{Descriptive Results}
