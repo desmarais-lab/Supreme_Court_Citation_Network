@@ -1,0 +1,86 @@
+%preamble
+%basics
+\documentclass[12pt]{article}
+\usepackage{setspace}
+\singlespacing
+\usepackage{fancyhdr}
+\usepackage[margin=1in]{geometry}
+\frenchspacing
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Citation Networks}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\usepackage{csquotes}
+
+%figures graphs equations
+\usepackage{graphics}
+\usepackage{tikz}
+\usepackage{amsmath,amsfonts,amsthm}
+\setlength\parindent{20pt}
+\usepackage{cancel}
+\usepackage[normalem]{ulem}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{colortbl}
+
+%colours
+\usepackage{color}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{mylightgray}{gray}{.9}
+
+%references
+\usepackage[numbers]{natbib}
+\bibliographystyle{plainnat}
+\setcitestyle{aysep={}}
+\newcommand\posscite[1]{\citeauthor{#1}\textcolor{cyan}{'s} (\citeyear{#1})}
+\usepackage[hyperfootnotes=false]{hyperref}
+\hypersetup{
+    colorlinks=true,
+	citecolor=mygray,
+	linkcolor=black,
+	urlcolor=mygray}
+
+%code
+\usepackage{lmodern}
+\usepackage{listings}
+\lstset{basicstyle=\selectfont\ttfamily\footnotesize,showstringspaces=false,language=R, frame=single, breaklines=true,commentstyle=\color{mygreen},keywordstyle=\color{blue}}
+
+%title
+\title{Citation Networks Visualizations}
+
+\begin{document}
+	
+\section{Visualizations}
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{{citations1}.pdf}
+		\caption{Supreme Court Citation Network, 1937--2002. Nodes are supreme court cases, with size based on incoming citations. Salient  cases (\textit{Oxford Guide}) are in yellow. Each network layer contains cases decided under a different chief justice. Because our data is temporally bound, cases for the Hughes and Rehnquist courts are not complete. Edges between two nodes indicate the later document cites the earlier one.}
+	\end{center}
+\end{figure}
+
+\newpage
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[width=0.6\textwidth]{{citations2}.pdf}
+		\caption{Supreme Court Citation Network, 1937--2002. Nodes are supreme court cases, with size based on incoming citations. Salient  cases (\textit{Oxford Guide}) are in yellow. Each network layer contains cases decided in a given year; the top layer is 2002 and the bottom layer is 1937. Edges between two nodes indicate that the later document cites the earlier one.}
+	\end{center}
+\end{figure}
+
+\newpage
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{{citations3}.pdf}
+		\includegraphics[width=0.49\textwidth]{{citations4}.pdf}
+		\caption{Supreme Court Citation Network, 1985--1989. Nodes are supreme court cases, with size based on incoming citations. Important cases are in yellow. On the left, each network layer contains cases decided in a given year; the top layer is 1989 and the bottom layer is 1985. On the right, the five layers are collapsed. Edges between two nodes indicate that the later document cites the earlier one.}
+	\end{center}
+\end{figure}
+
+
+\end{document}
+
+
