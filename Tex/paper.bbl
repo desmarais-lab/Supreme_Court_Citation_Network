@@ -64,6 +64,11 @@ Cranmer, Skyler~J \harvardand\ Bruce~A Desmarais. 2010.
 \newblock ``Inferential network analysis with exponential random graph
   models.'' {\em Political Analysis} 19(1):66--86.
 
+\harvarditem{Cranmer \harvardand\ Desmarais}{2017}{cranmer2017can}
+Cranmer, Skyler~J \harvardand\ Bruce~A Desmarais. 2017.
+\newblock ``What Can We Learn from Predictive Modeling?'' {\em Political
+  Analysis} pp.~1--22.
+
 \harvarditem[Cranmer, Desmarais \harvardand\ Menninga]{Cranmer, Desmarais
   \harvardand\ Menninga}{2012}{cranmer2012complex}
 Cranmer, Skyler~J, Bruce~A Desmarais \harvardand\ Elizabeth~J Menninga. 2012.
@@ -172,6 +177,11 @@ Hunter, David~R \harvardand\ Mark~S Handcock. 2006.
 \newblock ``Inference in curved exponential family models for networks.'' {\em
   Journal of Computational and Graphical Statistics} 15(3):565--583.
 
+\harvarditem{Jensen \harvardand\ Cohen}{2000}{jensen2000multiple}
+Jensen, David~D \harvardand\ Paul~R Cohen. 2000.
+\newblock ``Multiple comparisons in induction algorithms.'' {\em Machine
+  Learning} 38(3):309--338.
+
 \harvarditem[Jeong, N{\'e}da \harvardand\ Barab{\'a}si]{Jeong, N{\'e}da
   \harvardand\ Barab{\'a}si}{2003}{jeong2003measuring}
 Jeong, Hawoong, Zoltan N{\'e}da \harvardand\ Albert-L{\'a}szl{\'o}
@@ -207,6 +217,13 @@ Lupu, Yonatan \harvardand\ Erik Voeten. 2012.
 Lupu, Yonatan \harvardand\ James~H Fowler. 2013.
 \newblock ``Strategic citations to precedent on the US Supreme Court.'' {\em
   The Journal of Legal Studies} 42(1):151--186.
+
+\harvarditem[Makhoul et~al.]{Makhoul, Kubala, Schwartz, Weischedel
+  et~al.}{1999}{makhoul1999performance}
+Makhoul, John, Francis Kubala, Richard Schwartz, Ralph Weischedel et~al. 1999.
+\newblock Performance measures for information extraction.  In {\em Proceedings
+  of DARPA broadcast news workshop}.
+\newblock pp.~249--252.
 
 \harvarditem{Martin \harvardand\ Quinn}{2002}{martin2002dynamic}
 Martin, Andrew~D \harvardand\ Kevin~M Quinn. 2002.
@@ -271,5 +288,11 @@ Wang, Mingyang, Guang Yu \harvardand\ Daren Yu. 2008.
 \newblock ``Measuring the preferential attachment mechanism in citation
   networks.'' {\em Physica A: Statistical Mechanics and its Applications}
   387(18):4692--4698.
+
+\harvarditem[Ward, Greenhill \harvardand\ Bakke]{Ward, Greenhill \harvardand\
+  Bakke}{2010}{ward2010perils}
+Ward, Michael~D, Brian~D Greenhill \harvardand\ Kristin~M Bakke. 2010.
+\newblock ``The perils of policy by p-value: Predicting civil conflicts.'' {\em
+  Journal of Peace Research} 47(4):363--375.
 
 \end{thebibliography}
