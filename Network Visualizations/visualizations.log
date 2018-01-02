@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.6.22)  30 DEC 2017 19:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.6.22)  2 JAN 2018 17:23
 entering extended mode
 **visualizations.tex
 
@@ -1195,26 +1195,55 @@ File: citations4.pdf Graphic file (type pdf)
  <use citations4.pdf>
 Package pdftex.def Info: citations4.pdf used on input line 78.
 (pdftex.def)             Requested size: 230.18253pt x 230.177pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
- [2 <C:/Users/TC/Dropbox/28_Citation Networks/Citation/Network Visualizations/c
-itations2.pdf>]
-[3 <C:/Users/TC/Dropbox/28_Citation Networks/Citation/Network Visualizations/ci
-tations3.pdf> <C:/Users/TC/Dropbox/28_Citation Networks/Citation/Network Visual
-izations/citations4.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
+
+<citations.trans.pdf, id=34, 722.7pt x 722.7pt>
+File: citations.trans.pdf Graphic file (type pdf)
+ <use citations.trans.pdf>
+Package pdftex.def Info: citations.trans.pdf used on input line 86.
+(pdftex.def)             Requested size: 422.77664pt x 422.77228pt.
+
+<citations.recip.pdf, id=35, 722.7pt x 722.7pt>
+File: citations.recip.pdf Graphic file (type pdf)
+ <use citations.recip.pdf>
+Package pdftex.def Info: citations.recip.pdf used on input line 94.
+(pdftex.def)             Requested size: 422.77664pt x 422.77228pt.
+
+<citations.pop.pdf, id=36, 722.7pt x 722.7pt>
+File: citations.pop.pdf Graphic file (type pdf)
+ <use citations.pop.pdf>
+Package pdftex.def Info: citations.pop.pdf used on input line 102.
+(pdftex.def)             Requested size: 422.77664pt x 422.77228pt.
+
+<citations.soci.pdf, id=37, 722.7pt x 722.7pt>
+File: citations.soci.pdf Graphic file (type pdf)
+ <use citations.soci.pdf>
+Package pdftex.def Info: citations.soci.pdf used on input line 110.
+(pdftex.def)             Requested size: 422.77664pt x 422.77228pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 115.
+
+[2 <C:/Users/TC/Dropbox/28_Citation Networks/Citation/Network Visualizations/ci
+tations2.pdf>] [3 <C:/Users/TC/Dropbox/28_Citation Networks/Citation/Network Vi
+sualizations/citations3.pdf> <C:/Users/TC/Dropbox/28_Citation Networks/Citation
+/Network Visualizations/citations4.pdf>] [4 <C:/Users/TC/Dropbox/28_Citation Ne
+tworks/Citation/Network Visualizations/citations.trans.pdf>] [5 <C:/Users/TC/Dr
+opbox/28_Citation Networks/Citation/Network Visualizations/citations.recip.pdf>
+] [6 <C:/Users/TC/Dropbox/28_Citation Networks/Citation/Network Visualizations/
+citations.pop.pdf>] [7 <C:/Users/TC/Dropbox/28_Citation Networks/Citation/Netwo
+rk Visualizations/citations.soci.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
 
 ("C:\Users\TC\Dropbox\28_Citation Networks\Citation\Network Visualizations\visu
 alizations.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 115.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 115.
 Package rerunfilecheck Info: File `visualizations.out' has not changed.
 (rerunfilecheck)             Checksum: E94C75FD17CAF1FE3988BD8E0806437B;50.
  ) 
 Here is how much of TeX's memory you used:
- 27269 strings out of 493921
- 537840 string characters out of 3147291
- 602058 words of memory out of 3000000
- 30150 multiletter control sequences out of 15000+200000
+ 27297 strings out of 493921
+ 538337 string characters out of 3147291
+ 605058 words of memory out of 3000000
+ 30166 multiletter control sequences out of 15000+200000
  35539 words of font info for 41 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  55i,11n,54p,10399b,775s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1222,9 +1251,9 @@ Here is how much of TeX's memory you used:
 iKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr
 i12.pfb>
-Output written on visualizations.pdf (3 pages, 2577367 bytes).
+Output written on visualizations.pdf (7 pages, 3239064 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 8 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 163 PDF objects out of 1000 (max. 8388607)
+ 16 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
