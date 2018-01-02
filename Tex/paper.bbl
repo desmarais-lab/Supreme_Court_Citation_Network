@@ -44,6 +44,11 @@ Bommarito~II, Michael~J, Daniel Katz \harvardand\ Jon Zelner. 2009.
   of the 12th international conference on artificial intelligence and law}.
 \newblock ACM pp.~234--235.
 
+\harvarditem{Caldeira}{1988}{caldeira1988legal}
+Caldeira, Gregory~A. 1988.
+\newblock ``Legal precedent: Structures of communication between state supreme
+  courts.'' {\em Social networks} 10(1):29--55.
+
 \harvarditem{Carstens}{2016}{carstens2016topology}
 Carstens, J. 2016.
 \newblock ``Topology of complex networks: models and analysis.''.
@@ -63,6 +68,11 @@ Clark, Tom~S \harvardand\ Benjamin Lauderdale. 2010.
 Cranmer, Skyler~J \harvardand\ Bruce~A Desmarais. 2010.
 \newblock ``Inferential network analysis with exponential random graph
   models.'' {\em Political Analysis} 19(1):66--86.
+
+\harvarditem{Cranmer \harvardand\ Desmarais}{2016}{cranmer2016critique}
+Cranmer, Skyler~J \harvardand\ Bruce~A Desmarais. 2016.
+\newblock ``A critique of dyadic design.'' {\em International Studies
+  Quarterly} 60(2):355--362.
 
 \harvarditem{Cranmer \harvardand\ Desmarais}{2017}{cranmer2017can}
 Cranmer, Skyler~J \harvardand\ Bruce~A Desmarais. 2017.
@@ -154,6 +164,11 @@ Hajra, Kamalika~Basu \harvardand\ Parongama Sen. 2006.
 Hansford, Thomas~G \harvardand\ James~F Spriggs. 2006.
 \newblock {\em The politics of precedent on the US Supreme Court}.
 \newblock Princeton University Press.
+
+\harvarditem{Harris}{1982}{harris1982structural}
+Harris, Peter. 1982.
+\newblock ``Structural change in the communication of precedent among state
+  supreme courts, 1870--1970.'' {\em Social Networks} 4(3):201--212.
 
 \harvarditem{Holland \harvardand\ Leinhardt}{1971}{holland1971transitivity}
 Holland, Paul~W \harvardand\ Samuel Leinhardt. 1971.

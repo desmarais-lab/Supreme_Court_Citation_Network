@@ -31,50 +31,50 @@ Repeated entry---line 1078 of file bib.bib
  : @article{karrer2009random
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1625 of file bib.bib
+Repeated entry---line 1658 of file bib.bib
  : @article{lupu2012precedent
  :                           ,
 I'm skipping whatever remains of this entry
 Warning--empty publisher in desmaraisstatistical
-You've used 51 entries,
+You've used 54 entries,
             2874 wiz_defined-function locations,
-            937 strings with 13191 characters,
-and the built_in function-call counts, 249577 in all, are:
-= -- 41171
-> -- 3065
+            952 strings with 13532 characters,
+and the built_in function-call counts, 258881 in all, are:
+= -- 42679
+> -- 3148
 < -- 0
-+ -- 19597
-- -- 1066
-* -- 21602
-:= -- 49509
-add.period$ -- 206
-call.type$ -- 51
-change.case$ -- 663
-chr.to.int$ -- 51
-cite$ -- 52
-duplicate$ -- 798
-empty$ -- 1779
-format.name$ -- 1094
-if$ -- 44947
++ -- 20270
+- -- 1098
+* -- 22376
+:= -- 51415
+add.period$ -- 218
+call.type$ -- 54
+change.case$ -- 702
+chr.to.int$ -- 54
+cite$ -- 55
+duplicate$ -- 843
+empty$ -- 1885
+format.name$ -- 1130
+if$ -- 46610
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 52
-newline$ -- 212
-num.names$ -- 614
-pop$ -- 188
+missing$ -- 55
+newline$ -- 224
+num.names$ -- 646
+pop$ -- 197
 preamble$ -- 1
-purify$ -- 765
+purify$ -- 810
 quote$ -- 0
-skip$ -- 703
+skip$ -- 742
 stack$ -- 0
-substring$ -- 58403
-swap$ -- 124
-text.length$ -- 714
+substring$ -- 60511
+swap$ -- 130
+text.length$ -- 756
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 200
+type$ -- 212
 warning$ -- 1
-while$ -- 1243
+while$ -- 1314
 width$ -- 0
-write$ -- 701
+write$ -- 740
 (There were 8 error messages)
