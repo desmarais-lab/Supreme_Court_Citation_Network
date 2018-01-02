@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  30 DEC 2017 21:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  2 JAN 2018 09:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1663,27 +1663,32 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [3]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 110.
 
- (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
+Package natbib Warning: Citation `garlaschelli2004patterns' on page 4 undefined
+ on input line 104.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--111
+
+ []
+
+
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [4]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 125.
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[5]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 126.
 
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 125.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 126.
 
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[5]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
@@ -1703,7 +1708,7 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 177.
+(amsmath)                 on input line 178.
 
 
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
@@ -1715,55 +1720,55 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 [11]
 
-LaTeX Warning: Reference `indegree_dist' on page 12 undefined on input line 215
+LaTeX Warning: Reference `indegree_dist' on page 12 undefined on input line 216
 .
 
 
 LaTeX Warning: Reference `outdegree_dist' on page 12 undefined on input line 21
-5.
+6.
 
 Class scrartcl Info: Workaround for not recommended usage of \\ or
-(scrartcl)           \newlinein caption text  on input line 230.
+(scrartcl)           \newlinein caption text  on input line 231.
 Class scrartcl Info: Workaround for not recommended usage of \\ or
-(scrartcl)           \newlinein caption text  on input line 230.
-<degree_distribution.pdf, id=337, 844.15375pt x 597.23125pt>
+(scrartcl)           \newlinein caption text  on input line 231.
+
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[12] <degree_distribution.pdf, id=353, 844.15375pt x 597.23125pt>
 File: degree_distribution.pdf Graphic file (type pdf)
 
 <use degree_distribution.pdf>
-Package pdftex.def Info: degree_distribution.pdf used on input line 235.
+Package pdftex.def Info: degree_distribution.pdf used on input line 236.
+(pdftex.def)             Requested size: 422.07584pt x 298.61488pt.
+
+<number_cases.pdf, id=354, 844.15375pt x 597.23125pt>
+File: number_cases.pdf Graphic file (type pdf)
+ <use number_cases.pdf>
+Package pdftex.def Info: number_cases.pdf used on input line 243.
 (pdftex.def)             Requested size: 422.07584pt x 298.61488pt.
 
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[12pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
+[13pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.240 
-      ] <number_cases.pdf, id=344, 844.15375pt x 597.23125pt>
-File: number_cases.pdf Graphic file (type pdf)
-
-<use number_cases.pdf>
-Package pdftex.def Info: number_cases.pdf used on input line 242.
-(pdftex.def)             Requested size: 422.07584pt x 298.61488pt.
-
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[13pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
- has been already used, duplicate ignored
+l.248 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.247 
+l.248 
        <./degree_distribution.pdf>]
-<number_citations.pdf, id=367, 844.15375pt x 597.23125pt>
+<number_citations.pdf, id=378, 844.15375pt x 597.23125pt>
 File: number_citations.pdf Graphic file (type pdf)
 
 <use number_citations.pdf>
-Package pdftex.def Info: number_citations.pdf used on input line 249.
+Package pdftex.def Info: number_citations.pdf used on input line 250.
 (pdftex.def)             Requested size: 422.07584pt x 298.61488pt.
 
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
@@ -1774,13 +1779,13 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.254 
+l.255 
        <./number_cases.pdf>]
-<number_votes_supporting.pdf, id=389, 844.15375pt x 597.23125pt>
+<number_votes_supporting.pdf, id=400, 844.15375pt x 597.23125pt>
 File: number_votes_supporting.pdf Graphic file (type pdf)
 
 <use number_votes_supporting.pdf>
-Package pdftex.def Info: number_votes_supporting.pdf used on input line 256.
+Package pdftex.def Info: number_votes_supporting.pdf used on input line 257.
 (pdftex.def)             Requested size: 422.07584pt x 298.61488pt.
 
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
@@ -1791,7 +1796,7 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.261 
+l.262 
        <./number_citations.pdf>]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
@@ -1801,12 +1806,12 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.262 \newpage
+l.263 \newpage
                <./number_votes_supporting.pdf>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 285.
+(Font)              <9> on input line 286.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 285.
+(Font)              <5> on input line 286.
 
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
@@ -1820,68 +1825,68 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.342 \newpage
-              ] <images/mq_coef_trend.pdf, id=446, 433.62pt x 252.945pt>
+l.343 \newpage
+              ] <images/mq_coef_trend.pdf, id=457, 433.62pt x 252.945pt>
 File: images/mq_coef_trend.pdf Graphic file (type pdf)
 
 <use images/mq_coef_trend.pdf>
-Package pdftex.def Info: images/mq_coef_trend.pdf used on input line 348.
+Package pdftex.def Info: images/mq_coef_trend.pdf used on input line 349.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/absdiffmq_coef_trend.pdf, id=448, 433.62pt x 252.945pt>
+<images/absdiffmq_coef_trend.pdf, id=459, 433.62pt x 252.945pt>
 File: images/absdiffmq_coef_trend.pdf Graphic file (type pdf)
 
 <use images/absdiffmq_coef_trend.pdf>
-Package pdftex.def Info: images/absdiffmq_coef_trend.pdf used on input line 348
+Package pdftex.def Info: images/absdiffmq_coef_trend.pdf used on input line 349
 .
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/sameissue_coef_trend.pdf, id=450, 433.62pt x 252.945pt>
+<images/sameissue_coef_trend.pdf, id=461, 433.62pt x 252.945pt>
 File: images/sameissue_coef_trend.pdf Graphic file (type pdf)
 
 <use images/sameissue_coef_trend.pdf>
-Package pdftex.def Info: images/sameissue_coef_trend.pdf used on input line 351
+Package pdftex.def Info: images/sameissue_coef_trend.pdf used on input line 352
 .
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/numberjusticespro_coef_trend.pdf, id=452, 433.62pt x 252.945pt>
+<images/numberjusticespro_coef_trend.pdf, id=463, 433.62pt x 252.945pt>
 File: images/numberjusticespro_coef_trend.pdf Graphic file (type pdf)
 
 <use images/numberjusticespro_coef_trend.pdf>
 Package pdftex.def Info: images/numberjusticespro_coef_trend.pdf used on input 
-line 351.
+line 352.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/mutual_coef_trend.pdf, id=454, 433.62pt x 252.945pt>
+<images/mutual_coef_trend.pdf, id=465, 433.62pt x 252.945pt>
 File: images/mutual_coef_trend.pdf Graphic file (type pdf)
 
 <use images/mutual_coef_trend.pdf>
-Package pdftex.def Info: images/mutual_coef_trend.pdf used on input line 354.
+Package pdftex.def Info: images/mutual_coef_trend.pdf used on input line 355.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/triangle_coef_trend.pdf, id=456, 433.62pt x 252.945pt>
+<images/triangle_coef_trend.pdf, id=467, 433.62pt x 252.945pt>
 File: images/triangle_coef_trend.pdf Graphic file (type pdf)
 
 <use images/triangle_coef_trend.pdf>
-Package pdftex.def Info: images/triangle_coef_trend.pdf used on input line 354.
+Package pdftex.def Info: images/triangle_coef_trend.pdf used on input line 355.
 
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/o2star_coef_trend.pdf, id=458, 433.62pt x 252.945pt>
+<images/o2star_coef_trend.pdf, id=469, 433.62pt x 252.945pt>
 File: images/o2star_coef_trend.pdf Graphic file (type pdf)
 
 <use images/o2star_coef_trend.pdf>
-Package pdftex.def Info: images/o2star_coef_trend.pdf used on input line 357.
+Package pdftex.def Info: images/o2star_coef_trend.pdf used on input line 358.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/i2star_coef_trend.pdf, id=460, 433.62pt x 252.945pt>
+<images/i2star_coef_trend.pdf, id=471, 433.62pt x 252.945pt>
 File: images/i2star_coef_trend.pdf Graphic file (type pdf)
 
 <use images/i2star_coef_trend.pdf>
-Package pdftex.def Info: images/i2star_coef_trend.pdf used on input line 357.
+Package pdftex.def Info: images/i2star_coef_trend.pdf used on input line 358.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-Overfull \hbox (1.24335pt too wide) in paragraph at lines 346--361
+Overfull \hbox (1.24335pt too wide) in paragraph at lines 347--362
 [][]
  []
 
@@ -1894,7 +1899,7 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.370 
+l.371 
        <./images/mq_coef_trend.pdf> <./images/absdiffmq_coef_trend.pdf> <./imag
 es/sameissue_coef_trend.pdf> <./images/numberjusticespro_coef_trend.pdf> <./ima
 ges/mutual_coef_trend.pdf> <./images/triangle_coef_trend.pdf> <./images/o2star_
@@ -1917,7 +1922,7 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [22]
-Underfull \hbox (badness 1406) in paragraph at lines 206--210
+Underfull \hbox (badness 1406) in paragraph at lines 205--209
 []\T1/lmr/m/n/10.95 Kajikawa, Yuya, Junko Ohno, Yoshiyuki Takeda, Kat-sumori Ma
 t-sushima and Hi-roshi
  []
@@ -1931,17 +1936,21 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [24])
+
+Package natbib Warning: There were undefined citations.
+
+
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [25]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 398.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 398.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 403.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 403.
  (./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 398.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 398.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 403.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 403.
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 596DEDE45B43A6AB27747DDC9A500D24;817.
+(rerunfilecheck)             Checksum: 08F9A62E2487B1745866DA2F80FB66BA;863.
 
 
 LaTeX Warning: There were undefined references.
@@ -1949,23 +1958,23 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 398.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 403.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 25425 strings out of 492995
- 446115 string characters out of 6132704
- 676282 words of memory out of 5000000
- 28326 multiletter control sequences out of 15000+600000
- 132062 words of font info for 105 fonts, out of 8000000 for 9000
+ 25385 strings out of 492995
+ 445468 string characters out of 6132704
+ 676287 words of memory out of 5000000
+ 28289 multiletter control sequences out of 15000+600000
+ 131743 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,14n,60p,8843b,10802s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.en
-c}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/lo
-cal/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/20
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-maths
+y.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/lo
+cal/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/20
 17/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2017/texmf-d
 ist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2017/texmf-dist/fonts/
 type1/public/lm/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
@@ -1982,12 +1991,11 @@ sr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local
 017/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2017/texmf-d
 ist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
 ype1/public/lm/lmsy9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
-/lm/lmtt10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
-symbols/msbm10.pfb>
-Output written on paper.pdf (25 pages, 512638 bytes).
+/amsfonts/symbols/msbm10.pfb>
+Output written on paper.pdf (25 pages, 492856 bytes).
 PDF statistics:
- 644 PDF objects out of 1000 (max. 8388607)
- 549 compressed objects within 6 object streams
- 107 named destinations out of 1000 (max. 500000)
- 12505 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 650 PDF objects out of 1000 (max. 8388607)
+ 556 compressed objects within 6 object streams
+ 108 named destinations out of 1000 (max. 500000)
+ 12513 words of extra memory for PDF output out of 14400 (max. 10000000)
 

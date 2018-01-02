@@ -19,10 +19,6 @@ Repeated entry---line 963 of file bib.bib
  : @article{knight1996norm
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 979 of file bib.bib
- : @article{hinkle2016transmission
- :                                ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 1009 of file bib.bib
  : @article{bommarito2010distance
  :                               ,
@@ -43,19 +39,18 @@ Repeated entry---line 1436 of file bib.bib
  : @article{lupu2012precedent
  :                           ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Snijders.2002b"
 Warning--empty publisher in desmaraisstatistical
 You've used 58 entries,
             2874 wiz_defined-function locations,
-            992 strings with 15057 characters,
-and the built_in function-call counts, 286635 in all, are:
-= -- 47280
+            990 strings with 14950 characters,
+and the built_in function-call counts, 286849 in all, are:
+= -- 47320
 > -- 3463
 < -- 0
-+ -- 22503
++ -- 22520
 - -- 1205
-* -- 24893
-:= -- 56710
+* -- 24913
+:= -- 56750
 add.period$ -- 236
 call.type$ -- 58
 change.case$ -- 754
@@ -64,7 +59,7 @@ cite$ -- 59
 duplicate$ -- 921
 empty$ -- 2069
 format.name$ -- 1263
-if$ -- 51636
+if$ -- 51676
 int.to.chr$ -- 5
 int.to.str$ -- 0
 missing$ -- 60
@@ -76,7 +71,7 @@ purify$ -- 870
 quote$ -- 0
 skip$ -- 822
 stack$ -- 0
-substring$ -- 67250
+substring$ -- 67307
 swap$ -- 150
 text.length$ -- 812
 text.prefix$ -- 0
@@ -86,4 +81,4 @@ warning$ -- 1
 while$ -- 1398
 width$ -- 0
 write$ -- 813
-(There were 10 error messages)
+(There were 9 error messages)
