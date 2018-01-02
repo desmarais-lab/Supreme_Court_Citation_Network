@@ -19,10 +19,6 @@ Repeated entry---line 963 of file bib.bib
  : @article{knight1996norm
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1009 of file bib.bib
- : @article{bommarito2010distance
- :                               ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 1019 of file bib.bib
  : @article{fowler2008authority
  :                             ,
@@ -35,50 +31,50 @@ Repeated entry---line 1056 of file bib.bib
  : @article{karrer2009random
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1436 of file bib.bib
+Repeated entry---line 1586 of file bib.bib
  : @article{lupu2012precedent
  :                           ,
 I'm skipping whatever remains of this entry
 Warning--empty publisher in desmaraisstatistical
-You've used 58 entries,
+You've used 47 entries,
             2874 wiz_defined-function locations,
-            990 strings with 14950 characters,
-and the built_in function-call counts, 286849 in all, are:
-= -- 47320
-> -- 3463
+            916 strings with 12628 characters,
+and the built_in function-call counts, 227031 in all, are:
+= -- 37448
+> -- 2770
 < -- 0
-+ -- 22520
-- -- 1205
-* -- 24913
-:= -- 56750
-add.period$ -- 236
-call.type$ -- 58
-change.case$ -- 754
-chr.to.int$ -- 58
-cite$ -- 59
-duplicate$ -- 921
-empty$ -- 2069
-format.name$ -- 1263
-if$ -- 51676
++ -- 17809
+- -- 965
+* -- 19644
+:= -- 45092
+add.period$ -- 189
+call.type$ -- 47
+change.case$ -- 611
+chr.to.int$ -- 47
+cite$ -- 48
+duplicate$ -- 724
+empty$ -- 1625
+format.name$ -- 990
+if$ -- 40863
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 60
-newline$ -- 241
-num.names$ -- 682
-pop$ -- 194
+missing$ -- 48
+newline$ -- 195
+num.names$ -- 565
+pop$ -- 171
 preamble$ -- 1
-purify$ -- 870
+purify$ -- 705
 quote$ -- 0
-skip$ -- 822
+skip$ -- 633
 stack$ -- 0
-substring$ -- 67307
-swap$ -- 150
-text.length$ -- 812
+substring$ -- 53103
+swap$ -- 105
+text.length$ -- 658
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 228
+type$ -- 184
 warning$ -- 1
-while$ -- 1398
+while$ -- 1142
 width$ -- 0
-write$ -- 813
-(There were 9 error messages)
+write$ -- 643
+(There were 8 error messages)

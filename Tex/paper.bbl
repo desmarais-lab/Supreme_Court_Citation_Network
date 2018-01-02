@@ -17,18 +17,6 @@ Barab{\'a}si, Albert-L{\'a}szl{\'o} \harvardand\ R{\'e}ka Albert. 1999.
 \newblock ``Emergence of scaling in random networks.'' {\em science}
   286(5439):509--512.
 
-\harvarditem{Batagelj}{2003}{batagelj2003efficient}
-Batagelj, Vladimir. 2003.
-\newblock ``Efficient algorithms for citation network analysis.'' {\em arXiv
-  preprint cs/0309023} .
-
-\harvarditem[Batagelj, Ferligoj \harvardand\ Squazzoni]{Batagelj, Ferligoj
-  \harvardand\ Squazzoni}{2017}{batagelj2017emergence}
-Batagelj, Vladimir, Anu{\v{s}}ka Ferligoj \harvardand\ Flaminio Squazzoni.
-  2017.
-\newblock ``The emergence of a field: a network analysis of research on peer
-  review.'' {\em Scientometrics} 113(1):503--532.
-
 \harvarditem{Benjamin \harvardand\ Desmarais}{2012}{benjamin2012standing}
 Benjamin, Stuart~Minor \harvardand\ Bruce~A Desmarais. 2012.
 \newblock ``Standing the test of time: The breadth of majority coalitions and
@@ -40,6 +28,14 @@ Black, Ryan~C \harvardand\ James~F Spriggs. 2013.
 \newblock ``The Citation and Depreciation of US Supreme Court Precedent.'' {\em
   Journal of Empirical Legal Studies} 10(2):325--358.
 
+\harvarditem[Block et~al.]{Block, Koskinen, Hollway, Steglich \harvardand\
+  Stadtfeld}{2018}{block2018change}
+Block, Per, Johan Koskinen, James Hollway, Christian Steglich \harvardand\
+  Christoph Stadtfeld. 2018.
+\newblock ``Change we can believe in: Comparing longitudinal network models on
+  consistency, interpretability and predictive power.'' {\em Social Networks}
+  52:180--191.
+
 \harvarditem[Bommarito~II, Katz \harvardand\ Zelner]{Bommarito~II, Katz
   \harvardand\ Zelner}{2009}{bommarito2009law}
 Bommarito~II, Michael~J, Daniel Katz \harvardand\ Jon Zelner. 2009.
@@ -48,37 +44,31 @@ Bommarito~II, Michael~J, Daniel Katz \harvardand\ Jon Zelner. 2009.
   of the 12th international conference on artificial intelligence and law}.
 \newblock ACM pp.~234--235.
 
-\harvarditem[Bommarito et~al.]{Bommarito, Katz, Zelner \harvardand\
-  Fowler}{2010}{bommarito2010distance}
-Bommarito, Michael~J, Daniel~Martin Katz, Jonathan~L Zelner \harvardand\
-  James~H Fowler. 2010.
-\newblock ``Distance measures for dynamic citation networks.'' {\em Physica A:
-  Statistical Mechanics and its Applications} 389(19):4201--4208.
-
-\harvarditem{Carstens}{2014}{carstens2014uniform}
-Carstens, CJ. 2014.
-\newblock ``A uniform random graph model for directed acyclic networks and its
-  effect on motif-finding.'' {\em Journal of Complex Networks} 2(4):419--430.
-
 \harvarditem{Carstens}{2016}{carstens2016topology}
 Carstens, J. 2016.
 \newblock ``Topology of complex networks: models and analysis.''.
 
-\harvarditem{Chen \harvardand\ Redner}{2010}{chen2010community}
-Chen, P \harvardand\ Sidney Redner. 2010.
-\newblock ``Community structure of the physical review citation network.'' {\em
-  Journal of Informetrics} 4(3):278--290.
+\harvarditem{Clark \harvardand\ Caro}{2013}{clark2013multimember}
+Clark, Jennifer~Hayes \harvardand\ Veronica Caro. 2013.
+\newblock ``Multimember districts and the substantive representation of women:
+  An analysis of legislative cosponsorship networks.'' {\em Politics \& Gender}
+  9(1):1--30.
 
 \harvarditem{Clark \harvardand\ Lauderdale}{2010}{clark2010locating}
 Clark, Tom~S \harvardand\ Benjamin Lauderdale. 2010.
 \newblock ``Locating Supreme Court opinions in doctrine space.'' {\em American
   Journal of Political Science} 54(4):871--890.
 
-\harvarditem[Clough et~al.]{Clough, Gollings, Loach \harvardand\
-  Evans}{2015}{clough2015transitive}
-Clough, James~R, Jamie Gollings, Tamar~V Loach \harvardand\ Tim~S Evans. 2015.
-\newblock ``Transitive reduction of citation networks.'' {\em Journal of
-  Complex Networks} 3(2):189--203.
+\harvarditem{Cranmer \harvardand\ Desmarais}{2010}{cranmer2010inferential}
+Cranmer, Skyler~J \harvardand\ Bruce~A Desmarais. 2010.
+\newblock ``Inferential network analysis with exponential random graph
+  models.'' {\em Political Analysis} 19(1):66--86.
+
+\harvarditem[Cranmer, Desmarais \harvardand\ Menninga]{Cranmer, Desmarais
+  \harvardand\ Menninga}{2012}{cranmer2012complex}
+Cranmer, Skyler~J, Bruce~A Desmarais \harvardand\ Elizabeth~J Menninga. 2012.
+\newblock ``Complex dependencies in the alliance network.'' {\em Conflict
+  Management and Peace Science} 29(3):279--313.
 
 \harvarditem{Cross}{2010}{cross2010determinants}
 Cross, Frank~B. 2010.
@@ -86,14 +76,22 @@ Cross, Frank~B. 2010.
   remarkable influence of Justice Scalia).'' {\em Supreme Court Economic
   Review} 18(1):177--202.
 
-\harvarditem[Dawson et~al.]{Dawson, Ga{\v{s}}evi{\'c}, Siemens \harvardand\
-  Joksimovic}{2014}{dawson2014current}
-Dawson, Shane, Dragan Ga{\v{s}}evi{\'c}, George Siemens \harvardand\ Srecko
-  Joksimovic. 2014.
-\newblock Current state and future trends: A citation network analysis of the
-  learning analytics field.  In {\em Proceedings of the fourth international
-  conference on learning analytics and knowledge}.
-\newblock ACM pp.~231--240.
+\harvarditem{Desmarais \harvardand\ Cranmer}{2010}{desmarais2010consistent}
+Desmarais, Bruce~A \harvardand\ Skyler~J Cranmer. 2010.
+\newblock Consistent confidence intervals for maximum pseudolikelihood
+  estimators.  In {\em Proceedings of the Neural Information Processing Systems
+  2010 Workshop on Computational Social Science and the Wisdom of Crowds}.
+
+\harvarditem{Desmarais \harvardand\ Cranmer}{2012}{desmarais2012statistical}
+Desmarais, Bruce~A \harvardand\ Skyler~J Cranmer. 2012.
+\newblock ``Statistical mechanics of networks: Estimation and uncertainty.''
+  {\em Physica A: Statistical Mechanics and its Applications}
+  391(4):1865--1876.
+
+\harvarditem{Desmarais \harvardand\ Cranmer}{2013}{desmarais2013forecasting}
+Desmarais, Bruce~A \harvardand\ Skyler~J Cranmer. 2013.
+\newblock ``Forecasting the locational dynamics of transnational terrorism: A
+  network analytic approach.'' {\em Security Informatics} 2(1):8.
 
 \harvarditem{Desmarais \harvardand\ Cranmer}{2017}{desmaraisstatistical}
 Desmarais, Bruce~A \harvardand\ Skyler~J Cranmer. 2017.
@@ -104,14 +102,6 @@ Desmarais, Bruce~A \harvardand\ Skyler~J Cranmer. 2017.
 Eom, Young-Ho \harvardand\ Santo Fortunato. 2011.
 \newblock ``Characterizing and modeling citation dynamics.'' {\em PloS one}
   6(9):e24926.
-
-\harvarditem[{\'E}rdi et~al.]{{\'E}rdi, Makovi, Somogyv{\'a}ri, Strandburg,
-  Tobochnik, Volf \harvardand\ Zal{\'a}nyi}{2013}{erdi2013prediction}
-{\'E}rdi, P{\'e}ter, Kinga Makovi, Zolt{\'a}n Somogyv{\'a}ri, Katherine
-  Strandburg, Jan Tobochnik, P{\'e}ter Volf \harvardand\ L{\'a}szl{\'o}
-  Zal{\'a}nyi. 2013.
-\newblock ``Prediction of emerging technologies based on analysis of the US
-  patent citation network.'' {\em Scientometrics} 95(1):225--242.
 
 \harvarditem{Fowler \harvardand\ Jeon}{2008}{fowler2008authority}
 Fowler, James~H \harvardand\ Sangick Jeon. 2008.
@@ -126,19 +116,11 @@ Fowler, James~H, Timothy~R Johnson, James~F Spriggs, Sangick Jeon \harvardand\
   precedents at the US Supreme Court.'' {\em Political Analysis}
   15(3):324--346.
 
-\harvarditem[Fujita et~al.]{Fujita, Kajikawa, Mori \harvardand\
-  Sakata}{2014}{fujita2014detecting}
-Fujita, Katsuhide, Yuya Kajikawa, Junichiro Mori \harvardand\ Ichiro Sakata.
-  2014.
-\newblock ``Detecting research fronts using different types of weighted
-  citation networks.'' {\em Journal of Engineering and Technology Management}
-  32:129--146.
-
-\harvarditem{Gelter \harvardand\ Siems}{2012}{gelter2012networks}
-Gelter, Martin \harvardand\ Mathias Siems. 2012.
-\newblock ``Networks, Dialogue or One-Way Traffic: An Empirical Analysis of
-  Cross-Citations between Ten of Europe's Highest Courts.'' {\em Utrecht L.
-  Rev.} 8:88.
+\harvarditem{Garlaschelli \harvardand\
+  Loffredo}{2004}{garlaschelli2004patterns}
+Garlaschelli, Diego \harvardand\ Maria~I Loffredo. 2004.
+\newblock ``Patterns of link reciprocity in directed networks.'' {\em Physical
+  Review Letters} 93(26):268701.
 
 \harvarditem{Gillman}{2001}{gillman2001s}
 Gillman, Howard. 2001.
@@ -146,10 +128,12 @@ Gillman, Howard. 2001.
   ?legal model? of judicial decision making.'' {\em Law \& Social Inquiry}
   26(2):465--504.
 
-\harvarditem{Greenberg}{2009}{greenberg2009citation}
-Greenberg, Steven~A. 2009.
-\newblock ``How citation distortions create unfounded authority: analysis of a
-  citation network.'' {\em Bmj} 339:b2680.
+\harvarditem[Graif, Lungeanu \harvardand\ Yetter]{Graif, Lungeanu \harvardand\
+  Yetter}{2017}{graif2017neighborhood}
+Graif, Corina, Alina Lungeanu \harvardand\ Alyssa~M Yetter. 2017.
+\newblock ``Neighborhood isolation in Chicago: Violent crime effects on
+  structural isolation and homophily in inter-neighborhood commuting
+  networks.'' {\em Social Networks} .
 
 \harvarditem{Hajra \harvardand\ Sen}{2005}{hajra2005aging}
 Hajra, Kamalika~Basu \harvardand\ Parongama Sen. 2005.
@@ -171,16 +155,22 @@ Holland, Paul~W \harvardand\ Samuel Leinhardt. 1971.
 \newblock ``Transitivity in Structural Models of Small Groups.'' {\em Small
   Group Research} 2(2):107--124.
 
-\harvarditem{Hummon \harvardand\ Dereian}{1989}{hummon1989connectivity}
-Hummon, Norman~P \harvardand\ Patrick Dereian. 1989.
-\newblock ``Connectivity in a citation network: The development of DNA
-  theory.'' {\em Social networks} 11(1):39--63.
+\harvarditem[Howard et~al.]{Howard, Cox~Pahnke, Boeker
+  et~al.}{2016}{howard2016understanding}
+Howard, Michael, Emily Cox~Pahnke, Warren Boeker et~al. 2016.
+\newblock ``Understanding network formation in strategy research: Exponential
+  random graph models.'' {\em Strategic management journal} 37(1):22--44.
 
-\harvarditem{Jaffe \harvardand\ de~Rassenfosse}{2017}{jaffe2017patent}
-Jaffe, Adam~B \harvardand\ Ga{\'e}tan de~Rassenfosse. 2017.
-\newblock ``Patent citation data in social science research: Overview and best
-  practices.'' {\em Journal of the Association for Information Science and
-  Technology} 68(6):1360--1374.
+\harvarditem[Hummel, Hunter \harvardand\ Handcock]{Hummel, Hunter \harvardand\
+  Handcock}{2012}{hummel2012improving}
+Hummel, Ruth~M, David~R Hunter \harvardand\ Mark~S Handcock. 2012.
+\newblock ``Improving simulation-based algorithms for fitting ERGMs.'' {\em
+  Journal of Computational and Graphical Statistics} 21(4):920--939.
+
+\harvarditem{Hunter \harvardand\ Handcock}{2006}{hunter2006inference}
+Hunter, David~R \harvardand\ Mark~S Handcock. 2006.
+\newblock ``Inference in curved exponential family models for networks.'' {\em
+  Journal of Computational and Graphical Statistics} 15(3):565--583.
 
 \harvarditem[Jeong, N{\'e}da \harvardand\ Barab{\'a}si]{Jeong, N{\'e}da
   \harvardand\ Barab{\'a}si}{2003}{jeong2003measuring}
@@ -189,44 +179,15 @@ Jeong, Hawoong, Zoltan N{\'e}da \harvardand\ Albert-L{\'a}szl{\'o}
 \newblock ``Measuring preferential attachment in evolving networks.'' {\em EPL
   (Europhysics Letters)} 61(4):567.
 
-\harvarditem[Ji, Jin et~al.]{Ji, Jin et~al.}{2016}{ji2016coauthorship}
-Ji, Pengsheng, Jiashun Jin et~al. 2016.
-\newblock ``Coauthorship and citation networks for statisticians.'' {\em The
-  Annals of Applied Statistics} 10(4):1779--1812.
-
-\harvarditem[Jo et~al.]{Jo, Jeung, Park \harvardand\ Yoon}{2009}{jo2009citing}
-Jo, Sung~Jun, Chang-Wook Jeung, Sunyoung Park \harvardand\ Hea~Jun Yoon. 2009.
-\newblock ``Who is citing whom: Citation network analysis among HRD
-  publications from 1990 to 2007.'' {\em Human Resource Development Quarterly}
-  20(4):503--537.
-
-\harvarditem[Kajikawa et~al.]{Kajikawa, Ohno, Takeda, Matsushima \harvardand\
-  Komiyama}{2007}{kajikawa2007creating}
-Kajikawa, Yuya, Junko Ohno, Yoshiyuki Takeda, Katsumori Matsushima \harvardand\
-  Hiroshi Komiyama. 2007.
-\newblock ``Creating an academic landscape of sustainability science: an
-  analysis of the citation network.'' {\em Sustainability Science} 2(2):221.
-
 \harvarditem{Karrer \harvardand\ Newman}{2009}{karrer2009random}
 Karrer, Brian \harvardand\ Mark~EJ Newman. 2009.
 \newblock ``Random graph models for directed acyclic networks.'' {\em Physical
   Review E} 80(4):046110.
 
-\harvarditem{Kleinberg}{1999}{kleinberg1999authoritative}
-Kleinberg, Jon~M. 1999.
-\newblock ``Authoritative sources in a hyperlinked environment.'' {\em Journal
-  of the ACM (JACM)} 46(5):604--632.
-
 \harvarditem{Knight \harvardand\ Epstein}{1996}{knight1996norm}
 Knight, Jack \harvardand\ Lee Epstein. 1996.
 \newblock ``The norm of stare decisis.'' {\em American Journal of Political
   Science} pp.~1018--1035.
-
-\harvarditem[Landes, Lessig \harvardand\ Solimine]{Landes, Lessig \harvardand\
-  Solimine}{1998}{landes1998judicial}
-Landes, William~M, Lawrence Lessig \harvardand\ Michael~E Solimine. 1998.
-\newblock ``Judicial influence: A citation analysis of federal courts of
-  appeals judges.'' {\em The Journal of Legal Studies} 27(2):271--332.
 
 \harvarditem[Leicht et~al.]{Leicht, Clarkson, Shedden \harvardand\
   Newman}{2007}{leicht2007large}
@@ -235,12 +196,6 @@ Leicht, Elizabeth~A, Gavin Clarkson, Kerby Shedden \harvardand\ Mark~EJ Newman.
 \newblock ``Large-scale structure of time evolving citation networks.'' {\em
   The European Physical Journal B-Condensed Matter and Complex Systems}
   59(1):75--83.
-
-\harvarditem[Liu et~al.]{Liu, Chen, Ho \harvardand\ Li}{2014}{liu2014citations}
-Liu, John~S, Hsiao-Hui Chen, Mei Hsiu-Ching Ho \harvardand\ Yu-Chen Li. 2014.
-\newblock ``Citations with different levels of relevancy: Tracing the main
-  paths of legal opinions.'' {\em Journal of the Association for Information
-  Science and Technology} 65(12):2479--2488.
 
 \harvarditem{Lupu \harvardand\ Voeten}{2012}{lupu2012precedent}
 Lupu, Yonatan \harvardand\ Erik Voeten. 2012.
@@ -253,76 +208,55 @@ Lupu, Yonatan \harvardand\ James~H Fowler. 2013.
 \newblock ``Strategic citations to precedent on the US Supreme Court.'' {\em
   The Journal of Legal Studies} 42(1):151--186.
 
-\harvarditem[Mones, Pollner \harvardand\ Vicsek]{Mones, Pollner \harvardand\
-  Vicsek}{2014}{mones2014universal}
-Mones, Enys, P{\'e}ter Pollner \harvardand\ Tam{\'a}s Vicsek. 2014.
-\newblock ``Universal hierarchical behavior of citation networks.'' {\em
-  Journal of Statistical Mechanics: Theory and Experiment} 2014(5):P05023.
-
-\harvarditem[Pan, Kaski \harvardand\ Fortunato]{Pan, Kaski \harvardand\
-  Fortunato}{2012}{pan2012world}
-Pan, Raj~Kumar, Kimmo Kaski \harvardand\ Santo Fortunato. 2012.
-\newblock ``World citation and collaboration networks: uncovering the role of
-  geography in science.'' {\em Scientific reports} 2.
+\harvarditem{Martin \harvardand\ Quinn}{2002}{martin2002dynamic}
+Martin, Andrew~D \harvardand\ Kevin~M Quinn. 2002.
+\newblock ``Dynamic ideal point estimation via Markov chain Monte Carlo for the
+  US Supreme Court, 1953--1999.'' {\em Political Analysis} 10(2):134--153.
 
 \harvarditem{Pelc}{2014}{pelc2014politics}
 Pelc, Krzysztof~J. 2014.
 \newblock ``The politics of precedent in international law: A social network
   application.'' {\em American Political Science Review} 108(3):547--564.
 
-\harvarditem[Rice, Borgman \harvardand\ Reeves]{Rice, Borgman \harvardand\
-  Reeves}{1988}{rice1988citation}
-Rice, Ronald~E, Christine~L Borgman \harvardand\ Byron Reeves. 1988.
-\newblock ``Citation networks of communication journals, 1977--1985 cliques and
-  positions, citations made and citations received.'' {\em Human communication
-  research} 15(2):256--283.
-
 \harvarditem{Richards \harvardand\ Kritzer}{2002}{richards2002jurisprudential}
 Richards, Mark~J \harvardand\ Herbert~M Kritzer. 2002.
 \newblock ``Jurisprudential regimes in Supreme Court decision making.'' {\em
   American Political Science Review} 96(2):305--320.
 
-\harvarditem[Shibata et~al.]{Shibata, Kajikawa, Takeda, Sakata \harvardand\
-  Matsushima}{2011}{shibata2011detecting}
-Shibata, Naoki, Yuya Kajikawa, Yoshiyuki Takeda, Ichiro Sakata \harvardand\
-  Katsumori Matsushima. 2011.
-\newblock ``Detecting emerging research fronts in regenerative medicine by the
-  citation network analysis of scientific publications.'' {\em Technological
-  Forecasting and Social Change} 78(2):274--282.
+\harvarditem{Schmid \harvardand\ Desmarais}{2017}{schmid2017exponential}
+Schmid, Christian~S \harvardand\ Bruce~A Desmarais. 2017.
+\newblock ``Exponential Random Graph Models with Big Networks: Maximum
+  Pseudolikelihood Estimation and the Parametric Bootstrap.'' {\em arXiv
+  preprint arXiv:1708.02598} .
 
 \harvarditem{Simkin \harvardand\ Roychowdhury}{2007}{simkin2007mathematical}
 Simkin, Mikhail~V \harvardand\ Vwani~P Roychowdhury. 2007.
 \newblock ``A mathematical theory of citing.'' {\em Journal of the Association
   for Information Science and Technology} 58(11):1661--1673.
 
+\harvarditem[Spaeth et~al.]{Spaeth, Epstein, Ruger, Whittington, Segal
+  \harvardand\ Martin}{2014}{spaeth2014supreme}
+Spaeth, Harold, Lee Epstein, Ted Ruger, Keith Whittington, Jeffrey Segal
+  \harvardand\ Andrew~D Martin. 2014.
+\newblock ``Supreme Court Database Code Book.''.
+\newline\harvardurl{http://scdb.wustl.edu}
+
 \harvarditem{Spriggs \harvardand\ Hansford}{2001}{spriggs2001explaining}
 Spriggs, James~F \harvardand\ Thomas~G Hansford. 2001.
 \newblock ``Explaining the overruling of US Supreme Court precedent.'' {\em The
   Journal of Politics} 63(4):1091--1111.
 
-\harvarditem{Van~Raan}{2005}{van2005reference}
-Van~Raan, Anthony~FJ. 2005.
-\newblock ``Reference-based publication networks with episodic memories.'' {\em
-  Scientometrics} 63(3):549--566.
+\harvarditem[Van~Duijn, Gile \harvardand\ Handcock]{Van~Duijn, Gile
+  \harvardand\ Handcock}{2009}{van2009framework}
+Van~Duijn, Marijtje~AJ, Krista~J Gile \harvardand\ Mark~S Handcock. 2009.
+\newblock ``A framework for the comparison of maximum pseudo-likelihood and
+  maximum likelihood estimation of exponential family random graph models.''
+  {\em Social Networks} 31(1):52--62.
 
 \harvarditem{Vazquez}{2001}{vazquez2001statistics}
 Vazquez, Alexei. 2001.
 \newblock ``Statistics of citation networks.'' {\em arXiv preprint
   cond-mat/0105031} .
-
-\harvarditem{Verspagen}{2007}{verspagen2007mapping}
-Verspagen, Bart. 2007.
-\newblock ``Mapping technological trajectories as patent citation networks: A
-  study on the history of fuel cell research.'' {\em Advances in Complex
-  Systems} 10(01):93--115.
-
-\harvarditem[Vu et~al.]{Vu, Asuncion, Hunter \harvardand\
-  Smyth}{2011}{vu2011dynamic}
-Vu, Duy~Q, Arthur~U Asuncion, David~R Hunter \harvardand\ Padhraic Smyth. 2011.
-\newblock Dynamic egocentric models for citation networks.  In {\em Proceedings
-  of the 28th International Conference on International Conference on Machine
-  Learning}.
-\newblock Omnipress pp.~857--864.
 
 \harvarditem[Wang, Song \harvardand\ Barab{\'a}si]{Wang, Song \harvardand\
   Barab{\'a}si}{2013}{wang2013quantifying}
@@ -337,11 +271,5 @@ Wang, Mingyang, Guang Yu \harvardand\ Daren Yu. 2008.
 \newblock ``Measuring the preferential attachment mechanism in citation
   networks.'' {\em Physica A: Statistical Mechanics and its Applications}
   387(18):4692--4698.
-
-\harvarditem{Zhang \harvardand\ Koppaka}{2007}{zhang2007semantics}
-Zhang, Paul \harvardand\ Lavanya Koppaka. 2007.
-\newblock Semantics-based legal citation network.  In {\em Proceedings of the
-  11th international conference on Artificial intelligence and law}.
-\newblock ACM pp.~123--130.
 
 \end{thebibliography}

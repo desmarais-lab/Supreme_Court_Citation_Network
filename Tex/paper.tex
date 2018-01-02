@@ -115,49 +115,27 @@ The first case in our example reciprocal dyad is a passage from Western Air Line
 The first case in which this Court struck down a statute under the Equal Protection Clause of the Fourteenth Amendment was Strauder v. West Virginia, 100 U. S. 303, decided in the 1879 Term. [Footnote 2/1] In the 1961 Term, we squarely held that the manner of apportionment of members of a state legislature raised a justiciable question under the Equal Protection Clause, Baker v. Carr, 369 U. S. 186. That case was followed by numerous others, e.g.: that one person could not be given twice or 10 times the voting power of another person in a state-wide election merely because he lived in a rural area..."
 \end{quotation} %https://supreme.justia.com/cases/federal/us/400/112/case.html
 
-\textbf{Activity} Activity, or sender activation, is the tendency for ties sent to beget more ties sent \citep{howard2016understanding}. Structurally, this means that there are few nodes that send a moderate number of ties---the number of ties sent is either small or fairly large. In terms of Supreme Court opinions,  for each opinion discussed, that discussion is likely to raise other tangential issues on which the justices will want to draw upon past opinions.  Furthermore, for each opinion that applies to and is cited by the current opinion, there is often a case/opinion that needs to be discussed in terms of why it does not apply. Justices often clarify not only those legal principles that apply, but often those that do not. The passages below represent examples of this process of citation proliferation, or activation.
+\noindent \textbf{Activity} Activity, or sender activation, is the tendency for ties sent to beget more ties sent \citep{howard2016understanding}. Structurally, this means that there are few nodes that send a moderate number of ties---the number of ties sent is either small or fairly large. In terms of Supreme Court opinions,  for each opinion discussed, that discussion is likely to raise other tangential issues on which the justices will want to draw upon past opinions.  Furthermore, for each opinion that applies to and is cited by the current opinion, there is often a case/opinion that needs to be discussed in terms of why it does not apply. Justices often clarify not only those legal principles that apply, but often those that do not. The example passage that illustrates activity is from Kush v. Rutledge (460 U.S. 719, 1983)---a case addressing witness intimidation and due process protections. In the Kush opinion, Griffin v. Beckenridge (i.e., Griffin) is discussed at length in terms of its lack of applicability. It is common that opinions distinguish among a variety of legal rules in terms of their applicability to a case, which means that for each rule that is established in an applicable precedent, one or more need to be discussed in terms of why they do not apply.
+\begin{quotation}
+No allegations of racial or class-based invidiously discriminatory animus are required to establish a cause of action under the first part of  1985(2). The statutory provisions now codified at \S 1985 were originally enacted as \S 2 of the Civil Rights Act of 1871, and the substantive meaning of the 1871 Act has not been changed. The provisions relating to institutions and processes of the Federal Government (including the first part of \S 1985(2)) -- unlike those encompassing activity that is usually of primary state concern (including the second part of \S 1985(2) and the part of \P 1985(3) involved in Griffin, supra -- contain no language requiring that the conspirators act with intent to deprive their victims of the equal protection of the laws. Thus, the reasoning of Griffin is not applicable here, and, given the structure of \S 2 of the 1871 Act, it is clear''
+\end{quotation} % https://supreme.justia.com/cases/federal/us/460/719/
 
-"1. The "overbreadth" doctrine is not applicable here. There is nothing in the record to indicate that \S 28.04 will have any different impact on any third parties' interests in free speech than it has on appellees' interests, and appellees have failed to identify any significant difference between their claim that \S 28.04 is invalid on overbreadth grounds and their claim that it is unconstitutional when applied to their signs during a political campaign. Thus, it is inappropriate to entertain an overbreadth challenge to \S 28.04. Pp. 466 U. S. 796-803."
 
-https://supreme.justia.com/cases/federal/us/466/789/
-
-''No allegations of racial or class-based invidiously discriminatory animus are required to establish a cause of action under the first part of  1985(2). The statutory provisions now codified at \S 1985 were originally enacted as \S 2 of the Civil Rights Act of 1871, and the substantive meaning of the 1871 Act has not been changed. The provisions relating to institutions and processes of the Federal Government (including the first part of \S 1985(2)) -- unlike those encompassing activity that is usually of primary state concern (including the second part of \S 1985(2) and the part of \P 1985(3) involved in Griffin, supra -- contain no language requiring that the conspirators act with intent to deprive their victims of the equal protection of the laws. Thus, the reasoning of Griffin is not applicable here, and, given the structure of \S 2 of the 1871 Act, it is clear''
-
-https://supreme.justia.com/cases/federal/us/460/719/
 
 \section{Network Approaches to Studying Citations}
 
-Researchers from several fields have used network analysis to analyze citations---legal, patent, and scientific. Before describing our approach to modeling the Supreme Court citations, we review the methods researchers have previously used to study citations. A citation is a directed link between two documents that indicates the citing document attributes the cited to be relevant to the evidentiary basis of the citing document. Collective patterns of citations within a certain domain make up citation networks. When raw citation data is formally represented as a network, the nodes are usually the documents themselves, and each directed arc is the existence of one or more cites from the sending to the receiving document. Given the permanent nature of documents in citations networks, these networks are acyclic \citep{leicht2007large,karrer2009random}. Relatedly, citation networks grow as new documents and citations enter the network, but established arcs persist in all but exceptional cases. 
+The dependence processes discussed in the previous section represent new theoretical claims regarding the factors that account for citation formation among US Supreme Court opinions. Before we can test these claims, we consider methods for analyzing citation data as a network. Researchers from several fields have used network analysis to analyze citations---legal, patent, and scientific. Before describing our approach to modeling Supreme Court citations, we review the methods researchers have previously used to study citations. A citation is a directed link between two documents that indicates the citing document attributes the cited to be relevant to the evidentiary basis of the citing document. Collective patterns of citations within a certain domain make up citation networks. When raw citation data is formally represented as a network, the nodes are usually the documents themselves, and each directed arc is the existence of one or more cites from the sending to the receiving document. Given the permanent nature of documents in citations networks, these networks are acyclic \citep{leicht2007large,karrer2009random}. Relatedly, citation networks grow as new documents and citations enter the network, but established arcs persist in all but exceptional cases. 
 	
-[HERE]	In its raw form a citation is a link between two documents, but it is the result of human judgment about the utility of the cite \citep{fowler2008authority}. Studies of citation networks can be broadly categorized according to whether they treat this set of observed behavioral patterns as information that can be used to understand different aspects of the system, or treat them as outcomes to be modeled. We discuss these in turn.
+Networks researchers have developed approaches to understanding the mechanisms that drive citations between documents. Work in this area generally proceeds by specifying a set of citation behaviors, then proposing a model to capture the combination of these behavioral rules \citep{simkin2007mathematical}. Assessment of the model is based on how well it fits citation distributions. Researchers working in this area tend to focus on modeling the growth of the citation network as governed by a degree-based mechanism such as preferential attachment \citep{barabasi1999emergence, vazquez2001statistics}, and the age of the paper \citep{jeong2003measuring,eom2011characterizing,wang2013quantifying}. Regarding age, the previous standard approach was to treat the probability of citation as function of degree (i.e., the number of citations previously accrued by the document) and age \citep{hajra2005aging,hajra2006modelling}, then examine the distribution of citations. More recently, work has been done in relaxing the assumption that the effect of degree is static, instead allowing it to vary with time \citep{wang2008measuring}.
 	
-	First, as these arcs are observed patterns of behaviour, they can be used to infer latent characteristics of nodes or the relations between nodes that produced them \citep{batagelj2003efficient}. Moreover, since each judgment is embedded in the broader network of citations, which influences the judgment beyond the characteristics of the two directly linked documents, inferences about the neighborhood of these two documents are possible as well. A common application of this general logic is to obtain local or global network indices, such as Kleinberg centrality at the node level \citep{kleinberg1999authoritative,fowler2007network} or global hierarchy \citep{mones2014universal}, then use them to draw conclusions about networks or compare networks across contexts such as time periods \citep[e.g.][]{vazquez2001statistics,fowler2008authority,greenberg2009citation,lupu2012precedent,lupu2013strategic,dawson2014current,jaffe2017patent}.
-	
-	Still within the category of using observed network constellation to make inferences about components of the system, identification of communities using methods for clustering, such as modularity maximization \citep[e.g.][]{kajikawa2007creating,shibata2011detecting,chen2010community} and stochastic block modeling \citep{jo2009citing}; and subnetwork identification \citep[e.g.][]{batagelj2017emergence} have been used to analyze relevance of topics within an academic field or to determine trends in technological advancement \citep{verspagen2007mapping,erdi2013prediction}. Main path analysis \citep{hummon1989connectivity}, which determines the main path through an acyclic network, is a particularly useful way to examine trends as it allows researchers identify structures of knowledge flow. Other methods include classifying documents into groups based on similarities in their citation profiles of cites over time, which can be examined as a function of time to see if there are temporal patterns \citep{leicht2007large}. The identification of communities is often coupled with classification of these communities by the researcher using historical knowledge. 
-	
-	Researchers are also interested in understanding the mechanisms that drive citations between documents. Work in this area generally proceed by specifying a set of citation behaviour, then proposing a model to capture the combination of these behavioural rules \citep{simkin2007mathematical}. Assessment of the model is based on how well it fit citation distributions. Researchers working in this area tend to focus on modeling the growth of the citation network as governed by a degree-based mechanism such as preferential attachment \citep{barabasi1999emergence} or the recursive search \citep{vazquez2001statistics}, and the age of the paper \citep{jeong2003measuring,eom2011characterizing,wang2013quantifying}. Regarding age, the previous standard approach was to treat the probability of citation as a separable function of degree and age \citep{hajra2005aging,hajra2006modelling}, then examine the distribution of citations, scaled to the rate of new publications, by age. More recently, work has been done in relaxing the assumption that the effect of degree is static, instead allowing it to vary with time \citep{wang2008measuring}.
-	
-	Another approach to understanding the generative process of citation networks is to examine the existence of network motifs, or subnetwork structures, that can be interpreted as measuring different generative mechanisms. One way of doing so is to compare the observed network statistics to a null distribution. This null model must also be characterized by features of citation networks discussed earlier, meaning that it must be a directed acyclic graph with unweighted arcs \citep{carstens2016topology}. Two sets of uniform random graph models have been proposed for directed acyclic graphs. In the former, \citet{karrer2009random} introduce two uniform random graph models based respectively on fixed-degree sequence and fixed-expected degree sequence. Both models preserve the requisite characteristics of citation networks with the exception that they can introduce weighted edges with low probability, which leads to networks from the null distribution to be sampled with nonequal probability. \citet{carstens2014uniform,carstens2016topology} introduces a model that preserves the requisite characteristics and also do not introduce weighted arcs. Loosely related is an egocentric framework, introduced by \citet{vu2011dynamic}, that models continuous-time network data through a multivariate counting process, which can be used to count network motifs.
-	
-	\section{Extra Notes}
-	This section contains some of the extra notes I cut out from the draft that might be useful.
-	\subsection{Broader definitions of citation networks}
-	More broadly, citation networks can have as nodes the document producers, including scientists \citep{ji2016coauthorship}, judges \citep{landes1998judicial}, journals \citep{rice1988citation}, or aggregated units \citep{gelter2012networks,pan2012world}. In these cases, which are essentially exercises in aggregation, the resulting network can take on different characteristics such as weighted or cyclic edges. Other networks derived from the raw citation network is the co-citation or co-cited-by networks whereby two documents are connected if they co-cite or are co-cited by another document \citep{van2005reference}.
-	
-	\subsection{Weighted edges and multiplexity}
-	Recognition, and subsequent quantification, of different levels of complexity in citation arcs allows for a host of advancements in citation network analysis. Weights can indicate relevance \citep{liu2014citations} or be used to incorporate the temporal dimension into citation networks \citep{fujita2014detecting}. Moving to multiplexity leads to further advancements. For example, \citet{greenberg2009citation} accounted for level of support and through simulations based on arc typed switching demonstrated how citation bias against critical articles yielded differences in beliefs within a medical discipline. \citet{bommarito2010distance} argued that articles contain different types of information and accounting for the specific piece of information that resulted in the cite can yield clustering that are more interpretable. In all cases however, substantial work has to be done into reclassifying the weightedness or multiplexity of citation arcs \citep{zhang2007semantics}.
-	
-	\subsection{Misc. notes}
-	\begin{itemize}
-		\item To control for age, \citet{clough2015transitive} propose transitive reduction of citation networks (i.e. removal of redundant information ties) as it will primarily remove citation arcs that are disparate in age.
-		\item Most citation networks are directed acyclic graphs, but not all. Different versions of the same document can also cause problems (such as strong network components). The ``preprint transformation'' is a solution to small strong components \citep{batagelj2017emergence}.
-		\item Date of publication can be assigned as level to nodes in acyclic networks \citep{batagelj2017emergence}. Depending on the citation network at hand, temporal ordering can be difficult, as documents can share publication dates. To overcome this, begin each iteration by sampling from one of the possible orderings. \citep{carstens2016topology}.
-	\end{itemize}
+Another approach to understanding the generative process of citation networks is to examine the existence of network motifs, or subnetwork structures, that can be interpreted as measuring different generative mechanisms. For example, a triangle in which case A cites both cases B and C, and case B cites case C, is a type of motif---a triadic motif. If researchers find that a triangle is a highly prevalent motif in a network, that finding would suggest that triad closure is a prevalent process by which the network is generated. The analysis of network motifs is done by comparing the prevalence of the motifs in the observed network to the prevalence of the motifs in networks drawn from a relevant null distribution. This null model must also be characterized by features of citation networks discussed earlier, meaning that it must be a directed acyclic graph with unweighted arcs \citep{carstens2016topology}. \citet{karrer2009random} proposes the use of null models based on fixed-degree sequences. In these models, the nodes in the networks (i.e., opinions) have the same, or close to the same, numbers of ties. Conditional on the number of ties accrued by each node, ties are randomly re-wired such that there is no systematic pattern regarding the nodes to which any node connects. 
+
+From this brief review we see two broad components of past methods for analyzing citation networks. First, node features, age in particular, are used to model the rate at which a document is cited. Second, theoretical models are used to account for prevalent graph structures. In the next section we describe a methodology that can be used to integrate node attributes and graph structures/motifs into a comprehensive model of US Supreme Court citations. 	
 
 
  
  \section{The Citation Temporal Exponential Random Graph Model}
-We build upon existing methods for network analysis to define a model that fits the constraints to which Supreme Court citation networks are subject. The Supreme Court citation network is nearly a directed acyclic graph---a graph in which there can be no loops/cycles (e.g., ties cannot be reciprocated, which would constitute a two-node loop). If two cases are decided in different terms, the later case can cite the earlier case, but not the reverse. However, as noted above, if two opinions are written in the same term, they can cite each other reciprocally. We implement a version of the temporal exponential random graph model (TERGM)---a model that is commonly used for longitudinal network data [CITES]---that is subject to the constraints specific to the Supreme Court citation network. The TERGM is a model that can simultaneously incorporate structural dependencies such as transitivity and reciprocity and exogenous covariates  (e.g. the issue area of the citing case, the ideological distance between the opinion authors of the two cases in the dyad) to explain tie formation. If the ties do not depend upon each other, and the coefficients associated with the structural dependencies are either assumed or estimated to be zero, the TERGM reduces to a logistic regression in which the observation is a directed dyad [CITE OLD PA].  In this section we describe the citation TERGM (c-TERGM), and explain estimation methods. 
+We build upon existing methods for network analysis to define a model that fits the constraints to which Supreme Court citation networks are subject. The Supreme Court citation network is nearly a directed acyclic graph---a graph in which there can be no loops/cycles (e.g., ties cannot be reciprocated, which would constitute a two-node loop). If two cases are decided in different terms, the later case can cite the earlier case, but not the reverse. However, as noted above, if two opinions are written in the same term, they can cite each other reciprocally. We implement a version of the temporal exponential random graph model (TERGM)---a model that is commonly used for longitudinal network data \citep[e.g.,][]{cranmer2012complex,desmarais2013forecasting,clark2013multimember,block2018change,graif2017neighborhood}---that is subject to the constraints specific to the Supreme Court citation network. The TERGM is a model that can simultaneously incorporate structural dependencies such as transitivity and reciprocity and exogenous covariates  (e.g. the issue area of the citing case, the ideological distance between the opinion authors of the two cases in the dyad) to explain tie formation. If the ties do not depend upon each other, and the coefficients associated with the structural dependencies are either assumed or estimated to be zero, the TERGM reduces to a logistic regression in which the observation is a directed dyad \citep{cranmer2010inferential}.  In this section we describe the citation TERGM (c-TERGM), and explain estimation methods. 
 
 Let $C$ be the case-to-case adjacency matrix such that $C_{ij} \in \{0,1\}$ is a binary indicator of whether case $i$ cites $j$. Furthermore, let
 $$\mathcal{C} =\{C \in \{0,1\}^{(N \cdot (N-1))/2}: C_{ij} \in \{0,1\} \}$$ 
@@ -182,7 +160,7 @@ h_{triangle}:\mathcal{C} \to \mathbb{R}~~~, ~~~C \to & \sum_{j<i<k} C_{ij}\cdot 
 \end{align*}
 The number of triangles in the network.  Triangles measure triad closure, as discussed above. $$h_{covariate}:\mathcal{C} \to \mathbb{R}~~~, ~~~C \to \sum_{ij} C_{ij}X_{ij}, $$ the effect of an exogenous covariate ($X$). We include several exogenous covariates based on this standard statistic formulation. These covariates are discussed below.
 
-The structure of this model is very similar to a conventional (T)ERGM setup. The main difference is that  $\mathcal{C}$ excludes adjacency matrices in which there are loops that include edges sent at different time points. Loops can exist in the Supreme Court citation network, but only among cases decided in the same term. We estimate the c-TERGM via bootstrapped pseudolikelihood, as introduced by [CITE PHYSICA]. 
+The structure of this model is very similar to a conventional (T)ERGM setup. The main difference is that  $\mathcal{C}$ excludes adjacency matrices in which there are loops that include edges sent at different time points. Loops can exist in the Supreme Court citation network, but only among cases decided in the same term. The normalizing constant in the denominator of the probability function (i.e., Equation \ref{ercm}) is computationally intractable. This means that straightforward methods of maximum likelihood estimation (MLE) are infeasible with ERGM family models. Methods of Monte Carlo approximation are well established \citep{hunter2006inference,van2009framework,hummel2012improving}, but with over 8,000 vertices, even the methods of Monte Carlo MLE are computationally expensive \citep{schmid2017exponential}. To estimate the parameters of the c-TERGM, we rely on two features of the model and data that facilitate the application of an approximate inference method that is faster than Monte Carlo approximation---maximum pseudolikelihood. First, our sample size is very large. Second, under the c-TERGM we assume that citations are formed in each time period conditional upon the citations that exist in the past.  We estimate the c-TERGM via bootstrapped pseudolikelihood \citep{desmarais2012statistical,desmarais2010consistent}. 
 
 
 
@@ -191,13 +169,13 @@ The structure of this model is very similar to a conventional (T)ERGM setup. The
 
 Theorizing that legal citations arise through network interdependence processes  represents a potential contribution to the literature. To demonstrate the value of our contribution we must also incorporate established non-network processes that have been found to affect legal citations. We incorporate these processes through the specification of $h_{covariate}$  terms to be included in the c-TERGM. 
 
-We incorporate a statistic to model the degree to which cases cite those that are similar in terms of the ideological positions of the justices who supported the decision. We account for this effect following citet{spriggs2001explaining}, who find that cases are more likely to be overruled when the Court is ideologically distant from the median justice in the majority coalition that decided the case. \citet{clark2010locating} estimates a latent coordinate model of Cupreme Court opinions based on the network of case-to-case citations. They find that the majority opinion falls at the ideal point of the median member of the majority coalition in the case. We include a covariate term in which $X_{ij}$ is the absolute difference between the Martin-Quinn [CITE MQ] scores of the median justices in the majority coalitions for cases $i$ and $j$. We expect this variable to have a negative effect, which would correspond to cases citing those to which they are ideologically similar.%WE COULD USE THIS DATASET AS A SECOND APPLICATION
+We incorporate a statistic to model the degree to which cases cite those that are similar in terms of the ideological positions of the justices who supported the decision. We account for this effect following citet{spriggs2001explaining}, who find that cases are more likely to be overruled when the Court is ideologically distant from the median justice in the majority coalition that decided the case. \citet{clark2010locating} estimates a latent coordinate model of Cupreme Court opinions based on the network of case-to-case citations. They find that the majority opinion falls at the ideal point of the median member of the majority coalition in the case. We include a covariate term in which $X_{ij}$ is the absolute difference between the Martin-Quinn scores \citep{martin2002dynamic} of the median justices in the majority coalitions for cases $i$ and $j$. We expect this variable to have a negative effect, which would correspond to cases citing those to which they are ideologically similar.%WE COULD USE THIS DATASET AS A SECOND APPLICATION
 
-We include two sets of dummy variables that account for the issue areas of cases. In one set of dummy variable---sender intercepts---the variable $X_{ij}$ indicates the issue area of the sending case ($i$). In the set of receiver intercepts $X_{ij}$ indicates the issue are of the receiver case. Issue area data comes from the Supreme Court Database (SCDB) [CITE SCDB]. We include these variables because \citet{cross2010determinants} find that the number of citations to Supreme Court opinions depends heavily on the issue area of the case.
+We include two sets of dummy variables that account for the issue areas of cases. In one set of dummy variable---sender intercepts---the variable $X_{ij}$ indicates the issue area of the sending case ($i$). In the set of receiver intercepts $X_{ij}$ indicates the issue are of the receiver case. Issue area data comes from the Supreme Court Database (SCDB) \citep{spaeth2014supreme}. We include these variables because \citet{cross2010determinants} find that the number of citations to Supreme Court opinions depends heavily on the issue area of the case.
 
 We model the way in which citations to a case depend upon the age of a case. For this we use a second-order polynomial in which one covariate $X_{ij}$ is defined as the age of case $j$ at the time that case $i$ is decided, and another term in which $X_{ij}$ is the squared age of case $j$ at the time that case $i$ is decided. We include these covariates because \citet{black2013citation} find that the number of citations to a Supreme Court case over time depends significantly on the age of the case, characterized by a sharp drop off and leveling out with age. 
 
-\citet{benjamin2012standing} Study the propensity for cases to be overruled and cited in other negative ways. They find that cases with majority coalitions that are large and ideologically broad are less likely to be cited negatively. In our data we do not differentiate between negative and positive citaitons, but since the overwhelming majority of citations are positive, we hypothesize that the effects they found will be reversed in our analysis. We include one covariate in which $X_{ij}$ is the number of justices in the majority coalition for case $j$. We also include another covariate in which $X_{ij}$ is the absolute difference between the maximum and minimum ideal points of the justices in the majority coalition for case $j$. We expect both of these covariates to have positive effects.
+\citet{benjamin2012standing} Study the propensity for cases to be overruled and cited in other negative ways. They find that cases with majority coalitions that are large and ideologically broad are less likely to be cited negatively. In our data we do not differentiate between negative and positive citations, but since the overwhelming majority of citations are positive, we hypothesize that the effects they found will be reversed in our analysis. We include one covariate in which $X_{ij}$ is the number of justices in the majority coalition for case $j$. We also include another covariate in which $X_{ij}$ is the absolute difference between the maximum and minimum ideal points of the justices in the majority coalition for case $j$. We expect both of these covariates to have positive effects.
 
 %%%% DONT DELETE THESE COMMENTS, INCLUDE IDEAS FOR ADDITIONAL COVARIATES %%%%%
 
@@ -209,11 +187,13 @@ We model the way in which citations to a case depend upon the age of a case. For
 
 %\item \citet{lupu2013strategic} The hub score, which is a measure of the degree to which a case cites other important cases increases with salience [GET THE AMICUS BRIEFS, NYT COUNTS]. Lower if stautory cases. Increases with ideological variance of the majority coalition.  Increases with the number of concurring opinions. 
 
- \section{Results}
-  \subsection*{Descriptive Results}
-The supreme court citation network from $1937 - 2005$ consists of $8817$ cases which got voted at $2116$ different time points. The network has a total of $93,263$ ties, of which 452 are mutual. The number of triangles in the network is $211,855$. The in- and outdegree distribution is visualized in figures \ref{indegree_dist} and \ref{outdegree_dist}. The maximum indegree is $190$ and the maximum outdegree is $159$.
 
-\begin{table}[H]
+
+
+ \section{Empirical Analysis}
+Our three data sources for this study include the SCDB, Martin-Quinn scores, and Supreme Court citation data provided by James Fowler and colleagues \citep{fowler2007network,fowler2008authority}. We limit the Supreme Court terms included in our analysis to those that are covered by all three of these data source (1937--2001).  The Supreme Court citation network from $1937 - 2001$ consists of $8,817$. The breakdown of the data by the Court's Chief Justice is presented in Table \ref{tab:chiefs}. The network has a total of $93,263$ ties. The number of triangles in the network is $211,855$. The in- and outdegree distributions (i.e., the distributions of the number of citations sent and received by cases, respectively), are visualized in figures \ref{indegree_dist} and \ref{outdegree_dist}. The maximum indegree is $190$ and the maximum outdegree is $159$.
+
+\begin{table}[htp]
 \centering
 \begin{tabular}{|
 >{\columncolor[HTML]{C0C0C0}}l |l|l|l|}
@@ -227,58 +207,37 @@ WE Burger               & 1970 - 1986                                          &
 W Rehnquist**            & 1987 - 2001                                          & 1670                                                              & 83.5                                                      \\ \hline
 \end{tabular}
 \caption[caption]{For the time range of interest (1937 - 2001) this table displays the chief justices, the time range they served as chief justice, the number of cases in their time range as well as the average number of cases per year.\\\hspace{\textwidth} * CE Hughes served as chief justice from 1930 - 1941. \\\hspace{\textwidth} ** W Rehnquist served as chief justice from 1987 - 2005.}
-\label{my-label}
+\label{tab:chiefs}
 \end{table}
 
-\begin{figure}[H]
+
+The degree distributions indicate that there is a long tail to both the number of citations sent and received. These long-tailed distributions provide preliminary evidence of both popularity and activity dynamics. Figure \ref{fig:networkviz} displays the complete network. We see here that the densest rates of tie formation tend to be between consecutive courts (e.g., the Stone Court is much more tightly tied to the Hughes Court than the Rehnquist Court is to the Hughes Court). This pattern lends preliminary/descriptive support to the hypothesis that the rate of citations to a case decrease over time.
+
+
+\begin{figure}[htp]
 \includegraphics[scale=0.5]{degree_distribution}
 \caption{The in- and outdegree distribution of the Supreme Court Citation Network from 1937 - 2001. There are cases with an indegree >50, but they are not captured in this figure.}
  \label{degree_dist}
 \vspace{-.25cm}
 \end{figure}
 
-\begin{figure}[H]
-\includegraphics[scale=0.5]{number_cases}
-\caption{Number of cases in each term. Different colors indicate different chief justices.}
- \label{number_cases}
+\begin{figure}[htp]
+\includegraphics[scale=0.35,clip=true,trim=.5cm 0cm 0cm 2cm]{images/citations1}
+\caption{ Supreme Court Citation Network, 1937?2001. Nodes are Supreme Court cases, with size based on incoming citations. Salient cases ({\em Oxford Guide}) are in yellow. Each network layer contains cases decided under a different chief justice. Because our data is temporally bound, cases for the Hughes and Rehnquist courts are not complete. }
+ \label{fig:networkviz}
 \vspace{-.25cm}
-\end{figure}  
-  
- \begin{figure}[H]
-\includegraphics[scale=0.5]{number_citations}
-\caption{Number of citations for the 1937-2001 time period. Citations for cases prior 1937 are not considered in this figure. Different colors indicate different chief justices.}
- \label{number_citations}
-\vspace{-.25cm}
-\end{figure}  
-  
-  \begin{figure}[H]
-\includegraphics[scale=0.5]{number_votes_supporting}
-\caption{Number of Votes that were supporting cases between 1937-2001. Different colors indicate terms with different chief justices. }
- \label{number_supporting}
-\vspace{-.25cm}
-\end{figure}  
-  
-\newpage 
-
-
+\end{figure}
 
   
-\subsection{Inferential Results}
-
-
-\textbf{Model updates}
-\begin{itemize}
-\item Add sender issue area and receiver issue area node covariates (i.e., nodeifactor and nodeofactor applied to issue area). 
-\item In the GLM, multiply each variable by the sender time covariate.
-\item Write the bootstrap coefficients to a file, send to Bruce so he can write up a code for summarizing the over-time trends in effects.
-\item Add a receiver variable (i.e., nodeicov) that equals the absolute difference between the maximum MQ score of a justice in the majority and a minimum MQ score of a justice in the majority.
-\item Add a receiver variable (nodeicov) equivalent to the number of justices in the majority
- 
-\end{itemize}
+\subsection{c-TERGM Results}
 
 
 
-\begin{table}[H]
+INTERPRETATION OF EFFECTS
+
+
+
+\begin{table}[htp]
 \footnotesize
 \centering
 \begin{tabular}{|
@@ -574,4 +533,49 @@ c_{p}^{(k)}(t) &\text{if}~ p \neq i
 \end{enumerate}
 The first $B \ll L$ vectors are discarded as Burn-In.
 
+
+
+
+First, as these arcs are observed patterns of behaviour, they can be used to infer latent characteristics of nodes or the relations between nodes that produced them \citep{batagelj2003efficient}. Moreover, since each judgment is embedded in the broader network of citations, which influences the judgment beyond the characteristics of the two directly linked documents, inferences about the neighborhood of these two documents are possible as well. A common application of this general logic is to obtain local or global network indices, such as Kleinberg centrality at the node level \citep{kleinberg1999authoritative,fowler2007network} or global hierarchy \citep{mones2014universal}, then use them to draw conclusions about networks or compare networks across contexts such as time periods \citep[e.g.][]{vazquez2001statistics,fowler2008authority,greenberg2009citation,lupu2012precedent,lupu2013strategic,dawson2014current,jaffe2017patent}.
+	
+	Still within the category of using observed network constellation to make inferences about components of the system, identification of communities using methods for clustering, such as modularity maximization \citep[e.g.][]{kajikawa2007creating,shibata2011detecting,chen2010community} and stochastic block modeling \citep{jo2009citing}; and subnetwork identification \citep[e.g.][]{batagelj2017emergence} have been used to analyze relevance of topics within an academic field or to determine trends in technological advancement \citep{verspagen2007mapping,erdi2013prediction}. Main path analysis \citep{hummon1989connectivity}, which determines the main path through an acyclic network, is a particularly useful way to examine trends as it allows researchers identify structures of knowledge flow. Other methods include classifying documents into groups based on similarities in their citation profiles of cites over time, which can be examined as a function of time to see if there are temporal patterns \citep{leicht2007large}. The identification of communities is often coupled with classification of these communities by the researcher using historical knowledge. 
+
+
+	\section{Extra Notes}
+	This section contains some of the extra notes I cut out from the draft that might be useful.
+	\subsection{Broader definitions of citation networks}
+	More broadly, citation networks can have as nodes the document producers, including scientists \citep{ji2016coauthorship}, judges \citep{landes1998judicial}, journals \citep{rice1988citation}, or aggregated units \citep{gelter2012networks,pan2012world}. In these cases, which are essentially exercises in aggregation, the resulting network can take on different characteristics such as weighted or cyclic edges. Other networks derived from the raw citation network is the co-citation or co-cited-by networks whereby two documents are connected if they co-cite or are co-cited by another document \citep{van2005reference}.
+	
+	\subsection{Weighted edges and multiplexity}
+	Recognition, and subsequent quantification, of different levels of complexity in citation arcs allows for a host of advancements in citation network analysis. Weights can indicate relevance \citep{liu2014citations} or be used to incorporate the temporal dimension into citation networks \citep{fujita2014detecting}. Moving to multiplexity leads to further advancements. For example, \citet{greenberg2009citation} accounted for level of support and through simulations based on arc typed switching demonstrated how citation bias against critical articles yielded differences in beliefs within a medical discipline. \citet{bommarito2010distance} argued that articles contain different types of information and accounting for the specific piece of information that resulted in the cite can yield clustering that are more interpretable. In all cases however, substantial work has to be done into reclassifying the weightedness or multiplexity of citation arcs \citep{zhang2007semantics}.
+	
+	\subsection{Misc. notes}
+	\begin{itemize}
+		\item To control for age, \citet{clough2015transitive} propose transitive reduction of citation networks (i.e. removal of redundant information ties) as it will primarily remove citation arcs that are disparate in age.
+		\item Most citation networks are directed acyclic graphs, but not all. Different versions of the same document can also cause problems (such as strong network components). The ``preprint transformation'' is a solution to small strong components \citep{batagelj2017emergence}.
+		\item Date of publication can be assigned as level to nodes in acyclic networks \citep{batagelj2017emergence}. Depending on the citation network at hand, temporal ordering can be difficult, as documents can share publication dates. To overcome this, begin each iteration by sampling from one of the possible orderings. \citep{carstens2016topology}.
+	\end{itemize}
+	
+	\begin{figure}[H]
+\includegraphics[scale=0.5]{number_cases}
+\caption{Number of cases in each term. Different colors indicate different chief justices.}
+ \label{number_cases}
+\vspace{-.25cm}
+\end{figure}  
+  
+ \begin{figure}[H]
+\includegraphics[scale=0.5]{number_citations}
+\caption{Number of citations for the 1937-2001 time period. Citations for cases prior 1937 are not considered in this figure. Different colors indicate different chief justices.}
+ \label{number_citations}
+\vspace{-.25cm}
+\end{figure}  
+  
+  \begin{figure}[H]
+\includegraphics[scale=0.5]{number_votes_supporting}
+\caption{Number of Votes that were supporting cases between 1937-2001. Different colors indicate terms with different chief justices. }
+ \label{number_supporting}
+\vspace{-.25cm}
+\end{figure}  
+  
+\newpage 
 
