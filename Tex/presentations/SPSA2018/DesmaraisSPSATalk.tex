@@ -1,9 +1,11 @@
 \documentclass[handout]{beamer}
 \usepackage{bm}
+\usepackage{colortbl}
 \usepackage{listings}
 \usepackage{algorithmic}
 \usepackage{verbatim}
 \usepackage{rotating}
+\usepackage{booktabs}
 \usepackage{multirow}
 \lstloadlanguages{R}
 \lstset{ language=R, basicstyle=\scriptsize\ttfamily, commentstyle=\ttfamily\color{gray}, numbers=left, numberstyle=\ttfamily\color{gray}\footnotesize, stepnumber=1, numbersep=5pt, backgroundcolor=\color{white}, showspaces=false, showstringspaces=false, showtabs=false, frame=single, tabsize=2, captionpos=b, breaklines=true, breakatwhitespace=false, escapeinside={}, keywordstyle={}, morekeywords={} }\renewcommand{\P}{\mathcal{P}}
@@ -36,8 +38,6 @@
 \setbeamercolor{structure}{fg=umassred} 
 \author{ \textbf{Bruce A. Desmarais}\\ Collaborators: Christian Schmid, Ted Chen, David Hunter \\~\\ {\bf Pennsylvania State University}}
 
-%\affil[1]{University of Massachusetts Amherst}
-%\affil[2]{University of Connecticut}
 
 
 \begin{document}
@@ -62,18 +62,36 @@ Work supported by NSF grants SES-1558661, SES-1619644, SES-1637089, and CISE-132
 \end{frame}
 
 \begin{frame} \frametitle{Two Limitations in Case-Level Analysis}
+\Large
+\begin{enumerate}
+\item {\bf Theoretical:} Cannot learn about relational processes
+\\~\\
+\item {\bf Methodological:} Risk bias from omitted structure
+\end{enumerate}
 
 \end{frame}
 
 \begin{frame} \frametitle{Reciprocity}
 
+\centering
+
+\includegraphics[width = 0.95\textwidth,trim= 0cm 1cm 0cm 2cm,clip=true ]{../../../NetworkVisualizations/citations_recip.pdf}
+
 \end{frame}
 
 \begin{frame} \frametitle{Transitivity}
+\centering
+
+\includegraphics[width = 0.95\textwidth,trim= 0cm 1cm 0cm 2cm,clip=true ]{../../../NetworkVisualizations/citations_trans.pdf}
 
 \end{frame}
 
-\begin{frame} \frametitle{Popularity and Sociality}
+\begin{frame} \frametitle{Popularity and Activity}
+
+\centering
+
+\includegraphics[width = 0.95\textwidth,trim= 0cm 3cm 6cm 8cm,clip=true ]{../../../NetworkVisualizations/citations_pop.pdf}
+
 
 \end{frame}
 
@@ -81,19 +99,84 @@ Work supported by NSF grants SES-1558661, SES-1619644, SES-1637089, and CISE-132
 
 \end{frame}
 
+\begin{frame} \frametitle{Data}
+
+\begin{columns}
+\begin{column}{4cm}
+\scalebox{0.8}{
+\begin{tabular}{|
+>{\columncolor[HTML]{C0C0C0}}l |l|l|}
+\hline
+{\color[HTML]{333333} } & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Terms} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Cases} \\ \hline
+CE Hughes*              & 1937 - 1941                                          & 629                                                                                                                  \\ \hline
+HF Stone                & 1942 - 1946                                          & 766                                                                                                                \\ \hline
+FM Vinson               & 1946 - 1953                                          & 788                                                                                                                  \\ \hline
+E Warren                & 1954 - 1969                                          & 2159                                                                                                                  \\ \hline
+WE Burger               & 1970 - 1986                                          & 2805                                                                                                                   \\ \hline
+W Rehnquist**            & 1987 - 2001                                          & 1670                                                                                                                 \\ \hline
+\end{tabular}
+}
+\end{column}
+\begin{column}{6cm}
+\includegraphics[scale=0.15,clip=true,trim=.5cm 0cm 0cm 2cm]{../../../NetworkVisualizations/citations1}
+\end{column}
+
+\end{columns}
+
+
+\end{frame}
+
 \begin{frame} \frametitle{Model Specification}
 
 \end{frame}
 
-\begin{frame} \frametitle{Results Dependence}
+\begin{frame} \frametitle{Results: Dependence}
+\begin{changemargin}{-1cm}{-1cm}
+\centering
+ \begin{tabular}{cc}
 
+    Reciprocity &  Transitivity \\
+\includegraphics[width = 0.55\textwidth, trim= 1cm 1cm 0.5cm .45cm,clip=true]{../../images/mutual_coef_trend.pdf} & \includegraphics[width = 0.55\textwidth, trim= 1cm 1cm 0.5cm .45cm,clip=true]{../../images/triangle_coef_trend.pdf} \\
+ 
+     Activity & Popularity \\
+\includegraphics[width = 0.55\textwidth, trim= 1cm 1cm 0.5cm .45cm,clip=true]{../../images/o2star_coef_trend.pdf} & \includegraphics[width = 0.55\textwidth, trim= 1cm 1cm 0.5cm .45cm,clip=true]{../../images/i2star_coef_trend.pdf} \\
+ 
+ 
+\end{tabular}
+
+\end{changemargin}
 \end{frame}
 
-\begin{frame} \frametitle{Results Covariates}
+\begin{frame} \frametitle{Results: Covariates}
+\begin{changemargin}{-1cm}{-1cm}
+\centering
 
+ \begin{tabular}{cc}
+  MQ Score Difference & Ideological Breadth \\
+\includegraphics[width = 0.55\textwidth, trim= 1cm 1cm 0.5cm .45cm,clip=true]{../../images/mq_coef_trend.pdf} & \includegraphics[width = 0.55\textwidth, trim= 1cm 1cm 0.5cm .45cm,clip=true]{../../images/absdiffmq_coef_trend.pdf} \\
+ 
+   Same Issue &  Majority Size \\
+\includegraphics[width = 0.55\textwidth, trim= 1cm 1cm 0.5cm .45cm,clip=true]{../../images/sameissue_coef_trend.pdf} & \includegraphics[width = 0.55\textwidth, trim= 1cm 1cm 0.5cm .45cm,clip=true]{../../images/numberjusticespro_coef_trend.pdf} \\
+ 
+ 
+\end{tabular}
+
+\end{changemargin}
 \end{frame}
 
 \begin{frame} \frametitle{Predictive Performance}
+
+\begin{tabular}{rllll}
+\hline \hline
+& \multicolumn{2}{c}{Independent Model} & \multicolumn{2}{c}{Full Model} \\
+  \hline
+ & mean & range & mean & range \\ 
+  \hline
+precision & 0.5499 & (0.5384, 0.5619) & 0.8605 & (0.8526, 0.8666) \\ 
+  recall & 0.0827 & (0.0811, 0.0843) & 0.5858 & (0.5817, 0.5891) \\ 
+  F1 score & 0.1438 & (0.141, 0.1463) & 0.6971 & (0.6941, 0.7008) \\ 
+   \hline \hline
+\end{tabular}
 
 \end{frame}
 
