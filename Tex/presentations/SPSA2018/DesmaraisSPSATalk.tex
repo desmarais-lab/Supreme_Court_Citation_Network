@@ -57,8 +57,12 @@ Work supported by NSF grants SES-1558661, SES-1619644, SES-1637089, and CISE-132
 \end{center}
 \end{frame}
 
-\begin{frame} \frametitle{Captivating Story/Anecdote}
+\begin{frame}[plain]% \frametitle{The Importance of Precedent}
+\centering
 
+\includegraphics[width = 0.9\textwidth ]{../../images/apsrReference}
+\\
+\includegraphics[width = 0.9\textwidth ]{../../images/apsrTableScreenshot}
 \end{frame}
 
 \begin{frame} \frametitle{Two Limitations in Case-Level Analysis}
@@ -95,9 +99,31 @@ Work supported by NSF grants SES-1558661, SES-1619644, SES-1637089, and CISE-132
 
 \end{frame}
 
-\begin{frame} \frametitle{Citation TERGM}
+\frame{
+\frametitle{The Exponential Random Graph Model (ERGM)}\vspace{0.5cm}
+
+The probability (likelihood function) of observing network $N$ is:
+\[
+\mathcal{P}(N, \bt) = \frac{\exp \{ \bt' \bh(N)  \}}{\sum_{N^* \in \mathcal{N}} \exp \{\bt ' \bh(N^*)  \}}
+\]
+Decomposition:
+\[
+\underbrace{\bh(N)}_{Net\hspace{3pt} Stats} \qquad \underbrace{\bt}_{Effects} \qquad \underbrace{\exp \{\bt' \bh(N) \}}_{+ \hspace{3pt} Weight} \qquad \underbrace{\sum_{N^* \in \mathcal{N}} \exp \{\bt ' \bh(N^*)  \}}_{Normalizer}
+\]
+
+Flexible: $\bh$ can capture virtually any form of interdependence among the edges $+$ covariates\\
+\vspace{0.5cm}
+Normalizing constant can make estimation difficult
+}
+
+
+\begin{frame} \frametitle{DAG[gish] Dynamics}
+\centering
+
+\includegraphics[width = 0.95\textwidth,trim= 0cm 0cm 0cm 1.5cm,clip=true  ]{../../../Tex/images/daggish.pdf}
 
 \end{frame}
+
 
 \begin{frame} \frametitle{Data}
 
@@ -127,6 +153,33 @@ W Rehnquist**            & 1987 - 2001                                          
 \end{frame}
 
 \begin{frame} \frametitle{Model Specification}
+
+\begin{columns}
+\begin{column}{5cm}
+{\bf Exogenous Effects}
+\begin{itemize}
+\item Ideological Distance
+\item Ideological Breadth
+\item Same issue
+\item Majority size
+\item Issue area dummies
+\end{itemize}
+\end{column}
+
+\begin{column}{6cm}
+{\bf Dependence Effects}
+
+\begin{itemize}
+\item \# Mutual Dyads
+\item \# Transitive Ties
+\item \# In-two-stars
+\item  \# Out-two-stars
+\end{itemize}
+
+\end{column}
+
+\end{columns}
+
 
 \end{frame}
 
@@ -181,6 +234,21 @@ precision & 0.5499 & (0.5384, 0.5619) & 0.8605 & (0.8526, 0.8666) \\
 \end{frame}
 
 \begin{frame} \frametitle{Conclusion}
+
+{\bf Key Findings}
+\begin{enumerate}
+\item Citation is characterized by reciprocity and transitivity
+\item Dependence effects improve models of citations
+\item c-TERGM represents comprehensive method
+\end{enumerate}
+~\\
+{\bf Limitations}
+\begin{enumerate}
+\item Do not consider the signs of the citations
+\item We miss recent terms
+\item Case emergence considered exogenous
+\end{enumerate}
+
 
 \end{frame}
 
