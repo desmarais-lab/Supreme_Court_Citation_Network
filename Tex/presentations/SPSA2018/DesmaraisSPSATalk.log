@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  4 JAN 2018 06:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  4 JAN 2018 07:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1177,7 +1177,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  18846 strings out of 492995
  352582 string characters out of 6132704
- 460541 words of memory out of 5000000
+ 461541 words of memory out of 5000000
  21895 multiletter control sequences out of 15000+600000
  18003 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1197,7 +1197,7 @@ ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
 /2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
 017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on DesmaraisSPSATalk.pdf (14 pages, 2000183 bytes).
+Output written on DesmaraisSPSATalk.pdf (14 pages, 2000733 bytes).
 PDF statistics:
  308 PDF objects out of 1000 (max. 8388607)
  223 compressed objects within 3 object streams

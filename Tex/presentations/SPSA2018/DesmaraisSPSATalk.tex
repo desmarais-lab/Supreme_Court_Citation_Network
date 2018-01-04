@@ -112,9 +112,9 @@ Work supported by NSF grants SES-1558661, SES-1619644, SES-1637089, and CISE-132
 \frame{
 \frametitle{Citation Temporal Exponential Random Graph Model}\vspace{0.5cm}
 
-The probability  of observing the $N_t \times N_{\leq t}$ adjacency matrix $C_t$ is
+The probability  of observing the $N_t \times N_{\leq t}$ adjacency matrix $C_t$ given past citations $C_{<t}$, where $C_{\leq t}$ is the network up to time $t$
 \[
-\mathcal{P}(C_t, \bt) = \frac{\exp \{ \bt' \bh(C_{\leq t})  \}}{\sum_{C^*_t \in \mathcal{C}_t} \exp \{\bt ' \bh(C^*_{\leq t})\}  }
+\mathcal{P}(C_t|C_{<t}, \bt) = \frac{\exp \{ \bt' \bh(C_{\leq t})  \}}{\sum_{C^*_t \in \mathcal{C}_t} \exp \{\bt ' \bh(C^*_{\leq t})\}  }
 \]
 Decomposition:
 \[
