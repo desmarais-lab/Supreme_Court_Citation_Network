@@ -74,11 +74,11 @@ axis(1,at=(1:cases-0.5),lab=as.character(1:cases))
 axis(2,at=(1:cases-0.5),lab=as.character(1:cases))
 
 
-CurlyBraces(x0=-.75, x1=-.75, y0=cases-nodes_per_year, y1=cases, pos = 1, direction = 2, depth = .5) 
+CurlyBraces(x0=-.75, x1=-.75, y0=cases-nodes_per_year, y1=cases, pos = 1, direction = 2, depth = .75) 
 
-CurlyBraces(x0=-.75, x1=-.75, y0=0, y1=cases-nodes_per_year, pos = 1, direction = 2, depth = .5) 
+CurlyBraces(x0=-.75, x1=-.75, y0=0, y1=cases-nodes_per_year, pos = 1, direction = 2, depth = .75) 
 
-CurlyBraces(x0=-1.95, x1=-1.95, y0=0, y1=cases, pos = 1, direction = 2, depth = .5) 
+CurlyBraces(x0=-1.95, x1=-1.95, y0=0, y1=cases, pos = 1, direction = 2, depth = .75) 
 
 library(latex2exp)
 
@@ -86,9 +86,9 @@ Ct <- TeX('$C_t$')
 Clt <- TeX('$C_{<t}$')
 Clet <- TeX('$C_{ \\leq t}$')
 
-text(-1.55,(cases-nodes_per_year+cases)/2,Ct,xpd=T,cex=1.5)
-text(-1.55,(cases-nodes_per_year)/2,Clt,xpd=T,cex=1.5)
-text(-2.75,(cases)/2,Clet,xpd=T,cex=1.5)
+text(-1.8,(cases-nodes_per_year+cases)/2,Ct,xpd=T,cex=1.5)
+text(-1.8,(cases-nodes_per_year)/2,Clt,xpd=T,cex=1.5)
+text(-3,(cases)/2,Clet,xpd=T,cex=1.5)
 
 title(xlab="receiving case",line=2.25)
 
