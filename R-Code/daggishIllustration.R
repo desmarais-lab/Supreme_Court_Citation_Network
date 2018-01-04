@@ -1,10 +1,12 @@
+# code assumes working directory is ./Supreme_Court_Citation_Network/R-Code
+
 nodes_per_year <- 3
 years <- 3
 
-greyseq <- paste("grey",round(seq(30,90,length=years)),sep="")
+greyseq <- paste("grey",round(seq(30,80,length=years)),sep="")
 
 cases <- years*nodes_per_year
-pdf()
+pdf("../Tex/images/daggish.pdf",height=5,width=5)
 par(las=1)
 plot(1:(cases-1),1:(cases-1),type="n",xlim=c(0,cases),ylim=c(0,cases),xaxs="i",yaxs="i",xaxt="n",yaxt="n",ylab="sending case",xlab="receiving case")
 
@@ -39,3 +41,4 @@ for(yr in 1:years){
 axis(1,at=(1:cases-0.5),lab=as.character(1:cases))
 axis(2,at=(1:cases-0.5),lab=as.character(1:cases))
 
+dev.off()

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  3 JAN 2018 21:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  4 JAN 2018 06:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1034,36 +1034,36 @@ on input line 100.
 (pdftex.def)             Requested size: 291.92444pt x 216.68777pt.
  [6
 
- <../../../NetworkVisualizations/citations_pop.pdf>] [7
-
-]
-<../../../Tex/images/daggish.pdf, id=119, 361.35pt x 361.35pt>
+ <../../../NetworkVisualizations/citations_pop.pdf>]
+<../../../Tex/images/daggish.pdf, id=105, 361.35pt x 361.35pt>
 File: ../../../Tex/images/daggish.pdf Graphic file (type pdf)
 
 <use ../../../Tex/images/daggish.pdf>
-Package pdftex.def Info: ../../../Tex/images/daggish.pdf used on input line 125
+Package pdftex.def Info: ../../../Tex/images/daggish.pdf used on input line 109
 .
 (pdftex.def)             Requested size: 291.92444pt x 257.4461pt.
 
-Overfull \vbox (12.57295pt too high) detected at line 125
+Overfull \vbox (12.57295pt too high) detected at line 109
  []
 
-[8
+[7
 
- <../../../Tex/images/daggish.pdf>]
-Overfull \hbox (46.96399pt too wide) in paragraph at lines 153--153
+ <../../../Tex/images/daggish.pdf>] [8
+
+]
+Overfull \hbox (46.96399pt too wide) in paragraph at lines 156--156
 [][]  
  []
 
-<../../../NetworkVisualizations/citations1.pdf, id=132, 1445.4pt x 1445.4pt>
+<../../../NetworkVisualizations/citations1.pdf, id=133, 1445.4pt x 1445.4pt>
 File: ../../../NetworkVisualizations/citations1.pdf Graphic file (type pdf)
 
 <use ../../../NetworkVisualizations/citations1.pdf>
 Package pdftex.def Info: ../../../NetworkVisualizations/citations1.pdf used on 
-input line 153.
+input line 156.
 (pdftex.def)             Requested size: 214.66678pt x 208.26518pt.
 
-Overfull \hbox (43.95026pt too wide) in paragraph at lines 153--153
+Overfull \hbox (43.95026pt too wide) in paragraph at lines 156--156
 [][]  
  []
 
@@ -1072,78 +1072,78 @@ Overfull \hbox (43.95026pt too wide) in paragraph at lines 153--153
  <../../../NetworkVisualizations/citations1.pdf>] [10
 
 ]
-<../../images/mutual_coef_trend.pdf, id=157, 433.62pt x 252.945pt>
+<../../images/mutual_coef_trend.pdf, id=158, 433.62pt x 252.945pt>
 File: ../../images/mutual_coef_trend.pdf Graphic file (type pdf)
 
 <use ../../images/mutual_coef_trend.pdf>
 Package pdftex.def Info: ../../images/mutual_coef_trend.pdf used on input line 
-201.
+204.
 (pdftex.def)             Requested size: 169.01036pt x 91.5153pt.
 
-<../../images/triangle_coef_trend.pdf, id=159, 433.62pt x 252.945pt>
+<../../images/triangle_coef_trend.pdf, id=160, 433.62pt x 252.945pt>
 File: ../../images/triangle_coef_trend.pdf Graphic file (type pdf)
 
 <use ../../images/triangle_coef_trend.pdf>
 Package pdftex.def Info: ../../images/triangle_coef_trend.pdf used on input lin
-e 201.
+e 204.
 (pdftex.def)             Requested size: 169.01036pt x 91.5153pt.
 
-<../../images/o2star_coef_trend.pdf, id=161, 433.62pt x 252.945pt>
+<../../images/o2star_coef_trend.pdf, id=162, 433.62pt x 252.945pt>
 File: ../../images/o2star_coef_trend.pdf Graphic file (type pdf)
 
 <use ../../images/o2star_coef_trend.pdf>
 Package pdftex.def Info: ../../images/o2star_coef_trend.pdf used on input line 
-201.
+204.
 (pdftex.def)             Requested size: 169.01036pt x 91.5153pt.
 
-<../../images/i2star_coef_trend.pdf, id=163, 433.62pt x 252.945pt>
+<../../images/i2star_coef_trend.pdf, id=164, 433.62pt x 252.945pt>
 File: ../../images/i2star_coef_trend.pdf Graphic file (type pdf)
 
 <use ../../images/i2star_coef_trend.pdf>
 Package pdftex.def Info: ../../images/i2star_coef_trend.pdf used on input line 
-201.
+204.
 (pdftex.def)             Requested size: 169.01036pt x 91.5153pt.
  [11
 
  <../../images/mutual_coef_trend.pdf> <../../images/triangle_coef_trend.pdf> <.
 ./../images/o2star_coef_trend.pdf> <../../images/i2star_coef_trend.pdf>]
-<../../images/mq_coef_trend.pdf, id=199, 433.62pt x 252.945pt>
+<../../images/mq_coef_trend.pdf, id=200, 433.62pt x 252.945pt>
 File: ../../images/mq_coef_trend.pdf Graphic file (type pdf)
 
 <use ../../images/mq_coef_trend.pdf>
-Package pdftex.def Info: ../../images/mq_coef_trend.pdf used on input line 218.
+Package pdftex.def Info: ../../images/mq_coef_trend.pdf used on input line 221.
 
 (pdftex.def)             Requested size: 169.01036pt x 91.5153pt.
 
-<../../images/absdiffmq_coef_trend.pdf, id=201, 433.62pt x 252.945pt>
+<../../images/absdiffmq_coef_trend.pdf, id=202, 433.62pt x 252.945pt>
 File: ../../images/absdiffmq_coef_trend.pdf Graphic file (type pdf)
 
 <use ../../images/absdiffmq_coef_trend.pdf>
 Package pdftex.def Info: ../../images/absdiffmq_coef_trend.pdf used on input li
-ne 218.
+ne 221.
 (pdftex.def)             Requested size: 169.01036pt x 91.5153pt.
 
-<../../images/sameissue_coef_trend.pdf, id=203, 433.62pt x 252.945pt>
+<../../images/sameissue_coef_trend.pdf, id=204, 433.62pt x 252.945pt>
 File: ../../images/sameissue_coef_trend.pdf Graphic file (type pdf)
 
 <use ../../images/sameissue_coef_trend.pdf>
 Package pdftex.def Info: ../../images/sameissue_coef_trend.pdf used on input li
-ne 218.
+ne 221.
 (pdftex.def)             Requested size: 169.01036pt x 91.5153pt.
 
-<../../images/numberjusticespro_coef_trend.pdf, id=205, 433.62pt x 252.945pt>
+<../../images/numberjusticespro_coef_trend.pdf, id=206, 433.62pt x 252.945pt>
 File: ../../images/numberjusticespro_coef_trend.pdf Graphic file (type pdf)
 
 <use ../../images/numberjusticespro_coef_trend.pdf>
 Package pdftex.def Info: ../../images/numberjusticespro_coef_trend.pdf used on 
-input line 218.
+input line 221.
 (pdftex.def)             Requested size: 169.01036pt x 91.5153pt.
  [12
 
  <../../images/mq_coef_trend.pdf> <../../images/absdiffmq_coef_trend.pdf> <../.
 ./images/sameissue_coef_trend.pdf> <../../images/numberjusticespro_coef_trend.p
 df>]
-Overfull \hbox (7.69336pt too wide) in paragraph at lines 234--234
+Overfull \hbox (7.69336pt too wide) in paragraph at lines 237--237
 [][]  
  []
 
@@ -1161,11 +1161,11 @@ Overfull \hbox (7.69336pt too wide) in paragraph at lines 234--234
 \tf@snm=\write8
 \openout8 = `DesmaraisSPSATalk.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 255.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 255.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 258.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 258.
  (./DesmaraisSPSATalk.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 255.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 255.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 258.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 258.
 Package rerunfilecheck Info: File `DesmaraisSPSATalk.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1177,7 +1177,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  18846 strings out of 492995
  352582 string characters out of 6132704
- 460542 words of memory out of 5000000
+ 460541 words of memory out of 5000000
  21895 multiletter control sequences out of 15000+600000
  18003 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1186,20 +1186,21 @@ Here is how much of TeX's memory you used:
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
-r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></us
-r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
-cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
-/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
-xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on DesmaraisSPSATalk.pdf (14 pages, 1992261 bytes).
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
+r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
+l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
+017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on DesmaraisSPSATalk.pdf (14 pages, 2000183 bytes).
 PDF statistics:
- 304 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
+ 308 PDF objects out of 1000 (max. 8388607)
+ 223 compressed objects within 3 object streams
  29 named destinations out of 1000 (max. 500000)
  201 words of extra memory for PDF output out of 10000 (max. 10000000)
 
