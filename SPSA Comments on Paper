@@ -1,0 +1,57 @@
+From: Kassow, Benjamin <benjamin.kassow@business.und.edu>
+Date: Tue, Jan 9, 2018 at 12:59 PM
+Subject: Comments on Paper
+To: "bdesmarais@psu.edu" <bdesmarais@psu.edu>
+
+
+Bruce,
+
+Hope that you had a safe and uneventful trip back from New Orleans. 
+I am writing this email to provide additional feedback on the paper that you presented and that you and your coauthors wrote. 
+
+
+In short, I think this paper is quite close to being ready to send out for peer review. 
+I do have a few suggestions in terms of clarification that would help improve the paper in my view. 
+First, I think the discussion in the introduction of the paper focusing on a "case-based" versus network based analysis is a bit short. 
+I was left slightly confused by what a "case-based" analysis of citation actually is or what it means. 
+I can see several different conceptions of this, some being more problematic than others in a methodological sense, 
+although none of them are ideal for analyzing networks and all likely suffer some amount of OV bias.
+
+
+
+I really like the discussion of each of the aspects of networks that you are examining in the paper. 
+The quotes included are set up nicely, in my view, and I think this paper does a fantastic job of explaining the four aspects of 
+networks that you are examining in the manuscript. Having said that, I'm left wondering a bit as to how important and common reciprocity 
+is. I was thinking of possibilities of having two contemporaneous Court opinions (x and y), with perhaps x citing y, 
+but not having y citing x. What would this fall under in your network framework? It is clearly not reciprocal, 
+but what would this be? And how often would this scenario occur? 
+I think the motif discussion is useful in section 3, but was wondering whether motifs can be tested theoretically or 
+what it would look like. If the answer is no, I am wondering what this adds to the rest of the paper.
+
+
+
+In section 5, I think the discussion is mostly good, but could be organized a bit differently. 
+I think the discussion of the random intercepts is a bit confusing early on (it is explained more effectively later). 
+I have also found that cubic age matters in some models of Supreme Court citations that I have run, 
+so this is something you might want to examine as well depending on how far back in time you ultimately go (currently 
+runs from the Hughes Court forward). 
+On page 14, I really like the figure that is there; it helps significantly for understanding the networked relationships.
+
+
+
+In section 6.2 (predictive performance), I like what is here, but was hoping to see a bit more discussion about the predictive 
+performance of the model, with some explanation of what the predictive performance means. 
+I understand it (I think), but depending on where this gets sent to, I am not sure if all reviewers will. 
+I also think tying this into the overall model explanation or discussion of model performance overall will be helpful for better 
+integrating this section into the rest of the manuscript.
+
+
+
+On the whole, I really like this paper though and I think it is quite close to being ready to be sent out. 
+I think the paper makes a fine contribution, both in terms of theory and in showing a new method of network analysis (c-TERGM), 
+which is pretty neat. Nice work on this!
+
+
+Best,
+
+Ben
