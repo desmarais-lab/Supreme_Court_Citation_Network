@@ -37,7 +37,11 @@ mple.est <- glm(edgeij ~ istar2+ostar2+mutual+triangle+ edgecov.mq.t+ edgecov.sa
                 nodeofactor.SameIssueArea.8+nodeofactor.SameIssueArea.9+nodeofactor.SameIssueArea.10+ nodeofactor.SameIssueArea.11+ 
                 nodeofactor.SameIssueArea.12+ nodeofactor.SameIssueArea.13+nodeofactor.SameIssueArea.14+
                 instar2_sendertime+outstar2_sendertime+ mutual_sendertime+ triangle_sendertime+mq_sendertime +sameissuearea_sendertime+
-                yeardiff_sendertime + yeardiffsquare_sendertime+ AbsDiffMQscores_sendertime + NumberJusticesPro_sendertime,family=binomial,data=mpledata)
+                yeardiff_sendertime + yeardiffsquare_sendertime+ AbsDiffMQscores_sendertime + NumberJusticesPro_sendertime+
+                instar2_sendertime2+outstar2_sendertime2+ mutual_sendertime2+ triangle_sendertime2+mq_sendertime2 +sameissuearea_sendertime2+
+                yeardiff_sendertime2 + yeardiffsquare_sendertime2+ AbsDiffMQscores_sendertime2 + NumberJusticesPro_sendertime2+
+                instar2_sendertime3+outstar2_sendertime3+ mutual_sendertime3+ triangle_sendertime3+mq_sendertime3 +sameissuearea_sendertime3+
+                yeardiff_sendertime3 + yeardiffsquare_sendertime3+ AbsDiffMQscores_sendertime3 + NumberJusticesPro_sendertime3,family=binomial,data=mpledata)
 summary(mple.est)
 
 colnames(mpledata)[12]
@@ -79,7 +83,11 @@ for(b in 1:nboot){
                 nodeofactor.SameIssueArea.8+nodeofactor.SameIssueArea.9+nodeofactor.SameIssueArea.10+ nodeofactor.SameIssueArea.11+ 
                 nodeofactor.SameIssueArea.12+ nodeofactor.SameIssueArea.13+nodeofactor.SameIssueArea.14+
                 instar2_sendertime+outstar2_sendertime+ mutual_sendertime+ triangle_sendertime+mq_sendertime +sameissuearea_sendertime+
-                yeardiff_sendertime + yeardiffsquare_sendertime+ AbsDiffMQscores_sendertime + NumberJusticesPro_sendertime ,family=binomial,data=data.b)
+                yeardiff_sendertime + yeardiffsquare_sendertime+ AbsDiffMQscores_sendertime + NumberJusticesPro_sendertime+
+                instar2_sendertime2+outstar2_sendertime2+ mutual_sendertime2+ triangle_sendertime2+mq_sendertime2 +sameissuearea_sendertime2+
+                yeardiff_sendertime2 + yeardiffsquare_sendertime2+ AbsDiffMQscores_sendertime2 + NumberJusticesPro_sendertime2+
+                instar2_sendertime3+outstar2_sendertime3+ mutual_sendertime3+ triangle_sendertime3+mq_sendertime3 +sameissuearea_sendertime3+
+                yeardiff_sendertime3 + yeardiffsquare_sendertime3+ AbsDiffMQscores_sendertime3 + NumberJusticesPro_sendertime3 ,family=binomial,data=data.b)
   # store results
   boot.results[b,] <- coef(mple.est.b)
 }
@@ -135,7 +143,26 @@ quantile(boot.results[,45], probs=c(0.975, 0.025), na.rm = TRUE)
 quantile(boot.results[,46], probs=c(0.975, 0.025), na.rm = TRUE)
 quantile(boot.results[,47], probs=c(0.975, 0.025), na.rm = TRUE)
 quantile(boot.results[,48], probs=c(0.975, 0.025), na.rm = TRUE)
-
+quantile(boot.results[,49], probs=c(0.975, 0.025), na.rm = TRUE)
+quantile(boot.results[,50], probs=c(0.975, 0.025), na.rm = TRUE)
+quantile(boot.results[,51], probs=c(0.975, 0.025), na.rm = TRUE)
+quantile(boot.results[,52], probs=c(0.975, 0.025), na.rm = TRUE)
+quantile(boot.results[,53], probs=c(0.975, 0.025), na.rm = TRUE)
+quantile(boot.results[,54], probs=c(0.975, 0.025), na.rm = TRUE)
+quantile(boot.results[,55], probs=c(0.975, 0.025), na.rm = TRUE)
+quantile(boot.results[,56], probs=c(0.975, 0.025), na.rm = TRUE)
+quantile(boot.results[,57], probs=c(0.975, 0.025), na.rm = TRUE)
+quantile(boot.results[,58], probs=c(0.975, 0.025), na.rm = TRUE)
+quantile(boot.results[,59], probs=c(0.975, 0.025), na.rm = TRUE)
+quantile(boot.results[,60], probs=c(0.975, 0.025), na.rm = TRUE)
+quantile(boot.results[,61], probs=c(0.975, 0.025), na.rm = TRUE)
+quantile(boot.results[,62], probs=c(0.975, 0.025), na.rm = TRUE)
+quantile(boot.results[,63], probs=c(0.975, 0.025), na.rm = TRUE)
+quantile(boot.results[,64], probs=c(0.975, 0.025), na.rm = TRUE)
+quantile(boot.results[,65], probs=c(0.975, 0.025), na.rm = TRUE)
+quantile(boot.results[,66], probs=c(0.975, 0.025), na.rm = TRUE)
+quantile(boot.results[,67], probs=c(0.975, 0.025), na.rm = TRUE)
+quantile(boot.results[,68], probs=c(0.975, 0.025), na.rm = TRUE)
 
 STOP
 echo " "
