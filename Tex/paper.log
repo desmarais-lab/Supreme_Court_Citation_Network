@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.24)  19 FEB 2018 11:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.24)  19 FEB 2018 12:33
 entering extended mode
 **paper.tex
 
@@ -1602,26 +1602,17 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [11]
-
-LaTeX Warning: Reference `indegree_dist' on page 12 undefined on input line 205
-.
-
-
-LaTeX Warning: Reference `outdegree_dist' on page 12 undefined on input line 20
-5.
-
-
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[12] <degree_distribution.pdf, id=295, 844.15375pt x 597.23125pt>
+[12] <degree_distribution.pdf, id=296, 844.15375pt x 597.23125pt>
 File: degree_distribution.pdf Graphic file (type pdf)
 
 <use degree_distribution.pdf>
 Package pdftex.def Info: degree_distribution.pdf used on input line 230.
 (pdftex.def)             Requested size: 422.07584pt x 298.61488pt.
 
-<images/citations1.pdf, id=296, 1445.4pt x 1445.4pt>
+<images/citations1.pdf, id=297, 1445.4pt x 1445.4pt>
 File: images/citations1.pdf Graphic file (type pdf)
 
 <use images/citations1.pdf>
@@ -1682,14 +1673,14 @@ has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.314 \newpage
-              ] <images/mq_coef_trend.pdf, id=365, 433.62pt x 252.945pt>
+              ] <images/mq_coef_trend.pdf, id=366, 433.62pt x 252.945pt>
 File: images/mq_coef_trend.pdf Graphic file (type pdf)
 
 <use images/mq_coef_trend.pdf>
 Package pdftex.def Info: images/mq_coef_trend.pdf used on input line 320.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/absdiffmq_coef_trend.pdf, id=367, 433.62pt x 252.945pt>
+<images/absdiffmq_coef_trend.pdf, id=368, 433.62pt x 252.945pt>
 File: images/absdiffmq_coef_trend.pdf Graphic file (type pdf)
 
 <use images/absdiffmq_coef_trend.pdf>
@@ -1697,7 +1688,7 @@ Package pdftex.def Info: images/absdiffmq_coef_trend.pdf used on input line 320
 .
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/sameissue_coef_trend.pdf, id=369, 433.62pt x 252.945pt>
+<images/sameissue_coef_trend.pdf, id=370, 433.62pt x 252.945pt>
 File: images/sameissue_coef_trend.pdf Graphic file (type pdf)
 
 <use images/sameissue_coef_trend.pdf>
@@ -1705,7 +1696,7 @@ Package pdftex.def Info: images/sameissue_coef_trend.pdf used on input line 323
 .
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/numberjusticespro_coef_trend.pdf, id=371, 433.62pt x 252.945pt>
+<images/numberjusticespro_coef_trend.pdf, id=372, 433.62pt x 252.945pt>
 File: images/numberjusticespro_coef_trend.pdf Graphic file (type pdf)
 
 <use images/numberjusticespro_coef_trend.pdf>
@@ -1713,14 +1704,14 @@ Package pdftex.def Info: images/numberjusticespro_coef_trend.pdf used on input
 line 323.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/mutual_coef_trend.pdf, id=373, 433.62pt x 252.945pt>
+<images/mutual_coef_trend.pdf, id=374, 433.62pt x 252.945pt>
 File: images/mutual_coef_trend.pdf Graphic file (type pdf)
 
 <use images/mutual_coef_trend.pdf>
 Package pdftex.def Info: images/mutual_coef_trend.pdf used on input line 326.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/triangle_coef_trend.pdf, id=375, 433.62pt x 252.945pt>
+<images/triangle_coef_trend.pdf, id=376, 433.62pt x 252.945pt>
 File: images/triangle_coef_trend.pdf Graphic file (type pdf)
 
 <use images/triangle_coef_trend.pdf>
@@ -1728,14 +1719,14 @@ Package pdftex.def Info: images/triangle_coef_trend.pdf used on input line 326.
 
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/o2star_coef_trend.pdf, id=377, 433.62pt x 252.945pt>
+<images/o2star_coef_trend.pdf, id=378, 433.62pt x 252.945pt>
 File: images/o2star_coef_trend.pdf Graphic file (type pdf)
 
 <use images/o2star_coef_trend.pdf>
 Package pdftex.def Info: images/o2star_coef_trend.pdf used on input line 329.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/i2star_coef_trend.pdf, id=379, 433.62pt x 252.945pt>
+<images/i2star_coef_trend.pdf, id=380, 433.62pt x 252.945pt>
 File: images/i2star_coef_trend.pdf Graphic file (type pdf)
 
 <use images/i2star_coef_trend.pdf>
@@ -1809,17 +1800,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 378.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 378.
 Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: FD8A9E426A084B9DD8A0346036FAEC9D;600.
-
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 378.
  ) 
 Here is how much of TeX's memory you used:
- 24758 strings out of 493921
- 432045 string characters out of 3144861
- 620535 words of memory out of 3000000
- 27414 multiletter control sequences out of 15000+200000
+ 24756 strings out of 493921
+ 432014 string characters out of 3144861
+ 619535 words of memory out of 3000000
+ 27412 multiletter control sequences out of 15000+200000
  137727 words of font info for 106 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  64i,14n,60p,3233b,510s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1858,9 +1845,9 @@ lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><
 C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (25 pages, 1474916 bytes).
+Output written on paper.pdf (25 pages, 1474890 bytes).
 PDF statistics:
- 573 PDF objects out of 1000 (max. 8388607)
+ 574 PDF objects out of 1000 (max. 8388607)
  102 named destinations out of 1000 (max. 500000)
  12477 words of extra memory for PDF output out of 14400 (max. 10000000)
 
