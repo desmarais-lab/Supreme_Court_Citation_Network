@@ -347,10 +347,31 @@ counts<- table(scc$year)
 barplot(counts, main="Number of new Cases every Year", xlab="Year", ylab="Frequency")
 
 ################# outdegree distribution
-hist(rowSums(adjacency.matrix), breaks=-0.5:165.5, main="Outdegree Distribution", xlab="Outdegree")
+library(ggplot2)
+outdegree.plot<- qplot(rowSums(adjacency.matrix), geom="histogram", binwidth = 1,  
+      main = "Outdegree Distribution", 
+      xlab = "Outdegree", ylab="Frequency",  
+      fill=I("lightblue"), 
+      col=I("black"), ylim=c(0,1000),
+      xlim=c(0,50)) + theme(axis.text=element_text(size=24),axis.title=element_text(size=26),
+                            plot.title=element_text(size=28, face='bold', hjust=0.5))
+
+max(rowSums(adjacency.matrix))
 
 ################# indegree distribution
-hist(colSums(adjacency.matrix), breaks=-0.5:228.5, main="Indegree Distribution", xlab="Indegree")
+indegree.plot<- qplot(colSums(adjacency.matrix), geom="histogram", binwidth = 1,  
+      main = "Indegree Distribution", 
+      xlab = "Indegree", ylab="Frequency",  
+      fill=I("lightblue"), 
+      col=I("black"), ylim=c(0,1000),
+      xlim=c(0,50)) + theme(axis.text=element_text(size=24),axis.title=element_text(size=26),
+                            plot.title=element_text(size=28, face='bold', hjust=0.5))
+
+max(colSums(adjacency.matrix))
+
+library(gridExtra)
+grid.arrange(indegree.plot, outdegree.plot, ncol=1, nrow=2)
+
 
 ## number of ties
 sum(adjacency.matrix) # 110742
