@@ -1,0 +1,15 @@
+This data set contains information on US Supreme Court decisions overruled by subsequent decision. 
+The raw data is obtained from US Government Publishing Office publication:
+"Supreme Court Decisions Overruled by Subsequent Decision" pp. 2601-2615 in Constitution of the United States of America: Analysis and Interpretation (Centennial Ed.). (2016)
+The document is available from: https://www.gpo.gov/fdsys/granule/GPO-CONAN-REV-2016/GPO-CONAN-REV-2016-13
+
+This data set contains three columns:
+1) Overruling case (US Reporter ID);
+2) Overruled case (US Reporter ID);
+3) Whether overruling was explicitly stated (dummy variable).
+
+Two notes:
+1) 465 U.S. 89 (no. 177), Pennhurst State School & Hosp. v. Halderman (1984) has 28 additional cases that ``more or less fall under the Pennhurst Doctrine''. (See p. 2612) 
+-We included only the initial five listed.
+2) Four cases from 570 (no. 233-236) onward (forming six edges) do not have US Reporter IDs. (See p. 2615)
+-These are not included in our data.
