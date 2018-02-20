@@ -6,7 +6,7 @@ The document is available from: https://www.gpo.gov/fdsys/granule/GPO-CONAN-REV-
 This data set contains three columns:
 1) Overruling case (US Reporter ID);
 2) Overruled case (US Reporter ID);
-3) Whether overruling was explicitly stated (dummy variable).
+3) Whether overruling was not explicitly stated (dummy variable).
 
 Two notes:
 1) 465 U.S. 89 (no. 177), Pennhurst State School & Hosp. v. Halderman (1984) has 28 additional cases that ``more or less fall under the Pennhurst Doctrine''. (See p. 2612) 
