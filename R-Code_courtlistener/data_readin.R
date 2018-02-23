@@ -75,23 +75,6 @@ cluster.mat[,2]<- as.integer(cluster.mat[,2])
 cluster.mat[,4]<- as.integer(cluster.mat[,4])
 cluster.mat[,7]<- as.integer(cluster.mat[,7])
 
-######################### delete
-#check which column aligns with the opinion ids
-w<- rep(NA, 100000)
-for(i in 1:100000){
-  if(i %% 10000 == 0) cat("Starting iteration", i, "\n")
-  a<- which(cluster.mat[,7]==citations[i,2])
-  if(sum(a)>0){
-   w[i]<- a 
-  }
-}
-# set everything greater 0 to 1 in order to count the number of citations that canbe matched
-w[w>0] <-1
-sum(w, na.rm=T) # 987 for first column, 167 for 2nd column, 1262 for 4th column, i in 1:10000
-                # 10738 for 1st column, 1629 for 2nd columnm, 13420 for 4th column, i in 1:100000
-                # column 1 and 7 seem to be the same
-######################################
-
 
 #######################################
 ### add  days and time.id to data such that we can indicate which cases enter the network on which day
@@ -171,6 +154,8 @@ scc1$meanMSscores<- 0
 d<- dim(scc1)[1]
 rownames(scc1)<- 1:d
 
+set.pro <- c(1,3,4,5,8) # 8 is split vote. this means for split votes, we simply take the MQ average
+
 for ( i in 1:d){ # row 18437 is when term 1937 begins (1937 is beginning of MQ score data)
   if(i %% 1000 == 0) cat("Starting Iteration", i, "\n")
   # which columns relate to case i in the 
@@ -182,7 +167,7 @@ for ( i in 1:d){ # row 18437 is when term 1937 begins (1937 is beginning of MQ s
   number.counts <- 0 # for how many judges do we have the MQ score
   for(j in 1:number.judges){
     
-    if(SCDB_justice[case.rows[j], 56]==1){ # 1 indicates voted pro
+    if(is.element(SCDB_justice[case.rows[j], 56], set.pro)){ # 1 indicates voted pro
       # get id of the justice
       justice.id <- SCDB_justice[case.rows[j],54] # column 54 is justice id
       #print(justice.id)
@@ -201,16 +186,11 @@ for ( i in 1:d){ # row 18437 is when term 1937 begins (1937 is beginning of MQ s
     
   }
   # save mean MQ score in scc1
-  scc1[i,56]<- total.MQ.score/number.counts
+  scc1$meanMSscores[i]<- total.MQ.score/number.counts
   
 }
 
-# get rid of split vote cases
-for(i in d:1){
-  if(is.nan(scc1[i,56])){
-    scc1<- scc1[-i,]
-  }
-}
+#### for split votes calculate the MQ mean of all judges that voted
 
 # create indicator columns for chief justices, e.g. column Rehnquist -> 1 if Rehnquist was chief justice for a certain case, 0 ow
 scc1$Hughes<-0
@@ -222,13 +202,13 @@ scc1$Rehnquist<-0
 scc1$Roberts<- 0
 
 for(i in 1:dim(scc1)[1]){
-  if(scc1[i,13]=="Hughes"){scc1[i,57]<-1}
-  if(scc1[i,13]=="Stone"){scc1[i,58]<-1}
-  if(scc1[i,13]=="Vinson"){scc1[i,59]<-1}
-  if(scc1[i,13]=="Warren"){scc1[i,60]<-1}
-  if(scc1[i,13]=="Burger"){scc1[i,61]<-1}
-  if(scc1[i,13]=="Rehnquist"){scc1[i,62]<-1}
-  if(scc1[i,13]=="Roberts"){scc1[i,63]<-1}
+  if(scc1[i,13]=="Hughes"){scc1[i,58]<-1}
+  if(scc1[i,13]=="Stone"){scc1[i,59]<-1}
+  if(scc1[i,13]=="Vinson"){scc1[i,60]<-1}
+  if(scc1[i,13]=="Warren"){scc1[i,61]<-1}
+  if(scc1[i,13]=="Burger"){scc1[i,62]<-1}
+  if(scc1[i,13]=="Rehnquist"){scc1[i,63]<-1}
+  if(scc1[i,13]=="Roberts"){scc1[i,64]<-1}
 }
 
 # rename id column to 1-2116
@@ -243,6 +223,8 @@ d<-dim(scc1)[1]
 scc<- scc1
 scc$MQ.score.diff <- 0
 
+set.pro.minus.split <- c(1,3,4,5)
+
 for ( i in 1:d){ # row 17987 is when term 1937 begins
   if(i %% 1000 == 0) cat("Starting Iteration", i, "\n")
   # which columns relate to case i in the 
@@ -254,7 +236,7 @@ for ( i in 1:d){ # row 17987 is when term 1937 begins
   number.counts <- 0 # for how many judges do we have the MQ score
   for(j in 1:number.judges){
     
-    if(SCDB_justice[case.rows[j], 56]==1){
+    if(is.element(SCDB_justice[case.rows[j], 56], set.pro.minus.split)){
       # get id of the justice
       justice.id <- SCDB_justice[case.rows[j],54]
       #print(justice.id)
@@ -271,10 +253,9 @@ for ( i in 1:d){ # row 17987 is when term 1937 begins
     
   }
   # save mean MQ score in scc1
-  scc[i,65]<- abs(max(mq.vector, na.rm=TRUE)- min(mq.vector, na.rm=TRUE))
-  #if(scc[i,79]==Inf){print(mq.vector)
-  # print(i)}
-  
+  if(is.infinite(min(mq.vector, na.rm=TRUE))==FALSE){
+  scc$MQ.score.diff[i]<- abs(max(mq.vector, na.rm=TRUE)- min(mq.vector, na.rm=TRUE))
+  }
 }
 
 scc1<- scc
@@ -290,6 +271,26 @@ for(i in 1:dim(cluster.mat)[1]){
   w<- which(cluster.mat[i,6]==scc[,1])
   scc$opinion_id[w]<- cluster.mat[i,7]
 }
+
+
+# which(scc$opinion_id==0)
+# [1]   14  171  224  338  354  389  396  504  597  598  599  600  601  604  605  606  646  730  731  752  761  764  811
+# [24]  812  935  971  978  983  990 1004 1005 1032 1055 1096 1118 1167 1210 1330 1342 1343 1424 1505 1650 1687 1703 1723
+# [47] 1759 1762 1880 1913 1920 1934 1985 2016 2048 2055 2078 2090 2118 2119 2120 2154 2207 2234 2255 2256 2263 2268 2269
+# [70] 2280 2281 2282 2294 2329 2345 2357 2358 2359 2360 2361 2365 2369 2370 2376 2387 2388 2393 2394 2395 2426 2427 2428
+# [93] 2429 2433 2441 2453 2454 2479 2482 2500 2533 2555 2577 2579 2582 2583 2584 2597 2598 3035 3278 3424 3425 3431 3448
+# [116] 3449 3849 4010 4260 4275 4491 4578 7717 8280 8320 8478 8572 8599 8704 8708 8729 8731 8780 8790 8791 8792 8793 8794
+# [139] 8796 8892 9394 9479 9520 9617 9778
+
+no.op.id.mat <- scc
+
+for ( i in dim(scc)[1]:1){
+  if(scc$opinion_id[i]!=0){
+    no.op.id.mat<- no.op.id.mat[-i,]
+  }
+}
+
+write.csv(no.op.id.mat, file="cases_wo_opinion_id.csv")
 
 # scc1 -> delete cases without an opinion id, scc -> cases with opinion ids
 scc1<- scc
@@ -463,3 +464,7 @@ vals <- 1937:2015
 breaks <- c(-Inf, 1941, 1946, 1953, 1969, 1986, 2006, Inf)
 cols=c("blue", "grey", "red", "green", "orange", "black", "lightblue")[findInterval(vals, vec=breaks)]
 barplot(number.citations, main="Number of Citations in Each Term", cex.lab=1.8, cex.main=3, cex.axis=1.5, xlab = "Year", ylab="Count", col=cols)
+
+
+rm(a, breaks, burger, cols, counts, hughes, i, indegree.plot, max.case, min.case, number.cases, number.citations, outdegree.plot , 
+   rehnquist, roberts, stone, vals, vinson, warren)
