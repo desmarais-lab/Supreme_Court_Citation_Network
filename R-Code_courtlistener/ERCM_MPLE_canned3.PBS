@@ -78,8 +78,8 @@ for(t in 1401:time.periods){ # time.periods
   net.t <- set.vertex.attribute(net.t,"AbsDiffMQscores", scc1[which(case.time <= t),65])
   # number justices that voted for the case
   net.t <- set.vertex.attribute(net.t,"NumberJusticesPro", scc1[which(case.time <= t),52])
-  # number justices that voted for the case
-  net.t <- set.vertex.attribute(net.t,"Overruled", scc1[which(case.time <= t),67])
+  # overruled covariate
+  net.t <- set.vertex.attribute(net.t,"Overruled", Overruled.matrix[which(case.time <= t),t])
   # number justices that voted for the case
   net.t <- set.vertex.attribute(net.t,"sender.time", sender.time.t[,1])
   # use ergmMPLE to create data for time t
