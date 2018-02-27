@@ -292,19 +292,21 @@ for ( i in dim(scc)[1]:1){
 
 write.csv(no.op.id.mat, file="cases_wo_opinion_id.csv")
 
-# scc1 -> delete cases without an opinion id, scc -> cases with opinion ids
+# scc1 -> delete cases without an opinion id, scc -> cases with opinion ids that are 0
 scc1<- scc
 d<- dim(scc1)[1]
 # delete cases without an opinion id
+k<-0
 for(i in d:1){
   if(scc1$opinion_id[i]==0){
     scc1<- scc1[-i,]
-  }
+    k<- k+1
+    print(k)
+    }
 }
 
 rm(d,i,w)
 rm(filenames_cluster, filenames_op, myJSON_cluster, myJSON_opinion)
-
 
 
 ########################################
@@ -336,7 +338,120 @@ for(i in 1:l){ # takes about 2 hrs
 
 rm(d,i,l,q)
 
+#############################################################################
+### read in overruled cases and delete overruled cases from adjacency network
+#############################################################################
 
+AM<- adjacency.matrix
+overruled_cases_supremecourt <- read_csv("overruled_cases_supremecourt.csv")
+View(overruled_cases_supremecourt)
+overruled<- as.data.frame(overruled_cases_supremecourt)
+
+for(i in 1: dim(overruled)[1]){
+  sender<- which(overruled[i,1]==scc1[,7])
+  receiver <-  which(overruled[i,2]==scc1[,7])
+  if(sum(sender)>0 & sum(receiver)>0){
+  AM[sender, receiver]<- 0
+  }
+}
+
+# 121 edges were deleted
+
+adjacency.matrix <- AM
+
+
+#############################################################################
+## matrix that indicates the difference in years
+#############################################################################
+d<- dim(scc1)[1]
+
+
+year.diff.matrix<- matrix(0, d, d)
+
+for(i in 1:d){ # calculation takes a while
+  if(i %% 500 == 0) cat("Starting iteration", i, "\n")
+  # year for sender
+  year.sender <- scc1[i, 11] # term column
+  for(j in i:d){
+    # year for receiver
+    year.receiver <- scc1[j, 11] # term column
+    year.diff.matrix[i,j]<- abs(year.sender- year.receiver)
+    year.diff.matrix[j,i]<- abs(year.sender- year.receiver)
+  }
+}
+
+
+#############################################################################
+## same issue area matrix, 1  same issue area, 0 not
+#############################################################################
+
+
+same.issue.area<- matrix(0, d, d)
+for(i in 1:d){ # calculation takes a while
+  if(i %% 500 == 0) cat("Starting iteration", i, "\n")
+  # issue area for sender
+  issue.area.sender <- scc1[i, 41]
+  for(j in i:d){
+    # issue area for receiver
+    issue.area.receiver <- scc1[j, 41]
+    # if sender and receiver issue area is the same and non is NA then enter 1 into matrix to indicate same issue area
+    if(is.na(issue.area.receiver)==FALSE & is.na(issue.area.sender)==FALSE & issue.area.sender==issue.area.receiver){
+      same.issue.area[i,j]<-1
+      same.issue.area[j,i]<-1
+    }
+  }
+}
+
+
+##############################################################################
+## Mean MQ score of sender
+##############################################################################
+
+mq.matrix <- matrix(rep(scc1[,57], d), d, d)
+
+
+##############################################################################
+##### add a column that counts how often a case was overruled in the past
+##############################################################################
+
+
+scc1$overruled <- 0
+
+for(i in 1: dim(overruled)[1]){
+  receiver <-  which(overruled[i,2]==scc1[,7])
+  if(sum(receiver)>0){
+    scc1$overruled[receiver]<-scc1$overruled[receiver] + 1
+  }
+}
+
+
+#############################################################################
+### create a matrix for changing overruled covariate
+#############################################################################
+
+max.id <- max(scc1$id)
+Overruled.matrix<- matrix(0,d,max.id)
+
+for(i in 1:dim(overruled)[1]){
+  receiver.id <- which(overruled[i,2]==scc1[,7]) 
+  sender.id <- which(overruled[i,1]==scc1[,7]) 
+  # time point receiver case was overruled
+  time.overruled <- scc1[sender.id, 55] # 55 is id
+  ### add overruled cases for right time points
+  if(sum(sender.id)>0 & sum(receiver.id)>0){
+  for(j in time.overruled:max.id){
+    Overruled.matrix[receiver.id, j] <-  Overruled.matrix[receiver.id, j] +1
+  }
+}
+}
+
+
+
+# delete 
+rm(breaks, burger, cols, counts, hughes, i, issue.area.receiver, issue.area.sender, j,k,max.case, min.case,number.cases,
+   number.citations, receiver, rehnquist, roberts, sender, set.pro, set.pro.minus.split, stone, vals, vinson, warren,
+   year.receiver, year.sender, max.id, receiver.id, sender.id, time.overruled)
+rm(AM, citations, MQ.scores, no.op.id.mat, overruled, overruled_cases_supremecourt, scc.save, scc1.save)
 
 ##############################################################################
 ########## EDA
