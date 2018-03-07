@@ -1,5 +1,5 @@
 #PBS -l nodes=1:ppn=1
-#PBS -l walltime=70:00:00
+#PBS -l walltime=100:00:00
 #PBS -m abe
 #PBS -M schmid@psu.edu
 #PBS -l mem=128GB
@@ -22,6 +22,7 @@ mpledata<- read.csv("mpledata_all.csv")
 
 #install.packages("statnet", Sys.getenv("R_LIBS_USER"), repos = "http://cran.case.edu" )
 #library(statnet)
+#library(doParallel)
 
 # set seed
 set.seed(333)
@@ -98,9 +99,7 @@ write.csv(boot.results, file = "bootresults_3.csv")
 
 ### take percentiles
 
-apply(boot.results, 2, quantile, probs = c(0.025, 0.975),  na.rm = TRUE)
-
-
+apply(boot.results, 2, quantile, probs = c(0.25, 0.75),  na.rm = TRUE)
 
 STOP
 echo " "
