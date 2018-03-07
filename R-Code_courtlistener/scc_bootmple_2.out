@@ -1,0 +1,442 @@
+
+R version 3.4.0 (2017-04-21) -- "You Stupid Darkness"
+Copyright (C) 2017 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> 
+> # get data
+> mpledata<- read.csv("mpledata_all.csv")
+> 
+> 
+> #install.packages("statnet", Sys.getenv("R_LIBS_USER"), repos = "http://cran.case.edu" )
+> #library(statnet)
+> 
+> # set seed
+> set.seed(333)
+> 
+> # MPLE
+> mple.est <- glm(edgeij ~ istar2+ostar2+mutual+triangle+ edgecov.mq.t+ edgecov.same.issue.area.t+ edgecov.year.diff.t +edgecov.year.diff.square.t +  
++                 nodeicov.AbsDiffMQscores+ nodeicov.NumberJusticesPro+ edgecov.year.t + nodeifactor.SameIssueArea.2+ nodeifactor.SameIssueArea.3+ 
++                 nodeifactor.SameIssueArea.4+nodeifactor.SameIssueArea.5+ nodeifactor.SameIssueArea.6+ nodeifactor.SameIssueArea.7+ 
++                 nodeifactor.SameIssueArea.8+nodeifactor.SameIssueArea.9+  nodeifactor.SameIssueArea.10+
++                 nodeifactor.SameIssueArea.11+ nodeifactor.SameIssueArea.12+ nodeifactor.SameIssueArea.13+nodeifactor.SameIssueArea.14+ 
++                 nodeofactor.SameIssueArea.2+ nodeofactor.SameIssueArea.3+ nodeofactor.SameIssueArea.4+nodeofactor.SameIssueArea.5+ 
++                 nodeofactor.SameIssueArea.6+nodeofactor.SameIssueArea.7+
++                 nodeofactor.SameIssueArea.8+nodeofactor.SameIssueArea.9+nodeofactor.SameIssueArea.10+ nodeofactor.SameIssueArea.11+ 
++                 nodeofactor.SameIssueArea.12+ nodeofactor.SameIssueArea.13+nodeofactor.SameIssueArea.14+ nodeicov.Overruled +
++                 instar2_sendertime+outstar2_sendertime+ mutual_sendertime+ triangle_sendertime+mq_sendertime +sameissuearea_sendertime+
++                 yeardiff_sendertime + yeardiffsquare_sendertime+ AbsDiffMQscores_sendertime + NumberJusticesPro_sendertime+ Overruled_sendertime +
++                 instar2_sendertime2+outstar2_sendertime2+ mutual_sendertime2+ triangle_sendertime2+mq_sendertime2 +sameissuearea_sendertime2+
++                 yeardiff_sendertime2 + yeardiffsquare_sendertime2+ AbsDiffMQscores_sendertime2 + NumberJusticesPro_sendertime2+ Overruled_sendertime2 +
++                 edgecov.year.t2 ,family=binomial,data=mpledata)
+> summary(mple.est)
+
+Call:
+glm(formula = edgeij ~ istar2 + ostar2 + mutual + triangle + 
+    edgecov.mq.t + edgecov.same.issue.area.t + edgecov.year.diff.t + 
+    edgecov.year.diff.square.t + nodeicov.AbsDiffMQscores + nodeicov.NumberJusticesPro + 
+    edgecov.year.t + nodeifactor.SameIssueArea.2 + nodeifactor.SameIssueArea.3 + 
+    nodeifactor.SameIssueArea.4 + nodeifactor.SameIssueArea.5 + 
+    nodeifactor.SameIssueArea.6 + nodeifactor.SameIssueArea.7 + 
+    nodeifactor.SameIssueArea.8 + nodeifactor.SameIssueArea.9 + 
+    nodeifactor.SameIssueArea.10 + nodeifactor.SameIssueArea.11 + 
+    nodeifactor.SameIssueArea.12 + nodeifactor.SameIssueArea.13 + 
+    nodeifactor.SameIssueArea.14 + nodeofactor.SameIssueArea.2 + 
+    nodeofactor.SameIssueArea.3 + nodeofactor.SameIssueArea.4 + 
+    nodeofactor.SameIssueArea.5 + nodeofactor.SameIssueArea.6 + 
+    nodeofactor.SameIssueArea.7 + nodeofactor.SameIssueArea.8 + 
+    nodeofactor.SameIssueArea.9 + nodeofactor.SameIssueArea.10 + 
+    nodeofactor.SameIssueArea.11 + nodeofactor.SameIssueArea.12 + 
+    nodeofactor.SameIssueArea.13 + nodeofactor.SameIssueArea.14 + 
+    nodeicov.Overruled + instar2_sendertime + outstar2_sendertime + 
+    mutual_sendertime + triangle_sendertime + mq_sendertime + 
+    sameissuearea_sendertime + yeardiff_sendertime + yeardiffsquare_sendertime + 
+    AbsDiffMQscores_sendertime + NumberJusticesPro_sendertime + 
+    Overruled_sendertime + instar2_sendertime2 + outstar2_sendertime2 + 
+    mutual_sendertime2 + triangle_sendertime2 + mq_sendertime2 + 
+    sameissuearea_sendertime2 + yeardiff_sendertime2 + yeardiffsquare_sendertime2 + 
+    AbsDiffMQscores_sendertime2 + NumberJusticesPro_sendertime2 + 
+    Overruled_sendertime2 + edgecov.year.t2, family = binomial, 
+    data = mpledata)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-8.4904  -0.1650  -0.1056  -0.0705   3.8458  
+
+Coefficients:
+                                Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                   -6.658e+00  1.008e-01 -66.055  < 2e-16 ***
+istar2                         6.463e-02  2.784e-03  23.213  < 2e-16 ***
+ostar2                         2.768e-02  1.269e-03  21.809  < 2e-16 ***
+mutual                         3.491e+00  1.427e+00   2.447 0.014403 *  
+triangle                       1.745e+00  1.830e-02  95.382  < 2e-16 ***
+edgecov.mq.t                   6.368e-02  2.612e-02   2.438 0.014776 *  
+edgecov.same.issue.area.t      1.393e+00  3.689e-02  37.744  < 2e-16 ***
+edgecov.year.diff.t           -1.204e-01  7.233e-03 -16.652  < 2e-16 ***
+edgecov.year.diff.square.t     4.001e-03  2.757e-04  14.515  < 2e-16 ***
+nodeicov.AbsDiffMQscores      -7.284e-02  1.405e-02  -5.185 2.16e-07 ***
+nodeicov.NumberJusticesPro    -1.109e-02  1.642e-02  -0.675 0.499375    
+edgecov.year.t                 7.389e-02  5.283e-03  13.985  < 2e-16 ***
+nodeifactor.SameIssueArea.2    1.344e-01  1.777e-02   7.562 3.96e-14 ***
+nodeifactor.SameIssueArea.3   -3.430e-01  2.389e-02 -14.357  < 2e-16 ***
+nodeifactor.SameIssueArea.4    4.976e-01  2.691e-02  18.488  < 2e-16 ***
+nodeifactor.SameIssueArea.5    2.089e-01  5.496e-02   3.801 0.000144 ***
+nodeifactor.SameIssueArea.6    5.585e-01  5.172e-02  10.798  < 2e-16 ***
+nodeifactor.SameIssueArea.7    3.569e-01  2.444e-02  14.600  < 2e-16 ***
+nodeifactor.SameIssueArea.8    1.373e-01  1.676e-02   8.195 2.50e-16 ***
+nodeifactor.SameIssueArea.9    2.906e-01  1.814e-02  16.016  < 2e-16 ***
+nodeifactor.SameIssueArea.10   3.907e-01  2.637e-02  14.819  < 2e-16 ***
+nodeifactor.SameIssueArea.11   3.636e-02  6.743e-02   0.539 0.589759    
+nodeifactor.SameIssueArea.12   1.249e-01  2.720e-02   4.592 4.39e-06 ***
+nodeifactor.SameIssueArea.13   6.691e-01  9.187e-02   7.283 3.25e-13 ***
+nodeifactor.SameIssueArea.14   4.021e-01  7.891e-02   5.097 3.46e-07 ***
+nodeofactor.SameIssueArea.2    2.374e-01  1.708e-02  13.902  < 2e-16 ***
+nodeofactor.SameIssueArea.3   -9.966e-02  2.311e-02  -4.312 1.62e-05 ***
+nodeofactor.SameIssueArea.4    4.791e-01  2.627e-02  18.236  < 2e-16 ***
+nodeofactor.SameIssueArea.5    3.757e-01  4.261e-02   8.816  < 2e-16 ***
+nodeofactor.SameIssueArea.6    5.265e-01  4.610e-02  11.421  < 2e-16 ***
+nodeofactor.SameIssueArea.7    4.110e-01  2.608e-02  15.758  < 2e-16 ***
+nodeofactor.SameIssueArea.8    2.045e-01  1.659e-02  12.329  < 2e-16 ***
+nodeofactor.SameIssueArea.9    3.104e-01  1.792e-02  17.322  < 2e-16 ***
+nodeofactor.SameIssueArea.10   4.998e-01  2.481e-02  20.140  < 2e-16 ***
+nodeofactor.SameIssueArea.11   2.779e-01  5.920e-02   4.695 2.67e-06 ***
+nodeofactor.SameIssueArea.12   4.011e-01  2.858e-02  14.034  < 2e-16 ***
+nodeofactor.SameIssueArea.13   9.887e-01  7.157e-02  13.813  < 2e-16 ***
+nodeofactor.SameIssueArea.14   7.551e-01  1.268e-01   5.956 2.58e-09 ***
+nodeicov.Overruled            -8.394e-01  5.348e-01  -1.570 0.116495    
+instar2_sendertime            -1.493e-03  1.144e-04 -13.052  < 2e-16 ***
+outstar2_sendertime           -8.657e-04  6.984e-05 -12.395  < 2e-16 ***
+mutual_sendertime             -9.555e-02  1.923e-01  -0.497 0.619198    
+triangle_sendertime           -1.713e-02  9.823e-04 -17.439  < 2e-16 ***
+mq_sendertime                 -2.685e-03  1.280e-03  -2.097 0.035973 *  
+sameissuearea_sendertime      -1.021e-03  2.005e-03  -0.509 0.610517    
+yeardiff_sendertime            1.335e-03  2.979e-04   4.482 7.41e-06 ***
+yeardiffsquare_sendertime     -8.453e-05  9.315e-06  -9.075  < 2e-16 ***
+AbsDiffMQscores_sendertime     5.357e-03  6.919e-04   7.743 9.73e-15 ***
+NumberJusticesPro_sendertime  -7.920e-04  8.560e-04  -0.925 0.354856    
+Overruled_sendertime           7.543e-03  2.257e-02   0.334 0.738274    
+instar2_sendertime2            1.186e-05  1.136e-06  10.440  < 2e-16 ***
+outstar2_sendertime2           7.859e-06  8.510e-07   9.235  < 2e-16 ***
+mutual_sendertime2             5.049e-03  5.077e-03   0.994 0.320019    
+triangle_sendertime2           2.203e-04  1.212e-05  18.179  < 2e-16 ***
+mq_sendertime2                 2.379e-05  1.460e-05   1.630 0.103121    
+sameissuearea_sendertime2     -8.812e-05  2.459e-05  -3.583 0.000339 ***
+yeardiff_sendertime2           1.700e-06  3.053e-06   0.557 0.577628    
+yeardiffsquare_sendertime2     3.834e-07  8.041e-08   4.768 1.86e-06 ***
+AbsDiffMQscores_sendertime2   -7.086e-05  8.092e-06  -8.757  < 2e-16 ***
+NumberJusticesPro_sendertime2  3.025e-05  1.017e-05   2.975 0.002934 ** 
+Overruled_sendertime2          1.986e-05  2.253e-04   0.088 0.929769    
+edgecov.year.t2               -5.087e-04  6.353e-05  -8.007 1.18e-15 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 947401  on 2888923  degrees of freedom
+Residual deviance: 387020  on 2888862  degrees of freedom
+AIC: 387144
+
+Number of Fisher Scoring iterations: 9
+
+> 
+> colnames(mpledata)[12]
+[1] "edgecov.sender.time.t"
+> 
+> # nonparametric bootstrap resampling
+> nboot <- 200 # this number should be 200 or higher
+> ncoef <- length(coef(mple.est))
+> boot.results <- matrix(NA,nboot,ncoef)
+> # need to weight by the number of potential edges in a time period
+> n.per.time <- table(mpledata[,12])
+> # get unique sender times, over which to weight
+> unique.sender.times <- as.numeric(names(n.per.time))
+> # calculate weights for weighted resampling of times
+> #time.weights <- n.per.time/sum(n.per.time)
+> 
+> # loop over bootstrap iterations (easily paralellize)
+> for(b in 1:nboot){
++   print(b)
++   # sample time periods with replacement
++   time.periods.b <- sample(unique.sender.times,length(unique.sender.times),rep=T)
++   # construct the data for iteration b
++   data.b <- list()
++   for(k in 1:length(time.periods.b)){
++    t<- time.periods.b[k]
++     data.b[[k]] <- subset(mpledata,mpledata[,12]==t)
++   }
++   # collapse into a matrix
++   data.b <- do.call('rbind',data.b)
++   # convert to data frame
++   data.b <- data.frame(data.b)
++   # run mple
++   mple.est.b <- glm(edgeij ~ istar2+ostar2+mutual+triangle+ edgecov.mq.t+ edgecov.same.issue.area.t+ edgecov.year.diff.t +edgecov.year.diff.square.t +  
++                 nodeicov.AbsDiffMQscores+ nodeicov.NumberJusticesPro+ edgecov.year.t + nodeifactor.SameIssueArea.2+ nodeifactor.SameIssueArea.3+ 
++                 nodeifactor.SameIssueArea.4+nodeifactor.SameIssueArea.5+ nodeifactor.SameIssueArea.6+ nodeifactor.SameIssueArea.7+ 
++                 nodeifactor.SameIssueArea.8+nodeifactor.SameIssueArea.9+  nodeifactor.SameIssueArea.10+
++                 nodeifactor.SameIssueArea.11+ nodeifactor.SameIssueArea.12+ nodeifactor.SameIssueArea.13+nodeifactor.SameIssueArea.14+ 
++                 nodeofactor.SameIssueArea.2+ nodeofactor.SameIssueArea.3+ nodeofactor.SameIssueArea.4+nodeofactor.SameIssueArea.5+ 
++                 nodeofactor.SameIssueArea.6+nodeofactor.SameIssueArea.7+
++                 nodeofactor.SameIssueArea.8+nodeofactor.SameIssueArea.9+nodeofactor.SameIssueArea.10+ nodeofactor.SameIssueArea.11+ 
++                 nodeofactor.SameIssueArea.12+ nodeofactor.SameIssueArea.13+nodeofactor.SameIssueArea.14+ nodeicov.Overruled +
++                 instar2_sendertime+outstar2_sendertime+ mutual_sendertime+ triangle_sendertime+mq_sendertime +sameissuearea_sendertime+
++                 yeardiff_sendertime + yeardiffsquare_sendertime+ AbsDiffMQscores_sendertime + NumberJusticesPro_sendertime+ Overruled_sendertime +
++                 instar2_sendertime2+outstar2_sendertime2+ mutual_sendertime2+ triangle_sendertime2+mq_sendertime2 +sameissuearea_sendertime2+
++                 yeardiff_sendertime2 + yeardiffsquare_sendertime2+ AbsDiffMQscores_sendertime2 + NumberJusticesPro_sendertime2+ Overruled_sendertime2 +
++                 edgecov.year.t2  ,family=binomial,data=data.b)
++   # store results
++   boot.results[b,] <- coef(mple.est.b)
++ }
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+[1] 6
+[1] 7
+[1] 8
+[1] 9
+[1] 10
+[1] 11
+[1] 12
+[1] 13
+[1] 14
+[1] 15
+[1] 16
+[1] 17
+[1] 18
+[1] 19
+[1] 20
+[1] 21
+[1] 22
+[1] 23
+[1] 24
+[1] 25
+[1] 26
+[1] 27
+[1] 28
+[1] 29
+[1] 30
+[1] 31
+[1] 32
+[1] 33
+[1] 34
+[1] 35
+[1] 36
+[1] 37
+[1] 38
+[1] 39
+[1] 40
+[1] 41
+[1] 42
+[1] 43
+[1] 44
+[1] 45
+[1] 46
+[1] 47
+[1] 48
+[1] 49
+[1] 50
+[1] 51
+[1] 52
+[1] 53
+[1] 54
+[1] 55
+[1] 56
+[1] 57
+[1] 58
+[1] 59
+[1] 60
+[1] 61
+[1] 62
+[1] 63
+[1] 64
+[1] 65
+[1] 66
+[1] 67
+[1] 68
+[1] 69
+[1] 70
+[1] 71
+[1] 72
+[1] 73
+[1] 74
+[1] 75
+[1] 76
+[1] 77
+[1] 78
+[1] 79
+[1] 80
+[1] 81
+[1] 82
+[1] 83
+[1] 84
+[1] 85
+[1] 86
+[1] 87
+[1] 88
+[1] 89
+[1] 90
+[1] 91
+[1] 92
+[1] 93
+[1] 94
+[1] 95
+[1] 96
+[1] 97
+[1] 98
+[1] 99
+[1] 100
+[1] 101
+[1] 102
+[1] 103
+[1] 104
+[1] 105
+[1] 106
+[1] 107
+[1] 108
+[1] 109
+[1] 110
+[1] 111
+[1] 112
+[1] 113
+[1] 114
+[1] 115
+[1] 116
+[1] 117
+[1] 118
+[1] 119
+[1] 120
+[1] 121
+[1] 122
+[1] 123
+[1] 124
+[1] 125
+[1] 126
+[1] 127
+[1] 128
+[1] 129
+[1] 130
+[1] 131
+[1] 132
+[1] 133
+[1] 134
+[1] 135
+[1] 136
+[1] 137
+[1] 138
+[1] 139
+[1] 140
+[1] 141
+[1] 142
+[1] 143
+[1] 144
+[1] 145
+[1] 146
+[1] 147
+[1] 148
+[1] 149
+[1] 150
+[1] 151
+[1] 152
+[1] 153
+[1] 154
+[1] 155
+[1] 156
+[1] 157
+[1] 158
+[1] 159
+[1] 160
+[1] 161
+[1] 162
+[1] 163
+[1] 164
+[1] 165
+[1] 166
+[1] 167
+[1] 168
+[1] 169
+[1] 170
+[1] 171
+[1] 172
+[1] 173
+[1] 174
+[1] 175
+[1] 176
+[1] 177
+[1] 178
+[1] 179
+[1] 180
+[1] 181
+[1] 182
+[1] 183
+[1] 184
+[1] 185
+[1] 186
+[1] 187
+[1] 188
+[1] 189
+[1] 190
+[1] 191
+[1] 192
+[1] 193
+[1] 194
+[1] 195
+[1] 196
+[1] 197
+[1] 198
+[1] 199
+[1] 200
+> 
+> write.csv(boot.results, file = "bootresults_2.csv")
+> 
+> ### take percentiles
+> 
+> apply(boot.results, 2, quantile, probs = c(0.025, 0.975),  na.rm = TRUE)
+           [,1]       [,2]       [,3]      [,4]     [,5]        [,6]     [,7]
+2.5%  -6.936342 0.05842968 0.02334400 -8.190714 1.618362 -0.02450537 1.280422
+97.5% -6.423578 0.07205680 0.05088966  7.923224 1.837258  0.15946727 1.505906
+             [,8]        [,9]       [,10]       [,11]      [,12]      [,13]
+2.5%  -0.14324294 0.003140727 -0.10118167 -0.04786035 0.05939947 0.09073619
+97.5% -0.09737257 0.004692820 -0.03313121  0.02150414 0.08714903 0.17929617
+           [,14]     [,15]     [,16]     [,17]     [,18]      [,19]     [,20]
+2.5%  -0.4058047 0.4377152 0.0593136 0.4533917 0.3033483 0.09309226 0.2495314
+97.5% -0.2732220 0.5640498 0.3318529 0.6710059 0.4134536 0.18442977 0.3410818
+          [,21]      [,22]      [,23]     [,24]     [,25]     [,26]
+2.5%  0.3363015 -0.1442551 0.04310775 0.4719139 0.2336643 0.1825790
+97.5% 0.4523063  0.1681809 0.19065326 0.8597438 0.5588852 0.2977393
+              [,27]     [,28]     [,29]     [,30]     [,31]     [,32]     [,33]
+2.5%  -0.2085215293 0.3997951 0.2256255 0.3647365 0.3334009 0.1588416 0.2380220
+97.5%  0.0002878471 0.5620415 0.5251769 0.6615680 0.4778634 0.2565898 0.3556624
+          [,34]      [,35]     [,36]     [,37]     [,38]      [,39]
+2.5%  0.4269510 0.07035313 0.3292902 0.8207041 0.5082374 -2.5393761
+97.5% 0.5749849 0.41830325 0.4976279 1.1423235 1.0181727  0.6791597
+             [,40]         [,41]      [,42]       [,43]        [,44]
+2.5%  -0.001791521 -0.0018076052 -1.8732653 -0.02329072 -0.007257021
+97.5% -0.001266286 -0.0006309429  0.8566724 -0.01049085  0.001729507
+             [,45]        [,46]         [,47]       [,48]        [,49]
+2.5%  -0.006376698 0.0004606944 -1.083388e-04 0.003312736 -0.002445790
+97.5%  0.004822610 0.0022767447 -5.605498e-05 0.006764564  0.001309465
+            [,50]        [,51]        [,52]       [,53]        [,54]
+2.5%  -0.06002460 9.392396e-06 5.115387e-06 -0.01011423 0.0001389173
+97.5%  0.07845363 1.483181e-05 1.706877e-05  0.12318364 0.0002992772
+              [,55]         [,56]         [,57]        [,58]         [,59]
+2.5%  -2.343567e-05 -0.0001536072 -8.543692e-06 1.410324e-07 -8.707601e-05
+97.5%  7.285251e-05 -0.0000235576  1.070517e-05 5.830456e-07 -4.729650e-05
+             [,60]         [,61]         [,62]
+2.5%  5.465104e-06 -0.0006717346 -0.0006686634
+97.5% 4.983550e-05  0.0006964440 -0.0003318727
+> 
+> 
+> 
