@@ -45,6 +45,15 @@
 \usepackage{tikz}
 \newcommand\circlearound[1]{%
   \tikz[baseline]\node[draw,shape=circle,anchor=base] {#1} ;}
+  \usepackage{hyperref}
+\newcommand{\footremember}[2]{%
+    \footnote{#2}
+    \newcounter{#1}
+    \setcounter{#1}{\value{footnote}}%
+}
+\newcommand{\footrecall}[1]{%
+    \footnotemark[\value{#1}]%
+} 
  
   
 \begin{document}
@@ -63,12 +72,19 @@
 \title{\Large Inferential Analysis of the Supreme Court Citation Network}
 %\author{}
  % Toggle % below to blind and unblind the manuscript
-  \author[1]{Christian Schmid \thanks{cxs5700@psu.edu}}
-   \author[2]{Ted Hsuan Yun Chen\thanks{thc126@psu.edu}}
- \author[2]{Bruce A. Desmarais\thanks{bdesmarais@psu.edu}}
- \author[1]{David R. Hunter \thanks{dhunter@stat.psu.edu}}
+%  \author[1]{Christian Schmid \thanks{cxs5700@psu.edu}}
+%   \author[2]{Ted Hsuan Yun Chen\thanks{thc126@psu.edu}}
+% \author[2]{Bruce A. Desmarais\thanks{bdesmarais@psu.edu}}
+% \author[1]{David R. Hunter \thanks{dhunter@stat.psu.edu}}
 % \affil[2]{Department of Political Science, Pennsylvania State University}
  %\affil[1]{Department of Statistics, Pennsylvania State University}
+
+\author{%
+  Christian S. Schmid\footnote{Department of Statistics, The Pennsylvania State University, schmid@psu.edu}%
+  \and Ted Hsuan Yun Chen \footnote{Department of Political Science, The Pennsylvania State University, thc126@psu.edu}%
+  \and Bruce A. Desmarais \footnote{Department of Political Science, The Pennsylvania State University, bdesmarais@psu.edu}%
+  \and David R. Hunter \footnote{Department of Statistics, The Pennsylvania State University, dhunter@stata.psu.edu}%
+  }
 
 
 \maketitle
