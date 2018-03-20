@@ -218,7 +218,7 @@ We model the way in which citations to a case depend upon the age of a case. For
 
 
  \section{Empirical Analysis}
-Our three data sources for this study include the SCDB, Martin-Quinn scores, and Supreme Court citation data provided by Courtlistener ?cite. We limit the Supreme Court terms included in our analysis to those that are covered by all three of these data source (1937--2015).  The Supreme Court citation network from $1937 - 2015$ consists of $9,841$ cases. The breakdown of the data by the Court's Chief Justice is presented in Table \ref{tab:chiefs}. The network has a total of $110,742$ ties. The number of triangles in the network is $246,134$. The in- and outdegree distributions (i.e., the distributions of the number of citations sent and received by cases, respectively), are visualized in Figure \ref{degree_dist}. The maximum indegree is $228$ and the maximum outdegree is $162$.
+Our three data sources for this study include the Supreme Court Database (SCDB), Martin-Quinn scores, and Supreme Court citation data provided by Courtlistener ?cite. We limit the Supreme Court terms included in our analysis to those that are covered by all three of these data source (1937--2015)\footnote{There were 145 cases that were listed in the SCDB but could not be matched to a case in the Courtlistener data. We decided to exclude these 145 cases from our model.}. The Supreme Court citation network from $1937 - 2015$ consists of $9,945$ cases. The breakdown of the data by the Court's Chief Justice is presented in Table \ref{tab:chiefs}. The network has a total of $111,986$ ties. The number of triangles in the network is $250,717$ and the number of mutual ties is $56$. The in- and outdegree distributions (i.e., the distributions of the number of citations sent and received by cases, respectively), are visualized in Figure \ref{degree_dist}. The maximum indegree is $230$ and the maximum outdegree is $162$.
 
 \begin{table}[htp]
 \centering
@@ -228,13 +228,13 @@ Our three data sources for this study include the SCDB, Martin-Quinn scores, and
 {\color[HTML]{333333} } & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Terms} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Total Number Cases} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Cases/Term} \\ \hline
 CE Hughes*              & 1937 - 1941                                          & 628                                                               & 125.6                                                     \\ \hline
 HF Stone                & 1942 - 1946                                          & 756                                                               & 151.2                                                     \\ \hline
-FM Vinson               & 1946 - 1953                                          & 786                                                               & 98.25                                                      \\ \hline
-E Warren                & 1954 - 1969                                          & 2123                                                              & 124.88                                                     \\ \hline
-WE Burger               & 1970 - 1986                                          & 2755                                                              & 153.06                                                     \\ \hline
-W Rehnquist            & 1987 - 2005                                          & 2004                                                              & 105.47                                                      \\ \hline
-J Roberts **           & 2006 - 2015                                          & 789                                                              & 78.9                                                      \\ \hline
+FM Vinson               & 1946 - 1953                                          & 789                                                               & 98.63                                                      \\ \hline
+E Warren                & 1954 - 1969                                          & 2149                                                              & 126.41                                                     \\ \hline
+WE Burger               & 1970 - 1986                                          & 2805                                                             & 155.83                                                     \\ \hline
+W Rehnquist            & 1987 - 2005                                          & 2022                                                              & 106.42                                                      \\ \hline
+J Roberts **           & 2006 - 2015                                          & 796                                                              & 79.6                                           \\ \hline
 \end{tabular}
-\caption[caption]{For the time range of interest (1937 - 2015) this table displays the chief justices, the time range they served as chief justice, the number of cases in their time range as well as the average number of cases per year.\\\hspace{\textwidth} * CE Hughes served as chief justice from 1930 - 1941. \\\hspace{\textwidth} ** J Roberts still serves as chief justice (2/2018).}
+\caption[caption]{For the time range of interest (1937 - 2015) this table displays the chief justices, the time range they served as chief justice, the number of cases in their time range as well as the average number of cases per year.\\\hspace{\textwidth} * CE Hughes served as chief justice from 1930 - 1941. \\\hspace{\textwidth} ** J Roberts still serves as chief justice (3/2018).}
 \label{tab:chiefs}
 \end{table}
 
@@ -333,17 +333,21 @@ Justices in Majority $\times$ Sender Year   & 0.0029                           &
   \begin{figure}[H]
   \begin{tabular}{cc}
  (a) MQ Score Difference & (b) Ideological Breadth \\
-\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/mq_coef_trend.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/absdiffmq_coef_trend.pdf} \\
+\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/mq_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/absdiffmq_coef_trend_linear.pdf} \\
  
   (c) Same Issue & (d) Majority Size \\
-\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/sameissue_coef_trend.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/numberjusticespro_coef_trend.pdf} \\
+\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/sameissue_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/numberjusticespro_coef_trend_linear.pdf} \\
+
+ (e) Overruled Cases & (f) Difference in Years \\
+\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/overruled_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/yeardiff_coef_trend_linear.pdf} \\
  
-   (e) Reciprocity & (f) Transitivity \\
-\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/mutual_coef_trend.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/triangle_coef_trend.pdf} \\
+   (g) Reciprocity & (h) Transitivity \\
+\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/mutual_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/triangle_coef_trend_linear.pdf} \\
  
-    (g) Activity & (h) Popularity \\
-\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/o2star_coef_trend.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/i2star_coef_trend.pdf} \\
+    (i) Activity & (j) Popularity \\
+\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/o2star_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/i2star_coef_trend_linear.pdf} \\
  
+
  
 \end{tabular}
 \caption{Trending effects from the c-TERGM. The solid lines plot the point estimates, and the shaded areas span 95\% confidence intervals. }
