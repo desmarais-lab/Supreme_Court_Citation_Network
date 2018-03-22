@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.24)  20 MAR 2018 15:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.24)  22 MAR 2018 14:35
 entering extended mode
 **paper.tex
 
@@ -1544,18 +1544,117 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 91.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 91.
+
+Package natbib Warning: Citation `knight1996norm' on page 1 undefined on input 
+line 102.
+
+
+Package natbib Warning: Citation `gillman2001s' on page 1 undefined on input li
+ne 102.
+
+
+Package natbib Warning: Citation `richards2002jurisprudential' on page 1 undefi
+ned on input line 102.
+
+
+Package natbib Warning: Citation `hansford2006politics' on page 1 undefined on 
+input line 102.
+
+
+Package natbib Warning: Citation `bailey2008does' on page 1 undefined on input 
+line 102.
+
+
+Package natbib Warning: Citation `bailey2011constrained' on page 1 undefined on
+ input line 102.
+
+
+Package natbib Warning: Citation `harris1982structural' on page 1 undefined on 
+input line 102.
+
+
+Package natbib Warning: Citation `caldeira1988legal' on page 1 undefined on inp
+ut line 102.
+
+
+Package natbib Warning: Citation `fowler2007network' on page 1 undefined on inp
+ut line 102.
+
+
+Package natbib Warning: Citation `fowler2008authority' on page 1 undefined on i
+nput line 102.
+
+
+Package natbib Warning: Citation `bommarito2009law' on page 1 undefined on inpu
+t line 102.
+
+
+Package natbib Warning: Citation `lupu2012precedent' on page 1 undefined on inp
+ut line 102.
+
+
+Package natbib Warning: Citation `pelc2014politics' on page 1 undefined on inpu
+t line 102.
+
 [1
 
 
 {C:/Users/Geiler Typ/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+
+Package natbib Warning: Citation `cross2010determinants' on page 2 undefined on
+ input line 104.
+
+
+Package natbib Warning: Citation `benjamin2012standing' on page 2 undefined on 
+input line 104.
+
+
+Package natbib Warning: Citation `black2013citation' on page 2 undefined on inp
+ut line 104.
+
+
+Package natbib Warning: Citation `spriggs2001explaining' on page 2 undefined on
+ input line 104.
+
+
+Package natbib Warning: Citation `lupu2013strategic' on page 2 undefined on inp
+ut line 104.
+
+
+Package natbib Warning: Citation `clark2010locating' on page 2 undefined on inp
+ut line 104.
+
+
+Package natbib Warning: Citation `clark2010locating' on page 2 undefined on inp
+ut line 104.
+
+
+Package natbib Warning: Citation `desmaraisstatistical' on page 2 undefined on 
+input line 107.
+
+
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [2]
+
+Package natbib Warning: Citation `cranmer2016critique' on page 3 undefined on i
+nput line 115.
+
+
+Package natbib Warning: Citation `holland1971transitivity' on page 3 undefined 
+on input line 117.
+
+
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [3]
+
+Package natbib Warning: Citation `garlaschelli2004patterns' on page 4 undefined
+ on input line 131.
+
+
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
@@ -1569,13 +1668,17 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [5]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+Package natbib Warning: Citation `barabasi1999emergence' on page 6 undefined on
+ input line 140.
 
 
-[6]
+Package natbib Warning: Citation `howard2016understanding' on page 6 undefined 
+on input line 145.
+
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 147.
 
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
@@ -1584,7 +1687,89 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
+[6]
+
+Package natbib Warning: Citation `leicht2007large' on page 7 undefined on input
+ line 154.
+
+
+Package natbib Warning: Citation `karrer2009random' on page 7 undefined on inpu
+t line 154.
+
+
+Package natbib Warning: Citation `simkin2007mathematical' on page 7 undefined o
+n input line 156.
+
+
+Package natbib Warning: Citation `barabasi1999emergence' on page 7 undefined on
+ input line 156.
+
+
+Package natbib Warning: Citation `vazquez2001statistics' on page 7 undefined on
+ input line 156.
+
+
+Package natbib Warning: Citation `jeong2003measuring' on page 7 undefined on in
+put line 156.
+
+
+Package natbib Warning: Citation `eom2011characterizing' on page 7 undefined on
+ input line 156.
+
+
+Package natbib Warning: Citation `wang2013quantifying' on page 7 undefined on i
+nput line 156.
+
+
+Package natbib Warning: Citation `hajra2005aging' on page 7 undefined on input 
+line 156.
+
+
+Package natbib Warning: Citation `hajra2006modelling' on page 7 undefined on in
+put line 156.
+
+
+Package natbib Warning: Citation `wang2008measuring' on page 7 undefined on inp
+ut line 156.
+
+
+Package natbib Warning: Citation `carstens2016topology' on page 7 undefined on 
+input line 158.
+
+
+Package natbib Warning: Citation `karrer2009random' on page 7 undefined on inpu
+t line 158.
+
+
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
 [7]
+
+Package natbib Warning: Citation `cranmer2012complex' on page 8 undefined on in
+put line 165.
+
+
+Package natbib Warning: Citation `desmarais2013forecasting' on page 8 undefined
+ on input line 165.
+
+
+Package natbib Warning: Citation `clark2013multimember' on page 8 undefined on 
+input line 165.
+
+
+Package natbib Warning: Citation `block2018change' on page 8 undefined on input
+ line 165.
+
+
+Package natbib Warning: Citation `graif2017neighborhood' on page 8 undefined on
+ input line 165.
+
+
+Package natbib Warning: Citation `cranmer2010inferential' on page 8 undefined o
+n input line 165.
+
+
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
@@ -1599,21 +1784,79 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [9]
+
+Package natbib Warning: Citation `hunter2006inference' on page 10 undefined on 
+input line 190.
+
+
+Package natbib Warning: Citation `van2009framework' on page 10 undefined on inp
+ut line 190.
+
+
+Package natbib Warning: Citation `hummel2012improving' on page 10 undefined on 
+input line 190.
+
+
+Package natbib Warning: Citation `schmid2017exponential' on page 10 undefined o
+n input line 190.
+
+
+Package natbib Warning: Citation `desmarais2012statistical' on page 10 undefine
+d on input line 190.
+
+
+Package natbib Warning: Citation `desmarais2010consistent' on page 10 undefined
+ on input line 190.
+
+
+Package natbib Warning: Citation `clark2010locating' on page 10 undefined on in
+put line 199.
+
+
+Package natbib Warning: Citation `martin2002dynamic' on page 10 undefined on in
+put line 199.
+
+
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [10]
+
+Package natbib Warning: Citation `spaeth2014supreme' on page 11 undefined on in
+put line 201.
+
+
+Package natbib Warning: Citation `cross2010determinants' on page 11 undefined o
+n input line 201.
+
+
+Package natbib Warning: Citation `black2013citation' on page 11 undefined on in
+put line 203.
+
+
+Package natbib Warning: Citation `benjamin2012standing' on page 11 undefined on
+ input line 205.
+
+
+Package natbib Warning: Citation `SCDB' on page 11 undefined on input line 221.
+
+
+
+Package natbib Warning: Citation `MartinQuinnScores' on page 11 undefined on in
+put line 221.
+
+
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[11] <degree_distribution.pdf, id=284, 844.15375pt x 597.23125pt>
+[11] <degree_distribution.pdf, id=118, 844.15375pt x 597.23125pt>
 File: degree_distribution.pdf Graphic file (type pdf)
 
 <use degree_distribution.pdf>
 Package pdftex.def Info: degree_distribution.pdf used on input line 246.
 (pdftex.def)             Requested size: 422.07584pt x 298.61488pt.
 
-<images/citations1.pdf, id=285, 1445.4pt x 1445.4pt>
+<images/citations1.pdf, id=119, 1445.4pt x 1445.4pt>
 File: images/citations1.pdf Graphic file (type pdf)
 
 <use images/citations1.pdf>
@@ -1664,18 +1907,14 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[16]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[17pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
+[16pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.330 \newpage
               ]
-<images/mq_coef_trend_linear.pdf, id=356, 433.62pt x 252.945pt>
+<images/mq_coef_trend_linear.pdf, id=184, 433.62pt x 252.945pt>
 File: images/mq_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/mq_coef_trend_linear.pdf>
@@ -1683,7 +1922,7 @@ Package pdftex.def Info: images/mq_coef_trend_linear.pdf used on input line 336
 .
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/absdiffmq_coef_trend_linear.pdf, id=358, 433.62pt x 252.945pt>
+<images/absdiffmq_coef_trend_linear.pdf, id=186, 433.62pt x 252.945pt>
 File: images/absdiffmq_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/absdiffmq_coef_trend_linear.pdf>
@@ -1691,7 +1930,7 @@ Package pdftex.def Info: images/absdiffmq_coef_trend_linear.pdf used on input l
 ine 336.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/sameissue_coef_trend_linear.pdf, id=360, 433.62pt x 252.945pt>
+<images/sameissue_coef_trend_linear.pdf, id=188, 433.62pt x 252.945pt>
 File: images/sameissue_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/sameissue_coef_trend_linear.pdf>
@@ -1699,7 +1938,7 @@ Package pdftex.def Info: images/sameissue_coef_trend_linear.pdf used on input l
 ine 339.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/numberjusticespro_coef_trend_linear.pdf, id=362, 433.62pt x 252.945pt>
+<images/numberjusticespro_coef_trend_linear.pdf, id=190, 433.62pt x 252.945pt>
 File: images/numberjusticespro_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/numberjusticespro_coef_trend_linear.pdf>
@@ -1707,7 +1946,7 @@ Package pdftex.def Info: images/numberjusticespro_coef_trend_linear.pdf used on
  input line 339.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/overruled_coef_trend_linear.pdf, id=364, 433.62pt x 252.945pt>
+<images/overruled_coef_trend_linear.pdf, id=192, 433.62pt x 252.945pt>
 File: images/overruled_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/overruled_coef_trend_linear.pdf>
@@ -1715,7 +1954,7 @@ Package pdftex.def Info: images/overruled_coef_trend_linear.pdf used on input l
 ine 342.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/yeardiff_coef_trend_linear.pdf, id=366, 433.62pt x 252.945pt>
+<images/yeardiff_coef_trend_linear.pdf, id=194, 433.62pt x 252.945pt>
 File: images/yeardiff_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/yeardiff_coef_trend_linear.pdf>
@@ -1723,7 +1962,7 @@ Package pdftex.def Info: images/yeardiff_coef_trend_linear.pdf used on input li
 ne 342.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/mutual_coef_trend_linear.pdf, id=368, 433.62pt x 252.945pt>
+<images/mutual_coef_trend_linear.pdf, id=196, 433.62pt x 252.945pt>
 File: images/mutual_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/mutual_coef_trend_linear.pdf>
@@ -1731,7 +1970,7 @@ Package pdftex.def Info: images/mutual_coef_trend_linear.pdf used on input line
  345.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/triangle_coef_trend_linear.pdf, id=370, 433.62pt x 252.945pt>
+<images/triangle_coef_trend_linear.pdf, id=198, 433.62pt x 252.945pt>
 File: images/triangle_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/triangle_coef_trend_linear.pdf>
@@ -1739,7 +1978,7 @@ Package pdftex.def Info: images/triangle_coef_trend_linear.pdf used on input li
 ne 345.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/o2star_coef_trend_linear.pdf, id=372, 433.62pt x 252.945pt>
+<images/o2star_coef_trend_linear.pdf, id=200, 433.62pt x 252.945pt>
 File: images/o2star_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/o2star_coef_trend_linear.pdf>
@@ -1747,7 +1986,7 @@ Package pdftex.def Info: images/o2star_coef_trend_linear.pdf used on input line
  348.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/i2star_coef_trend_linear.pdf, id=374, 433.62pt x 252.945pt>
+<images/i2star_coef_trend_linear.pdf, id=202, 433.62pt x 252.945pt>
 File: images/i2star_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/i2star_coef_trend_linear.pdf>
@@ -1766,7 +2005,7 @@ Overfull \vbox (61.28954pt too high) has occurred while \output is active []
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[18pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
+[17pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1788,14 +2027,35 @@ riangle_coef_trend_linear.pdf> <C:/Users/Geiler Typ/Documents/GitHub/schmid86/S
 upreme_Court_Citation_Network/Tex/images/o2star_coef_trend_linear.pdf> <C:/User
 s/Geiler Typ/Documents/GitHub/schmid86/Supreme_Court_Citation_Network/Tex/image
 s/i2star_coef_trend_linear.pdf>]
+
+Package natbib Warning: Citation `jensen2000multiple' on page 18 undefined on i
+nput line 361.
+
+
+Package natbib Warning: Citation `ward2010perils' on page 18 undefined on input
+ line 361.
+
+
+Package natbib Warning: Citation `desmarais2013forecasting' on page 18 undefine
+d on input line 361.
+
+
+Package natbib Warning: Citation `cranmer2017can' on page 18 undefined on input
+ line 361.
+
+
+Package natbib Warning: Citation `makhoul1999performance' on page 18 undefined 
+on input line 363.
+
+
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[19]
+[18]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[20pdfTeX warning (ext4): destination with the same identifier (name{table.3}) 
+[19pdfTeX warning (ext4): destination with the same identifier (name{table.3}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1827,27 +2087,15 @@ l.429
 l.429 
       ]
 ("C:\Users\Geiler Typ\Documents\GitHub\schmid86\Supreme_Court_Citation_Network\
-Tex\paper.bbl"
+Tex\paper.bbl")
+
+Package natbib Warning: There were undefined citations.
+
+
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[21]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[22]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[23]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[24])
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[25]
+[20]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 439.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 439.
 
@@ -1864,13 +2112,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 439.
  ) 
 Here is how much of TeX's memory you used:
- 24773 strings out of 493921
- 432798 string characters out of 3144861
- 621029 words of memory out of 3000000
- 27426 multiletter control sequences out of 15000+200000
+ 24607 strings out of 493921
+ 428266 string characters out of 3144861
+ 621501 words of memory out of 3000000
+ 27320 multiletter control sequences out of 15000+200000
  137727 words of font info for 106 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 64i,15n,60p,3233b,510s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 64i,15n,60p,3233b,400s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1898,9 +2146,9 @@ C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (25 pages, 1497568 bytes).
+Output written on paper.pdf (20 pages, 1438602 bytes).
 PDF statistics:
- 594 PDF objects out of 1000 (max. 8388607)
- 103 named destinations out of 1000 (max. 500000)
+ 378 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
  12499 words of extra memory for PDF output out of 14400 (max. 10000000)
 
