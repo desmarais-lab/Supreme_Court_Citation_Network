@@ -1,6 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2017)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: paper.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: paper.aux
 The style file: apsr.bst
 Database file #1: bib.bib
 Repeated entry---line 955 of file bib.bib
@@ -35,46 +33,7 @@ Repeated entry---line 1658 of file bib.bib
  : @article{lupu2012precedent
  :                           ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "SCDB"
+Warning--I didn't find a database entry for "MartinQuinnScores"
 Warning--empty publisher in desmaraisstatistical
-You've used 54 entries,
-            2874 wiz_defined-function locations,
-            952 strings with 13532 characters,
-and the built_in function-call counts, 258881 in all, are:
-= -- 42679
-> -- 3148
-< -- 0
-+ -- 20270
-- -- 1098
-* -- 22376
-:= -- 51415
-add.period$ -- 218
-call.type$ -- 54
-change.case$ -- 702
-chr.to.int$ -- 54
-cite$ -- 55
-duplicate$ -- 843
-empty$ -- 1885
-format.name$ -- 1130
-if$ -- 46610
-int.to.chr$ -- 5
-int.to.str$ -- 0
-missing$ -- 55
-newline$ -- 224
-num.names$ -- 646
-pop$ -- 197
-preamble$ -- 1
-purify$ -- 810
-quote$ -- 0
-skip$ -- 742
-stack$ -- 0
-substring$ -- 60511
-swap$ -- 130
-text.length$ -- 756
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 212
-warning$ -- 1
-while$ -- 1314
-width$ -- 0
-write$ -- 740
 (There were 8 error messages)
