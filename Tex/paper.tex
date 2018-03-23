@@ -106,9 +106,11 @@ We are not the first to ask what predicts the citations in US Supreme Court Opin
 
 There exist two broad reasons why empirical analyses of citations are best defined on the directed dyad level, not the case level. The first is that directed dyadic analyses can test both dyadic and case-level hypotheses. For example, case-level analyses can model whether opinions supported by a liberal majority coalition are more likely than those supported by a conservative majority coalition to be cited heavily in the future, but they cannot precisely model whether liberal cases will be cited more by liberal cases than by conservative cases. Thus, the first reason for analyzing citations at the dyadic level is to expand the set of hypotheses that can be represented in the model. The second reason for studying citations at the directed dyadic level is that, as articulated in the growing literature on legal citation networks, citations form complex networks in which a citation at one point in time may influence future citations. This phenomenon of complex dependence is very common in networks of many types, but processes specific to Supreme Court citations create interdependence in citations. For example, if opinion $i$ relies heavily on opinion $j$ as precedent, opinion $i$ is likely to discuss the legal basis for opinion $j$, and as a consequence cite some of the opinions cited by opinion $j$. Suppose opinion $k$ is cited by opinion $j$. Opinion $k$ is more likely to be cited by opinion $i$ because opinion $i$ relies heavily on $j$, and opinion $j$ cites $k$.  This is a special case of a very common process on networks referred to as ``triad closure''. Complex dependence is theoretically interesting on its own merits, but the effects of covariates cannot be reliably identified---either in terms of coefficient values or standard errors---without accounting for the interdependence inherent in networks \citep{desmaraisstatistical}. 
 
-In what follows we develop a theoretical case that citations on the US Supreme Court are characterized by forms of complex dependence that are common in networks. We then develop an extension of a model---the exponential random graph model---that can incorporate both exogenous covariates and complex forms of interdependence into a directed dyadic analysis of citations. Finally, we develop and estimate a specification of this model in an analysis of US Supreme Court citations between 1937 and 2001. We find robust support for the inherent complexity underpinning the formation of citation ties, and show that incorporating complex dependence into the model of citation formation significantly improves the model's predictive performance.
-
-
+In what follows we develop a theoretical case that citations on the US Supreme Court are characterized by forms of complex dependence that are common in networks. We then develop an extension of a model---the exponential random graph model---that can incorporate both exogenous covariates and complex forms of interdependence into a directed dyadic analysis of citations. Finally, we develop and estimate a specification of this model in an analysis of US Supreme Court citations between 1937 and 2001. We find robust support for the inherent complexity underpinning the formation of citation ties, and show that incorporating complex dependence into the model of citation formation significantly improves the model's predictive performance.\\[0.5cm]
+\textit{Comment from Benjamin Kassov: I think the discussion in the introduction of the paper focusing on a "case-based" versus network based analysis is a bit short. 
+I was left slightly confused by what a "case-based" analysis of citation actually is or what it means. 
+I can see several different conceptions of this, some being more problematic than others in a methodological sense, 
+although none of them are ideal for analyzing networks and all likely suffer some amount of OV bias.}
 
 \section{Complex Interdependence in Supreme Court Citations}
 
@@ -198,16 +200,34 @@ Theorizing that legal citations arise through network interdependence processes 
 
 We incorporate a statistic to model the degree to which cases cite those that are similar in terms of the ideological positions of the justices who supported the decision. We account for this effect following \citet{spriggs2001explaining}, who find that cases are more likely to be overruled when the Court is ideologically distant from the median justice in the majority coalition that decided the case. \citet{clark2010locating} estimates a latent coordinate model of Supreme Court opinions based on the network of case-to-case citations. They find that the majority opinion falls at the ideal point of the median member of the majority coalition in the case. We include a covariate term in which $X_{ij}$ is the absolute difference between the Martin-Quinn scores \citep{martin2002dynamic} of the median justices in the majority coalitions for cases $i$ and $j$. We expect this variable to have a negative effect, which would correspond to cases citing those to which they are ideologically similar.%WE COULD USE THIS DATASET AS A SECOND APPLICATION
 
-We include two sets of dummy variables that account for the issue areas of cases. In one set of dummy variable---sender intercepts---the variable $X_{ij}$ indicates the issue area of the sending case ($i$). In the set of receiver intercepts $X_{ij}$ indicates the issue are of the receiver case. Issue area data comes from the Supreme Court Database (SCDB) \citep{spaeth2014supreme}. We include these variables because \citet{cross2010determinants} find that the number of citations to Supreme Court opinions depends heavily on the issue area of the case.
+We include two sets of dummy variables that account for the issue areas of cases. In one set of dummy variable---sender intercepts---the variable $X_{ij}$ indicates the issue area of the sending case ($i$). In the set of receiver intercepts $X_{ij}$ indicates the issue are of the receiver case. Issue area data comes from the Supreme Court Database (SCDB) \citep{spaeth2014supreme}. We include these variables because \citet{cross2010determinants} find that the number of citations to Supreme Court opinions depends heavily on the issue area of the case. Table \ref{issue_area_coding} states which number represents which issie area.
+
+\begin{table}[]
+\centering
+\begin{tabular}{llll}
+1 & Criminal Procedure & 8  & Economic Activity    \\
+2 & Civil Rights       & 9  & Judicial Power       \\
+3 & First Amendment    & 10 & Federalism           \\
+4 & Due Process        & 11 & Interstate Relations \\
+5 & Privacy            & 12 & Federal Taxation     \\
+6 & Attorneys          & 13 & Miscellaneous        \\
+7 & Unions             & 14 & Private Action      
+\end{tabular}
+\caption{Code Book for the variable \textit{Issue Area}. This information originates from the Supreme Court Database code book.}
+\label{issue_area_coding}
+\end{table}
 
 We model the way in which citations to a case depend upon the age of a case. For this we use a second-order polynomial in which one covariate $X_{ij}$ is defined as the age of case $j$ at the time that case $i$ is decided, and another term in which $X_{ij}$ is the squared age of case $j$ at the time that case $i$ is decided. We include these covariates because \citet{black2013citation} find that the number of citations to a Supreme Court case over time depends significantly on the age of the case, characterized by a sharp drop off and leveling out with age. 
 
 \citet{benjamin2012standing} study the propensity for cases to be overruled and cited in other negative ways. They find that cases with majority coalitions that are large and ideologically broad are less likely to be cited negatively. In our data we do not differentiate between negative and positive citations, but since the overwhelming majority of citations are positive, we hypothesize that the effects they found will be reversed in our analysis. We include one covariate in which $X_{ij}$ is the number of justices in the majority coalition for case $j$. We also include another covariate in which $X_{ij}$ is the absolute difference between the maximum and minimum ideal points of the justices in the majority coalition for case $j$. We expect both of these covariates to have positive effects.
 
 \begin{itemize}
-\item mention new variable: overruled cases
+\item ToDo: mention new variable: overruled cases
 \end{itemize}
 
+
+\textit{Comment from Benjamin Kassow: In section 5, I think the discussion is mostly good, but could be organized a bit differently. 
+I think the discussion of the random intercepts is a bit confusing early on (it is explained more effectively later). }
 %%%% DONT DELETE THESE COMMENTS, INCLUDE IDEAS FOR ADDITIONAL COVARIATES %%%%%
 
 %\citet{cross2010determinants} find that the number of citations to Supreme Court opinions over a ten year period of the Rehnquist Court. (case level).  Found case issue area, opinion ideology, opinion author, vote margin was not significant. Negative citations decreased future positive citations.
@@ -362,6 +382,8 @@ Overruled Cases $\times$ Sender Year   & 0.012                           & 0.002
 \end{figure} 
 
 
+
+
 \subsection{Predictive Performance}
 
 Our case for studying legal citations at the directed dyadic level hinges upon the contribution to modeling offered by incorporating network dependence. To quantify this contribution, we use out-of-sample prediction. Predicting out-of-sample offers an unbiased and general purpose way to evaluate the contribution, in terms of model fit, of one or more terms/parameters in a model \citep{jensen2000multiple,ward2010perils}. Unlike in-sample measures of model fit, out-of-sample methods are highly robust in avoiding overfitting, and work when we cannot accurately calculate the value of the likelihood function, as in the current case. Out-of-sample prediction is a common way to evaluate methods for modeling ties in networks, and has recently been applied to TERGMs in particular \citep{desmarais2013forecasting,cranmer2017can}.
@@ -403,31 +425,16 @@ precision & 0.6441 & (0.6302, 0.6536) & 0.8671 & (0.8626, 0.873) \\
 \end{tabular}
 \caption{The predictive performance of the directed dyadic models with quadratic trends, over ten 80/20 train/test splits.}
 \label{tab:prediction_quadratic}
-\begin{tabular}{rllll}
-\hline \hline
- & mean & range & mean & range \\ 
-  \hline
-precision & 0.642 & (0.6311, 0.6527) & 0.8664 & (0.8645, 0.8681) \\ 
-  recall & 0.0866 & (0.0835, 0.0882) & 0.5947 & (0.591, 0.5978) \\ 
-  F1 score & 0.1526 & (0.1475, 0.1552) & 0.7053 & (0.7026, 0.7079) \\ 
-   \hline \hline
-\end{tabular}
-\caption{The predictive performance of the directed dyadic models with cubic trends, over ten 80/20 train/test splits.}
-\label{tab:prediction_cubic}
-\begin{tabular}{rllll}
-\hline \hline
- & mean & range & mean & range \\ 
-  \hline
-precision & 0.645 & (0.635, 0.6668) & 0.8681 & (0.8639, 0.8712) \\ 
-  recall & 0.0864 & (0.083, 0.0887) & 0.5955 & (0.5899, 0.6004) \\ 
-  F1 score & 0.1524 & (0.1468, 0.1562) & 0.7064 & (0.7018, 0.7094) \\ 
-   \hline \hline
-\end{tabular}
-\caption{The predictive performance of the directed dyadic models with quartic trends, over ten 80/20 train/test splits.}
-\label{tab:prediction_quartic}
 \end{table}
 
 We see from Table \ref{tab:prediction_linear} that, based on all three measures, the predictive performance of the model improves dramatically from adding the network dependence terms. The recall of the full model is particularly impressive, indicating that it recovers over half of the actual citations in the test set. This provides clear evidence that the full model, which includes covariates and network dependence terms, represents a more accurate and complete model of the process of citation formation in US Supreme Court opinions.
+
+
+\textit{Comment from Benjamin Kassow: In section 6.2 (predictive performance), I like what is here, but was hoping to see a bit more discussion about the predictive 
+performance of the model, with some explanation of what the predictive performance means. 
+I understand it (I think), but depending on where this gets sent to, I am not sure if all reviewers will. 
+I also think tying this into the overall model explanation or discussion of model performance overall will be helpful for better 
+integrating this section into the rest of the manuscript.}
 
 \section{Conclusion}
 
