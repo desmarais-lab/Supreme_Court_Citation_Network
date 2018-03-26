@@ -168,7 +168,7 @@ We build upon existing methods for network analysis to define a model that fits 
 
 Let $C_t$ be the case-to-case adjacency matrix at time $t$ such that $C_t^{ij} \in \{0,1\}$ is a binary indicator of whether case $i$ cites $j$. Furthermore, let
 $$\mathcal{C}_t =\{C_{\leq t} \in \{0,1\}^{(N_t \cdot (N_t-1))/2}: C_{\leq t}^{ij} \in \{0,1\} \}$$ 
-be the set of all possible adjacency matrices among $N_t$ cases. $N_t$ denotes the the number of cases in the network at time $t$. Note that the cardinality of $\mathcal{C}_t$ increases exponentially for every newly added case. The probability of observing $C_t$ given past citations $C_{<t}$, where $C_{\leq t}$ is the network up to time $t$ is defined as
+be the set of all possible adjacency matrices among $N_t$ cases at time $t$. $N_t$ denotes the the number of cases in the network at time $t$. Note that the cardinality of $\mathcal{C}_t$ increases exponentially for every newly added case. The probability of observing $C_t$ given past citations $C_{<t}$, where $C_{\leq t}$ is the network up to time $t$ is defined as
 \begin{equation}
 P(C_t | C_{<t}, \theta)=\cfrac{\exp\big(\theta^T\cdot h\big(C_{\leq t})\big)\big)}{\sum_{Z_t^*\in \mathcal{C}_t}\exp\big(\theta^T\cdot h\big(Z^*_{\leq t})\big)\big)}
 \label{ercm}
@@ -177,19 +177,23 @@ where $\theta \in \mathbb{R}^q$ is a $q$-dimensional vector of parameters,  $h: 
 
 % Network Statistics
 The c-TERGM is specified through 
-the decision regarding which network statistics $h(\cdot)$ to incorporate. We include the following statistics for the Supreme Court citation network, which are derived from the interdependence hypotheses described in the previous section:
+the decision regarding which network statistics $h(\cdot)$ to incorporate. We include the following network statistics for the Supreme Court citation network, which are derived from the interdependence hypotheses described in the previous section:
 $$h_{edges}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to \sum_{ij} C_{\leq t}^{ij}, $$
 the number of citations.  $h_{edges}$ performs the function of an intercept, and models the expected value of any given edge.
 $$h_{outstar}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to \sum_{i=1} {\sum_{j \neq i} C_{\leq t}^{ij} \choose 2} $$
 the number of out-two-stars. An out-two-star is a configuration in which one node sends to two other nodes. The number of these configurations grows quadratically as the origins of ties concentrate on a few highly active/social senders. The out-two-stars configuration is commonly used to model activity (sender activation) in ERGMs.
 $$h_{instar}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to \sum_{j=1} {\sum_{i \neq j} C_{\leq t}^{ij} \choose 2} $$
-the number of in-two-stars. An in-two-star is a configuration in which one node receives ties from two other nodes. The number of these configurations grows quadratically as the destinations of ties concentrate on a few highly popular recipients. The out-two-stars configuration is commonly used to model popularity in ERGMs.
+the number of in-two-stars. An in-two-star is a configuration in which one node receives ties from two other nodes. The number of these configurations grows quadratically as the destinations of ties concentrate on a few highly popular recipients. The out-two-stars configuration is commonly used to model popularity in ERGMs. 
 \begin{align*}
 h_{triangle}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to & \sum_{j<i<k} C^{ij}\cdot C^{jk} \cdot C^{ki} + C^{ji}\cdot C^{jk} \cdot C^{ki} + C^{ij}\cdot C^{kj} \cdot C^{ki} \\ & + C^{ji}\cdot C^{kj} \cdot C^{ki} + C^{ij}\cdot C^{jk} \cdot C^{ik} + C^{ji}\cdot C^{jk} \cdot C^{ik}  \\ & + C^{ij}\cdot C^{kj} \cdot C^{ik} + C^{ji}\cdot C^{kj} \cdot C^{ik},  
 \end{align*}
-The number of triangles in the network.  Triangles measure triad closure, as discussed above. $$h_{covariate}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to \sum_{ij} C_{\leq t}^{ij}X_{ij}, $$ the effect of an exogenous covariate ($X$). We include several exogenous covariates based on this standard statistic formulation. These covariates are discussed below.
+The number of triangles in the network. Triangles measure triad closure, as discussed above.      
+$$h_{reciprocity}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to \sum_{ij} C_{\leq t}^{ij}C_{\leq t}^{ji}, $$
+The number of reciprocal ties in the network. Even though the reciprocity of ties is not a meaningful network statistic for most citation networks, it may still play a role in the Supreme Court citation network. This statistic comes with the restriction that it only can appear among cases that entered the network at the same time. 
 
-The structure of this model is very similar to a conventional (T)ERGM setup. The main difference is that  $\mathcal{C}_t$ excludes adjacency matrices in which there are loops that include edges sent at different time points. Loops can exist in the Supreme Court citation network, but only among cases decided in the same term. The normalizing constant in the denominator of the probability function (i.e., Equation \ref{ercm}) is computationally intractable. This means that straightforward methods of maximum likelihood estimation (MLE) are infeasible with ERGM family models. Methods of Monte Carlo approximation are well established \citep{hunter2006inference,van2009framework,hummel2012improving}, but with almost $10,000$ vertices, even the methods of Monte Carlo MLE are computationally expensive \citep{schmid2017exponential}. To estimate the parameters of the c-TERGM, we rely on two features of the model and data that facilitate the application of an approximate inference method that is faster than Monte Carlo approximation---maximum pseudolikelihood. First, our sample size is very large. Second, under the c-TERGM we assume that citations are formed in each time period conditional upon the citations that exist in the past.  We estimate the c-TERGM via bootstrapped pseudolikelihood \citep{desmarais2012statistical,desmarais2010consistent}. 
+$$h_{covariate}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to \sum_{ij} C_{\leq t}^{ij}X_{ij}, $$ the effect of an exogenous covariate ($X$). We include several exogenous covariates based on this standard statistic formulation. These covariates are discussed below.
+
+The structure of this model is very similar to a conventional (T)ERGM setup. The main difference is that  $\mathcal{C}_t$ excludes adjacency matrices in which there are loops that include edges sent at different time points. Loops can exist in the Supreme Court citation network, but only among cases decided in the same term. Furthermore, a case $i$ can only cite a case $j$ if $j$ entered the network before or at the same time as $i$ did. The normalizing constant in the denominator of the probability function (i.e., Equation \ref{ercm}) is computationally intractable. This means that straightforward methods of maximum likelihood estimation (MLE) are infeasible with ERGM family models. Methods of Monte Carlo approximation are well established \citep{hunter2006inference,van2009framework,hummel2012improving}, but with almost $10,000$ vertices, even the methods of Monte Carlo MLE are computationally expensive \citep{schmid2017exponential}. To estimate the parameters of the c-TERGM, we rely on two features of the model and data that facilitate the application of an approximate inference method that is faster than Monte Carlo approximation---maximum pseudolikelihood. First, our sample size is very large. Second, under the c-TERGM we assume that citations are formed in each time period conditional upon the citations that exist in the past.  We estimate the c-TERGM via bootstrapped pseudolikelihood \citep{desmarais2012statistical,desmarais2010consistent}. 
 
 
 
@@ -213,7 +217,7 @@ We include two sets of dummy variables that account for the issue areas of cases
 6 & Attorneys          & 13 & Miscellaneous        \\
 7 & Unions             & 14 & Private Action      
 \end{tabular}
-\caption{Code Book for the variable \textit{Issue Area}. This information originates from the Supreme Court Database code book.}
+\caption{Assigned numbers for the variable \textit{Issue Area}. This information originates from the Supreme Court Database code book.}
 \label{issue_area_coding}
 \end{table}
 
@@ -258,7 +262,7 @@ WE Burger               & 1970 - 1986                                          &
 W Rehnquist            & 1987 - 2005                                          & 2022                                                              & 106.42                                                      \\ \hline
 J Roberts **           & 2006 - 2015                                          & 796                                                              & 79.6                                           \\ \hline
 \end{tabular}
-\caption[caption]{For the time range of interest (1937 - 2015) this table displays the chief justices, the time range they served as chief justice, the number of cases in their time range as well as the average number of cases per year.\\\hspace{\textwidth} * CE Hughes served as chief justice from 1930 - 1941. \\\hspace{\textwidth} ** J Roberts still serves as chief justice (3/2018).}
+\caption[caption]{For the time range of interest (1937 - 2015) this table displays the chief justices, the time range they served as chief justice, the number of cases in their time range as well as the average number of cases per year.\\\hspace{\textwidth} * CE Hughes served as chief justice from 1930 - 1941. \\\hspace{\textwidth} ** J Roberts still serves as chief justice (retrieved 3/2018).}
 \label{tab:chiefs}
 \end{table}
 
@@ -275,11 +279,14 @@ The degree distributions indicate that there is a long tail to both the number o
 
 \begin{figure}[htp]
 \includegraphics[scale=0.35,clip=true,trim=.5cm 0cm 0cm 2cm]{images/citations1}
-\caption{ Supreme Court Citation Network, 1937?2001. Nodes are Supreme Court cases, with size based on incoming citations. Salient cases ({\em Oxford Guide}) are in yellow. Each network layer contains cases decided under a different chief justice. Because our data is temporally bound, cases for the Hughes and Rehnquist courts are not complete. }
+\caption{ Supreme Court Citation Network, 1937-2001. Nodes are Supreme Court cases, with size based on incoming citations. Salient cases ({\em Oxford Guide}) are in yellow. Each network layer contains cases decided under a different chief justice. Because our data is temporally bound, cases for the Hughes and Rehnquist courts are not complete. }
  \label{fig:networkviz}
 \vspace{-.25cm}
 \end{figure}
 
+\begin{itemize}
+\item update Figure 2 to time period 1937 - 2015
+\end{itemize}
   
 \subsection{c-TERGM Results}
 The results from the c-TERGM are presented in Table \ref{tab:tergmcoef} and Figure \ref{fig:coeftrends}. Table \ref{tab:tergmcoef} gives the coefficient estimates and 95\% bootstrap confidence intervals. In Figure, \ref{fig:coeftrends}, we depict coefficient estimates and confidence intervals for all of the effects for which we estimated trends (excluding the intercept---edge count---which is typically not interpreted substantively). The coefficients in an ERGM family model can be interpreted in the same way as logistic regression coefficients---they give the change in the log odds of a tie from $i$ to $j$ given a one unit increase in the respective variable. We first discuss the dependence effect estimates (panels (e)--(h) in Figure \ref{fig:coeftrends}). The reciprocity effect is substantial, positive, and statistically significant for the entire period under study. Conditional upon cases $i$ and $j$ being considered within the same term, the log of the odds that opinion $i$ cites opinion $j$ increases by approximately 3 when opinion $j$ cites opinion $i$. The naive probability that any one case cites another case decided at the same time or previously in the Supreme Court Citation network is approximately 0.0024. This probability increases twenty-fold, to approximately 0.046 if the citation would be reciprocal. The transitivity (i.e., triangle closure) effect is also substantial, positive, and statistically significant over the entire period studied. The probability that case $i$ cites case $j$ increases approximately five-fold if the citation would close a triangle involving cases $i$ and $j$. The activity and popularity effects are both estimated to be positive, but trend downward and are more modest in scale (and in the case of activity, not statistically significant later in the time series). Interpreting the popularity effect---the log odds that $i$ cites $j$ increases by 0.015--0.030 with every additional citation to case $j$. Based on the in-degree distribution, it appears that the popularity of cases can be classified by multiples of 10. If case $j$ increases from ten to twenty citations from other cases, the probability that case $i$ cites case $j$ increases goes from approximately 0.0030 to 0.0040. Overall, these results represent evidence of complex dependence in Supreme Court citation formation.
@@ -364,20 +371,33 @@ Overruled Cases $\times$ Sender Year   & 0.012                           & 0.002
   (c) Same Issue & (d) Majority Size \\
 \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/sameissue_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/numberjusticespro_coef_trend_linear.pdf} \\
 
- (e) Overruled Cases & (f) Difference in Years \\
-\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/overruled_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/yeardiff_coef_trend_linear.pdf} \\
- 
-   (g) Reciprocity & (h) Transitivity \\
+ (e) Difference in Years & (f) Difference in Years$^2$ \\
+\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/yeardiff_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/yeardiffsquare_coef_trend_linear.pdf} \\
+
+ (g) Overruled Cases &  \\
+\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/overruled_coef_trend_linear.pdf} &  \\
+
+ \end{tabular}
+\caption{Trending effects for exogenous variables from the c-TERGM. The solid lines plot the point estimates, and the shaded areas span 95\% confidence intervals. }
+ \label{fig:coeftrends_exo}
+\vspace{-.25cm}
+\end{figure} 
+
+
+\begin{figure}[H]
+ \begin{tabular}{cc}
+
+   (h) Reciprocity & (i) Transitivity \\
 \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/mutual_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/triangle_coef_trend_linear.pdf} \\
  
-    (i) Activity & (j) Popularity \\
+    (j) Activity & (k) Popularity \\
 \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/o2star_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/i2star_coef_trend_linear.pdf} \\
  
 
  
 \end{tabular}
-\caption{Trending effects from the c-TERGM. The solid lines plot the point estimates, and the shaded areas span 95\% confidence intervals. }
- \label{fig:coeftrends}
+\caption{Trending effects for endogenous statistics from the c-TERGM. The solid lines plot the point estimates, and the shaded areas span 95\% confidence intervals. }
+ \label{fig:coeftrends_endo}
 \vspace{-.25cm}
 \end{figure} 
 
