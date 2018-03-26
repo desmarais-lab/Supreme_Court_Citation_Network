@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.24)  26 MAR 2018 11:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.24)  26 MAR 2018 13:50
 entering extended mode
 **paper.tex
 
@@ -1205,11 +1205,7 @@ s\tikzlibrarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1 (rcs-revision 1.2)
 )))
 ("C:\Users\Geiler Typ\Documents\GitHub\schmid86\Supreme_Court_Citation_Network\
-Tex\paper.aux"
-
-LaTeX Warning: Label `tab:prediction_linear' multiply defined.
-
-)
+Tex\paper.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
 LaTeX Font Info:    ... okay on input line 59.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
@@ -1640,18 +1636,6 @@ Overfull \hbox (45.67421pt too wide) in paragraph at lines 281--282
  []
 
 
-LaTeX Warning: Reference `fig:coeftrends' on page 13 undefined on input line 29
-2.
-
-
-LaTeX Warning: Reference `fig:coeftrends' on page 13 undefined on input line 29
-2.
-
-
-LaTeX Warning: Reference `fig:coeftrends' on page 13 undefined on input line 29
-2.
-
-
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
@@ -1684,17 +1668,12 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 l.293 
        <C:/Users/Geiler Typ/Documents/GitHub/schmid86/Supreme_Court_Citation_Ne
 twork/Tex/images/citations1.pdf>]
-
-LaTeX Warning: Reference `fig:coeftrends' on page 16 undefined on input line 29
-4.
-
-
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
 [16]
 
-LaTeX Warning: Float too large for page by 21.86545pt on input line 362.
+LaTeX Warning: Float too large for page by 21.86545pt on input line 365.
 
 
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
@@ -1709,101 +1688,101 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.363 \newpage
+l.366 \newpage
               ]
-<images/mq_coef_trend_linear.pdf, id=369, 433.62pt x 252.945pt>
-File: images/mq_coef_trend_linear.pdf Graphic file (type pdf)
-
-<use images/mq_coef_trend_linear.pdf>
-Package pdftex.def Info: images/mq_coef_trend_linear.pdf used on input line 369
-.
-(pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
-
-<images/absdiffmq_coef_trend_linear.pdf, id=371, 433.62pt x 252.945pt>
-File: images/absdiffmq_coef_trend_linear.pdf Graphic file (type pdf)
-
-<use images/absdiffmq_coef_trend_linear.pdf>
-Package pdftex.def Info: images/absdiffmq_coef_trend_linear.pdf used on input l
-ine 369.
-(pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
-
-<images/sameissue_coef_trend_linear.pdf, id=373, 433.62pt x 252.945pt>
-File: images/sameissue_coef_trend_linear.pdf Graphic file (type pdf)
-
-<use images/sameissue_coef_trend_linear.pdf>
-Package pdftex.def Info: images/sameissue_coef_trend_linear.pdf used on input l
-ine 372.
-(pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
-
-<images/numberjusticespro_coef_trend_linear.pdf, id=375, 433.62pt x 252.945pt>
-File: images/numberjusticespro_coef_trend_linear.pdf Graphic file (type pdf)
-
-<use images/numberjusticespro_coef_trend_linear.pdf>
-Package pdftex.def Info: images/numberjusticespro_coef_trend_linear.pdf used on
- input line 372.
-(pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
-
-<images/yeardiff_coef_trend_linear.pdf, id=377, 433.62pt x 252.945pt>
-File: images/yeardiff_coef_trend_linear.pdf Graphic file (type pdf)
-
-<use images/yeardiff_coef_trend_linear.pdf>
-Package pdftex.def Info: images/yeardiff_coef_trend_linear.pdf used on input li
-ne 375.
-(pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
-
-<images/yeardiffsquare_coef_trend_linear.pdf, id=379, 433.62pt x 252.945pt>
-File: images/yeardiffsquare_coef_trend_linear.pdf Graphic file (type pdf)
-
-<use images/yeardiffsquare_coef_trend_linear.pdf>
-Package pdftex.def Info: images/yeardiffsquare_coef_trend_linear.pdf used on in
-put line 375.
-(pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
-
-<images/overruled_coef_trend_linear.pdf, id=381, 433.62pt x 252.945pt>
-File: images/overruled_coef_trend_linear.pdf Graphic file (type pdf)
-
-<use images/overruled_coef_trend_linear.pdf>
-Package pdftex.def Info: images/overruled_coef_trend_linear.pdf used on input l
-ine 378.
-(pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
-
-Overfull \hbox (1.24335pt too wide) in paragraph at lines 367--381
-[][]
- []
-
-<images/mutual_coef_trend_linear.pdf, id=383, 433.62pt x 252.945pt>
+<images/mutual_coef_trend_linear.pdf, id=377, 433.62pt x 252.945pt>
 File: images/mutual_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/mutual_coef_trend_linear.pdf>
 Package pdftex.def Info: images/mutual_coef_trend_linear.pdf used on input line
- 391.
+ 372.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/triangle_coef_trend_linear.pdf, id=385, 433.62pt x 252.945pt>
+<images/triangle_coef_trend_linear.pdf, id=379, 433.62pt x 252.945pt>
 File: images/triangle_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/triangle_coef_trend_linear.pdf>
 Package pdftex.def Info: images/triangle_coef_trend_linear.pdf used on input li
-ne 391.
+ne 372.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/o2star_coef_trend_linear.pdf, id=387, 433.62pt x 252.945pt>
+<images/o2star_coef_trend_linear.pdf, id=381, 433.62pt x 252.945pt>
 File: images/o2star_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/o2star_coef_trend_linear.pdf>
 Package pdftex.def Info: images/o2star_coef_trend_linear.pdf used on input line
- 394.
+ 375.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/i2star_coef_trend_linear.pdf, id=389, 433.62pt x 252.945pt>
+<images/i2star_coef_trend_linear.pdf, id=383, 433.62pt x 252.945pt>
 File: images/i2star_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/i2star_coef_trend_linear.pdf>
 Package pdftex.def Info: images/i2star_coef_trend_linear.pdf used on input line
- 394.
+ 375.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-Overfull \hbox (1.24335pt too wide) in paragraph at lines 388--399
+Overfull \hbox (1.24335pt too wide) in paragraph at lines 369--380
+[][]
+ []
+
+<images/mq_coef_trend_linear.pdf, id=385, 433.62pt x 252.945pt>
+File: images/mq_coef_trend_linear.pdf Graphic file (type pdf)
+
+<use images/mq_coef_trend_linear.pdf>
+Package pdftex.def Info: images/mq_coef_trend_linear.pdf used on input line 389
+.
+(pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
+
+<images/absdiffmq_coef_trend_linear.pdf, id=387, 433.62pt x 252.945pt>
+File: images/absdiffmq_coef_trend_linear.pdf Graphic file (type pdf)
+
+<use images/absdiffmq_coef_trend_linear.pdf>
+Package pdftex.def Info: images/absdiffmq_coef_trend_linear.pdf used on input l
+ine 389.
+(pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
+
+<images/sameissue_coef_trend_linear.pdf, id=389, 433.62pt x 252.945pt>
+File: images/sameissue_coef_trend_linear.pdf Graphic file (type pdf)
+
+<use images/sameissue_coef_trend_linear.pdf>
+Package pdftex.def Info: images/sameissue_coef_trend_linear.pdf used on input l
+ine 392.
+(pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
+
+<images/numberjusticespro_coef_trend_linear.pdf, id=391, 433.62pt x 252.945pt>
+File: images/numberjusticespro_coef_trend_linear.pdf Graphic file (type pdf)
+
+<use images/numberjusticespro_coef_trend_linear.pdf>
+Package pdftex.def Info: images/numberjusticespro_coef_trend_linear.pdf used on
+ input line 392.
+(pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
+
+<images/yeardiff_coef_trend_linear.pdf, id=393, 433.62pt x 252.945pt>
+File: images/yeardiff_coef_trend_linear.pdf Graphic file (type pdf)
+
+<use images/yeardiff_coef_trend_linear.pdf>
+Package pdftex.def Info: images/yeardiff_coef_trend_linear.pdf used on input li
+ne 395.
+(pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
+
+<images/yeardiffsquare_coef_trend_linear.pdf, id=395, 433.62pt x 252.945pt>
+File: images/yeardiffsquare_coef_trend_linear.pdf Graphic file (type pdf)
+
+<use images/yeardiffsquare_coef_trend_linear.pdf>
+Package pdftex.def Info: images/yeardiffsquare_coef_trend_linear.pdf used on in
+put line 395.
+(pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
+
+<images/overruled_coef_trend_linear.pdf, id=397, 433.62pt x 252.945pt>
+File: images/overruled_coef_trend_linear.pdf Graphic file (type pdf)
+
+<use images/overruled_coef_trend_linear.pdf>
+Package pdftex.def Info: images/overruled_coef_trend_linear.pdf used on input l
+ine 398.
+(pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
+
+Overfull \hbox (1.24335pt too wide) in paragraph at lines 387--401
 [][]
  []
 
@@ -1816,7 +1795,23 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.403 
+l.405 
+       <C:/Users/Geiler Typ/Documents/GitHub/schmid86/Supreme_Court_Citation_Ne
+twork/Tex/images/mutual_coef_trend_linear.pdf> <C:/Users/Geiler Typ/Documents/G
+itHub/schmid86/Supreme_Court_Citation_Network/Tex/images/triangle_coef_trend_li
+near.pdf> <C:/Users/Geiler Typ/Documents/GitHub/schmid86/Supreme_Court_Citation
+_Network/Tex/images/o2star_coef_trend_linear.pdf> <C:/Users/Geiler Typ/Document
+s/GitHub/schmid86/Supreme_Court_Citation_Network/Tex/images/i2star_coef_trend_l
+inear.pdf>]
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[20pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.414 
        <C:/Users/Geiler Typ/Documents/GitHub/schmid86/Supreme_Court_Citation_Ne
 twork/Tex/images/mq_coef_trend_linear.pdf> <C:/Users/Geiler Typ/Documents/GitHu
 b/schmid86/Supreme_Court_Citation_Network/Tex/images/absdiffmq_coef_trend_linea
@@ -1831,47 +1826,36 @@ iffsquare_coef_trend_linear.pdf> <C:/Users/Geiler Typ/Documents/GitHub/schmid86
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[20pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.412 
-       <C:/Users/Geiler Typ/Documents/GitHub/schmid86/Supreme_Court_Citation_Ne
-twork/Tex/images/mutual_coef_trend_linear.pdf> <C:/Users/Geiler Typ/Documents/G
-itHub/schmid86/Supreme_Court_Citation_Network/Tex/images/triangle_coef_trend_li
-near.pdf> <C:/Users/Geiler Typ/Documents/GitHub/schmid86/Supreme_Court_Citation
-_Network/Tex/images/o2star_coef_trend_linear.pdf> <C:/Users/Geiler Typ/Document
-s/GitHub/schmid86/Supreme_Court_Citation_Network/Tex/images/i2star_coef_trend_l
-inear.pdf>]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
 [21pdfTeX warning (ext4): destination with the same identifier (name{table.4}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.462 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.5
-}) has been already used, duplicate ignored
+l.464 \end{table}
+                 ]
+Underfull \hbox (badness 10000) in paragraph at lines 465--466
+
+ []
+
+
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[22pdfTeX warning (ext4): destination with the same identifier (name{table.5}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.462 
+l.477 
       pdfTeX warning (ext4): destination with the same identifier (name{table.6
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.462 
+l.477 
       ]
 ("C:\Users\Geiler Typ\Documents\GitHub\schmid86\Supreme_Court_Citation_Network\
 Tex\paper.bbl"
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[22]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
@@ -1883,37 +1867,34 @@ Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[25])
+[25]
 Overfull \vbox (1.39674pt too high) has occurred while \output is active []
 
 
-[26]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 472.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 472.
+[26])
+Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+
+[27]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 488.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 488.
 
 ("C:\Users\Geiler Typ\Documents\GitHub\schmid86\Supreme_Court_Citation_Network\
 Tex\paper.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 472.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 472.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 488.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 488.
 Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: FD8A9E426A084B9DD8A0346036FAEC9D;600.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 472.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 488.
  ) 
 Here is how much of TeX's memory you used:
- 24785 strings out of 493921
- 433141 string characters out of 3144861
- 622145 words of memory out of 3000000
+ 24786 strings out of 493921
+ 433156 string characters out of 3144861
+ 622239 words of memory out of 3000000
  27435 multiletter control sequences out of 15000+200000
  137727 words of font info for 106 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 64i,15n,60p,3233b,514s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 64i,15n,60p,3233b,522s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1941,9 +1922,9 @@ C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (26 pages, 1511497 bytes).
+Output written on paper.pdf (27 pages, 1514408 bytes).
 PDF statistics:
- 616 PDF objects out of 1000 (max. 8388607)
- 105 named destinations out of 1000 (max. 500000)
+ 631 PDF objects out of 1000 (max. 8388607)
+ 106 named destinations out of 1000 (max. 500000)
  12510 words of extra memory for PDF output out of 14400 (max. 10000000)
 
