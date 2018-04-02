@@ -246,7 +246,7 @@ I think the discussion of the random intercepts is a bit confusing early on (it 
 
 
  \section{Empirical Analysis}
-Our three data sources for this study include the Supreme Court Database (SCDB) \citep{spaeth2014supreme}, Martin-Quinn scores \citep{martin2002dynamic}, and Supreme Court citation data provided by the CourtListener Free Law Project \citep{CourtListener}. We limit the Supreme Court terms included in our analysis to those that are covered by all three of these data source (1937--2015)\footnote{There were 145 cases that were listed in the SCDB but could not be matched to a case in the Courtlistener data. We decided to exclude these 145 cases from our model.}. The Supreme Court citation network from $1937 - 2015$ consists of $9,945$ cases. The breakdown of the data by the Court's Chief Justice is presented in Table \ref{tab:chiefs}. The network has a total of $111,986$ ties. The number of triangles in the network is $250,717$ and the number of mutual ties is $56$. The in- and outdegree distributions (i.e., the distributions of the number of citations sent and received by cases, respectively), are visualized in Figure \ref{degree_dist}. The maximum indegree is $230$ and the maximum outdegree is $162$.
+Our three data sources for this study include the Supreme Court Database (SCDB) \citep{spaeth2014supreme}, Martin-Quinn scores \citep{martin2002dynamic}, and Supreme Court citation data provided by the CourtListener Free Law Project \citep{CourtListener}. We limit the Supreme Court terms included in our analysis to those that are covered by all three of these data source (1937--2015)\footnote{There were 145 cases that were listed in the SCDB but could not be matched to a case in the Courtlistener data. We decided to exclude these 145 cases from our model.}. The Supreme Court citation network from $1937 - 2015$ consists of $9,945$ cases. The breakdown of the data by the Court's Chief Justice is presented in Table \ref{tab:chiefs}. In order to only account for positive citations, we exclude $315$ citations that casued the cited case to be overruled. As a result, the network has a total of $111,986$ ties. The number of triangles in the network is $250,717$ and the number of mutual ties is $56$. The in- and outdegree distributions (i.e., the distributions of the number of citations sent and received by cases, respectively), are visualized in Figure \ref{degree_dist}. The maximum indegree is $230$ and the maximum outdegree is $162$.
 
 \begin{table}[htp]
 \centering
@@ -286,6 +286,7 @@ The degree distributions indicate that there is a long tail to both the number o
 
 \begin{itemize}
 \item update Figure 2 to time period 1937 - 2015
+\item add data source for overruling citations
 \end{itemize}
   
 \subsection{c-TERGM Results}
