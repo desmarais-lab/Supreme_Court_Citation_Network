@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.24)  9 APR 2018 11:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.24)  9 APR 2018 17:00
 entering extended mode
 **paper.tex
 
@@ -1617,14 +1617,14 @@ has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.250 
-      ] <degree_distribution.pdf, id=300, 844.15375pt x 597.23125pt>
+      ] <degree_distribution.pdf, id=301, 844.15375pt x 597.23125pt>
 File: degree_distribution.pdf Graphic file (type pdf)
 
 <use degree_distribution.pdf>
 Package pdftex.def Info: degree_distribution.pdf used on input line 274.
 (pdftex.def)             Requested size: 422.07584pt x 298.61488pt.
 
-<images/citations1.pdf, id=301, 1445.4pt x 1445.4pt>
+<images/citations1.pdf, id=302, 1445.4pt x 1445.4pt>
 File: images/citations1.pdf Graphic file (type pdf)
 
 <use images/citations1.pdf>
@@ -1690,7 +1690,7 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.367 \newpage
               ]
-<images/mutual_coef_trend_linear.pdf, id=377, 433.62pt x 252.945pt>
+<images/mutual_coef_trend_linear.pdf, id=378, 433.62pt x 252.945pt>
 File: images/mutual_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/mutual_coef_trend_linear.pdf>
@@ -1698,7 +1698,7 @@ Package pdftex.def Info: images/mutual_coef_trend_linear.pdf used on input line
  373.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/triangle_coef_trend_linear.pdf, id=379, 433.62pt x 252.945pt>
+<images/triangle_coef_trend_linear.pdf, id=380, 433.62pt x 252.945pt>
 File: images/triangle_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/triangle_coef_trend_linear.pdf>
@@ -1706,7 +1706,7 @@ Package pdftex.def Info: images/triangle_coef_trend_linear.pdf used on input li
 ne 373.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/o2star_coef_trend_linear.pdf, id=381, 433.62pt x 252.945pt>
+<images/o2star_coef_trend_linear.pdf, id=382, 433.62pt x 252.945pt>
 File: images/o2star_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/o2star_coef_trend_linear.pdf>
@@ -1714,7 +1714,7 @@ Package pdftex.def Info: images/o2star_coef_trend_linear.pdf used on input line
  376.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/i2star_coef_trend_linear.pdf, id=383, 433.62pt x 252.945pt>
+<images/i2star_coef_trend_linear.pdf, id=384, 433.62pt x 252.945pt>
 File: images/i2star_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/i2star_coef_trend_linear.pdf>
@@ -1726,7 +1726,7 @@ Overfull \hbox (1.24335pt too wide) in paragraph at lines 370--381
 [][]
  []
 
-<images/mq_coef_trend_linear.pdf, id=385, 433.62pt x 252.945pt>
+<images/mq_coef_trend_linear.pdf, id=386, 433.62pt x 252.945pt>
 File: images/mq_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/mq_coef_trend_linear.pdf>
@@ -1734,7 +1734,7 @@ Package pdftex.def Info: images/mq_coef_trend_linear.pdf used on input line 390
 .
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/absdiffmq_coef_trend_linear.pdf, id=387, 433.62pt x 252.945pt>
+<images/absdiffmq_coef_trend_linear.pdf, id=388, 433.62pt x 252.945pt>
 File: images/absdiffmq_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/absdiffmq_coef_trend_linear.pdf>
@@ -1742,7 +1742,7 @@ Package pdftex.def Info: images/absdiffmq_coef_trend_linear.pdf used on input l
 ine 390.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/sameissue_coef_trend_linear.pdf, id=389, 433.62pt x 252.945pt>
+<images/sameissue_coef_trend_linear.pdf, id=390, 433.62pt x 252.945pt>
 File: images/sameissue_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/sameissue_coef_trend_linear.pdf>
@@ -1750,7 +1750,7 @@ Package pdftex.def Info: images/sameissue_coef_trend_linear.pdf used on input l
 ine 393.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/numberjusticespro_coef_trend_linear.pdf, id=391, 433.62pt x 252.945pt>
+<images/numberjusticespro_coef_trend_linear.pdf, id=392, 433.62pt x 252.945pt>
 File: images/numberjusticespro_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/numberjusticespro_coef_trend_linear.pdf>
@@ -1758,7 +1758,7 @@ Package pdftex.def Info: images/numberjusticespro_coef_trend_linear.pdf used on
  input line 393.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/yeardiff_coef_trend_linear.pdf, id=393, 433.62pt x 252.945pt>
+<images/yeardiff_coef_trend_linear.pdf, id=394, 433.62pt x 252.945pt>
 File: images/yeardiff_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/yeardiff_coef_trend_linear.pdf>
@@ -1766,7 +1766,7 @@ Package pdftex.def Info: images/yeardiff_coef_trend_linear.pdf used on input li
 ne 396.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/yeardiffsquare_coef_trend_linear.pdf, id=395, 433.62pt x 252.945pt>
+<images/yeardiffsquare_coef_trend_linear.pdf, id=396, 433.62pt x 252.945pt>
 File: images/yeardiffsquare_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/yeardiffsquare_coef_trend_linear.pdf>
@@ -1774,7 +1774,7 @@ Package pdftex.def Info: images/yeardiffsquare_coef_trend_linear.pdf used on in
 put line 396.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/overruled_coef_trend_linear.pdf, id=397, 433.62pt x 252.945pt>
+<images/overruled_coef_trend_linear.pdf, id=398, 433.62pt x 252.945pt>
 File: images/overruled_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/overruled_coef_trend_linear.pdf>
@@ -1922,9 +1922,9 @@ C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (27 pages, 1514529 bytes).
+Output written on paper.pdf (27 pages, 1514628 bytes).
 PDF statistics:
- 631 PDF objects out of 1000 (max. 8388607)
+ 632 PDF objects out of 1000 (max. 8388607)
  106 named destinations out of 1000 (max. 500000)
  12510 words of extra memory for PDF output out of 14400 (max. 10000000)
 
