@@ -149,7 +149,9 @@ The first case in which this Court struck down a statute under the Equal Protect
 No allegations of racial or class-based invidiously discriminatory animus are required to establish a cause of action under the first part of 1985(2). The statutory provisions now codified at \S 1985 were originally enacted as \S 2 of the Civil Rights Act of 1871, and the substantive meaning of the 1871 Act has not been changed. The provisions relating to institutions and processes of the Federal Government (including the first part of \S 1985(2)) -- unlike those encompassing activity that is usually of primary state concern (including the second part of \S 1985(2) and the part of \P 1985(3) involved in Griffin, supra -- contain no language requiring that the conspirators act with intent to deprive their victims of the equal protection of the laws. Thus, the reasoning of Griffin is not applicable here, and, given the structure of \S 2 of the 1871 Act, it is clear''
 \end{quotation} % https://supreme.justia.com/cases/federal/us/460/719/
 
-
+\begin{itemize}
+\item add to the discussion to which degree network statistics reflect causual relation
+\end{itemize}
 
 \section{Network Approaches to Studying Citations}
 
@@ -226,7 +228,11 @@ We model the way in which citations to a case depend upon the age of a case. For
 \citet{benjamin2012standing} study the propensity for cases to be overruled and cited in other negative ways. They find that cases with majority coalitions that are large and ideologically broad are less likely to be cited negatively. In our data we do not differentiate between negative and positive citations, but since the overwhelming majority of citations are positive, we hypothesize that the effects they found will be reversed in our analysis. We include one covariate in which $X^{ij}$ is the number of justices in the majority coalition for case $j$. We also include another covariate in which $X^{ij}$ is the absolute difference between the maximum and minimum ideal points of the justices in the majority coalition for case $j$. We expect both of these covariates to have positive effects.
 
 \begin{itemize}
-\item ToDo: mention new variable: overruled cases
+\item mention new variable: overruled cases
+\item mention new variable: nodemix(same issue area)
+\item mention new variable:Sender/receiver effect for judge who wrote majority opinion
+\item Same justice homophily with time trend
+\item Argue/justify why certain covariates are included
 \end{itemize}
 
 
@@ -289,6 +295,72 @@ The degree distributions indicate that there is a long tail to both the number o
 \item add data source for overruling citations
 \end{itemize}
   
+  
+\subsection{Predictive Performance}
+
+Our case for studying legal citations at the directed dyadic level hinges upon the contribution to modeling offered by incorporating network dependence. To quantify this contribution, we use out-of-sample prediction. Predicting out-of-sample offers an unbiased and general purpose way to evaluate the contribution, in terms of model fit, of one or more terms/parameters in a model \citep{jensen2000multiple,ward2010perils}. Unlike in-sample measures of model fit, out-of-sample methods are highly robust in avoiding overfitting, and work when we cannot accurately calculate the value of the likelihood function, as in the current case. Out-of-sample prediction is a common way to evaluate methods for modeling ties in networks, and has recently been applied to TERGMs in particular \citep{desmarais2013forecasting,cranmer2017can}.
+
+In our prediction experiment we randomly split the directed dyads into an 80\% training set and a 20\% test set. The parameters of the model are estimated using the directed dyads in the training set, and the parameters are used to form the conditional probability of a tie for all of the directed dyads in the test set. Directed dyads for which the conditional probability of a tie exceeds 0.5 are predicted to be citations. The experiment is run with the full model, and with a model that excludes all of the dependence terms (i.e., all terms involving reciprocity, in and out stars, and triangles)---the independent dyads model. We run this experiment for 10 iterations. Predictive performance is evaluated with three common and related measures---precision (i.e., the proportion of predicted citations that are actually citations), recall (the proportion of actual citations that are predicted to be citations), and the F1 score (the harmonic mean of precision and recall) \citep[see, e.g.,][for discussion of these measures]{makhoul1999performance}. All three measures are bounded between 0 and 1, with higher scores indicating better performance.
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{rllll}
+\hline \hline
+& \multicolumn{2}{l}{Independent Model } & \multicolumn{2}{l}{Full Model} \\ \hline 
+ & mean & range & mean & range \\ 
+  \hline
+precision & 0.5589 & (0.5508, 0.5757) & 0.8677 & (0.865, 0.8718) \\ 
+  recall & 0.098 & (0.0943, 0.103) & 0.5943 & (0.5887, 0.6032) \\ 
+  F1 score & 0.1667 & (0.1618, 0.1748) & 0.7054 & (0.7013, 0.7119) \\ 
+   \hline \hline
+\end{tabular}
+\caption{The predictive performance of the directed dyadic models with linear trends, over ten 80/20 train/test splits.}
+\label{tab:prediction_linear}
+
+\end{table}
+
+We see from Table \ref{tab:prediction_linear} that, based on all three measures, the predictive performance of the model improves dramatically from adding the network dependence terms. The recall of the full model is particularly impressive, indicating that it recovers over half of the actual citations in the test set. This provides clear evidence that the full model, which includes covariates and network dependence terms, represents a more accurate and complete model of the process of citation formation in US Supreme Court opinions.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{rllll}
+\hline \hline
+& \multicolumn{2}{l}{Independent Model } & \multicolumn{2}{l}{Full Model} \\ \hline 
+ & mean & range & mean & range \\ 
+  \hline
+precision & 0.5872 & (0.5781, 0.5962) & 0.8622 & (0.8593, 0.8668) \\ 
+  recall & 0.0565 & (0.0547, 0.0587) & 0.5839 & (0.5777, 0.592) \\ 
+  F1 score & 0.103 & (0.1, 0.1069) & 0.6963 & (0.6915, 0.7027) \\ 
+   \hline \hline
+\end{tabular}
+\caption{The predictive performance of the directed dyadic models with no trends, over ten 80/20 train/test splits.}
+\label{tab:prediction_notrend}
+\vspace{0.4cm}
+\begin{tabular}{rllll}
+\hline \hline
+& \multicolumn{2}{l}{Independent Model } & \multicolumn{2}{l}{Full Model} \\ \hline 
+ & mean & range & mean & range \\ 
+  \hline
+precision & 0.6441 & (0.6302, 0.6536) & 0.8671 & (0.8626, 0.873) \\ 
+  recall & 0.0852 & (0.0832, 0.0863) & 0.594 & (0.5874, 0.6012) \\ 
+  F1 score & 0.1504 & (0.1473, 0.1525) & 0.705 & (0.7008, 0.712) \\ 
+   \hline \hline
+\end{tabular}
+\caption{The predictive performance of the directed dyadic models with quadratic trends, over ten 80/20 train/test splits.}
+\label{tab:prediction_quadratic}
+\end{table}
+We also conduct a predictive experiment for the model that does not consider any trends and for the model that does consider quadratic instead of linear trends. The predictive performance results are given in tables \ref{tab:prediction_notrend} and \ref{tab:prediction_quadratic}. By comparing the full model results in tables \ref{tab:prediction_notrend} and \ref{tab:prediction_quadratic} with the results of the full linear trend model in table \ref{tab:prediction_linear} we can conclude all three models perform similarly well.   \\[0,5cm]
+
+
+\textit{Comment from Benjamin Kassow: In section 6.2 (predictive performance), I like what is here, but was hoping to see a bit more discussion about the predictive 
+performance of the model, with some explanation of what the predictive performance means. 
+I understand it (I think), but depending on where this gets sent to, I am not sure if all reviewers will. 
+I also think tying this into the overall model explanation or discussion of model performance overall will be helpful for better 
+integrating this section into the rest of the manuscript.}
+  
+  
+  
 \subsection{c-TERGM Results}
 The results from the c-TERGM are presented in Table \ref{tab:tergmcoef} and Figures \ref{fig:coeftrends_endo} and \ref{fig:coeftrends_exo}. Table \ref{tab:tergmcoef} gives the coefficient estimates and 95\% bootstrap confidence intervals. In Figures, \ref{fig:coeftrends_endo} and \ref{fig:coeftrends_exo}, we depict coefficient estimates and confidence intervals for all of the effects for which we estimated trends (excluding the intercept---edge count---which is typically not interpreted substantively). The coefficients in an ERGM family model can be interpreted in the same way as logistic regression coefficients---they give the change in the log odds of a tie from $i$ to $j$ given a one unit increase in the respective variable. We first discuss the dependence effect estimates (panels (a)--(d) in Figure \ref{fig:coeftrends_endo}). The reciprocity effect is substantial, positive, and statistically significant for most of the period under study. Conditional upon cases $i$ and $j$ being considered within the same term, the log of the odds that opinion $i$ cites opinion $j$ increases by approximately $2$ when opinion $j$ cites opinion $i$. The naive probability that any one case cites another case decided at the same time or previously in the Supreme Court Citation network is approximately $0.0019$. This probability increases eight-fold, to approximately $0.015$ if the citation would be reciprocal. The transitivity (i.e., triangle closure) effect is also substantial, positive, and statistically significant over the entire period studied. The probability that case $i$ cites case $j$ increases approximately five-fold if the citation would close a triangle involving cases $i$ and $j$. The activity and popularity effects are both estimated to be positive, but trend downward and are more modest in scale (and in the case of activity, not statistically significant later in the time series). Interpreting the popularity effect---the log odds that $i$ cites $j$ increases by 0.018--0.035 with every additional citation to case $j$. Based on the in-degree distribution, it appears that the popularity of cases can be classified by multiples of 10. If case $j$ increases from ten to twenty citations from other cases, the probability that case $i$ cites case $j$ increases from approximately 0.0030 to 0.0040. Overall, these results represent evidence of complex dependence in Supreme Court citation formation.
 
@@ -300,6 +372,73 @@ The results from the c-TERGM provide evidence that citations between US Supreme 
 
 \begin{itemize}
 \item adjust results/numbers in text
+\end{itemize}
+
+
+
+\begin{figure}[H]
+ \begin{tabular}{cc}
+
+   (a) Reciprocity & (b) Transitivity \\
+\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/mutual_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/triangle_coef_trend_linear.pdf} \\
+ 
+    (c) Activity & (d) Popularity \\
+\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/o2star_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/i2star_coef_trend_linear.pdf} \\
+ 
+
+ 
+\end{tabular}
+\caption{Trending effects for dependence effect estimates from the c-TERGM. The solid lines plot the point estimates, and the shaded areas span 95\% confidence intervals. }
+ \label{fig:coeftrends_endo}
+\vspace{-.25cm}
+\end{figure} 
+
+
+  \begin{figure}[H]
+  \begin{tabular}{cc}
+ (e) MQ Score Difference & (f) Ideological Breadth \\
+\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/mq_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/absdiffmq_coef_trend_linear.pdf} \\
+ 
+  (g) Same Issue & (h) Majority Size \\
+\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/sameissue_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/numberjusticespro_coef_trend_linear.pdf} \\
+
+ (i) Difference in Years & (j) Difference in Years$^2$ \\
+\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/yeardiff_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/yeardiffsquare_coef_trend_linear.pdf} \\
+
+ (k) Overruled Cases &  \\
+\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/overruled_coef_trend_linear.pdf} &  \\
+
+ \end{tabular}
+\caption{Trending effects for exogenous variables from the c-TERGM. The solid lines plot the point estimates, and the shaded areas span 95\% confidence intervals. }
+ \label{fig:coeftrends_exo}
+\vspace{-.25cm}
+\end{figure} 
+
+
+\begin{itemize}
+\item visualize Sender/receiver Issue Area Results
+\item heatplot for issue area nodemix
+\item visualize Sender/receiver for majority opinion writer
+\item add Network effect plots for model without network statistics (add to existing plots?)
+\end{itemize}
+
+
+
+
+\section{Conclusion}
+
+We present a methodology for studying citations between US Supreme Court opinions at the dyadic level, as a network. This methodology---the citation-TERGM---enables researchers to include both exogenous covariates such as the ideological predisposition and age of a case, and dependence terms, such as transitivity and reciprocity, as explanations for citation formation. We apply this methodology to a network that includes all Supreme Court cases decided between 1937 and 2015. We find, somewhat counterintuitively, that Supreme Court citations are highly reciprocal. We also find that citations are driven by dependencies such as triad closure, popularity, and activity. The dependence effects that we identify are as substantively and statistically significant as the effects of the exogenous covariates we include in the model. The summary result from this analysis is that theoretical models of Supreme Court citation formation should consider both the effects of case characteristics and the structure of past citations. 
+
+We recognize several limitations of the current analysis, which should be addressed in future iterations of this work or in future studies. First, our theoretical claims and analyses treat all citations---positive and negative---as equivalent. Both data and methodological limitations will need to be overcome to consider these two citation types. Second, there is nothing in the c-TERGM that governs the generation of new cases (i.e., cases are assumed to arise exogenously, unrelated to the history of the citation network). As new cases are often taken up by the Supreme Court in order to test, clarify, and/or challenge existing precedents, it is likely inappropriate to assume that new cases arise exogenous to the existing citation network. Overcoming this limitation would require methodological innovation in the c-TERGM as well as theoretical development regarding exactly how citation structure might predict case emergence. 
+%Third, the data used in this study does not cover the most recent history of the Court. Our data ends in 2001---missing the tenure of the most recent chief justice, and more than fifteen terms. To overcome this limitation we would need to extend the citation data beyond that collected by Fowler and colleagues. 
+
+
+\section{Appendix}
+The following table presents the Bootstrapped MPLE Results for the time period $1937-2015$.
+
+\begin{itemize}
+\item add robustness check: MCMLE for each year -> plot time trend of coefs -> are results similar to the MPLE time trends presented in the paper?
+\item (investigate which statistic contributes most on recall improvement)
 \end{itemize}
 
 \begin{table}[htp]
@@ -365,122 +504,6 @@ Overruled Cases $\times$ Sender Year   & 0.012                           & 0.002
 \label{tab:tergmcoef}
 \end{table}
 \newpage
-
-\begin{figure}[H]
- \begin{tabular}{cc}
-
-   (a) Reciprocity & (b) Transitivity \\
-\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/mutual_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/triangle_coef_trend_linear.pdf} \\
- 
-    (c) Activity & (d) Popularity \\
-\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/o2star_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/i2star_coef_trend_linear.pdf} \\
- 
-
- 
-\end{tabular}
-\caption{Trending effects for dependence effect estimates from the c-TERGM. The solid lines plot the point estimates, and the shaded areas span 95\% confidence intervals. }
- \label{fig:coeftrends_endo}
-\vspace{-.25cm}
-\end{figure} 
-
-
-  \begin{figure}[H]
-  \begin{tabular}{cc}
- (e) MQ Score Difference & (f) Ideological Breadth \\
-\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/mq_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/absdiffmq_coef_trend_linear.pdf} \\
- 
-  (g) Same Issue & (h) Majority Size \\
-\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/sameissue_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/numberjusticespro_coef_trend_linear.pdf} \\
-
- (i) Difference in Years & (j) Difference in Years$^2$ \\
-\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/yeardiff_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/yeardiffsquare_coef_trend_linear.pdf} \\
-
- (k) Overruled Cases &  \\
-\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/overruled_coef_trend_linear.pdf} &  \\
-
- \end{tabular}
-\caption{Trending effects for exogenous variables from the c-TERGM. The solid lines plot the point estimates, and the shaded areas span 95\% confidence intervals. }
- \label{fig:coeftrends_exo}
-\vspace{-.25cm}
-\end{figure} 
-
-
-
-
-
-
-\subsection{Predictive Performance}
-
-Our case for studying legal citations at the directed dyadic level hinges upon the contribution to modeling offered by incorporating network dependence. To quantify this contribution, we use out-of-sample prediction. Predicting out-of-sample offers an unbiased and general purpose way to evaluate the contribution, in terms of model fit, of one or more terms/parameters in a model \citep{jensen2000multiple,ward2010perils}. Unlike in-sample measures of model fit, out-of-sample methods are highly robust in avoiding overfitting, and work when we cannot accurately calculate the value of the likelihood function, as in the current case. Out-of-sample prediction is a common way to evaluate methods for modeling ties in networks, and has recently been applied to TERGMs in particular \citep{desmarais2013forecasting,cranmer2017can}.
-
-In our prediction experiment we randomly split the directed dyads into an 80\% training set and a 20\% test set. The parameters of the model are estimated using the directed dyads in the training set, and the parameters are used to form the conditional probability of a tie for all of the directed dyads in the test set. Directed dyads for which the conditional probability of a tie exceeds 0.5 are predicted to be citations. The experiment is run with the full model, and with a model that excludes all of the dependence terms (i.e., all terms involving reciprocity, in and out stars, and triangles)---the independent dyads model. We run this experiment for 10 iterations. Predictive performance is evaluated with three common and related measures---precision (i.e., the proportion of predicted citations that are actually citations), recall (the proportion of actual citations that are predicted to be citations), and the F1 score (the harmonic mean of precision and recall) \citep[see, e.g.,][for discussion of these measures]{makhoul1999performance}. All three measures are bounded between 0 and 1, with higher scores indicating better performance.
-
-\begin{table}[H]
-\centering
-
-\begin{tabular}{rllll}
-\hline \hline
-& \multicolumn{2}{l}{Independent Model } & \multicolumn{2}{l}{Full Model} \\ \hline 
- & mean & range & mean & range \\ 
-  \hline
-precision & 0.5589 & (0.5508, 0.5757) & 0.8677 & (0.865, 0.8718) \\ 
-  recall & 0.098 & (0.0943, 0.103) & 0.5943 & (0.5887, 0.6032) \\ 
-  F1 score & 0.1667 & (0.1618, 0.1748) & 0.7054 & (0.7013, 0.7119) \\ 
-   \hline \hline
-\end{tabular}
-\caption{The predictive performance of the directed dyadic models with linear trends, over ten 80/20 train/test splits.}
-\label{tab:prediction_linear}
-
-\end{table}
-
-We see from Table \ref{tab:prediction_linear} that, based on all three measures, the predictive performance of the model improves dramatically from adding the network dependence terms. The recall of the full model is particularly impressive, indicating that it recovers over half of the actual citations in the test set. This provides clear evidence that the full model, which includes covariates and network dependence terms, represents a more accurate and complete model of the process of citation formation in US Supreme Court opinions.
-
-\begin{table}[H]
-\centering
-\begin{tabular}{rllll}
-\hline \hline
-& \multicolumn{2}{l}{Independent Model } & \multicolumn{2}{l}{Full Model} \\ \hline 
- & mean & range & mean & range \\ 
-  \hline
-precision & 0.5872 & (0.5781, 0.5962) & 0.8622 & (0.8593, 0.8668) \\ 
-  recall & 0.0565 & (0.0547, 0.0587) & 0.5839 & (0.5777, 0.592) \\ 
-  F1 score & 0.103 & (0.1, 0.1069) & 0.6963 & (0.6915, 0.7027) \\ 
-   \hline \hline
-\end{tabular}
-\caption{The predictive performance of the directed dyadic models with no trends, over ten 80/20 train/test splits.}
-\label{tab:prediction_notrend}
-\vspace{0.4cm}
-\begin{tabular}{rllll}
-\hline \hline
-& \multicolumn{2}{l}{Independent Model } & \multicolumn{2}{l}{Full Model} \\ \hline 
- & mean & range & mean & range \\ 
-  \hline
-precision & 0.6441 & (0.6302, 0.6536) & 0.8671 & (0.8626, 0.873) \\ 
-  recall & 0.0852 & (0.0832, 0.0863) & 0.594 & (0.5874, 0.6012) \\ 
-  F1 score & 0.1504 & (0.1473, 0.1525) & 0.705 & (0.7008, 0.712) \\ 
-   \hline \hline
-\end{tabular}
-\caption{The predictive performance of the directed dyadic models with quadratic trends, over ten 80/20 train/test splits.}
-\label{tab:prediction_quadratic}
-\end{table}
-We also conduct a predictive experiment for the model that does not consider any trends and for the model that does consider quadratic instead of linear trends. The predictive performance results are given in tables \ref{tab:prediction_notrend} and \ref{tab:prediction_quadratic}. By comparing the full model results in tables \ref{tab:prediction_notrend} and \ref{tab:prediction_quadratic} with the results of the full linear trend model in table \ref{tab:prediction_linear} we can conclude all three models perform similarly well.   \\[0,5cm]
-
-
-\textit{Comment from Benjamin Kassow: In section 6.2 (predictive performance), I like what is here, but was hoping to see a bit more discussion about the predictive 
-performance of the model, with some explanation of what the predictive performance means. 
-I understand it (I think), but depending on where this gets sent to, I am not sure if all reviewers will. 
-I also think tying this into the overall model explanation or discussion of model performance overall will be helpful for better 
-integrating this section into the rest of the manuscript.}
-
-\section{Conclusion}
-
-We present a methodology for studying citations between US Supreme Court opinions at the dyadic level, as a network. This methodology---the citation-TERGM---enables researchers to include both exogenous covariates such as the ideological predisposition and age of a case, and dependence terms, such as transitivity and reciprocity, as explanations for citation formation. We apply this methodology to a network that includes all Supreme Court cases decided between 1937 and 2015. We find, somewhat counterintuitively, that Supreme Court citations are highly reciprocal. We also find that citations are driven by dependencies such as triad closure, popularity, and activity. The dependence effects that we identify are as substantively and statistically significant as the effects of the exogenous covariates we include in the model. The summary result from this analysis is that theoretical models of Supreme Court citation formation should consider both the effects of case characteristics and the structure of past citations. 
-
-We recognize several limitations of the current analysis, which should be addressed in future iterations of this work or in future studies. First, our theoretical claims and analyses treat all citations---positive and negative---as equivalent. Both data and methodological limitations will need to be overcome to consider these two citation types. Second, there is nothing in the c-TERGM that governs the generation of new cases (i.e., cases are assumed to arise exogenously, unrelated to the history of the citation network). As new cases are often taken up by the Supreme Court in order to test, clarify, and/or challenge existing precedents, it is likely inappropriate to assume that new cases arise exogenous to the existing citation network. Overcoming this limitation would require methodological innovation in the c-TERGM as well as theoretical development regarding exactly how citation structure might predict case emergence. 
-%Third, the data used in this study does not cover the most recent history of the Court. Our data ends in 2001---missing the tenure of the most recent chief justice, and more than fifteen terms. To overcome this limitation we would need to extend the citation data beyond that collected by Fowler and colleagues. 
-
-
-
 
 \bibliography{bib} 
 \bibliographystyle{apsr}
