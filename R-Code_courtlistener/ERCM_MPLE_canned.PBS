@@ -6,7 +6,7 @@
 #PBS -j oe
 
 
-cd /storage/work/cxs5700/SCC_paper/MPLE
+cd /storage/work/cxs5700/SCC_paper/MPLE_cl
 
 echo " "
 echo " "
@@ -70,6 +70,8 @@ for(t in 1:time.periods){ # time.periods
   dyad.id.t <- dyad.id[which(case.time <= t),which(case.time <= t)]
   # subset year matrix
   year.t<- year[which(case.time <= t),which(case.time <= t)]
+  # subset same opinion writer matrix
+  same.opinion.writer.t<- same.opinion.writer[which(case.time <= t),which(case.time <= t)]
   
   #### set vertex attributes
   # same issue area
@@ -80,11 +82,15 @@ for(t in 1:time.periods){ # time.periods
   net.t <- set.vertex.attribute(net.t,"NumberJusticesPro", scc1[which(case.time <= t),52])
   # overruled covariate
   net.t <- set.vertex.attribute(net.t,"Overruled", Overruled.matrix[which(case.time <= t),t])
-  # number justices that voted for the case
+  # sender time
   net.t <- set.vertex.attribute(net.t,"sender.time", sender.time.t[,1])
+  # Majority Opinion Writer
+  net.t <- set.vertex.attribute(net.t,"MajOpWriter", scc1[which(case.time <= t),49])
+
   # use ergmMPLE to create data for time t
   data.t <- ergmMPLE(net.t~edges+istar(2)+mutual+ostar(2)+triangle+edgecov(mq.t)+edgecov(same.issue.area.t)+edgecov(year.diff.t)+ edgecov(year.diff.square.t )+edgecov(sender.time.t)+edgecov(receiver.time.t)+
-                       edgecov(dyad.id.t)+ edgecov(year.t) +nodeocov('sender.time')+ nodeicov('AbsDiffMQscores')+ nodeicov('NumberJusticesPro')+ nodeifactor('SameIssueArea', base=1)+ nodeofactor('SameIssueArea', base=1)+ nodeicov('Overruled'))
+                       edgecov(dyad.id.t)+ edgecov(year.t) +nodeocov('sender.time')+ nodeicov('AbsDiffMQscores')+ nodeicov('NumberJusticesPro')+ nodeifactor('SameIssueArea', base=1)+ nodeofactor('SameIssueArea', base=1)+ nodeicov('Overruled')+
+                        edgecov(same.opinion.writer.t)+ nodeifactor('MajOpWriter')+ nodeofactor('MajOpWriter')+ nodemix('SameIssueArea'))
   # combine into a matrix
   data.t <- cbind(data.t[[1]],data.t[[2]])
   # add dependent variable label
@@ -105,7 +111,7 @@ for(i in 1:l){
   rowM<- dim(mple.data[[i]])[1]
   d<- dim(mple.data[[i]])[2]
   
-  aux.matrix<- matrix(0, rowM, 44) # 44 is the length of the colnames vector below
+  aux.matrix<- matrix(0, rowM, 329) # 329 is the length of the colnames vector below
   colnames(aux.matrix)<- c( "edgeij", "edges", "istar2",  "mutual",  "ostar2",  "triangle", "edgecov.mq.t", "edgecov.same.issue.area.t",   
                             "edgecov.year.diff.t", "edgecov.year.diff.square.t",  "edgecov.sender.time.t",  "edgecov.receiver.time.t",  "edgecov.dyad.id.t",  "edgecov.year.t", "nodeocov.sender.time", "nodeicov.AbsDiffMQscores",
                             "nodeicov.NumberJusticesPro", "nodeifactor.SameIssueArea.2","nodeifactor.SameIssueArea.3","nodeifactor.SameIssueArea.4","nodeifactor.SameIssueArea.5",
@@ -113,7 +119,47 @@ for(i in 1:l){
                             "nodeifactor.SameIssueArea.11","nodeifactor.SameIssueArea.12","nodeifactor.SameIssueArea.13","nodeifactor.SameIssueArea.14", "nodeofactor.SameIssueArea.2",
                             "nodeofactor.SameIssueArea.3","nodeofactor.SameIssueArea.4","nodeofactor.SameIssueArea.5","nodeofactor.SameIssueArea.6","nodeofactor.SameIssueArea.7",
                             "nodeofactor.SameIssueArea.8","nodeofactor.SameIssueArea.9","nodeofactor.SameIssueArea.10","nodeofactor.SameIssueArea.11","nodeofactor.SameIssueArea.12",
-                            "nodeofactor.SameIssueArea.13","nodeofactor.SameIssueArea.14", "nodeicov.Overruled")
+                            "nodeofactor.SameIssueArea.13","nodeofactor.SameIssueArea.14", "nodeicov.Overruled", "edgecov.same.opinion.writer.t","nodeifactor.MajOpWriter.68","nodeifactor.MajOpWriter.71",
+                            "nodeifactor.MajOpWriter.72","nodeifactor.MajOpWriter.74","nodeifactor.MajOpWriter.75","nodeifactor.MajOpWriter.76","nodeifactor.MajOpWriter.77","nodeifactor.MajOpWriter.78",
+                            "nodeifactor.MajOpWriter.79","nodeifactor.MajOpWriter.80","nodeifactor.MajOpWriter.81","nodeifactor.MajOpWriter.82","nodeifactor.MajOpWriter.83","nodeifactor.MajOpWriter.84",
+                            "nodeifactor.MajOpWriter.85","nodeifactor.MajOpWriter.86","nodeifactor.MajOpWriter.87","nodeifactor.MajOpWriter.88","nodeifactor.MajOpWriter.89","nodeifactor.MajOpWriter.90",
+                            "nodeifactor.MajOpWriter.91","nodeifactor.MajOpWriter.92","nodeifactor.MajOpWriter.93","nodeifactor.MajOpWriter.94","nodeifactor.MajOpWriter.95","nodeifactor.MajOpWriter.96",
+                            "nodeifactor.MajOpWriter.97","nodeifactor.MajOpWriter.98","nodeifactor.MajOpWriter.99","nodeifactor.MajOpWriter.100","nodeifactor.MajOpWriter.101","nodeifactor.MajOpWriter.102",
+                            "nodeifactor.MajOpWriter.103","nodeifactor.MajOpWriter.104","nodeifactor.MajOpWriter.105","nodeifactor.MajOpWriter.106","nodeifactor.MajOpWriter.107","nodeifactor.MajOpWriter.108",
+                            "nodeifactor.MajOpWriter.109","nodeifactor.MajOpWriter.110","nodeifactor.MajOpWriter.111","nodeifactor.MajOpWriter.112","nodeifactor.MajOpWriter.113","nodeifactor.MajOpWriter.114",
+                            "nodeofactor.MajOpWriter.68","nodeofactor.MajOpWriter.71",
+                            "nodeofactor.MajOpWriter.72","nodeofactor.MajOpWriter.74","nodeofactor.MajOpWriter.75","nodeofactor.MajOpWriter.76","nodeofactor.MajOpWriter.77","nodeofactor.MajOpWriter.78",
+                            "nodeofactor.MajOpWriter.79","nodeofactor.MajOpWriter.80","nodeofactor.MajOpWriter.81","nodeofactor.MajOpWriter.82","nodeofactor.MajOpWriter.83","nodeofactor.MajOpWriter.84",
+                            "nodeofactor.MajOpWriter.85","nodeofactor.MajOpWriter.86","nodeofactor.MajOpWriter.87","nodeofactor.MajOpWriter.88","nodeofactor.MajOpWriter.89","nodeofactor.MajOpWriter.90",
+                            "nodeofactor.MajOpWriter.91","nodeofactor.MajOpWriter.92","nodeofactor.MajOpWriter.93","nodeofactor.MajOpWriter.94","nodeofactor.MajOpWriter.95","nodeofactor.MajOpWriter.96",
+                            "nodeofactor.MajOpWriter.97","nodeofactor.MajOpWriter.98","nodeofactor.MajOpWriter.99","nodeofactor.MajOpWriter.100","nodeofactor.MajOpWriter.101","nodeofactor.MajOpWriter.102",
+                            "nodeofactor.MajOpWriter.103","nodeofactor.MajOpWriter.104","nodeofactor.MajOpWriter.105","nodeofactor.MajOpWriter.106","nodeofactor.MajOpWriter.107","nodeofactor.MajOpWriter.108",
+                            "nodeofactor.MajOpWriter.109","nodeofactor.MajOpWriter.110","nodeofactor.MajOpWriter.111","nodeofactor.MajOpWriter.112","nodeofactor.MajOpWriter.113","nodeofactor.MajOpWriter.114",
+                            "mix.SameIssueArea.1.1","mix.SameIssueArea.1.2","mix.SameIssueArea.1.3","mix.SameIssueArea.1.4","mix.SameIssueArea.1.5","mix.SameIssueArea.1.6","mix.SameIssueArea.1.7","mix.SameIssueArea.1.8",
+                            "mix.SameIssueArea.1.9","mix.SameIssueArea.1.10","mix.SameIssueArea.1.11","mix.SameIssueArea.1.12","mix.SameIssueArea.1.13","mix.SameIssueArea.1.14","mix.SameIssueArea.2.1","mix.SameIssueArea.2.2",
+                            "mix.SameIssueArea.2.3","mix.SameIssueArea.2.4","mix.SameIssueArea.2.5","mix.SameIssueArea.2.6","mix.SameIssueArea.2.7","mix.SameIssueArea.2.8","mix.SameIssueArea.2.9","mix.SameIssueArea.2.10",
+                            "mix.SameIssueArea.2.11","mix.SameIssueArea.2.12","mix.SameIssueArea.2.13","mix.SameIssueArea.2.14","mix.SameIssueArea.3.1","mix.SameIssueArea.3.2","mix.SameIssueArea.3.3","mix.SameIssueArea.3.4",
+                            "mix.SameIssueArea.3.5","mix.SameIssueArea.3.6","mix.SameIssueArea.3.7","mix.SameIssueArea.3.8","mix.SameIssueArea.3.9","mix.SameIssueArea.3.10","mix.SameIssueArea.3.11","mix.SameIssueArea.3.12",
+                            "mix.SameIssueArea.3.13","mix.SameIssueArea.3.14","mix.SameIssueArea.4.1","mix.SameIssueArea.4.2","mix.SameIssueArea.4.3","mix.SameIssueArea.4.4","mix.SameIssueArea.4.5","mix.SameIssueArea.4.6",
+                            "mix.SameIssueArea.4.7","mix.SameIssueArea.4.8","mix.SameIssueArea.4.9","mix.SameIssueArea.4.10","mix.SameIssueArea.4.11","mix.SameIssueArea.4.12","mix.SameIssueArea.4.13","mix.SameIssueArea.4.14",
+                            "mix.SameIssueArea.5.1","mix.SameIssueArea.5.2","mix.SameIssueArea.5.3","mix.SameIssueArea.5.4","mix.SameIssueArea.5.5","mix.SameIssueArea.5.6","mix.SameIssueArea.5.7","mix.SameIssueArea.5.8",
+                            "mix.SameIssueArea.5.9","mix.SameIssueArea.5.10","mix.SameIssueArea.5.11","mix.SameIssueArea.5.12","mix.SameIssueArea.5.13","mix.SameIssueArea.5.14","mix.SameIssueArea.6.1","mix.SameIssueArea.6.2",
+                            "mix.SameIssueArea.6.3","mix.SameIssueArea.6.4","mix.SameIssueArea.6.5","mix.SameIssueArea.6.6","mix.SameIssueArea.6.7","mix.SameIssueArea.6.8","mix.SameIssueArea.6.9","mix.SameIssueArea.6.10",
+                            "mix.SameIssueArea.6.11","mix.SameIssueArea.6.12","mix.SameIssueArea.6.13","mix.SameIssueArea.6.14","mix.SameIssueArea.7.1","mix.SameIssueArea.7.2","mix.SameIssueArea.7.3","mix.SameIssueArea.7.4",
+                            "mix.SameIssueArea.7.5","mix.SameIssueArea.7.6","mix.SameIssueArea.7.7","mix.SameIssueArea.7.8","mix.SameIssueArea.7.9","mix.SameIssueArea.7.10","mix.SameIssueArea.7.11","mix.SameIssueArea.7.12",
+                            "mix.SameIssueArea.7.13","mix.SameIssueArea.7.14","mix.SameIssueArea.8.1","mix.SameIssueArea.8.2","mix.SameIssueArea.8.3","mix.SameIssueArea.8.4","mix.SameIssueArea.8.5","mix.SameIssueArea.8.6",
+                            "mix.SameIssueArea.8.7","mix.SameIssueArea.8.8","mix.SameIssueArea.8.9","mix.SameIssueArea.8.10","mix.SameIssueArea.8.11","mix.SameIssueArea.8.12","mix.SameIssueArea.8.13","mix.SameIssueArea.8.14",
+                            "mix.SameIssueArea.9.1","mix.SameIssueArea.9.2","mix.SameIssueArea.9.3","mix.SameIssueArea.9.4","mix.SameIssueArea.9.5","mix.SameIssueArea.9.6","mix.SameIssueArea.9.7","mix.SameIssueArea.9.8",
+                            "mix.SameIssueArea.9.9","mix.SameIssueArea.9.10","mix.SameIssueArea.9.11","mix.SameIssueArea.9.12","mix.SameIssueArea.9.13","mix.SameIssueArea.9.14","mix.SameIssueArea.10.1","mix.SameIssueArea.10.2",
+                            "mix.SameIssueArea.10.3","mix.SameIssueArea.10.4","mix.SameIssueArea.10.5","mix.SameIssueArea.10.6","mix.SameIssueArea.10.7","mix.SameIssueArea.10.8","mix.SameIssueArea.10.9","mix.SameIssueArea.10.10",
+                            "mix.SameIssueArea.10.11","mix.SameIssueArea.10.12","mix.SameIssueArea.10.13","mix.SameIssueArea.10.14","mix.SameIssueArea.11.1","mix.SameIssueArea.11.2","mix.SameIssueArea.11.3","mix.SameIssueArea.11.4",
+                            "mix.SameIssueArea.11.5","mix.SameIssueArea.11.6","mix.SameIssueArea.11.7","mix.SameIssueArea.11.8","mix.SameIssueArea.11.9","mix.SameIssueArea.11.10","mix.SameIssueArea.11.11","mix.SameIssueArea.11.12",
+                            "mix.SameIssueArea.11.13","mix.SameIssueArea.11.14","mix.SameIssueArea.12.1","mix.SameIssueArea.12.2","mix.SameIssueArea.12.3","mix.SameIssueArea.12.4","mix.SameIssueArea.12.5","mix.SameIssueArea.12.6",
+                            "mix.SameIssueArea.12.7","mix.SameIssueArea.12.8","mix.SameIssueArea.12.9","mix.SameIssueArea.12.10","mix.SameIssueArea.12.11","mix.SameIssueArea.12.12","mix.SameIssueArea.12.13","mix.SameIssueArea.12.14",
+                            "mix.SameIssueArea.13.1","mix.SameIssueArea.13.2","mix.SameIssueArea.13.3","mix.SameIssueArea.13.4","mix.SameIssueArea.13.5","mix.SameIssueArea.13.6","mix.SameIssueArea.13.7","mix.SameIssueArea.13.8",
+                            "mix.SameIssueArea.13.9","mix.SameIssueArea.13.10","mix.SameIssueArea.13.11","mix.SameIssueArea.13.12","mix.SameIssueArea.13.13","mix.SameIssueArea.13.14","mix.SameIssueArea.14.1","mix.SameIssueArea.14.2",
+                            "mix.SameIssueArea.14.3","mix.SameIssueArea.14.4","mix.SameIssueArea.14.5","mix.SameIssueArea.14.6","mix.SameIssueArea.14.7","mix.SameIssueArea.14.8","mix.SameIssueArea.14.9","mix.SameIssueArea.14.10",
+                            "mix.SameIssueArea.14.11","mix.SameIssueArea.14.12","mix.SameIssueArea.14.13","mix.SameIssueArea.14.14")
   
   aux.matrix[,1:17]<- mple.data[[i]][, 1:17]  
   # enter columns of mple.data into the right column in aux.matrix
@@ -124,7 +170,6 @@ for(i in 1:l){
   # save auxiliary matrix with right dimension into new list
   mple.data.same[[i]]<- aux.matrix
 }
-
 
 # collapse list into a data frame
 mple.data <- data.frame(do.call('rbind',mple.data.same))

@@ -1,5 +1,9 @@
 memory.limit(30000)
 
+
+# reading and preprocessing all the data takes a couple of hours (4-5h)
+
+
 #####################################################
 #### read in Washington law data
 #####################################################
@@ -23,13 +27,16 @@ citations<- as.data.frame(citations)
 #######################################################
 
 library(rjson)
-filenames_op <- list.files("C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme Court Citation Project/scotus_opinion", pattern="*.json", full.names=TRUE) # this should give you a character vector, with each file name represented by an entry
-myJSON_opinion <- lapply(filenames_op, function(x) fromJSON(file=x)) # a list in which each element is one of the original JSON files, takes a while ~ 30 min
+# takes about 5 mins
+# filenames_op <- list.files("C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme Court Citation Project/scotus_opinion", pattern="*.json", full.names=TRUE) # this should give you a character vector, with each file name represented by an entry
+# takes about 30 mins
+# myJSON_opinion <- lapply(filenames_op, function(x) fromJSON(file=x)) # a list in which each element is one of the original JSON files, takes a while ~ 30 min
 
 ######################################################
 #### read in courtlistener scotus cluster-based data
 
 filenames_cluster <- list.files("C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme Court Citation Project/R-Code_courtlistener_data/all_cluster/scotus", pattern="*.json", full.names=TRUE) # this should give you a character vector, with each file name represented by an entry
+# takes about 30 mins
 myJSON_cluster <- lapply(filenames_cluster, function(x) fromJSON(file=x)) # a list in which each element is one of the original JSON files, takes a while ~ 30 min
 
 l.cluster<- length(myJSON_cluster) # 63967
@@ -109,6 +116,7 @@ rm(scc1, days, date, x)
 ######## MQ scores
 #### read in justice centered data set
 
+library(readr)
 SCDB1_justice <- read_csv("SCDB1_justice.csv")
 SCDB2_justice <- read_csv("SCDB2_justice.csv")
 
@@ -139,18 +147,27 @@ MQ.scores <- as.data.frame(read_csv("justices.csv"))
 
 
 ######
-# add a column with the mean MS score of the judges of the majority vote
+# add a column with the median MS score of the judges of the majority vote
 #####
 
 scc1<- scc
 
 # Let scc be the full data set and scc1 be the data from term 1937 on
-# delete all entries prior 1937
-scc1<- scc1[-(1:18436),]
-# MQ scores end at 2015, delete cases after 2015 term
-scc1<- scc1[-(10091:10234),]
 
-scc1$meanMSscores<- 0
+
+# delete all entries prior 1937
+last.1937<- max(which(scc1$term==1936))
+scc1<- scc1[-(1:last.1937),]
+# MQ scores end at 2015, delete cases after 2015 term
+last.2016<- max(which(scc1$term==2016))
+first.2016<- min(which(scc1$term==2016))
+scc1<- scc1[-(first.2016:last.2016),]
+
+
+
+
+
+scc1$medianMSscores<- 0
 d<- dim(scc1)[1]
 rownames(scc1)<- 1:d
 
@@ -162,9 +179,8 @@ for ( i in 1:d){ # row 18437 is when term 1937 begins (1937 is beginning of MQ s
   case.rows<- which(scc1[i,1]==SCDB_justice[,1])
   number.judges<- length(case.rows)
   
-  # create empty vector to calculate the mean MS score of majority judges
-  total.MQ.score<- 0
-  number.counts <- 0 # for how many judges do we have the MQ score
+  # create empty vector to calculate the median MS score of majority judges
+  MQ.score<- c() # save MQ scores in vector -> take median later
   for(j in 1:number.judges){
     
     if(is.element(SCDB_justice[case.rows[j], 56], set.pro)){ # 1 indicates voted pro
@@ -178,15 +194,14 @@ for ( i in 1:d){ # row 18437 is when term 1937 begins (1937 is beginning of MQ s
       row.with.MQ.score <- which(MQ.scores[,1]==case.year & MQ.scores[,2]==justice.id)
       #print(row.with.MQ.score)
       if(length(row.with.MQ.score)==1){
-        total.MQ.score<- total.MQ.score + MQ.scores[row.with.MQ.score,4]
-        number.counts<- number.counts +1
+        MQ.score[j]<- MQ.scores[row.with.MQ.score,4]
         #print(total.MQ.score)
       }
     }
     
   }
   # save mean MQ score in scc1
-  scc1$meanMSscores[i]<- total.MQ.score/number.counts
+  scc1$medianMSscores[i]<- median(MQ.score, na.rm=TRUE)
   
 }
 
@@ -211,7 +226,7 @@ for(i in 1:dim(scc1)[1]){
   if(scc1[i,13]=="Roberts"){scc1[i,64]<-1}
 }
 
-# rename id column to 1-2116
+# rename id column to 1-2645
 scc1 <- transform(scc1,id=as.numeric(factor(time_t)))
 rownames(scc1)<- 1:dim(scc1)[1]
 d<-dim(scc1)[1]
@@ -260,7 +275,7 @@ for ( i in 1:d){ # row 17987 is when term 1937 begins
 
 scc1<- scc
 rm(wash.law, wash.law1, wash.law2, a, case.rows, case.year, d, i,j,justice.id, l.cluster, mq.vector, number.counts, number.judges,
-   row.with.MQ.score, total.MQ.score, uscite1, uscite2, w)
+   row.with.MQ.score, total.MQ.score, uscite1, uscite2, w, first.2016, last.2016, last.1937)
 
 ##################### merge SCDB date (scc1) and courtlistener data
 
@@ -272,6 +287,8 @@ for(i in 1:dim(cluster.mat)[1]){
   scc$opinion_id[w]<- cluster.mat[i,7]
 }
 
+####
+## create csv file with all cases that could not be matched
 
 # which(scc$opinion_id==0)
 # [1]   14  171  224  338  354  389  396  504  597  598  599  600  601  604  605  606  646  730  731  752  761  764  811
@@ -305,13 +322,14 @@ for(i in d:1){
     }
 }
 
-rm(d,i,w)
+rm(k,d,i,w)
 rm(filenames_cluster, filenames_op, myJSON_cluster, myJSON_opinion)
 
-
-########################################
+############################################
+############################################
 ### create adjacency matrix
-
+############################################
+############################################
 
 library(combinat)
 d<- dim(scc1)[1]
@@ -339,12 +357,12 @@ for(i in 1:l){ # takes about 2 hrs
 rm(d,i,l,q)
 
 #############################################################################
-### read in overruled cases and delete overruled cases from adjacency network
+### read in overruled cases and delete overruled citations from adjacency network
 #############################################################################
 
 AM<- adjacency.matrix
 overruled_cases_supremecourt <- read_csv("overruled_cases_supremecourt.csv")
-View(overruled_cases_supremecourt)
+# View(overruled_cases_supremecourt)
 overruled<- as.data.frame(overruled_cases_supremecourt)
 
 for(i in 1: dim(overruled)[1]){
@@ -387,7 +405,7 @@ for(i in 1:d){ # calculation takes a while
 
 
 same.issue.area<- matrix(0, d, d)
-for(i in 1:d){ # calculation takes a while
+for(i in 1:d){ # calculation takes a while, ca 15 mins
   if(i %% 500 == 0) cat("Starting iteration", i, "\n")
   # issue area for sender
   issue.area.sender <- scc1[i, 41]
@@ -403,11 +421,45 @@ for(i in 1:d){ # calculation takes a while
 }
 
 
+#############################################################################
+## same Majority opinion writer matrix, 1  same opinion writer, 0 not
+#############################################################################
+
+
+same.opinion.writer<- matrix(0, d, d)
+for(i in 1:d){ # calculation takes a while, ca 15 mins
+  if(i %% 500 == 0) cat("Starting iteration", i, "\n")
+  # opinion writer for sender
+  opinion.writer.sender <- scc1[i, 49]
+  for(j in i:d){
+    # opinion writer for receiver
+    opinion.writer.receiver <- scc1[j, 49]
+    # if sender and receiver opinion writer is the same and non is NA then enter 1 into matrix to indicate same issue area
+    if(is.na(opinion.writer.receiver)==FALSE & is.na(opinion.writer.sender)==FALSE & opinion.writer.sender==opinion.writer.receiver){
+      same.opinion.writer[i,j]<-1
+      same.opinion.writer[j,i]<-1
+    }
+  }
+}
+
 ##############################################################################
-## Mean MQ score of sender
+## Absolue Difference of Median MQ score of sender
 ##############################################################################
 
-mq.matrix <- matrix(rep(scc1[,57], d), d, d)
+mq.matrix <- matrix(0, d, d)
+
+for(i in 1:d){ # calculation takes a while
+  if(i %% 500 == 0) cat("Starting iteration", i, "\n")
+  # mq for sender
+  mq.sender <- scc1[i, 57] # term column
+  for(j in i:d){
+    # mq for receiver
+    mq.receiver <- scc1[j, 57] # term column
+    mq.matrix[i,j]<- abs(mq.sender- mq.receiver)
+    mq.matrix[j,i]<- abs(mq.sender- mq.receiver)
+  }
+}
+
 
 
 ##############################################################################
@@ -453,13 +505,17 @@ rm(breaks, burger, cols, counts, hughes, i, issue.area.receiver, issue.area.send
    year.receiver, year.sender, max.id, receiver.id, sender.id, time.overruled)
 rm(AM, citations, MQ.scores, no.op.id.mat, overruled, overruled_cases_supremecourt, scc.save, scc1.save)
 
+rm(mq.receiver, MQ.score, mq.sender, opinion.writer.receiver, opinion.writer.sender)
+
+
+
 ##############################################################################
 ########## EDA
 ##############################################################################
 
 # Number of new cases every year
 
-counts<- table(scc$year)
+counts<- table(scc1$year)
 barplot(counts, main="Number of new Cases every Year", xlab="Year", ylab="Frequency")
 
 ################# outdegree distribution
@@ -490,21 +546,21 @@ grid.arrange(indegree.plot, outdegree.plot, ncol=1, nrow=2)
 
 
 ## number of ties
-sum(adjacency.matrix) # 110742
+sum(adjacency.matrix) # 111986
 
 # timepoints
-max(scc1$id) # 2598
+max(scc1$id) # 2619
 
 # number cases
-dim(adjacency.matrix)[1] #9841
+dim(adjacency.matrix)[1] #9945
 
 # number mutual ties
-sum(adjacency.matrix*t(adjacency.matrix)) #54
+sum(adjacency.matrix*t(adjacency.matrix)) #56
 
 
 ### number triangles
 library(statnet)
-summary(adjacency.matrix ~ triangle) # 246134 
+summary(adjacency.matrix ~ triangle) # 250717
 
 
 ########################
@@ -524,21 +580,21 @@ stone<- sum(scc1$Stone==1) # 756
 stone/5  #151.2
 
 ### vinson
-vinson<- sum(scc1$Vinson==1) #786
+vinson<- sum(scc1$Vinson==1) #789
 
 # cases per year
 vinson/8 #98.25
 
 ### warren
-warren<- sum(scc1$Warren==1)  #2123
+warren<- sum(scc1$Warren==1)  #2149
 
 # cases per year
-warren/17  # 124.88
+warren/17  # 126.41
 
 ### burger
-burger<- sum(scc1$Burger==1) #2755
+burger<- sum(scc1$Burger==1) #2805
 
-burger/18   # 153.06
+burger/18   # 155.06
 
 ### rehnquist
 rehnquist<- sum(scc1$Rehnquist==1) # 2004
