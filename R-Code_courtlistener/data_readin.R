@@ -1,7 +1,7 @@
 memory.limit(30000)
 
 
-# reading and preprocessing all the data takes a couple of hours (4-5h)
+# loading and preprocessing all the data takes a couple of hours (4-5h)
 
 
 #####################################################
