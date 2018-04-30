@@ -6,6 +6,7 @@
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{amsthm}
+\usepackage{bm}
 \usepackage{enumerate}
 \usepackage{verbatim}
 \usepackage[a4paper,text={160mm,215mm},centering,headsep=10mm,footskip=10mm]{geometry}
@@ -93,7 +94,7 @@
 Prepared for presentation at the ``The Enemy of My Enemy: Judicial Politics meets Network Analysis'' conference within a conference at the 2018 Annual Conference of the Southern Political Science Association. This work was supported in part by NSF grants SES- 1558661, SES-1637089, SES-1619644, and CISE-1320219.}
 \end{abstract}
 
-
+\doublespacing
  \section{Introduction}
  
  
@@ -172,51 +173,38 @@ No allegations of racial or class-based invidiously discriminatory animus are re
 \end{quotation} % https://supreme.justia.com/cases/federal/us/460/719/
 
 
-\section{Network Approaches to Studying Citations}
-
-The dependence processes discussed in the previous section represent new theoretical claims regarding the factors that account for citation formation among US Supreme Court opinions. Before we can test these claims, we consider methods for analyzing citation data as a network. Researchers from several fields have used network analysis to analyze citations---legal, patent, and scientific. Before describing our approach to modeling Supreme Court citations, we review the methods researchers have previously used to study citations. A citation is a directed link between two documents that indicates the citing document attributes the cited to be relevant to the evidentiary basis of the citing document. Collective patterns of citations within a certain domain make up citation networks. When raw citation data is formally represented as a network, the nodes are usually the documents themselves, and each directed arc is the existence of one or more cites from the sending to the receiving document. Given the permanent nature of documents in citations networks, these networks are acyclic \citep{leicht2007large,karrer2009random}. Relatedly, citation networks grow as new documents and citations enter the network, but established arcs persist in all but exceptional cases. 
-
-\includegraphics[width = 0.95\textwidth,trim= 0cm 0cm 0cm 0cm,clip=true  ]{images/daggish.pdf}
-
-	
-Networks researchers have developed approaches to understanding the mechanisms that drive citations between documents. Work in this area generally proceeds by specifying a set of citation behaviors, then proposing a model to capture the combination of these behavioral rules \citep{simkin2007mathematical}. Assessment of the model is based on how well it fits citation distributions. Researchers working in this area tend to focus on modeling the growth of the citation network as governed by a degree-based mechanism such as preferential attachment \citep{barabasi1999emergence, vazquez2001statistics}, and the age of the paper \citep{jeong2003measuring,eom2011characterizing,wang2013quantifying}. Regarding age, the previous standard approach was to treat the probability of citation as function of degree (i.e., the number of citations previously accrued by the document) and age \citep{hajra2005aging,hajra2006modelling}, then examine the distribution of citations. More recently, work has been done in relaxing the assumption that the effect of degree is static, instead allowing it to vary with time \citep{wang2008measuring}.
-	
-Another approach to understanding the generative process of citation networks is to examine the existence of network motifs, or subnetwork structures, that can be interpreted as measuring different generative mechanisms. For example, a triangle in which case A cites both cases B and C, and case B cites case C, is a type of motif---a triadic motif. If researchers find that a triangle is a highly prevalent motif in a network, that finding would suggest that triad closure is a prevalent process by which the network is generated. The analysis of network motifs is done by comparing the prevalence of the motifs in the observed network to the prevalence of the motifs in networks drawn from a relevant null distribution. This null model must also be characterized by features of citation networks discussed earlier, meaning that it must be a directed acyclic graph with unweighted arcs \citep{carstens2016topology}. \citet{karrer2009random} proposes the use of null models based on fixed-degree sequences. In these models, the nodes in the networks (i.e., opinions) have the same, or close to the same, numbers of ties. Conditional on the number of ties accrued by each node, ties are randomly re-wired such that there is no systematic pattern regarding the nodes to which any node connects. 
-
-From this brief review we see two broad components of past methods for analyzing citation networks. First, node features, age in particular, are used to model the rate at which a document is cited. Second, theoretical models are used to account for prevalent graph structures. In the next section we describe a methodology that can be used to integrate case attributes and graph structures/motifs into a comprehensive model of US Supreme Court citations. 	
-
-
  
  \section{The Citation Temporal Exponential Random Graph Model}
-We build upon existing methods for network analysis to define a model that fits the constraints to which Supreme Court citation networks are subject. The Supreme Court citation network is nearly a directed acyclic graph---a graph in which there can be no loops/cycles (e.g., ties cannot be reciprocated, which would constitute a two-node loop). If two cases are decided in different terms, the latter case can cite the earlier case, but not the reverse. However, as noted above, if two opinions are written in the same term, they can cite each other reciprocally. We implement a version of the temporal exponential random graph model (TERGM)---a model that is commonly used for longitudinal network data \citep[e.g.,][]{cranmer2012complex,desmarais2013forecasting,clark2013multimember,block2018change,graif2017neighborhood}---that is subject to the constraints specific to the Supreme Court citation network. The TERGM is a model that can simultaneously incorporate structural dependencies such as transitivity and reciprocity and exogenous covariates  (e.g. the issue area of the citing case, the ideological distance between the opinion authors of the two cases in the dyad) to explain tie formation. If the ties do not depend upon each other, and the coefficients associated with the structural dependencies are either assumed or estimated to be zero, the TERGM reduces to a logistic regression in which the observation is a directed dyad \citep{cranmer2010inferential}.  In this section we describe the citation TERGM (c-TERGM), and explain estimation methods. 
+We develop a methodology that can be used to jointly test for the effects of covariates on citations---as have been studied in prior research, and test for dependence effects, as we hypothesize above. To accomplish this, we extend a model that has been developed to jointly model covariate and dependence effects in longitudinal network data---the temporal exponential random graph model (TERGM) \citep[e.g.,][]{cranmer2012complex,clark2013multimember, masket2015polarization, graif2017neighborhood}. The TERGM, as it is currently implemented \citep{leifeld2017temporal,  tergm}, is designed to model longitudinal network data in which ties among a relatively stable set of nodes are modeled at multiple time points (e.g., the countries that are and are not defensively allied at time $t$, the legislators who have and have not cosponsored each others' legislation in the current session).  The longitudinal network structures for which TERGMs are currently designed are insufficient to account for the structure of citation networks.
 
-Let $C_t$ be the case-to-case adjacency matrix at time $t$ such that $C_t^{ij} \in \{0,1\}$ is a binary indicator of whether case $i$ cites $j$. Furthermore, let
-$$\mathcal{C}_t =\{C_{\leq t} \in \{0,1\}^{(N_t \cdot (N_t-1))/2}: C_{\leq t}^{ij} \in \{0,1\} \}$$ 
-be the set of all possible adjacency matrices among $N_t$ cases at time $t$. $N_t$ denotes the number of cases in the network at time $t$. Note that the cardinality of $\mathcal{C}_t$ increases exponentially for every newly added case. The probability of observing $C_t$ given past citations $C_{<t}$, where $C_{\leq t}$ is the network up to time $t$ is defined as
+
+\subsection{c-TERGM definition}
+
+We develop the citation TERGM (c-TERGM), to account for the structural constraints that apply to the network of Supreme Court citations. These structural constraints amount to three departures from the structure of longitudinal networks for which TERGMs are currently designed. First, the citation network is partially acyclic. If two cases are decided during the same term, they can cite each other, forming a mutual edge (or two-cycle). However, if case $i$ is decided before case $j$, case $j$ can cite case $i$, but case $i$ cannot cite case $j$. Second, new edges can be created over time, but cannot be eliminated. Unlike in, e.g., an alliance network, in which two countries can dissolve an alliance, once a citation exists in a citation network it cannot be dissolved. Third, the set of nodes in the network must increase for new edges to be created. In conventional TERGMs, the number of nodes in the network can increase or decrease in each time period, and is typically stable over time. In a citation network, new edges (and non-edges) are introduced over time via the introduction of new nodes. The structure of the citation network is depicted in Figure \ref{fig:ctergm}---a hypothetical citation network established over three time periods, with three cases decided in each time period. We denote $C_t$ to be the set of citation and non-citations added to the network at time $t$ (i.e., via the addition of three cases), $C_{ <t}$ to be the citations among cases decided before time $t$, and $C_{ \leq t}$ to denote the entire set of citations and non-citations on which $C_t$ can depend through the c-TERGM specification.
+
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width = 0.95\textwidth,trim= 0cm 0cm 0cm 0cm,clip=true  ]{images/daggish.pdf}
+\caption{Illustration of temporal structure of the Supreme Court Citation Network. $C_{\leq t}$ is the entire set of citations (and non-citations) on which citations and non-citations at time $t$ (i.e., $C_t$) depend. $C_t$ are conditioned on the citations and non-citations established before time $t$ (i.e., $C_{< t}$). The shaded small squares are hypothetical observed citations, and the white small squares are citations that could have been observed but were not. The regions of the citation matrix that are represented by large white rectangles are citations that could not have been observed since the citing case would have been decided in a term that preceded the term of the cited case. The citing case ID is given in the row and the prospective cited case is given in the column. }
+\label{fig:ctergm}
+\end{figure}
+
+
+The likelihood function of the c-TERGM is given by
 \begin{equation}
-P(C_t | C_{<t}, \theta)=\cfrac{\exp\big(\theta^T\cdot h\big(C_{\leq t})\big)\big)}{\sum_{Z_t^*\in \mathcal{C}_t}\exp\big(\theta^T\cdot h\big(Z^*_{\leq t})\big)\big)}
-\label{ercm}
+l(\bm{\theta},C_{\leq T}) =  \prod_{t=1}^T \frac{ \exp \left[ {\bm{\theta}'\bm{h}(C_{t},C_{<t}) } \right] }{ \sum_{C_t^* \in \mathcal{C}_t} \exp \left[ {\bm{\theta}'\bm{h}(C^*_{t},C_{<t}) }\right]  },
 \end{equation}
-where $\theta \in \mathbb{R}^q$ is a $q$-dimensional vector of parameters,  $h: \mathcal{C}_t \to \mathbb{R}^q$ is a q-dimensional vector of different statistics and $\kappa(\theta) := \sum_{Z^*_t\in \mathcal{C}_t}\exp\big(\theta^T\cdot h\big(Z^*_{\leq t})\big)$ is a normalization constant that ensures that Equation (\ref{ercm}) defines a probability function on $\mathcal{C}_t$.
+where $\bm{\theta}$ is a vector of real-valued parameters, and $\bm{h}(C_{t},C_{<t})$ is a vector of scalar-valued functions that each quantify a feature of the citation network (e.g., the relationship between citation ties and a case attribute, the number of mutual edges in the citation network). $\exp \left[ {\bm{\theta}'\bm{h}(C_{t},C_{<t}) } \right]$ is a positive weight that is proportional to the probability of observing any particular form of the citations and non-citations added to the network at time $t$.  The denominator of Equation 1 represents a normalizing constant, in which the positive weight is summed over all possible configurations of $C_{t}$, from the network in which the cases added to the network at time $t$ send no citations at all, to the network in which the cases added at time $t$ cite every possible case, and everything in between. The probability of observing the citation network up to time $T$---the final time point in the dataset---is given by the product over the probability of adding the citations at each time point $t$, conditional on the citations that were added to the network previously. 
 
-% Network Statistics
-The c-TERGM is specified through 
-the decision regarding which network statistics $h(\cdot)$ to incorporate. We include the following network statistics for the Supreme Court citation network, which are derived from the interdependence hypotheses described in the previous section:
-$$h_{edges}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to \sum_{ij} C_{\leq t}^{ij}, $$
-the number of citations.  $h_{edges}$ performs the function of an intercept, and models the expected value of any given edge.
-$$h_{outstar}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to \sum_{i=1} {\sum_{j \neq i} C_{\leq t}^{ij} \choose 2} $$
-the number of out-two-stars. An out-two-star is a configuration in which one node sends to two other nodes. The number of these configurations grows quadratically as the origins of ties concentrate on a few highly active/social senders. The out-two-stars configuration is commonly used to model activity (sender activation) in ERGMs.
-$$h_{instar}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to \sum_{j=1} {\sum_{i \neq j} C_{\leq t}^{ij} \choose 2} $$
-the number of in-two-stars. An in-two-star is a configuration in which one node receives ties from two other nodes. The number of these configurations grows quadratically as the destinations of ties concentrate on a few highly popular recipients. The out-two-stars configuration is commonly used to model popularity in ERGMs. 
-\begin{align*}
-h_{triangle}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to & \sum_{j<i<k} C^{ij}\cdot C^{jk} \cdot C^{ki} + C^{ji}\cdot C^{jk} \cdot C^{ki} + C^{ij}\cdot C^{kj} \cdot C^{ki} \\ & + C^{ji}\cdot C^{kj} \cdot C^{ki} + C^{ij}\cdot C^{jk} \cdot C^{ik} + C^{ji}\cdot C^{jk} \cdot C^{ik}  \\ & + C^{ij}\cdot C^{kj} \cdot C^{ik} + C^{ji}\cdot C^{kj} \cdot C^{ik},  
-\end{align*}
-The number of triangles in the network. Triangles measure triad closure, as discussed above.      
-$$h_{reciprocity}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to \sum_{ij} C_{\leq t}^{ij}C_{\leq t}^{ji}, $$
-The number of reciprocal ties in the network. Even though the reciprocity of ties is not a meaningful network statistic for most citation networks, it may still play a role in the Supreme Court citation network. This statistic comes with the restriction that it only can appear among cases that entered the network at the same time. 
+Though the likelihood function of the c-TERGM may appear quite different from that of statistical models conventionally used in political science, analysis of the conditional probability of a single citation from case $i$ to case $j$ reveals that we can interpret the parameters similar to logistic regression coefficients. $$ P(C_{ij,t} = 1 | C_{-ij,t}, C_{ < t}) = \frac{\exp \left[ {\bm{\theta}'\bm{h}(C_{t},C_{<t}| C_{ij,t} = 1) } \right]}{ \exp \left[ {\bm{\theta}'\bm{h}(C_{t},C_{<t}| C_{ij,t} = 1) } \right] + \exp \left[ {\bm{\theta}'\bm{h}(C_{t},C_{<t}| C_{ij,t} = 0) } \right]}, $$ $$ \text{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} = \frac{1}{ 1 + \exp \left[ - {\bm{\theta}'\left(\bm{h}(C_{t},C_{<t}| C_{ij,t} = 1) - \bm{h}(C_{t},C_{<t}| C_{ij,t} = 0)\right)} \right]}, $$
+where $C_{ij,t} = 1$ indicates that case $i$ cites case $j$, $C_{ij,t} = 0$ indicates that case $i$ does not cite case $j$, $C_{-ij,t}$ is the observed elements of $C_{t}$ except $C_{ij,t}$, and $\left(\bm{h}(C_{t},C_{<t}| C_{ij,t} = 1) - \bm{h}(C_{t},C_{<t}| C_{ij,t} = 0)\right)$ is the change in $\bm{h}(C_{t},C_{<t})$ that results from toggling $C_{ij,t} = 0$ to $C_{ij,t} = 1$. This re-arrangement illustrates that the parameters can be interpreted in terms of the change in the log odds of a citation from $i$ to $j$ given a one-unit increase in the corresponding element of $\bm{h}$, conditional on the other citations observed in the network. For example, if the value of $\theta$ corresponding to an element of $\bm{h}$ that counts the number of mutual edges in the network is 0.5, then the log odds of observing $C_{ij,t} = 1$ increase by 0.5 if case $i$ is cited by case $j$ (as compared to the configuration in which case $j$ does not cite case $i$). 
 
-$$h_{covariate}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to \sum_{ij} C_{\leq t}^{ij}X_{\leq t}^{ij}, $$ the effect of an exogenous covariate ($X$). We include several exogenous covariates based on this standard statistic formulation. These covariates are discussed below.\\
-\indent The structure of this model is very similar to a conventional (T)ERGM setup. The main difference is that  $\mathcal{C}_t$ excludes adjacency matrices in which there are loops that include edges sent at different time points. Loops can exist in the Supreme Court citation network, but only among cases decided in the same term. Furthermore, a case $i$ can only cite a case $j$ if $j$ entered the network before or at the same time as $i$ did. \\
+\subsection{c-TERGM Estimation}
+
+The normalizing constant in Equation 1 is intractable. For example, in the simple case of adding three cases to a network in which six cases already exists---like that depicted in Figure \ref{fig:ctergm}---there are 16,777,216 unique configurations of $C_t$ that could be observed. The typical Supreme Court term involves adding hundreds of cases to a network that 
+
+
 \indent The normalizing constant in the denominator of the probability function (i.e., Equation \ref{ercm}) is computationally intractable. This means that straightforward methods of maximum likelihood estimation (MLE) are infeasible with ERGM family models. Methods of Monte Carlo approximation are well established \citep{hunter2006inference,van2009framework,hummel2012improving}, but with almost $10,000$ vertices, even the methods of Monte Carlo MLE are computationally expensive \citep{schmid2017exponential}. To estimate the parameters of the c-TERGM, we rely on two features of the model and data that facilitate the application of an approximate inference method that is faster than Monte Carlo approximation---maximum pseudolikelihood. First, our sample size is very large. Second, under the c-TERGM we assume that citations are formed in each time period conditional upon the citations that exist in the past.  We estimate the c-TERGM via bootstrapped pseudolikelihood \citep{desmarais2012statistical,desmarais2010consistent}. 
 
 
@@ -785,4 +773,66 @@ First, as these arcs are observed patterns of behaviour, they can be used to inf
 \end{figure}  
   
 \newpage 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Let $C_t$ be the case-to-case adjacency matrix at time $t$ such that $C_t^{ij} \in \{0,1\}$ is a binary indicator of whether case $i$ cites $j$. Furthermore, let
+$$\mathcal{C}_t =\{C_{\leq t} \in \{0,1\}^{(N_t \cdot (N_t-1))/2}: C_{\leq t}^{ij} \in \{0,1\} \}$$ 
+be the set of all possible adjacency matrices among $N_t$ cases at time $t$. $N_t$ denotes the number of cases in the network at time $t$. Note that the cardinality of $\mathcal{C}_t$ increases exponentially for every newly added case. The probability of observing $C_t$ given past citations $C_{<t}$, where $C_{\leq t}$ is the network up to time $t$ is defined as
+\begin{equation}
+P(C_t | C_{<t}, \theta)=\cfrac{\exp\big(\theta^T\cdot h\big(C_{\leq t})\big)\big)}{\sum_{Z_t^*\in \mathcal{C}_t}\exp\big(\theta^T\cdot h\big(Z^*_{\leq t})\big)\big)}
+\label{ercm}
+\end{equation}
+where $\theta \in \mathbb{R}^q$ is a $q$-dimensional vector of parameters,  $h: \mathcal{C}_t \to \mathbb{R}^q$ is a q-dimensional vector of different statistics and $\kappa(\theta) := \sum_{Z^*_t\in \mathcal{C}_t}\exp\big(\theta^T\cdot h\big(Z^*_{\leq t})\big)$ is a normalization constant that ensures that Equation (\ref{ercm}) defines a probability function on $\mathcal{C}_t$.
+
+% Network Statistics
+The c-TERGM is specified through 
+the decision regarding which network statistics $h(\cdot)$ to incorporate. We include the following network statistics for the Supreme Court citation network, which are derived from the interdependence hypotheses described in the previous section:
+$$h_{edges}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to \sum_{ij} C_{\leq t}^{ij}, $$
+the number of citations.  $h_{edges}$ performs the function of an intercept, and models the expected value of any given edge.
+$$h_{outstar}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to \sum_{i=1} {\sum_{j \neq i} C_{\leq t}^{ij} \choose 2} $$
+the number of out-two-stars. An out-two-star is a configuration in which one node sends to two other nodes. The number of these configurations grows quadratically as the origins of ties concentrate on a few highly active/social senders. The out-two-stars configuration is commonly used to model activity (sender activation) in ERGMs.
+$$h_{instar}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to \sum_{j=1} {\sum_{i \neq j} C_{\leq t}^{ij} \choose 2} $$
+the number of in-two-stars. An in-two-star is a configuration in which one node receives ties from two other nodes. The number of these configurations grows quadratically as the destinations of ties concentrate on a few highly popular recipients. The out-two-stars configuration is commonly used to model popularity in ERGMs. 
+\begin{align*}
+h_{triangle}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to & \sum_{j<i<k} C^{ij}\cdot C^{jk} \cdot C^{ki} + C^{ji}\cdot C^{jk} \cdot C^{ki} + C^{ij}\cdot C^{kj} \cdot C^{ki} \\ & + C^{ji}\cdot C^{kj} \cdot C^{ki} + C^{ij}\cdot C^{jk} \cdot C^{ik} + C^{ji}\cdot C^{jk} \cdot C^{ik}  \\ & + C^{ij}\cdot C^{kj} \cdot C^{ik} + C^{ji}\cdot C^{kj} \cdot C^{ik},  
+\end{align*}
+The number of triangles in the network. Triangles measure triad closure, as discussed above.      
+$$h_{reciprocity}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to \sum_{ij} C_{\leq t}^{ij}C_{\leq t}^{ji}, $$
+The number of reciprocal ties in the network. Even though the reciprocity of ties is not a meaningful network statistic for most citation networks, it may still play a role in the Supreme Court citation network. This statistic comes with the restriction that it only can appear among cases that entered the network at the same time. 
+
+$$h_{covariate}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to \sum_{ij} C_{\leq t}^{ij}X_{\leq t}^{ij}, $$ the effect of an exogenous covariate ($X$). We include several exogenous covariates based on this standard statistic formulation. These covariates are discussed below.\\
+\indent The structure of this model is very similar to a conventional (T)ERGM setup. The main difference is that  $\mathcal{C}_t$ excludes adjacency matrices in which there are loops that include edges sent at different time points. Loops can exist in the Supreme Court citation network, but only among cases decided in the same term. Furthermore, a case $i$ can only cite a case $j$ if $j$ entered the network before or at the same time as $i$ did. \\
+
+
+
+\section{Network Approaches to Studying Citations}
+
+The dependence processes discussed in the previous section represent new theoretical claims regarding the factors that account for citation formation among US Supreme Court opinions. Before we can test these claims, we consider methods for analyzing citation data as a network. Researchers from several fields have used network analysis to analyze citations---legal, patent, and scientific. Before describing our approach to modeling Supreme Court citations, we review the methods researchers have previously used to study citations. A citation is a directed link between two documents that indicates the citing document attributes the cited to be relevant to the evidentiary basis of the citing document. Collective patterns of citations within a certain domain make up citation networks. When raw citation data is formally represented as a network, the nodes are usually the documents themselves, and each directed arc is the existence of one or more cites from the sending to the receiving document. Given the permanent nature of documents in citations networks, these networks are acyclic \citep{leicht2007large,karrer2009random}. Relatedly, citation networks grow as new documents and citations enter the network, but established arcs persist in all but exceptional cases. 
+	
+Networks researchers have developed approaches to understanding the mechanisms that drive citations between documents. Work in this area generally proceeds by specifying a set of citation behaviors, then proposing a model to capture the combination of these behavioral rules \citep{simkin2007mathematical}. Assessment of the model is based on how well it fits citation distributions. Researchers working in this area tend to focus on modeling the growth of the citation network as governed by a degree-based mechanism such as preferential attachment \citep{barabasi1999emergence, vazquez2001statistics}, and the age of the paper \citep{jeong2003measuring,eom2011characterizing,wang2013quantifying}. Regarding age, the previous standard approach was to treat the probability of citation as function of degree (i.e., the number of citations previously accrued by the document) and age \citep{hajra2005aging,hajra2006modelling}, then examine the distribution of citations. More recently, work has been done in relaxing the assumption that the effect of degree is static, instead allowing it to vary with time \citep{wang2008measuring}.
+	
+Another approach to understanding the generative process of citation networks is to examine the existence of network motifs, or subnetwork structures, that can be interpreted as measuring different generative mechanisms. For example, a triangle in which case A cites both cases B and C, and case B cites case C, is a type of motif---a triadic motif. If researchers find that a triangle is a highly prevalent motif in a network, that finding would suggest that triad closure is a prevalent process by which the network is generated. The analysis of network motifs is done by comparing the prevalence of the motifs in the observed network to the prevalence of the motifs in networks drawn from a relevant null distribution. This null model must also be characterized by features of citation networks discussed earlier, meaning that it must be a directed acyclic graph with unweighted arcs \citep{carstens2016topology}. \citet{karrer2009random} proposes the use of null models based on fixed-degree sequences. In these models, the nodes in the networks (i.e., opinions) have the same, or close to the same, numbers of ties. Conditional on the number of ties accrued by each node, ties are randomly re-wired such that there is no systematic pattern regarding the nodes to which any node connects. 
+
+From this brief review we see two broad components of past methods for analyzing citation networks. First, node features, age in particular, are used to model the rate at which a document is cited. Second, theoretical models are used to account for prevalent graph structures. In the next section we describe a methodology that can be used to integrate case attributes and graph structures/motifs into a comprehensive model of US Supreme Court citations. 	
+
+
+
 

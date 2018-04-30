@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  30 APR 2018 09:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  30 APR 2018 13:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -508,6 +508,14 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headsep=\skip60
 \dth@everypar=\toks28
 )
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
+)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks29
@@ -831,7 +839,7 @@ Package: slashed 1997/01/16 v0.01 Feynman Slashed Character Notation (DPC)
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
-\symrsfs=\mathgroup6
+\symrsfs=\mathgroup9
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
@@ -1305,21 +1313,21 @@ LaTeX Warning: Label `number_supporting' multiply defined.
 )
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 60.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1360,7 +1368,7 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box57
-Package hyperref Info: Link coloring ON on input line 59.
+Package hyperref Info: Link coloring ON on input line 60.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1369,9 +1377,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count169
 )
-LaTeX Info: Redefining \ref on input line 59.
-LaTeX Info: Redefining \pageref on input line 59.
-LaTeX Info: Redefining \nameref on input line 59.
+LaTeX Info: Redefining \ref on input line 60.
+LaTeX Info: Redefining \pageref on input line 60.
+LaTeX Info: Redefining \nameref on input line 60.
 
 (./paper.out) (./paper.out)
 \@outlinefile=\write5
@@ -1410,232 +1418,232 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package pdfcprot Info: I didn't find lmrbxnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pdfcprot/pplmnT1.cpa)
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmrbxnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmrbxnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmrbxnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 60.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package pdfcprot Info: I didn't find lmssbxnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmssbxnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmssbxnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmssbxnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmrmnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmrmnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmrmnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmrmnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmrmitT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmrmitT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmrmitT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmrmitT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmssmnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmssmnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmssmnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmssmnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 59.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 60.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 59.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 60.
 Package pdfcprot Info: I didn't find lmssmitT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 59.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 60.
 Package pdfcprot Info: I didn't find lmssmitT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 59.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 60.
 Package pdfcprot Info: I didn't find lmssmitT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmssmitT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmssmslT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmssmslT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmssmslT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
 Package pdfcprot Info: I didn't find lmssmslT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 59.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 60.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 59.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 59.
+(pdfcprot)             you intended to use. on input line 60.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 60.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 59.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 60.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 59.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 60.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 59.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 60.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 59.
+(Font)              <10.95> on input line 60.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 59.
+(Font)              <8> on input line 60.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 59.
-LaTeX Font Info:    Try loading font information for U+msa on input line 59.
+(Font)              <6> on input line 60.
+LaTeX Font Info:    Try loading font information for U+msa on input line 60.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 59.
+LaTeX Font Info:    Try loading font information for U+msb on input line 60.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 59.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 60.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Package xypdf Info: Line width: 0.39998pt on input line 59.
+Package xypdf Info: Line width: 0.39998pt on input line 60.
 
 ABD: EveryShipout initializing macros
 
@@ -1646,517 +1654,549 @@ Package scrbase Warning: \ifpdftex was redefined
 (scrbase)                the manual of every package you are using.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 91.
+(Font)              <14.4> on input line 92.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 91.
+(Font)              <10> on input line 92.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 91.
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 91.
+(Font)              <7> on input line 92.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 92.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 91.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 92.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 91.
+(Font)              <9> on input line 92.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 91.
+(Font)              <5> on input line 92.
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <6> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 91.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 92.
  [1
 
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
 [2]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[3] <images/citations_trans.pdf, id=137, 722.7pt x 722.7pt>
+[3]
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
+
+
+[4] <images/citations_trans.pdf, id=146, 722.7pt x 722.7pt>
 File: images/citations_trans.pdf Graphic file (type pdf)
 
 <use images/citations_trans.pdf>
-Package pdftex.def Info: images/citations_trans.pdf used on input line 123.
+Package pdftex.def Info: images/citations_trans.pdf used on input line 124.
 (pdftex.def)             Requested size: 432.48048pt x 381.39659pt.
 
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[4]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+[5]
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[5pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.135 \begin{quotation}
+l.136 \begin{quotation}
                         <./images/citations_trans.pdf>]
-<images/citations_recip.pdf, id=170, 722.7pt x 722.7pt>
+<images/citations_recip.pdf, id=178, 722.7pt x 722.7pt>
 File: images/citations_recip.pdf Graphic file (type pdf)
 
 <use images/citations_recip.pdf>
-Package pdftex.def Info: images/citations_recip.pdf used on input line 144.
+Package pdftex.def Info: images/citations_recip.pdf used on input line 145.
 (pdftex.def)             Requested size: 432.48048pt x 381.39659pt.
 
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[6]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+[7]
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[7pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
+[8pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.150 \begin{quotation}
+l.151 \begin{quotation}
                         <./images/citations_recip.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 151--154
+Underfull \hbox (badness 10000) in paragraph at lines 152--155
 
  []
 
 
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[8] <images/citations_pop.pdf, id=209, 722.7pt x 722.7pt>
+[9] <images/citations_pop.pdf, id=216, 722.7pt x 722.7pt>
 File: images/citations_pop.pdf Graphic file (type pdf)
 
 <use images/citations_pop.pdf>
-Package pdftex.def Info: images/citations_pop.pdf used on input line 163.
+Package pdftex.def Info: images/citations_pop.pdf used on input line 164.
 (pdftex.def)             Requested size: 432.48048pt x 321.018pt.
 
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[9pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
-has been already used, duplicate ignored
+[10]
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
+
+
+[11pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.170 \begin{quotation}
+l.171 \begin{quotation}
                         <./images/citations_pop.pdf>]
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 171.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 172.
 
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[10] <images/daggish.pdf, id=243, 433.62pt x 361.35pt>
+[12] <images/daggish.pdf, id=267, 433.62pt x 361.35pt>
 File: images/daggish.pdf Graphic file (type pdf)
 
 <use images/daggish.pdf>
-Package pdftex.def Info: images/daggish.pdf used on input line 179.
+Package pdftex.def Info: images/daggish.pdf used on input line 188.
 (pdftex.def)             Requested size: 432.48048pt x 360.41728pt.
 
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[11 <./images/daggish.pdf>]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[12]
-
-Package amsmath Warning: Foreign command \atopwithdelims;
-(amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 207.
-
-
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
 [13]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[14]
+[14pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 233.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.199 
+       <./images/daggish.pdf>]
+Overfull \hbox (1.34995pt too wide) in paragraph at lines 200--202
+\OML/lmm/m/it/10.95 C[]$ \T1/lmr/m/n/10.95 is the ob-served el-e-ments of $\OML
+/lmm/m/it/10.95 C[]$ \T1/lmr/m/n/10.95 ex-cept $\OML/lmm/m/it/10.95 C[]$\T1/lmr
+/m/n/10.95 , and $[]$
+ []
 
 
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
 [15]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+
+LaTeX Warning: Reference `ercm' on page 16 undefined on input line 208.
 
 
-[16pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
+
+
+[16]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 221.
+
+
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
+
+
+[17]
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
+
+
+[18pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.278 
+l.252 
       ]
 Class scrartcl Info: Workaround for not recommended usage of \\ or
-(scrartcl)           \newlinein caption text  on input line 293.
+(scrartcl)           \newlinein caption text  on input line 281.
 Class scrartcl Info: Workaround for not recommended usage of \\ or
-(scrartcl)           \newlinein caption text  on input line 293.
- <degree_distribution.pdf, id=385, 844.15375pt x 597.23125pt>
+(scrartcl)           \newlinein caption text  on input line 281.
+
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
+
+
+[19pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.287 
+      ] <degree_distribution.pdf, id=370, 844.15375pt x 597.23125pt>
 File: degree_distribution.pdf Graphic file (type pdf)
 
 <use degree_distribution.pdf>
-Package pdftex.def Info: degree_distribution.pdf used on input line 302.
+Package pdftex.def Info: degree_distribution.pdf used on input line 290.
 (pdftex.def)             Requested size: 422.07584pt x 298.61488pt.
 
-<images/citations1.pdf, id=386, 1445.4pt x 1445.4pt>
+<images/citations1.pdf, id=371, 1445.4pt x 1445.4pt>
 File: images/citations1.pdf Graphic file (type pdf)
 
 <use images/citations1.pdf>
-Package pdftex.def Info: images/citations1.pdf used on input line 309.
+Package pdftex.def Info: images/citations1.pdf used on input line 297.
 (pdftex.def)             Requested size: 500.91829pt x 485.98036pt.
 
-Overfull \hbox (45.67421pt too wide) in paragraph at lines 309--310
+Overfull \hbox (45.67421pt too wide) in paragraph at lines 297--298
 [][]
  []
 
 
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[17pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.324 
-      ]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[18pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+[20pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.324 
+l.312 
        <./degree_distribution.pdf>]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[19pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+[21pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.324 
+l.312 
        <./images/citations1.pdf>]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[20pdfTeX warning (ext4): destination with the same identifier (name{table.3}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.374 \end{table}
-                 ]
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
  []
 
 
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[21pdfTeX warning (ext4): destination with the same identifier (name{table.4}) 
+[23pdfTeX warning (ext4): destination with the same identifier (name{table.3}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.388 
+l.364 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.4
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.364 
       pdfTeX warning (ext4): destination with the same identifier (name{table.5
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.388 
+l.364 
       ]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[22] <images/mutual_coef_trend_linear.pdf, id=484, 433.62pt x 252.945pt>
+[24] <images/mutual_coef_trend_linear.pdf, id=459, 433.62pt x 252.945pt>
 File: images/mutual_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/mutual_coef_trend_linear.pdf>
 Package pdftex.def Info: images/mutual_coef_trend_linear.pdf used on input line
- 405.
+ 393.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/triangle_coef_trend_linear.pdf, id=486, 433.62pt x 252.945pt>
+<images/triangle_coef_trend_linear.pdf, id=461, 433.62pt x 252.945pt>
 File: images/triangle_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/triangle_coef_trend_linear.pdf>
 Package pdftex.def Info: images/triangle_coef_trend_linear.pdf used on input li
-ne 405.
+ne 393.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/o2star_coef_trend_linear.pdf, id=488, 433.62pt x 252.945pt>
+<images/o2star_coef_trend_linear.pdf, id=463, 433.62pt x 252.945pt>
 File: images/o2star_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/o2star_coef_trend_linear.pdf>
 Package pdftex.def Info: images/o2star_coef_trend_linear.pdf used on input line
- 408.
+ 396.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/i2star_coef_trend_linear.pdf, id=490, 433.62pt x 252.945pt>
+<images/i2star_coef_trend_linear.pdf, id=465, 433.62pt x 252.945pt>
 File: images/i2star_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/i2star_coef_trend_linear.pdf>
 Package pdftex.def Info: images/i2star_coef_trend_linear.pdf used on input line
- 408.
+ 396.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-Overfull \hbox (1.24335pt too wide) in paragraph at lines 402--413
+Overfull \hbox (1.24335pt too wide) in paragraph at lines 390--401
 [][]
  []
 
-<images/mq_coef_trend_linear.pdf, id=492, 433.62pt x 252.945pt>
+
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
+
+
+[25] <images/mq_coef_trend_linear.pdf, id=472, 433.62pt x 252.945pt>
 File: images/mq_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/mq_coef_trend_linear.pdf>
-Package pdftex.def Info: images/mq_coef_trend_linear.pdf used on input line 422
+Package pdftex.def Info: images/mq_coef_trend_linear.pdf used on input line 410
 .
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/absdiffmq_coef_trend_linear.pdf, id=494, 433.62pt x 252.945pt>
+<images/absdiffmq_coef_trend_linear.pdf, id=474, 433.62pt x 252.945pt>
 File: images/absdiffmq_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/absdiffmq_coef_trend_linear.pdf>
 Package pdftex.def Info: images/absdiffmq_coef_trend_linear.pdf used on input l
-ine 422.
+ine 410.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/sameissue_coef_trend_linear.pdf, id=496, 433.62pt x 252.945pt>
+<images/sameissue_coef_trend_linear.pdf, id=476, 433.62pt x 252.945pt>
 File: images/sameissue_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/sameissue_coef_trend_linear.pdf>
 Package pdftex.def Info: images/sameissue_coef_trend_linear.pdf used on input l
-ine 425.
+ine 413.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/numberjusticespro_coef_trend_linear.pdf, id=498, 433.62pt x 252.945pt>
+<images/numberjusticespro_coef_trend_linear.pdf, id=478, 433.62pt x 252.945pt>
 File: images/numberjusticespro_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/numberjusticespro_coef_trend_linear.pdf>
 Package pdftex.def Info: images/numberjusticespro_coef_trend_linear.pdf used on
- input line 425.
+ input line 413.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/yeardiff_coef_trend_linear.pdf, id=500, 433.62pt x 252.945pt>
+<images/yeardiff_coef_trend_linear.pdf, id=480, 433.62pt x 252.945pt>
 File: images/yeardiff_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/yeardiff_coef_trend_linear.pdf>
 Package pdftex.def Info: images/yeardiff_coef_trend_linear.pdf used on input li
-ne 428.
+ne 416.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/yeardiffsquare_coef_trend_linear.pdf, id=502, 433.62pt x 252.945pt>
+<images/yeardiffsquare_coef_trend_linear.pdf, id=482, 433.62pt x 252.945pt>
 File: images/yeardiffsquare_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/yeardiffsquare_coef_trend_linear.pdf>
 Package pdftex.def Info: images/yeardiffsquare_coef_trend_linear.pdf used on in
-put line 428.
+put line 416.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/overruled_coef_trend_linear.pdf, id=504, 433.62pt x 252.945pt>
+<images/overruled_coef_trend_linear.pdf, id=484, 433.62pt x 252.945pt>
 File: images/overruled_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/overruled_coef_trend_linear.pdf>
 Package pdftex.def Info: images/overruled_coef_trend_linear.pdf used on input l
-ine 431.
+ine 419.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-<images/justicehomophily_coef_trend_linear.pdf, id=506, 433.62pt x 252.945pt>
+<images/justicehomophily_coef_trend_linear.pdf, id=486, 433.62pt x 252.945pt>
 File: images/justicehomophily_coef_trend_linear.pdf Graphic file (type pdf)
 
 <use images/justicehomophily_coef_trend_linear.pdf>
 Package pdftex.def Info: images/justicehomophily_coef_trend_linear.pdf used on 
-input line 432.
+input line 420.
 (pdftex.def)             Requested size: 216.24371pt x 109.89136pt.
 
-Overfull \hbox (1.24335pt too wide) in paragraph at lines 420--435
+Overfull \hbox (1.24335pt too wide) in paragraph at lines 408--423
 [][]
  []
 
 
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[23pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
+[26pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.439 
+l.427 
        <./images/mutual_coef_trend_linear.pdf> <./images/triangle_coef_trend_li
 near.pdf> <./images/o2star_coef_trend_linear.pdf> <./images/i2star_coef_trend_l
 inear.pdf>]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[24pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
+[27pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.445 \item a
+l.433 \item a
              dd Network effect plots for model without network statistics (a...
  <./images/mq_coef_trend_linear.pdf> <./images/absdiffmq_coef_trend_linear.pdf>
  <./images/sameissue_coef_trend_linear.pdf> <./images/numberjusticespro_coef_tr
 end_linear.pdf> <./images/yeardiff_coef_trend_linear.pdf> <./images/yeardiffsqu
 are_coef_trend_linear.pdf> <./images/overruled_coef_trend_linear.pdf> <./images
 /justicehomophily_coef_trend_linear.pdf>]
-<justice_popularity.pdf, id=601, 469.755pt x 469.755pt>
+<justice_popularity.pdf, id=581, 469.755pt x 469.755pt>
 File: justice_popularity.pdf Graphic file (type pdf)
 
 <use justice_popularity.pdf>
-Package pdftex.def Info: justice_popularity.pdf used on input line 451.
+Package pdftex.def Info: justice_popularity.pdf used on input line 439.
 (pdftex.def)             Requested size: 426.79134pt x 426.78961pt.
 
-<justice_activity.pdf, id=602, 469.755pt x 469.755pt>
+<justice_activity.pdf, id=582, 469.755pt x 469.755pt>
 File: justice_activity.pdf Graphic file (type pdf)
 
 <use justice_activity.pdf>
-Package pdftex.def Info: justice_activity.pdf used on input line 459.
+Package pdftex.def Info: justice_activity.pdf used on input line 447.
 (pdftex.def)             Requested size: 426.79134pt x 426.78961pt.
 
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[25pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
+[28pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.464 
+l.452 
        <./justice_popularity.pdf>]
-<issuearea_activity.pdf, id=623, 433.62pt x 289.08pt>
+<issuearea_activity.pdf, id=602, 433.62pt x 289.08pt>
 File: issuearea_activity.pdf Graphic file (type pdf)
 
 <use issuearea_activity.pdf>
-Package pdftex.def Info: issuearea_activity.pdf used on input line 468.
+Package pdftex.def Info: issuearea_activity.pdf used on input line 456.
 (pdftex.def)             Requested size: 455.24408pt x 274.24654pt.
 
-<issuearea_popularity.pdf, id=625, 433.62pt x 289.08pt>
+<issuearea_popularity.pdf, id=604, 433.62pt x 289.08pt>
 File: issuearea_popularity.pdf Graphic file (type pdf)
 
 <use issuearea_popularity.pdf>
-Package pdftex.def Info: issuearea_popularity.pdf used on input line 470.
+Package pdftex.def Info: issuearea_popularity.pdf used on input line 458.
 (pdftex.def)             Requested size: 455.24408pt x 274.24654pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 467--472
+Overfull \hbox (12.0pt too wide) in paragraph at lines 455--460
 [][]
  []
 
 
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[26pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
- has been already used, duplicate ignored
+[29pdfTeX warning (ext4): destination with the same identifier (name{figure.10}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.474 
+l.462 
        <./justice_activity.pdf>]
-<heatplot_issue_area.pdf, id=646, 433.62pt x 289.08pt>
+<heatplot_issue_area.pdf, id=625, 433.62pt x 289.08pt>
 File: heatplot_issue_area.pdf Graphic file (type pdf)
 
 <use heatplot_issue_area.pdf>
-Package pdftex.def Info: heatplot_issue_area.pdf used on input line 477.
+Package pdftex.def Info: heatplot_issue_area.pdf used on input line 465.
 (pdftex.def)             Requested size: 426.79134pt x 284.54036pt.
 
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[27pdfTeX warning (ext4): destination with the same identifier (name{figure.10}
+[30pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.482 
+l.470 
        <./issuearea_activity.pdf> <./issuearea_popularity.pdf>]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[28pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
+[31pdfTeX warning (ext4): destination with the same identifier (name{figure.12}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.489 
-       <./heatplot_issue_area.pdf>]
+l.475 W
+       e recognize several limitations of the current analysis, which should...
+ <./heatplot_issue_area.pdf>]
 
-LaTeX Warning: Float too large for page by 21.86545pt on input line 560.
-
-
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+LaTeX Warning: Float too large for page by 21.86545pt on input line 548.
 
 
-[29]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[30pdfTeX warning (ext4): destination with the same identifier (name{table.6}) 
+[32]
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
+
+
+[33pdfTeX warning (ext4): destination with the same identifier (name{table.6}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.561 \newpage
+l.549 \newpage
               ] (./paper.bbl
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[31]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[32]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[33]
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
-
-
-[34])
-Overfull \vbox (1.39674pt too high) has occurred while \output is active []
+[34]
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
 [35]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 567.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 567.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 177.
+
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
+
+
+[36]
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
+
+
+[37])
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
+
+
+[38]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 555.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 555.
  (./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 567.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 567.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 555.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 555.
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 0AD7F3DC7AE93889C73057E04B428412;629.
+(rerunfilecheck)             Checksum: E088DB96C4B071E9B0C34A364C8D2B47;689.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 567.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 555.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 25457 strings out of 492995
- 447607 string characters out of 6132704
- 678186 words of memory out of 5000000
- 28334 multiletter control sequences out of 15000+600000
- 137727 words of font info for 106 fonts, out of 8000000 for 9000
+ 25581 strings out of 492995
+ 448597 string characters out of 6132704
+ 679796 words of memory out of 5000000
+ 28437 multiletter control sequences out of 15000+600000
+ 145414 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,14n,60p,8843b,10811s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,14n,60p,8843b,10784s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced bu
 t does not exist, replaced by a fixed one
 
@@ -2166,8 +2206,9 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/te
 xlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017
 /texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2017/texmf-dist/fo
-nts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dv
-ips/lm/lm-mathit.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/
+nts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dv
+ips/lm/lm-mathex.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmib10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/
 lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/
@@ -2183,11 +2224,11 @@ type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pu
 blic/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lm
 sy6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/te
-xlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (35 pages, 1863853 bytes).
+xlive/2017/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on paper.pdf (38 pages, 1881660 bytes).
 PDF statistics:
- 828 PDF objects out of 1000 (max. 8388607)
- 684 compressed objects within 7 object streams
- 122 named destinations out of 1000 (max. 500000)
- 12610 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 813 PDF objects out of 1000 (max. 8388607)
+ 665 compressed objects within 7 object streams
+ 117 named destinations out of 1000 (max. 500000)
+ 12618 words of extra memory for PDF output out of 14400 (max. 10000000)
 

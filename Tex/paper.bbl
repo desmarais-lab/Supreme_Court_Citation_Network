@@ -28,14 +28,6 @@ Black, Ryan~C \harvardand\ James~F Spriggs. 2013.
 \newblock ``The Citation and Depreciation of US Supreme Court Precedent.'' {\em
   Journal of Empirical Legal Studies} 10(2):325--358.
 
-\harvarditem[Block et~al.]{Block, Koskinen, Hollway, Steglich \harvardand\
-  Stadtfeld}{2018}{block2018change}
-Block, Per, Johan Koskinen, James Hollway, Christian Steglich \harvardand\
-  Christoph Stadtfeld. 2018.
-\newblock ``Change we can believe in: Comparing longitudinal network models on
-  consistency, interpretability and predictive power.'' {\em Social Networks}
-  52:180--191.
-
 \harvarditem[Bommarito~II, Katz \harvardand\ Zelner]{Bommarito~II, Katz
   \harvardand\ Zelner}{2009}{bommarito2009law}
 Bommarito~II, Michael~J, Daniel Katz \harvardand\ Jon Zelner. 2009.
@@ -49,10 +41,6 @@ Caldeira, Gregory~A. 1988.
 \newblock ``Legal precedent: Structures of communication between state supreme
   courts.'' {\em Social networks} 10(1):29--55.
 
-\harvarditem{Carstens}{2016}{carstens2016topology}
-Carstens, J. 2016.
-\newblock ``Topology of complex networks: models and analysis.''.
-
 \harvarditem{Clark \harvardand\ Caro}{2013}{clark2013multimember}
 Clark, Jennifer~Hayes \harvardand\ Veronica Caro. 2013.
 \newblock ``Multimember districts and the substantive representation of women:
@@ -63,11 +51,6 @@ Clark, Jennifer~Hayes \harvardand\ Veronica Caro. 2013.
 Clark, Tom~S \harvardand\ Benjamin Lauderdale. 2010.
 \newblock ``Locating Supreme Court opinions in doctrine space.'' {\em American
   Journal of Political Science} 54(4):871--890.
-
-\harvarditem{Cranmer \harvardand\ Desmarais}{2010}{cranmer2010inferential}
-Cranmer, Skyler~J \harvardand\ Bruce~A Desmarais. 2010.
-\newblock ``Inferential network analysis with exponential random graph
-  models.'' {\em Political Analysis} 19(1):66--86.
 
 \harvarditem{Cranmer \harvardand\ Desmarais}{2016}{cranmer2016critique}
 Cranmer, Skyler~J \harvardand\ Bruce~A Desmarais. 2016.
@@ -113,11 +96,6 @@ Desmarais, Bruce~A \harvardand\ Skyler~J Cranmer. 2017.
 \newblock Statistical Inference in Political Networks Research.  In {\em The
   Oxford Handbook of Political Networks}.
 
-\harvarditem{Eom \harvardand\ Fortunato}{2011}{eom2011characterizing}
-Eom, Young-Ho \harvardand\ Santo Fortunato. 2011.
-\newblock ``Characterizing and modeling citation dynamics.'' {\em PloS one}
-  6(9):e24926.
-
 \harvarditem{Fowler \harvardand\ Jeon}{2008}{fowler2008authority}
 Fowler, James~H \harvardand\ Sangick Jeon. 2008.
 \newblock ``The authority of Supreme Court precedent.'' {\em Social networks}
@@ -149,16 +127,6 @@ Graif, Corina, Alina Lungeanu \harvardand\ Alyssa~M Yetter. 2017.
 \newblock ``Neighborhood isolation in Chicago: Violent crime effects on
   structural isolation and homophily in inter-neighborhood commuting
   networks.'' {\em Social Networks} .
-
-\harvarditem{Hajra \harvardand\ Sen}{2005}{hajra2005aging}
-Hajra, Kamalika~Basu \harvardand\ Parongama Sen. 2005.
-\newblock ``Aging in citation networks.'' {\em Physica A: Statistical Mechanics
-  and its Applications} 346(1):44--48.
-
-\harvarditem{Hajra \harvardand\ Sen}{2006}{hajra2006modelling}
-Hajra, Kamalika~Basu \harvardand\ Parongama Sen. 2006.
-\newblock ``Modelling aging characteristics in citation networks.'' {\em
-  Physica A: Statistical Mechanics and its Applications} 368(2):575--582.
 
 \harvarditem{Hansford \harvardand\ Spriggs}{2006}{hansford2006politics}
 Hansford, Thomas~G \harvardand\ James~F Spriggs. 2006.
@@ -197,30 +165,24 @@ Jensen, David~D \harvardand\ Paul~R Cohen. 2000.
 \newblock ``Multiple comparisons in induction algorithms.'' {\em Machine
   Learning} 38(3):309--338.
 
-\harvarditem[Jeong, N{\'e}da \harvardand\ Barab{\'a}si]{Jeong, N{\'e}da
-  \harvardand\ Barab{\'a}si}{2003}{jeong2003measuring}
-Jeong, Hawoong, Zoltan N{\'e}da \harvardand\ Albert-L{\'a}szl{\'o}
-  Barab{\'a}si. 2003.
-\newblock ``Measuring preferential attachment in evolving networks.'' {\em EPL
-  (Europhysics Letters)} 61(4):567.
-
-\harvarditem{Karrer \harvardand\ Newman}{2009}{karrer2009random}
-Karrer, Brian \harvardand\ Mark~EJ Newman. 2009.
-\newblock ``Random graph models for directed acyclic networks.'' {\em Physical
-  Review E} 80(4):046110.
-
 \harvarditem{Knight \harvardand\ Epstein}{1996}{knight1996norm}
 Knight, Jack \harvardand\ Lee Epstein. 1996.
 \newblock ``The norm of stare decisis.'' {\em American Journal of Political
   Science} pp.~1018--1035.
 
-\harvarditem[Leicht et~al.]{Leicht, Clarkson, Shedden \harvardand\
-  Newman}{2007}{leicht2007large}
-Leicht, Elizabeth~A, Gavin Clarkson, Kerby Shedden \harvardand\ Mark~EJ Newman.
-  2007.
-\newblock ``Large-scale structure of time evolving citation networks.'' {\em
-  The European Physical Journal B-Condensed Matter and Complex Systems}
-  59(1):75--83.
+\harvarditem{Krivitsky \harvardand\ Handcock}{2017}{tergm}
+Krivitsky, Pavel~N. \harvardand\ Mark~S. Handcock. 2017.
+\newblock {\em tergm: Fit, Simulate and Diagnose Models for Network Evolution
+  Based on Exponential-Family Random Graph Models}.
+\newblock The Statnet Project (\url{http://www.statnet.org}).
+\newblock R package version 3.4.1.
+\newline\harvardurl{https://CRAN.R-project.org/package=tergm}
+
+\harvarditem[Leifeld, Cranmer \harvardand\ Desmarais]{Leifeld, Cranmer
+  \harvardand\ Desmarais}{2017}{leifeld2017temporal}
+Leifeld, Philip, Skyler~J Cranmer \harvardand\ Bruce~A Desmarais. 2017.
+\newblock ``Temporal exponential random graph models with btergm: Estimation
+  and bootstrap confidence intervals.'' {\em Journal of Statistical Software} .
 
 \harvarditem{Lissner \harvardand\ Carver}{2010}{CourtListener}
 Lissner, Michael \harvardand\ Brian~W. Carver. 2010.
@@ -251,6 +213,12 @@ Martin, Andrew~D \harvardand\ Kevin~M Quinn. 2002.
 \newblock ``Dynamic ideal point estimation via Markov chain Monte Carlo for the
   US Supreme Court, 1953--1999.'' {\em Political Analysis} 10(2):134--153.
 
+\harvarditem{Masket \harvardand\ Shor}{2015}{masket2015polarization}
+Masket, Seth \harvardand\ Boris Shor. 2015.
+\newblock ``Polarization without parties: Term limits and legislative
+  partisanship in Nebraska?s Unicameral Legislature.'' {\em State Politics \&
+  Policy Quarterly} 15(1):67--90.
+
 \harvarditem{Pelc}{2014}{pelc2014politics}
 Pelc, Krzysztof~J. 2014.
 \newblock ``The politics of precedent in international law: A social network
@@ -266,11 +234,6 @@ Schmid, Christian~S \harvardand\ Bruce~A Desmarais. 2017.
 \newblock ``Exponential Random Graph Models with Big Networks: Maximum
   Pseudolikelihood Estimation and the Parametric Bootstrap.'' {\em arXiv
   preprint arXiv:1708.02598} .
-
-\harvarditem{Simkin \harvardand\ Roychowdhury}{2007}{simkin2007mathematical}
-Simkin, Mikhail~V \harvardand\ Vwani~P Roychowdhury. 2007.
-\newblock ``A mathematical theory of citing.'' {\em Journal of the Association
-  for Information Science and Technology} 58(11):1661--1673.
 
 \harvarditem[Spaeth et~al.]{Spaeth, Epstein, Ruger, Whittington, Segal
   \harvardand\ Martin}{2014}{spaeth2014supreme}
@@ -290,25 +253,6 @@ Van~Duijn, Marijtje~AJ, Krista~J Gile \harvardand\ Mark~S Handcock. 2009.
 \newblock ``A framework for the comparison of maximum pseudo-likelihood and
   maximum likelihood estimation of exponential family random graph models.''
   {\em Social Networks} 31(1):52--62.
-
-\harvarditem{Vazquez}{2001}{vazquez2001statistics}
-Vazquez, Alexei. 2001.
-\newblock ``Statistics of citation networks.'' {\em arXiv preprint
-  cond-mat/0105031} .
-
-\harvarditem[Wang, Song \harvardand\ Barab{\'a}si]{Wang, Song \harvardand\
-  Barab{\'a}si}{2013}{wang2013quantifying}
-Wang, Dashun, Chaoming Song \harvardand\ Albert-L{\'a}szl{\'o} Barab{\'a}si.
-  2013.
-\newblock ``Quantifying long-term scientific impact.'' {\em Science}
-  342(6154):127--132.
-
-\harvarditem[Wang, Yu \harvardand\ Yu]{Wang, Yu \harvardand\
-  Yu}{2008}{wang2008measuring}
-Wang, Mingyang, Guang Yu \harvardand\ Daren Yu. 2008.
-\newblock ``Measuring the preferential attachment mechanism in citation
-  networks.'' {\em Physica A: Statistical Mechanics and its Applications}
-  387(18):4692--4698.
 
 \harvarditem[Ward, Greenhill \harvardand\ Bakke]{Ward, Greenhill \harvardand\
   Bakke}{2010}{ward2010perils}

@@ -1,37 +1,76 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: paper.aux
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: paper.aux
 The style file: apsr.bst
 Database file #1: bib.bib
-Repeated entry---line 955 of file bib.bib
+Repeated entry---line 984 of file bib.bib
  : @article{lupu2012precedent
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 965 of file bib.bib
+Repeated entry---line 994 of file bib.bib
  : @article{lupu2013strategic
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 975 of file bib.bib
+Repeated entry---line 1004 of file bib.bib
  : @article{pelc2014politics
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 985 of file bib.bib
+Repeated entry---line 1014 of file bib.bib
  : @article{knight1996norm
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1041 of file bib.bib
+Repeated entry---line 1070 of file bib.bib
  : @article{fowler2008authority
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1051 of file bib.bib
+Repeated entry---line 1080 of file bib.bib
  : @article{fowler2007network
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1078 of file bib.bib
- : @article{karrer2009random
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1652 of file bib.bib
+Repeated entry---line 1681 of file bib.bib
  : @article{lupu2012precedent
  :                           ,
 I'm skipping whatever remains of this entry
 Warning--empty publisher in desmaraisstatistical
-(There were 8 error messages)
+You've used 45 entries,
+            2874 wiz_defined-function locations,
+            902 strings with 12623 characters,
+and the built_in function-call counts, 213433 in all, are:
+= -- 35187
+> -- 2598
+< -- 0
++ -- 16694
+- -- 907
+* -- 18394
+:= -- 42441
+add.period$ -- 183
+call.type$ -- 45
+change.case$ -- 585
+chr.to.int$ -- 45
+cite$ -- 46
+duplicate$ -- 706
+empty$ -- 1555
+format.name$ -- 929
+if$ -- 38432
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 45
+newline$ -- 192
+num.names$ -- 540
+pop$ -- 175
+preamble$ -- 1
+purify$ -- 675
+quote$ -- 0
+skip$ -- 615
+stack$ -- 0
+substring$ -- 49804
+swap$ -- 111
+text.length$ -- 630
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 176
+warning$ -- 1
+while$ -- 1096
+width$ -- 0
+write$ -- 620
+(There were 7 error messages)
