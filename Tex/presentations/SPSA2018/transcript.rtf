@@ -1,0 +1,159 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww11700\viewh10760\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Slide 1: \
+\
+Thanks for coming everyone, and to Rachael and collaborators for organizing the conference within a conference. \
+\
+Today I am presenting preliminary work on statistical network modeling of citations between US Supreme Court cases. My collaborators are Christian Schmid---a stats PhD student at Penn State, Ted Chen---one of my advisees in the political science department at Penn State, and David Hunter---professor of stats at Penn State. \
+\
+Slide 2:\
+\
+There is an ongoing thread of debate in the political science literature, between the legal and attitudinal model, regarding the degree to which precedents influence decision making on the US Supreme Court.\
+\
+Most research concludes that, despite ideological bias in justices' decisions, precedents do exercise influence. This is a graph from a relatively recent APSR article in which Bailey and Maltzman use bridge cases between the US Congress and the Court to identify the influence of precedent on justices' decisions. For each justice, this plot gives the estimates of the probability of voting conservative in the presence of a conservative and liberal precedent. Most justices are considerably more likely to vote conservative if there is a conservative precedent. \
+\
+Since the use of precedent manifests through citations, we must study citations to understand the factors that shape the status of precedents, and their use by the Court.\
+\
+Slide 3: \
+\
+Most research that develops explanation of the citations of cases does so at the case level---either how many times a case is cited within a fixed time period or when a case is cited. This approach aggregates over the citing-cited pair, which raises two limitations.\
+\
+First, studying citations at the case level makes it difficult or impossible to test dyadic processes (e.g., ideological selection). \
+\
+Second, citations may arise according to complex dependence processes, and model estimates are biased if these are not accounted for.\
+\
+We propose a network-analytic approach to modeling citations at the dyadic level.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 Slide 4: \
+\
+Our core contribution is to introduce the broad concept and specific examples of complex dependence in citation formation. We'll start with a counterintuitive example---reciprocity.\
+\
+If a network is reciprocal, it means that the likelihood that case i cites case j increases if case j cites case i. \
+\
+We don't normally think of citations as reciprocal, but when opinions are written in simultaneously, during the same term, it is possible for them to cite each other mutually. These two cases were decided during the 1985, and both address the issue of age discrimination in the context of mandatory retirement policies. These opinions cite each other, as they address highly related legal rules. \
+\
+Slide 5: \
+\
+Another dependence pattern for which we test is transitivity.\
+\
+Transitivity is colloquially known as "a friend of a friend is a friend", and characterizes networks in which i is more likely to cite j if there are third partners, k, to which both i and j are tied. \
+\
+In the example depicted here, Seminole cites Pennsylvania as a primary precedent, but also discusses how Pennsylvania uses Parden in establishing its legal reasoning. This happens quite commonly in Supreme Court opinions.\
+\
+Slide 6:\
+\
+We also consider patterns of popularity and activity. \
+\
+Popularity, also referred to as preferential attachment, is a dynamic in which cases become more likely to be cited simply because they have been cited more in the past. We expect this to characterize Supreme Court opinions, as cases grow in notoriety as landmark rulings. \
+\
+Citations to Baker v. Carr, a landmark voting rights decision, are depicted here. \
+\
+Activity refers to the dynamic whereby citations sent beget citations sent. For each core legal rule followed, the court must often discuss other cases/precedents/rules that it does not follow.  This means that as a case adds one citation, it is more likely to add more citaitons.\
+\
+Slide 7: \
+\
+In this model the network evolves by adding a block of citations (C-t) at each time point. \
+\
+The main innovation in the c-TERGM regards how the model reflects the data structure. We give a simple example of this data structure here.\
+\
+The y-axis gives the id of the citing case. The x-axis gives the id of the cited case. Shaded squares represent citations. Each time period is represented by a different shading color. \
+\
+In this example, there are three time periods, each with three cases added. These present an example for time period 3. \
+\
+Based on the temporal structure of the citation network, we cannot observe citations in the large white blocks. \
+\
+C-t is represented by the rows created in time period 3. C-less-than-t is given by all of the rows established before time 3. C less-than-or-equal-to 3 is given by the whole matrix.\
+\
+The c-tergm is a model that governs the addition of increasingly long blocks of rows to an adjacency matrix with this structure. \
+\
+Slide 8: \
+\
+Our data for this paper include around 8,000 cases covering the 1937--2001 terms. Data are compiled from James Fowler's SC citation data, the Supreme Court Database, and Martin-Quinn scores.\
+\
+Slide 9: \
+\
+The network features we include in the model are.\
+\
+Ideological distance---the absolute distance between cases i and j in terms of martin-quinn scores.\
+\
+Ideological breadth of the cited case---the absolute distance between the maximum and minimum MQ scores for justices who voted in support of case j.\
+\
+An indicator of same issue---1/0 are cases i and j on the same legal issue.\
+\
+The size of the majority---the number of justices voting to support the decision in case j.\
+\
+Issue area dummies for sending and receiving cases.\
+\
+Dependence effects include:\
+\
+The number of mutual dyads, which models reciprocity\
+\
+The number of transitive ties, which models transitivity\
+\
+The number of in-two-stars, which models popularity\
+\
+The number of out-two-stars, which models activity.\
+\
+Slide 10:\
+\
+In terms of dependence effects\
+\
+We find large, positive, and stable effects of both reciprocity and transitivity. A tie is 5--10 times more likely to be formed if it reciprocates another tie or could form a transitive triangle.\
+\
+Activity and popularity effects are generally positive, but trending downward and more modest. The probability of a citation from i to j increases by 20-30% with each tie sent by i or received by j. \
+\
+Slide 11: \
+\
+The exogenous covariate effects exhibit interesting trends. \
+\
+Three of the four appear to switch signs over the time series. In the end of the series, MQ difference, ideological breadth, and majority size have effects in the expected directions. \
+\
+Same issue has a consistently positive and very substantively large effect.\
+\
+Slide 12: \
+\
+Our contribution rests on the improvement in modeling citations from incorporating complex dependence structures. We evaluate this contribution through a predictive experiment. \
+\
+In this experiment we consider two models---the full model presented above, and a model that excludes the four dependence terms---reciprocity, transitivity, popularity and activity.\
+\
+We randomly split the data into 80% training and 20% test sets. Estimate each model with the training data. Predict test data with estimated models. Evaluate ability to predict the test data. \
+\
+We evaluate the predictions with three common measures---precision, the proportion of predicted citations that are actually citations; recall, the proportion of citations that are predicted to be citations; F1 score, the harmonic mean of precision and recall. Each of these is bound between 0 and 1 with higher values representing better predictive performance. \
+\
+We find that the full model performs substantially better. This represents concrete evidence of model improvement through adding dependence terms.\
+\
+Slide 13: \
+\
+The key takeway points are that (1) citations are characterized by strong tendencies towards reciprocity and transitivity, (2) dependence effects improve models of citations, and (3) the c-TERGM represents a comprehensive modeling approach that other researchers can draw upon to model citations. \
+\
+We should note limitations. Specifically, we do not acount for the signs (positive negative) of the citations. Second, our data stops in 2001, which means we miss recent history of the court. Third, the model consideres case emergence exogenous, which is probably an runrealistic assumption since cases are more likely to emerge in domains in which there is no established precedent.\
+\
+\
+\
+\
+\
+\
+\
+Slide 7:\
+\
+I now transition to presenting the statistical model that we develop for testing---the citation temporal exponential random graph model. \
+\
+In this model the network evolves by adding a block of citations (C-t) at each time point. The probability of observing the block of citations is given by this formula. The components include\
+\
+h of C less than equal to t, meaning citations up to time t. These are the features used to model citations, then include exogenous covariates and dependence effects. \
+\
+Theta---the parameters or coeficients in the model. A positive coefficient indicates that the corresponding covariate or dependence structure increases the likelihood of a tie.\
+\
+The positive weight, which represents how the coefficients and parameters are combined.\
+\
+The normalizing constant, which makes the c-TERGM a proper probability model.\
+\
+\
+\
+\
+}
