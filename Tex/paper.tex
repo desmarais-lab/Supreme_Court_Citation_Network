@@ -91,7 +91,7 @@
 \maketitle
 \begin{abstract}
 \noindent The significance and influence of US Supreme Court majority opinions derive in large part to opinions' roles as precedents for future opinions. A growing body of literature seeks to understand what drives the use of opinions as precedents through the study of Supreme Court case citation patterns. We raise two limitations of existing work on Supreme Court citations. First, dyadic citations are typically aggregated to the case level before they are analyzed. Second, citations are treated as if they arise independent of one another. We make the case that studying Supreme Court citations as a dynamic citation network overcomes both of these limitations. We present a methodology for studying citations between US Supreme Court opinions at the dyadic level, as a network. This methodology---the citation temporal exponential random graph model---enables researchers to account for the effects of case characteristics and complex forms of network dependence in citation formation. We apply this methodology to a network that includes all Supreme Court cases decided between 1937 and 2015. We find evidence for dependence processes, including reciprocity, transitivity, popularity, and activity. The dependence effects that we identify are as substantively and statistically significant as the effects of the exogenous covariates we include in the model. The summary result from this analysis is that theoretical models of Supreme Court citation formation should consider both the effects of case characteristics and the structure of past citations.\footnote{
-Prepared for presentation at the ``The Enemy of My Enemy: Judicial Politics meets Network Analysis'' conference within a conference at the 2018 Annual Conference of the Southern Political Science Association. This work was supported in part by NSF grants SES- 1558661, SES-1637089, SES-1619644, and CISE-1320219.}
+Prepared for presentation at the ``The Enemy of My Enemy: Judicial Politics meets Network Analysis'' conference within a conference at the 2018 Annual Conference of the Southern Political Science Association. This work was supported in part by NSF grants SES- 1558661, SES-1637089, SES-1619644, and CISE-1320219. We would like to thank Rachael Hinkle and Benjamin Kassow.}
 \end{abstract}
 
 \doublespacing
@@ -209,8 +209,47 @@ The normalizing constant in Equation 1 is intractable. For example, in the simpl
 One challenge that arises with the use of MPLE is that the usual estimate of the asymptotic covariance matrix (i.e., inverting the negated Hessian of the objective function at the maximum), results in standard errors that are biased downward. This leads to a high Type-1 error rate in hypothesis testing with MPLE if conventional standard errors are used \citep{van2009framework}. A form of non-parametric cluster bootstrap results in confidence intervals with correct coverage probability with MPLE \citep{desmarais2012statistical,desmarais2010consistent}. In the case of c-TERGM, the clusters are defined by $t$---the time points in which the cases are decided, and $T$ time-specific citation matrices $C_{t}$ are re-sampled with replacement to form a non-parametric cluster bootstrap sample. Confidence intervals are defined by the quantiles in the empirical distributions of estimates that result from re-estimating the MPLE on non-parametric cluster bootstrap samples. 
 
 
+ \section{Empirical Analysis}
+Our three data sources for this study include the Supreme Court Database (SCDB) \citep{spaeth2014supreme}, Martin-Quinn scores \citep{martin2002dynamic}, and Supreme Court citation data provided by the CourtListener Free Law Project \citep{CourtListener}. In the next section we explain the variables we construct using these data sources. We limit the Supreme Court terms included in our analysis to those that are covered by all three of these data source (1937--2015)\footnote{There were 145 cases that were listed in the SCDB but could not be matched to a case in the CourtListener data. We decided to exclude these 145 cases from our analysis}. The Supreme Court citation network from $1937 - 2015$ consists of $9,945$ cases. The breakdown of the data by the Court's Chief Justice is presented in Table \ref{tab:chiefs}. The network has a total of $111,986$ citation ties.\footnote{In order to focus on citation actions that were not intended to totally invalidate an opinion \textbf{ HERE, SOURCE FOR OVERRULED, MAJORITY ONLY?}, we exclude $315$ citations that caused the cited case to be overruled. The data on overruling citation came from \textbf{CITE}. Our results are virtually unchanged if we include the overruling citations.} The in- and outdegree distributions (i.e., the distributions of the number of citations sent and received by cases, respectively), are visualized in Figure \ref{degree_dist}. The maximum indegree (i.e., number of cases citing to a case) is $230$ and the maximum outdegree (i.e., number of cases cited by a case) is $162$. The majority of cases cite to and/or are cited by twenty or fewer other cases.
 
-\section{Correlates of Legal Citations}
+\begin{table}[htp]
+\centering
+\begin{tabular}{|
+>{\columncolor[HTML]{C0C0C0}}l |l|l|l|}
+\hline
+{\color[HTML]{333333} } & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Terms} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Total Number Cases} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Cases/Term} \\ \hline
+CE Hughes*              & 1937 - 1941                                          & 628                                                               & 125.6                                                     \\ \hline
+HF Stone                & 1942 - 1946                                          & 756                                                               & 151.2                                                     \\ \hline
+FM Vinson               & 1946 - 1953                                          & 789                                                               & 98.63                                                      \\ \hline
+E Warren                & 1954 - 1969                                          & 2149                                                              & 126.41                                                     \\ \hline
+WE Burger               & 1970 - 1986                                          & 2805                                                             & 155.83                                                     \\ \hline
+W Rehnquist            & 1987 - 2005                                          & 2022                                                              & 106.42                                                      \\ \hline
+J Roberts **           & 2006 - 2015                                          & 796                                                              & 79.6                                           \\ \hline
+\end{tabular}
+\caption[caption]{For the time range of interest (1937 - 2015) this table displays the chief justices, the time range they served as chief justice, the number of cases in their time range as well as the average number of cases per year.\\\hspace{\textwidth} * CE Hughes served as chief justice from 1930 - 1941. \\\hspace{\textwidth} ** J Roberts still serves as chief justice (retrieved 4/2018).}
+\label{tab:chiefs}
+\end{table}
+
+
+The degree distributions indicate that there is a long tail to both the number of citations sent and received. These long-tailed (i.e., high kurtosis) distributions provide preliminary evidence of both popularity and activity dynamics \citep{strogatz2001exploring}. Figure \ref{fig:networkviz} displays the complete network. We see here that the densest rates of tie formation tend to be between consecutive courts (e.g., the Stone Court is much more tightly tied to the Hughes Court than the Rehnquist Court is to the Hughes Court). This pattern lends preliminary/descriptive support to the hypothesis that the rate of citations to a case decrease over time.
+
+
+\begin{figure}[htp]
+\includegraphics[scale=0.5]{degree_distribution}
+\caption{The in- and outdegree distribution of the Supreme Court Citation Network from 1937 - 2001. There are cases with an indegree >50, but they are not captured in this figure.}
+ \label{degree_dist}
+\vspace{-.25cm}
+\end{figure}
+
+\begin{figure}[htp]
+\includegraphics[scale=0.35,clip=true,trim=.5cm 0cm 0cm 2cm]{images/citations1}
+\caption{ Supreme Court Citation Network, 1937-2001. Nodes are Supreme Court cases, with size based on incoming citations. Salient cases ({\em Oxford Guide}) are in yellow. Each network layer contains cases decided under a different chief justice. Because our data is temporally bound, cases for the Hughes and Rehnquist courts are not complete. }
+ \label{fig:networkviz}
+\vspace{-.25cm}
+\end{figure}
+
+
+\subsection{Correlates of Legal Citations}
 
 Theorizing that legal citations arise through network interdependence processes represents a potential contribution to the literature. To demonstrate the value of our contribution we must also incorporate established non-network processes that have been found to affect legal citations. We incorporate these processes through the specification of $h_{covariate}$  terms to be included in the c-TERGM. 
 
@@ -261,49 +300,6 @@ I think the discussion of the random intercepts is a bit confusing early on (it 
 
 
 
- \section{Empirical Analysis}
-Our three data sources for this study include the Supreme Court Database (SCDB) \citep{spaeth2014supreme}, Martin-Quinn scores \citep{martin2002dynamic}, and Supreme Court citation data provided by the CourtListener Free Law Project \citep{CourtListener}. We limit the Supreme Court terms included in our analysis to those that are covered by all three of these data source (1937--2015)\footnote{There were 145 cases that were listed in the SCDB but could not be matched to a case in the CourtListener data. We decided to exclude these 145 cases from our model.}. The Supreme Court citation network from $1937 - 2015$ consists of $9,945$ cases and the breakdown of the data by the Court's Chief Justice is presented in Table \ref{tab:chiefs}. In order to only account for positive citations, we exclude $315$ citations that caused the cited case to be overruled. As a result, the network has a total of $111,986$ ties. The number of triangles in the network is $250,717$ and the number of mutual ties is $56$. The in- and outdegree distributions (i.e., the distributions of the number of citations sent and received by cases, respectively), are visualized in Figure \ref{degree_dist}. The maximum indegree is $230$ and the maximum outdegree is $162$.
-
-\begin{table}[htp]
-\centering
-\begin{tabular}{|
->{\columncolor[HTML]{C0C0C0}}l |l|l|l|}
-\hline
-{\color[HTML]{333333} } & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Terms} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Total Number Cases} & \cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} Cases/Term} \\ \hline
-CE Hughes*              & 1937 - 1941                                          & 628                                                               & 125.6                                                     \\ \hline
-HF Stone                & 1942 - 1946                                          & 756                                                               & 151.2                                                     \\ \hline
-FM Vinson               & 1946 - 1953                                          & 789                                                               & 98.63                                                      \\ \hline
-E Warren                & 1954 - 1969                                          & 2149                                                              & 126.41                                                     \\ \hline
-WE Burger               & 1970 - 1986                                          & 2805                                                             & 155.83                                                     \\ \hline
-W Rehnquist            & 1987 - 2005                                          & 2022                                                              & 106.42                                                      \\ \hline
-J Roberts **           & 2006 - 2015                                          & 796                                                              & 79.6                                           \\ \hline
-\end{tabular}
-\caption[caption]{For the time range of interest (1937 - 2015) this table displays the chief justices, the time range they served as chief justice, the number of cases in their time range as well as the average number of cases per year.\\\hspace{\textwidth} * CE Hughes served as chief justice from 1930 - 1941. \\\hspace{\textwidth} ** J Roberts still serves as chief justice (retrieved 4/2018).}
-\label{tab:chiefs}
-\end{table}
-
-
-The degree distributions indicate that there is a long tail to both the number of citations sent and received. These long-tailed distributions provide preliminary evidence of both popularity and activity dynamics. Figure \ref{fig:networkviz} displays the complete network. We see here that the densest rates of tie formation tend to be between consecutive courts (e.g., the Stone Court is much more tightly tied to the Hughes Court than the Rehnquist Court is to the Hughes Court). This pattern lends preliminary/descriptive support to the hypothesis that the rate of citations to a case decrease over time.
-
-
-\begin{figure}[htp]
-\includegraphics[scale=0.5]{degree_distribution}
-\caption{The in- and outdegree distribution of the Supreme Court Citation Network from 1937 - 2001. There are cases with an indegree >50, but they are not captured in this figure.}
- \label{degree_dist}
-\vspace{-.25cm}
-\end{figure}
-
-\begin{figure}[htp]
-\includegraphics[scale=0.35,clip=true,trim=.5cm 0cm 0cm 2cm]{images/citations1}
-\caption{ Supreme Court Citation Network, 1937-2001. Nodes are Supreme Court cases, with size based on incoming citations. Salient cases ({\em Oxford Guide}) are in yellow. Each network layer contains cases decided under a different chief justice. Because our data is temporally bound, cases for the Hughes and Rehnquist courts are not complete. }
- \label{fig:networkviz}
-\vspace{-.25cm}
-\end{figure}
-
-\begin{itemize}
-\item update Figure 2 to time period 1937 - 2015
-\item add data source for overruling citations
-\end{itemize}
   
   
 \subsection{Predictive Performance}
