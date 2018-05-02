@@ -177,6 +177,11 @@ Knight, Jack \harvardand\ Lee Epstein. 1996.
 \newblock ``The norm of stare decisis.'' {\em American Journal of Political
   Science} pp.~1018--1035.
 
+\harvarditem{Kosma}{1998}{kosma1998measuring}
+Kosma, Montgomery~N. 1998.
+\newblock ``Measuring the influence of Supreme Court justices.'' {\em The
+  Journal of Legal Studies} 27(2):333--372.
+
 \harvarditem{Krivitsky \harvardand\ Handcock}{2017}{tergm}
 Krivitsky, Pavel~N. \harvardand\ Mark~S. Handcock. 2017.
 \newblock {\em tergm: Fit, Simulate and Diagnose Models for Network Evolution
@@ -264,6 +269,17 @@ Spriggs, James~F \harvardand\ Thomas~G Hansford. 2001.
 Strauss, David \harvardand\ Michael Ikeda. 1990.
 \newblock ``Pseudolikelihood estimation for social networks.'' {\em Journal of
   the American Statistical Association} 85(409):204--212.
+
+\harvarditem{Strogatz}{2001}{strogatz2001exploring}
+Strogatz, Steven~H. 2001.
+\newblock ``Exploring complex networks.'' {\em nature} 410(6825):268.
+
+\harvarditem{{US. Congress. Senate}}{2016}{senate2016constitution}
+{US. Congress. Senate}. 2016.
+\newblock {\em Constitution of the United State of America: Analysis, and
+  Interpretation -- Centennial Edition}.
+\newblock 112th Cong., 2d sess. S. Doc. 112-9.
+  \url{https://www.govinfo.gov/app/details/GPO-CONAN-2017/}.
 
 \harvarditem[Van~Duijn, Gile \harvardand\ Handcock]{Van~Duijn, Gile
   \harvardand\ Handcock}{2009}{van2009framework}

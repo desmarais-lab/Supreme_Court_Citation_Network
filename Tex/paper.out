@@ -4,8 +4,10 @@
 \BOOKMARK [2][-]{subsection.3.1}{c-TERGM definition}{section.3}% 4
 \BOOKMARK [2][-]{subsection.3.2}{c-TERGM Estimation}{section.3}% 5
 \BOOKMARK [1][-]{section.4}{Empirical Analysis}{}% 6
-\BOOKMARK [2][-]{subsection.4.1}{Correlates of Legal Citations}{section.4}% 7
-\BOOKMARK [2][-]{subsection.4.2}{Predictive Performance}{section.4}% 8
-\BOOKMARK [2][-]{subsection.4.3}{c-TERGM Results}{section.4}% 9
-\BOOKMARK [1][-]{section.5}{Conclusion}{}% 10
-\BOOKMARK [1][-]{section.6}{Appendix}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{c-TERGM specification}{section.4}% 7
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Covariate terms}{subsection.4.1}% 8
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Dependence terms}{subsection.4.1}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Predictive Performance}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.3}{c-TERGM Results}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Conclusion}{}% 12
+\BOOKMARK [1][-]{section.6}{Appendix}{}% 13
