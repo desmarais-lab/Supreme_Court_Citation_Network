@@ -210,7 +210,7 @@ One challenge that arises with the use of MPLE is that the usual estimate of the
 
 
  \section{Empirical Analysis}
-Our three data sources for this study include the Supreme Court Database (SCDB) \citep{spaeth2014supreme}, Martin-Quinn scores \citep{martin2002dynamic}, and Supreme Court citation data provided by the CourtListener Free Law Project \citep{CourtListener}. In the next section we explain the variables we construct using these data sources. We limit the Supreme Court terms included in our analysis to those that are covered by all three of these data source (1937--2015)\footnote{There were 145 cases that were listed in the SCDB but could not be matched to a case in the CourtListener data. We decided to exclude these 145 cases from our analysis}. The Supreme Court citation network from $1937 - 2015$ consists of $9,945$ cases. The breakdown of the data by the Court's Chief Justice is presented in Table \ref{tab:chiefs}. The network has a total of $111,986$ citation ties.\footnote{In order to focus on citation actions that were not intended to totally invalidate an opinion, we exclude $315$ citations that caused the cited case to be overruled. The data on overruling citation came from \citet{senate2016constitution}. Our results are virtually unchanged if we include the overruling citations.} The in- and outdegree distributions (i.e., the distributions of the number of citations sent and received by cases, respectively), are visualized in Figure \ref{degree_dist}. The maximum indegree (i.e., number of cases citing to a case) is $230$ and the maximum outdegree (i.e., number of cases cited by a case) is $162$. The majority of cases cite to and/or are cited by twenty or fewer other cases.
+Our three data sources for this study include the Supreme Court Database (SCDB) \citep{spaeth2014supreme}, Martin-Quinn scores \citep{martin2002dynamic}, and Supreme Court citation data provided by the CourtListener Free Law Project \citep{CourtListener}. In the next section we explain the variables we construct using these data sources. We limit the Supreme Court terms included in our analysis to those that are covered by all three of these data source (1937--2015)\footnote{There were 145 cases that were listed in the SCDB but could not be matched to a case in the CourtListener data. We decided to exclude these 145 cases from our analysis. Additionally, since the most commonly used data on Supreme Court citations in political science come from \citet{fowler2007network}, we compared the Fowler data to the CourtListener data in the time interval that they overlap (1937--2001). We found considerable agreement---over 95\% of the citations recorded in the CourtListener dataset were also in the Fowler dataset, and over 96\% of the citations recorded in the Fowler data were also in the CourtListener dataset.}. The Supreme Court citation network from $1937 - 2015$ consists of $9,945$ cases. The breakdown of the data by the Court's Chief Justice is presented in Table \ref{tab:chiefs}. The network has a total of $111,986$ citation ties.\footnote{In order to focus on citation actions that were not intended to totally invalidate an opinion, we exclude $315$ citations that caused the cited case to be overruled. The data on overruling citation came from \citet{senate2016constitution}. Our results are virtually unchanged if we include the overruling citations.} The in- and outdegree distributions (i.e., the distributions of the number of citations sent and received by cases, respectively), are visualized in Figure \ref{degree_dist}. The maximum indegree (i.e., number of cases citing to a case) is $230$ and the maximum outdegree (i.e., number of cases cited by a case) is $162$. The majority of cases cite to and/or are cited by twenty or fewer other cases.
 
 \begin{table}[htp]
 \centering
@@ -290,22 +290,14 @@ The final control variable we include in the model is one in which $X_{ij} = 1$ 
 
 \subsubsection{Dependence terms}
 
-%\textit{Comment from Benjamin Kassow: In section 5, I think the discussion is mostly good, but could be organized a bit differently. 
-%I think the discussion of the random intercepts is a bit confusing early on (it is explained more effectively later). }
-%%%% DONT DELETE THESE COMMENTS, INCLUDE IDEAS FOR ADDITIONAL COVARIATES %%%%%
+We include a dependence term to account for each of the dynamics that we hypothesize will characterize the Supreme Court Citation Network---transitivity, reciprocity, popularity, and activity. We expect that the coefficients associated with each of these dependence effects will be positive. The dependence effect included in the model to account for transitivity is the count of the number of triangles in $C_{\leq t}$. The log odds interpretation of the triangle statistic is that  $\theta$ gives the change in the log odds of case $i$ citing case $j$ associated  with each additional triangle that would be created by case $i$ citing case $j$ (e.g., if opinions in cases $i$ and $j$ cite one common case $k$, the log odds that case $i$ cites case $j$ change by theta relative to the configuration in which cases $i$ and $j$ do not cite any of the same cases).
 
-%\citet{cross2010determinants} find that the number of citations to Supreme Court opinions over a ten year period of the Rehnquist Court. (case level).  Found case issue area, opinion ideology, opinion author, vote margin was not significant. Negative citations decreased future positive citations.
-
-%\item \citet{black2013citation} Study the number of citations to a case over time, in order to understand the lifecycle of citation rates.  Show that the rate of citations to a case goes down very quickly. THE EFFECT OF AN INDEPENDENT VARIABLE ON A PRECEDENT IS DEPENDENT UPON THE AGE OF THE CASE.
-
-% \item \citet{spriggs2001explaining} Find that cases are more likely to be overruled when the Court is ideologically distant from the median justice in the majority coalition that decided the case, when the legal issues under consideration are complex, whn the cases ha been negatively treated previously, when there were many concurring opinions, and less likely to be overruled if it was a unanimous coalition.
-
-%\item \citet{lupu2013strategic} The hub score, which is a measure of the degree to which a case cites other important cases increases with salience [GET THE AMICUS BRIEFS, NYT COUNTS]. Lower if stautory cases. Increases with ideological variance of the majority coalition.  Increases with the number of concurring opinions. 
+The statistic included in the model for reciprocity counts the number of mutual dyads (i.e., dyads in which cases $i$ cites case $j$, and case $j$ cites case $i$) in $C_{\leq t}$. In practice, this is the number of mutual dyads in $C_{\leq t}$, since mutual dyads must emerge among opinions that were written in the same term.The log odds interpretation of the reciprocity term is that $\theta$ gives the change in the log odds of a tie 
 
 
 
 
-  
+  \subsubsection{Dynamics in effects}
   
 \subsection{Predictive Performance}
 
@@ -837,6 +829,18 @@ Networks researchers have developed approaches to understanding the mechanisms t
 Another approach to understanding the generative process of citation networks is to examine the existence of network motifs, or subnetwork structures, that can be interpreted as measuring different generative mechanisms. For example, a triangle in which case A cites both cases B and C, and case B cites case C, is a type of motif---a triadic motif. If researchers find that a triangle is a highly prevalent motif in a network, that finding would suggest that triad closure is a prevalent process by which the network is generated. The analysis of network motifs is done by comparing the prevalence of the motifs in the observed network to the prevalence of the motifs in networks drawn from a relevant null distribution. This null model must also be characterized by features of citation networks discussed earlier, meaning that it must be a directed acyclic graph with unweighted arcs \citep{carstens2016topology}. \citet{karrer2009random} proposes the use of null models based on fixed-degree sequences. In these models, the nodes in the networks (i.e., opinions) have the same, or close to the same, numbers of ties. Conditional on the number of ties accrued by each node, ties are randomly re-wired such that there is no systematic pattern regarding the nodes to which any node connects. 
 
 From this brief review we see two broad components of past methods for analyzing citation networks. First, node features, age in particular, are used to model the rate at which a document is cited. Second, theoretical models are used to account for prevalent graph structures. In the next section we describe a methodology that can be used to integrate case attributes and graph structures/motifs into a comprehensive model of US Supreme Court citations. 	
+
+%\textit{Comment from Benjamin Kassow: In section 5, I think the discussion is mostly good, but could be organized a bit differently. 
+%I think the discussion of the random intercepts is a bit confusing early on (it is explained more effectively later). }
+%%%% DONT DELETE THESE COMMENTS, INCLUDE IDEAS FOR ADDITIONAL COVARIATES %%%%%
+
+%\citet{cross2010determinants} find that the number of citations to Supreme Court opinions over a ten year period of the Rehnquist Court. (case level).  Found case issue area, opinion ideology, opinion author, vote margin was not significant. Negative citations decreased future positive citations.
+
+%\item \citet{black2013citation} Study the number of citations to a case over time, in order to understand the lifecycle of citation rates.  Show that the rate of citations to a case goes down very quickly. THE EFFECT OF AN INDEPENDENT VARIABLE ON A PRECEDENT IS DEPENDENT UPON THE AGE OF THE CASE.
+
+% \item \citet{spriggs2001explaining} Find that cases are more likely to be overruled when the Court is ideologically distant from the median justice in the majority coalition that decided the case, when the legal issues under consideration are complex, whn the cases ha been negatively treated previously, when there were many concurring opinions, and less likely to be overruled if it was a unanimous coalition.
+
+%\item \citet{lupu2013strategic} The hub score, which is a measure of the degree to which a case cites other important cases increases with salience [GET THE AMICUS BRIEFS, NYT COUNTS]. Lower if stautory cases. Increases with ideological variance of the majority coalition.  Increases with the number of concurring opinions. 
 
 
 
