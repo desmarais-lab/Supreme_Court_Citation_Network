@@ -1,0 +1,386 @@
+#PBS -l nodes=1:ppn=10
+#PBS -l walltime=48:00:00
+#PBS -m abe
+#PBS -M schmid@psu.edu
+#PBS -l mem=256GB
+#PBS -j oe
+
+
+cd /storage/work/cxs5700/SCC_paper/MPLE_cl
+
+echo " "
+echo " "
+echo "Job started on `hostname` at `date`"
+
+module load R#/3.4.0
+
+R --vanilla <<STOP > degeneracy_1960.out
+
+# get data
+load(file="ERCM_MPLE_cl.RData")
+
+library(statnet)
+library(doParallel)
+library(foreach)
+ 
+registerDoParallel(cores=10)
+
+
+
+# id = time.periods
+# number of time periods
+time.periods <- 576
+
+cases.total<- scc1[,55] # id column
+year.total <- scc1[,11]-1936 #-1936 => the first year 1937 is 1, 1938 is 2 aso, term column 
+
+####################################################################
+## calculation of MPLE
+######################################################################
+
+# number of cases
+cases <- max(which(time.periods==cases.total)) # last case in time period (id): time.periods
+
+# simple assignment of time periods to cases
+case.time <- cases.total[1:cases]
+years <- year.total[1:cases] 
+
+# going to need a sender time matrix covariate
+sender.time <- matrix(case.time,length(case.time),length(case.time),byrow=F)
+# a receiver time covariate
+receiver.time <- matrix(case.time,length(case.time),length(case.time),byrow=T)
+# and a unique dyad id to prevent ergmMPLE from using weights
+dyad.id <- matrix(runif(length(case.time)^2),length(case.time),length(case.time))
+# year
+year <- matrix(years, length(case.time),length(case.time),byrow=F)
+
+year.diff.square<- year.diff.matrix^2
+
+
+
+t=time.periods
+# extract the network up to time t
+net.t <- network(adjacency.matrix[which(case.time <= t),which(case.time <= t)])
+# subset MQ matrix
+mq.t <- mq.matrix[which(case.time <= t),which(case.time <= t)]
+# subset same issue matrix
+same.issue.area.t <- same.issue.area[which(case.time <= t),which(case.time <= t)]
+# subset year diff matrix
+year.diff.t <- year.diff.matrix[which(case.time <= t),which(case.time <= t)]
+# subset year diff matrix square
+year.diff.square.t <- year.diff.square[which(case.time <= t),which(case.time <= t)]
+# subset sender time matrix
+sender.time.t <- sender.time[which(case.time <= t),which(case.time <= t)]
+# subset receiver time matrix
+receiver.time.t <- receiver.time[which(case.time <= t),which(case.time <= t)]
+# subset unique dyad id matrix
+dyad.id.t <- dyad.id[which(case.time <= t),which(case.time <= t)]
+# subset year matrix
+year.t<- year[which(case.time <= t),which(case.time <= t)]
+# subset same opinion writer matrix
+same.opinion.writer.t<- same.opinion.writer[which(case.time <= t),which(case.time <= t)]
+
+#### set vertex attributes
+# same issue area
+net.t <- set.vertex.attribute(net.t,"SameIssueArea", scc1[which(case.time <= t),41])
+# abs diff of MQ score
+net.t <- set.vertex.attribute(net.t,"AbsDiffMQscores", scc1[which(case.time <= t),65])
+# number justices that voted for the case
+net.t <- set.vertex.attribute(net.t,"NumberJusticesPro", scc1[which(case.time <= t),52])
+# overruled covariate
+net.t <- set.vertex.attribute(net.t,"Overruled", Overruled.matrix[which(case.time <= t),t])
+# sender time
+net.t <- set.vertex.attribute(net.t,"sender.time", sender.time.t[,1])
+# Majority Opinion Writer
+net.t <- set.vertex.attribute(net.t,"MajOpWriter", scc1[which(case.time <= t),49])
+
+
+times.t <- case.time[which(case.time <= t)]
+
+# adjacency matrix values are fixed if (1) sender case time < t or sender time < receiver time
+# create an adjacency matrix where edge from i to j indicates that element i j of the network
+# is not fixed
+not.fixed <- matrix(0,length(times.t),length(times.t))
+# looping through all cases, may be able to speed up this step
+for(i in 1:length(times.t)){
+  for(j in 1:length(times.t)){
+    # element is not fixed if sender time > receiver time and sender time equals t
+    not.fixed[i,j] <- (times.t[i] >= times.t[j])
+  }
+}
+
+# estimate
+mple <- ergm(net.t ~ edges+mutual+gwesp(0, fixed=TRUE)+ idegree(0)+ odegree(0)+edgecov(mq.t)+edgecov(same.issue.area.t)+edgecov(year.diff.t)+ edgecov(year.diff.square.t )+edgecov(sender.time.t)+edgecov(receiver.time.t)+
+               edgecov(dyad.id.t)+ edgecov(year.t) +#('sender.time')+ 
+               nodeicov('AbsDiffMQscores')+ nodeicov('NumberJusticesPro')+ nodeifactor('SameIssueArea', base=1)+ #nodeofactor('SameIssueArea', base=1)+ nodeicov('Overruled')+
+               edgecov(same.opinion.writer.t),#+ nodeifactor('MajOpWriter')+ nodeofactor('MajOpWriter')+ nodemix('SameIssueArea'),
+             estimate="MPLE")
+summary(mple)
+# save observed network statistisc
+mple.obs <- summary(net.t ~ edges+mutual+gwesp(0, fixed=TRUE)+ idegree(0)+ odegree(0)+edgecov(mq.t)+edgecov(same.issue.area.t)+edgecov(year.diff.t)+ edgecov(year.diff.square.t )+edgecov(sender.time.t)+edgecov(receiver.time.t)+
+                      edgecov(dyad.id.t)+ edgecov(year.t) +#('sender.time')+ 
+                      nodeicov('AbsDiffMQscores')+ nodeicov('NumberJusticesPro')+ nodeifactor('SameIssueArea', base=1)+ #nodeofactor('SameIssueArea', base=1)+ nodeicov('Overruled')+
+                      edgecov(same.opinion.writer.t))
+coeffs <- coef(mple)
+
+###########################################################################
+### start big loop in order to simulate networks stepwise
+###########################################################################
+
+
+k=50 # condition on years 1937-1939
+
+
+# number of cases
+cases <- max(which(k==cases.total)) # last case in time period (id): time.periods
+
+# simple assignment of time periods to cases
+case.time <- cases.total[1:cases]
+years <- year.total[1:cases] 
+
+# going to need a sender time matrix covariate
+sender.time <- matrix(case.time,length(case.time),length(case.time),byrow=F)
+# a receiver time covariate
+receiver.time <- matrix(case.time,length(case.time),length(case.time),byrow=T)
+# and a unique dyad id to prevent ergmMPLE from using weights
+dyad.id <- matrix(runif(length(case.time)^2),length(case.time),length(case.time))
+# year
+year <- matrix(years, length(case.time),length(case.time),byrow=F)
+
+year.diff.square<- year.diff.matrix^2
+
+
+
+t=k
+# extract the network up to time t
+
+net.t <- network(adjacency.matrix[which(case.time <= t),which(case.time <= t)])
+
+# subset MQ matrix
+mq.t <- mq.matrix[which(case.time <= t),which(case.time <= t)]
+# subset same issue matrix
+same.issue.area.t <- same.issue.area[which(case.time <= t),which(case.time <= t)]
+# subset year diff matrix
+year.diff.t <- year.diff.matrix[which(case.time <= t),which(case.time <= t)]
+# subset year diff matrix square
+year.diff.square.t <- year.diff.square[which(case.time <= t),which(case.time <= t)]
+# subset sender time matrix
+sender.time.t <- sender.time[which(case.time <= t),which(case.time <= t)]
+# subset receiver time matrix
+receiver.time.t <- receiver.time[which(case.time <= t),which(case.time <= t)]
+# subset unique dyad id matrix
+dyad.id.t <- dyad.id[which(case.time <= t),which(case.time <= t)]
+# subset year matrix
+year.t<- year[which(case.time <= t),which(case.time <= t)]
+# subset same opinion writer matrix
+same.opinion.writer.t<- same.opinion.writer[which(case.time <= t),which(case.time <= t)]
+
+#### set vertex attributes
+# same issue area
+net.t <- set.vertex.attribute(net.t,"SameIssueArea", scc1[which(case.time <= t),41])
+# abs diff of MQ score
+net.t <- set.vertex.attribute(net.t,"AbsDiffMQscores", scc1[which(case.time <= t),65])
+# number justices that voted for the case
+net.t <- set.vertex.attribute(net.t,"NumberJusticesPro", scc1[which(case.time <= t),52])
+# overruled covariate
+net.t <- set.vertex.attribute(net.t,"Overruled", Overruled.matrix[which(case.time <= t),t])
+# sender time
+net.t <- set.vertex.attribute(net.t,"sender.time", sender.time.t[,1])
+# Majority Opinion Writer
+net.t <- set.vertex.attribute(net.t,"MajOpWriter", scc1[which(case.time <= t),49])
+
+
+times.t <- case.time[which(case.time <= t)]
+
+# adjacency matrix values are fixed if (1) sender case time < t or sender time < receiver time
+# create an adjacency matrix where edge from i to j indicates that element i j of the network
+# is not fixed
+not.fixed <- matrix(0,length(times.t),length(times.t))
+# looping through all cases, may be able to speed up this step
+for(i in 1:length(times.t)){
+  for(j in 1:length(times.t)){
+    # element is not fixed if sender time > receiver time and sender time equals t
+    not.fixed[i,j] <- (times.t[i] >= times.t[j])*(times.t[i]==t)
+  }
+}
+
+mple.part <- ergm(net.t ~ edges+mutual+gwesp(0, fixed=TRUE)+ idegree(0)+ odegree(0)+edgecov(mq.t)+edgecov(same.issue.area.t)+edgecov(year.diff.t)+ edgecov(year.diff.square.t )+edgecov(sender.time.t)+edgecov(receiver.time.t)+
+       edgecov(dyad.id.t)+ edgecov(year.t) +#('sender.time')+ 
+       nodeicov('AbsDiffMQscores')+ nodeicov('NumberJusticesPro')+ nodeifactor('SameIssueArea', base=1)+ #nodeofactor('SameIssueArea', base=1)+ nodeicov('Overruled')+
+       edgecov(same.opinion.writer.t),#+ nodeifactor('MajOpWriter')+ nodeofactor('MajOpWriter')+ nodemix('SameIssueArea'),
+     estimate="MPLE")
+
+# simulate networks with fixallbut
+net.act.2 <- simulate(mple.part, coef=coeffs,   control=control.simulate.ergm(MCMC.interval = 10000))
+#Am<- as.matrix.network(mple.sim)
+
+
+n.sim <- 20
+
+mple.sim <- list()
+
+# start simulating n.sim networks
+coef1<-foreach(l=1:n.sim, .combine = 'list')%dopar%{
+
+  
+  print(l)
+  net.act <- net.act.2
+  
+# iteratively simulate citation networks  
+for(k in 51:time.periods){
+
+# number of cases
+cases <- max(which(k==cases.total)) # last case in time period (id): time.periods
+
+# simple assignment of time periods to cases
+case.time <- cases.total[1:cases]
+years <- year.total[1:cases] 
+
+# going to need a sender time matrix covariate
+sender.time <- matrix(case.time,length(case.time),length(case.time),byrow=F)
+# a receiver time covariate
+receiver.time <- matrix(case.time,length(case.time),length(case.time),byrow=T)
+# and a unique dyad id to prevent ergmMPLE from using weights
+dyad.id <- matrix(runif(length(case.time)^2),length(case.time),length(case.time))
+# year
+year <- matrix(years, length(case.time),length(case.time),byrow=F)
+
+year.diff.square<- year.diff.matrix^2
+
+
+
+t=k
+# extract the network up to time t
+
+net.t <- network(adjacency.matrix[which(case.time <= t),which(case.time <= t)])
+
+# basis.net.t
+net.full.AM <- adjacency.matrix[which(case.time <= t),which(case.time <= t)]
+net.act.AM <- as.matrix.network(net.act)
+
+basis.net.t <- net.full.AM
+basis.net.t[1:nrow(net.act.AM), 1:ncol(net.act.AM)]<- net.act.AM
+basis.net.t <- network(basis.net.t)
+
+
+# subset MQ matrix
+mq.t <- mq.matrix[which(case.time <= t),which(case.time <= t)]
+# subset same issue matrix
+same.issue.area.t <- same.issue.area[which(case.time <= t),which(case.time <= t)]
+# subset year diff matrix
+year.diff.t <- year.diff.matrix[which(case.time <= t),which(case.time <= t)]
+# subset year diff matrix square
+year.diff.square.t <- year.diff.square[which(case.time <= t),which(case.time <= t)]
+# subset sender time matrix
+sender.time.t <- sender.time[which(case.time <= t),which(case.time <= t)]
+# subset receiver time matrix
+receiver.time.t <- receiver.time[which(case.time <= t),which(case.time <= t)]
+# subset unique dyad id matrix
+dyad.id.t <- dyad.id[which(case.time <= t),which(case.time <= t)]
+# subset year matrix
+year.t<- year[which(case.time <= t),which(case.time <= t)]
+# subset same opinion writer matrix
+same.opinion.writer.t<- same.opinion.writer[which(case.time <= t),which(case.time <= t)]
+
+#### set vertex attributes
+# same issue area
+net.t <- set.vertex.attribute(net.t,"SameIssueArea", scc1[which(case.time <= t),41])
+basis.net.t <- set.vertex.attribute(net.t,"SameIssueArea", scc1[which(case.time <= t),41])
+# abs diff of MQ score
+net.t <- set.vertex.attribute(net.t,"AbsDiffMQscores", scc1[which(case.time <= t),65])
+basis.net.t <- set.vertex.attribute(net.t,"AbsDiffMQscores", scc1[which(case.time <= t),65])
+# number justices that voted for the case
+net.t <- set.vertex.attribute(net.t,"NumberJusticesPro", scc1[which(case.time <= t),52])
+basis.net.t <- set.vertex.attribute(net.t,"NumberJusticesPro", scc1[which(case.time <= t),52])
+# overruled covariate
+net.t <- set.vertex.attribute(net.t,"Overruled", Overruled.matrix[which(case.time <= t),t])
+basis.net.t <- set.vertex.attribute(net.t,"Overruled", Overruled.matrix[which(case.time <= t),t])
+# sender time
+net.t <- set.vertex.attribute(net.t,"sender.time", sender.time.t[,1])
+basis.net.t <- set.vertex.attribute(net.t,"sender.time", sender.time.t[,1])
+# Majority Opinion Writer
+net.t <- set.vertex.attribute(net.t,"MajOpWriter", scc1[which(case.time <= t),49])
+basis.net.t <- set.vertex.attribute(net.t,"MajOpWriter", scc1[which(case.time <= t),49])
+
+
+times.t <- case.time[which(case.time <= t)]
+
+# adjacency matrix values are fixed if (1) sender case time < t or sender time < receiver time
+# create an adjacency matrix where edge from i to j indicates that element i j of the network
+# is not fixed
+not.fixed <- matrix(0,length(times.t),length(times.t))
+# looping through all cases, may be able to speed up this step
+for(i in 1:length(times.t)){
+  for(j in 1:length(times.t)){
+    # element is not fixed if sender time > receiver time and sender time equals t
+    not.fixed[i,j] <- (times.t[i] >= times.t[j])*(times.t[i]==t)
+  }
+}
+
+#mple.part <- ergm(net.t ~ edges+mutual+gwesp(0, fixed=TRUE)+ idegree(0)+ odegree(0)+edgecov(mq.t)+edgecov(same.issue.area.t)+edgecov(year.diff.t)+ edgecov(year.diff.square.t )+edgecov(sender.time.t)+edgecov(receiver.time.t)+
+#                    edgecov(dyad.id.t)+ edgecov(year.t) +#('sender.time')+ 
+#                    nodeicov('AbsDiffMQscores')+ nodeicov('NumberJusticesPro')+ nodeifactor('SameIssueArea', base=1)+ #nodeofactor('SameIssueArea', base=1)+ nodeicov('Overruled')+
+#                    edgecov(same.opinion.writer.t),#+ nodeifactor('MajOpWriter')+ nodeofactor('MajOpWriter')+ nodemix('SameIssueArea'),
+#                  estimate="MPLE")
+
+# simulate networks with fixallbut
+net.act <- simulate(~ edges+mutual+gwesp(0, fixed=TRUE)+ idegree(0)+ odegree(0)+edgecov(mq.t)+edgecov(same.issue.area.t)+edgecov(year.diff.t)+ edgecov(year.diff.square.t )+edgecov(sender.time.t)+edgecov(receiver.time.t)+
+                      edgecov(dyad.id.t)+ edgecov(year.t) +#('sender.time')+ 
+                      nodeicov('AbsDiffMQscores')+ nodeicov('NumberJusticesPro')+ nodeifactor('SameIssueArea', base=1)+ #nodeofactor('SameIssueArea', base=1)+ nodeicov('Overruled')+
+                     edgecov(same.opinion.writer.t), nsim=1, constraints=~fixallbut(network(not.fixed)), coef=coeffs, basis= basis.net.t,  control=control.simulate.formula(MCMC.interval = 5000))
+#Am<- as.matrix.network(mple.sim)
+
+}
+
+#mple.sim[[l]]<- net.act
+
+#save(list="mple.sim",file="mple_sim1960.RData")
+
+
+net.act
+
+}
+
+# statistics of simulated networks
+gof.results<- matrix(0, length(mple.obs), n.sim)
+for(i in 1:n.sim){
+  print(i)
+  gf <- summary(mple.sim[[i]]~edges+mutual+gwesp(0, fixed=TRUE)+ idegree(0)+ odegree(0)+edgecov(mq.t)+edgecov(same.issue.area.t)+edgecov(year.diff.t)+ edgecov(year.diff.square.t )+edgecov(sender.time.t)+edgecov(receiver.time.t)+
+                  edgecov(dyad.id.t)+ edgecov(year.t) +#('sender.time')+ 
+                  nodeicov('AbsDiffMQscores')+ nodeicov('NumberJusticesPro')+ nodeifactor('SameIssueArea', base=1)+ #nodeofactor('SameIssueArea', base=1)+ nodeicov('Overruled')+
+                  edgecov(same.opinion.writer.t))
+  gof.results[,i]<- gf
+}
+
+# plotting
+
+pdf("degeneracy_1960.pdf",width=11.69,height=8.27)
+par(mfrow=c(2,3), oma=c(0,0,2,0))
+hist(gof.results[1,], main="Edges", xlab="Edges", cex.lab=1.6, cex.axis=2, cex.main=2)
+abline(v=mple.obs[1], col="red", lwd=2)
+
+
+hist(gof.results[2,], main="Mutual",  xlab="Mutual", cex.lab=1.6, cex.axis=2, cex.main=2)
+abline(v=mple.obs[2], col="red", lwd=2)
+
+hist(gof.results[3,], main="GWESP", xlab="GWESP", cex.lab=1.6, cex.axis=2, cex.main=2)
+abline(v=mple.obs[3], col="red", lwd=2)
+
+hist(gof.results[4,], main="In-Degree", xlab="In-Degree", cex.lab=1.6, cex.axis=2, cex.main=2)
+abline(v=mple.obs[4], col="red", lwd=2)
+
+hist(gof.results[5,], main="Out-Degree", xlab="Out-Degree", cex.lab=1.6, cex.axis=2, cex.main=2)
+abline(v=mple.obs[5], col="red", lwd=2)
+
+hist(gof.results[6,], main="Martin Quinn Score", xlab="Martin Quinn Score", cex.lab=1.6, cex.axis=2, cex.main=2)
+abline(v=mple.obs[6], col="red", lwd=2)
+
+title("Degeneracy Check 1960", outer=TRUE, cex.main=3)
+
+dev.off()
+
+
+STOP
+echo " "
+echo "Job Ended at `date`"
+echo " "

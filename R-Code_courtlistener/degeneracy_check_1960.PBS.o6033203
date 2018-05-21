@@ -1,0 +1,144 @@
+ 
+ 
+Job started on comp-hc-0023.acib.production.int.aci.ics.psu.edu at Wed May 16 14:05:39 EDT 2018
+Lmod has detected the following error: The following module(s) are unknown:
+"R#/3.4.0"
+
+Please check the spelling or version number. Also try "module spider ..."
+
+
+
+
+Loading required package: tergm
+Loading required package: statnet.common
+
+Attaching package: 'statnet.common'
+
+The following object is masked from 'package:base':
+
+    order
+
+Loading required package: ergm
+Loading required package: network
+network: Classes for Relational Data
+Version 1.13.0 created on 2015-08-31.
+copyright (c) 2005, Carter T. Butts, University of California-Irvine
+                    Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Martina Morris, University of Washington
+                    Skye Bender-deMoll, University of Washington
+ For citation information, type citation("network").
+ Type help("network-package") to get started.
+
+
+ergm: version 3.8.0, created on 2017-08-18
+Copyright (c) 2017, Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Carter T. Butts, University of California -- Irvine
+                    Steven M. Goodreau, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Martina Morris, University of Washington
+                    with contributions from
+                    Li Wang
+                    Kirk Li, University of Washington
+                    Skye Bender-deMoll, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("ergm").
+
+NOTE: Versions before 3.6.1 had a bug in the implementation of the bd()
+constriant which distorted the sampled distribution somewhat. In
+addition, Sampson's Monks datasets had mislabeled vertices. See the
+NEWS and the documentation for more details.
+
+Loading required package: networkDynamic
+
+networkDynamic: version 0.9.0, created on 2016-01-12
+Copyright (c) 2016, Carter T. Butts, University of California -- Irvine
+                    Ayn Leslie-Cook, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Skye Bender-deMoll, University of Washington
+                    with contributions from
+                    Zack Almquist, University of California -- Irvine
+                    David R. Hunter, Penn State University
+                    Li Wang
+                    Kirk Li, University of Washington
+                    Steven M. Goodreau, University of Washington
+                    Jeffrey Horner
+                    Martina Morris, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("networkDynamic").
+
+
+tergm: version 3.4.1, created on 2017-09-12
+Copyright (c) 2017, Pavel N. Krivitsky, University of Wollongong
+                    Mark S. Handcock, University of California -- Los Angeles
+                    with contributions from
+                    David R. Hunter, Penn State University
+                    Steven M. Goodreau, University of Washington
+                    Martina Morris, University of Washington
+                    Nicole Bohme Carnegie, New York University
+                    Carter T. Butts, University of California -- Irvine
+                    Ayn Leslie-Cook, University of Washington
+                    Skye Bender-deMoll
+                    Li Wang
+                    Kirk Li, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("tergm").
+
+Loading required package: ergm.count
+
+ergm.count: version 3.2.2, created on 2016-03-29
+Copyright (c) 2016, Pavel N. Krivitsky, University of Wollongong
+                    with contributions from
+                    Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("ergm.count").
+
+NOTE: The form of the term 'CMP' has been changed in version 3.2 of
+'ergm.count'. See the news or help('CMP') for more information.
+
+Loading required package: sna
+sna: Tools for Social Network Analysis
+Version 2.4 created on 2016-07-23.
+copyright (c) 2005, Carter T. Butts, University of California-Irvine
+ For citation information, type citation("sna").
+ Type help(package="sna") to get started.
+
+
+statnet: version 2016.9, created on 2016-08-29
+Copyright (c) 2016, Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Carter T. Butts, University of California -- Irvine
+                    Steven M. Goodreau, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Skye Bender-deMoll
+                    Martina Morris, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("statnet").
+
+unable to reach CRAN
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Evaluating log-likelihood at the estimate. 
+Warning messages:
+1: In ergm.pl(Clist = Clist, Clist.miss = Clist.miss, m = m, theta.offset = init,  :
+  Too many unique dyads. MPLE is approximate, and MPLE standard errors are suspect.
+2: In ergm.mple(Clist, Clist.miss, m, MPLEtype = MPLEtype, init = init,  :
+  non-integer #successes in a binomial glm!glm.fit: fitted probabilities numerically 0 or 1 occurred
+3: In ergm.mple(Clist, Clist.miss, m, MPLEtype = MPLEtype, init = init,  :
+  non-integer #successes in a binomial glm!glm.fit: fitted probabilities numerically 0 or 1 occurred
+4: In eval(family$initialize) : non-integer #successes in a binomial glm!
+Evaluating log-likelihood at the estimate. 
+Error in { : task 1 failed - "result would be too long a vector"
+Calls: %dopar% -> <Anonymous>
+Execution halted
+ 
+Job Ended at Wed May 16 14:11:09 EDT 2018
+ 
