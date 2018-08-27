@@ -91,8 +91,8 @@
 \maketitle
 \begin{abstract}
 \noindent The significance and influence of US Supreme Court majority opinions derive in large part to opinions' roles as precedents for future opinions. A growing body of literature seeks to understand what drives the use of opinions as precedents through the study of Supreme Court case citation patterns. We raise two limitations of existing work on Supreme Court citations. First, dyadic citations are typically aggregated to the case level before they are analyzed. Second, citations are treated as if they arise independent of one another. We make the case that studying Supreme Court citations as a dynamic citation network overcomes both of these limitations. We present a methodology for studying citations between US Supreme Court opinions at the dyadic level, as a network. This methodology---the citation temporal exponential random graph model---enables researchers to account for the effects of case characteristics and complex forms of network dependence in citation formation. We apply this methodology to a network that includes all Supreme Court cases decided between 1937 and 2015. We find evidence for dependence processes, including reciprocity, transitivity, popularity, and activity. The dependence effects that we identify are as substantively and statistically significant as the effects of the exogenous covariates we include in the model. The summary result from this analysis is that theoretical models of Supreme Court citation formation should consider both the effects of case characteristics and the structure of past citations.\footnote{
-Prepared for presentation at the ``The Enemy of My Enemy: Judicial Politics meets Network Analysis'' conference within a conference at the 2018 Annual Conference of the Southern Political Science Association. This work was supported in part by NIH, 
-R01 AI36664-01. NSF grants SES- 1558661, SES-1637089, SES-1619644, and CISE-1320219. We would like to thank Rachael Hinkle and Benjamin Kassow.}
+Prepared for presentation at the 2018 Annual Meeting of the American Political Science Association. This work was supported in part by NIH, 
+R01 AI36664-01. NSF grants SES- 1558661, SES-1637089, SES-1619644, and CISE-1320219. We would like to thank Rachael Hinkle and Benjamin Kassow for detailed comments on an earlier draft of this paper.}
 \end{abstract}
 
 \doublespacing
@@ -357,11 +357,11 @@ precision & 0.6209 & (0.611, 0.6351) & 0.8669 & (0.8612, 0.8711) \\
 We also conduct a predictive experiment for the model that does not consider any trends and for the model that does consider quadratic instead of linear trends. The predictive performance results are given in tables \ref{tab:prediction_notrend} and \ref{tab:prediction_quadratic}. By comparing the full model results in tables \ref{tab:prediction_notrend} and \ref{tab:prediction_quadratic} with the results of the full linear trend model in table \ref{tab:prediction_linear} we can conclude all three models perform similarly well.   \\[0,5cm]
 
 
-\textit{Comment from Benjamin Kassow: In section 6.2 (predictive performance), I like what is here, but was hoping to see a bit more discussion about the predictive 
-performance of the model, with some explanation of what the predictive performance means. 
-I understand it (I think), but depending on where this gets sent to, I am not sure if all reviewers will. 
-I also think tying this into the overall model explanation or discussion of model performance overall will be helpful for better 
-integrating this section into the rest of the manuscript.}
+%\textit{Comment from Benjamin Kassow: In section 6.2 (predictive performance), I like what is here, but was hoping to see a bit more discussion about the predictive 
+%performance of the model, with some explanation of what the predictive performance means. 
+%I understand it (I think), but depending on where this gets sent to, I am not sure if all reviewers will. 
+%I also think tying this into the overall model explanation or discussion of model performance overall will be helpful for better 
+%integrating this section into the rest of the manuscript.}
   
   
   
@@ -370,13 +370,10 @@ The results from the c-TERGM are presented in Table \ref{tab:tergmcoef} and Figu
 
 The effects of the exogenous covariates included in the c-TERGM (panels (e)--(k) in Figure \ref{fig:coeftrends_exo}) exhibit some surprising dynamics. The effects of absolute difference in Martin-Quinn score, and majority size of the recipient case all flip signs throughout the time period under study. This may be an artifact of the simple linear trends we have estimated, but is interesting nonetheless. The attitudinal model holds that ideological preferences drive decision-making on the US Supreme Court. Ideological selection of precedents would be evidenced by a negative effect of the absolute difference in MQ scores in the c-TERGM. We find this effect is negative and statistically significant only after 1975. The absolute difference in MQ scores variable is on the scale of approximately 0---3. At its most ideological point (i.e. 2001), the probability that case $i$ cites case $j$ decreases from approximately 0.024 to 0.018---by one third---if the ideological distance between the majority coalitions in the two cases increases by 3. The effects of the majority size and ideological breadth of case $j$ are similar in both scale and trend. It is not until later in the time series that they both exhibit their expected positive effects. The effect of same issue is positive and statistically significant, and substantial for the time period under study. The probability that $i$ cites $j$ increases by approximately three-fold over the naive probability of citation if $i$ and $j$ have the same legal issue area.
 
-The results from the c-TERGM provide evidence that citations between US Supreme Court cases are driven both by exogenous case attributes and complex dependence processes. The scales of covariate and dependence effects are comparable. 
+%The results from the c-TERGM provide evidence that citations between US Supreme Court cases are driven both by exogenous case attributes and complex dependence processes. The scales of covariate and dependence effects are comparable. 
 %The simple linear trends represent one limitation of the current analysis. In future work, more complex polynomials dynamical functions should be considered to determine whether effects truly flip signs.
 
-
-\begin{itemize}
-\item adjust results/numbers in text
-\end{itemize}
+{\em {\bf Note:} The results section of this paper is incomplete and in flux. We recently discovered evidence of non-convergence in the C-TERGM results currently presented in the paper, and have changed the models and estimation settings to address this problem. Most of the substantive conclusions look like they will hold using the updated models, but we are not sure that we will be able to include the updated models in the APSA presentation.}
 
 
 
@@ -420,12 +417,12 @@ The results from the c-TERGM provide evidence that citations between US Supreme 
 \end{figure} 
 
 
-\begin{itemize}
-\item visualize Sender/receiver Issue Area Results
-\item heatplot for issue area nodemix
-\item visualize Sender/receiver for majority opinion writer
-\item add Network effect plots for model without network statistics (add to existing plots?)
-\end{itemize}
+%\begin{itemize}
+%\item visualize Sender/receiver Issue Area Results
+%\item heatplot for issue area nodemix
+%\item visualize Sender/receiver for majority opinion writer
+%\item add Network effect plots for model without network statistics (add to existing plots?)
+%\end{itemize}
 
 
   
@@ -458,10 +455,10 @@ We recognize several limitations of the current analysis, which should be addres
 \section{Appendix}
 The following table presents the Bootstrapped MPLE Results for the time period $1937-2015$.
 
-\begin{itemize}
-\item add robustness check: MCMLE for each year -> plot time trend of coefs -> are results similar to the MPLE time trends presented in the paper?
-\item (investigate which statistic contributes most on recall improvement)
-\end{itemize}
+%\begin{itemize}
+%\item add robustness check: MCMLE for each year -> plot time trend of coefs -> are results similar to the MPLE time trends presented in the paper?
+%\item (investigate which statistic contributes most on recall improvement)
+%\end{itemize}
 
 \begin{table}[htp]
 \footnotesize
