@@ -135,6 +135,11 @@ Graif, Corina, Alina Lungeanu \harvardand\ Alyssa~M Yetter. 2017.
   structural isolation and homophily in inter-neighborhood commuting
   networks.'' {\em Social Networks} .
 
+\harvarditem{Handcock}{2003}{Handcock.2003}
+Handcock, Mark~S. 2003.
+\newblock {\em Assessing degeneracy in statistical models of social networks:
+  https://www.csss.washington.edu/Papers/wp39.pdf}.
+
 \harvarditem{Hansford \harvardand\ Spriggs}{2006}{hansford2006politics}
 Hansford, Thomas~G \harvardand\ James~F Spriggs. 2006.
 \newblock {\em The politics of precedent on the US Supreme Court}.
@@ -176,11 +181,6 @@ Jensen, David~D \harvardand\ Paul~R Cohen. 2000.
 Knight, Jack \harvardand\ Lee Epstein. 1996.
 \newblock ``The norm of stare decisis.'' {\em American Journal of Political
   Science} pp.~1018--1035.
-
-\harvarditem{Kosma}{1998}{kosma1998measuring}
-Kosma, Montgomery~N. 1998.
-\newblock ``Measuring the influence of Supreme Court justices.'' {\em The
-  Journal of Legal Studies} 27(2):333--372.
 
 \harvarditem{Krivitsky \harvardand\ Handcock}{2017}{tergm}
 Krivitsky, Pavel~N. \harvardand\ Mark~S. Handcock. 2017.
@@ -252,6 +252,13 @@ Schmid, Christian~S \harvardand\ Bruce~A Desmarais. 2017.
 \newblock ``Exponential Random Graph Models with Big Networks: Maximum
   Pseudolikelihood Estimation and the Parametric Bootstrap.'' {\em arXiv
   preprint arXiv:1708.02598} .
+
+\harvarditem[Snijders et~al.]{Snijders, Pattison, Robins \harvardand\
+  Handcock}{2006}{SnijdersTomA.B..2006}
+Snijders, Tom A.~B., Philippa~E. Pattison, Garry~L. Robins \harvardand\ Mark~S.
+  Handcock. 2006.
+\newblock ``NEW SPECIFICATIONS FOR EXPONENTIAL RANDOM GRAPH MODELS.'' {\em
+  Sociological Methodology} 36(1):99--153.
 
 \harvarditem[Spaeth et~al.]{Spaeth, Epstein, Ruger, Whittington, Segal
   \harvardand\ Martin}{2014}{spaeth2014supreme}
