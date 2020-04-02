@@ -196,6 +196,12 @@ Leifeld, Philip, Skyler~J Cranmer \harvardand\ Bruce~A Desmarais. 2017.
 \newblock ``Temporal exponential random graph models with btergm: Estimation
   and bootstrap confidence intervals.'' {\em Journal of Statistical Software} .
 
+\harvarditem{Levy}{2016}{Levy2016}
+Levy, Michael. 2016.
+\newblock ``gwdegree: Improving interpretation of geometrically-weighted degree
+  estimates in exponential random graph models.'' {\em The Journal of Open
+  Source Software} 1.
+
 \harvarditem{Lissner \harvardand\ Carver}{2010}{CourtListener}
 Lissner, Michael \harvardand\ Brian~W. Carver. 2010.
 \newblock ``CourtListener.com: A platform for researching and staying abreast

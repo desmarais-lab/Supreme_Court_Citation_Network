@@ -300,16 +300,28 @@ We include a dependence term to account for each of the dynamics that we hypothe
 
 The common dependence effects for these four dynamics are the number of triangles (case $i$ cites cases $j$ and $k$, and case $j$ cites case $k$), the numnber of mutual dyads (case $i$ cites $j$ and vice versa), the numnber of out-2-stars (case $i$ cites $j$ and $k$), and the number of in-2-stars (case $i$ is being cited by cases $j$ and $k$) in $C_{\leq t}$. Unfortunately, adding the triangle, out-2-star, or in-2-star statistic causes model degeneracy \citep{Handcock.2003}. Model degeneracy occurs when the model places most of its probability mass on just a few networks, usually the empty and the full network. In this scenario, the simulated networks are too different from the observed network, making the underlying distribution defined by the model extremly unrealistc.
 
+% reciprocity
 The statistic included in the model for reciprocity counts the number of mutual dyads (i.e., dyads in which cases $i$ cites case $j$, and case $j$ cites case $i$) in $C_{\leq t}$. In practice, this is the number of mutual dyads in $C_{\leq t}$, since mutual dyads must emerge among opinions that were written in the same term. The log odds interpretation of the reciprocity statistic is that if opinions in case $i$ cite case $j$, the log odds that case $j$ also cites $i$ change by the theta relative to the configuration in which case $j$ does not cite case $i$.
 
+% popularity
 Accouting for the popularity effect through the in-2-star statistic is prone to cause model degeneracy. In an attempt to stabilize the model against model degeneracy as well as to still capture the popularity effect, \citet{SnijdersTomA.B..2006} introduces the \textit{alternating-in-k-star} statistic, which was shown to be equivalent to the \textit{geometrically weighted in-degree distribution} (gwidegree) statistic introduced by \citet{hunter2006inference}. Define $D_r(C_t, C_{<t})$ as the number of nodes with indegree $r, r \in \{0, \dots , N_t -1 \}$, where $N_t$ is the number of cases in the network at time $t$, then gwidegree represents a network's indegree distribution in a single statistic by geometrically weighting the degree distribution
-$$h_{gwidegree}(C_{t}, C_{<t}, \lambda)= \lambda \sum_{r=1}^{N_t-1}\biggl(1-\bigl(1-\frac{1}{\lambda}\bigr)^r\biggr)D_r(C_t, C_{<t}). $$
-The decay parameter $\lambda \in [0, \infty ]$ controls the decline of the weight put on $D_r(C_t, C_{<t})$ as $r$ increases.
-Adding one single edge to the network changes the indegree distribution of the network so that a case with an indegree of $s$ turns into a case with an indegree of $s + 1$. With our notation this means that $D_r$ and $D_{r+1}$ get replaced by
+\begin{equation}
+h_{gwidegree}(C_{t}, C_{<t}, \lambda)= \lambda \sum_{r=1}^{N_t-1}\biggl(1-\bigl(1-\frac{1}{\lambda}\bigr)^r\biggr)D_r(C_t, C_{<t}). 
+\label{gwidegree}
+\end{equation}
+The decay parameter $\lambda \in [0, \infty ]$ controls the decline of the weight put on $D_r(C_t, C_{<t})$ as $r$ increases which means that the higher $\lambda$ the more the statistic responds to changes for cases with a high indegree. We fixed $\lambda=1$. Adding one single edge to the network changes the indegree distribution of the network so that a case with an indegree of $s$ turns into a case with an indegree of $s + 1$. With our notation this means that $D_r$ and $D_{r+1}$ get replaced by
 $D_r -1$ and $D_{r+1} +1$, while no changes for $D_\ell,
  \ell \in \{0, \dots , N_t -1 \} \setminus \{r, r-1\} $ are
 made. This changes the log odds in the following way
 $$\text{logit} P(C_{ij,t}=1 | C_{-ij,t}, C_{<t}) = \exp \bigl(~\theta \cdot( 1- \frac{1}{\lambda})^r \bigr).$$
+As stated by \citet{Levy2016} this means for the interpretation that a negative parameter value indicates the centralization of edges while a positive parameter indicates the dispersion of edges. Since we expect highly cited cases to be more likely to be cited again, we expect the gwidegree parameter to be negative.
+
+% Activity
+In order to account for the activity effect, the straightforward thing to do is to add the \textit{geometrically weighted outdegree} (gwodegree) statistic, which is defined as gwidegree with the difference that $D_r(C_t, C_{<t})$ represents the number of nodes with outdegree $r$. However, adding the gwodegree statistic causes the model to degenerate again. We circumvent degeneracy by adding the outdegree of every node that entered the network prior time $t$ as a receiver effect. In other words, this statistic adds up the outdegree of cases that are being cited at time $t$ and examines whether cases that show a high degree of activity are being more likely to be cited in the future.
+
+
+% Transitivity
+
 
 
 
