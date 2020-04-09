@@ -112,7 +112,7 @@ There exist two broad benefits of conducting empirical analyses of citations at 
 
 In this paper we develop a theoretical case that citations on the US Supreme Court are characterized by forms of complex dependence that are common in networks. We then develop an extension of a model---the exponential random graph model (ERGM)---that can incorporate both exogenous covariates and complex forms of interdependence into a directed dyadic analysis of citations. Finally, we develop and estimate a specification of this model in an analysis of US Supreme Court citations between 1937 and 2015. We find robust support for the inherent complexity underpinning the formation of citation ties, and show that incorporating complex dependence into the model of citation formation significantly improves the model's predictive performance.
 
-\section{Network Processes in Supreme Court Citations}
+\section{Network Processes in Supreme Court Citations} 
 
 When it comes to the development and testing of theory, the defining feature of networks is that the fundamental element under study---the relationship between two units (i.e., the citation from one opinion to another) is a component of a complex system of relations. The formation (or lack thereof) of that relationship cannot be fully understood without considering how the relationship fits into the system. Analytical designs that account only for covariates in explaining tie formation are incomplete theoretically, and, as a consequence, are subject to a form of omitted variable bias \citep{cranmer2016critique}. Citations in legal opinions are unique in terms of the windows into network dependencies offered by the texts of the opinions. A number of common structural dependencies that are found in networks are likely to apply to citations in Supreme Court opinions. In this section we present these dependence forms, and document the mechanisms by which they arise through archetypal passages in example opinions. 
 
@@ -296,9 +296,9 @@ The final control variable we include in the model is one in which $X_{ij} = 1$ 
 
 \subsubsection{Dependence terms}
 
-We include a dependence term to account for each of the dynamics that we hypothesize will characterize the Supreme Court Citation Network---transitivity, reciprocity, popularity, and activity. We expect that the coefficients associated with each of these dependence effects will be positive. 
+We include dependence terms to account for each of the dynamics that we hypothesize will characterize the Supreme Court Citation Network---transitivity, reciprocity, popularity, and activity. %We expect that the coefficients associated with each of these dependence effects will be positive. 
 
-The common dependence effects for these four dynamics are the number of triangles (case $i$ cites cases $j$ and $k$, and case $j$ cites case $k$), the numnber of mutual dyads (case $i$ cites $j$ and vice versa), the numnber of out-2-stars (case $i$ cites $j$ and $k$), and the number of in-2-stars (case $i$ is being cited by cases $j$ and $k$) in $C_{\leq t}$. Unfortunately, adding the triangle, out-2-star, or in-2-star statistic causes model degeneracy \citep{Handcock.2003}. Model degeneracy occurs when the model places most of its probability mass on just a few networks, usually the empty and the full network. In this scenario, the simulated networks are too different from the observed network, making the underlying distribution defined by the model extremly unrealistc.
+The common dependence effects for these four dynamics are the number of triangles (case $i$ cites cases $j$ and $k$, and case $j$ cites case $k$), the numnber of mutual dyads (case $i$ cites $j$ and vice versa), the numnber of out-2-stars (case $i$ cites $j$ and $k$), and the number of in-2-stars (case $i$ is being cited by cases $j$ and $k$) in $C_{\leq t}$. Unfortunately, adding the triangle, out-2-star, or in-2-star statistic causes model degeneracy \citep{Handcock.2003}. Model degeneracy is a common obstacle when fitting ERGMs and occurs when the model places most of its probability mass on just a few networks, usually the empty and the full network. In this scenario, the simulated networks are too different from the observed network, making the underlying distribution defined by the model extremly unrealistc.
 
 % reciprocity
 The statistic included in the model for reciprocity counts the number of mutual dyads (i.e., dyads in which cases $i$ cites case $j$, and case $j$ cites case $i$) in $C_{\leq t}$. In practice, this is the number of mutual dyads in $C_{\leq t}$, since mutual dyads must emerge among opinions that were written in the same term. The log odds interpretation of the reciprocity statistic is that if opinions in case $i$ cite case $j$, the log odds that case $j$ also cites $i$ change by the theta relative to the configuration in which case $j$ does not cite case $i$.
@@ -321,9 +321,16 @@ In order to account for the activity effect, the straightforward thing to do is 
 
 
 % Transitivity
+We include two statistics to account for different types of transitivity.
+The first transitivity statistic calculates the number of transitive ties, $i \to j$, where there is a directed path of length two from $i$ to $j$ through at least one case $k$, and $j$ and $k$ were written during a different term than $i$. We will refer to this statistic as the \textit{different term transitivity} statistic. As illustrated in chapter 2 we theorize Supreme Court citations to pattern a high degree of transitivity. As a result, we expect positive parameter estimates for the different term statistics. 
+
+
+The second transitivity statistic is the \textit{geometrically weighted edgewise shared partners} (gwesp) statistic introduced by \citet{hunter2006inference}. For directed networks the edgewise shared $r$-partners statistic ($ESP_r$) can take multiple forms, but we integrate the definition where cases $i$ and $j$ that are connected by a citation, also cite $r$ common other cases. Similar to the gwidegree-statistic the gwesp-statistic incorporates a network's edgewise shared partners distribution by replacing $D_r$ by $ESP_r$.
+Note that unlike the different term transitivity statistic the gwesp statistic does not require the cited cases to be written in a previous term.
 
 
 
+ \textit{GOF-plot?}\\
 
 %In order to account for the popularity effect, we add the \textit{geometrically weighted in-degree distribution} (gwidegree) statistic to the model. The geometrically weighted distribution statistics were introduced by \citet{Hunter.2006} to counteract model degeneracy.
 
