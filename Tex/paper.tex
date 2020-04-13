@@ -256,7 +256,7 @@ The degree distributions indicate that there is a long tail to both the number o
 The c-TERGM we estimate includes two classes of terms---one that captures the effects of covariates on tie formation, and another that captures the complex dependence processes that we expect to observe in the Supreme Court Citation Network. We describe our model specification by defining the terms within these two classes.
 
 
-\subsubsection{Covariate terms}
+\subsubsection{Covariate terms}\label{covariate_terms}
 
 Covariate effects are accounted for in the c-TERGM via the term that is used to specify the effect of covariates in other ERGM family models, as
 $$h_{covariate}(C_t,C_{<t},X) =  \sum_{ij} C_{ij,t}X_{ij}.$$ Since $C_{ij,t}$ is a binary indicator of whether case $i$ cites case $j$, $h_{covariate}$ amounts to the sum of covariate values among directed dyads for which we observed a citation. The dyadic interpretation of the coefficient attributed to this term is the change in the log odds of a tie from $i$ to $j$ given a unit increase in $X_{ij}$ (i.e., exactly the interpretation of the effect of a covariate in logistic regression). We include several exogenous covariates based on this standard statistic formulation. 
@@ -294,7 +294,7 @@ We model the way in which citations to a case depend upon the age of a case. For
 The final control variable we include in the model is one in which $X_{ij} = 1$ if case $j$ was overruled prior to the term in which case $i$ was decided. This variable, quite simply, models the effect of being overruled on the rate of citation to a case after the overruling citation. \citet{fowler2008authority} find that citations to a case drop off quickly after the case has been overruled.
 
 
-\subsubsection{Dependence terms}
+\subsubsection{Dependence terms}\label{dependence_terms}
 
 We include dependence terms to account for each of the dynamics that we hypothesize will characterize the Supreme Court Citation Network---transitivity, reciprocity, popularity, and activity. %We expect that the coefficients associated with each of these dependence effects will be positive. 
 
@@ -347,59 +347,68 @@ Note that unlike the different term transitivity statistic the gwesp statistic d
   
 \subsection{Predictive Performance}
 
-Our case for studying legal citations at the directed dyadic level hinges upon the contribution to modeling offered by incorporating network dependence. To quantify this contribution, we use out-of-sample prediction. Predicting out-of-sample offers an unbiased and general purpose way to evaluate the contribution, in terms of model fit, of one or more terms/parameters in a model \citep{jensen2000multiple,ward2010perils}. Unlike in-sample measures of model fit, out-of-sample methods are highly robust in avoiding overfitting, and work when we cannot accurately calculate the value of the likelihood function, as in the current case. Out-of-sample prediction is a common way to evaluate methods for modeling ties in networks, and has recently been applied to TERGMs in particular \citep{desmarais2013forecasting,cranmer2017can}.
+Our case for studying legal citations at the directed dyadic level hinges upon the contribution to modeling offered by incorporating network dependence. To quantify this contribution, we use AIC and BIC out-of-sample prediction. Predicting out-of-sample offers an unbiased and general purpose way to evaluate the contribution, in terms of model fit, of one or more terms/parameters in a model \citep{jensen2000multiple,ward2010perils}. Unlike in-sample measures of model fit, out-of-sample methods are highly robust in avoiding overfitting, and work when we cannot accurately calculate the value of the likelihood function, as in the current case. Out-of-sample prediction is a common way to evaluate methods for modeling ties in networks, and has recently been applied to TERGMs in particular \citep{desmarais2013forecasting,cranmer2017can}.
 
-In our prediction experiment we randomly split the directed dyads into an 80\% training set and a 20\% test set. The parameters of the model are estimated using the directed dyads in the training set, and the parameters are used to form the conditional probability of a tie for all of the directed dyads in the test set. Directed dyads for which the conditional probability of a tie exceeds 0.5 are predicted to be citations. The experiment is run with the full model, and with a model that excludes all of the dependence terms (i.e., all terms involving reciprocity, in and out stars, and triangles)---the independent dyads model. We run this experiment for 10 iterations. Predictive performance is evaluated with three common and related measures---precision (i.e., the proportion of predicted citations that are actually citations), recall (the proportion of actual citations that are predicted to be citations), and the F1 score (the harmonic mean of precision and recall) \citep[see, e.g.,][for discussion of these measures]{makhoul1999performance}. All three measures are bounded between 0 and 1, with higher scores indicating better performance.
+  \begin{figure}[]
+\includegraphics[width=15cm]{SCC_AIC_BIC}
+\caption{AIC and BIC for the full and the independent model for the time frame 1950-2015 }
+ \label{AIC_BIC}
+\vspace{-.25cm}
+\end{figure}  
 
-\begin{table}[H]
-\centering
+Figure \ref{AIC_BIC} depicts the AIC and BIC comparison for two different models for each term from 1950 to 2015. The full model is defined as the model that includes all covariate terms and dependence terms described in \ref{covariate_terms} and \ref{dependence_terms}. The independent model only consists of covariate terms, not accounting for any structural dependencies in the networks. We see that the AIC and BIC is considerably smaller for the full model throughout the period of consideration. On average the independent model yields a 5525 point higher AIC and an average 5582 point higher BIC. The maximum difference is reached in 1983 with a difference of 10,990 points for the AIC and 10,930  points for the BIC.
 
-\begin{tabular}{rllll}
-\hline \hline
-& \multicolumn{2}{l}{Independent Model } & \multicolumn{2}{l}{Full Model} \\ \hline 
- & mean & range & mean & range \\ 
-  \hline
-precision & 0.6007 & (0.5934, 0.6074) & 0.8666 & (0.8647, 0.8701) \\ 
-  recall & 0.1522 & (0.1495, 0.1549) & 0.5969 & (0.5945, 0.6019) \\ 
-  F1 score & 0.2429 & (0.2389, 0.2462) & 0.7069 & (0.7048, 0.7107) \\ 
-   \hline \hline
-\end{tabular}
-\caption{The predictive performance of the directed dyadic models with linear trends, over ten 80/20 train/test splits.}
-\label{tab:prediction_linear}
+%In our prediction experiment we randomly split the directed dyads into an 80\% training set and a 20\% test set. The parameters of the model are estimated using the directed dyads in the training set, and the parameters are used to form the conditional probability of a tie for all of the directed dyads in the test set. Directed dyads for which the conditional probability of a tie exceeds 0.5 are predicted to be citations. The experiment is run with the full model, and with a model that excludes all of the dependence terms (i.e., all terms involving reciprocity, in and out stars, and triangles)---the independent dyads model. We run this experiment for 10 iterations. Predictive performance is evaluated with three common and related measures---precision (i.e., the proportion of predicted citations that are actually citations), recall (the proportion of actual citations that are predicted to be citations), and the F1 score (the harmonic mean of precision and recall) \citep[see, e.g.,][for discussion of these measures]{makhoul1999performance}. All three measures are bounded between 0 and 1, with higher scores indicating better performance.
 
-\end{table}
+%\begin{table}[H]
+%\centering
 
-We see from Table \ref{tab:prediction_linear} that, based on all three measures, the predictive performance of the model improves dramatically from adding the network dependence terms. The recall of the full model is particularly impressive, indicating that it recovers over half of the actual citations in the test set. This provides clear evidence that the full model, which includes covariates and network dependence terms, represents a more accurate and complete model of the process of citation formation in US Supreme Court opinions.
+%\begin{tabular}{rllll}
+%\hline \hline
+%& \multicolumn{2}{l}{Independent Model } & \multicolumn{2}{l}{Full Model} \\ \hline 
+% & mean & range & mean & range \\ 
+%  \hline
+%precision & 0.6007 & (0.5934, 0.6074) & 0.8666 & (0.8647, 0.8701) \\ 
+%  recall & 0.1522 & (0.1495, 0.1549) & 0.5969 & (0.5945, 0.6019) \\ 
+%  F1 score & 0.2429 & (0.2389, 0.2462) & 0.7069 & (0.7048, 0.7107) \\ 
+%   \hline \hline
+%\end{tabular}
+%\caption{The predictive performance of the directed dyadic models with linear trends, over ten 80/20 train/test splits.}
+%\label{tab:prediction_linear}
 
-\begin{table}[H]
-\centering
-\begin{tabular}{rllll}
-\hline \hline
-& \multicolumn{2}{l}{Independent Model } & \multicolumn{2}{l}{Full Model} \\ \hline 
- & mean & range & mean & range \\ 
-  \hline
-precision & 0.5938 & (0.5844, 0.5996) & 0.8668 & (0.8653, 0.8693) \\ 
-  recall & 0.1551 & (0.1515, 0.1575) & 0.5969 & (0.5937, 0.6005) \\ 
-  F1 score & 0.246 & (0.2406, 0.249) & 0.707 & (0.7045, 0.7095) \\  
-   \hline \hline
-\end{tabular}
-\caption{The predictive performance of the directed dyadic models with no trends, over ten 80/20 train/test splits.}
-\label{tab:prediction_notrend}
-\vspace{0.4cm}
-\begin{tabular}{rllll}
-\hline \hline
-& \multicolumn{2}{l}{Independent Model } & \multicolumn{2}{l}{Full Model} \\ \hline 
- & mean & range & mean & range \\ 
-  \hline
-precision & 0.6209 & (0.611, 0.6351) & 0.8669 & (0.8612, 0.8711) \\ 
-  recall & 0.1511 & (0.1451, 0.1558) & 0.5962 & (0.5884, 0.6011) \\ 
-  F1 score & 0.243 & (0.2347, 0.2486) & 0.7065 & (0.7011, 0.7103) \\ 
-   \hline \hline
-\end{tabular}
-\caption{The predictive performance of the directed dyadic models with quadratic trends, over ten 80/20 train/test splits.}
-\label{tab:prediction_quadratic}
-\end{table}
-We also conduct a predictive experiment for the model that does not consider any trends and for the model that does consider quadratic instead of linear trends. The predictive performance results are given in tables \ref{tab:prediction_notrend} and \ref{tab:prediction_quadratic}. By comparing the full model results in tables \ref{tab:prediction_notrend} and \ref{tab:prediction_quadratic} with the results of the full linear trend model in table \ref{tab:prediction_linear} we can conclude all three models perform similarly well.   \\[0,5cm]
+%\end{table}
+
+%We see from Table \ref{tab:prediction_linear} that, based on all three measures, the predictive performance of the model improves dramatically from adding the network dependence terms. The recall of the full model is particularly impressive, indicating that it recovers over half of the actual citations in the test set. This provides clear evidence that the full model, which includes covariates and network dependence terms, represents a more accurate and complete model of the process of citation formation in US Supreme Court opinions.
+
+%\begin{table}[H]
+%\centering
+%\begin{tabular}{rllll}
+%\hline \hline
+%& \multicolumn{2}{l}{Independent Model } & \multicolumn{2}{l}{Full Model} \\ \hline 
+% & mean & range & mean & range \\ 
+%  \hline
+%precision & 0.5938 & (0.5844, 0.5996) & 0.8668 & (0.8653, 0.8693) \\ 
+%  recall & 0.1551 & (0.1515, 0.1575) & 0.5969 & (0.5937, 0.6005) \\ 
+%  F1 score & 0.246 & (0.2406, 0.249) & 0.707 & (0.7045, 0.7095) \\  
+%   \hline \hline
+%\end{tabular}
+%\caption{The predictive performance of the directed dyadic models with no trends, over ten 80/20 train/test splits.}
+%\label{tab:prediction_notrend}
+%\vspace{0.4cm}
+%\begin{tabular}{rllll}
+%\hline \hline
+%& \multicolumn{2}{l}{Independent Model } & \multicolumn{2}{l}{Full Model} \\ \hline 
+% & mean & range & mean & range \\ 
+%  \hline
+%precision & 0.6209 & (0.611, 0.6351) & 0.8669 & (0.8612, 0.8711) \\ 
+%  recall & 0.1511 & (0.1451, 0.1558) & 0.5962 & (0.5884, 0.6011) \\ 
+%  F1 score & 0.243 & (0.2347, 0.2486) & 0.7065 & (0.7011, 0.7103) \\ 
+%   \hline \hline
+%\end{tabular}
+%\caption{The predictive performance of the directed dyadic models with quadratic trends, over ten 80/20 train/test splits.}
+%\label{tab:prediction_quadratic}
+%\end{table}
+%We also conduct a predictive experiment for the model that does not consider any trends and for the model that does consider quadratic instead of linear trends. The predictive performance results are given in tables \ref{tab:prediction_notrend} and \ref{tab:prediction_quadratic}. By comparing the full model results in tables \ref{tab:prediction_notrend} and \ref{tab:prediction_quadratic} with the results of the full linear trend model in table \ref{tab:prediction_linear} we can conclude all three models perform similarly well.   \\[0,5cm]
 
 
 %\textit{Comment from Benjamin Kassow: In section 6.2 (predictive performance), I like what is here, but was hoping to see a bit more discussion about the predictive 
@@ -422,44 +431,44 @@ The effects of the exogenous covariates included in the c-TERGM (panels (e)--(k)
 
 
 
-\begin{figure}[H]
- \begin{tabular}{cc}
+%\begin{figure}[H]
+% \begin{tabular}{cc}
 
-   (a) Reciprocity & (b) Transitivity \\
-\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/mutual_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/triangle_coef_trend_linear.pdf} \\
+%   (a) Reciprocity & (b) Transitivity \\
+%\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/mutual_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/triangle_coef_trend_linear.pdf} \\
  
-    (c) Activity & (d) Popularity \\
-\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/o2star_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/i2star_coef_trend_linear.pdf} \\
+%    (c) Activity & (d) Popularity \\
+%\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/o2star_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/i2star_coef_trend_linear.pdf} \\
  
 
  
-\end{tabular}
-\caption{Trending effects for dependence effect estimates from the c-TERGM. The solid lines plot the point estimates, and the shaded areas span 95\% confidence intervals. }
- \label{fig:coeftrends_endo}
-\vspace{-.25cm}
-\end{figure} 
+%\end{tabular}
+%\caption{Trending effects for dependence effect estimates from the c-TERGM. The solid lines plot the point estimates, and the shaded areas span 95\% confidence intervals. }
+% \label{fig:coeftrends_endo}
+%\vspace{-.25cm}
+%\end{figure} 
 
 
-  \begin{figure}[H]
-  \begin{tabular}{cc}
- (e) MQ Score Difference & (f) Ideological Breadth \\
-\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/mq_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/absdiffmq_coef_trend_linear.pdf} \\
+%  \begin{figure}[H]
+%  \begin{tabular}{cc}
+% (e) MQ Score Difference & (f) Ideological Breadth \\
+%\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/mq_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/absdiffmq_coef_trend_linear.pdf} \\
  
-  (g) Same Issue & (h) Majority Size \\
-\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/sameissue_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/numberjusticespro_coef_trend_linear.pdf} \\
+%  (g) Same Issue & (h) Majority Size \\
+%\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/sameissue_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/numberjusticespro_coef_trend_linear.pdf} \\
 
- (i) Difference in Years & (j) Difference in Years$^2$ \\
-\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/yeardiff_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/yeardiffsquare_coef_trend_linear.pdf} \\
+% (i) Difference in Years & (j) Difference in Years$^2$ \\
+%\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/yeardiff_coef_trend_linear.pdf} & \includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/yeardiffsquare_coef_trend_linear.pdf} \\
 
- (k) Overruled Cases & (l) Justice Homophily \\
-\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/overruled_coef_trend_linear.pdf} & 
-\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/justicehomophily_coef_trend_linear.pdf} \\
+% (k) Overruled Cases & (l) Justice Homophily \\
+%\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/overruled_coef_trend_linear.pdf} & 
+%\includegraphics[width = 0.475\textwidth, trim= 0.1cm 1cm 0.5cm .45cm,clip=true]{images/justicehomophily_coef_trend_linear.pdf} \\
 
- \end{tabular}
-\caption{Trending effects for exogenous variables from the c-TERGM. The solid lines plot the point estimates, and the shaded areas span 95\% confidence intervals. }
- \label{fig:coeftrends_exo}
-\vspace{-.25cm}
-\end{figure} 
+% \end{tabular}
+%\caption{Trending effects for exogenous variables from the c-TERGM. The solid lines plot the point estimates, and the shaded areas span 95\% confidence intervals. }
+% \label{fig:coeftrends_exo}
+%\vspace{-.25cm}
+%\end{figure} 
 
 
 %\begin{itemize}
@@ -472,17 +481,17 @@ The effects of the exogenous covariates included in the c-TERGM (panels (e)--(k)
 
   
   \begin{figure}[H]
-\includegraphics[width=15cm]{justice_popularity}
-\caption{Nodeifactor Majority Opinion Writer. Baseline= LDBrandeis }
- \label{number_supporting}
+\includegraphics[width=16cm]{SCC_Results_1}
+\caption{ERGM results for the dependence terms. Circles indicate a p-value smaller than 0.05, squares a p-value between 0.05 and 0.1 and triangles a p-value greater than 0.1. }
+ \label{SCC_results_1}
 \vspace{-.25cm}
 \end{figure}  
 
 
  \begin{figure}[H]
-\includegraphics[width=15cm]{justice_activity}
-\caption{Nodeofactor Majority Opinion Writer. Baseline= LDBrandeis }
- \label{number_supporting}
+\includegraphics[width=16cm]{SCC_Results_2}
+\caption{ERGM results for the covariate terms. Circles indicate a p-value smaller than 0.05, squares a p-value between 0.05 and 0.1 and triangles a p-value greater than 0.1.}
+ \label{SCC_results_2}
 \vspace{-.25cm}
 \end{figure} 
 
