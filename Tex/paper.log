@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.24)  13 APR 2020 16:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.24)  14 APR 2020 11:33
 entering extended mode
 **paper.tex
 
@@ -1797,77 +1797,34 @@ Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 l.422 \subsection
                  {c-TERGM Results} <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desma
 rais/Supreme_Court_Citation_Network/Tex/SCC_AIC_BIC.pdf>]
-
-LaTeX Warning: Reference `fig:coeftrends_endo' on page 27 undefined on input li
-ne 423.
-
-
-LaTeX Warning: Reference `fig:coeftrends_exo' on page 27 undefined on input lin
-e 423.
-
-
-LaTeX Warning: Reference `fig:coeftrends_endo' on page 27 undefined on input li
-ne 423.
-
-
-LaTeX Warning: Reference `fig:coeftrends_exo' on page 27 undefined on input lin
-e 423.
-
-
-LaTeX Warning: Reference `fig:coeftrends_endo' on page 27 undefined on input li
-ne 423.
-
-
-LaTeX Warning: Reference `fig:coeftrends_exo' on page 27 undefined on input lin
-e 425.
-
+<SCC_Results_1.pdf, id=515, 597.23125pt x 844.15375pt>
+File: SCC_Results_1.pdf Graphic file (type pdf)
+ <use SCC_Results_1.pdf>
+Package pdftex.def Info: SCC_Results_1.pdf used on input line 486.
+(pdftex.def)             Requested size: 455.24408pt x 643.46986pt.
 
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
 [27]
-
-Class scrartcl Warning: Usage of deprecated font command `\bf'!
-(scrartcl)              You should note, that in 1994 font command `\bf' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\bf' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\bf' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrartcl)              by `\normalfont \bfseries ' on input line 430.
-
-<SCC_Results_1.pdf, id=518, 597.23125pt x 844.15375pt>
-File: SCC_Results_1.pdf Graphic file (type pdf)
- <use SCC_Results_1.pdf>
-Package pdftex.def Info: SCC_Results_1.pdf used on input line 484.
-(pdftex.def)             Requested size: 455.24408pt x 643.46986pt.
-
-Overfull \vbox (6.90472pt too high) has occurred while \output is active []
-
-
-[28]
 Overfull \vbox (79.5025pt too high) has occurred while \output is active []
 
 
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[29pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
+[28pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.489 
+l.491 
        <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_
 Network/Tex/SCC_Results_1.pdf>]
-<SCC_Results_2.pdf, id=542, 597.23125pt x 844.15375pt>
+<SCC_Results_2.pdf, id=540, 597.23125pt x 844.15375pt>
 File: SCC_Results_2.pdf Graphic file (type pdf)
  <use SCC_Results_2.pdf>
-Package pdftex.def Info: SCC_Results_2.pdf used on input line 492.
+Package pdftex.def Info: SCC_Results_2.pdf used on input line 494.
 (pdftex.def)             Requested size: 455.24408pt x 643.46986pt.
 
 Overfull \vbox (79.5025pt too high) has occurred while \output is active []
@@ -1876,18 +1833,20 @@ Overfull \vbox (79.5025pt too high) has occurred while \output is active []
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[30pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
+[29pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.497 
+l.499 
        <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_
 Network/Tex/SCC_Results_2.pdf>]
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
-LaTeX Warning: Float too large for page by 21.86545pt on input line 578.
 
-
+[30]
+("C:\Users\Geiler Typ\Desktop\PSU\Bruce Desmarais\Supreme_Court_Citation_Networ
+k\Tex\paper.bbl"
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
@@ -1895,27 +1854,11 @@ Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[32pdfTeX warning (ext4): destination with the same identifier (name{table.3}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.579 \newpage
-              ]
-("C:\Users\Geiler Typ\Desktop\PSU\Bruce Desmarais\Supreme_Court_Citation_Networ
-k\Tex\paper.bbl"
+[32]
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
 [33]
-Overfull \vbox (6.90472pt too high) has occurred while \output is active []
-
-
-[34]
-Overfull \vbox (6.90472pt too high) has occurred while \output is active []
-
-
-[35]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 189.
 
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
@@ -1924,25 +1867,25 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[36]
+[34]
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[37]) <issuearea_activity.pdf, id=599, 433.62pt x 289.08pt>
+[35]) <issuearea_activity.pdf, id=590, 433.62pt x 289.08pt>
 File: issuearea_activity.pdf Graphic file (type pdf)
 
 <use issuearea_activity.pdf>
-Package pdftex.def Info: issuearea_activity.pdf used on input line 588.
+Package pdftex.def Info: issuearea_activity.pdf used on input line 529.
 (pdftex.def)             Requested size: 455.24408pt x 274.24654pt.
 
-<issuearea_popularity.pdf, id=601, 433.62pt x 289.08pt>
+<issuearea_popularity.pdf, id=592, 433.62pt x 289.08pt>
 File: issuearea_popularity.pdf Graphic file (type pdf)
 
 <use issuearea_popularity.pdf>
-Package pdftex.def Info: issuearea_popularity.pdf used on input line 590.
+Package pdftex.def Info: issuearea_popularity.pdf used on input line 531.
 (pdftex.def)             Requested size: 455.24408pt x 274.24654pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 587--592
+Overfull \hbox (12.0pt too wide) in paragraph at lines 528--533
 [][]
  []
 
@@ -1950,57 +1893,53 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 587--592
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[38] <heatplot_issue_area.pdf, id=608, 433.62pt x 289.08pt>
+[36] <heatplot_issue_area.pdf, id=599, 433.62pt x 289.08pt>
 File: heatplot_issue_area.pdf Graphic file (type pdf)
 
 <use heatplot_issue_area.pdf>
-Package pdftex.def Info: heatplot_issue_area.pdf used on input line 597.
+Package pdftex.def Info: heatplot_issue_area.pdf used on input line 538.
 (pdftex.def)             Requested size: 426.79134pt x 284.54036pt.
 
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[39pdfTeX warning (ext4): destination with the same identifier (name{figure.10}
+[37pdfTeX warning (ext4): destination with the same identifier (name{figure.10}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.602 
+l.543 
        <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_
 Network/Tex/issuearea_activity.pdf> <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desm
 arais/Supreme_Court_Citation_Network/Tex/issuearea_popularity.pdf>]
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[40pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
+[38pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.604 \end{document}
+l.545 \end{document}
                      <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_C
 ourt_Citation_Network/Tex/heatplot_issue_area.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 604.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 604.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 545.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 545.
 
 ("C:\Users\Geiler Typ\Desktop\PSU\Bruce Desmarais\Supreme_Court_Citation_Networ
 k\Tex\paper.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 604.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 604.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 545.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 545.
 Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: 789FC89DCC9997B31657A6B1BDD17F96;859.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 604.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 545.
  ) 
 Here is how much of TeX's memory you used:
- 24959 strings out of 493921
- 434241 string characters out of 3144861
- 626379 words of memory out of 3000000
- 27562 multiletter control sequences out of 15000+200000
- 145414 words of font info for 131 fonts, out of 3000000 for 9000
+ 24951 strings out of 493921
+ 434145 string characters out of 3144861
+ 613166 words of memory out of 3000000
+ 27558 multiletter control sequences out of 15000+200000
+ 142433 words of font info for 130 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  64i,15n,60p,3233b,530s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
@@ -2013,10 +1952,10 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/
-enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/l
-m/lm-mathex.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+es (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/
+enc/dvips/lm/lm-mathex.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/l
+m/lm-mathsy.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmmib10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.
 pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files 
@@ -2032,11 +1971,10 @@ lic/lm/lmro10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmss
 bx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/public/lm/lmtt10.pfb>
-Output written on paper.pdf (40 pages, 1973605 bytes).
+KTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
+Output written on paper.pdf (38 pages, 1959016 bytes).
 PDF statistics:
- 759 PDF objects out of 1000 (max. 8388607)
- 127 named destinations out of 1000 (max. 500000)
+ 746 PDF objects out of 1000 (max. 8388607)
+ 124 named destinations out of 1000 (max. 500000)
  12507 words of extra memory for PDF output out of 14400 (max. 10000000)
 
