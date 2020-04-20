@@ -1,8 +1,8 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Network Processes in Supreme Court Citations}{}% 2
-\BOOKMARK [1][-]{section.3}{The Citation Temporal Exponential Random Graph Model}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{c-TERGM definition}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{c-TERGM Estimation}{section.3}% 5
+\BOOKMARK [1][-]{section.3}{The Citation Exponential Random Graph Model}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{c-ERGM definition}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{c-ERGM Estimation}{section.3}% 5
 \BOOKMARK [1][-]{section.4}{Empirical Analysis}{}% 6
 \BOOKMARK [2][-]{subsection.4.1}{c-TERGM specification}{section.4}% 7
 \BOOKMARK [3][-]{subsubsection.4.1.1}{Covariate terms}{subsection.4.1}% 8

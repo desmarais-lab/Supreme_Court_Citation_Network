@@ -74,18 +74,6 @@ Cross, Frank~B. 2010.
   remarkable influence of Justice Scalia).'' {\em Supreme Court Economic
   Review} 18(1):177--202.
 
-\harvarditem{Desmarais \harvardand\ Cranmer}{2010}{desmarais2010consistent}
-Desmarais, Bruce~A \harvardand\ Skyler~J Cranmer. 2010.
-\newblock Consistent confidence intervals for maximum pseudolikelihood
-  estimators.  In {\em Proceedings of the Neural Information Processing Systems
-  2010 Workshop on Computational Social Science and the Wisdom of Crowds}.
-
-\harvarditem{Desmarais \harvardand\ Cranmer}{2012}{desmarais2012statistical}
-Desmarais, Bruce~A \harvardand\ Skyler~J Cranmer. 2012.
-\newblock ``Statistical mechanics of networks: Estimation and uncertainty.''
-  {\em Physica A: Statistical Mechanics and its Applications}
-  391(4):1865--1876.
-
 \harvarditem{Desmarais \harvardand\ Cranmer}{2013}{desmarais2013forecasting}
 Desmarais, Bruce~A \harvardand\ Skyler~J Cranmer. 2013.
 \newblock ``Forecasting the locational dynamics of transnational terrorism: A
@@ -177,24 +165,16 @@ Jensen, David~D \harvardand\ Paul~R Cohen. 2000.
 \newblock ``Multiple comparisons in induction algorithms.'' {\em Machine
   Learning} 38(3):309--338.
 
+\harvarditem[Kirkpatrick, Gelatt \harvardand\ Vecchi]{Kirkpatrick, Gelatt
+  \harvardand\ Vecchi}{1983}{Kirkpatrick83}
+Kirkpatrick, S., C.~D. Gelatt \harvardand\ M.~P. Vecchi. 1983.
+\newblock ``Optimization by Simulated Annealing.'' {\em Science}
+  220(4598):671--680.
+
 \harvarditem{Knight \harvardand\ Epstein}{1996}{knight1996norm}
 Knight, Jack \harvardand\ Lee Epstein. 1996.
 \newblock ``The norm of stare decisis.'' {\em American Journal of Political
   Science} pp.~1018--1035.
-
-\harvarditem{Krivitsky \harvardand\ Handcock}{2017}{tergm}
-Krivitsky, Pavel~N. \harvardand\ Mark~S. Handcock. 2017.
-\newblock {\em tergm: Fit, Simulate and Diagnose Models for Network Evolution
-  Based on Exponential-Family Random Graph Models}.
-\newblock The Statnet Project (\url{http://www.statnet.org}).
-\newblock R package version 3.4.1.
-\newline\harvardurl{https://CRAN.R-project.org/package=tergm}
-
-\harvarditem[Leifeld, Cranmer \harvardand\ Desmarais]{Leifeld, Cranmer
-  \harvardand\ Desmarais}{2017}{leifeld2017temporal}
-Leifeld, Philip, Skyler~J Cranmer \harvardand\ Bruce~A Desmarais. 2017.
-\newblock ``Temporal exponential random graph models with btergm: Estimation
-  and bootstrap confidence intervals.'' {\em Journal of Statistical Software} .
 
 \harvarditem{Levy}{2016}{Levy2016}
 Levy, Michael. 2016.
@@ -219,13 +199,6 @@ Lupu, Yonatan \harvardand\ James~H Fowler. 2013.
 \newblock ``Strategic citations to precedent on the US Supreme Court.'' {\em
   The Journal of Legal Studies} 42(1):151--186.
 
-\harvarditem[Makhoul et~al.]{Makhoul, Kubala, Schwartz, Weischedel
-  et~al.}{1999}{makhoul1999performance}
-Makhoul, John, Francis Kubala, Richard Schwartz, Ralph Weischedel et~al. 1999.
-\newblock Performance measures for information extraction.  In {\em Proceedings
-  of DARPA broadcast news workshop}.
-\newblock pp.~249--252.
-
 \harvarditem{Martin \harvardand\ Quinn}{2002}{martin2002dynamic}
 Martin, Andrew~D \harvardand\ Kevin~M Quinn. 2002.
 \newblock ``Dynamic ideal point estimation via Markov chain Monte Carlo for the
@@ -237,12 +210,6 @@ Masket, Seth \harvardand\ Boris Shor. 2015.
   partisanship in Nebraska?s Unicameral Legislature.'' {\em State Politics \&
   Policy Quarterly} 15(1):67--90.
 
-\harvarditem{Nguyen}{2017}{nguyen2017near}
-Nguyen, Hien~D. 2017.
-\newblock ``Near universal consistency of the maximum pseudolikelihood
-  estimator for discrete models.'' {\em Journal of the Korean Statistical
-  Society} .
-
 \harvarditem{Pelc}{2014}{pelc2014politics}
 Pelc, Krzysztof~J. 2014.
 \newblock ``The politics of precedent in international law: A social network
@@ -253,11 +220,17 @@ Richards, Mark~J \harvardand\ Herbert~M Kritzer. 2002.
 \newblock ``Jurisprudential regimes in Supreme Court decision making.'' {\em
   American Political Science Review} 96(2):305--320.
 
-\harvarditem{Schmid \harvardand\ Desmarais}{2017}{schmid2017exponential}
-Schmid, Christian~S \harvardand\ Bruce~A Desmarais. 2017.
+\harvarditem{Schmid \harvardand\ Desmarais}{N.d.}{schmid2017exponential}
+Schmid, Christian~S \harvardand\ Bruce~A Desmarais. N.d.
 \newblock ``Exponential Random Graph Models with Big Networks: Maximum
-  Pseudolikelihood Estimation and the Parametric Bootstrap.'' {\em arXiv
-  preprint arXiv:1708.02598} .
+  Pseudolikelihood Estimation and the Parametric Bootstrap.'' {\em IEEE
+  International Conference on Big Data,
+  http://ieeexplore.ieee.org/document/8257919/}. Forthcoming.
+
+\harvarditem{Schmid \harvardand\ Hunter}{2020}{SchmidHunter2020}
+Schmid, Christian~S. \harvardand\ David~R. Hunter. 2020.
+\newblock ``Some Results on MPLE.'' {\em Working Paper, The Pennsylvania State
+  University, Department of Statistics} (1).
 
 \harvarditem[Snijders et~al.]{Snijders, Pattison, Robins \harvardand\
   Handcock}{2006}{SnijdersTomA.B..2006}
@@ -293,13 +266,6 @@ Strogatz, Steven~H. 2001.
   Interpretation -- Centennial Edition}.
 \newblock 112th Cong., 2d sess. S. Doc. 112-9.
   \url{https://www.govinfo.gov/app/details/GPO-CONAN-2017/}.
-
-\harvarditem[Van~Duijn, Gile \harvardand\ Handcock]{Van~Duijn, Gile
-  \harvardand\ Handcock}{2009}{van2009framework}
-Van~Duijn, Marijtje~AJ, Krista~J Gile \harvardand\ Mark~S Handcock. 2009.
-\newblock ``A framework for the comparison of maximum pseudo-likelihood and
-  maximum likelihood estimation of exponential family random graph models.''
-  {\em Social Networks} 31(1):52--62.
 
 \harvarditem[Ward, Greenhill \harvardand\ Bakke]{Ward, Greenhill \harvardand\
   Bakke}{2010}{ward2010perils}
