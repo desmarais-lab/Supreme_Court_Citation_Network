@@ -25,11 +25,6 @@ Repeated entry---line 1111 of file bib.bib
  : @article{fowler2007network
  :                           ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1373 of file bib.bib
- :   
- :   year={2017}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Repeated entry---line 1725 of file bib.bib
  : @article{lupu2012precedent
  :                           ,
@@ -37,4 +32,4 @@ I'm skipping whatever remains of this entry
 Warning--empty publisher in desmaraisstatistical
 Warning--empty publisher in Handcock.2003
 Warning--there's a number but no volume in SchmidHunter2020
-(There were 8 error messages)
+(There were 7 error messages)

@@ -36,6 +36,11 @@ Bommarito~II, Michael~J, Daniel Katz \harvardand\ Jon Zelner. 2009.
   of the 12th international conference on artificial intelligence and law}.
 \newblock ACM pp.~234--235.
 
+\harvarditem{Butts}{2008}{Butts.2008}
+Butts, Carter~T. 2008.
+\newblock ``A Relational Event Framework for Social Action.'' {\em Sociological
+  Methodology} 38(1).
+
 \harvarditem{Caldeira}{1988}{caldeira1988legal}
 Caldeira, Gregory~A. 1988.
 \newblock ``Legal precedent: Structures of communication between state supreme
@@ -160,6 +165,12 @@ Hunter, David~R \harvardand\ Mark~S Handcock. 2006.
 \newblock ``Inference in curved exponential family models for networks.'' {\em
   Journal of Computational and Graphical Statistics} 15(3):565--583.
 
+\harvarditem[Hunter, Goodreau \harvardand\ Handcock]{Hunter, Goodreau
+  \harvardand\ Handcock}{2008}{Hunter.2008}
+Hunter, David~R., Steven~M. Goodreau \harvardand\ Mark~S. Handcock. 2008.
+\newblock ``Goodness of Fit of Social Network Models.'' {\em Journal of the
+  American Statistical Association} 103(481):248--258.
+
 \harvarditem{Jensen \harvardand\ Cohen}{2000}{jensen2000multiple}
 Jensen, David~D \harvardand\ Paul~R Cohen. 2000.
 \newblock ``Multiple comparisons in induction algorithms.'' {\em Machine
@@ -220,12 +231,12 @@ Richards, Mark~J \harvardand\ Herbert~M Kritzer. 2002.
 \newblock ``Jurisprudential regimes in Supreme Court decision making.'' {\em
   American Political Science Review} 96(2):305--320.
 
-\harvarditem{Schmid \harvardand\ Desmarais}{N.d.}{schmid2017exponential}
-Schmid, Christian~S \harvardand\ Bruce~A Desmarais. N.d.
+\harvarditem{Schmid \harvardand\ Desmarais}{2017}{schmid2017exponential}
+Schmid, Christian~S \harvardand\ Bruce~A Desmarais. 2017.
 \newblock ``Exponential Random Graph Models with Big Networks: Maximum
   Pseudolikelihood Estimation and the Parametric Bootstrap.'' {\em IEEE
   International Conference on Big Data,
-  http://ieeexplore.ieee.org/document/8257919/}. Forthcoming.
+  http://ieeexplore.ieee.org/document/8257919/} pp.~116--121.
 
 \harvarditem{Schmid \harvardand\ Hunter}{2020}{SchmidHunter2020}
 Schmid, Christian~S. \harvardand\ David~R. Hunter. 2020.

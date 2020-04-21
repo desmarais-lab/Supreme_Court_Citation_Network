@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.24)  20 APR 2020 16:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.24)  21 APR 2020 16:22
 entering extended mode
 **paper.tex
 
@@ -1563,11 +1563,11 @@ Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[4] <images/citations_trans.pdf, id=153, 722.7pt x 722.7pt>
+[4] <images/citations_trans.pdf, id=163, 722.7pt x 722.7pt>
 File: images/citations_trans.pdf Graphic file (type pdf)
 
 <use images/citations_trans.pdf>
-Package pdftex.def Info: images/citations_trans.pdf used on input line 125.
+Package pdftex.def Info: images/citations_trans.pdf used on input line 126.
 (pdftex.def)             Requested size: 432.48048pt x 381.39659pt.
 
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
@@ -1582,14 +1582,15 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.137 \begin{quotation}
-                        <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Suprem
-e_Court_Citation_Network/Tex/images/citations_trans.pdf>]
-<images/citations_recip.pdf, id=184, 722.7pt x 722.7pt>
+l.140 \end{quotation}
+                     % https://supreme.justia.com/cases/federal/us/517/44/ca...
+ <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_Networ
+k/Tex/images/citations_trans.pdf>]
+<images/citations_recip.pdf, id=194, 722.7pt x 722.7pt>
 File: images/citations_recip.pdf Graphic file (type pdf)
 
 <use images/citations_recip.pdf>
-Package pdftex.def Info: images/citations_recip.pdf used on input line 146.
+Package pdftex.def Info: images/citations_recip.pdf used on input line 147.
 (pdftex.def)             Requested size: 432.48048pt x 381.39659pt.
 
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
@@ -1604,10 +1605,10 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \begin{quotation}
+l.153 \begin{quotation}
                         <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Suprem
 e_Court_Citation_Network/Tex/images/citations_recip.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 153--156
+Underfull \hbox (badness 10000) in paragraph at lines 154--157
 
  []
 
@@ -1615,11 +1616,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--156
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[9] <images/citations_pop.pdf, id=222, 722.7pt x 722.7pt>
+[9] <images/citations_pop.pdf, id=232, 722.7pt x 722.7pt>
 File: images/citations_pop.pdf Graphic file (type pdf)
 
 <use images/citations_pop.pdf>
-Package pdftex.def Info: images/citations_pop.pdf used on input line 165.
+Package pdftex.def Info: images/citations_pop.pdf used on input line 166.
 (pdftex.def)             Requested size: 432.48048pt x 321.018pt.
 
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
@@ -1634,26 +1635,26 @@ Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.172 \begin{quotation}
+l.173 \begin{quotation}
                         <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Suprem
 e_Court_Citation_Network/Tex/images/citations_pop.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 173.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 174.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 173.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 174.
 
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[12] <images/daggish.pdf, id=268, 433.62pt x 361.35pt>
+[12] <images/daggish.pdf, id=277, 433.62pt x 361.35pt>
 File: images/daggish.pdf Graphic file (type pdf)
 
 <use images/daggish.pdf>
-Package pdftex.def Info: images/daggish.pdf used on input line 190.
+Package pdftex.def Info: images/daggish.pdf used on input line 191.
 (pdftex.def)             Requested size: 432.48048pt x 360.41728pt.
 
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
@@ -1668,10 +1669,10 @@ Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.201 
+l.202 
        <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_
 Network/Tex/images/daggish.pdf>]
-Overfull \hbox (1.34995pt too wide) in paragraph at lines 202--204
+Overfull \hbox (1.34995pt too wide) in paragraph at lines 203--205
 $\OML/lmm/m/it/10.95 C[]$ \T1/lmr/m/n/10.95 is the ob-served el-e-ments of $\OM
 L/lmm/m/it/10.95 C[]$ \T1/lmr/m/n/10.95 ex-cept $\OML/lmm/m/it/10.95 C[]$\T1/lm
 r/m/n/10.95 , and $[]$
@@ -1698,22 +1699,22 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.248 
-      ] <degree_distribution.pdf, id=374, 844.15375pt x 597.23125pt>
+l.249 
+      ] <degree_distribution.pdf, id=383, 844.15375pt x 597.23125pt>
 File: degree_distribution.pdf Graphic file (type pdf)
 
 <use degree_distribution.pdf>
-Package pdftex.def Info: degree_distribution.pdf used on input line 251.
+Package pdftex.def Info: degree_distribution.pdf used on input line 252.
 (pdftex.def)             Requested size: 422.07584pt x 298.61488pt.
 
-<images/citations1.pdf, id=375, 1445.4pt x 1445.4pt>
+<images/citations1.pdf, id=384, 1445.4pt x 1445.4pt>
 File: images/citations1.pdf Graphic file (type pdf)
 
 <use images/citations1.pdf>
-Package pdftex.def Info: images/citations1.pdf used on input line 258.
+Package pdftex.def Info: images/citations1.pdf used on input line 259.
 (pdftex.def)             Requested size: 500.91829pt x 485.98036pt.
 
-Overfull \hbox (45.67421pt too wide) in paragraph at lines 258--259
+Overfull \hbox (45.67421pt too wide) in paragraph at lines 259--260
 [][]
  []
 
@@ -1726,10 +1727,10 @@ Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.273 ...C_{<t},X) =  \sum_{ij} C_{ij,t}X_{ij}.$$ 
-                                                  Since $C_{ij,t}$ is a bina...
- <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_Networ
-k/Tex/degree_distribution.pdf>]
+l.271 \subsubsection
+                    {Covariate terms}\label{covariate_terms} <C:/Users/Geiler T
+yp/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_Network/Tex/degree_distri
+bution.pdf>]
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
@@ -1738,17 +1739,17 @@ Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.273 ...C_{<t},X) =  \sum_{ij} C_{ij,t}X_{ij}.$$ 
-                                                  Since $C_{ij,t}$ is a bina...
- <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_Networ
-k/Tex/images/citations1.pdf>]
+l.271 \subsubsection
+                    {Covariate terms}\label{covariate_terms} <C:/Users/Geiler T
+yp/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_Network/Tex/images/citati
+ons1.pdf>]
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
 [21]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 286.
+               Default added (so using `tbp') on input line 287.
 
 
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
@@ -1759,7 +1760,7 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.306 
+l.305 
       ]
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
@@ -1768,19 +1769,11 @@ Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 344--345
-
- []
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 363.
-
-<SCC_AIC_BIC.pdf, id=473, 844.15375pt x 597.23125pt>
+[24] <SCC_AIC_BIC.pdf, id=486, 844.15375pt x 597.23125pt>
 File: SCC_AIC_BIC.pdf Graphic file (type pdf)
- <use SCC_AIC_BIC.pdf>
-Package pdftex.def Info: SCC_AIC_BIC.pdf used on input line 364.
+
+<use SCC_AIC_BIC.pdf>
+Package pdftex.def Info: SCC_AIC_BIC.pdf used on input line 363.
 (pdftex.def)             Requested size: 426.79134pt x 301.95935pt.
 
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
@@ -1795,13 +1788,13 @@ Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.371 
+l.434 
        <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_
 Network/Tex/SCC_AIC_BIC.pdf>]
-<SCC_Results_1.pdf, id=510, 597.23125pt x 844.15375pt>
+<SCC_Results_1.pdf, id=526, 597.23125pt x 844.15375pt>
 File: SCC_Results_1.pdf Graphic file (type pdf)
  <use SCC_Results_1.pdf>
-Package pdftex.def Info: SCC_Results_1.pdf used on input line 497.
+Package pdftex.def Info: SCC_Results_1.pdf used on input line 498.
 (pdftex.def)             Requested size: 455.24408pt x 643.46986pt.
 
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
@@ -1819,13 +1812,13 @@ Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.502 
+l.504 
        <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_
 Network/Tex/SCC_Results_1.pdf>]
-<SCC_Results_2.pdf, id=535, 597.23125pt x 844.15375pt>
+<SCC_Results_2.pdf, id=549, 597.23125pt x 844.15375pt>
 File: SCC_Results_2.pdf Graphic file (type pdf)
  <use SCC_Results_2.pdf>
-Package pdftex.def Info: SCC_Results_2.pdf used on input line 505.
+Package pdftex.def Info: SCC_Results_2.pdf used on input line 508.
 (pdftex.def)             Requested size: 455.24408pt x 643.46986pt.
 
 Overfull \vbox (79.5025pt too high) has occurred while \output is active []
@@ -1839,51 +1832,103 @@ Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.510 
+l.513 
        <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_
 Network/Tex/SCC_Results_2.pdf>]
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[30]
+[30] <GOF_1950.pdf, id=576, 844.15375pt x 597.23125pt>
+File: GOF_1950.pdf Graphic file (type pdf)
+ <use GOF_1950.pdf>
+Package pdftex.def Info: GOF_1950.pdf used on input line 534.
+(pdftex.def)             Requested size: 392.64812pt x 277.80078pt.
+File: GOF_1950.pdf Graphic file (type pdf)
+
+<use GOF_1950.pdf>
+Package pdftex.def Info: GOF_1950.pdf used on input line 538.
+(pdftex.def)             Requested size: 392.64812pt x 277.80078pt.
+
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
+
+
+[31]
+Overfull \vbox (8.73238pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
+
+
+[32pdfTeX warning (ext4): destination with the same identifier (name{figure.10}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.545 
+       <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_
+Network/Tex/GOF_1950.pdf>] <Deg_1950.pdf, id=604, 597.23125pt x 844.15375pt>
+File: Deg_1950.pdf Graphic file (type pdf)
+
+<use Deg_1950.pdf>
+Package pdftex.def Info: Deg_1950.pdf used on input line 554.
+(pdftex.def)             Requested size: 412.56496pt x 583.13652pt.
+
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
+
+
+[33]
+Overfull \vbox (3.96915pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
+
+
+[34pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.564 
+       <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_
+Network/Tex/Deg_1950.pdf>]
 ("C:\Users\Geiler Typ\Desktop\PSU\Bruce Desmarais\Supreme_Court_Citation_Networ
 k\Tex\paper.bbl"
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[31]
+[35]
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[32]
+[36]
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[33]
+[37]
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[34]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 268.
+[38]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 279.
 
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-<issuearea_activity.pdf, id=578, 433.62pt x 289.08pt>
+<issuearea_activity.pdf, id=648, 433.62pt x 289.08pt>
 File: issuearea_activity.pdf Graphic file (type pdf)
 
 <use issuearea_activity.pdf>
-Package pdftex.def Info: issuearea_activity.pdf used on input line 540.
+Package pdftex.def Info: issuearea_activity.pdf used on input line 575.
 (pdftex.def)             Requested size: 455.24408pt x 274.24654pt.
 
-<issuearea_popularity.pdf, id=580, 433.62pt x 289.08pt>
+<issuearea_popularity.pdf, id=650, 433.62pt x 289.08pt>
 File: issuearea_popularity.pdf Graphic file (type pdf)
 
 <use issuearea_popularity.pdf>
-Package pdftex.def Info: issuearea_popularity.pdf used on input line 542.
+Package pdftex.def Info: issuearea_popularity.pdf used on input line 577.
 (pdftex.def)             Requested size: 455.24408pt x 274.24654pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 539--544
+Overfull \hbox (12.0pt too wide) in paragraph at lines 574--579
 [][]
  []
 
@@ -1891,55 +1936,55 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 539--544
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[35] <heatplot_issue_area.pdf, id=588, 433.62pt x 289.08pt>
+[39] <heatplot_issue_area.pdf, id=658, 433.62pt x 289.08pt>
 File: heatplot_issue_area.pdf Graphic file (type pdf)
 
 <use heatplot_issue_area.pdf>
-Package pdftex.def Info: heatplot_issue_area.pdf used on input line 549.
+Package pdftex.def Info: heatplot_issue_area.pdf used on input line 584.
 (pdftex.def)             Requested size: 426.79134pt x 284.54036pt.
 
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[36pdfTeX warning (ext4): destination with the same identifier (name{figure.10}
+[40pdfTeX warning (ext4): destination with the same identifier (name{figure.12}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.554 
+l.589 
        <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_
 Network/Tex/issuearea_activity.pdf> <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desm
 arais/Supreme_Court_Citation_Network/Tex/issuearea_popularity.pdf>]
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[37pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
+[41pdfTeX warning (ext4): destination with the same identifier (name{figure.13}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.556 \end{document}
+l.591 \end{document}
                      <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_C
 ourt_Citation_Network/Tex/heatplot_issue_area.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 556.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 556.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 591.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 591.
 
 ("C:\Users\Geiler Typ\Desktop\PSU\Bruce Desmarais\Supreme_Court_Citation_Networ
 k\Tex\paper.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 556.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 556.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 591.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 591.
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 6E71231F00A713B1A2B1B3DE476F8955;848.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 556.
+(rerunfilecheck)             Checksum: B20002AA8D29903CE0A5EEA29FD169A8;994.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 591.
  ) 
 Here is how much of TeX's memory you used:
- 24930 strings out of 493921
- 433617 string characters out of 3144861
- 611899 words of memory out of 3000000
- 27543 multiletter control sequences out of 15000+200000
+ 24960 strings out of 493921
+ 434050 string characters out of 3144861
+ 612220 words of memory out of 3000000
+ 27561 multiletter control sequences out of 15000+200000
  142433 words of font info for 130 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 64i,15n,60p,3233b,510s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 64i,15n,60p,3233b,511s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1970,9 +2015,9 @@ bx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files (x86)/Mi
 KTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on paper.pdf (37 pages, 1954677 bytes).
+Output written on paper.pdf (41 pages, 2201025 bytes).
 PDF statistics:
- 734 PDF objects out of 1000 (max. 8388607)
- 118 named destinations out of 1000 (max. 500000)
- 12507 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 805 PDF objects out of 1000 (max. 8388607)
+ 128 named destinations out of 1000 (max. 500000)
+ 12533 words of extra memory for PDF output out of 14400 (max. 10000000)
 
