@@ -432,6 +432,8 @@ Figure \ref{AIC_BIC} depicts the AIC and BIC comparison for two different models
 \subsection{c-TERGM Results}
 The results from the c-TERGM are presented Figures \ref{SCC_results_1} and \ref{SCC_results_2}. In these figures we depict coefficient estimates and 95\% confidence intervals for all of the effects for all the variables we discussed in sections \ref{covariate_terms} and \ref{dependence_terms}. The coefficients in an ERGM family model can be interpreted in the same way as logistic regression coefficients---they give the change in the log odds of a tie from $i$ to $j$ given a one unit increase in the respective variable. For this reason, the number of edges in a network corresponds to the intercept in an ERGM. We first discuss the dependence effect estimates in Figure \ref{SCC_results_1}. A circle indicates that the estimate was significant at an $\alpha=0.05$ level, while and square translates to a p-value between $0.05$ and $0.1$. A triangle signals that the estimate for a given year was not significant at an $\alpha=0.1$ level.
 
+The panel showing the results of the reciprocity statistic does not provide estimates for ever term. In these missing terms there were no two cases that would cite each other, making the estimation of the reciprocity statistic impossible. A similar scenario is visible for the \textit{Overruled Cases} variable. In the time period from 1953-1956 no cases that have been overruled have been cited which results in a non-estimable effect.
+
 %The reciprocity effect is substantial, positive, and statistically significant for most of the period under study. Conditional upon cases $i$ and $j$ being considered within the same term, the log of the odds that opinion $i$ cites opinion $j$ increases by approximately $2$ when opinion $j$ cites opinion $i$. The naive probability that any one case cites another case decided at the same time or previously in the Supreme Court Citation network is approximately $0.0019$. This probability increases eight-fold, to approximately $0.015$ if the citation would be reciprocal. The transitivity (i.e., triangle closure) effect is also substantial, positive, and statistically significant over the entire period studied. The probability that case $i$ cites case $j$ increases approximately five-fold if the citation would close a triangle involving cases $i$ and $j$. The activity and popularity effects are both estimated to be positive, but trend downward and are more modest in scale (and in the case of activity, not statistically significant later in the time series). Interpreting the popularity effect---the log odds that $i$ cites $j$ increases by 0.018--0.035 with every additional citation to case $j$. Based on the indegree distribution, it appears that the popularity of cases can be classified by multiples of 10. If case $j$ increases from ten to twenty citations from other cases, the probability that case $i$ cites case $j$ increases from approximately 0.0030 to 0.0040. Overall, these results represent evidence of complex dependence in Supreme Court citation formation.
 
 %The effects of the exogenous covariates included in the c-TERGM (panels (e)--(k) in Figure \ref{fig:coeftrends_exo}) exhibit some surprising dynamics. The effects of absolute difference in Martin-Quinn score, and majority size of the recipient case all flip signs throughout the time period under study. This may be an artifact of the simple linear trends we have estimated, but is interesting nonetheless. The attitudinal model holds that ideological preferences drive decision-making on the US Supreme Court. Ideological selection of precedents would be evidenced by a negative effect of the absolute difference in MQ scores in the c-TERGM. We find this effect is negative and statistically significant only after 1975. The absolute difference in MQ scores variable is on the scale of approximately 0---3. At its most ideological point (i.e. 2001), the probability that case $i$ cites case $j$ decreases from approximately 0.024 to 0.018---by one third---if the ideological distance between the majority coalitions in the two cases increases by 3. The effects of the majority size and ideological breadth of case $j$ are similar in both scale and trend. It is not until later in the time series that they both exhibit their expected positive effects. The effect of same issue is positive and statistically significant, and substantial for the time period under study. The probability that $i$ cites $j$ increases by approximately three-fold over the naive probability of citation if $i$ and $j$ have the same legal issue area.
@@ -525,9 +527,10 @@ We recognize several limitations of the current analysis, which should be addres
 \section{Appendix}
 
 \subsection{Goodness-of-Fit}
-We evaluate the goodness-of-fit of our model following \citet{Hunter.2008} by examining the distribution of four hyper statistics, e.g., the out- and indegree distribution and the distribution for two different edgewise-shared partners statistics. OTP stands for \textit{outgoing two-paths} and refers to the number of cases $r$ that are cited by case $i$ and that cite case $j$, while $j$ is also directly cited by $i$. The second ESP statistic is the OSP specification that has been introduced in section \ref{dependence_terms}. Figure \ref{GOF} visualizes the goodness-of-fit results for the citation network for the 1950 (top) and 2015 (bottom) term. The solid black line indicates the statistic's distribution in the Supreme Court citation network for that given term and the boxplots depict the statistic's distribution of $1000$ networks that have been simulated from the ERGM defined by the MCMLE. This means that in the ideal case the solid black line passes through ever single boxplot.
+We evaluate the goodness-of-fit of the model following \citet{Hunter.2008} by examining the distribution of four hyper statistics, e.g., the out- and indegree distribution and the distribution for two different edgewise shared partners statistics. OTP stands for \textit{outgoing two-paths} and refers to the number of cases $r$ that are cited by case $i$ and that cite case $j$, while $j$ is also directly cited by $i$. The second ESP statistic is the OSP specification that has been introduced in section \ref{dependence_terms}. Figure \ref{GOF} visualizes the goodness-of-fit results for the citation network for the 1950 (top) and 2015 (bottom) term. The solid black line indicates the statistic's distribution in the Supreme Court citation network of that given term and the boxplots depict the statistic's distribution of $1000$ networks that have been simulated from the ERGM defined by the MCMLE. This means that in the ideal case the solid black line passes through ever single boxplot.
 
-Talk about results. Wait for 2015 plots to finish
+
+We see that our models do a good job capturing the out and indegree distribution of the citation network, since the black line falls almost exclusively within the ranges spanned by the boxplots. For the ESP distributions we can observe that the number of ties with $r=0$ shared partners is captured well for both the OTP as well as for the OSP statistic. However, the model overestimates the number of $r=1$ shared partners and then, especially in the 2015 term network, underestimates the number of ties with more than $r=1$ shared partners. 
 
  \begin{figure}[H]
  \begin{center}
@@ -535,7 +538,7 @@ Talk about results. Wait for 2015 plots to finish
 %\caption{Goodness-of-fit diagnostic for the 1950 network.}
 % \label{GOF_1950}
 \vspace{1cm}
-\includegraphics[width=13.8cm]{GOF_1950}
+\includegraphics[width=13.8cm]{GOF_2015}
 \vspace{0.1cm}
 \caption{Goodness-of-fit diagnostic for the 1950 network (top) and the 2015 network (bottom).}
  \label{GOF}
@@ -546,14 +549,23 @@ Talk about results. Wait for 2015 plots to finish
 
 \subsection{Checking for Model Degeneracy}
 
-A common challenge when fitting ERGMs is model degeneracy. Model degeneracy occurs when the probability distribution defined by the parameter vector does not predominantly yield networks with similar statistics as the observed network. Generally, model degeneracy results in simulated networks with no ties or all possible ties. In a non-degenerate model the statistics of the simulated networks fall in the proximity of the observed network's statistics. Figure \ref{mcmcdiagnostics_1950} depicts the degeneracy check for the dependence terms in the 1950 term citation network. The histograms on the left visualize a statistic's density from $1000$ simulated networks, while the right side shows the statistic's trace plot of the same $1000$ networks. The solid black line indicates the statistic's value in the actual citation network. Figure \ref{mcmcdiagnostics_1950} shows that this model is non-degenerate and that the simulated network's statistics fall almost evenly around the observed statistic. The density and trace plots for the ERGM of other terms do not indicate a degenerate model either.
+A common challenge when fitting ERGMs is model degeneracy. Model degeneracy occurs when the probability distribution defined by the parameter vector does not predominantly yield networks with similar statistics as the observed network. Generally, model degeneracy results in simulated networks with no ties or all possible ties. In a non-degenerate model the statistics of the networks that were simulated from the probability distribution defined by the MCMLE fall in the proximity of the observed network's statistics. Figures \ref{mcmcdiagnostics_1950} and \ref{mcmcdiagnostics_1950} depict trace and density plots for the dependence terms in the 1950 and 2015 term citation network. The histograms on the left visualize a statistic's density from $1000$ simulated networks, while the right side shows the statistic's trace plot of the same $1000$ networks. The solid black line indicates the statistic's value in the actual citation network. Both figures indicate that this model is non-degenerate and that the simulated network's statistics fall almost evenly around the observed statistic. The density and trace plots for the ERGM of the terms not depicted provide similar results.
 
-
- \begin{figure}[H]
+\begin{figure}[H]
  \begin{center}
 \includegraphics[width=14.5cm]{Deg_1950}
 \caption{Density and trace plots for the dependency terms of the 1950 term citation network.}
  \label{mcmcdiagnostics_1950}
+\vspace{-.25cm}
+\end{center}
+\end{figure} 
+
+
+ \begin{figure}[H]
+ \begin{center}
+\includegraphics[width=14.5cm]{Deg_2015}
+\caption{Density and trace plots for the dependency terms of the 2015 term citation network.}
+ \label{mcmcdiagnostics_2015}
 \vspace{-.25cm}
 \end{center}
 \end{figure} 
