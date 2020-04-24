@@ -1,0 +1,238 @@
+ 
+ 
+Job started on comp-hc-0008.acib.production.int.aci.ics.psu.edu at Sat Apr 11 06:42:25 EDT 2020
+Lmod has detected the following error: The following module(s) are unknown:
+"R#/3.4.0"
+
+Please check the spelling or version number. Also try "module spider ..."
+
+
+
+
+Loading required package: tergm
+Loading required package: ergm
+Loading required package: network
+network: Classes for Relational Data
+Version 1.15 created on 2019-04-01.
+copyright (c) 2005, Carter T. Butts, University of California-Irvine
+                    Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Martina Morris, University of Washington
+                    Skye Bender-deMoll, University of Washington
+ For citation information, type citation("network").
+ Type help("network-package") to get started.
+
+
+ergm: version 3.10.4, created on 2019-06-10
+Copyright (c) 2019, Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Carter T. Butts, University of California -- Irvine
+                    Steven M. Goodreau, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Martina Morris, University of Washington
+                    with contributions from
+                    Li Wang
+                    Kirk Li, University of Washington
+                    Skye Bender-deMoll, University of Washington
+                    Chad Klumb
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("ergm").
+
+NOTE: Versions before 3.6.1 had a bug in the implementation of the bd()
+constriant which distorted the sampled distribution somewhat. In
+addition, Sampson's Monks datasets had mislabeled vertices. See the
+NEWS and the documentation for more details.
+
+NOTE: Some common term arguments pertaining to vertex attribute and
+level selection have changed in 3.10.0. See terms help for more
+details. Use 'options(ergm.term=list(version="3.9.4"))' to use old
+behavior.
+
+Loading required package: networkDynamic
+
+networkDynamic: version 0.10.0, created on 2019-04-04
+Copyright (c) 2019, Carter T. Butts, University of California -- Irvine
+                    Ayn Leslie-Cook, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Skye Bender-deMoll, University of Washington
+                    with contributions from
+                    Zack Almquist, University of California -- Irvine
+                    David R. Hunter, Penn State University
+                    Li Wang
+                    Kirk Li, University of Washington
+                    Steven M. Goodreau, University of Washington
+                    Jeffrey Horner
+                    Martina Morris, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("networkDynamic").
+
+
+tergm: version 3.6.1, created on 2019-06-12
+Copyright (c) 2019, Pavel N. Krivitsky, University of Wollongong
+                    Mark S. Handcock, University of California -- Los Angeles
+                    with contributions from
+                    David R. Hunter, Penn State University
+                    Steven M. Goodreau, University of Washington
+                    Martina Morris, University of Washington
+                    Nicole Bohme Carnegie, New York University
+                    Carter T. Butts, University of California -- Irvine
+                    Ayn Leslie-Cook, University of Washington
+                    Skye Bender-deMoll
+                    Li Wang
+                    Kirk Li, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("tergm").
+
+Loading required package: ergm.count
+Loading required package: statnet.common
+
+Attaching package: 'statnet.common'
+
+The following object is masked from 'package:base':
+
+    order
+
+
+ergm.count: version 3.3.0, created on 2018-08-25
+Copyright (c) 2018, Pavel N. Krivitsky, University of Wollongong
+                    with contributions from
+                    Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("ergm.count").
+
+NOTE: The form of the term 'CMP' has been changed in version 3.2 of
+'ergm.count'. See the news or help('CMP') for more information.
+
+Loading required package: sna
+sna: Tools for Social Network Analysis
+Version 2.4 created on 2016-07-23.
+copyright (c) 2005, Carter T. Butts, University of California-Irvine
+ For citation information, type citation("sna").
+ Type help(package="sna") to get started.
+
+Loading required package: tsna
+
+statnet: version 2019.6, created on 2019-06-13
+Copyright (c) 2019, Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Carter T. Butts, University of California -- Irvine
+                    Steven M. Goodreau, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Skye Bender-deMoll
+                    Martina Morris, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("statnet").
+
+unable to reach CRAN
+
+Attaching package: 'MLmetrics'
+
+The following object is masked from 'package:base':
+
+    Recall
+
+======================
+Package:  tc.ergmterms
+Version:  0.2.0
+Date:     2019-06-23
+Authors:  Ted Hsuan Yun Chen (Pennsylvania State University)
+
+Based on 'statnet' project software (statnet.org). For license and citation information see statnet.org/attribution.
+Warning message:
+`set_attrs()` is deprecated as of rlang 0.3.0
+This warning is displayed once per session. 
+Starting maximum pseudolikelihood estimation (MPLE):
+Evaluating the predictor and response matrix.
+Maximizing the pseudolikelihood.
+Finished MPLE.
+Stopping at the initial estimate.
+Evaluating log-likelihood at the estimate. 
+Starting maximum pseudolikelihood estimation (MPLE):
+Evaluating the predictor and response matrix.
+Maximizing the pseudolikelihood.
+Finished MPLE.
+Stopping at the initial estimate.
+Evaluating log-likelihood at the estimate. 
+Starting Monte Carlo maximum likelihood estimation (MCMLE):
+Iteration 1 of at most 20:
+Optimizing with step length 0.631578772324567.
+The log-likelihood improved by 1.192.
+Iteration 2 of at most 20:
+Optimizing with step length 0.110057494391303.
+The log-likelihood improved by 3.364.
+Iteration 3 of at most 20:
+Optimizing with step length 0.107966376462138.
+The log-likelihood improved by 2.191.
+Iteration 4 of at most 20:
+Optimizing with step length 0.262249537262171.
+The log-likelihood improved by 2.593.
+Iteration 5 of at most 20:
+Optimizing with step length 0.135798794890722.
+The log-likelihood improved by 1.892.
+Iteration 6 of at most 20:
+Optimizing with step length 0.172532297221065.
+The log-likelihood improved by 1.957.
+Iteration 7 of at most 20:
+Optimizing with step length 0.226570176591681.
+The log-likelihood improved by 2.759.
+Iteration 8 of at most 20:
+Optimizing with step length 0.512354993219733.
+The log-likelihood improved by 3.269.
+Iteration 9 of at most 20:
+Optimizing with step length 0.633313455432867.
+The log-likelihood improved by 1.432.
+Iteration 10 of at most 20:
+Optimizing with step length 0.851623606230602.
+The log-likelihood improved by 0.2622.
+Iteration 11 of at most 20:
+Optimizing with step length 0.719484933710996.
+The log-likelihood improved by 0.262.
+Iteration 12 of at most 20:
+Optimizing with step length 0.728815510606751.
+The log-likelihood improved by 0.502.
+Iteration 13 of at most 20:
+Optimizing with step length 0.851006230577544.
+The log-likelihood improved by 0.3218.
+Iteration 14 of at most 20:
+Optimizing with step length 0.884018524092834.
+The log-likelihood improved by 0.3253.
+Iteration 15 of at most 20:
+Optimizing with step length 0.760782891556811.
+The log-likelihood improved by 0.4319.
+Iteration 16 of at most 20:
+Optimizing with step length 0.855590126168914.
+The log-likelihood improved by 0.2581.
+Iteration 17 of at most 20:
+Optimizing with step length 0.749806587326208.
+The log-likelihood improved by 0.3953.
+Iteration 18 of at most 20:
+Optimizing with step length 0.71442665251269.
+The log-likelihood improved by 0.1102.
+Iteration 19 of at most 20:
+Optimizing with step length 1.
+The log-likelihood improved by 0.1822.
+Step length converged once. Increasing MCMC sample size.
+Iteration 20 of at most 20:
+Optimizing with step length 1.
+The log-likelihood improved by 0.3181.
+Step length converged twice. Stopping.
+Finished MCMLE.
+Evaluating log-likelihood at the estimate. Using 20 bridges: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 .
+This model was fit using MCMC.  To examine model diagnostics and check
+for degeneracy, use the mcmc.diagnostics() function.
+Starting maximum pseudolikelihood estimation (MPLE):
+Evaluating the predictor and response matrix.
+Maximizing the pseudolikelihood.
+Finished MPLE.
+Stopping at the initial estimate.
+Evaluating log-likelihood at the estimate. 
+Error while shutting down parallel: unable to terminate some child processes
+ 
+Job Ended at Sat Apr 11 14:19:47 EDT 2020
+ 

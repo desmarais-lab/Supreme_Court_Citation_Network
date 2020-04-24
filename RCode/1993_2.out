@@ -1,0 +1,297 @@
+
+R version 3.5.2 (2018-12-20) -- "Eggshell Igloo"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> 
+> # get data
+> load(file="ERCM_MPLE_cl.RData")
+> 
+> # install.packages("statnet", Sys.getenv("R_LIBS_USER"), repos = "http://cran.case.edu" )
+> library(statnet)
+> library(MLmetrics)
+> library(xtable)
+> library(tc.ergmterms)
+> 
+> # there are cases in 1962 marked as 1963 and in 1971 marked as 1972
+> scc1[3364,11] <- 1962
+> scc1[4648,11] <- 1971
+> 
+> 
+> year.total <- scc1[,11]-1936 #-1936 => the first year 1937 is 1, 1938 is 2 aso, term column 
+> 
+> set.seed(12123)
+> #sampled.years <- c(14, 24, 34, 44, 54, 64, 74)
+> 
+> t<- 57
+>   print(t+1936)
+[1] 1993
+> tt<- t+1936
+>   rowlasttt <- max(which(scc1[,11] == tt))
+>   idt <- scc1[rowlasttt, 55]  
+> 
+>   
+>   cases <- max(which(year.total==t)) # 14 corresponds to 1950
+>   
+>   # simple assignment of time periods to cases
+>   years <- year.total[1:cases] 
+>   
+>   # going to need a sender time matrix covariate
+>   sender.time <- matrix(years,length(years),length(years),byrow=F)
+>   year <- matrix(years, length(years),length(years),byrow=F)
+>   
+>    # extract the network up to time t
+>   AM <- adjacency.matrix[which(years <= t),which(years <= t)]
+>   
+>   net.t <- network(AM) 
+>   
+>   #calculate outdegree
+>   o.degree<- rowSums(AM)
+>   
+>   # fix the outdegrees of time t as 0
+>   last.t<- which(years==t)
+>   
+>   o.degree[last.t]<- 0
+>   
+>   # indicate outdegree and term as a node attribute
+>   net.t <- set.vertex.attribute(net.t,"o.degree", o.degree)
+>   net.t <- set.vertex.attribute(net.t,"term", years)
+> 
+> 
+>    # subset MQ matrix
+>   mq.t <- mq.matrix[which(years <= t),which(years <= t)]
+>   # subset same issue matrix
+>   same.issue.area.t <- same.issue.area[which(years <= t),which(years <= t)]
+>   # subset year diff matrix
+>   year.diff.t <- year.diff.matrix[which(years <= t),which(years <= t)]
+>   # subset year diff matrix square
+>   year.diff.square.t <- year.diff.t^2
+>   # subset sender time matrix
+>   sender.time.t <- sender.time[which(years <= t),which(years <= t)]
+>   # subset unique dyad id matrix
+>   #dyad.id.t <- dyad.id[which(years <= t),which(years <= t)]
+>   # subset year matrix
+>   year.t<- year[which(years <= t),which(years <= t)]
+>   # subset same opinion writer matrix
+>   same.opinion.writer.t<- same.opinion.writer[which(years <= t),which(years <= t)]
+>   
+>   #### set vertex attributes
+>   # same issue area
+>   net.t <- set.vertex.attribute(net.t,"SameIssueArea", scc1[which(years <= t),41])
+>   # abs diff of MQ score
+>   net.t <- set.vertex.attribute(net.t,"AbsDiffMQscores", scc1[which(years <= t),65])
+>   # number justices that voted for the case
+>   net.t <- set.vertex.attribute(net.t,"NumberJusticesPro", scc1[which(years <= t),52])
+>   # overruled covariate
+>   net.t <- set.vertex.attribute(net.t,"Overruled", Overruled.matrix[which(years <= t),idt])
+>   # sender time
+>   net.t <- set.vertex.attribute(net.t,"sender.time", sender.time.t[,1])
+>   # Majority Opinion Writer
+>   net.t <- set.vertex.attribute(net.t,"MajOpWriter", scc1[which(years <= t),49])
+> 
+>   
+>   not.fixed <- network(1*(sender.time == t))
+>   
+>   load(file="1993_1.RData")
+> 
+>   li <- li93[[1]]
+> 
+> 
+>   
+>   # fitting glm
+>   model <- ergm(net.t~edges+ mutual + nodeicov("o.degree")+ difftransties("term")+gwidegree(1, fixed=TRUE)+ dgwesp(0.15, fixed=TRUE, type="OSP") +
++                 edgecov(mq.t)+
++                 edgecov(year.diff.t)+ edgecov(year.diff.square.t )+ 
++                 nodeicov('AbsDiffMQscores')+ nodeicov('NumberJusticesPro')+ 
++                 nodeicov('Overruled')+
++                 edgecov(same.opinion.writer.t)  + edgecov(same.issue.area.t),
++                 constraints=~fixallbut(not.fixed), control=control.ergm(MCMC.samplesize=10000,MCMLE.maxit=50, init=li)) #
+>   summary(model)
+
+==========================
+Summary of model fit
+==========================
+
+Formula:   net.t ~ edges + mutual + nodeicov("o.degree") + difftransties("term") + 
+    gwidegree(1, fixed = TRUE) + dgwesp(0.15, fixed = TRUE, type = "OSP") + 
+    edgecov(mq.t) + edgecov(year.diff.t) + edgecov(year.diff.square.t) + 
+    nodeicov("AbsDiffMQscores") + nodeicov("NumberJusticesPro") + 
+    nodeicov("Overruled") + edgecov(same.opinion.writer.t) + 
+    edgecov(same.issue.area.t)
+
+Iterations:  6 out of 50 
+
+Monte Carlo MLE Results:
+                                Estimate Std. Error MCMC %  z value Pr(>|z|)
+edges                         -7.351e+00  5.302e-02      1 -138.656   <1e-04
+mutual                        -1.304e+01         NA     NA       NA       NA
+nodeicov.o.degree             -2.302e-02  1.611e-03      0  -14.291   <1e-04
+difftransties.term             2.362e+00  7.318e-02      0   32.278   <1e-04
+gwideg.fixed.1                -2.000e-02  9.714e-02      0   -0.206    0.837
+gwesp.OSP.fixed.0.15           2.610e+00  6.954e-02      0   37.536   <1e-04
+edgecov.mq.t                  -3.249e-03  2.862e-02      0   -0.113    0.910
+edgecov.year.diff.t           -9.461e-02  5.606e-03      0  -16.877   <1e-04
+edgecov.year.diff.square.t     1.191e-03  1.081e-04      0   11.020   <1e-04
+nodeicov.AbsDiffMQscores       1.935e-02  1.380e-02      0    1.402    0.161
+nodeicov.NumberJusticesPro     7.230e-02  1.753e-02      0    4.124   <1e-04
+nodeicov.Overruled            -4.217e-01  1.585e-02     28  -26.602   <1e-04
+edgecov.same.opinion.writer.t  3.909e-01  9.256e-02      0    4.223   <1e-04
+edgecov.same.issue.area.t      5.101e-01  3.650e-02      0   13.975   <1e-04
+                                 
+edges                         ***
+mutual                           
+nodeicov.o.degree             ***
+difftransties.term            ***
+gwideg.fixed.1                   
+gwesp.OSP.fixed.0.15          ***
+edgecov.mq.t                     
+edgecov.year.diff.t           ***
+edgecov.year.diff.square.t    ***
+nodeicov.AbsDiffMQscores         
+nodeicov.NumberJusticesPro    ***
+nodeicov.Overruled            ***
+edgecov.same.opinion.writer.t ***
+edgecov.same.issue.area.t     ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+     Null Deviance: 1079133  on 778430  degrees of freedom
+ Residual Deviance:   17319  on 778416  degrees of freedom
+ 
+AIC: 17347    BIC: 17509    (Smaller is better.) 
+>   aicm<- AIC(model)
+>   bicm <- BIC(model)
+> 
+>   # get statistics
+>   erg.est <- summary(net.t~edges+ mutual + nodeicov("o.degree")+ difftransties("term")+gwidegree(1, fixed=TRUE)+ 
++                 dgwesp(0.15, fixed=TRUE, type="OSP") +
++                 edgecov(mq.t)+
++                 edgecov(year.diff.t)+ edgecov(year.diff.square.t )+ nodeicov('AbsDiffMQscores')+ nodeicov('NumberJusticesPro')+ 
++                 nodeicov('Overruled')+edgecov(same.opinion.writer.t) + nodeifactor('MajOpWriter')+ edgecov(same.issue.area.t)  )
+>   erg.est
+                        edges                        mutual 
+                     83333.00                         17.00 
+            nodeicov.o.degree            difftransties.term 
+                   1287952.00                      50791.00 
+               gwideg.fixed.1          gwesp.OSP.fixed.0.15 
+                     16323.21                      59583.43 
+                 edgecov.mq.t           edgecov.year.diff.t 
+                     78658.83                     994205.00 
+   edgecov.year.diff.square.t      nodeicov.AbsDiffMQscores 
+                  22274227.00                     454234.23 
+   nodeicov.NumberJusticesPro            nodeicov.Overruled 
+                    572379.00                       2413.00 
+edgecov.same.opinion.writer.t    nodeifactor.MajOpWriter.68 
+                      6992.00                        404.00 
+   nodeifactor.MajOpWriter.71    nodeifactor.MajOpWriter.72 
+                        59.00                        207.00 
+   nodeifactor.MajOpWriter.74    nodeifactor.MajOpWriter.75 
+                      2818.00                       1148.00 
+   nodeifactor.MajOpWriter.76    nodeifactor.MajOpWriter.77 
+                      1576.00                        143.00 
+   nodeifactor.MajOpWriter.78    nodeifactor.MajOpWriter.79 
+                      6367.00                       2863.00 
+   nodeifactor.MajOpWriter.80    nodeifactor.MajOpWriter.81 
+                      4194.00                       6457.00 
+   nodeifactor.MajOpWriter.82    nodeifactor.MajOpWriter.83 
+                      1360.00                        156.00 
+   nodeifactor.MajOpWriter.84    nodeifactor.MajOpWriter.85 
+                      2037.00                       1003.00 
+   nodeifactor.MajOpWriter.86    nodeifactor.MajOpWriter.87 
+                       931.00                       1065.00 
+   nodeifactor.MajOpWriter.88    nodeifactor.MajOpWriter.89 
+                      2187.00                        464.00 
+   nodeifactor.MajOpWriter.90    nodeifactor.MajOpWriter.91 
+                      3385.00                       2207.00 
+   nodeifactor.MajOpWriter.92    nodeifactor.MajOpWriter.93 
+                      6831.00                        372.00 
+   nodeifactor.MajOpWriter.94    nodeifactor.MajOpWriter.95 
+                      5095.00                       5454.00 
+   nodeifactor.MajOpWriter.96    nodeifactor.MajOpWriter.97 
+                       608.00                        509.00 
+   nodeifactor.MajOpWriter.98    nodeifactor.MajOpWriter.99 
+                      2713.00                       3097.00 
+  nodeifactor.MajOpWriter.100   nodeifactor.MajOpWriter.101 
+                      2645.00                       3565.00 
+  nodeifactor.MajOpWriter.102   nodeifactor.MajOpWriter.103 
+                      3165.00                       1984.00 
+  nodeifactor.MajOpWriter.104   nodeifactor.MajOpWriter.105 
+                      1166.00                        307.00 
+  nodeifactor.MajOpWriter.106   nodeifactor.MajOpWriter.107 
+                       270.00                         50.00 
+  nodeifactor.MajOpWriter.108   nodeifactor.MajOpWriter.109 
+                        31.00                          5.00 
+    edgecov.same.issue.area.t 
+                     48934.00 
+>    
+>   
+>    
+>    #############################################
+>    # Independence model
+>    #############################################
+>    ind <- ergm(net.t~edges+ 
++                 edgecov(mq.t)+
++                 edgecov(year.diff.t)+ edgecov(year.diff.square.t )+ 
++                 nodeicov('AbsDiffMQscores')+ nodeicov('NumberJusticesPro')+ 
++                 nodeicov('Overruled')+
++                 edgecov(same.opinion.writer.t)  + edgecov(same.issue.area.t),
++                 constraints=~fixallbut(not.fixed), estimate="MLE") #
+>     
+>   summary(ind)   
+
+==========================
+Summary of model fit
+==========================
+
+Formula:   net.t ~ edges + edgecov(mq.t) + edgecov(year.diff.t) + edgecov(year.diff.square.t) + 
+    nodeicov("AbsDiffMQscores") + nodeicov("NumberJusticesPro") + 
+    nodeicov("Overruled") + edgecov(same.opinion.writer.t) + 
+    edgecov(same.issue.area.t)
+
+Iterations:  8 out of 20 
+
+Monte Carlo MLE Results:
+                                Estimate Std. Error MCMC % z value Pr(>|z|)    
+edges                         -5.1130496  0.1327763      0 -38.509  < 1e-04 ***
+edgecov.mq.t                   0.0983437  0.0365216      0   2.693 0.007087 ** 
+edgecov.year.diff.t           -0.0708755  0.0058676      0 -12.079  < 1e-04 ***
+edgecov.year.diff.square.t     0.0005294  0.0001174      0   4.508  < 1e-04 ***
+nodeicov.AbsDiffMQscores      -0.0066209  0.0140459      0  -0.471 0.637371    
+nodeicov.NumberJusticesPro    -0.0719921  0.0204372      0  -3.523 0.000427 ***
+nodeicov.Overruled             0.3539604  0.1968881      0   1.798 0.072213 .  
+edgecov.same.opinion.writer.t  0.5591732  0.1001761      0   5.582  < 1e-04 ***
+edgecov.same.issue.area.t      2.0025056  0.0468384      0  42.754  < 1e-04 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+     Null Deviance: 1079133  on 778430  degrees of freedom
+ Residual Deviance:   23721  on 778421  degrees of freedom
+ 
+AIC: 23739    BIC: 23843    (Smaller is better.) 
+>   aici<- AIC(ind)
+>   bici <- BIC(ind)
+> 
+>    
+> 
+>    li93<- list(coef(model),  coef(summary(model))[,5], coef(summary(model))[,2], aicm, bicm,
++                coef(ind),  coef(summary(ind))[,5], coef(summary(ind))[,2], aici, bici ) 
+>    names(li93)<- c("Coefficients", "P-values", "StdErrors", "AICm", "BICm",
++                    "CoefficientsI", "P-valuesI", "StdErrorsI", "AICi", "BICi")
+> 
+>   save(li93,file="1993_2.RData")
+> 
+> 
+> 
+> 
