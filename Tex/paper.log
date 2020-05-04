@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  4 MAY 2020 05:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  4 MAY 2020 15:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1878,7 +1878,7 @@ Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[25] <SCC_AIC_BIC.pdf, id=502, 844.15375pt x 597.23125pt>
+[25] <SCC_AIC_BIC.pdf, id=496, 844.15375pt x 597.23125pt>
 File: SCC_AIC_BIC.pdf Graphic file (type pdf)
 
 <use SCC_AIC_BIC.pdf>
@@ -1895,33 +1895,37 @@ Overfull \vbox (6.90472pt too high) has occurred while \output is active []
                                                   \fi \fi 
 l.365 
        <./SCC_AIC_BIC.pdf>]
-<SCC_Results_1.pdf, id=534, 597.23125pt x 844.15375pt>
+Overfull \vbox (6.90472pt too high) has occurred while \output is active []
+
+
+[27] <SCC_Results_1.pdf, id=539, 597.23125pt x 844.15375pt>
 File: SCC_Results_1.pdf Graphic file (type pdf)
- <use SCC_Results_1.pdf>
-Package pdftex.def Info: SCC_Results_1.pdf used on input line 495.
+
+<use SCC_Results_1.pdf>
+Package pdftex.def Info: SCC_Results_1.pdf used on input line 492.
 (pdftex.def)             Requested size: 455.24408pt x 643.46986pt.
 
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[27]
+[28]
 Overfull \vbox (76.42245pt too high) has occurred while \output is active []
 
 
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[28pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
+[29pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.501 
+l.498 
        <./SCC_Results_1.pdf>]
-<SCC_Results_2.pdf, id=559, 597.23125pt x 844.15375pt>
+<SCC_Results_2.pdf, id=562, 597.23125pt x 844.15375pt>
 File: SCC_Results_2.pdf Graphic file (type pdf)
  <use SCC_Results_2.pdf>
-Package pdftex.def Info: SCC_Results_2.pdf used on input line 505.
+Package pdftex.def Info: SCC_Results_2.pdf used on input line 502.
 (pdftex.def)             Requested size: 455.24408pt x 643.46986pt.
 
 Overfull \vbox (76.42245pt too high) has occurred while \output is active []
@@ -1930,72 +1934,72 @@ Overfull \vbox (76.42245pt too high) has occurred while \output is active []
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[29pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
+[30pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.510 
+l.507 
        <./SCC_Results_2.pdf>]
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[30] <GOF_1950.pdf, id=587, 844.15375pt x 597.23125pt>
+[31] <GOF_1950.pdf, id=591, 844.15375pt x 597.23125pt>
 File: GOF_1950.pdf Graphic file (type pdf)
  <use GOF_1950.pdf>
-Package pdftex.def Info: GOF_1950.pdf used on input line 532.
+Package pdftex.def Info: GOF_1950.pdf used on input line 529.
 (pdftex.def)             Requested size: 392.64812pt x 277.80078pt.
 
-<GOF_2015.pdf, id=588, 844.15375pt x 597.23125pt>
+<GOF_2015.pdf, id=592, 844.15375pt x 597.23125pt>
 File: GOF_2015.pdf Graphic file (type pdf)
  <use GOF_2015.pdf>
-Package pdftex.def Info: GOF_2015.pdf used on input line 536.
+Package pdftex.def Info: GOF_2015.pdf used on input line 533.
 (pdftex.def)             Requested size: 392.64812pt x 277.80078pt.
 
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[31]
+[32]
 Overfull \vbox (8.73238pt too high) has occurred while \output is active []
 
 
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[32pdfTeX warning (ext4): destination with the same identifier (name{figure.10}
+[33pdfTeX warning (ext4): destination with the same identifier (name{figure.10}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.543 
+l.540 
        <./GOF_1950.pdf> <./GOF_2015.pdf>]
-<Deg_1950.pdf, id=623, 597.23125pt x 844.15375pt>
+<Deg_1950.pdf, id=626, 597.23125pt x 844.15375pt>
 File: Deg_1950.pdf Graphic file (type pdf)
  <use Deg_1950.pdf>
-Package pdftex.def Info: Deg_1950.pdf used on input line 551.
+Package pdftex.def Info: Deg_1950.pdf used on input line 548.
 (pdftex.def)             Requested size: 412.56496pt x 583.13652pt.
 
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[33]
+[34]
 Overfull \vbox (3.96915pt too high) has occurred while \output is active []
 
 
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[34pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
+[35pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.557 
-       <./Deg_1950.pdf>] <Deg_2015.pdf, id=647, 597.23125pt x 844.15375pt>
+l.554 
+       <./Deg_1950.pdf>] <Deg_2015.pdf, id=650, 597.23125pt x 844.15375pt>
 File: Deg_2015.pdf Graphic file (type pdf)
 
 <use Deg_2015.pdf>
-Package pdftex.def Info: Deg_2015.pdf used on input line 561.
+Package pdftex.def Info: Deg_2015.pdf used on input line 558.
 (pdftex.def)             Requested size: 412.56496pt x 583.13652pt.
 
 Overfull \vbox (3.96915pt too high) has occurred while \output is active []
@@ -2004,17 +2008,13 @@ Overfull \vbox (3.96915pt too high) has occurred while \output is active []
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[35pdfTeX warning (ext4): destination with the same identifier (name{figure.12}
+[36pdfTeX warning (ext4): destination with the same identifier (name{figure.12}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.571 
+l.568 
        <./Deg_2015.pdf>] (./paper.bbl
-Overfull \vbox (6.90472pt too high) has occurred while \output is active []
-
-
-[36]
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
@@ -2027,29 +2027,30 @@ Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
 [39]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 287.
-
- (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[40]) <issuearea_activity.pdf, id=694, 433.62pt x 289.08pt>
+[40]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 289.
+
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+<issuearea_activity.pdf, id=691, 433.62pt x 289.08pt>
 File: issuearea_activity.pdf Graphic file (type pdf)
 
 <use issuearea_activity.pdf>
-Package pdftex.def Info: issuearea_activity.pdf used on input line 582.
+Package pdftex.def Info: issuearea_activity.pdf used on input line 579.
 (pdftex.def)             Requested size: 455.24408pt x 274.24654pt.
 
-<issuearea_popularity.pdf, id=696, 433.62pt x 289.08pt>
+<issuearea_popularity.pdf, id=693, 433.62pt x 289.08pt>
 File: issuearea_popularity.pdf Graphic file (type pdf)
 
 <use issuearea_popularity.pdf>
-Package pdftex.def Info: issuearea_popularity.pdf used on input line 584.
+Package pdftex.def Info: issuearea_popularity.pdf used on input line 581.
 (pdftex.def)             Requested size: 455.24408pt x 274.24654pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 581--586
+Overfull \hbox (12.0pt too wide) in paragraph at lines 578--583
 [][]
  []
 
@@ -2057,11 +2058,11 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 581--586
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[41] <heatplot_issue_area.pdf, id=702, 433.62pt x 289.08pt>
+[41] <heatplot_issue_area.pdf, id=701, 433.62pt x 289.08pt>
 File: heatplot_issue_area.pdf Graphic file (type pdf)
 
 <use heatplot_issue_area.pdf>
-Package pdftex.def Info: heatplot_issue_area.pdf used on input line 591.
+Package pdftex.def Info: heatplot_issue_area.pdf used on input line 588.
 (pdftex.def)             Requested size: 426.79134pt x 284.54036pt.
 
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
@@ -2072,7 +2073,7 @@ Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.596 
+l.593 
        <./issuearea_activity.pdf> <./issuearea_popularity.pdf>]
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
@@ -2082,31 +2083,34 @@ Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.598 \end{document}
+l.595 \end{document}
                      <./heatplot_issue_area.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 598.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 598.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 595.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 595.
  (./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 598.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 598.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 595.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 595.
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: E46A2AD41D34C0EA9CC1F032385E5037;978.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 598.
+(rerunfilecheck)             Checksum: C190725501482C56BAABC8EC3FE0CE1A;978.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 595.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 25587 strings out of 492995
- 447324 string characters out of 6132704
- 667958 words of memory out of 5000000
- 28434 multiletter control sequences out of 15000+600000
+ 25584 strings out of 492995
+ 447262 string characters out of 6132704
+ 667936 words of memory out of 5000000
+ 28431 multiletter control sequences out of 15000+600000
  142433 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,14n,60p,8843b,10805s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.3} has been referenced bu
+ 64i,14n,60p,8843b,10785s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced bu
 t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 , replaced by a fixed one
@@ -2130,15 +2134,16 @@ c/lm/lmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr7.pf
 b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/loca
 l/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/20
 17/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2017/texmf-d
-ist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2017/texmf-dist/fonts/
-type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pu
-blic/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lm
-sy6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on paper.pdf (43 pages, 2316353 bytes).
+ist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
+ype1/public/lm/lmro10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publi
+c/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lms
+y10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on paper.pdf (43 pages, 2325752 bytes).
 PDF statistics:
- 854 PDF objects out of 1000 (max. 8388607)
- 715 compressed objects within 8 object streams
+ 856 PDF objects out of 1000 (max. 8388607)
+ 716 compressed objects within 8 object streams
  134 named destinations out of 1000 (max. 500000)
  12543 words of extra memory for PDF output out of 14400 (max. 10000000)
 

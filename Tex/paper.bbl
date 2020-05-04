@@ -56,21 +56,11 @@ Cranmer, Skyler~J \harvardand\ Bruce~A Desmarais. 2016.
 \newblock ``A critique of dyadic design.'' {\em International Studies
   Quarterly} 60(2):355--362.
 
-\harvarditem{Cranmer \harvardand\ Desmarais}{2017}{cranmer2017can}
-Cranmer, Skyler~J \harvardand\ Bruce~A Desmarais. 2017.
-\newblock ``What Can We Learn from Predictive Modeling?'' {\em Political
-  Analysis} pp.~1--22.
-
 \harvarditem{Cross}{2010}{cross2010determinants}
 Cross, Frank~B. 2010.
 \newblock ``Determinants of citations to Supreme Court opinions (and the
   remarkable influence of Justice Scalia).'' {\em Supreme Court Economic
   Review} 18(1):177--202.
-
-\harvarditem{Desmarais \harvardand\ Cranmer}{2013}{desmarais2013forecasting}
-Desmarais, Bruce~A \harvardand\ Skyler~J Cranmer. 2013.
-\newblock ``Forecasting the locational dynamics of transnational terrorism: A
-  network analytic approach.'' {\em Security Informatics} 2(1):8.
 
 \harvarditem{Desmarais \harvardand\ Cranmer}{2017}{desmaraisstatistical}
 Desmarais, Bruce~A \harvardand\ Skyler~J Cranmer. 2017.
@@ -170,15 +160,17 @@ Hunter, David~R \harvardand\ Mark~S Handcock. 2006.
   Journal of Computational and Graphical Statistics} 15(3):565--583.
 
 \harvarditem[Hunter, Goodreau \harvardand\ Handcock]{Hunter, Goodreau
-  \harvardand\ Handcock}{2008}{Hunter.2008}
-Hunter, David~R., Steven~M. Goodreau \harvardand\ Mark~S. Handcock. 2008.
-\newblock ``Goodness of Fit of Social Network Models.'' {\em Journal of the
+  \harvardand\ Handcock}{2008{\em a}}{hunter2008goodness}
+Hunter, David~R, Steven~M Goodreau \harvardand\ Mark~S Handcock. 2008{\em a}.
+\newblock ``Goodness of fit of social network models.'' {\em Journal of the
   American Statistical Association} 103(481):248--258.
 
-\harvarditem{Jensen \harvardand\ Cohen}{2000}{jensen2000multiple}
-Jensen, David~D \harvardand\ Paul~R Cohen. 2000.
-\newblock ``Multiple comparisons in induction algorithms.'' {\em Machine
-  Learning} 38(3):309--338.
+\harvarditem[Hunter, Goodreau \harvardand\ Handcock]{Hunter, Goodreau
+  \harvardand\ Handcock}{2008{\em b}}{Hunter.2008}
+Hunter, David~R., Steven~M. Goodreau \harvardand\ Mark~S. Handcock. 2008{\em
+  b}.
+\newblock ``Goodness of Fit of Social Network Models.'' {\em Journal of the
+  American Statistical Association} 103(481):248--258.
 
 \harvarditem[Kirkpatrick, Gelatt \harvardand\ Vecchi]{Kirkpatrick, Gelatt
   \harvardand\ Vecchi}{1983}{Kirkpatrick83}
@@ -219,6 +211,11 @@ Martin, Andrew~D \harvardand\ Kevin~M Quinn. 2002.
 \newblock ``Dynamic ideal point estimation via Markov chain Monte Carlo for the
   US Supreme Court, 1953--1999.'' {\em Political Analysis} 10(2):134--153.
 
+\harvarditem{Mukherjee et~al.}{2020}{mukherjee2020degeneracy}
+Mukherjee, Sumit et~al. 2020.
+\newblock ``Degeneracy in sparse ERGMs with functions of degrees as sufficient
+  statistics.'' {\em Bernoulli} 26(2):1016--1043.
+
 \harvarditem{Osei}{2018}{osei2018elite}
 Osei, Anja. 2018.
 \newblock ``Elite Theory and Political Transitions: Networks of Power in Ghana
@@ -233,6 +230,11 @@ Pelc, Krzysztof~J. 2014.
 Richards, Mark~J \harvardand\ Herbert~M Kritzer. 2002.
 \newblock ``Jurisprudential regimes in Supreme Court decision making.'' {\em
   American Political Science Review} 96(2):305--320.
+
+\harvarditem{Ripplinger \harvardand\ Sullivan}{2008}{ripplinger2008does}
+Ripplinger, Jennifer \harvardand\ Jack Sullivan. 2008.
+\newblock ``Does choice in model selection affect maximum likelihood
+  analysis?'' {\em Systematic Biology} 57(1):76--85.
 
 \harvarditem{Schmid \harvardand\ Desmarais}{2017}{schmid2017exponential}
 Schmid, Christian~S \harvardand\ Bruce~A Desmarais. 2017.
@@ -285,12 +287,6 @@ Strogatz, Steven~H. 2001.
   Interpretation -- Centennial Edition}.
 \newblock 112th Cong., 2d sess. S. Doc. 112-9.
   \url{https://www.govinfo.gov/app/details/GPO-CONAN-2017/}.
-
-\harvarditem[Ward, Greenhill \harvardand\ Bakke]{Ward, Greenhill \harvardand\
-  Bakke}{2010}{ward2010perils}
-Ward, Michael~D, Brian~D Greenhill \harvardand\ Kristin~M Bakke. 2010.
-\newblock ``The perils of policy by p-value: Predicting civil conflicts.'' {\em
-  Journal of Peace Research} 47(4):363--375.
 
 \harvarditem{Welles \harvardand\ Contractor}{2015}{welles2015individual}
 Welles, Brooke~Foucault \harvardand\ Noshir Contractor. 2015.
