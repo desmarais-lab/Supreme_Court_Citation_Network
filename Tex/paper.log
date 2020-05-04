@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  1 MAY 2020 12:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  4 MAY 2020 05:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1893,9 +1893,9 @@ Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.429 
+l.365 
        <./SCC_AIC_BIC.pdf>]
-<SCC_Results_1.pdf, id=532, 597.23125pt x 844.15375pt>
+<SCC_Results_1.pdf, id=534, 597.23125pt x 844.15375pt>
 File: SCC_Results_1.pdf Graphic file (type pdf)
  <use SCC_Results_1.pdf>
 Package pdftex.def Info: SCC_Results_1.pdf used on input line 495.
@@ -1918,7 +1918,7 @@ Overfull \vbox (6.90472pt too high) has occurred while \output is active []
                                                   \fi \fi 
 l.501 
        <./SCC_Results_1.pdf>]
-<SCC_Results_2.pdf, id=557, 597.23125pt x 844.15375pt>
+<SCC_Results_2.pdf, id=559, 597.23125pt x 844.15375pt>
 File: SCC_Results_2.pdf Graphic file (type pdf)
  <use SCC_Results_2.pdf>
 Package pdftex.def Info: SCC_Results_2.pdf used on input line 505.
@@ -1940,13 +1940,13 @@ l.510
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[30] <GOF_1950.pdf, id=585, 844.15375pt x 597.23125pt>
+[30] <GOF_1950.pdf, id=587, 844.15375pt x 597.23125pt>
 File: GOF_1950.pdf Graphic file (type pdf)
  <use GOF_1950.pdf>
 Package pdftex.def Info: GOF_1950.pdf used on input line 532.
 (pdftex.def)             Requested size: 392.64812pt x 277.80078pt.
 
-<GOF_2015.pdf, id=586, 844.15375pt x 597.23125pt>
+<GOF_2015.pdf, id=588, 844.15375pt x 597.23125pt>
 File: GOF_2015.pdf Graphic file (type pdf)
  <use GOF_2015.pdf>
 Package pdftex.def Info: GOF_2015.pdf used on input line 536.
@@ -1969,7 +1969,7 @@ Overfull \vbox (6.90472pt too high) has occurred while \output is active []
                                                   \fi \fi 
 l.543 
        <./GOF_1950.pdf> <./GOF_2015.pdf>]
-<Deg_1950.pdf, id=621, 597.23125pt x 844.15375pt>
+<Deg_1950.pdf, id=623, 597.23125pt x 844.15375pt>
 File: Deg_1950.pdf Graphic file (type pdf)
  <use Deg_1950.pdf>
 Package pdftex.def Info: Deg_1950.pdf used on input line 551.
@@ -1991,7 +1991,7 @@ Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.557 
-       <./Deg_1950.pdf>] <Deg_2015.pdf, id=645, 597.23125pt x 844.15375pt>
+       <./Deg_1950.pdf>] <Deg_2015.pdf, id=647, 597.23125pt x 844.15375pt>
 File: Deg_2015.pdf Graphic file (type pdf)
 
 <use Deg_2015.pdf>
@@ -2035,14 +2035,14 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[40]) <issuearea_activity.pdf, id=692, 433.62pt x 289.08pt>
+[40]) <issuearea_activity.pdf, id=694, 433.62pt x 289.08pt>
 File: issuearea_activity.pdf Graphic file (type pdf)
 
 <use issuearea_activity.pdf>
 Package pdftex.def Info: issuearea_activity.pdf used on input line 582.
 (pdftex.def)             Requested size: 455.24408pt x 274.24654pt.
 
-<issuearea_popularity.pdf, id=694, 433.62pt x 289.08pt>
+<issuearea_popularity.pdf, id=696, 433.62pt x 289.08pt>
 File: issuearea_popularity.pdf Graphic file (type pdf)
 
 <use issuearea_popularity.pdf>
@@ -2057,7 +2057,7 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 581--586
 Overfull \vbox (6.90472pt too high) has occurred while \output is active []
 
 
-[41] <heatplot_issue_area.pdf, id=700, 433.62pt x 289.08pt>
+[41] <heatplot_issue_area.pdf, id=702, 433.62pt x 289.08pt>
 File: heatplot_issue_area.pdf Graphic file (type pdf)
 
 <use heatplot_issue_area.pdf>
@@ -2098,10 +2098,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 598.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 25588 strings out of 492995
- 447337 string characters out of 6132704
- 667959 words of memory out of 5000000
- 28435 multiletter control sequences out of 15000+600000
+ 25587 strings out of 492995
+ 447324 string characters out of 6132704
+ 667958 words of memory out of 5000000
+ 28434 multiletter control sequences out of 15000+600000
  142433 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,14n,60p,8843b,10805s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2135,10 +2135,10 @@ type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pu
 blic/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lm
 sy6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on paper.pdf (43 pages, 2315631 bytes).
+Output written on paper.pdf (43 pages, 2316353 bytes).
 PDF statistics:
- 852 PDF objects out of 1000 (max. 8388607)
- 713 compressed objects within 8 object streams
+ 854 PDF objects out of 1000 (max. 8388607)
+ 715 compressed objects within 8 object streams
  134 named destinations out of 1000 (max. 500000)
  12543 words of extra memory for PDF output out of 14400 (max. 10000000)
 
