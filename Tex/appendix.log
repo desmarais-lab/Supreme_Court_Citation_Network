@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.24)  5 MAY 2020 10:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.24)  5 MAY 2020 12:29
 entering extended mode
 **appendix.tex
 
@@ -604,22 +604,17 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 59.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-LaTeX Warning: Reference `dependence_terms' on page 1 undefined on input line 6
-1.
-
-[1
+) [1
 
 
 {C:/Users/Geiler Typ/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<GOF_1950.pdf, id=15, 844.15375pt x 597.23125pt>
+<GOF_1950.pdf, id=14, 844.15375pt x 597.23125pt>
 File: GOF_1950.pdf Graphic file (type pdf)
  <use GOF_1950.pdf>
 Package pdftex.def Info: GOF_1950.pdf used on input line 68.
 (pdftex.def)             Requested size: 392.64812pt x 277.80078pt.
 
-<GOF_2015.pdf, id=16, 844.15375pt x 597.23125pt>
+<GOF_2015.pdf, id=15, 844.15375pt x 597.23125pt>
 File: GOF_2015.pdf Graphic file (type pdf)
  <use GOF_2015.pdf>
 Package pdftex.def Info: GOF_2015.pdf used on input line 72.
@@ -632,7 +627,7 @@ Overfull \vbox (42.53635pt too high) has occurred while \output is active []
 ork/Tex/GOF_1950.pdf> <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_
 Court_Citation_Network/Tex/GOF_2015.pdf>]
 ("C:\Users\Geiler Typ\Desktop\PSU\Bruce Desmarais\Supreme_Court_Citation_Networ
-k\Tex\appendix.bbl") <Deg_1950.pdf, id=44, 597.23125pt x 844.15375pt>
+k\Tex\appendix.bbl") <Deg_1950.pdf, id=43, 597.23125pt x 844.15375pt>
 File: Deg_1950.pdf Graphic file (type pdf)
 
 <use Deg_1950.pdf>
@@ -643,7 +638,7 @@ Overfull \vbox (37.77312pt too high) has occurred while \output is active []
 
 
 [5 <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_Netw
-ork/Tex/Deg_1950.pdf>] <Deg_2015.pdf, id=65, 597.23125pt x 844.15375pt>
+ork/Tex/Deg_1950.pdf>] <Deg_2015.pdf, id=64, 597.23125pt x 844.15375pt>
 File: Deg_2015.pdf Graphic file (type pdf)
 
 <use Deg_2015.pdf>
@@ -656,34 +651,29 @@ Overfull \vbox (37.77312pt too high) has occurred while \output is active []
 [6 <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_Netw
 ork/Tex/Deg_2015.pdf>]
 ("C:\Users\Geiler Typ\Desktop\PSU\Bruce Desmarais\Supreme_Court_Citation_Networ
-k\Tex\appendix.aux")
-
-LaTeX Warning: There were undefined references.
-
- ) 
+k\Tex\appendix.aux") ) 
 Here is how much of TeX's memory you used:
- 5802 strings out of 493921
- 80818 string characters out of 3144861
+ 5799 strings out of 493921
+ 80775 string characters out of 3144861
  207977 words of memory out of 3000000
- 8972 multiletter control sequences out of 15000+200000
- 28842 words of font info for 87 fonts, out of 3000000 for 9000
+ 8970 multiletter control sequences out of 15000+200000
+ 28059 words of font info for 86 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  45i,15n,46p,1225b,315s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Geiler Typ\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dp
-i600\ecrm0900.pk> <C:\Users\Geiler Typ\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
-\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\Geiler Typ\AppData\Local\MiKTeX\2.9\
-fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk> <C:\Users\Geiler Typ\AppData\Lo
-cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\Geiler
- Typ\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <
-C:\Users\Geiler Typ\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
-\ecsx1440.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-r10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.p
-fb>
-Output written on appendix.pdf (6 pages, 548619 bytes).
+ <C:\Users\Geiler Typ\AppData\Local\MiKTeX\2.9\fonts\pk\l
+jfour\jknappen\ec\dpi600\ecrm0900.pk> <C:\Users\Geiler Typ\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk> <C:\Users\Geiler Typ\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\G
+eiler Typ\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.
+pk> <C:\Users\Geiler Typ\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\d
+pi600\ecsx1440.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sy6.pfb>
+Output written on appendix.pdf (6 pages, 547853 bytes).
 PDF statistics:
- 294 PDF objects out of 1000 (max. 8388607)
+ 289 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
