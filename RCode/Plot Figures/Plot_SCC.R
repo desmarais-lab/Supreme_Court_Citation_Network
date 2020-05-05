@@ -285,7 +285,7 @@ p6
 data<- data.frame(Year, coM[7,], P[7,])
 colnames(data)<- c('Year', 'Theta', 'pi')
 eb <- aes(ymax = coM[7,]+1.96*steM[7,], ymin = coM[7,]-1.96*steM[7,])
-p7<- ggplot(data = data, aes(x = Year, y = Theta, shape=factor(pi), group=1)) +ggtitle('Martin-Quinn Score')+
+p7<- ggplot(data = data, aes(x = Year, y = Theta, shape=factor(pi), group=1)) +ggtitle('Ideological Distance')+
   geom_line() + 
   geom_ribbon(eb, alpha = 0.3)
 p7<-p7+scale_colour_manual(values=c('21'='springgreen4', '24'='orange1', '22'='red', '23'='black'))
@@ -326,12 +326,12 @@ p9
 data<- data.frame(Year, coM[10,], P[10,])
 colnames(data)<- c('Year', 'Theta', 'pi')
 eb <- aes(ymax = coM[10,]+1.96*steM[10,], ymin = coM[10,]-1.96*steM[10,])
-p10<- ggplot(data = data, aes(x = Year, y = Theta, shape=factor(pi), group=1)) +ggtitle('Absolute Difference in Martin Quinn Scores')+
+p10<- ggplot(data = data, aes(x = Year, y = Theta, shape=factor(pi), group=1)) +ggtitle('Ideological Breadth')+
   geom_line() + 
   geom_ribbon(eb, alpha = 0.3)
 p10<-p10+scale_colour_manual(values=c('21'='springgreen4', '24'='orange1', '22'='red', '23'='black'))
 p10<-p10+theme(legend.position='none', axis.text=element_text(size=12),axis.title=element_text(size=14),
-               plot.title=element_text(size=12, face='bold'))+ geom_point(aes(colour = factor(pi), size = 3), size=2.5) #+
+               plot.title=element_text(size=16, face='bold'))+ geom_point(aes(colour = factor(pi), size = 3), size=2.5) #+
 #geom_point(aes(colour = factor(pi)), size=1.5) 
 p10
 

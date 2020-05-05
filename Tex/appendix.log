@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.24)  5 MAY 2020 12:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.24)  5 MAY 2020 10:07
 entering extended mode
-**paper.tex
+**appendix.tex
 
 ("C:\Users\Geiler Typ\Desktop\PSU\Bruce Desmarais\Supreme_Court_Citation_Networ
-k\Tex\paper.tex"
+k\Tex\appendix.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -529,7 +529,7 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 ("C:\Users\Geiler Typ\Desktop\PSU\Bruce Desmarais\Supreme_Court_Citation_Networ
-k\Tex\paper.aux")
+k\Tex\appendix.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
@@ -604,196 +604,86 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 59.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+
+LaTeX Warning: Reference `dependence_terms' on page 1 undefined on input line 6
+1.
+
+[1
 
 
-{C:/Users/Geiler Typ/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3
-] [4]
-<images/citations_trans.pdf, id=25, 722.7pt x 722.7pt>
-File: images/citations_trans.pdf Graphic file (type pdf)
+{C:/Users/Geiler Typ/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<GOF_1950.pdf, id=15, 844.15375pt x 597.23125pt>
+File: GOF_1950.pdf Graphic file (type pdf)
+ <use GOF_1950.pdf>
+Package pdftex.def Info: GOF_1950.pdf used on input line 68.
+(pdftex.def)             Requested size: 392.64812pt x 277.80078pt.
 
-<use images/citations_trans.pdf>
-Package pdftex.def Info: images/citations_trans.pdf used on input line 93.
-(pdftex.def)             Requested size: 397.33975pt x 350.41261pt.
- [5] [6 <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation
-_Network/Tex/images/citations_trans.pdf>]
-[7] <images/citations_recip.pdf, id=52, 722.7pt x 722.7pt>
-File: images/citations_recip.pdf Graphic file (type pdf)
-
-<use images/citations_recip.pdf>
-Package pdftex.def Info: images/citations_recip.pdf used on input line 114.
-(pdftex.def)             Requested size: 397.33975pt x 350.41261pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 121--124
-
- []
-
-[8] [9 <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_
-Network/Tex/images/citations_recip.pdf>] [10]
-<images/citations_pop.pdf, id=79, 722.7pt x 722.7pt>
-File: images/citations_pop.pdf Graphic file (type pdf)
-
-<use images/citations_pop.pdf>
-Package pdftex.def Info: images/citations_pop.pdf used on input line 133.
-(pdftex.def)             Requested size: 397.33975pt x 294.93544pt.
- [11] [12 <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citati
-on_Network/Tex/images/citations_pop.pdf>]
-[13] <images/daggish.pdf, id=106, 433.62pt x 361.35pt>
-File: images/daggish.pdf Graphic file (type pdf)
-
-<use images/daggish.pdf>
-Package pdftex.def Info: images/daggish.pdf used on input line 153.
-(pdftex.def)             Requested size: 397.33975pt x 331.13376pt.
-
-Overfull \hbox (89.28947pt too wide) in paragraph at lines 165--167
-\T1/cmr/m/n/10.95 cite case $\OML/cmm/m/it/10.95 j$\T1/cmr/m/n/10.95 , $\OML/cm
-m/m/it/10.95 C[]$ \T1/cmr/m/n/10.95 is the ob-served el-e-ments of $\OML/cmm/m/
-it/10.95 C[]$ \T1/cmr/m/n/10.95 ex-cept $\OML/cmm/m/it/10.95 C[]$\T1/cmr/m/n/10
-.95 , and $[]$
- []
-
-[14] [15 <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citatio
-n_Network/Tex/images/daggish.pdf>] [16] [17] [18] [19]
-<degree_distribution.pdf, id=142, 844.15375pt x 597.23125pt>
-File: degree_distribution.pdf Graphic file (type pdf)
-
-<use degree_distribution.pdf>
-Package pdftex.def Info: degree_distribution.pdf used on input line 214.
-(pdftex.def)             Requested size: 422.07584pt x 298.61488pt.
-
-Overfull \hbox (3.82211pt too wide) in paragraph at lines 214--215
-[][] 
- []
-
-<images/citations1.pdf, id=143, 1445.4pt x 1445.4pt>
-File: images/citations1.pdf Graphic file (type pdf)
-
-<use images/citations1.pdf>
-Package pdftex.def Info: images/citations1.pdf used on input line 221.
-(pdftex.def)             Requested size: 500.91829pt x 485.98036pt.
-
-Overfull \hbox (82.66457pt too wide) in paragraph at lines 221--222
-[][] 
- []
-
-[20 <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_Net
-work/Tex/degree_distribution.pdf>] [21 <C:/Users/Geiler Typ/Desktop/PSU/Bruce D
-esmarais/Supreme_Court_Citation_Network/Tex/images/citations1.pdf>] [22]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 249.
-
-[23] [24] [25] [26] <SCC_AIC_BIC.pdf, id=196, 844.15375pt x 597.23125pt>
-File: SCC_AIC_BIC.pdf Graphic file (type pdf)
-
-<use SCC_AIC_BIC.pdf>
-Package pdftex.def Info: SCC_AIC_BIC.pdf used on input line 325.
-(pdftex.def)             Requested size: 426.79134pt x 301.95935pt.
-
-Overfull \hbox (8.53761pt too wide) in paragraph at lines 325--326
-[][] 
- []
-
-[27] [28 <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citatio
-n_Network/Tex/SCC_AIC_BIC.pdf>] [29]
-<SCC_Results_1.pdf, id=220, 597.23125pt x 844.15375pt>
-File: SCC_Results_1.pdf Graphic file (type pdf)
- <use SCC_Results_1.pdf>
-Package pdftex.def Info: SCC_Results_1.pdf used on input line 460.
-(pdftex.def)             Requested size: 455.24408pt x 643.46986pt.
-
-Overfull \hbox (36.99036pt too wide) in paragraph at lines 460--461
-[][] 
- []
-
-[30]
-Overfull \vbox (99.70647pt too high) has occurred while \output is active []
+<GOF_2015.pdf, id=16, 844.15375pt x 597.23125pt>
+File: GOF_2015.pdf Graphic file (type pdf)
+ <use GOF_2015.pdf>
+Package pdftex.def Info: GOF_2015.pdf used on input line 72.
+(pdftex.def)             Requested size: 392.64812pt x 277.80078pt.
+ [2]
+Overfull \vbox (42.53635pt too high) has occurred while \output is active []
 
 
-[31 <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_Net
-work/Tex/SCC_Results_1.pdf>]
-<SCC_Results_2.pdf, id=242, 597.23125pt x 844.15375pt>
-File: SCC_Results_2.pdf Graphic file (type pdf)
- <use SCC_Results_2.pdf>
-Package pdftex.def Info: SCC_Results_2.pdf used on input line 470.
-(pdftex.def)             Requested size: 455.24408pt x 643.46986pt.
-
-Overfull \hbox (36.99036pt too wide) in paragraph at lines 470--471
-[][] 
- []
-
-
-Overfull \vbox (99.70647pt too high) has occurred while \output is active []
-
-
-[32 <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_Net
-work/Tex/SCC_Results_2.pdf>] [33]
+[3 <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_Netw
+ork/Tex/GOF_1950.pdf> <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_
+Court_Citation_Network/Tex/GOF_2015.pdf>]
 ("C:\Users\Geiler Typ\Desktop\PSU\Bruce Desmarais\Supreme_Court_Citation_Networ
-k\Tex\paper.bbl" [34] [35] [36] [37]
-Underfull \hbox (badness 3260) in paragraph at lines 233--238
-[]\T1/cmr/m/n/10.95 Schmid, Chris-tian S and Bruce A Des-marais. 2017.  ``Ex-po
--nen-tial Ran-dom
- []
+k\Tex\appendix.bbl") <Deg_1950.pdf, id=44, 597.23125pt x 844.15375pt>
+File: Deg_1950.pdf Graphic file (type pdf)
+
+<use Deg_1950.pdf>
+Package pdftex.def Info: Deg_1950.pdf used on input line 90.
+(pdftex.def)             Requested size: 412.56496pt x 583.13652pt.
+ [4]
+Overfull \vbox (37.77312pt too high) has occurred while \output is active []
 
 
-Underfull \hbox (badness 4479) in paragraph at lines 233--238
-\T1/cmr/m/n/10.95 Graph Mod-els with Big Net-works: Max-i-mum Pseu-do-like-li-h
-ood Es-ti-ma-tion
- []
+[5 <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_Netw
+ork/Tex/Deg_1950.pdf>] <Deg_2015.pdf, id=65, 597.23125pt x 844.15375pt>
+File: Deg_2015.pdf Graphic file (type pdf)
+
+<use Deg_2015.pdf>
+Package pdftex.def Info: Deg_2015.pdf used on input line 100.
+(pdftex.def)             Requested size: 412.56496pt x 583.13652pt.
+
+Overfull \vbox (37.77312pt too high) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1533) in paragraph at lines 233--238
-\T1/cmr/m/n/10.95 and the Para-met-ric Boot-strap.'' \T1/cmr/m/it/10.95 IEEE In
--ter-na-tional Con-fer-ence on Big Data,
- []
-
-[38]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 282.
-
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
-File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)) [39]
+[6 <C:/Users/Geiler Typ/Desktop/PSU/Bruce Desmarais/Supreme_Court_Citation_Netw
+ork/Tex/Deg_2015.pdf>]
 ("C:\Users\Geiler Typ\Desktop\PSU\Bruce Desmarais\Supreme_Court_Citation_Networ
-k\Tex\paper.aux") ) 
+k\Tex\appendix.aux")
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 6023 strings out of 493921
- 86398 string characters out of 3144861
- 213202 words of memory out of 3000000
- 9178 multiletter control sequences out of 15000+200000
- 32979 words of font info for 93 fonts, out of 3000000 for 9000
+ 5802 strings out of 493921
+ 80818 string characters out of 3144861
+ 207977 words of memory out of 3000000
+ 8972 multiletter control sequences out of 15000+200000
+ 28842 words of font info for 87 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 45i,15n,46p,2113b,366s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Geiler Typ\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
-ur\jknappen\ec\dpi600\ectt1095.pk> <C:\Users\Geiler Typ\AppData\Local\MiKTeX\2.
-9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\Geiler Typ\AppData\
-Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1095.pk> <C:\Users\Geil
-er Typ\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk>
- <C:\Users\Geiler Typ\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
-00\ecsx1200.pk> <C:\Users\Geiler Typ\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
-knappen\ec\dpi600\ecti1095.pk> <C:\Users\Geiler Typ\AppData\Local\MiKTeX\2.9\fo
-nts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\Geiler Typ\AppData\Loca
-l\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk> <C:\Users\Geiler T
-yp\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk> <C:
-\Users\Geiler Typ\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-crm0700.pk> <C:\Users\Geiler Typ\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
-pen\ec\dpi600\ecrm1000.pk> <C:\Users\Geiler Typ\AppData\Local\MiKTeX\2.9\fonts\
-pk\ljfour\jknappen\ec\dpi600\ecsx1000.pk> <C:\Users\Geiler Typ\AppData\Local\Mi
-KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\Geiler Typ\A
-ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1440.pk><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on paper.pdf (39 pages, 1729725 bytes).
+ 45i,15n,46p,1225b,315s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Geiler Typ\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dp
+i600\ecrm0900.pk> <C:\Users\Geiler Typ\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\Geiler Typ\AppData\Local\MiKTeX\2.9\
+fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk> <C:\Users\Geiler Typ\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\Geiler
+ Typ\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <
+C:\Users\Geiler Typ\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
+\ecsx1440.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.p
+fb>
+Output written on appendix.pdf (6 pages, 548619 bytes).
 PDF statistics:
- 786 PDF objects out of 1000 (max. 8388607)
+ 294 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

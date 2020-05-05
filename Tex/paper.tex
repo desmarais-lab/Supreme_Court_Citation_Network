@@ -1,60 +1,27 @@
 \documentclass[headsepline=true, abstracton]{scrartcl}
-%\usepackage[ngerman]{babel}
+
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-%\usepackage{authblk}
+
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{bm}
-\usepackage{enumerate}
-\usepackage{verbatim}
-\usepackage[a4paper,text={160mm,215mm},centering,headsep=10mm,footskip=10mm]{geometry}
-\usepackage[urlcolor=black,colorlinks=true,linkcolor=black,citecolor=black,bookmarks]{hyperref}
-\usepackage{aliascnt}
-\usepackage{lmodern}
-\usepackage{mdwlist}
+
 \usepackage{natbib}
-\usepackage{listings}
+
 \usepackage[table,xcdraw]{xcolor}
-\usepackage[activate]{pdfcprot}
+
 \usepackage{graphicx}
-\usepackage{slashed}
-\usepackage{mathrsfs}
+
 \usepackage{geometry}
 \usepackage{float}
-\usepackage{oldgerm}
+
 \usepackage{setspace}
-\usepackage{dsfont}
-%\usepackage{mathtools}
-\usepackage[all]{xy}
-\usepackage{cite}
-%\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{algorithm2e}
+
 \usepackage{url}
-\pagestyle{headings}
-\newcommand{\myclearpage}{\clearpage}
-\newcommand\independent{\protect\mathpalette{\protect\independenT}{\perp}}
-\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
-\newenvironment{gelaber}{}{}
-\newenvironment{preamble}{}{}
-\newcommand{\tostar}{\overset{*}{\lower0.5em\hbox{$\smash{\scriptscriptstyle\rightharpoonup}$}}}
-\newtheorem{mydef}{Definition}
-\newtheorem{bem}{Bemerkung}
-\usepackage{tikz}
-\newcommand\circlearound[1]{%
-  \tikz[baseline]\node[draw,shape=circle,anchor=base] {#1} ;}
-  \usepackage{hyperref}
-\newcommand{\footremember}[2]{%
-    \footnote{#2}
-    \newcounter{#1}
-    \setcounter{#1}{\value{footnote}}%
-}
-\newcommand{\footrecall}[1]{%
-    \footnotemark[\value{#1}]%
-} 
+ 
+ 
  
   
 \begin{document}
@@ -158,7 +125,7 @@ The first case in our example reciprocal dyad is a passage from Western Air Line
 
 The third, and final, network property we consider in the context of Supreme Court citations is popularity. Popularity, also termed ``preferential attachment'' is the tendency for ties to be sent to nodes to which many ties have already been sent \citep{barabasi1999emergence}. Citations to an opinion signal both the Court's awareness of the legal reasoning of the case and the Court's evaluation that the opinion is an authoritative precedent. The more citations, the stronger this signal. Landmark cases, or those that establish new legal rules, are particularly authoritative and accrue citations from most future opinions that follow the respective line of reasoning. The passage below, from Oregon v. Mitchell (400 U.S. 112, 1970)---a case on the legality of state age restrictions on voting in federal elections---illustrates this popularity dynamic. In this opinion passage Baker v. Carr is cited in reference to its role as a landmark precedent, and noted for the number of other cases by which it has been followed. and for which an authoritative opinion is referenced, and even discussed in terms of the number of other cases by which it was followed. The language in this passage suggests that the attention to Baker v. Carr in previous Court opinions is in part responsible for its authority in Oregon v. Mitchell. The citations to Baker v. Carr are visualized in Figrue \ref{fig:popularity}.
 \begin{quotation}
-The first case in which this Court struck down a statute under the Equal Protection Clause of the Fourteenth Amendment was Strauder v. West Virginia, 100 U. S. 303, decided in the 1879 Term. [Footnote 2/1] In the 1961 Term, we squarely held that the manner of apportionment of members of a state legislature raised a justiciable question under the Equal Protection Clause, Baker v. Carr, 369 U. S. 186. That case was followed by numerous others, e.g.: that one person could not be given twice or 10 times the voting power of another person in a state-wide election merely because he lived in a rural area..."
+The first case in which this Court struck down a statute under the Equal Protection Clause of the Fourteenth Amendment was Strauder v. West Virginia, 100 U. S. 303, decided in the 1879 Term. [Footnote 2/1] In the 1961 Term, we squarely held that the manner of apportionment of members of a state legislature raised a justiciable question under the Equal Protection Clause, Baker v. Carr, 369 U. S. 186. That case was followed by numerous others, e.g.: that one person could not be given twice or 10 time the voting power of another person in a state-wide election merely because he lived in a rural area..."
 \end{quotation} %https://supreme.justia.com/cases/federal/us/400/112/case.html
 
 \begin{figure}[htp]
@@ -172,7 +139,7 @@ These three properties---transitivity, reciprocity, and popularity form the core
 
  
 \section{The Citation Exponential Random Graph Model}
-We develop a methodology that can be used to jointly test for the effects of covariates on citations---as have been studied in prior research, and test for dependence effects, as we hypothesize above. To accomplish this, we extend a model that has been developed to jointly represent covariate and dependence effects in network data---the exponential random graph model (ERGM) \citep[e.g.,][]{welles2015individual,duque2018recognizing, graif2017neighborhood,osei2018elite}  %The ERGM, as it is currently implemented \citep{leifeld2017temporal,  tergm}, is designed to model longitudinal network data in which ties among a relatively stable set of nodes are modeled at multiple time points (e.g., the countries that are and are not defensively allied at time $t$, the legislators who have and have not cosponsored each others' legislation in the current session).  
+We develop a methodology that can be used to jointly test for the effects of covariates on citations---as have been studied in prior research, and test for dependence effects, as we hypothesize above. To accomplish this, we extend a model that has been developed to jointly represent covariate and dependence effects in network data---the exponential random graph model (ERGM) \citep[e.g.,][]{welles2015individual,duque2018recognizing, graif2017neighborhood,osei2018elite}.  %The ERGM, as it is currently implemented \citep{leifeld2017temporal,  tergm}, is designed to model longitudinal network data in which ties among a relatively stable set of nodes are modeled at multiple time points (e.g., the countries that are and are not defensively allied at time $t$, the legislators who have and have not cosponsored each others' legislation in the current session).  
 The network structures for which ERGMs are currently designed are insufficient to account for the structure of citation networks.
 
 
@@ -277,7 +244,7 @@ We include one covariate that accounts for the rate at which cases that fall und
 
 %We also include a set of covariates that account for justice-specific variation in citations. We include two types of terms at the justice level. First, we include an indicator variable that models the rate at which justices cite themselves. This effect is modeled with a single indicator variable in which $X_{ij} = 1$ if the majority opinions in cases $i$ and $j$ were written by the same justice. Second, we use two sets of dummy variables to account for differences across justices both in terms of their tendencies to include citations in the opinions they write and to be cited by other opinions. The justice sender dummy variables indicate the identity of the justice who authored the majority or plurality opinion of case $i$. The justice recipient dummy variables indicate the identity of the justice who authored the majority or plurality opinion of case $j$. This set of variables is motivated by the use of citations by \citet{kosma1998measuring} to measure the influence of individual Supreme Court justices.
 
-We also include an indicator variable that models the rate at which justices cite themselves. Similar to the same issue area variable, this effect is modeled with a single indicator variable in which $X_{ij} = 1$ if the majority opinions in cases $i$ and $j$ were written by the same justice. The data is taken from the SCDB \citep{spaeth2014supreme}. {\color{blue} Justification for including this variable? }
+We also include an indicator variable that models the rate at which justices cite themselves. Similar to the same issue area variable, this effect is modeled with a single indicator variable in which $X_{ij} = 1$ if the majority opinions in cases $i$ and $j$ were written by the same justice. The data is taken from the SCDB \citep{spaeth2014supreme}. 
 
 \begin{table}[]
 \centering
@@ -305,7 +272,7 @@ The final control variable we include in the model is one in which $X_{ij} = 1$ 
 
 We include dependence terms to account for each of the dynamics that we hypothesize will characterize the Supreme Court Citation Network---transitivity, reciprocity, and popularity. %We expect that the coefficients associated with each of these dependence effects will be positive. 
 
-The common dependence effects for these four dynamics are the number of triangles (case $i$ cites cases $j$ and $k$, and case $j$ cites case $k$), the number of mutual dyads (case $i$ cites $j$ and vice versa), the number of out-2-stars (case $i$ cites $j$ and $k$), and the number of in-2-stars (case $i$ is being cited by cases $j$ and $k$) in $C_{\leq t}$. Unfortunately, adding the triangle, out-2-star, or in-2-star statistic causes model degeneracy \citep{Handcock.2003}. Model degeneracy is a common obstacle when fitting ERGMs, and occurs when the model places most of its probability mass on just a few networks, usually the empty and the full network. In this scenario, the simulated networks are too different from the observed network, making the underlying distribution defined by the model extremely unrealistic.
+The common dependence effects for these three dynamics are the number of triangles (case $i$ cites cases $j$ and $k$, and case $j$ cites case $k$), the number of mutual dyads (case $i$ cites $j$ and vice versa), the number of out-2-stars (case $i$ cites $j$ and $k$), and the number of in-2-stars (case $i$ is being cited by cases $j$ and $k$) in $C_{\leq t}$. Unfortunately, adding the triangle, out-2-star, or in-2-star statistic causes model degeneracy \citep{Handcock.2003}. Model degeneracy is a common obstacle when fitting ERGMs, and occurs when the model places most of its probability mass on just a few networks, usually the empty and the full network. In this scenario, the simulated networks are too different from the observed network, making the underlying distribution defined by the model extremely unrealistic.
 
 % reciprocity
 The statistic included in the model for reciprocity counts the number of mutual dyads (i.e., dyads in which cases $i$ cites case $j$, and case $j$ cites case $i$) in $C_{\leq t}$. In practice, this is the number of mutual dyads in $C_{\leq t}$, since mutual dyads must emerge among opinions that were written in the same term. The log odds interpretation of the reciprocity statistic is that if the opinion in case $i$ cites case $j$, the log odds that case $j$ also cites $i$ change by the estimated coefficient relative to the configuration in which case $j$ does not cite case $i$. We expect the reciprocity effect to be positive.
@@ -329,7 +296,7 @@ We include two statistics to account for different types of transitivity.
 The first transitivity statistic calculates the number of transitive ties, $i \to j$, where there is a directed path of length two from $i$ to $j$ through at least one case $k$, and $j$ and $k$ were written during a different term than $i$. We will refer to this statistic as the \textit{different term transitivity} statistic. As illustrated in Section 2, we theorize Supreme Court citations to pattern a high degree of transitivity. As a result, we expect positive parameter estimates for the \textit{different term transitivity} statistic. 
 
 
-The second transitivity statistic, intended to capture clustering that includes more than one tie formed in the same term, is the \textit{geometrically weighted edgewise shared partners} (gwesp) statistic introduced by \citet{hunter2006inference}. For directed networks the edgewise shared $r$-partners statistic ($ESP_r$) can take multiple forms, but we integrate the definition where cases $i$ and $j$ that are connected by a citation, also cite $r$ common other cases. We follow the notation of \citet{Butts.2008} and call this ESP specification \textit{outgoing shared partners} (OSP). Similar to the gwidegree-statistic the gwesp-statistic incorporates a network's edgewise shared partners distribution by replacing $D_r$ by $ESP_r$. Triangles that are incident to the outgoing shared partners configuration arise when there is a cite between two cases decided at the same time, and those two cases cite one or more of the same third cases (decided either previously or also during the same term). This would happen if citations were clustering around legal issues that are not completely captured by our same-issue-area effects.  As we do not expect that the issue area variable will account for all of the clustering around legal issues, we expect the gwesp statistic to also carry a positive coefficient value.
+The second transitivity statistic, intended to capture clustering that includes more than one tie formed in the same term, is the \textit{geometrically weighted edgewise shared partners} (gwesp) statistic introduced by \citet{hunter2006inference}. For directed networks the edgewise shared $r$-partners statistic ($ESP_r$) can take multiple forms, but we integrate the definition where cases $i$ and $j$ that are connected by a citation, also cite $r$ common other cases. We follow the notation of \citet{Butts.2008} and call this ESP specification \textit{outgoing shared partners} (OSP). Similar to the gwidegree-statistic the gwesp-statistic incorporates a network's edgewise shared partners distribution by replacing $D_r$ by $ESP_r$. We fix the decay parameter at $\lambda=0.25$. Triangles that are incident to the outgoing shared partners configuration arise when there is a cite between two cases decided at the same time, and those two cases cite one or more of the same third cases (decided either previously or also during the same term). This would happen if citations were clustering around legal issues that are not completely captured by our same-issue-area effects.  As we do not expect that the issue area variable will account for all of the clustering around legal issues, we expect the gwesp statistic to also carry a positive coefficient value.
 
 % Activity
 We include one more structural network effect to adjust for inherent differences across cases in terms of the overall scope of the legal issues addressed in a case.  \citet{fowler2008authority} finds that cases vary in the degree to which they serve as ``hubs''---citing to many other cases. We expect that new cases will be more likely to cite cases that themselves cited many cases, because cases that themselves cite a large number of cases address a broader array of legal issues. We include the outdegree of every node that entered the network prior time $t$ as a receiver effect. We expect the coefficient on this term to be positive. This is not technically a dependence term, as it is formulated as a covariate, but we discuss it in the current section because it is purely a network structure effect.
@@ -425,11 +392,12 @@ Figure \ref{AIC_BIC} depicts the AIC and BIC comparison for the two different mo
   
   
 \subsection{c-ERGM Coefficient Estimates}
-The estimates from the c-ERGM are presented in Figures \ref{SCC_results_1} and \ref{SCC_results_2}. In these figures we depict coefficient estimates and 95\% confidence intervals for all of the effects for all the variables we discussed in sections \ref{covariate_terms} and \ref{dependence_terms}. The coefficients in an ERGM family model can be interpreted in the same way as logistic regression coefficients---they give the change in the log odds of a tie from $i$ to $j$ given a one-unit increase in the respective variable. We first discuss the dependence effect estimates in Figure \ref{SCC_results_1}. A circle indicates that the estimate was significant at an $\alpha=0.05$ level, while and square translates to a p-value between $0.05$ and $0.1$. A triangle signals that the estimate for a given year was not significant at an $\alpha=0.1$ level. The panel showing the results of the reciprocity statistic does not provide estimates for every term. In these missing terms there were no two cases that cited each other, making the estimate of the reciprocity statistic term equivalent to $-\infty$. For those years, the reciprocity term is included in the model, but the estimate of $-\infty$. A similar scenario is visible for the \textit{Overruled Cases} variable. In the time period from 1953-1956 no cases that have been overruled have been cited which results in a non-estimable effect.
+The estimates from the c-ERGM are presented in Figures \ref{SCC_results_1} and \ref{SCC_results_2}. In these figures we depict coefficient estimates and 95\% confidence intervals for all of the effects for all the variables we discussed in sections \ref{covariate_terms} and \ref{dependence_terms}. The coefficients in an ERGM family model can be interpreted in the same way as logistic regression coefficients---they give the change in the log odds of a tie from $i$ to $j$ given a one-unit increase in the respective variable. We first discuss the dependence effect estimates in Figure \ref{SCC_results_1}. A circle indicates that the estimate was significant at an $\alpha=0.05$ level, while and square translates to a p-value between $0.05$ and $0.1$. A triangle signals that the estimate for a given year was not significant at an $\alpha=0.1$ level. The panel showing the results of the reciprocity statistic does not provide estimates for every term. In these missing terms there were no two cases that cited each other, making the estimate of the reciprocity statistic term equivalent to $-\infty$. %For those years, the reciprocity term is included in the model, but the estimate of $-\infty$. 
+A similar scenario is visible for the \textit{Overruled Cases} variable. In the time period from 1953-1956 no cases that have been overruled have been cited which results in a non-estimable effect.
 
-We first discuss our findings regarding the dependence terms. In most of the years that it is estimable, the reciprocity effect is statistically significantly positive, and substantial in magnitude. In a typical year, the presence of a citation from case $i$ to case $j$ increases the log-odds of a citation from case $j$ to case $i$ by approximately 0.50. Both transitivity effects---different term transitivity, and GWESP---are estimated to be positive and statistically significant in every year, and are even greater in magnitude than the reciprocity effect. The log-odds of a citation from case $i$ to case $j$ increases by more than 2 if there is at least one third case, $k$ that is cited by $i$, and cites to $j$. Results regarding the popularity effect (i.e., GWIdegree) are generally supportive of the hypothesis of a popularity effect in Supreme Court citations, as the GWIdegree estimate is negative in every term. There are some terms for which the result is not statistically significant at conventional levels. The popularity effect looks to have grown substantially stronger after the 2000 term. Contrary to expectations, we find that the hub effect is negative. That is, each additional citation sent by a case reduces the likelihood that the case is cited. For every citation sent, the log-odds of any citation to a case decreases by approximately 0.025---a result that is statistically significant in each term.
+We first discuss our findings regarding the dependence terms. In most of the years that it is estimable, the reciprocity effect is statistically significantly positive, and substantial in magnitude. In a typical year, the presence of a citation from case $i$ to case $j$ increases the log-odds of a citation from case $j$ to case $i$ by approximately 0.50. Both transitivity effects---different term transitivity, and gwesp---are estimated to be positive and statistically significant in every year, and are even greater in magnitude than the reciprocity effect. The log-odds of a citation from case $i$ to case $j$ increases by more than 2 if there is at least one third case, $k$ that is cited by $i$, and cites to $j$. Results regarding the popularity effect (i.e., gwidegree) are generally supportive of the hypothesis of a popularity effect in Supreme Court citations, as the gwidegree estimate is negative in every term. There are some terms for which the result is not statistically significant at conventional levels. The popularity effect looks to have grown substantially stronger after the 2000 term. Contrary to expectations, we find that the hub effect is negative. That is, each additional citation sent by a case reduces the likelihood that the case is cited. For every citation sent, the log-odds of any citation to a case decreases by approximately 0.025---a result that is statistically significant in each term.
 
-The effects of the exogenous covariates included in the c-ERGM are presented in Figure \ref{SCC_results_2}.  Most of the exogenous covariate effects align with expectations. We find that cases are more likely to cite those that (1) have been decided most recently, (2) were decided by large majorities, (3) have not been overruled, (3) were authored by the same justice, and (3) are in the same issue area. Surprisingly, we do not find consistent effects of either of the covariates that involve justice ideology. The ideological distance between two cases, as measured by the absolute difference in the median of the majority coalitions; and the ideological breadth of the cited cases, as measured by the absolute difference between the most liberal and most conservative justices on the potential receiving case, both exhibit signs and significance levels that are highly volatile. Our results leave open the question of whether, and if so, how, citations are shaped by ideological factors.
+The effects of the exogenous covariates included in the c-ERGM are presented in Figure \ref{SCC_results_2}.  Most of the exogenous covariate effects align with expectations. We find that cases are more likely to cite those that (1) have been decided most recently, (2) were decided by large majorities, (3) have not been overruled, (4) were authored by the same justice, and (5) are in the same issue area. Surprisingly, we do not find consistent effects of either of the covariates that involve justice ideology. The ideological distance between two cases, as measured by the absolute difference in the median of the majority coalitions; and the ideological breadth of the cited cases, as measured by the absolute difference between the most liberal and most conservative justices on the potential receiving case, both exhibit signs and significance levels that are highly volatile. Our results leave open the question of whether, and if so, how, citations are shaped by ideological factors.
 
 %The results from the c-TERGM provide evidence that citations between US Supreme Court cases are driven both by exogenous case attributes and complex dependence processes. The scales of covariate and dependence effects are comparable. 
 %The simple linear trends represent one limitation of the current analysis. In future work, more complex polynomials dynamical functions should be considered to determine whether effects truly flip signs.
@@ -513,58 +481,7 @@ The effects of the exogenous covariates included in the c-ERGM are presented in 
 We present a methodology for studying citations between US Supreme Court opinions at the dyadic level, as a network. This methodology---the citation-ERGM---enables researchers to include both exogenous covariates such as the ideological predisposition and age of a case, and dependence terms, such as transitivity and reciprocity, as explanations for citation formation. We apply this methodology to a network that includes all Supreme Court cases decided between 1950 and 2015. We find, somewhat counterintuitively, that Supreme Court citations are highly reciprocal. We also find that citations are driven by dependencies such as triad closure and popularity. The dependence effects that we identify are as substantively and statistically significant as the effects of the exogenous covariates we include in the model. The summary result from this analysis is that theoretical models of Supreme Court citation formation should consider both the effects of case characteristics and the structure of past citations. 
 
 We recognize two important limitations of the current analysis, which should be addressed in future iterations of this work or in future studies. First, our theoretical claims and analyses treat all citations---positive and negative---as equivalent. Both data and methodological limitations will need to be overcome to consider these two citation types. Second, there is nothing in the c-ERGM that governs the generation of new cases (i.e., cases are assumed to arise exogenously, unrelated to the history of the citation network). As new cases are often taken up by the Supreme Court in order to test, clarify, and/or challenge existing precedents, it is likely inappropriate to assume that new cases arise exogenous to the existing citation network. Overcoming this limitation would require methodological innovation in the c-ERGM as well as theoretical development regarding exactly how citation structure might predict case emergence. 
-%Third, the data used in this study does not cover the most recent history of the Court. Our data ends in 2001---missing the tenure of the most recent chief justice, and more than fifteen terms. To overcome this limitation we would need to extend the citation data beyond that collected by Fowler and colleagues. 
-
-
-\section{Appendix}
-
-\subsection{Goodness-of-Fit}
-We evaluate the goodness-of-fit of the model following \citet{Hunter.2008} by examining the distribution of four hyper statistics, e.g., the out- and indegree distribution and the distribution for two different edgewise shared partners statistics. OTP stands for \textit{outgoing two-paths} and refers to the number of cases $r$ that are cited by case $i$ and that cite case $j$, while $j$ is also directly cited by $i$. The second ESP statistic is the OSP specification that has been introduced in section \ref{dependence_terms}. Figure \ref{GOF} visualizes the goodness-of-fit results for the citation network for the 1950 (top) and 2015 (bottom) term. The solid black line indicates the statistic's distribution in the Supreme Court citation network of that given term and the boxplots depict the statistic's distribution of $1000$ networks that have been simulated from the ERGM defined by the MCMLE. This means that in the ideal case the solid black line passes through ever single boxplot.
-
-
-We see that our models do a good job capturing the out and indegree distribution of the citation network, since the black line falls almost exclusively within the ranges spanned by the boxplots. For the ESP distributions we can observe that the number of ties with $r=0$ shared partners is captured well for both the OTP as well as for the OSP statistic. However, the model overestimates the number of $r=1$ shared partners and then, especially in the 2015 term network, underestimates the number of ties with more than $r=1$ shared partners. 
-
- \begin{figure}[H]
- \begin{center}
-\includegraphics[width=13.8cm]{GOF_1950}\\
-%\caption{Goodness-of-fit diagnostic for the 1950 network.}
-% \label{GOF_1950}
-\vspace{1cm}
-\includegraphics[width=13.8cm]{GOF_2015}
-\vspace{0.1cm}
-\caption{Goodness-of-fit diagnostic for the 1950 network (top) and the 2015 network (bottom).}
- \label{GOF}
-\vspace{-.25cm}
-\end{center}
-\end{figure} 
-
-
-\subsection{Checking for Model Degeneracy}
-
-A common challenge when fitting ERGMs is model degeneracy. Model degeneracy occurs when the probability distribution defined by the parameter vector does not predominantly yield networks with similar statistics as the observed network. Generally, model degeneracy results in simulated networks with no ties or all possible ties. In a non-degenerate model the statistics of the networks that were simulated from the probability distribution defined by the MCMLE fall in the proximity of the observed network's statistics. Figures \ref{mcmcdiagnostics_1950} and \ref{mcmcdiagnostics_1950} depict trace and density plots for the dependence terms in the 1950 and 2015 term citation network. The histograms on the left visualize a statistic's density from $1000$ simulated networks, while the right side shows the statistic's trace plot of the same $1000$ networks. The solid black line indicates the statistic's value in the actual citation network. Both figures indicate that this model is non-degenerate and that the simulated network's statistics fall almost evenly around the observed statistic. The density and trace plots for the ERGM of the terms not depicted provide similar results.
-
-\begin{figure}[H]
- \begin{center}
-\includegraphics[width=14.5cm]{Deg_1950}
-\caption{Density and trace plots for the dependency terms of the 1950 term citation network.}
- \label{mcmcdiagnostics_1950}
-\vspace{-.25cm}
-\end{center}
-\end{figure} 
-
-
- \begin{figure}[H]
- \begin{center}
-\includegraphics[width=14.5cm]{Deg_2015}
-\caption{Density and trace plots for the dependency terms of the 2015 term citation network.}
- \label{mcmcdiagnostics_2015}
-\vspace{-.25cm}
-\end{center}
-\end{figure} 
-%\begin{itemize}
-%\item add robustness check: MCMLE for each year -> plot time trend of coefs -> are results similar to the MPLE time trends presented in the paper?
-%\item (investigate which statistic contributes most on recall improvement)
-%\end{itemize}
+ 
 
 
 \newpage
@@ -573,23 +490,6 @@ A common challenge when fitting ERGMs is model degeneracy. Model degeneracy occu
 \bibliographystyle{apsr}
 
 
-
- \begin{figure}[H]
-  \begin{tabular}{c}
-\includegraphics[width = 1\textwidth, trim= 0.1cm 1cm 0.1cm .1cm,clip=true]{issuearea_activity}
- \\
-\includegraphics[width = 1\textwidth, trim= 0.1cm 1cm 0.1cm .1cm,clip=true]{issuearea_popularity}
-\end{tabular}
-\caption{Issue Area Popularity and Activity (nodeifactor and nodeofactor). Baseline is Issue Area 'Criminal Procedure'.}
-\end{figure} 
-
-
- \begin{figure}[H]
-\includegraphics[width=15cm]{heatplot_issue_area}
-\caption{Nodemix Issue Area. Sender14Receiver14 and Sender14Receiver13 couldnt be estimated.}
- \label{number_supporting}
-\vspace{-.25cm}
-\end{figure} 
 
 
 \end{document}
@@ -610,280 +510,6 @@ A common challenge when fitting ERGMs is model degeneracy. Model degeneracy occu
 
 
 
-
-
-
-
-
-% Network Statistics
-The c-ERGM is specified through 
-the decision regarding which network statistics $h(\cdot)$ to incorporate. We include the following statistics for the Supreme Court citation network:
-$$h_{edges}:\mathcal{C}(N)\to \mathbb{R}~~~, ~~~c(t) \to \sum_{i=1}^Nc_i(t)$$
-the number of citations made at time $t$.  $h_{edges}$ is like an intercept, and models the expected value of any given edge.
-$$h_{outstar}:\mathcal{C}(N)\to \mathbb{R}~~~, ~~~c(t) \to \sum_{j<i}^Nc_i(t)\cdot c_j(t) \cdot \sqrt{\dfrac{(t-a)(t-a-b)}{t^2}}$$
-the number of weighted outstars occuring at time $t$. We argue that it should be more likely to cite more recent cases than cases that have been decided further in the past. For the weight 
-$$w(a,b):= \sqrt{\dfrac{(t-a)(t-a-b)}{t^2}}$$
-we define $a$ and $b$ as the elapsed time since case $i$ and $j$ have been introduced to the network.
-$$h_{triangle}:\mathcal{C}(N)\to \mathbb{R}~~~, ~~~c(t) \to \sum_{j<i}^Nc_i(t)\cdot c_j(t) \cdot
-c_j(t_{-i}) \cdot w(a,b)$$
-where $c_j(t_{-i})$ indicates whether case $j$ was cited at the time case $i$ was introduced into the network. Just as for the outstar statistic, we include a weighting factor to favor more recent cases. \\[0.3cm]
-
-
-%Change Statistic
-The individual entries $c_i(t)$ can be taken as a manifestation of single Bernoulli variables $C_i(t)$. This interpretation allows the following calculation regarding the conditional distribution of $C_i(t)$:
-%
-\begin{eqnarray*}
-\dfrac{P_{\theta}(C_i(t)=1 ~|~ C_i(t)^c=c_i(t)^c)}{P_{\theta}(C_i(t)=0 ~|~ C_i(t)^c=c_i(t)^c)} &=&
-\dfrac{P_{\theta}(C_i(t)=1 ~,~ C_i(t)^c=c_i(t)^c)}{P_{\theta}(C_i(t)=0 ~,~ C_i(t)^c=c_i(t)^c)} \\
-                           &=&\dfrac{P_{\theta}(C(t)= c_i^+(t))}{P_{\theta}(C(t)=c_i^-(t))}\\
-                           &=&\dfrac{\exp(\theta^T \cdot h(c_i^+(t)~|~c(t-)))}{\exp(\theta^T \cdot h(c_i^-(t)~|~c(t-)))}\\
-                           &=& \exp(\theta^T \cdot (h(c_i^+(t)~|~c(t-)) - h(c_i^-(t)~|~c(t-)))
-\end{eqnarray*}
-%
-This implies the following equation:
-%
-\begin{equation}
-\text{logit}(P_{\theta}(C_i(t)=1 ~|~ C_i(t)^c=c_i(t)^c))= \theta^T \cdot (h(c_i^+(t)~~|c(t-)) - h(c_i^-(t)~|~c(t-)))
-\label{Logit}
-\end{equation}
-In the equation above the following notations were used:
-%
-\begin{itemize}
-\item $c_i^+(t)$ emerges from $c(t)$, while assuming $c_i(t)=1$
-\item $c_i^-(t)$ emerges from $c(t)$, while assuming $c_i(t)=0$
-\item The condition $C_i(t)^c=c_i(t)^c$ is short for: $C_j(t)=c_j(t)$ for all $j\in \{1,\dots,N\}$ with $i \neq j$
-\item The expression $(\Delta c_i)(t):=h(c_i^+(t)~|~c(t-)) - h(c_i^-(t)~|~c(t-))$ is called the \textit{change statistic}. The $k$th component of $(\Delta c_i)(t)$ captures the difference between citation networks $c_i^+(t)$ and $c_i^-(t)$ on the $k$th integrated statistic in the model
-\end{itemize}
-
-
-
-\section{Estimation}
-
-% Pseudo Likelihood
-\subsection*{Maximum Pseudo-Likelihood Estimator}
-One can assume that the dyads are independent of each other, which means that
-the random variables $C_i(t)$ inside the random vector $C(t)$ are independent of each other.
-In this case, the equation (\ref{Logit}) reduces to
-$$logit(P_{\theta}(C_i(t) = 1)) = \theta^T \cdot (\Delta c_i)(t)$$
-This corresponds with the logistic regression approach, where the observations of
-the dependent variables are simply edge values of the observed citation vector,
-and the observations of the covariate values are given as the scores of every single
-change statistic. Therefore, the resulting likelihood function is of the following form:
-\begin{equation}
-\text{lik}(\theta)= P_{\theta}(C(t)=c(t))= \prod_{i} \dfrac{ \exp \left(\theta^T \Delta(c_i)(t) \right)}{1+\exp \left(\theta^T \Delta(c_i)(t) \right)}
-\label{PseudoLik}
-\end{equation}
-
-\subsection*{Maximum Likelihood Estimator}
-The more rigorous technique is to estimate the parameters directly with the log-likelihood function derived from (\ref{ercm}), which has the following form:
-%
-\begin{equation}
-\text{loglik}(\theta)=\theta^T \cdot h(c(t)| c(t-))-\log(\kappa(\theta))
-\label{loglik}
-\end{equation}
-%
-The problem resulting from estimating the parameters with (\ref{loglik}) is that the term
-%
-$$\kappa(\theta):= \sum_{c(t)^* \in \mathcal{C}(N)} \exp(\theta^T \cdot h(c(t)^*|c(t-)))$$ 
-%
-which sums up the weighted statistics of all possible binar vectors of length $N$, has to be evaluated. However, the cardinality of $\mathcal{C}(N)$ (\#$(\mathcal{C})=2^N$) is incredibly large and a direkt calculation of this sum is for already small $N$ not feasible. \\[0.3cm]
-An solution for this limitation is based on the following consideration: Fix a vector of parameters $\theta_0 \in \Theta$ from the underlying parameter range $\Theta$ and compute for $\theta \in \Theta$ the expected value
-%
-\begin{eqnarray*}
-\mathbb{E}_{\theta_0}\left[ \exp\left((\theta - \theta_0)^T \cdot \Gamma(C(t))\right) \right]&=& 
-\sum_{c(t) \in \mathcal{C}(N)}\exp\left((\theta - \theta_0)^T \cdot \Gamma(c(t))\right)\cdot \mathbb{P}_{\theta_0}(C(t)=c(t))\\
-&=& \sum_{c(t) \in \mathcal{C}(N)}\exp\left((\theta - \theta_0)^T \cdot \Gamma(c(t))\right)\cdot 
-\frac{\exp(\theta_0^T \cdot \Gamma(c(t)))}{\kappa(\theta_0)}\\
-&=& \frac{1}{\kappa(\theta_0)} \sum_{c(t) \in \mathcal{C}(N)}\exp\left(\theta^T \cdot \Gamma(c(t))\right)\\
-&=&\frac{\kappa(\theta)}{\kappa(\theta_0)}
-\end{eqnarray*}
-%
-This equation offers the following possibility: If one draws $L$ random vectors $c^{(1)}(t), \dots ,c^{(L)}(t)$ out of a distribution $\mathbb{P}_{\theta_0}$ appropriately, one gets with the law of big numbers and a big enough sample $L$ the following relation:
-%
-\begin{equation}
-\frac{1}{L}\cdot \sum_{i=1}^{L}  \exp\left((\theta - \theta_0)^T \cdot \Gamma(c^{(i)}(t))\right)
-~~\approx~~ \mathbb{E}_{\theta_0}\left[ \exp\left((\theta - \theta_0)^T \cdot \Gamma(C(t))\right) \right] = \frac{\kappa(\theta)}{\kappa(\theta_0)}
-\label{konver}
-\end{equation}
-%
-This approximate can then be used to approximate the log likelihood function.\\[0.4cm]
-Next, we will discuss how a sufficient number of suitable drawings $c^{(1)}(t), \dots ,c^{(L)}(t)$ can be sampled from the distribution $\mathbb{P}_{\theta_0}$. \\
-For this purpose, the Markov Chain Monte Carlo (MCMC) methods can be used.
-\subsection*{Gibbs sampling for the ERCM}
-To be able to compute the approximate likelihood function one needs a sufficiently large number of random vectors from the distribution $\mathbb{P}_{\theta_0}$. Snijders \citet{Snijders.2002b} introduces an approach to sample random networks for the ERGM framework by using \textit{MCMC methods}. We adapt this approach for sampling appropriate binary vectors for the ERCM. \\[0.4cm]
-\textit{Gibbs sampling}\\
-%Choose any vector $c^{(0)}(t) \in \mathcal{C}(N)$ (e.g. observed vector). Afterwards, the length $L$ of the respective sub-sequence is determined. For $k \in \{0,...,L-1\}$ execute the following steps recursively (here the vector in its $k$th iteration is denoted as $c^{(k)}(t)$):\\
-
-\begin{algorithm}[H]
- Choose any vector $c^{(0)}(t) \in \mathcal{C}(N)$ (e.g. observed vector)\\
- \For{i in 1:N}{
-  Compute $\pi:= \cfrac{\exp(\theta^T\cdot \Delta(c_i)(t))}{1+\exp(\theta^T\cdot \Delta(c_i)(t))}$\\
-  Draw a random number Z from Bin(1,$\pi$)\\
-  \eIf{Z=1}{
-   set $c^{(k+1)}_i = 1$ and $c^{(k+1)}_j=c^{(k)}_j$, if $i\neq j$
-   }{
-   set $c^{(k+1)}_i = 0$ and $c^{(k+1)}_j=c^{(k)}_j$, if $i\neq j$
-  }
- }
- Start all over using $c^{(k+1)}$\\[0.3cm]
- \caption{Simulation of vectors of $\mathbb{P}_\theta$ using Gibbs sampling}
-\end{algorithm}
-\vspace{0.5cm}
-%\begin{enumerate}
-%\item Randomly choose a number $i \in \{1,\dots, N\}$
-%\item Compute using the likelihood the value 
-%$$\pi:= \mathbb{P}_{\theta}(C_{i}(t)=1 | C_{i}^c(t)=(c_{i}^{(k)}(t))^c)=\cfrac{\exp(\theta^T\cdot \Delta(c_i)(t))}{1+\exp(\theta^T\cdot \Delta(c_i)(t))}$$
-%\item Draw a random number $Z$ from Bin$(1, \pi)$. %If
-%\begin{itemize}
-%\item $Z=0$, define $c^{(k+1)}(t)$ via
-%$$c_{p}^{(k+1)}(t)=\begin{cases}
-%0& \text{if}~ p=i \\
-%c_{p}^{(k)}(t) &\text{if}~ p \neq i 
-%\end{cases}$$
-%\item $Z=1$, define $c^{(k+1)}(t)$ via
-%$$c_p^{(k+1)}(t)=\begin{cases}
-%1& \text{if}~ p=i \\
-%c_p^{(k)}(t) &\text{if}~ p \neq i 
-%\end{cases}$$
-%\end{itemize}
-%\item Start at step 1 with $c^{(k+1)}(t)$.
-%\end{enumerate}
-\noindent Using the depicted algorithm, a sequence of random vectors $c^{(0)}(t),...,c^{(L)}(t)$ can be simulated. Since the orignial vector was chosen randomly and the first simulated vectors are very dependent on the chosen mvector (only one entry is changed per iteration!), usually the first $B$ vectors, where $N \ll B \ll L$, are discarded as the so called \textit{Burn-In}.
-\subsection*{Metropolis Hastings for the ERCM}\label{networksimulation}
-Choose any vector $c^{(0)}(t) \in \mathcal{C}(N)$ to start with (e.g., the observed vector). For $k \in \{0,...,L-1\}$ recursively proceed as follows:\\
-\begin{enumerate}
-\item Randomly choose a number $i\in \{1,\dots, N\}$
-\item Compute, using the equation (\ref{Logit}) the value
-$$\pi := \dfrac{\mathbb{P}_{\theta}(C_{i}(t) \neq c_{i}^{(k)}(t) ~| ~C_i(t)^c=c_i(t)^c)}{\mathbb{P}_{\theta}(C_{i}(t) = c_{i}^{(k)}(t) ~| ~C_i(t)^c=c_i(t)^c)}$$
-\item Define $\delta:= \min\{1, \pi\}$ and draw a random number $Z$ from Bin$(1, \delta)$. If
-\begin{itemize}
-\item $Z=0$, let $c^{(k+1)}(t) := c^{(k)}(t)$ 
-\item $Z=1$, define $c^{(k+1)}(t)$ as
-$$c_{p}^{(k+1)}(t)=\begin{cases}
-1-c_{p}^{(k)}(t)& \text{if}~ p=i \\
-c_{p}^{(k)}(t) &\text{if}~ p \neq i 
-\end{cases}$$
-\end{itemize}
-\item Start at step 1 with $c^{(k+1)}(t)$.
-\end{enumerate}
-The first $B \ll L$ vectors are discarded as Burn-In.
-
-
-
-
-First, as these arcs are observed patterns of behaviour, they can be used to infer latent characteristics of nodes or the relations between nodes that produced them \citep{batagelj2003efficient}. Moreover, since each judgment is embedded in the broader network of citations, which influences the judgment beyond the characteristics of the two directly linked documents, inferences about the neighborhood of these two documents are possible as well. A common application of this general logic is to obtain local or global network indices, such as Kleinberg centrality at the node level \citep{kleinberg1999authoritative,fowler2007network} or global hierarchy \citep{mones2014universal}, then use them to draw conclusions about networks or compare networks across contexts such as time periods \citep[e.g.][]{vazquez2001statistics,fowler2008authority,greenberg2009citation,lupu2012precedent,lupu2013strategic,dawson2014current,jaffe2017patent}.
-	
-	Still within the category of using observed network constellation to make inferences about components of the system, identification of communities using methods for clustering, such as modularity maximization \citep[e.g.][]{kajikawa2007creating,shibata2011detecting,chen2010community} and stochastic block modeling \citep{jo2009citing}; and subnetwork identification \citep[e.g.][]{batagelj2017emergence} have been used to analyze relevance of topics within an academic field or to determine trends in technological advancement \citep{verspagen2007mapping,erdi2013prediction}. Main path analysis \citep{hummon1989connectivity}, which determines the main path through an acyclic network, is a particularly useful way to examine trends as it allows researchers identify structures of knowledge flow. Other methods include classifying documents into groups based on similarities in their citation profiles of cites over time, which can be examined as a function of time to see if there are temporal patterns \citep{leicht2007large}. The identification of communities is often coupled with classification of these communities by the researcher using historical knowledge. 
-
-
-	\section{Extra Notes}
-	This section contains some of the extra notes I cut out from the draft that might be useful.
-	\subsection{Broader definitions of citation networks}
-	More broadly, citation networks can have as nodes the document producers, including scientists \citep{ji2016coauthorship}, judges \citep{landes1998judicial}, journals \citep{rice1988citation}, or aggregated units \citep{gelter2012networks,pan2012world}. In these cases, which are essentially exercises in aggregation, the resulting network can take on different characteristics such as weighted or cyclic edges. Other networks derived from the raw citation network is the co-citation or co-cited-by networks whereby two documents are connected if they co-cite or are co-cited by another document \citep{van2005reference}.
-	
-	\subsection{Weighted edges and multiplexity}
-	Recognition, and subsequent quantification, of different levels of complexity in citation arcs allows for a host of advancements in citation network analysis. Weights can indicate relevance \citep{liu2014citations} or be used to incorporate the temporal dimension into citation networks \citep{fujita2014detecting}. Moving to multiplexity leads to further advancements. For example, \citet{greenberg2009citation} accounted for level of support and through simulations based on arc typed switching demonstrated how citation bias against critical articles yielded differences in beliefs within a medical discipline. \citet{bommarito2010distance} argued that articles contain different types of information and accounting for the specific piece of information that resulted in the cite can yield clustering that are more interpretable. In all cases however, substantial work has to be done into reclassifying the weightedness or multiplexity of citation arcs \citep{zhang2007semantics}.
-	
-	\subsection{Misc. notes}
-	\begin{itemize}
-		\item To control for age, \citet{clough2015transitive} propose transitive reduction of citation networks (i.e. removal of redundant information ties) as it will primarily remove citation arcs that are disparate in age.
-		\item Most citation networks are directed acyclic graphs, but not all. Different versions of the same document can also cause problems (such as strong network components). The ``preprint transformation'' is a solution to small strong components \citep{batagelj2017emergence}.
-		\item Date of publication can be assigned as level to nodes in acyclic networks \citep{batagelj2017emergence}. Depending on the citation network at hand, temporal ordering can be difficult, as documents can share publication dates. To overcome this, begin each iteration by sampling from one of the possible orderings. \citep{carstens2016topology}.
-	\end{itemize}
-	
-	\begin{figure}[H]
-\includegraphics[scale=0.5]{number_cases}
-\caption{Number of cases in each term. Different colors indicate different chief justices.}
- \label{number_cases}
-\vspace{-.25cm}
-\end{figure}  
-  
- \begin{figure}[H]
-\includegraphics[scale=0.5]{number_citations}
-\caption{Number of citations for the 1937-2001 time period. Citations for cases prior 1937 are not considered in this figure. Different colors indicate different chief justices.}
- \label{number_citations}
-\vspace{-.25cm}
-\end{figure}  
-  
-  \begin{figure}[H]
-\includegraphics[scale=0.5]{number_votes_supporting}
-\caption{Number of Votes that were supporting cases between 1937-2001. Different colors indicate terms with different chief justices. }
- \label{number_supporting}
-\vspace{-.25cm}
-\end{figure}  
-  
-\newpage 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Let $C_t$ be the case-to-case adjacency matrix at time $t$ such that $C_t^{ij} \in \{0,1\}$ is a binary indicator of whether case $i$ cites $j$. Furthermore, let
-$$\mathcal{C}_t =\{C_{\leq t} \in \{0,1\}^{(N_t \cdot (N_t-1))/2}: C_{\leq t}^{ij} \in \{0,1\} \}$$ 
-be the set of all possible adjacency matrices among $N_t$ cases at time $t$. $N_t$ denotes the number of cases in the network at time $t$. Note that the cardinality of $\mathcal{C}_t$ increases exponentially for every newly added case. The probability of observing $C_t$ given past citations $C_{<t}$, where $C_{\leq t}$ is the network up to time $t$ is defined as
-\begin{equation}
-P(C_t | C_{<t}, \theta)=\cfrac{\exp\big(\theta^T\cdot h\big(C_{\leq t})\big)\big)}{\sum_{Z_t^*\in \mathcal{C}_t}\exp\big(\theta^T\cdot h\big(Z^*_{\leq t})\big)\big)}
-\label{ercm}
-\end{equation}
-where $\theta \in \mathbb{R}^q$ is a $q$-dimensional vector of parameters,  $h: \mathcal{C}_t \to \mathbb{R}^q$ is a q-dimensional vector of different statistics and $\kappa(\theta) := \sum_{Z^*_t\in \mathcal{C}_t}\exp\big(\theta^T\cdot h\big(Z^*_{\leq t})\big)$ is a normalization constant that ensures that Equation (\ref{ercm}) defines a probability function on $\mathcal{C}_t$.
-
-% Network Statistics
-The c-TERGM is specified through 
-the decision regarding which network statistics $h(\cdot)$ to incorporate. We include the following network statistics for the Supreme Court citation network, which are derived from the interdependence hypotheses described in the previous section:
-$$h_{edges}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to \sum_{ij} C_{\leq t}^{ij}, $$
-the number of citations.  $h_{edges}$ performs the function of an intercept, and models the expected value of any given edge.
-$$h_{outstar}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to \sum_{i=1} {\sum_{j \neq i} C_{\leq t}^{ij} \choose 2} $$
-the number of out-two-stars. An out-two-star is a configuration in which one node sends to two other nodes. The number of these configurations grows quadratically as the origins of ties concentrate on a few highly active/social senders. The out-two-stars configuration is commonly used to model activity (sender activation) in ERGMs.
-$$h_{instar}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to \sum_{j=1} {\sum_{i \neq j} C_{\leq t}^{ij} \choose 2} $$
-the number of in-two-stars. An in-two-star is a configuration in which one node receives ties from two other nodes. The number of these configurations grows quadratically as the destinations of ties concentrate on a few highly popular recipients. The out-two-stars configuration is commonly used to model popularity in ERGMs. 
-\begin{align*}
-h_{triangle}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to & \sum_{j<i<k} C^{ij}\cdot C^{jk} \cdot C^{ki} + C^{ji}\cdot C^{jk} \cdot C^{ki} + C^{ij}\cdot C^{kj} \cdot C^{ki} \\ & + C^{ji}\cdot C^{kj} \cdot C^{ki} + C^{ij}\cdot C^{jk} \cdot C^{ik} + C^{ji}\cdot C^{jk} \cdot C^{ik}  \\ & + C^{ij}\cdot C^{kj} \cdot C^{ik} + C^{ji}\cdot C^{kj} \cdot C^{ik},  
-\end{align*}
-The number of triangles in the network. Triangles measure triad closure, as discussed above.      
-$$h_{reciprocity}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to \sum_{ij} C_{\leq t}^{ij}C_{\leq t}^{ji}, $$
-The number of reciprocal ties in the network. Even though the reciprocity of ties is not a meaningful network statistic for most citation networks, it may still play a role in the Supreme Court citation network. This statistic comes with the restriction that it only can appear among cases that entered the network at the same time. 
-
-$$h_{covariate}:\mathcal{C}_t \to \mathbb{R}~~~, ~~~C_{\leq t} \to \sum_{ij} C_{\leq t}^{ij}X_{\leq t}^{ij}, $$ the effect of an exogenous covariate ($X$). We include several exogenous covariates based on this standard statistic formulation. These covariates are discussed below.\\
-\indent The structure of this model is very similar to a conventional (T)ERGM setup. The main difference is that  $\mathcal{C}_t$ excludes adjacency matrices in which there are loops that include edges sent at different time points. Loops can exist in the Supreme Court citation network, but only among cases decided in the same term. Furthermore, a case $i$ can only cite a case $j$ if $j$ entered the network before or at the same time as $i$ did. \\
-
-
-
-\section{Network Approaches to Studying Citations}
-
-The dependence processes discussed in the previous section represent new theoretical claims regarding the factors that account for citation formation among US Supreme Court opinions. Before we can test these claims, we consider methods for analyzing citation data as a network. Researchers from several fields have used network analysis to analyze citations---legal, patent, and scientific. Before describing our approach to modeling Supreme Court citations, we review the methods researchers have previously used to study citations. A citation is a directed link between two documents that indicates the citing document attributes the cited to be relevant to the evidentiary basis of the citing document. Collective patterns of citations within a certain domain make up citation networks. When raw citation data is formally represented as a network, the nodes are usually the documents themselves, and each directed arc is the existence of one or more cites from the sending to the receiving document. Given the permanent nature of documents in citations networks, these networks are acyclic \citep{leicht2007large,karrer2009random}. Relatedly, citation networks grow as new documents and citations enter the network, but established arcs persist in all but exceptional cases. 
-	
-Networks researchers have developed approaches to understanding the mechanisms that drive citations between documents. Work in this area generally proceeds by specifying a set of citation behaviors, then proposing a model to capture the combination of these behavioral rules \citep{simkin2007mathematical}. Assessment of the model is based on how well it fits citation distributions. Researchers working in this area tend to focus on modeling the growth of the citation network as governed by a degree-based mechanism such as preferential attachment \citep{barabasi1999emergence, vazquez2001statistics}, and the age of the paper \citep{jeong2003measuring,eom2011characterizing,wang2013quantifying}. Regarding age, the previous standard approach was to treat the probability of citation as function of degree (i.e., the number of citations previously accrued by the document) and age \citep{hajra2005aging,hajra2006modelling}, then examine the distribution of citations. More recently, work has been done in relaxing the assumption that the effect of degree is static, instead allowing it to vary with time \citep{wang2008measuring}.
-	
-Another approach to understanding the generative process of citation networks is to examine the existence of network motifs, or subnetwork structures, that can be interpreted as measuring different generative mechanisms. For example, a triangle in which case A cites both cases B and C, and case B cites case C, is a type of motif---a triadic motif. If researchers find that a triangle is a highly prevalent motif in a network, that finding would suggest that triad closure is a prevalent process by which the network is generated. The analysis of network motifs is done by comparing the prevalence of the motifs in the observed network to the prevalence of the motifs in networks drawn from a relevant null distribution. This null model must also be characterized by features of citation networks discussed earlier, meaning that it must be a directed acyclic graph with unweighted arcs \citep{carstens2016topology}. \citet{karrer2009random} proposes the use of null models based on fixed-degree sequences. In these models, the nodes in the networks (i.e., opinions) have the same, or close to the same, numbers of ties. Conditional on the number of ties accrued by each node, ties are randomly re-wired such that there is no systematic pattern regarding the nodes to which any node connects. 
-
-From this brief review we see two broad components of past methods for analyzing citation networks. First, node features, age in particular, are used to model the rate at which a document is cited. Second, theoretical models are used to account for prevalent graph structures. In the next section we describe a methodology that can be used to integrate case attributes and graph structures/motifs into a comprehensive model of US Supreme Court citations. 	
-
-%\textit{Comment from Benjamin Kassow: In section 5, I think the discussion is mostly good, but could be organized a bit differently. 
-%I think the discussion of the random intercepts is a bit confusing early on (it is explained more effectively later). }
-%%%% DONT DELETE THESE COMMENTS, INCLUDE IDEAS FOR ADDITIONAL COVARIATES %%%%%
-
-%\citet{cross2010determinants} find that the number of citations to Supreme Court opinions over a ten year period of the Rehnquist Court. (case level).  Found case issue area, opinion ideology, opinion author, vote margin was not significant. Negative citations decreased future positive citations.
-
-%\item \citet{black2013citation} Study the number of citations to a case over time, in order to understand the lifecycle of citation rates.  Show that the rate of citations to a case goes down very quickly. THE EFFECT OF AN INDEPENDENT VARIABLE ON A PRECEDENT IS DEPENDENT UPON THE AGE OF THE CASE.
-
-% \item \citet{spriggs2001explaining} Find that cases are more likely to be overruled when the Court is ideologically distant from the median justice in the majority coalition that decided the case, when the legal issues under consideration are complex, whn the cases ha been negatively treated previously, when there were many concurring opinions, and less likely to be overruled if it was a unanimous coalition.
-
-%\item \citet{lupu2013strategic} The hub score, which is a measure of the degree to which a case cites other important cases increases with salience [GET THE AMICUS BRIEFS, NYT COUNTS]. Lower if stautory cases. Increases with ideological variance of the majority coalition.  Increases with the number of concurring opinions. 
 
 
 
