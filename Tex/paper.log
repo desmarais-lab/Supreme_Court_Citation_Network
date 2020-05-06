@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 MAY 2020 16:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 MAY 2020 16:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -931,24 +931,16 @@ Overfull \hbox (36.99036pt too wide) in paragraph at lines 463--464
 Overfull \vbox (83.02641pt too high) has occurred while \output is active []
 
 
-[26 <./SCC_Results_2.pdf>] (./paper.bbl [27] [28] [29] [30]
-Package microtype Info: Loading generic settings for font family
-(microtype)             `cmtt' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-) [31] (./paper.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+[26 <./SCC_Results_2.pdf>] (./paper.bbl [27] [28] [29] [30]) [31] (./paper.aux)
  ) 
 Here is how much of TeX's memory you used:
- 9495 strings out of 492995
- 153009 string characters out of 6132704
- 346894 words of memory out of 5000000
- 12504 multiletter control sequences out of 15000+600000
- 57126 words of font info for 348 fonts, out of 8000000 for 9000
+ 9470 strings out of 492995
+ 152424 string characters out of 6132704
+ 345675 words of memory out of 5000000
+ 12482 multiletter control sequences out of 15000+600000
+ 56790 words of font info for 346 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,13n,82p,8816b,457s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,13n,82p,8816b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -965,12 +957,11 @@ e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2
 2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
 017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/201
 7/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on paper.pdf (31 pages, 1667023 bytes).
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on paper.pdf (31 pages, 1652277 bytes).
 PDF statistics:
- 312 PDF objects out of 1000 (max. 8388607)
- 223 compressed objects within 3 object streams
+ 308 PDF objects out of 1000 (max. 8388607)
+ 220 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 64076 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 63564 words of extra memory for PDF output out of 74296 (max. 10000000)
 

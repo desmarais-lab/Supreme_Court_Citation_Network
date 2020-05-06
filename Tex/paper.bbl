@@ -62,11 +62,6 @@ Cross, Frank~B. 2010.
   remarkable influence of Justice Scalia).'' {\em Supreme Court Economic
   Review} 18(1):177--202.
 
-\harvarditem{Desmarais \harvardand\ Cranmer}{2017}{desmaraisstatistical}
-Desmarais, Bruce~A \harvardand\ Skyler~J Cranmer. 2017.
-\newblock Statistical Inference in Political Networks Research.  In {\em The
-  Oxford Handbook of Political Networks}.
-
 \harvarditem{Duque}{2018}{duque2018recognizing}
 Duque, Marina~G. 2018.
 \newblock ``Recognizing international status: A relational approach.'' {\em
@@ -103,25 +98,12 @@ Garlaschelli, Diego \harvardand\ Maria~I Loffredo. 2004.
 \newblock ``Patterns of link reciprocity in directed networks.'' {\em Physical
   Review Letters} 93(26):268701.
 
-\harvarditem{Gillman}{2001}{gillman2001s}
-Gillman, Howard. 2001.
-\newblock ``What's law got to do with it? Judicial behavioralists test the
-  'legal model' of judicial decision making.'' {\em Law \& Social Inquiry}
-  26(2):465--504.
-
 \harvarditem[Goodreau, Kitts \harvardand\ Morris]{Goodreau, Kitts \harvardand\
   Morris}{2009}{goodreau2009birds}
 Goodreau, Steven~M, James~A Kitts \harvardand\ Martina Morris. 2009.
 \newblock ``Birds of a feather, or friend of a friend? Using exponential random
   graph models to investigate adolescent social networks.'' {\em Demography}
   46(1):103--125.
-
-\harvarditem[Graif, Lungeanu \harvardand\ Yetter]{Graif, Lungeanu \harvardand\
-  Yetter}{2017}{graif2017neighborhood}
-Graif, Corina, Alina Lungeanu \harvardand\ Alyssa~M Yetter. 2017.
-\newblock ``Neighborhood isolation in Chicago: Violent crime effects on
-  structural isolation and homophily in inter-neighborhood commuting
-  networks.'' {\em Social Networks} .
 
 \harvarditem{Handcock}{2003}{Handcock.2003}
 Handcock, Mark~S. 2003.
@@ -212,11 +194,6 @@ Richards, Mark~J \harvardand\ Herbert~M Kritzer. 2002.
 \newblock ``Jurisprudential regimes in Supreme Court decision making.'' {\em
   American Political Science Review} 96(2):305--320.
 
-\harvarditem{Ripplinger \harvardand\ Sullivan}{2008}{ripplinger2008does}
-Ripplinger, Jennifer \harvardand\ Jack Sullivan. 2008.
-\newblock ``Does choice in model selection affect maximum likelihood
-  analysis?'' {\em Systematic Biology} 57(1):76--85.
-
 \harvarditem[Snijders et~al.]{Snijders, Pattison, Robins \harvardand\
   Handcock}{2006}{SnijdersTomA.B..2006}
 Snijders, Tom A.~B., Philippa~E. Pattison, Garry~L. Robins \harvardand\ Mark~S.
@@ -245,12 +222,5 @@ Strogatz, Steven~H. 2001.
 \newblock {\em Constitution of the United State of America: Analysis, and
   Interpretation -- Centennial Edition}.
 \newblock 112th Cong., 2d sess. S. Doc. 112-9.
-  \url{https://www.govinfo.gov/app/details/GPO-CONAN-2017/}.
-
-\harvarditem{Welles \harvardand\ Contractor}{2015}{welles2015individual}
-Welles, Brooke~Foucault \harvardand\ Noshir Contractor. 2015.
-\newblock ``Individual motivations and network effects: A multilevel analysis
-  of the structure of online social relationships.'' {\em The ANNALS of the
-  American Academy of Political and Social Science} 659(1):180--190.
 
 \end{thebibliography}

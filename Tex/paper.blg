@@ -31,47 +31,46 @@ Repeated entry---line 1832 of file bib.bib
  : @article{lupu2012precedent
  :                           ,
 I'm skipping whatever remains of this entry
-Warning--empty publisher in desmaraisstatistical
 Warning--empty publisher in Handcock.2003
-You've used 45 entries,
+You've used 40 entries,
             2874 wiz_defined-function locations,
-            915 strings with 12328 characters,
-and the built_in function-call counts, 190161 in all, are:
-= -- 31219
-> -- 2189
+            888 strings with 11292 characters,
+and the built_in function-call counts, 167728 in all, are:
+= -- 27517
+> -- 1931
 < -- 0
-+ -- 14638
-- -- 778
-* -- 16247
-:= -- 38105
-add.period$ -- 180
-call.type$ -- 45
-change.case$ -- 585
-chr.to.int$ -- 45
-cite$ -- 47
-duplicate$ -- 693
-empty$ -- 1544
-format.name$ -- 813
-if$ -- 34173
++ -- 12891
+- -- 687
+* -- 14325
+:= -- 33620
+add.period$ -- 160
+call.type$ -- 40
+change.case$ -- 520
+chr.to.int$ -- 40
+cite$ -- 41
+duplicate$ -- 616
+empty$ -- 1376
+format.name$ -- 720
+if$ -- 30140
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 48
-newline$ -- 189
-num.names$ -- 521
-pop$ -- 176
+missing$ -- 43
+newline$ -- 169
+num.names$ -- 461
+pop$ -- 154
 preamble$ -- 1
-purify$ -- 675
+purify$ -- 600
 quote$ -- 0
-skip$ -- 598
+skip$ -- 535
 stack$ -- 0
-substring$ -- 44059
-swap$ -- 100
-text.length$ -- 630
+substring$ -- 38835
+swap$ -- 91
+text.length$ -- 560
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 172
-warning$ -- 2
-while$ -- 1076
+type$ -- 152
+warning$ -- 1
+while$ -- 956
 width$ -- 0
-write$ -- 608
+write$ -- 541
 (There were 7 error messages)
