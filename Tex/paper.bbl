@@ -148,12 +148,6 @@ Holland, Paul~W \harvardand\ Samuel Leinhardt. 1971.
 \newblock ``Transitivity in Structural Models of Small Groups.'' {\em Small
   Group Research} 2(2):107--124.
 
-\harvarditem[Hummel, Hunter \harvardand\ Handcock]{Hummel, Hunter \harvardand\
-  Handcock}{2012}{hummel2012improving}
-Hummel, Ruth~M, David~R Hunter \harvardand\ Mark~S Handcock. 2012.
-\newblock ``Improving simulation-based algorithms for fitting ERGMs.'' {\em
-  Journal of Computational and Graphical Statistics} 21(4):920--939.
-
 \harvarditem{Hunter \harvardand\ Handcock}{2006}{hunter2006inference}
 Hunter, David~R \harvardand\ Mark~S Handcock. 2006.
 \newblock ``Inference in curved exponential family models for networks.'' {\em
@@ -164,12 +158,6 @@ Hunter, David~R \harvardand\ Mark~S Handcock. 2006.
 Hunter, David~R, Steven~M Goodreau \harvardand\ Mark~S Handcock. 2008.
 \newblock ``Goodness of fit of social network models.'' {\em Journal of the
   American Statistical Association} 103(481):248--258.
-
-\harvarditem[Kirkpatrick, Gelatt \harvardand\ Vecchi]{Kirkpatrick, Gelatt
-  \harvardand\ Vecchi}{1983}{Kirkpatrick83}
-Kirkpatrick, S., C.~D. Gelatt \harvardand\ M.~P. Vecchi. 1983.
-\newblock ``Optimization by Simulated Annealing.'' {\em Science}
-  220(4598):671--680.
 
 \harvarditem{Knight \harvardand\ Epstein}{1996}{knight1996norm}
 Knight, Jack \harvardand\ Lee Epstein. 1996.
@@ -229,23 +217,6 @@ Ripplinger, Jennifer \harvardand\ Jack Sullivan. 2008.
 \newblock ``Does choice in model selection affect maximum likelihood
   analysis?'' {\em Systematic Biology} 57(1):76--85.
 
-\harvarditem{Schmid \harvardand\ Desmarais}{2017}{schmid2017exponential}
-Schmid, Christian~S \harvardand\ Bruce~A Desmarais. 2017.
-\newblock ``Exponential Random Graph Models with Big Networks: Maximum
-  Pseudolikelihood Estimation and the Parametric Bootstrap.'' {\em IEEE
-  International Conference on Big Data,
-  http://ieeexplore.ieee.org/document/8257919/} pp.~116--121.
-
-\harvarditem{Schmid \harvardand\ Hunter}{2020}{SchmidHunter2020}
-Schmid, Christian~S. \harvardand\ David~R. Hunter. 2020.
-\newblock ``Revisiting pseudolikelihood estimation for ERGMs.'' {\em Working
-  Paper, The Pennsylvania State University, Department of Statistics} (1).
-
-\harvarditem{Shalizi \harvardand\ Rinaldo}{2013}{shalizi2013consistency}
-Shalizi, Cosma~Rohilla \harvardand\ Alessandro Rinaldo. 2013.
-\newblock ``Consistency under sampling of exponential random graph models.''
-  {\em Annals of statistics} 41(2):508.
-
 \harvarditem[Snijders et~al.]{Snijders, Pattison, Robins \harvardand\
   Handcock}{2006}{SnijdersTomA.B..2006}
 Snijders, Tom A.~B., Philippa~E. Pattison, Garry~L. Robins \harvardand\ Mark~S.
@@ -264,11 +235,6 @@ Spaeth, Harold, Lee Epstein, Ted Ruger, Keith Whittington, Jeffrey Segal
 Spriggs, James~F \harvardand\ Thomas~G Hansford. 2001.
 \newblock ``Explaining the overruling of US Supreme Court precedent.'' {\em The
   Journal of Politics} 63(4):1091--1111.
-
-\harvarditem{Strauss \harvardand\ Ikeda}{1990}{strauss1990pseudolikelihood}
-Strauss, David \harvardand\ Michael Ikeda. 1990.
-\newblock ``Pseudolikelihood estimation for social networks.'' {\em Journal of
-  the American Statistical Association} 85(409):204--212.
 
 \harvarditem{Strogatz}{2001}{strogatz2001exploring}
 Strogatz, Steven~H. 2001.

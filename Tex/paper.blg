@@ -1,4 +1,6 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: paper.aux
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: paper.aux
 The style file: apsr.bst
 Database file #1: bib.bib
 Repeated entry---line 1122 of file bib.bib
@@ -31,5 +33,45 @@ Repeated entry---line 1832 of file bib.bib
 I'm skipping whatever remains of this entry
 Warning--empty publisher in desmaraisstatistical
 Warning--empty publisher in Handcock.2003
-Warning--there's a number but no volume in SchmidHunter2020
+You've used 45 entries,
+            2874 wiz_defined-function locations,
+            915 strings with 12328 characters,
+and the built_in function-call counts, 190161 in all, are:
+= -- 31219
+> -- 2189
+< -- 0
++ -- 14638
+- -- 778
+* -- 16247
+:= -- 38105
+add.period$ -- 180
+call.type$ -- 45
+change.case$ -- 585
+chr.to.int$ -- 45
+cite$ -- 47
+duplicate$ -- 693
+empty$ -- 1544
+format.name$ -- 813
+if$ -- 34173
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 48
+newline$ -- 189
+num.names$ -- 521
+pop$ -- 176
+preamble$ -- 1
+purify$ -- 675
+quote$ -- 0
+skip$ -- 598
+stack$ -- 0
+substring$ -- 44059
+swap$ -- 100
+text.length$ -- 630
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 172
+warning$ -- 2
+while$ -- 1076
+width$ -- 0
+write$ -- 608
 (There were 7 error messages)

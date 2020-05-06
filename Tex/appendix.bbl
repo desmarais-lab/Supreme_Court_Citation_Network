@@ -1,9 +1,48 @@
 \begin{thebibliography}{xx}
 
+\harvarditem[Hummel, Hunter \harvardand\ Handcock]{Hummel, Hunter \harvardand\
+  Handcock}{2012}{hummel2012improving}
+Hummel, Ruth~M, David~R Hunter \harvardand\ Mark~S Handcock. 2012.
+\newblock ``Improving simulation-based algorithms for fitting ERGMs.'' {\em
+  Journal of Computational and Graphical Statistics} 21(4):920--939.
+
+\harvarditem{Hunter \harvardand\ Handcock}{2006}{hunter2006inference}
+Hunter, David~R \harvardand\ Mark~S Handcock. 2006.
+\newblock ``Inference in curved exponential family models for networks.'' {\em
+  Journal of Computational and Graphical Statistics} 15(3):565--583.
+
 \harvarditem[Hunter, Goodreau \harvardand\ Handcock]{Hunter, Goodreau
   \harvardand\ Handcock}{2008}{hunter2008goodness}
 Hunter, David~R, Steven~M Goodreau \harvardand\ Mark~S Handcock. 2008.
 \newblock ``Goodness of fit of social network models.'' {\em Journal of the
   American Statistical Association} 103(481):248--258.
+
+\harvarditem[Kirkpatrick, Gelatt \harvardand\ Vecchi]{Kirkpatrick, Gelatt
+  \harvardand\ Vecchi}{1983}{Kirkpatrick83}
+Kirkpatrick, S., C.~D. Gelatt \harvardand\ M.~P. Vecchi. 1983.
+\newblock ``Optimization by Simulated Annealing.'' {\em Science}
+  220(4598):671--680.
+
+\harvarditem{Schmid \harvardand\ Desmarais}{2017}{schmid2017exponential}
+Schmid, Christian~S \harvardand\ Bruce~A Desmarais. 2017.
+\newblock ``Exponential Random Graph Models with Big Networks: Maximum
+  Pseudolikelihood Estimation and the Parametric Bootstrap.'' {\em IEEE
+  International Conference on Big Data,
+  http://ieeexplore.ieee.org/document/8257919/} pp.~116--121.
+
+\harvarditem{Schmid \harvardand\ Hunter}{2020}{SchmidHunter2020}
+Schmid, Christian~S. \harvardand\ David~R. Hunter. 2020.
+\newblock ``Revisiting pseudolikelihood estimation for ERGMs.'' {\em Working
+  Paper, The Pennsylvania State University, Department of Statistics} (1).
+
+\harvarditem{Shalizi \harvardand\ Rinaldo}{2013}{shalizi2013consistency}
+Shalizi, Cosma~Rohilla \harvardand\ Alessandro Rinaldo. 2013.
+\newblock ``Consistency under sampling of exponential random graph models.''
+  {\em Annals of statistics} 41(2):508.
+
+\harvarditem{Strauss \harvardand\ Ikeda}{1990}{strauss1990pseudolikelihood}
+Strauss, David \harvardand\ Michael Ikeda. 1990.
+\newblock ``Pseudolikelihood estimation for social networks.'' {\em Journal of
+  the American Statistical Association} 85(409):204--212.
 
 \end{thebibliography}

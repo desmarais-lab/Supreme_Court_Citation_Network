@@ -10,16 +10,21 @@
 
 \usepackage{natbib}
 
+\usepackage[moderate]{savetrees}
+
 \usepackage[table,xcdraw]{xcolor}
 
 \usepackage{graphicx}
 
-\usepackage{geometry}
-\usepackage{float}
+
+ \usepackage{float}
 
 \usepackage{setspace}
 
 \usepackage{url}
+
+\usepackage{geometry}
+
  
  
  
@@ -108,7 +113,7 @@ Never before the decision in Union Gas had we suggested that the bounds of Artic
 
 The second network property we consider in the context of Supreme Court citations is reciprocity. Reciprocity (also referred to as mutuality) is the tendency for node B to send a tie to node A in response to or coordination with A sending a tie to B \citep{garlaschelli2004patterns}. It is typically not possible for reciprocated ties to form in legal opinions. Most citations reference past opinions that were issued before the citing opinion's case was even argued before the Court.  However, opinions written within the same Supreme Court term are often drafted in tandem, and can cite each other reciprocally.  Opinion A citing opinion B within the same term represents a signal that opinion B is relevant to the legal reasoning underpinning opinion A. Unlike the citations themselves, the applicability of legal rules or lines of reasoning across cases is not directed---if A is relevant to B, B is highly likely to be relevant to A. We expect opinions written within the same term to exhibit a high degree of reciprocity. Below we provide two example passages from opinions that illustrate the phenomenon of within-term reciprocity.  
 
-\begin{figure}[htp]
+\begin{figure}[ht]
 \centering
 \includegraphics[width = 0.95\textwidth,trim= 0cm 1cm 0cm 2cm,clip=true ]{images/citations_recip.pdf}
 \caption{Illustration of a reciprocal tie between two US Supreme Court opinions.}
@@ -127,7 +132,7 @@ The third, and final, network property we consider in the context of Supreme Cou
 The first case in which this Court struck down a statute under the Equal Protection Clause of the Fourteenth Amendment was Strauder v. West Virginia, 100 U. S. 303, decided in the 1879 Term. [Footnote 2/1] In the 1961 Term, we squarely held that the manner of apportionment of members of a state legislature raised a justiciable question under the Equal Protection Clause, Baker v. Carr, 369 U. S. 186. That case was followed by numerous others, e.g.: that one person could not be given twice or 10 time the voting power of another person in a state-wide election merely because he lived in a rural area..."
 \end{quotation} %https://supreme.justia.com/cases/federal/us/400/112/case.html
 
-\begin{figure}[htp]
+\begin{figure}[ht]
 \centering
 \includegraphics[width = 0.95\textwidth,trim= 0cm 3cm 6cm 8cm,clip=true ]{images/citations_pop.pdf}
 \caption{Illustration of ties sent to a landmark Supreme Court opinion via citations.}
@@ -142,12 +147,10 @@ We develop a methodology that can be used to jointly test for the effects of cov
 The network structures for which ERGMs are currently designed are insufficient to account for the structure of citation networks.
 
 
-\subsection{c-ERGM definition}
-
 We develop the citation ERGM (c-ERGM), to account for the structural constraints that apply to the network of Supreme Court citations. These structural constraints amount to three departures from the structure of networks for which ERGMs are currently designed. First, the citation network is partially acyclic. If two cases are decided during the same term, they can cite each other, forming a mutual edge (or two-cycle). However, if case $i$ is decided before case $j$, case $j$ can cite case $i$, but case $i$ cannot cite case $j$. Second, new edges can be created over time, but cannot be eliminated. Unlike in, e.g., an alliance network, in which two countries can dissolve an alliance, once a citation exists in a citation network it cannot be dissolved. Third, the set of nodes in the network must increase for new edges to be created. In conventional ERGMs, the number of nodes in the network can increase or decrease in each time period, and is typically stable over time. In a citation network, new edges (and non-edges) are introduced over time via the introduction of new nodes. The structure of the citation network is depicted in Figure \ref{fig:ctergm}---a hypothetical citation network established over three time periods, with three cases decided in each time period. We denote $C_t$ to be the set of citation and non-citations added to the network at time $t$ (i.e., via the addition of three cases), $C_{ <t}$ to be the citations among cases decided before time $t$, and $C_{ \leq t}$ to denote the entire set of citations and non-citations on which $C_t$ can depend through the c-ERGM specification.
 
 
-\begin{figure}[htp]
+\begin{figure}[H]
 \centering
 \includegraphics[width = 0.95\textwidth,trim= 0cm 0cm 0cm 0cm,clip=true  ]{images/daggish.pdf}
 \caption{Illustration of temporal structure of the Supreme Court Citation Network. $C_{\leq t}$ is the entire set of citations (and non-citations) on which citations and non-citations at time $t$ (i.e., $C_t$) depend. $C_t$ are conditioned on the citations and non-citations established before time $t$ (i.e., $C_{< t}$). The shaded small squares are hypothetical observed citations, and the white small squares are citations that could have been observed but were not. The regions of the citation matrix that are represented by large white rectangles are citations that could not have been observed since the citing case would have been decided in a term that preceded the term of the cited case. The citing case ID is given in the row and the prospective cited case is given in the column. }
@@ -162,20 +165,11 @@ l(\bm{\theta},C_{\leq t}) =  \frac{ \exp \left[ {\bm{\theta}'\bm{h}(C_{t},C_{<t}
 where $\bm{\theta}$ is a vector of real-valued parameters, and $\bm{h}(C_{t},C_{<t})$ is a vector of scalar-valued functions that each quantify a feature of the citation network (e.g., the relationship between citation ties and a case attribute, the number of mutual edges in the citation network). $\exp \left[ {\bm{\theta}'\bm{h}(C_{t},C_{<t}) } \right]$ is a positive weight that is proportional to the probability of observing any particular form of the citations and non-citations added to the network at time $t$.  The denominator of Equation 1 represents a normalizing constant, in which the positive weight is summed over all possible configurations of $C_{t}$, from the network in which the cases added to the network at time $t$ send no citations at all, to the network in which the cases added at time $t$ cite every possible case, and everything in between. %The probability of observing the citation network up to time $T$---the final time point in the dataset---is given by the product over the probability of adding the citations at each time point $t$, conditional on the citations that were added to the network previously. 
 
 Though the likelihood function of the c-ERGM may appear quite different from that of statistical models conventionally used in political science, analysis of the conditional probability of a single citation from case $i$ to case $j$ reveals that we can interpret the parameters similar to logistic regression coefficients. $$ P(C_{ij,t} = 1 | C_{-ij,t}, C_{ < t}) = \frac{\exp \left[ {\bm{\theta}'\bm{h}(C_{t},C_{<t}| C_{ij,t} = 1) } \right]}{ \exp \left[ {\bm{\theta}'\bm{h}(C_{t},C_{<t}| C_{ij,t} = 1) } \right] + \exp \left[ {\bm{\theta}'\bm{h}(C_{t},C_{<t}| C_{ij,t} = 0) } \right]}, $$ $$ \text{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} = \frac{1}{ 1 + \exp \left[ - {\bm{\theta}'\left(\bm{h}(C_{t},C_{<t}| C_{ij,t} = 1) - \bm{h}(C_{t},C_{<t}| C_{ij,t} = 0)\right)} \right]}, $$
-where $C_{ij,t} = 1$ indicates that case $i$ cites case $j$, $C_{ij,t} = 0$ indicates that case $i$ does not cite case $j$, $C_{-ij,t}$ is the observed elements of $C_{t}$ except $C_{ij,t}$, and $\left(\bm{h}(C_{t},C_{<t}| C_{ij,t} = 1) - \bm{h}(C_{t},C_{<t}| C_{ij,t} = 0)\right)$ is the change in $\bm{h}(C_{t},C_{<t})$ that results from toggling $C_{ij,t} = 0$ to $C_{ij,t} = 1$. This re-arrangement illustrates that the parameters can be interpreted in terms of the change in the log odds of a citation from $i$ to $j$ given a one-unit increase in the corresponding element of $\bm{h}$, conditional on the other citations observed in the network. For example, if the value of $\theta$ corresponding to an element of $\bm{h}$ that counts the number of mutual edges in the network is 0.5, then the log odds of observing $C_{ij,t} = 1$ increases by 0.5 if case $i$ is cited by case $j$ (as compared to the configuration in which case $j$ does not cite case $i$). The logit form conditional probability is well known for the ERGM family \citep{goodreau2009birds}.
+where $C_{ij,t} = 1$ indicates that case $i$ cites case $j$, $C_{ij,t} = 0$ indicates that case $i$ does not cite case $j$, $C_{-ij,t}$ is the observed elements of $C_{t}$ except $C_{ij,t}$, and $\left(\bm{h}(C_{t},C_{<t}| C_{ij,t} = 1) - \bm{h}(C_{t},C_{<t}| C_{ij,t} = 0)\right)$ is the change in $\bm{h}(C_{t},C_{<t})$ that results from toggling $C_{ij,t} = 0$ to $C_{ij,t} = 1$. This re-arrangement illustrates that the parameters can be interpreted in terms of the change in the log odds of a citation from $i$ to $j$ given a one-unit increase in the corresponding element of $\bm{h}$, conditional on the other citations observed in the network. For example, if the value of $\theta$ corresponding to an element of $\bm{h}$ that counts the number of mutual edges in the network is 0.5, then the log odds of observing $C_{ij,t} = 1$ increases by 0.5 if case $i$ is cited by case $j$ (as compared to the configuration in which case $j$ does not cite case $i$). The logit form conditional probability is well known for the ERGM family \citep{goodreau2009birds}. Estimation of the c-ERGM parameters, which is done with a computationally-intensive, simulation-based approach, is presented in detail in the appendix.
 
-We should note that there is nothing about the c-ERGM (or any ERGM family model, for that matter) that permits the identification of causal effects of one tie on the formation of another. For example, if we find a positive popularity effect, the term for that dynamic would indicate that there is an increase in the log odds that case $i$ cites case $j$ with each other case that has cited case $j$.  That finding could be driven by one of two (or some combination of both) dynamics. First, it could be the case that a large volume of citations to a case in past opinions draws the attention of the justices to the ``popular'' case---as in the Baker v. Carr passage cited above. Second, it could be that we have omitted a case-level variable that is strongly associated with the number of citations accumulated by a case, and the number of citations in past cases is operating as a proxy for this unmeasured case characteristic. We cannot statistically differentiate between these two dynamics. However, in both of these conditions, and analogous conditions related to other dependence properties, citations (or non-citations) to a case are not independent conditional on the other variables, and the c-ERGM can be specified to account for the dependence in the data.
 
-\subsection{c-ERGM Estimation}
+%We should note that there is nothing about the c-ERGM (or any ERGM family model, for that matter) that permits the identification of causal effects of one tie on the formation of another. For example, if we find a positive popularity effect, the term for that dynamic would indicate that there is an increase in the log odds that case $i$ cites case $j$ with each other case that has cited case $j$.  That finding could be driven by one of two (or some combination of both) dynamics. First, it could be the case that a large volume of citations to a case in past opinions draws the attention of the justices to the ``popular'' case---as in the Baker v. Carr passage cited above. Second, it could be that we have omitted a case-level variable that is strongly associated with the number of citations accumulated by a case, and the number of citations in past cases is operating as a proxy for this unmeasured case characteristic. We cannot statistically differentiate between these two dynamics. However, in both of these conditions, and analogous conditions related to other dependence properties, citations (or non-citations) to a case are not independent conditional on the other variables, and the c-ERGM can be specified to account for the dependence in the data. Estimation of the c-ERGM parameters, which is done with a computationally-intensive, simulation-based approach, is presented in detail in the appendix.
 
-The normalizing constant in Equation 1 is intractable. For example, in the simple case of adding three cases to a network in which six cases already exists---like that depicted in Figure \ref{fig:ctergm}---there are 16,777,216 unique configurations of $C_t$ that could be observed. The typical Supreme Court term involves adding hundreds of cases to a network that already includes thousands of previous cases. This means that straightforward methods of maximum likelihood estimation (MLE) are infeasible with the c-ERGM. 
-
-The common alternative relies on Monte Carlo methods to approximate the normalizing constant by simulating a large set of networks \citep{hunter2006inference,hummel2012improving}. The resulting estimator, the Monte Carlo MLE (MCMLE), is approximately consistent, meaning that it converges to the MLE as the sample size, i.e., the number of simulated networks, increases. However, one drawback is that with the number of nodes in the Supreme Court citation network being in the order of $10,000$, obtaining the MCMLE is computationally expensive \citep{schmid2017exponential} and the success of the algorithm heavily relies on the starting parameter vector $\theta_0$, which is ideally chosen in the proximity of the unknown MLE \citep{hummel2012improving}. The prevailing choice for $\theta_0$ is the maximum pseudo-likelihood estimation (MPLE) \citep{strauss1990pseudolikelihood}, a fast estimation method that is defined as maximizing the log product of the conditional probability of each citation (and non-citation), conditional on the other elements of the observed citation network. The joint probability of all citations is replaced by the product over conditional probabilities, which, as we demonstrated above, assume a logit form. The MPLE is simple to obtain, but does not guarantee a starting value close to the MLE \citep{SchmidHunter2020}. 
-
-We estimate the MCMLE for every term of the c-ERGM between 1950 and 2015. While the network for the 1950 term consists of $1962$ nodes, the size of the network monotonically increases to $10,020$ nodes for the 2015 term, making estimation more challenging as the network grows. The growth in the network also serves as our reason for estimating a separate model for each term. First, the network is large, with each term introducing the potential for hundreds-of-thousands of new citations. This means we have the statistical power necessary to estimate a separate set of parameter values for each term. Second, based on the findings of \citet{shalizi2013consistency}, we know that the set of parameter values that best fits a network should change as more nodes are added to the network. This means it would be inappropriate to assume a constant set of parameter values as more cases are added each term. 
-
-The MCMLE of networks up until the 90s was obtainable in a reasonable time frame starting at the MPLE and sampling $10,000$ networks to approximate the normalizing constant. However, the estimation of most networks in the 90s with the MPLE as starting values was not feasible in an reasonable time frame anymore. Instead, we improved the choice of starting value $\theta_0$ by fixing it at the MCMLE of the previous term $t-1$ and successfully obtained the MCMLE of the network at term $t$. But even this approach started to fail for networks around the turn of the millennium. Neither the MPLE nor the MCMLE of previous terms as starting values led to successful estimation, and neither did the Stepping algorithm \citep{hummel2012improving}. 
-The MCMLE for these large citation networks was obtained by setting the starting value according to an approach introduced by \citet{SchmidHunter2020}. This method is based on the fact that the MLE of exponential family distributions is solely a function of the vector of sufficient statistics $h(C_t, C_{<t})$, meaning that the MLE of two networks $A$ and $B$ is equal if $h(A)=h(B)$. However, the MPLE of networks with the same sufficient statistics is not necessarily the same. Instead of starting the MCMLE algorithm at the network's MPLE, \citet{SchmidHunter2020} propose searching for a network $C_t^*$ using simulated annealing \citep{Kirkpatrick83}, with $h(C_t, C_{<t}) = h(C_t^*, C_{<t})$ and a weak dependence structure among unfixed ties. The MPLE of such a network is similar to the MLE, making it an effective starting value for the MCMLE algorithm.
 
 
 
@@ -209,14 +203,14 @@ J Roberts **           & 2006 - 2015                                          & 
 The degree distributions indicate that there is a long tail to both the number of citations sent and received. These long-tailed (i.e., high kurtosis) distributions provide preliminary evidence of substantial heterogeneity in the features that drive citations to and from cases \citep{strogatz2001exploring}. Figure \ref{fig:networkviz} displays the citation network network from 1937--2001. We see here that the densest rates of tie formation tend to be between consecutive courts (e.g., the Stone Court is much more tightly tied to the Hughes Court than the Rehnquist Court is to the Hughes Court). This pattern lends preliminary/descriptive support to the hypothesis that the rate of citations to a case decrease over time.
 
 
-\begin{figure}[htp]
+\begin{figure}[H]
 \includegraphics[scale=0.5]{degree_distribution}
-\caption{The in- and outdegree distribution of the Supreme Court Citation Network from 1937 - 2001. There are cases with an indegree >50, but they are not captured in this figure.}
+\caption{The in- and outdegree distribution of the Supreme Court Citation Network from 1937 - 2001. There are cases with an indegree  $>$50, but they are not captured in this figure.}
  \label{degree_dist}
 \vspace{-.25cm}
 \end{figure}
 
-\begin{figure}[htp]
+\begin{figure}[H]
 \includegraphics[scale=0.35,clip=true,trim=.5cm 0cm 0cm 2cm]{images/citations1}
 \caption{ Supreme Court Citation Network, 1937-2001. Nodes are Supreme Court cases, with size based on incoming citations. Salient cases ({\em Oxford Guide}) are in yellow. Each network layer contains cases decided under a different chief justice. Because our data is temporally bound, cases for the Hughes and Rehnquist courts are not complete. }
  \label{fig:networkviz}
@@ -320,7 +314,7 @@ We include one more structural network effect to adjust for inherent differences
 
 Our case for studying legal citations at the directed dyadic level hinges upon the contribution to modeling offered by incorporating network dependence. To quantify this contribution, we fit one model that incorporates covariate effects only, which we term the {\em Independent Model}---excluding the reciprocity, transitivity, and popularity terms. The full model is the one we present below. We use both AIC and BIC to compare the fit of the two models, with lower values indicating better fit \citep{ripplinger2008does}.  
 
-  \begin{figure}[t]
+  \begin{figure}[H]
 \includegraphics[width=15cm]{SCC_AIC_BIC}
 \caption{AIC and BIC for the full and the independent model for the time frame 1950-2015 }
  \label{AIC_BIC}
@@ -479,11 +473,10 @@ The effects of the exogenous covariates included in the c-ERGM are presented in 
 
 We present a methodology for studying citations between US Supreme Court opinions at the dyadic level, as a network. This methodology---the citation-ERGM---enables researchers to include both exogenous covariates such as the ideological predisposition and age of a case, and dependence terms, such as transitivity and reciprocity, as explanations for citation formation. We apply this methodology to a network that includes all Supreme Court cases decided between 1950 and 2015. We find, somewhat counterintuitively, that Supreme Court citations are highly reciprocal. We also find that citations are driven by dependencies such as triad closure and popularity. The dependence effects that we identify are as substantively and statistically significant as the effects of the exogenous covariates we include in the model. The summary result from this analysis is that theoretical models of Supreme Court citation formation should consider both the effects of case characteristics and the structure of past citations. 
 
-We recognize two important limitations of the current analysis, which should be addressed in future iterations of this work or in future studies. First, our theoretical claims and analyses treat all citations---positive and negative---as equivalent. Both data and methodological limitations will need to be overcome to consider these two citation types. Second, there is nothing in the c-ERGM that governs the generation of new cases (i.e., cases are assumed to arise exogenously, unrelated to the history of the citation network). As new cases are often taken up by the Supreme Court in order to test, clarify, and/or challenge existing precedents, it is likely inappropriate to assume that new cases arise exogenous to the existing citation network. Overcoming this limitation would require methodological innovation in the c-ERGM as well as theoretical development regarding exactly how citation structure might predict case emergence. 
+%We recognize two important limitations of the current analysis, which should be addressed in future iterations of this work or in future studies. First, our theoretical claims and analyses treat all citations---positive and negative---as equivalent. Both data and methodological limitations will need to be overcome to consider these two citation types. Second, there is nothing in the c-ERGM that governs the generation of new cases (i.e., cases are assumed to arise exogenously, unrelated to the history of the citation network). As new cases are often taken up by the Supreme Court in order to test, clarify, and/or challenge existing precedents, it is likely inappropriate to assume that new cases arise exogenous to the existing citation network. Overcoming this limitation would require methodological innovation in the c-ERGM as well as theoretical development regarding exactly how citation structure might predict case emergence. 
  
 
 
-\newpage
 
 \bibliography{bib} 
 \bibliographystyle{apsr}

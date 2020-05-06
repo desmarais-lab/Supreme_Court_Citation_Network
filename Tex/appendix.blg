@@ -1,3 +1,48 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: appendix.aux
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: appendix.aux
 The style file: apsr.bst
 Database file #1: bib.bib
+Warning--there's a number but no volume in SchmidHunter2020
+You've used 8 entries,
+            2874 wiz_defined-function locations,
+            697 strings with 6145 characters,
+and the built_in function-call counts, 40509 in all, are:
+= -- 6672
+> -- 522
+< -- 0
++ -- 3182
+- -- 180
+* -- 3513
+:= -- 8043
+add.period$ -- 32
+call.type$ -- 8
+change.case$ -- 104
+chr.to.int$ -- 8
+cite$ -- 9
+duplicate$ -- 127
+empty$ -- 281
+format.name$ -- 180
+if$ -- 7297
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 8
+newline$ -- 35
+num.names$ -- 102
+pop$ -- 24
+preamble$ -- 1
+purify$ -- 120
+quote$ -- 0
+skip$ -- 119
+stack$ -- 0
+substring$ -- 9456
+swap$ -- 24
+text.length$ -- 112
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 32
+warning$ -- 1
+while$ -- 200
+width$ -- 0
+write$ -- 112
+(There was 1 warning)
