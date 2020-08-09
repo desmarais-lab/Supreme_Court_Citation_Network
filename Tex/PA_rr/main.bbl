@@ -1,0 +1,1555 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{bailey2008does}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3a48d6253e6f4448f44d5e6a786aa715}{%
+           family={Bailey},
+           familyi={B\bibinitperiod},
+           given={Michael\bibnamedelima A},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=18b227ff98e474343603f5bbdb2f4ce1}{%
+           family={Maltzman},
+           familyi={M\bibinitperiod},
+           given={Forrest},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{e4b5c38498cf51d8406fbbe3bbd8f0dc}
+      \strng{fullhash}{e4b5c38498cf51d8406fbbe3bbd8f0dc}
+      \strng{bibnamehash}{e4b5c38498cf51d8406fbbe3bbd8f0dc}
+      \strng{authorbibnamehash}{e4b5c38498cf51d8406fbbe3bbd8f0dc}
+      \strng{authornamehash}{e4b5c38498cf51d8406fbbe3bbd8f0dc}
+      \strng{authorfullhash}{e4b5c38498cf51d8406fbbe3bbd8f0dc}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Political Science Review}
+      \field{number}{3}
+      \field{title}{Does legal doctrine matter? Unpacking law and policy preferences on the US Supreme Court}
+      \field{volume}{102}
+      \field{year}{2008}
+      \field{pages}{369\bibrangedash 384}
+      \range{pages}{16}
+    \endentry
+    \entry{bailey2011constrained}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3a48d6253e6f4448f44d5e6a786aa715}{%
+           family={Bailey},
+           familyi={B\bibinitperiod},
+           given={Michael\bibnamedelima A},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=18b227ff98e474343603f5bbdb2f4ce1}{%
+           family={Maltzman},
+           familyi={M\bibinitperiod},
+           given={Forrest},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{e4b5c38498cf51d8406fbbe3bbd8f0dc}
+      \strng{fullhash}{e4b5c38498cf51d8406fbbe3bbd8f0dc}
+      \strng{bibnamehash}{e4b5c38498cf51d8406fbbe3bbd8f0dc}
+      \strng{authorbibnamehash}{e4b5c38498cf51d8406fbbe3bbd8f0dc}
+      \strng{authornamehash}{e4b5c38498cf51d8406fbbe3bbd8f0dc}
+      \strng{authorfullhash}{e4b5c38498cf51d8406fbbe3bbd8f0dc}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The constrained court: Law, politics, and the decisions justices make}
+      \field{year}{2011}
+    \endentry
+    \entry{barabasi1999emergence}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=15bacd7ddfc866c5dd96976d4b0244d5}{%
+           family={Barab{á}si},
+           familyi={B\bibinitperiod},
+           given={Albert-L{á}szl{ó}},
+           giveni={A\bibinithyphendelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d85e8d2b76e8626b1a45373f4e027914}{%
+           family={Albert},
+           familyi={A\bibinitperiod},
+           given={R{é}ka},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science}%
+      }
+      \strng{namehash}{b4063d5171bad9750494dbdb05406431}
+      \strng{fullhash}{b4063d5171bad9750494dbdb05406431}
+      \strng{bibnamehash}{b4063d5171bad9750494dbdb05406431}
+      \strng{authorbibnamehash}{b4063d5171bad9750494dbdb05406431}
+      \strng{authornamehash}{b4063d5171bad9750494dbdb05406431}
+      \strng{authorfullhash}{b4063d5171bad9750494dbdb05406431}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{science}
+      \field{number}{5439}
+      \field{title}{Emergence of scaling in random networks}
+      \field{volume}{286}
+      \field{year}{1999}
+      \field{pages}{509\bibrangedash 512}
+      \range{pages}{4}
+    \endentry
+    \entry{benjamin2012standing}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=21f7c089fe40a42c1f1b86668939edb3}{%
+           family={Benjamin},
+           familyi={B\bibinitperiod},
+           given={Stuart\bibnamedelima Minor},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43c45e632831f3d129e0c4a3d158ce74}{%
+           family={Desmarais},
+           familyi={D\bibinitperiod},
+           given={Bruce\bibnamedelima A},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{79430b733b653c0abef7c58aefa4d648}
+      \strng{fullhash}{79430b733b653c0abef7c58aefa4d648}
+      \strng{bibnamehash}{79430b733b653c0abef7c58aefa4d648}
+      \strng{authorbibnamehash}{79430b733b653c0abef7c58aefa4d648}
+      \strng{authornamehash}{79430b733b653c0abef7c58aefa4d648}
+      \strng{authorfullhash}{79430b733b653c0abef7c58aefa4d648}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Legal Analysis}
+      \field{number}{2}
+      \field{title}{Standing the test of time: The breadth of majority coalitions and the fate of us supreme court precedents}
+      \field{volume}{4}
+      \field{year}{2012}
+      \field{pages}{445\bibrangedash 469}
+      \range{pages}{25}
+    \endentry
+    \entry{black2013citation}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8364b54e1dc60001ddff971c7b657074}{%
+           family={Black},
+           familyi={B\bibinitperiod},
+           given={Ryan\bibnamedelima C},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73cf6719b71a3bc9485ed9511da9b6a6}{%
+           family={Spriggs},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima F},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{c9d52a48cf9f3e5ece4cd81f26930014}
+      \strng{fullhash}{c9d52a48cf9f3e5ece4cd81f26930014}
+      \strng{bibnamehash}{c9d52a48cf9f3e5ece4cd81f26930014}
+      \strng{authorbibnamehash}{c9d52a48cf9f3e5ece4cd81f26930014}
+      \strng{authornamehash}{c9d52a48cf9f3e5ece4cd81f26930014}
+      \strng{authorfullhash}{c9d52a48cf9f3e5ece4cd81f26930014}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Empirical Legal Studies}
+      \field{number}{2}
+      \field{title}{The Citation and Depreciation of US Supreme Court Precedent}
+      \field{volume}{10}
+      \field{year}{2013}
+      \field{pages}{325\bibrangedash 358}
+      \range{pages}{34}
+    \endentry
+    \entry{bommarito2009law}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=cc736cc2141c912ac1d18c1d995a893f}{%
+           family={Bommarito\bibnamedelima II},
+           familyi={B\bibinitperiod\bibinitdelim I\bibinitperiod},
+           given={Michael\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4a144e4ef63466fc66a44f6ae42b6f50}{%
+           family={Katz},
+           familyi={K\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ba6589eeac5f4d78bd3eadf68500a35f}{%
+           family={Zelner},
+           familyi={Z\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{f4ea62d2fe6d4c725a0ee4ed57b53cc7}
+      \strng{fullhash}{f4ea62d2fe6d4c725a0ee4ed57b53cc7}
+      \strng{bibnamehash}{f4ea62d2fe6d4c725a0ee4ed57b53cc7}
+      \strng{authorbibnamehash}{f4ea62d2fe6d4c725a0ee4ed57b53cc7}
+      \strng{authornamehash}{f4ea62d2fe6d4c725a0ee4ed57b53cc7}
+      \strng{authorfullhash}{f4ea62d2fe6d4c725a0ee4ed57b53cc7}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 12th international conference on artificial intelligence and law}
+      \field{title}{Law as a seamless web? Comparison of various network representations of the united states supreme court corpus (1791-2005)}
+      \field{year}{2009}
+      \field{pages}{234\bibrangedash 235}
+      \range{pages}{2}
+    \endentry
+    \entry{box2014evolution}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d68f0de32a27b748741744605e65b96f}{%
+           family={Box-Steffensmeier},
+           familyi={B\bibinithyphendelim S\bibinitperiod},
+           given={Janet\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4783ceb222be2c4dd703f7475a66b41e}{%
+           family={Christenson},
+           familyi={C\bibinitperiod},
+           given={Dino\bibnamedelima P},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{c9bc9919648bb671f9d4a26de22b95c8}
+      \strng{fullhash}{c9bc9919648bb671f9d4a26de22b95c8}
+      \strng{bibnamehash}{c9bc9919648bb671f9d4a26de22b95c8}
+      \strng{authorbibnamehash}{c9bc9919648bb671f9d4a26de22b95c8}
+      \strng{authornamehash}{c9bc9919648bb671f9d4a26de22b95c8}
+      \strng{authorfullhash}{c9bc9919648bb671f9d4a26de22b95c8}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Social Networks}
+      \field{title}{The evolution and formation of amicus curiae networks}
+      \field{volume}{36}
+      \field{year}{2014}
+      \field{pages}{82\bibrangedash 96}
+      \range{pages}{15}
+    \endentry
+    \entry{Butts.2008}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b452fc7781440208fb3d76802a5392fa}{%
+           family={Butts},
+           familyi={B\bibinitperiod},
+           given={Carter\bibnamedelima T.},
+           giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b452fc7781440208fb3d76802a5392fa}
+      \strng{fullhash}{b452fc7781440208fb3d76802a5392fa}
+      \strng{bibnamehash}{b452fc7781440208fb3d76802a5392fa}
+      \strng{authorbibnamehash}{b452fc7781440208fb3d76802a5392fa}
+      \strng{authornamehash}{b452fc7781440208fb3d76802a5392fa}
+      \strng{authorfullhash}{b452fc7781440208fb3d76802a5392fa}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sociological Methodology}
+      \field{number}{1}
+      \field{title}{A Relational Event Framework for Social Action}
+      \field{volume}{38}
+      \field{year}{2008}
+    \endentry
+    \entry{caldeira1988legal}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9b7f2d2dc58518baecf1b834ab759c40}{%
+           family={Caldeira},
+           familyi={C\bibinitperiod},
+           given={Gregory\bibnamedelima A},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{9b7f2d2dc58518baecf1b834ab759c40}
+      \strng{fullhash}{9b7f2d2dc58518baecf1b834ab759c40}
+      \strng{bibnamehash}{9b7f2d2dc58518baecf1b834ab759c40}
+      \strng{authorbibnamehash}{9b7f2d2dc58518baecf1b834ab759c40}
+      \strng{authornamehash}{9b7f2d2dc58518baecf1b834ab759c40}
+      \strng{authorfullhash}{9b7f2d2dc58518baecf1b834ab759c40}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Social networks}
+      \field{number}{1}
+      \field{title}{Legal precedent: Structures of communication between state supreme courts}
+      \field{volume}{10}
+      \field{year}{1988}
+      \field{pages}{29\bibrangedash 55}
+      \range{pages}{27}
+    \endentry
+    \entry{clark2010locating}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3d1affdd631c635ff39c3fd61c682fc4}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={Tom\bibnamedelima S},
+           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbc0a79e7d8683ead55cb7acae058b8f}{%
+           family={Lauderdale},
+           familyi={L\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{09f2e42668c2d5f03f291647d3ef99b3}
+      \strng{fullhash}{09f2e42668c2d5f03f291647d3ef99b3}
+      \strng{bibnamehash}{09f2e42668c2d5f03f291647d3ef99b3}
+      \strng{authorbibnamehash}{09f2e42668c2d5f03f291647d3ef99b3}
+      \strng{authornamehash}{09f2e42668c2d5f03f291647d3ef99b3}
+      \strng{authorfullhash}{09f2e42668c2d5f03f291647d3ef99b3}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Journal of Political Science}
+      \field{number}{4}
+      \field{title}{Locating Supreme Court opinions in doctrine space}
+      \field{volume}{54}
+      \field{year}{2010}
+      \field{pages}{871\bibrangedash 890}
+      \range{pages}{20}
+    \endentry
+    \entry{cranmer2016critique}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1943020c76fa441fb7abf5d166b25e10}{%
+           family={Cranmer},
+           familyi={C\bibinitperiod},
+           given={Skyler\bibnamedelima J},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43c45e632831f3d129e0c4a3d158ce74}{%
+           family={Desmarais},
+           familyi={D\bibinitperiod},
+           given={Bruce\bibnamedelima A},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{596669fd1596a94193a89ae0b30c138f}
+      \strng{fullhash}{596669fd1596a94193a89ae0b30c138f}
+      \strng{bibnamehash}{596669fd1596a94193a89ae0b30c138f}
+      \strng{authorbibnamehash}{596669fd1596a94193a89ae0b30c138f}
+      \strng{authornamehash}{596669fd1596a94193a89ae0b30c138f}
+      \strng{authorfullhash}{596669fd1596a94193a89ae0b30c138f}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Studies Quarterly}
+      \field{number}{2}
+      \field{title}{A critique of dyadic design}
+      \field{volume}{60}
+      \field{year}{2016}
+      \field{pages}{355\bibrangedash 362}
+      \range{pages}{8}
+    \endentry
+    \entry{cross2010determinants}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f5ca6ef9d08e01a25e5c469904feafb9}{%
+           family={Cross},
+           familyi={C\bibinitperiod},
+           given={Frank\bibnamedelima B},
+           giveni={F\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press Chicago, IL}%
+      }
+      \strng{namehash}{f5ca6ef9d08e01a25e5c469904feafb9}
+      \strng{fullhash}{f5ca6ef9d08e01a25e5c469904feafb9}
+      \strng{bibnamehash}{f5ca6ef9d08e01a25e5c469904feafb9}
+      \strng{authorbibnamehash}{f5ca6ef9d08e01a25e5c469904feafb9}
+      \strng{authornamehash}{f5ca6ef9d08e01a25e5c469904feafb9}
+      \strng{authorfullhash}{f5ca6ef9d08e01a25e5c469904feafb9}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Supreme Court Economic Review}
+      \field{number}{1}
+      \field{title}{Determinants of citations to Supreme Court opinions (and the remarkable influence of Justice Scalia)}
+      \field{volume}{18}
+      \field{year}{2010}
+      \field{pages}{177\bibrangedash 202}
+      \range{pages}{26}
+    \endentry
+    \entry{duque2018recognizing}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d2a4274837d77c08acdf231ccc47a813}{%
+           family={Duque},
+           familyi={D\bibinitperiod},
+           given={Marina\bibnamedelima G},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{d2a4274837d77c08acdf231ccc47a813}
+      \strng{fullhash}{d2a4274837d77c08acdf231ccc47a813}
+      \strng{bibnamehash}{d2a4274837d77c08acdf231ccc47a813}
+      \strng{authorbibnamehash}{d2a4274837d77c08acdf231ccc47a813}
+      \strng{authornamehash}{d2a4274837d77c08acdf231ccc47a813}
+      \strng{authorfullhash}{d2a4274837d77c08acdf231ccc47a813}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Studies Quarterly}
+      \field{number}{3}
+      \field{title}{Recognizing international status: A relational approach}
+      \field{volume}{62}
+      \field{year}{2018}
+      \field{pages}{577\bibrangedash 592}
+      \range{pages}{16}
+    \endentry
+    \entry{ethayarajh2018rose}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=5e0326e7704dfc4d1bc0ad89e1192f67}{%
+           family={Ethayarajh},
+           familyi={E\bibinitperiod},
+           given={Kawin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=228844e1ebf2d23819277fd258cb6f88}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fae007f9bde1b97fe23a1f36325d1234}{%
+           family={Yoon},
+           familyi={Y\bibinitperiod},
+           given={Albert\bibnamedelima H},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{26badf8710d7e26b7bbfecc20ead154a}
+      \strng{fullhash}{26badf8710d7e26b7bbfecc20ead154a}
+      \strng{bibnamehash}{26badf8710d7e26b7bbfecc20ead154a}
+      \strng{authorbibnamehash}{26badf8710d7e26b7bbfecc20ead154a}
+      \strng{authornamehash}{26badf8710d7e26b7bbfecc20ead154a}
+      \strng{authorfullhash}{26badf8710d7e26b7bbfecc20ead154a}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Empirical Legal Studies}
+      \field{number}{3}
+      \field{title}{A Rose by Any Other Name: Understanding Judicial Decisions that Do Not Cite Precedent}
+      \field{volume}{15}
+      \field{year}{2018}
+      \field{pages}{563\bibrangedash 596}
+      \range{pages}{34}
+    \endentry
+    \entry{fix2019effect}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a7f452dde2f5cb2bdb6f78cbf501979a}{%
+           family={Fix},
+           familyi={F\bibinitperiod},
+           given={Michael\bibnamedelima P},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eb4a298d4db3c83d51d31006a60920bd}{%
+           family={Fairbanks},
+           familyi={F\bibinitperiod},
+           given={Bailey\bibnamedelima R},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{cd5020fc8a979cd4c5896808c11dc505}
+      \strng{fullhash}{cd5020fc8a979cd4c5896808c11dc505}
+      \strng{bibnamehash}{cd5020fc8a979cd4c5896808c11dc505}
+      \strng{authorbibnamehash}{cd5020fc8a979cd4c5896808c11dc505}
+      \strng{authornamehash}{cd5020fc8a979cd4c5896808c11dc505}
+      \strng{authorfullhash}{cd5020fc8a979cd4c5896808c11dc505}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Social Science Quarterly}
+      \field{title}{The Effect of Opinion Readability on the Impact of US Supreme Court Precedents in State High Courts}
+      \field{year}{2019}
+    \endentry
+    \entry{fowler2008authority}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3997b2ee637a4f0e9edc27c381960732}{%
+           family={Fowler},
+           familyi={F\bibinitperiod},
+           given={James\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d80ba59624b440e2032fa23d821f096}{%
+           family={Jeon},
+           familyi={J\bibinitperiod},
+           given={Sangick},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{68d55d0a6b403428378ef605b6aafb54}
+      \strng{fullhash}{68d55d0a6b403428378ef605b6aafb54}
+      \strng{bibnamehash}{68d55d0a6b403428378ef605b6aafb54}
+      \strng{authorbibnamehash}{68d55d0a6b403428378ef605b6aafb54}
+      \strng{authornamehash}{68d55d0a6b403428378ef605b6aafb54}
+      \strng{authorfullhash}{68d55d0a6b403428378ef605b6aafb54}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Social networks}
+      \field{number}{1}
+      \field{title}{The authority of Supreme Court precedent}
+      \field{volume}{30}
+      \field{year}{2008}
+      \field{pages}{16\bibrangedash 30}
+      \range{pages}{15}
+    \endentry
+    \entry{fowler2007network}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=3997b2ee637a4f0e9edc27c381960732}{%
+           family={Fowler},
+           familyi={F\bibinitperiod},
+           given={James\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=85dcb4e6e9abf762aae47b1bab5c122c}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Timothy\bibnamedelima R},
+           giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73cf6719b71a3bc9485ed9511da9b6a6}{%
+           family={Spriggs},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima F},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d80ba59624b440e2032fa23d821f096}{%
+           family={Jeon},
+           familyi={J\bibinitperiod},
+           given={Sangick},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=463a88a88e3be37c0374f08b10ea5ea4}{%
+           family={Wahlbeck},
+           familyi={W\bibinitperiod},
+           given={Paul\bibnamedelima J},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{97164b577edec85cc98efa5f0b97a05b}
+      \strng{fullhash}{ef1f9bfb0a6894095df68c14e361e189}
+      \strng{bibnamehash}{ef1f9bfb0a6894095df68c14e361e189}
+      \strng{authorbibnamehash}{ef1f9bfb0a6894095df68c14e361e189}
+      \strng{authornamehash}{97164b577edec85cc98efa5f0b97a05b}
+      \strng{authorfullhash}{ef1f9bfb0a6894095df68c14e361e189}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Political Analysis}
+      \field{number}{3}
+      \field{title}{Network analysis and the law: Measuring the legal importance of precedents at the US Supreme Court}
+      \field{volume}{15}
+      \field{year}{2007}
+      \field{pages}{324\bibrangedash 346}
+      \range{pages}{23}
+    \endentry
+    \entry{gillman2001s}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e33109a3caae187ed58c825cef1e95a1}{%
+           family={Gillman},
+           familyi={G\bibinitperiod},
+           given={Howard},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{e33109a3caae187ed58c825cef1e95a1}
+      \strng{fullhash}{e33109a3caae187ed58c825cef1e95a1}
+      \strng{bibnamehash}{e33109a3caae187ed58c825cef1e95a1}
+      \strng{authorbibnamehash}{e33109a3caae187ed58c825cef1e95a1}
+      \strng{authornamehash}{e33109a3caae187ed58c825cef1e95a1}
+      \strng{authorfullhash}{e33109a3caae187ed58c825cef1e95a1}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Law \& Social Inquiry}
+      \field{number}{2}
+      \field{title}{What's law got to do with it? Judicial behavioralists test the 'legal model' of judicial decision making}
+      \field{volume}{26}
+      \field{year}{2001}
+      \field{pages}{465\bibrangedash 504}
+      \range{pages}{40}
+    \endentry
+    \entry{goodreau2009birds}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e7389ce01e65cf4bb9c3ea43433bc1ea}{%
+           family={Goodreau},
+           familyi={G\bibinitperiod},
+           given={Steven\bibnamedelima M},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0977cec36808044e8bfaf6540faedc8b}{%
+           family={Kitts},
+           familyi={K\bibinitperiod},
+           given={James\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=129292b03dbceb84ffb2158cd84fc974}{%
+           family={Morris},
+           familyi={M\bibinitperiod},
+           given={Martina},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{058f7d23cf0a4aedb1f5bef64979bbba}
+      \strng{fullhash}{058f7d23cf0a4aedb1f5bef64979bbba}
+      \strng{bibnamehash}{058f7d23cf0a4aedb1f5bef64979bbba}
+      \strng{authorbibnamehash}{058f7d23cf0a4aedb1f5bef64979bbba}
+      \strng{authornamehash}{058f7d23cf0a4aedb1f5bef64979bbba}
+      \strng{authorfullhash}{058f7d23cf0a4aedb1f5bef64979bbba}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Demography}
+      \field{number}{1}
+      \field{title}{Birds of a feather, or friend of a friend? Using exponential random graph models to investigate adolescent social networks}
+      \field{volume}{46}
+      \field{year}{2009}
+      \field{pages}{103\bibrangedash 125}
+      \range{pages}{23}
+    \endentry
+    \entry{Handcock.2003}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=279407956525fc33169d45fb6000b0f3}{%
+           family={Handcock},
+           familyi={H\bibinitperiod},
+           given={Mark\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{279407956525fc33169d45fb6000b0f3}
+      \strng{fullhash}{279407956525fc33169d45fb6000b0f3}
+      \strng{bibnamehash}{279407956525fc33169d45fb6000b0f3}
+      \strng{authorbibnamehash}{279407956525fc33169d45fb6000b0f3}
+      \strng{authornamehash}{279407956525fc33169d45fb6000b0f3}
+      \strng{authorfullhash}{279407956525fc33169d45fb6000b0f3}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Assessing degeneracy in statistical models of social networks: https://www.csss.washington.edu/Papers/wp39.pdf}
+      \field{year}{2003}
+    \endentry
+    \entry{hansford2006politics}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=20855b8ba716ec308ac4851966367732}{%
+           family={Hansford},
+           familyi={H\bibinitperiod},
+           given={Thomas\bibnamedelima G},
+           giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73cf6719b71a3bc9485ed9511da9b6a6}{%
+           family={Spriggs},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima F},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{4edcd0b1b67ba1abb9f9080097d2712c}
+      \strng{fullhash}{4edcd0b1b67ba1abb9f9080097d2712c}
+      \strng{bibnamehash}{4edcd0b1b67ba1abb9f9080097d2712c}
+      \strng{authorbibnamehash}{4edcd0b1b67ba1abb9f9080097d2712c}
+      \strng{authornamehash}{4edcd0b1b67ba1abb9f9080097d2712c}
+      \strng{authorfullhash}{4edcd0b1b67ba1abb9f9080097d2712c}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The politics of precedent on the US Supreme Court}
+      \field{year}{2006}
+    \endentry
+    \entry{harris1982structural}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2a96c02f55cb1c80de5f0bfab4a9fad5}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{2a96c02f55cb1c80de5f0bfab4a9fad5}
+      \strng{fullhash}{2a96c02f55cb1c80de5f0bfab4a9fad5}
+      \strng{bibnamehash}{2a96c02f55cb1c80de5f0bfab4a9fad5}
+      \strng{authorbibnamehash}{2a96c02f55cb1c80de5f0bfab4a9fad5}
+      \strng{authornamehash}{2a96c02f55cb1c80de5f0bfab4a9fad5}
+      \strng{authorfullhash}{2a96c02f55cb1c80de5f0bfab4a9fad5}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Social Networks}
+      \field{number}{3}
+      \field{title}{Structural change in the communication of precedent among state supreme courts, 1870--1970}
+      \field{volume}{4}
+      \field{year}{1982}
+      \field{pages}{201\bibrangedash 212}
+      \range{pages}{12}
+    \endentry
+    \entry{holland1971transitivity}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f77d8823946c674172702e2a9422f960}{%
+           family={Holland},
+           familyi={H\bibinitperiod},
+           given={Paul\bibnamedelima W},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=68cccf1e7640862e35f66adb8b8df15e}{%
+           family={Leinhardt},
+           familyi={L\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications}%
+      }
+      \strng{namehash}{ac94d11f09bca5a6d8ee6dc138cf6ad7}
+      \strng{fullhash}{ac94d11f09bca5a6d8ee6dc138cf6ad7}
+      \strng{bibnamehash}{ac94d11f09bca5a6d8ee6dc138cf6ad7}
+      \strng{authorbibnamehash}{ac94d11f09bca5a6d8ee6dc138cf6ad7}
+      \strng{authornamehash}{ac94d11f09bca5a6d8ee6dc138cf6ad7}
+      \strng{authorfullhash}{ac94d11f09bca5a6d8ee6dc138cf6ad7}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Small Group Research}
+      \field{number}{2}
+      \field{title}{Transitivity in Structural Models of Small Groups}
+      \field{volume}{2}
+      \field{year}{1971}
+      \field{pages}{107\bibrangedash 124}
+      \range{pages}{18}
+    \endentry
+    \entry{hunter2008goodness}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=8b9441d8c82d7daf3f5c46522be09b12}{%
+           family={Hunter},
+           familyi={H\bibinitperiod},
+           given={David\bibnamedelima R},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e7389ce01e65cf4bb9c3ea43433bc1ea}{%
+           family={Goodreau},
+           familyi={G\bibinitperiod},
+           given={Steven\bibnamedelima M},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=279407956525fc33169d45fb6000b0f3}{%
+           family={Handcock},
+           familyi={H\bibinitperiod},
+           given={Mark\bibnamedelima S},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{5233b2a8127eac42e59b9a3915dd3b8d}
+      \strng{fullhash}{5233b2a8127eac42e59b9a3915dd3b8d}
+      \strng{bibnamehash}{5233b2a8127eac42e59b9a3915dd3b8d}
+      \strng{authorbibnamehash}{5233b2a8127eac42e59b9a3915dd3b8d}
+      \strng{authornamehash}{5233b2a8127eac42e59b9a3915dd3b8d}
+      \strng{authorfullhash}{5233b2a8127eac42e59b9a3915dd3b8d}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{481}
+      \field{title}{Goodness of fit of social network models}
+      \field{volume}{103}
+      \field{year}{2008}
+      \field{pages}{248\bibrangedash 258}
+      \range{pages}{11}
+    \endentry
+    \entry{hunter2006inference}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8b9441d8c82d7daf3f5c46522be09b12}{%
+           family={Hunter},
+           familyi={H\bibinitperiod},
+           given={David\bibnamedelima R},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=279407956525fc33169d45fb6000b0f3}{%
+           family={Handcock},
+           familyi={H\bibinitperiod},
+           given={Mark\bibnamedelima S},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{a4854c70133bea11387e6255fafd0c7e}
+      \strng{fullhash}{a4854c70133bea11387e6255fafd0c7e}
+      \strng{bibnamehash}{a4854c70133bea11387e6255fafd0c7e}
+      \strng{authorbibnamehash}{a4854c70133bea11387e6255fafd0c7e}
+      \strng{authornamehash}{a4854c70133bea11387e6255fafd0c7e}
+      \strng{authorfullhash}{a4854c70133bea11387e6255fafd0c7e}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational and Graphical Statistics}
+      \field{number}{3}
+      \field{title}{Inference in curved exponential family models for networks}
+      \field{volume}{15}
+      \field{year}{2006}
+      \field{pages}{565\bibrangedash 583}
+      \range{pages}{19}
+    \endentry
+    \entry{knight1996norm}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=50b8950eed2c3c5901884b4ad2202ab6}{%
+           family={Knight},
+           familyi={K\bibinitperiod},
+           given={Jack},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=87e5875e4980b86836b579ac43f958f0}{%
+           family={Epstein},
+           familyi={E\bibinitperiod},
+           given={Lee},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{4caab7df34b7bdea654e6795dd0d72d2}
+      \strng{fullhash}{4caab7df34b7bdea654e6795dd0d72d2}
+      \strng{bibnamehash}{4caab7df34b7bdea654e6795dd0d72d2}
+      \strng{authorbibnamehash}{4caab7df34b7bdea654e6795dd0d72d2}
+      \strng{authornamehash}{4caab7df34b7bdea654e6795dd0d72d2}
+      \strng{authorfullhash}{4caab7df34b7bdea654e6795dd0d72d2}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Journal of Political Science}
+      \field{title}{The norm of stare decisis}
+      \field{year}{1996}
+      \field{pages}{1018\bibrangedash 1035}
+      \range{pages}{18}
+    \endentry
+    \entry{Levy2016}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3df0961c430253324ba932b0a809f3fb}{%
+           family={Levy},
+           familyi={L\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3df0961c430253324ba932b0a809f3fb}
+      \strng{fullhash}{3df0961c430253324ba932b0a809f3fb}
+      \strng{bibnamehash}{3df0961c430253324ba932b0a809f3fb}
+      \strng{authorbibnamehash}{3df0961c430253324ba932b0a809f3fb}
+      \strng{authornamehash}{3df0961c430253324ba932b0a809f3fb}
+      \strng{authorfullhash}{3df0961c430253324ba932b0a809f3fb}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Open Source Software}
+      \field{month}{07}
+      \field{title}{gwdegree: Improving interpretation of geometrically-weighted degree estimates in exponential random graph models}
+      \field{volume}{1}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.21105/joss.00036
+      \endverb
+    \endentry
+    \entry{CourtListener}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=fdade83a84a42d386aa975f2c720cf0c}{%
+           family={Lissner},
+           familyi={L\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91ae1549b855164b2db5f8e370a13f37}{%
+           family={Carver},
+           familyi={C\bibinitperiod},
+           given={Brian\bibnamedelima W.},
+           giveni={B\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{03937c5236585ad69881310741576331}
+      \strng{fullhash}{03937c5236585ad69881310741576331}
+      \strng{bibnamehash}{03937c5236585ad69881310741576331}
+      \strng{authorbibnamehash}{03937c5236585ad69881310741576331}
+      \strng{authornamehash}{03937c5236585ad69881310741576331}
+      \strng{authorfullhash}{03937c5236585ad69881310741576331}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{CourtListener.com: A platform for researching and staying abreast of the latest law}
+      \field{year}{2010}
+      \verb{urlraw}
+      \verb http://www.courtlistener.com
+      \endverb
+      \verb{url}
+      \verb http://www.courtlistener.com
+      \endverb
+    \endentry
+    \entry{lupu2013strategic}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1b3633d3206f7e6058a488c2faa0cc9d}{%
+           family={Lupu},
+           familyi={L\bibinitperiod},
+           given={Yonatan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3997b2ee637a4f0e9edc27c381960732}{%
+           family={Fowler},
+           familyi={F\bibinitperiod},
+           given={James\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press Chicago, IL}%
+      }
+      \strng{namehash}{11d9ab09f785d9bd8fe7d103c5a3384c}
+      \strng{fullhash}{11d9ab09f785d9bd8fe7d103c5a3384c}
+      \strng{bibnamehash}{11d9ab09f785d9bd8fe7d103c5a3384c}
+      \strng{authorbibnamehash}{11d9ab09f785d9bd8fe7d103c5a3384c}
+      \strng{authornamehash}{11d9ab09f785d9bd8fe7d103c5a3384c}
+      \strng{authorfullhash}{11d9ab09f785d9bd8fe7d103c5a3384c}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Legal Studies}
+      \field{number}{1}
+      \field{title}{Strategic citations to precedent on the US Supreme Court}
+      \field{volume}{42}
+      \field{year}{2013}
+      \field{pages}{151\bibrangedash 186}
+      \range{pages}{36}
+    \endentry
+    \entry{lupu2012precedent}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1b3633d3206f7e6058a488c2faa0cc9d}{%
+           family={Lupu},
+           familyi={L\bibinitperiod},
+           given={Yonatan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9f1f7f08c5e18a69aafba795eefc0c0e}{%
+           family={Voeten},
+           familyi={V\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{3dbd3bab17f03620625008c9f02f49f0}
+      \strng{fullhash}{3dbd3bab17f03620625008c9f02f49f0}
+      \strng{bibnamehash}{3dbd3bab17f03620625008c9f02f49f0}
+      \strng{authorbibnamehash}{3dbd3bab17f03620625008c9f02f49f0}
+      \strng{authornamehash}{3dbd3bab17f03620625008c9f02f49f0}
+      \strng{authorfullhash}{3dbd3bab17f03620625008c9f02f49f0}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{British Journal of Political Science}
+      \field{number}{2}
+      \field{title}{Precedent in international courts: A network analysis of case citations by the European court of human rights}
+      \field{volume}{42}
+      \field{year}{2012}
+      \field{pages}{413\bibrangedash 439}
+      \range{pages}{27}
+    \endentry
+    \entry{martin2002dynamic}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=877117f37b0c140220cdd7fdfd07e822}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Andrew\bibnamedelima D},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=001a41d028c5b1368d0d346ac3d1962d}{%
+           family={Quinn},
+           familyi={Q\bibinitperiod},
+           given={Kevin\bibnamedelima M},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{245fd957c3530653cd8595c5a736663b}
+      \strng{fullhash}{245fd957c3530653cd8595c5a736663b}
+      \strng{bibnamehash}{245fd957c3530653cd8595c5a736663b}
+      \strng{authorbibnamehash}{245fd957c3530653cd8595c5a736663b}
+      \strng{authornamehash}{245fd957c3530653cd8595c5a736663b}
+      \strng{authorfullhash}{245fd957c3530653cd8595c5a736663b}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Political Analysis}
+      \field{number}{2}
+      \field{title}{Dynamic ideal point estimation via Markov chain Monte Carlo for the US Supreme Court, 1953--1999}
+      \field{volume}{10}
+      \field{year}{2002}
+      \field{pages}{134\bibrangedash 153}
+      \range{pages}{20}
+    \endentry
+    \entry{mukherjee2020degeneracy}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=da5566c23cfe81ab89496804cf0d5c50}{%
+           family={Mukherjee},
+           familyi={M\bibinitperiod},
+           given={Sumit},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Bernoulli Society for Mathematical Statistics}%
+        {Probability}%
+      }
+      \strng{namehash}{6a02b51a10e8f7bb174d0acbfd37d78b}
+      \strng{fullhash}{6a02b51a10e8f7bb174d0acbfd37d78b}
+      \strng{bibnamehash}{6a02b51a10e8f7bb174d0acbfd37d78b}
+      \strng{authorbibnamehash}{6a02b51a10e8f7bb174d0acbfd37d78b}
+      \strng{authornamehash}{6a02b51a10e8f7bb174d0acbfd37d78b}
+      \strng{authorfullhash}{6a02b51a10e8f7bb174d0acbfd37d78b}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bernoulli}
+      \field{number}{2}
+      \field{title}{Degeneracy in sparse ERGMs with functions of degrees as sufficient statistics}
+      \field{volume}{26}
+      \field{year}{2020}
+      \field{pages}{1016\bibrangedash 1043}
+      \range{pages}{28}
+    \endentry
+    \entry{osei2018elite}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=184dafd6c3669623eab3d5107103526b}{%
+           family={Osei},
+           familyi={O\bibinitperiod},
+           given={Anja},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {City University of New York}%
+      }
+      \strng{namehash}{184dafd6c3669623eab3d5107103526b}
+      \strng{fullhash}{184dafd6c3669623eab3d5107103526b}
+      \strng{bibnamehash}{184dafd6c3669623eab3d5107103526b}
+      \strng{authorbibnamehash}{184dafd6c3669623eab3d5107103526b}
+      \strng{authornamehash}{184dafd6c3669623eab3d5107103526b}
+      \strng{authorfullhash}{184dafd6c3669623eab3d5107103526b}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Comparative Politics}
+      \field{number}{1}
+      \field{title}{Elite Theory and Political Transitions: Networks of Power in Ghana and Togo}
+      \field{volume}{51}
+      \field{year}{2018}
+      \field{pages}{21\bibrangedash 42}
+      \range{pages}{22}
+    \endentry
+    \entry{pang2012endogenous}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=b790dce41dd37cadbb242042ba0f2c7c}{%
+           family={Pang},
+           familyi={P\bibinitperiod},
+           given={Xun},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f0e83e0d922f98d735ba899224373945}{%
+           family={Friedman},
+           familyi={F\bibinitperiod},
+           given={Barry},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=877117f37b0c140220cdd7fdfd07e822}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Andrew\bibnamedelima D},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=001a41d028c5b1368d0d346ac3d1962d}{%
+           family={Quinn},
+           familyi={Q\bibinitperiod},
+           given={Kevin\bibnamedelima M},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{750e4685a2fc470bc1cf3c107aa55bbc}
+      \strng{fullhash}{08aebe4fc7c83d846cbcf2fa16171fd7}
+      \strng{bibnamehash}{08aebe4fc7c83d846cbcf2fa16171fd7}
+      \strng{authorbibnamehash}{08aebe4fc7c83d846cbcf2fa16171fd7}
+      \strng{authornamehash}{750e4685a2fc470bc1cf3c107aa55bbc}
+      \strng{authorfullhash}{08aebe4fc7c83d846cbcf2fa16171fd7}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Political Analysis}
+      \field{number}{4}
+      \field{title}{Endogenous Jurisprudential Regimes}
+      \field{volume}{20}
+      \field{year}{2012}
+      \field{pages}{417\bibrangedash 436}
+      \range{pages}{20}
+    \endentry
+    \entry{pelc2014politics}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dc57f5af123f79d191c3531cbce95f28}{%
+           family={Pelc},
+           familyi={P\bibinitperiod},
+           given={Krzysztof\bibnamedelima J},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{dc57f5af123f79d191c3531cbce95f28}
+      \strng{fullhash}{dc57f5af123f79d191c3531cbce95f28}
+      \strng{bibnamehash}{dc57f5af123f79d191c3531cbce95f28}
+      \strng{authorbibnamehash}{dc57f5af123f79d191c3531cbce95f28}
+      \strng{authornamehash}{dc57f5af123f79d191c3531cbce95f28}
+      \strng{authorfullhash}{dc57f5af123f79d191c3531cbce95f28}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Political Science Review}
+      \field{number}{3}
+      \field{title}{The politics of precedent in international law: A social network application}
+      \field{volume}{108}
+      \field{year}{2014}
+      \field{pages}{547\bibrangedash 564}
+      \range{pages}{18}
+    \endentry
+    \entry{richards2002jurisprudential}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=bd6e8f47becc0bfcc7d599920ff33025}{%
+           family={Richards},
+           familyi={R\bibinitperiod},
+           given={Mark\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0903fd1a56820cddce086c4315a808d7}{%
+           family={Kritzer},
+           familyi={K\bibinitperiod},
+           given={Herbert\bibnamedelima M},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{f5799dda4e6a8599dc2fff256ac01e0e}
+      \strng{fullhash}{f5799dda4e6a8599dc2fff256ac01e0e}
+      \strng{bibnamehash}{f5799dda4e6a8599dc2fff256ac01e0e}
+      \strng{authorbibnamehash}{f5799dda4e6a8599dc2fff256ac01e0e}
+      \strng{authornamehash}{f5799dda4e6a8599dc2fff256ac01e0e}
+      \strng{authorfullhash}{f5799dda4e6a8599dc2fff256ac01e0e}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Political Science Review}
+      \field{number}{2}
+      \field{title}{Jurisprudential regimes in Supreme Court decision making}
+      \field{volume}{96}
+      \field{year}{2002}
+      \field{pages}{305\bibrangedash 320}
+      \range{pages}{16}
+    \endentry
+    \entry{SnijdersTomA.B..2006}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=e25df3941d6ce13c09ad2d002f03a434}{%
+           family={Snijders},
+           familyi={S\bibinitperiod},
+           given={Tom\bibnamedelimb A.\bibnamedelimi B.},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fce0d67c31f09e18fb1ebadd4850592d}{%
+           family={Pattison},
+           familyi={P\bibinitperiod},
+           given={Philippa\bibnamedelima E.},
+           giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41c03c6aceeb173d3184000ecf59cd7c}{%
+           family={Robins},
+           familyi={R\bibinitperiod},
+           given={Garry\bibnamedelima L.},
+           giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=279407956525fc33169d45fb6000b0f3}{%
+           family={Handcock},
+           familyi={H\bibinitperiod},
+           given={Mark\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{edec17ea950d0cd93a714ba0f1263ee2}
+      \strng{fullhash}{fcef703fda7ad93f6f97016672eee32e}
+      \strng{bibnamehash}{fcef703fda7ad93f6f97016672eee32e}
+      \strng{authorbibnamehash}{fcef703fda7ad93f6f97016672eee32e}
+      \strng{authornamehash}{edec17ea950d0cd93a714ba0f1263ee2}
+      \strng{authorfullhash}{fcef703fda7ad93f6f97016672eee32e}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0081-1750}
+      \field{journaltitle}{Sociological Methodology}
+      \field{number}{1}
+      \field{title}{New Specifications for Exponential Random Graph Models}
+      \field{volume}{36}
+      \field{year}{2006}
+      \field{pages}{99\bibrangedash 153}
+      \range{pages}{55}
+      \verb{doi}
+      \verb 10.1111/j.1467-9531.2006.00176.x
+      \endverb
+    \endentry
+    \entry{spaeth2014supreme}{misc}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=48697fdc706a7f2367f843ae6af2539c}{%
+           family={Spaeth},
+           familyi={S\bibinitperiod},
+           given={Harold},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=87e5875e4980b86836b579ac43f958f0}{%
+           family={Epstein},
+           familyi={E\bibinitperiod},
+           given={Lee},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b89992c95b6baa079e37d1080afb8799}{%
+           family={Ruger},
+           familyi={R\bibinitperiod},
+           given={Ted},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e2059ddb68a56273d8ee43af89b717c8}{%
+           family={Whittington},
+           familyi={W\bibinitperiod},
+           given={Keith},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=465954a49fd085db5453fb0aab193c1a}{%
+           family={Segal},
+           familyi={S\bibinitperiod},
+           given={Jeffrey},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=877117f37b0c140220cdd7fdfd07e822}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Andrew\bibnamedelima D},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{43f4ebb1d07e8cfdd030f6617e66455f}
+      \strng{fullhash}{f67c835007804b8bafd742825c41478a}
+      \strng{bibnamehash}{f67c835007804b8bafd742825c41478a}
+      \strng{authorbibnamehash}{f67c835007804b8bafd742825c41478a}
+      \strng{authornamehash}{43f4ebb1d07e8cfdd030f6617e66455f}
+      \strng{authorfullhash}{f67c835007804b8bafd742825c41478a}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Supreme Court Database Code Book}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb http://scdb.wustl.edu
+      \endverb
+      \verb{url}
+      \verb http://scdb.wustl.edu
+      \endverb
+    \endentry
+    \entry{spriggs2001explaining}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=73cf6719b71a3bc9485ed9511da9b6a6}{%
+           family={Spriggs},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima F},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=20855b8ba716ec308ac4851966367732}{%
+           family={Hansford},
+           familyi={H\bibinitperiod},
+           given={Thomas\bibnamedelima G},
+           giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Blackwell Publishers, Inc.}%
+      }
+      \strng{namehash}{beb8477a21668ec99413a41429b219bc}
+      \strng{fullhash}{beb8477a21668ec99413a41429b219bc}
+      \strng{bibnamehash}{beb8477a21668ec99413a41429b219bc}
+      \strng{authorbibnamehash}{beb8477a21668ec99413a41429b219bc}
+      \strng{authornamehash}{beb8477a21668ec99413a41429b219bc}
+      \strng{authorfullhash}{beb8477a21668ec99413a41429b219bc}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Politics}
+      \field{number}{4}
+      \field{title}{Explaining the overruling of US Supreme Court precedent}
+      \field{volume}{63}
+      \field{year}{2001}
+      \field{pages}{1091\bibrangedash 1111}
+      \range{pages}{21}
+    \endentry
+    \entry{strogatz2001exploring}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b0115f77df78376c68429033349375fc}{%
+           family={Strogatz},
+           familyi={S\bibinitperiod},
+           given={Steven\bibnamedelima H},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{b0115f77df78376c68429033349375fc}
+      \strng{fullhash}{b0115f77df78376c68429033349375fc}
+      \strng{bibnamehash}{b0115f77df78376c68429033349375fc}
+      \strng{authorbibnamehash}{b0115f77df78376c68429033349375fc}
+      \strng{authornamehash}{b0115f77df78376c68429033349375fc}
+      \strng{authorfullhash}{b0115f77df78376c68429033349375fc}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{nature}
+      \field{number}{6825}
+      \field{title}{Exploring complex networks}
+      \field{volume}{410}
+      \field{year}{2001}
+      \field{pages}{268}
+      \range{pages}{1}
+    \endentry
+    \entry{senate2016constitution}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8d631fe2282b18ccc523f78ba8248d57}{%
+           family={{US. Congress. Senate}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {112th Cong., 2d sess. S. Doc. 112-9. \url{https://www.govinfo.gov/app/details/GPO-CONAN-2017/}}%
+      }
+      \strng{namehash}{8d631fe2282b18ccc523f78ba8248d57}
+      \strng{fullhash}{8d631fe2282b18ccc523f78ba8248d57}
+      \strng{bibnamehash}{8d631fe2282b18ccc523f78ba8248d57}
+      \strng{authorbibnamehash}{8d631fe2282b18ccc523f78ba8248d57}
+      \strng{authornamehash}{8d631fe2282b18ccc523f78ba8248d57}
+      \strng{authorfullhash}{8d631fe2282b18ccc523f78ba8248d57}
+      \field{sortinit}{U}
+      \field{sortinithash}{77a6935510e008adcf5b555e7b4f0711}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Constitution of the United State of America: Analysis, and Interpretation -- Centennial Edition}
+      \field{year}{2016}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
