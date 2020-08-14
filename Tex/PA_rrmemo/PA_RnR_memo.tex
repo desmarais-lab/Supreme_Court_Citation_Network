@@ -3,7 +3,12 @@
 \documentclass[a4paper,11pt]{texMemo}
 \usepackage[english]{babel}
 \usepackage{graphicx, lipsum}
+\usepackage{bm}
+\usepackage[backend=bibtex]{biblatex}    
+\usepackage[english]{babel}
 
+
+\addbibresource{bib.bib}
 %% Edit the header section here. To include your
 %% own logo, upload a file via the files menu.
 \memosubject{Manuscript Revisions for \emph{Political Analysis}}
@@ -27,11 +32,12 @@ that our manuscript has improved substantially as a result of incorporating this
 
 \noindent \textbf{R1.1:} \emph{ In terms of estimation, it reads as if the smaller networks used MCMLE and the later the simulated annealing approach. Is that right? If so, does the simulated approach arrive at the same values for the smaller year networks as the MCMLE? Showing that might help validate the approach for the bigger/later year networks. At the very least it might mitigate my next point on the overtime changes.   }\\
 
-\noindent \textbf{Addressed:}   \\
+\noindent \textbf{Addressed:} All networks were estimated using MCMLE, however, for smaller networks we used the network's MPLE as the algorithms's starting value, while for larger networks the starting value was obtained using simulated annealing, since the MPLE as starting value did not lead to converged MCMLEs anymore. While in theory the algorithm should converge to the MLE regardless of the starting value, in practice this is not the case   \cite{hummel2012improving}. \\
+In order to be consistent with the used estimation approach, we estimate the MCMLE now for all networks using simulated annealing starting value. The results have not changed noticeably.  \\
 
 \noindent  \textbf{R1.2:} \emph{ For at least a few of the variables --- reciprocity, gwidegree, and Justices in majority --- we see a substantial change in recent periods. Does this have anything to do with the change in estimation strategy? How convinced can we be that these fairly big changes are substantively driven? }\\
 
-\noindent \textbf{Addressed:}   \\
+\noindent \textbf{Addressed:} We have re-estimated all networks using the simulated annealing approach and the results look very similar to the initially submitted results. This is not too surprising, since the MCMLE algorithm only reports a succesful estimation if it has converged to the unique MLE. However, with a poorly chosen starting value the algorithm might fail to converge towards the MLE. This is what happened for some large networks using the MPLE.  \\
 
 \noindent \textbf{R1.3:} \emph{ Relatedly, why isn’t overtime change in the covariates discussed? The authors instead choose to make broad statements: “in/consistently significant” over the period of study.  This seems to be a wasted opportunity and contrary to their motivation (a la Shalizi and Rinaldo 2013). If the authors want to make a statement about whether the covariate generally holds, then why not run a single model across all the years? Otherwise, wouldn’t it make sense to discuss these over time changes, at least when they appear to be quite meaningful?  }\\
 
@@ -83,6 +89,7 @@ that our manuscript has improved substantially as a result of incorporating this
 \noindent \textbf{Addressed:}  \\
 
 
+\printbibliography
 
 \end{document} 
 

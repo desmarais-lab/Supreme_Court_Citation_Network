@@ -1,193 +1,452 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 AUG 2020 14:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.14)  14 AUG 2020 15:35
 entering extended mode
- restricted \write18 enabled.
- file:line:error style messages enabled.
- %&-line parsing enabled.
-**PA_RnR_memo.tex
-(./PA_RnR_memo.tex
-LaTeX2e <2017-04-15>
-Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
-(./texMemo.cls
+**./PA_RnR_memo.tex
+(PA_RnR_memo.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-06-18> (texMemo.cls
 Document Class: texMemo 2010/07/31 - Simple Memo Class, Including Logo
-(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/palatino.sty
-Package: palatino 2005/04/12 PSNFSS-v9.2a (SPQR) 
+("C:\Program Files\MiKTeX\tex/latex/psnfss\palatino.sty"
+Package: palatino 2020/03/25 PSNFSS-v9.3 (SPQR) 
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty"
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+("C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks15
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty"
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+("C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+("C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count79
+("C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen102
-\Gin@req@width=\dimen103
+\Gin@req@height=\dimen134
+\Gin@req@width=\dimen135
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+("C:\Program Files\MiKTeX\tex/latex/base\article.cls"
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+("C:\Program Files\MiKTeX\tex/latex/base\size11.clo"
+File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
-\abovecaptionskip=\skip41
-\belowcaptionskip=\skip42
-\bibindent=\dimen104
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen136
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
+("C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
+("C:\Program Files\MiKTeX\tex/latex/geometry\geometry.sty"
+Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-)
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-)
-(/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count88
-\Gm@cntv=\count89
-\c@Gm@tempcnt=\count90
-\Gm@bindingoffset=\dimen105
-\Gm@wd@mp=\dimen106
-\Gm@odd@mp=\dimen107
-\Gm@even@mp=\dimen108
-\Gm@layoutwidth=\dimen109
-\Gm@layoutheight=\dimen110
-\Gm@layouthoffset=\dimen111
-\Gm@layoutvoffset=\dimen112
-\Gm@dimlist=\toks15
+("C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty"
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+("C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty"
+Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-(/usr/local/texlive/2017/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2017/05/19 3.10 The Babel package
+\Gm@cnth=\count175
+\Gm@cntv=\count176
+\c@Gm@tempcnt=\count177
+\Gm@bindingoffset=\dimen137
+\Gm@wd@mp=\dimen138
+\Gm@odd@mp=\dimen139
+\Gm@even@mp=\dimen140
+\Gm@layoutwidth=\dimen141
+\Gm@layoutheight=\dimen142
+\Gm@layouthoffset=\dimen143
+\Gm@layoutvoffset=\dimen144
+\Gm@dimlist=\toks16
 
-(/usr/local/texlive/2017/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/01/24 v3.3q English support from the babel system
+("C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg")))
+("C:\Program Files\MiKTeX\tex/generic/babel\babel.sty"
+Package: babel 2020/06/10 3.45 The Babel package
 
-(/usr/local/texlive/2017/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2017/05/19 3.10 Babel common definitions
-\babel@savecnt=\count91
-\U@D=\dimen113
+("C:\Program Files\MiKTeX\tex/generic/babel\babel.def"
+File: babel.def 2020/06/10 3.45 Babel common definitions
+\babel@savecnt=\count178
+\U@D=\dimen145
+\l@babelnohyphens=\language79
+
+("C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def")
+\bbl@readstream=\read2
 )
-\l@canadian = a dialect from \language\l@american 
-\l@australian = a dialect from \language\l@british 
-\l@newzealand = a dialect from \language\l@british 
+\bbl@dirlevel=\count179
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Program Files\MiKTeX\tex/latex/babel-english\english.ldf"
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for ukenglish
+(babel)             (\language73) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for ukenglish
+(babel)             (\language73) on input line 108.
 ))
-(/usr/local/texlive/2017/texmf-dist/tex/latex/lipsum/lipsum.sty
-Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count92
-)
-(./PA_RnR_memo.aux)
-\openout1 = `PA_RnR_memo.aux'.
+("C:\Program Files\MiKTeX\tex/latex/lipsum\lipsum.sty"
+("C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty"
+Package: expl3 2020-06-18 L3 programming layer (loader) 
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 15.
+("C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdfmode.def"
+File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count180
+\l__pdf_internal_box=\box45
+))
+("C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse.sty"
+Package: xparse 2020-05-15 L3 Experimental document command parser
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ppl.fd
-File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+("C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse-generic.tex"
+\l__xparse_current_arg_int=\count181
+\g__xparse_grabber_int=\count182
+\l__xparse_m_args_int=\count183
+\l__xparse_v_nesting_int=\count184
+))
+Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
+
+("C:\Program Files\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex"
+File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
+))
+("C:\Program Files\MiKTeX\tex/latex/tools\bm.sty"
+Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 209.
 )
-(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count93
-\scratchdimen=\dimen114
-\scratchbox=\box26
-\nofMPsegments=\count94
-\nofMParguments=\count95
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count96
-\MPscratchDim=\dimen115
-\MPnumerator=\count97
-\makeMPintoPDFobject=\count98
-\everyMPtoPDFconversion=\toks17
-) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+("C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.sty"
+Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
+
+("C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty"
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
+("C:\Program Files\MiKTeX\tex/generic/infwarerr\infwarerr.sty"
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
-Package pdftexcmds Info: LuaTeX not detected.
+("C:\Program Files\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty"
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+("C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count185
+)
+("C:\Program Files\MiKTeX\tex/latex/kvoptions\kvoptions.sty"
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+("C:\Program Files\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty"
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 ))
-(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+("C:\Program Files\MiKTeX\tex/latex/logreq\logreq.sty"
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count186
 
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+("C:\Program Files\MiKTeX\tex/latex/logreq\logreq.def"
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+("C:\Program Files\MiKTeX\tex/latex/url\url.sty"
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count187
+\c@listtotal=\count188
+\c@listcount=\count189
+\c@liststart=\count190
+\c@liststop=\count191
+\c@citecount=\count192
+\c@citetotal=\count193
+\c@multicitecount=\count194
+\c@multicitetotal=\count195
+\c@instcount=\count196
+\c@maxnames=\count197
+\c@minnames=\count198
+\c@maxitems=\count199
+\c@minitems=\count266
+\c@citecounter=\count267
+\c@maxcitecounter=\count268
+\c@savedcitecounter=\count269
+\c@uniquelist=\count270
+\c@uniquename=\count271
+\c@refsection=\count272
+\c@refsegment=\count273
+\c@maxextratitle=\count274
+\c@maxextratitleyear=\count275
+\c@maxextraname=\count276
+\c@maxextradate=\count277
+\c@maxextraalpha=\count278
+\c@abbrvpenalty=\count279
+\c@highnamepenalty=\count280
+\c@lownamepenalty=\count281
+\c@maxparens=\count282
+\c@parenlevel=\count283
+\blx@tempcnta=\count284
+\blx@tempcntb=\count285
+\blx@tempcntc=\count286
+\blx@maxsection=\count287
+\blx@maxsegment@0=\count288
+\blx@notetype=\count289
+\blx@parenlevel@text=\count290
+\blx@parenlevel@foot=\count291
+\blx@sectionciteorder@0=\count292
+\blx@entrysetcounter=\count293
+\labelnumberwidth=\skip49
+\labelalphawidth=\skip50
+\biblabelsep=\skip51
+\bibitemsep=\skip52
+\bibnamesep=\skip53
+\bibinitsep=\skip54
+\bibparsep=\skip55
+\bibhang=\skip56
+\blx@bcfin=\read3
+\blx@bcfout=\write3
+\blx@langwohyphens=\language80
+\c@mincomprange=\count294
+\c@maxcomprange=\count295
+\c@mincompwidth=\count296
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
 
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
+("C:\Program Files\MiKTeX\tex/latex/biblatex\blx-dm.def"
+File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count297
+\c@savedafterword=\count298
+\c@annotator=\count299
+\c@savedannotator=\count300
+\c@author=\count301
+\c@savedauthor=\count302
+\c@bookauthor=\count303
+\c@savedbookauthor=\count304
+\c@commentator=\count305
+\c@savedcommentator=\count306
+\c@editor=\count307
+\c@savededitor=\count308
+\c@editora=\count309
+\c@savededitora=\count310
+\c@editorb=\count311
+\c@savededitorb=\count312
+\c@editorc=\count313
+\c@savededitorc=\count314
+\c@foreword=\count315
+\c@savedforeword=\count316
+\c@holder=\count317
+\c@savedholder=\count318
+\c@introduction=\count319
+\c@savedintroduction=\count320
+\c@namea=\count321
+\c@savednamea=\count322
+\c@nameb=\count323
+\c@savednameb=\count324
+\c@namec=\count325
+\c@savednamec=\count326
+\c@translator=\count327
+\c@savedtranslator=\count328
+\c@shortauthor=\count329
+\c@savedshortauthor=\count330
+\c@shorteditor=\count331
+\c@savedshorteditor=\count332
+\c@labelname=\count333
+\c@savedlabelname=\count334
+\c@institution=\count335
+\c@savedinstitution=\count336
+\c@lista=\count337
+\c@savedlista=\count338
+\c@listb=\count339
+\c@savedlistb=\count340
+\c@listc=\count341
+\c@savedlistc=\count342
+\c@listd=\count343
+\c@savedlistd=\count344
+\c@liste=\count345
+\c@savedliste=\count346
+\c@listf=\count347
+\c@savedlistf=\count348
+\c@location=\count349
+\c@savedlocation=\count350
+\c@organization=\count351
+\c@savedorganization=\count352
+\c@origlocation=\count353
+\c@savedoriglocation=\count354
+\c@origpublisher=\count355
+\c@savedorigpublisher=\count356
+\c@publisher=\count357
+\c@savedpublisher=\count358
+\c@language=\count359
+\c@savedlanguage=\count360
+\c@origlanguage=\count361
+\c@savedoriglanguage=\count362
+\c@pageref=\count363
+\c@savedpageref=\count364
+\shorthandwidth=\skip57
+\shortjournalwidth=\skip58
+\shortserieswidth=\skip59
+\shorttitlewidth=\skip60
+\shortauthorwidth=\skip61
+\shorteditorwidth=\skip62
+\locallabelnumberwidth=\skip63
+\locallabelalphawidth=\skip64
+\localshorthandwidth=\skip65
+\localshortjournalwidth=\skip66
+\localshortserieswidth=\skip67
+\localshorttitlewidth=\skip68
+\localshortauthorwidth=\skip69
+\localshorteditorwidth=\skip70
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+("C:\Program Files\MiKTeX\tex/latex/biblatex\blx-compat.def"
+File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load BibTeX backend compatibility...
+Package biblatex Info: ... file 'blx-bibtex.def' found.
+
+("C:\Program Files\MiKTeX\tex/latex/biblatex\blx-bibtex.def"
+File: blx-bibtex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+
+
+Package biblatex Warning: Using fall-back BibTeX(8) backend:
+(biblatex)                functionality may be reduced/unavailable.
+
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ ("C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.def"
+File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+\c@textcitecount=\count365
+\c@textcitetotal=\count366
+\c@textcitemaxnames=\count367
+\c@biburlbigbreakpenalty=\count368
+\c@biburlbreakpenalty=\count369
+\c@biburlnumpenalty=\count370
+\c@biburlucpenalty=\count371
+\c@biburllcpenalty=\count372
+\biburlbigskip=\muskip17
+\biburlnumskip=\muskip18
+\biburlucskip=\muskip19
+\biburllcskip=\muskip20
+\c@smartand=\count373
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+("C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\numeric.bbx"
+File: numeric.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+("C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\standard.bbx"
+File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count374
+\c@bbx:relatedtotal=\count375
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+("C:\Program Files\MiKTeX\tex/latex/biblatex/cbx\numeric.cbx"
+File: numeric.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+("C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.cfg"
+File: biblatex.cfg 
+))
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count376
+\@quotereset=\count377
+(PA_RnR_memo.aux)
+\openout1 = `PA_RnR_memo.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 2
+0.
+ ("C:\Program Files\MiKTeX\tex/latex/psnfss\ot1ppl.fd"
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+("C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count378
+\scratchdimen=\dimen146
+\scratchbox=\box46
+\nofMPsegments=\count379
+\nofMParguments=\count380
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count381
+\MPscratchDim=\dimen147
+\MPnumerator=\count382
+\makeMPintoPDFobject=\count383
+\everyMPtoPDFconversion=\toks18
+) ("C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX\tex/latex/grfext\grfext.sty"
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty"
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
+85.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
+(grfext)             \AppendGraphicsExtensions on input line 504.
+)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -222,44 +481,31 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 16.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 26.
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+("C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\english.lbx"
+File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Input encoding 'utf8' specified.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
+\openout3 = `PA_RnR_memo-blx.bib'.
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'PA_RnR_memo.bbl' found.
+ (PA_RnR_memo.bbl)
+Package biblatex Info: Reference section=0 on input line 20.
+Package biblatex Info: Reference segment=0 on input line 20.
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
-
- []
-
-Missing character: There is no ‚ in font pplri7t!
-Missing character: There is no Ä in font pplri7t!
-Missing character: There is no ô in font pplri7t!
-Missing character: There is no ‚ in font pplri7t!
-Missing character: There is no Ä in font pplri7t!
-Missing character: There is no ú in font pplri7t!
-Missing character: There is no ‚ in font pplri7t!
-Missing character: There is no Ä in font pplri7t!
-Missing character: There is no ù in font pplri7t!
-Missing character: There is no ‚ in font pplri7t!
-Missing character: There is no Ä in font pplri7t!
-Missing character: There is no ô in font pplri7t!
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
 
  []
 
@@ -268,9 +514,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-Missing character: There is no ‚ in font pplri7t!
-Missing character: There is no Ä in font pplri7t!
-Missing character: There is no ô in font pplri7t!
 
 Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
@@ -281,23 +524,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
-Missing character: There is no ‚ in font pplri7t!
-Missing character: There is no Ä in font pplri7t!
-Missing character: There is no ô in font pplri7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
 [1
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+{C:/Users/Geiler Typ/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
@@ -307,17 +547,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
@@ -341,7 +581,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
-[2]
+
 Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
@@ -356,18 +596,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
@@ -376,23 +616,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
-[3] (./PA_RnR_memo.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+[3] [4] (PA_RnR_memo.aux)
+Package logreq Info: Writing requests to 'PA_RnR_memo.run.xml'.
+\openout1 = `PA_RnR_memo.run.xml'.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2694 strings out of 492995
- 37872 string characters out of 6132704
- 212706 words of memory out of 5000000
- 6221 multiletter control sequences out of 15000+600000
- 8512 words of font info for 24 fonts, out of 8000000 for 9000
+ 10508 strings out of 480790
+ 194441 string characters out of 2907038
+ 753196 words of memory out of 3000000
+ 26415 multiletter control sequences out of 15000+200000
+ 537210 words of font info for 34 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,4n,31p,1710b,139s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/ba
-se/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.p
-fb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></us
-r/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on PA_RnR_memo.pdf (3 pages, 61547 bytes).
+ 38i,4n,45p,1712b,1601s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX
+/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/p
+alatino/uplr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pf
+b>
+Output written on PA_RnR_memo.pdf (4 pages, 69187 bytes).
 PDF statistics:
- 27 PDF objects out of 1000 (max. 8388607)
- 18 compressed objects within 1 object stream
+ 28 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
