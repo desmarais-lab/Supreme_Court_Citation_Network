@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.9)  9 AUG 2020 22:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.14)  14 AUG 2020 12:23
 entering extended mode
 **./main.tex
 (main.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-07-17> (cup-pan.cls
+L3 programming layer <2020-06-18> (cup-pan.cls
 Document Class: cup-pan 2019/05/22 Cambridge University Press, Political Analys
 is submission template v1.0
 ("C:\Program Files\MiKTeX\tex/latex/base\article.cls"
@@ -11,29 +11,29 @@ Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
 ("C:\Program Files\MiKTeX\tex/latex/base\size10.clo"
 File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count168
-\c@section=\count169
-\c@subsection=\count170
-\c@subsubsection=\count171
-\c@paragraph=\count172
-\c@subparagraph=\count173
-\c@figure=\count174
-\c@table=\count175
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
 )
 ("C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty"
-Package: etoolbox 2020/07/15 v2.5i e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count176
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count175
 )
 ("C:\Program Files\MiKTeX\tex/latex/xpatch\xpatch.sty"
 ("C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty"
-Package: expl3 2020-07-17 L3 programming layer (loader) 
+Package: expl3 2020-06-18 L3 programming layer (loader) 
 
 ("C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count177
+\l__kernel_color_stack_int=\count176
 \l__pdf_internal_box=\box45
 ))
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
@@ -42,10 +42,10 @@ Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 Package: xparse 2020-05-15 L3 Experimental document command parser
 
 ("C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse-generic.tex"
-\l__xparse_current_arg_int=\count178
-\g__xparse_grabber_int=\count179
-\l__xparse_m_args_int=\count180
-\l__xparse_v_nesting_int=\count181
+\l__xparse_current_arg_int=\count177
+\g__xparse_grabber_int=\count178
+\l__xparse_m_args_int=\count179
+\l__xparse_v_nesting_int=\count180
 )))
 ("C:\Program Files\MiKTeX\tex/generic/iftex\ifxetex.sty"
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
@@ -86,7 +86,7 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \everycr=\toks16
 \minrowclearance=\skip51
 )
-\rownum=\count182
+\rownum=\count181
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -124,9 +124,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 ("C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty"
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count183
-\Gm@cntv=\count184
-\c@Gm@tempcnt=\count185
+\Gm@cnth=\count182
+\Gm@cntv=\count183
+\c@Gm@tempcnt=\count184
 \Gm@bindingoffset=\dimen139
 \Gm@wd@mp=\dimen140
 \Gm@odd@mp=\dimen141
@@ -144,7 +144,7 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 ("C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count186
+\c@r@tfl@t=\count185
 \rotFPtop=\skip52
 \rotFPbot=\skip53
 \rot@float@box=\box48
@@ -187,7 +187,7 @@ Package: abstract 2009/06/08 v1.2a configurable abstracts
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks21
 \footnotemargin=\dimen152
-\c@pp@next@reset=\count187
+\c@pp@next@reset=\count186
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -212,14 +212,14 @@ Package caption3 Info: TeX engine: e-TeX on input line 61.
 \caption@hangindent=\dimen159
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count188
-\c@continuedfloat=\count189
+\c@caption@flags=\count187
+\c@continuedfloat=\count188
 Package caption Info: rotating package is loaded.
 )
 ("C:\Program Files\MiKTeX\tex/latex/caption\subcaption.sty"
 Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
-\c@subfigure=\count190
-\c@subtable=\count191
+\c@subfigure=\count189
+\c@subtable=\count190
 )
 ("C:\Program Files\MiKTeX\tex/latex/enumitem\enumitem.sty"
 Package: enumitem 2019/06/20 v3.9 Customized lists
@@ -227,16 +227,16 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@outerparindent=\dimen160
 \enit@toks=\toks22
 \enit@inbox=\box50
-\enit@count@id=\count192
-\enitdp@description=\count193
+\enit@count@id=\count191
+\enitdp@description=\count192
 )
 ("C:\Program Files\MiKTeX\tex/latex/preprint\authblk.sty"
 Package: authblk 2001/02/27 1.3 (PWD)
 \affilsep=\skip71
 \@affilsep=\skip72
-\c@Maxaffil=\count194
-\c@authors=\count195
-\c@affil=\count196
+\c@Maxaffil=\count193
+\c@authors=\count194
+\c@affil=\count195
 )
 ("C:\Program Files\MiKTeX\tex/latex/base\textcomp.sty"
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
@@ -264,16 +264,16 @@ Grid set 16 x 16 = 38.39343pt x 49.68562pt
 TextBlockOrigin set to 0pt x 0pt
 ) ("C:\Program Files\MiKTeX\tex/latex/lineno\lineno.sty"
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count197
+\linenopenalty=\count196
 \output=\toks24
-\linenoprevgraf=\count198
+\linenoprevgraf=\count197
 \linenumbersep=\dimen169
 \linenumberwidth=\dimen170
-\c@linenumber=\count199
-\c@pagewiselinenumber=\count266
-\c@LN@truepage=\count267
-\c@internallinenumber=\count268
-\c@internallinenumbers=\count269
+\c@linenumber=\count198
+\c@pagewiselinenumber=\count199
+\c@LN@truepage=\count266
+\c@internallinenumber=\count267
+\c@internallinenumbers=\count268
 \quotelinenumbersep=\dimen171
 \bframerule=\dimen172
 \bframesep=\dimen173
@@ -300,13 +300,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ("C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count270
+\inf@bad=\count269
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count271
-\leftroot@=\count272
+\uproot@=\count270
+\leftroot@=\count271
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count273
-\DOTSCASE@=\count274
+\classnum@=\count272
+\DOTSCASE@=\count273
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
@@ -315,15 +315,15 @@ LaTeX Info: Redefining \cdots on input line 610.
 \big@size=\dimen176
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count275
-\c@MaxMatrixCols=\count276
+\macc@depth=\count274
+\c@MaxMatrixCols=\count275
 \dotsspace@=\muskip16
-\c@parentequation=\count277
-\dspbrk@lvl=\count278
+\c@parentequation=\count276
+\dspbrk@lvl=\count277
 \tag@help=\toks26
-\row@=\count279
-\column@=\count280
-\maxfields@=\count281
+\row@=\count278
+\column@=\count279
+\maxfields@=\count280
 \andhelp@=\toks27
 \eqnshift@=\dimen177
 \alignsep@=\dimen178
@@ -341,11 +341,11 @@ LaTeX Info: Redefining \] on input line 2860.
 ("C:\Program Files\MiKTeX\tex/latex/microtype\microtype.sty"
 Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
 \MT@toks=\toks30
-\MT@count=\count282
+\MT@count=\count281
 LaTeX Info: Redefining \textls on input line 790.
 \MT@outer@kern=\dimen183
 LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
-\MT@listname@count=\count283
+\MT@listname@count=\count282
 
 ("C:\Program Files\MiKTeX\tex/latex/microtype\microtype-pdftex.def"
 File: microtype-pdftex.def 2019/11/18 v2.7d Definitions specific to pdftex (RS)
@@ -378,7 +378,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks33
 \XKV@tempa@toks=\toks34
 )
-\XKV@depth=\count284
+\XKV@depth=\count283
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 ("C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty"
@@ -522,7 +522,7 @@ Package: newtxsf 2020/05/02 v1.052
 
 `newtxsf' v1.052, 2020/05/02 Math macros based on STIX sans serif and txfonts (
 msharpe) ("C:\Program Files\MiKTeX\tex/generic/binhex\binhex.tex")
-\tx@Isdigit=\count285
+\tx@Isdigit=\count284
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 47.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
 (Font)              `operators' in the math version `normal' on input line 47.
@@ -667,14 +667,14 @@ Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 ("C:\Program Files\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty"
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )))
-\c@section@level=\count286
+\c@section@level=\count285
 LaTeX Info: Redefining \ref on input line 356.
 LaTeX Info: Redefining \pageref on input line 356.
 )
 ("C:\Program Files\MiKTeX\tex/latex/xstring\xstring.sty"
 ("C:\Program Files\MiKTeX\tex/generic/xstring\xstring.tex"
-\integerpart=\count287
-\decimalpart=\count288
+\integerpart=\count286
+\decimalpart=\count287
 )
 Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 )
@@ -690,7 +690,7 @@ Package pdftexcmds Info: \pdfdraftmode found.
 )
 ("C:\Program Files\MiKTeX\tex/latex/logreq\logreq.sty"
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count289
+\lrq@indent=\count288
 
 ("C:\Program Files\MiKTeX\tex/latex/logreq\logreq.def"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -699,47 +699,47 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count290
-\c@listtotal=\count291
-\c@listcount=\count292
-\c@liststart=\count293
-\c@liststop=\count294
-\c@citecount=\count295
-\c@citetotal=\count296
-\c@multicitecount=\count297
-\c@multicitetotal=\count298
-\c@instcount=\count299
-\c@maxnames=\count300
-\c@minnames=\count301
-\c@maxitems=\count302
-\c@minitems=\count303
-\c@citecounter=\count304
-\c@maxcitecounter=\count305
-\c@savedcitecounter=\count306
-\c@uniquelist=\count307
-\c@uniquename=\count308
-\c@refsection=\count309
-\c@refsegment=\count310
-\c@maxextratitle=\count311
-\c@maxextratitleyear=\count312
-\c@maxextraname=\count313
-\c@maxextradate=\count314
-\c@maxextraalpha=\count315
-\c@abbrvpenalty=\count316
-\c@highnamepenalty=\count317
-\c@lownamepenalty=\count318
-\c@maxparens=\count319
-\c@parenlevel=\count320
-\blx@tempcnta=\count321
-\blx@tempcntb=\count322
-\blx@tempcntc=\count323
-\blx@maxsection=\count324
-\blx@maxsegment@0=\count325
-\blx@notetype=\count326
-\blx@parenlevel@text=\count327
-\blx@parenlevel@foot=\count328
-\blx@sectionciteorder@0=\count329
-\blx@entrysetcounter=\count330
+\c@tabx@nest=\count289
+\c@listtotal=\count290
+\c@listcount=\count291
+\c@liststart=\count292
+\c@liststop=\count293
+\c@citecount=\count294
+\c@citetotal=\count295
+\c@multicitecount=\count296
+\c@multicitetotal=\count297
+\c@instcount=\count298
+\c@maxnames=\count299
+\c@minnames=\count300
+\c@maxitems=\count301
+\c@minitems=\count302
+\c@citecounter=\count303
+\c@maxcitecounter=\count304
+\c@savedcitecounter=\count305
+\c@uniquelist=\count306
+\c@uniquename=\count307
+\c@refsection=\count308
+\c@refsegment=\count309
+\c@maxextratitle=\count310
+\c@maxextratitleyear=\count311
+\c@maxextraname=\count312
+\c@maxextradate=\count313
+\c@maxextraalpha=\count314
+\c@abbrvpenalty=\count315
+\c@highnamepenalty=\count316
+\c@lownamepenalty=\count317
+\c@maxparens=\count318
+\c@parenlevel=\count319
+\blx@tempcnta=\count320
+\blx@tempcntb=\count321
+\blx@tempcntc=\count322
+\blx@maxsection=\count323
+\blx@maxsegment@0=\count324
+\blx@notetype=\count325
+\blx@parenlevel@text=\count326
+\blx@parenlevel@foot=\count327
+\blx@sectionciteorder@0=\count328
+\blx@entrysetcounter=\count329
 \labelnumberwidth=\skip77
 \labelalphawidth=\skip78
 \biblabelsep=\skip79
@@ -751,9 +751,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@bcfin=\read2
 \blx@bcfout=\write3
 \blx@langwohyphens=\language79
-\c@mincomprange=\count331
-\c@maxcomprange=\count332
-\c@mincompwidth=\count333
+\c@mincomprange=\count330
+\c@maxcomprange=\count331
+\c@mincompwidth=\count332
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -764,74 +764,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'chicago-authordate.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count334
-\c@savedafterword=\count335
-\c@annotator=\count336
-\c@savedannotator=\count337
-\c@author=\count338
-\c@savedauthor=\count339
-\c@bookauthor=\count340
-\c@savedbookauthor=\count341
-\c@commentator=\count342
-\c@savedcommentator=\count343
-\c@editor=\count344
-\c@savededitor=\count345
-\c@editora=\count346
-\c@savededitora=\count347
-\c@editorb=\count348
-\c@savededitorb=\count349
-\c@editorc=\count350
-\c@savededitorc=\count351
-\c@foreword=\count352
-\c@savedforeword=\count353
-\c@holder=\count354
-\c@savedholder=\count355
-\c@introduction=\count356
-\c@savedintroduction=\count357
-\c@namea=\count358
-\c@savednamea=\count359
-\c@nameb=\count360
-\c@savednameb=\count361
-\c@namec=\count362
-\c@savednamec=\count363
-\c@translator=\count364
-\c@savedtranslator=\count365
-\c@shortauthor=\count366
-\c@savedshortauthor=\count367
-\c@shorteditor=\count368
-\c@savedshorteditor=\count369
-\c@labelname=\count370
-\c@savedlabelname=\count371
-\c@institution=\count372
-\c@savedinstitution=\count373
-\c@lista=\count374
-\c@savedlista=\count375
-\c@listb=\count376
-\c@savedlistb=\count377
-\c@listc=\count378
-\c@savedlistc=\count379
-\c@listd=\count380
-\c@savedlistd=\count381
-\c@liste=\count382
-\c@savedliste=\count383
-\c@listf=\count384
-\c@savedlistf=\count385
-\c@location=\count386
-\c@savedlocation=\count387
-\c@organization=\count388
-\c@savedorganization=\count389
-\c@origlocation=\count390
-\c@savedoriglocation=\count391
-\c@origpublisher=\count392
-\c@savedorigpublisher=\count393
-\c@publisher=\count394
-\c@savedpublisher=\count395
-\c@language=\count396
-\c@savedlanguage=\count397
-\c@origlanguage=\count398
-\c@savedoriglanguage=\count399
-\c@pageref=\count400
-\c@savedpageref=\count401
+\c@afterword=\count333
+\c@savedafterword=\count334
+\c@annotator=\count335
+\c@savedannotator=\count336
+\c@author=\count337
+\c@savedauthor=\count338
+\c@bookauthor=\count339
+\c@savedbookauthor=\count340
+\c@commentator=\count341
+\c@savedcommentator=\count342
+\c@editor=\count343
+\c@savededitor=\count344
+\c@editora=\count345
+\c@savededitora=\count346
+\c@editorb=\count347
+\c@savededitorb=\count348
+\c@editorc=\count349
+\c@savededitorc=\count350
+\c@foreword=\count351
+\c@savedforeword=\count352
+\c@holder=\count353
+\c@savedholder=\count354
+\c@introduction=\count355
+\c@savedintroduction=\count356
+\c@namea=\count357
+\c@savednamea=\count358
+\c@nameb=\count359
+\c@savednameb=\count360
+\c@namec=\count361
+\c@savednamec=\count362
+\c@translator=\count363
+\c@savedtranslator=\count364
+\c@shortauthor=\count365
+\c@savedshortauthor=\count366
+\c@shorteditor=\count367
+\c@savedshorteditor=\count368
+\c@labelname=\count369
+\c@savedlabelname=\count370
+\c@institution=\count371
+\c@savedinstitution=\count372
+\c@lista=\count373
+\c@savedlista=\count374
+\c@listb=\count375
+\c@savedlistb=\count376
+\c@listc=\count377
+\c@savedlistc=\count378
+\c@listd=\count379
+\c@savedlistd=\count380
+\c@liste=\count381
+\c@savedliste=\count382
+\c@listf=\count383
+\c@savedlistf=\count384
+\c@location=\count385
+\c@savedlocation=\count386
+\c@organization=\count387
+\c@savedorganization=\count388
+\c@origlocation=\count389
+\c@savedoriglocation=\count390
+\c@origpublisher=\count391
+\c@savedorigpublisher=\count392
+\c@publisher=\count393
+\c@savedpublisher=\count394
+\c@language=\count395
+\c@savedlanguage=\count396
+\c@origlanguage=\count397
+\c@savedoriglanguage=\count398
+\c@pageref=\count399
+\c@savedpageref=\count400
 \shorthandwidth=\skip85
 \shortjournalwidth=\skip86
 \shortserieswidth=\skip87
@@ -857,19 +857,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 ("C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.def"
 File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-\c@textcitecount=\count402
-\c@textcitetotal=\count403
-\c@textcitemaxnames=\count404
-\c@biburlbigbreakpenalty=\count405
-\c@biburlbreakpenalty=\count406
-\c@biburlnumpenalty=\count407
-\c@biburlucpenalty=\count408
-\c@biburllcpenalty=\count409
+\c@textcitecount=\count401
+\c@textcitetotal=\count402
+\c@textcitemaxnames=\count403
+\c@biburlbigbreakpenalty=\count404
+\c@biburlbreakpenalty=\count405
+\c@biburlnumpenalty=\count406
+\c@biburlucpenalty=\count407
+\c@biburllcpenalty=\count408
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count410
+\c@smartand=\count409
 )
 Package biblatex Info: Trying to load natbib compatibility...
 Package biblatex Info: ... file 'blx-natbib.def' found.
@@ -886,10 +886,10 @@ Package biblatex Info: ... file 'chicago-authordate.bbx' found.
 ("C:\Program Files\MiKTeX\tex/latex/biblatex-chicago\chicago-authordate.bbx"
 File: chicago-authordate.bbx 2020/04/20 v 3.14 biblatex bibliography style
 \lositemsep=\skip99
-\cms@tempcnta=\count411
-\cms@tempcntb=\count412
-\c@bbx:relatedcount=\count413
-\c@bbx:relatedtotal=\count414
+\cms@tempcnta=\count410
+\cms@tempcntb=\count411
+\c@bbx:relatedcount=\count412
+\c@bbx:relatedtotal=\count413
 )
 Package biblatex Info: Trying to load citation style 'chicago-authordate'...
 Package biblatex Info: ... file 'chicago-authordate.cbx' found.
@@ -941,8 +941,8 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen184
-\Hy@linkcounter=\count415
-\Hy@pagecounter=\count416
+\Hy@linkcounter=\count414
+\Hy@pagecounter=\count415
 
 ("C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def"
 File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
@@ -955,7 +955,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ("C:\Program Files\MiKTeX\tex/generic/etexcmds\etexcmds.sty"
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count417
+\Hy@SavedSpaceFactor=\count416
 Package hyperref Info: Hyper figures OFF on input line 4464.
 Package hyperref Info: Link nesting OFF on input line 4469.
 Package hyperref Info: Hyper index ON on input line 4472.
@@ -963,7 +963,7 @@ Package hyperref Info: Plain pages OFF on input line 4479.
 Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count418
+\c@Hy@tempcnt=\count417
 LaTeX Info: Redefining \url on input line 5076.
 \XeTeXLinkMargin=\dimen185
 
@@ -974,7 +974,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count419
+\Fld@menulength=\count418
 \Field@Width=\dimen186
 \Fld@charsize=\dimen187
 Package hyperref Info: Hyper figures OFF on input line 6347.
@@ -990,9 +990,9 @@ LaTeX Info: Redefining \pageref on input line 6421.
 ("C:\Program Files\MiKTeX\tex/generic/atbegshi\atbegshi.sty"
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count420
-\c@Item=\count421
-\c@Hfootnote=\count422
+\Hy@abspage=\count419
+\c@Item=\count420
+\c@Hfootnote=\count421
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -1002,8 +1002,8 @@ File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
 ("C:\Program Files\MiKTeX\tex/latex/atveryend\atveryend.sty"
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
-\Fld@listcount=\count423
-\c@bookmark@seq@number=\count424
+\Fld@listcount=\count422
+\c@bookmark@seq@number=\count423
 
 ("C:\Program Files\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty"
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -1024,24 +1024,24 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 ("C:\Program Files\MiKTeX\tex/latex/tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count425
-\c@Blindtext=\count426
-\c@blind@countparstart=\count427
-\blind@countxx=\count428
-\blindtext@numBlindtext=\count429
-\blind@countyy=\count430
-\c@blindlist=\count431
-\c@blindlistlevel=\count432
-\c@blindlist@level=\count433
-\blind@listitem=\count434
-\c@blind@listcount=\count435
-\c@blind@levelcount=\count436
-\blind@mathformula=\count437
-\blind@Mathformula=\count438
-\c@blind@randomcount=\count439
-\c@blind@randommax=\count440
-\c@blind@pangramcount=\count441
-\c@blind@pangrammax=\count442
+\c@blindtext=\count424
+\c@Blindtext=\count425
+\c@blind@countparstart=\count426
+\blind@countxx=\count427
+\blindtext@numBlindtext=\count428
+\blind@countyy=\count429
+\c@blindlist=\count430
+\c@blindlistlevel=\count431
+\c@blindlist@level=\count432
+\blind@listitem=\count433
+\c@blind@listcount=\count434
+\c@blind@levelcount=\count435
+\blind@mathformula=\count436
+\blind@Mathformula=\count437
+\c@blind@randomcount=\count438
+\c@blind@randommax=\count439
+\c@blind@pangramcount=\count440
+\c@blind@pangrammax=\count441
 )
 ("C:\Program Files\MiKTeX\tex/latex/tools\bm.sty"
 Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
@@ -1052,82 +1052,142 @@ Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 209.
 )
-\@quotelevel=\count443
-\@quotereset=\count444
- (main.aux)
-\openout1 = `main.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/ntxsfmi/m/it on input line 28.
-LaTeX Font Info:    Trying to load font information for OML+ntxsfmi on input li
-ne 28.
-
-("C:\Program Files\MiKTeX\tex/latex/newtxsf\omlntxsfmi.fd"
-File: omlntxsfmi.fd 2014/11/16 Fontinst v1.933 font definitions for OML/ntxsfmi
-.
-)
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 28.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-28.
-
-("C:\Program Files\MiKTeX\tex/latex/newtx\untxexa.fd"
-File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
-)
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 28.
-LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 2
-8.
-
-("C:\Program Files\MiKTeX\tex/latex/ly1\ly1ptm.fd"
-File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
-)
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 28.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 28.
-
-("C:\Program Files\MiKTeX\tex/latex/newtx\lmsntxsy.fd"
-File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
-)
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+("C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty"
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+SourceSansPro-TLF on
- input line 28.
+ input line 112.
 
 ("C:\Program Files\MiKTeX\tex/latex/sourcesanspro\t1sourcesanspro-tlf.fd"
 File: T1SourceSansPro-TLF.fd 2020/01/19 (autoinst) Font definitions for T1/Sour
 ceSansPro-TLF.
 )
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 28.
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 112.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 28.
+(Font)              scaled to size 10.0pt on input line 112.
+)
+("C:\Program Files\MiKTeX\tex/latex/lm\lmodern.sty"
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 22.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  T1/SourceSansPro-TLF/m/n --> OT1/lmr/m/n on input line 
+22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/ntxsfmi/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Encoding `LMS' has changed to `OMS' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 24.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  LMS/ntxsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Encoding `LMX' has changed to `OMX' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 2
+5.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  LMX/ntxexx/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 26.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  T1/SourceSansPro-TLF/b/n --> OT1/lmr/bx/n on input line
+ 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/ntxsfmi/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Encoding `LMS' has changed to `OMS' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  LMS/ntxsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Encoding `LMX' has changed to `OMX' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 29.
+
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  LMX/ntxexx/b/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  T1/SourceSansPro-TLF/b/n --> OT1/lmr/bx/n on input line
+ 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  T1/SourceSansPro-TLF/m/n --> OT1/lmss/m/n on input line
+ 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  T1/SourceSansPro-TLF/m/it --> OT1/lmr/m/it on input lin
+e 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  T1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  T1/SourceSansPro-TLF/b/n --> OT1/lmr/bx/n on input line
+ 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  T1/SourceSansPro-TLF/b/n --> OT1/lmss/bx/n on input lin
+e 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  T1/SourceSansPro-TLF/b/it --> OT1/lmr/bx/it on input li
+ne 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  T1/cmtt/b/n --> OT1/lmtt/m/n on input line 38.
+)
+\@quotelevel=\count442
+\@quotereset=\count443
+ (main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/ntxsfmi/m/it on input line 30.
+LaTeX Font Info:    Trying to load font information for OML+ntxsfmi on input li
+ne 30.
+
+("C:\Program Files\MiKTeX\tex/latex/newtxsf\omlntxsfmi.fd"
+File: omlntxsfmi.fd 2014/11/16 Fontinst v1.933 font definitions for OML/ntxsfmi
+.
+)
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 30.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
+30.
+
+("C:\Program Files\MiKTeX\tex/latex/newtx\untxexa.fd"
+File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
+)
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 30.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 3
+0.
+
+("C:\Program Files\MiKTeX\tex/latex/ly1\ly1ptm.fd"
+File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
+)
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 30.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
+ 30.
+
+("C:\Program Files\MiKTeX\tex/latex/newtx\lmsntxsy.fd"
+File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
+)
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 
 ("C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count445
+\scratchcounter=\count444
 \scratchdimen=\dimen188
 \scratchbox=\box56
-\nofMPsegments=\count446
-\nofMParguments=\count447
+\nofMPsegments=\count445
+\nofMParguments=\count446
 \everyMPshowfont=\toks35
-\MPscratchCnt=\count448
+\MPscratchCnt=\count447
 \MPscratchDim=\dimen189
-\MPnumerator=\count449
-\makeMPintoPDFobject=\count450
+\MPnumerator=\count448
+\makeMPintoPDFobject=\count449
 \everyMPtoPDFconversion=\toks36
 ) ("C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1172,14 +1232,14 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \microtypecontext on input line 28.
+LaTeX Info: Redefining \microtypecontext on input line 30.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 28.
+LaTeX Info: Redefining \showhyphens on input line 30.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1217,168 +1277,212 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 28.
-Package biblatex Info: Reference segment=0 on input line 28.
+Package biblatex Info: Reference section=0 on input line 30.
+Package biblatex Info: Reference segment=0 on input line 30.
 \AtBeginShipoutBox=\box57
-Package hyperref Info: Link coloring ON on input line 28.
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
-LaTeX Info: Redefining \nameref on input line 28.
+Package hyperref Info: Link coloring ON on input line 30.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
 
 (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 31.
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 7.0pt on input line 31.
+(Font)              scaled to size 7.0pt on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 31.
+(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
-(Font)              scaled to size 7.0pt on input line 31.
+(Font)              scaled to size 7.0pt on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/it' on input line 31.
+(Font)              `T1/SourceSansPro-TLF/bold/it' on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/it' will be
-(Font)              scaled to size 7.0pt on input line 31.
+(Font)              scaled to size 7.0pt on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 31.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 7.0pt on input line 31.
+(Font)              scaled to size 7.0pt on input line 33.
 LaTeX Font Info:    Trying to load font information for TS1+SourceSansPro-TLF o
-n input line 31.
+n input line 33.
 
 ("C:\Program Files\MiKTeX\tex/latex/sourcesanspro\ts1sourcesanspro-tlf.fd"
 File: TS1SourceSansPro-TLF.fd 2020/01/19 (autoinst) Font definitions for TS1/So
 urceSansPro-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `TS1/SourceSansPro-TLF/regular/n' on input line 31.
+(Font)              `TS1/SourceSansPro-TLF/regular/n' on input line 33.
 LaTeX Font Info:    Font shape `TS1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 7.0pt on input line 31.
+(Font)              scaled to size 7.0pt on input line 33.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `SourceSansPro-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 31.
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 17.28pt on input line 31.
+(Font)              scaled to size 17.28pt on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 31.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 17.28pt on input line 31.
+(Font)              scaled to size 17.28pt on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 31.
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 14.4pt on input line 31.
+(Font)              scaled to size 14.4pt on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 31.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 14.4pt on input line 31.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 31.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 10.5pt on input line 31.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 31.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 7.9pt on input line 31.
+(Font)              scaled to size 14.4pt on input line 33.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
+3.
+
+("C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd"
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+("C:\Program Files\MiKTeX\tex/latex/microtype\mt-cmr.cfg"
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
+3.
+
+("C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd"
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+33.
+
+("C:\Program Files\MiKTeX\tex/latex/lm\omslmsy.fd"
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+33.
+
+("C:\Program Files\MiKTeX\tex/latex/lm\omxlmex.fd"
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 33.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.5> on input line 33.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7.9> on input line 33.
 LaTeX Font Info:    Trying to load font information for U+ntxsfmia on input lin
-e 31.
+e 33.
 
 ("C:\Program Files\MiKTeX\tex/latex/newtxsf\untxsfmia.fd"
 File: untxsfmia.fd 2014/11/16 Fontinst v1.933 font definitions for U/ntxsfmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-31.
+33.
 
 ("C:\Program Files\MiKTeX\tex/latex/newtx\untxsym.fd"
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 31.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 10.5pt on input line 31.
+(Font)              scaled to size 10.5pt on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 31.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 7.9pt on input line 31.
+(Font)              scaled to size 7.9pt on input line 33.
+Missing character: There is no ¹ in font lmsy10!
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 31.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 9.0pt on input line 31.
+(Font)              scaled to size 9.0pt on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/it' on input line 31.
+(Font)              `T1/SourceSansPro-TLF/bold/it' on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/it' will be
-(Font)              scaled to size 9.0pt on input line 31.
+(Font)              scaled to size 9.0pt on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 31.
+(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
-(Font)              scaled to size 9.0pt on input line 31.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 31.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 9.0pt on input line 31.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 31.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 7.3pt on input line 31.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 31.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 5.5pt on input line 31.
+(Font)              scaled to size 9.0pt on input line 33.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 33.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7.3> on input line 33.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5.5> on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 31.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 7.3pt on input line 31.
+(Font)              scaled to size 7.3pt on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 31.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 5.5pt on input line 31.
+(Font)              scaled to size 5.5pt on input line 33.
+Missing character: There is no ¹ in font lmsy9!
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 31.
+(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
-(Font)              scaled to size 7.3pt on input line 31.
+(Font)              scaled to size 7.3pt on input line 33.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 31.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 33.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 31.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 32.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 12.0pt on input line 32.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 32.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 12.0pt on input line 32.
+(Font)              scaled to size 10.0pt on input line 33.
+Missing character: There is no ¹ in font lmsy10!
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
 (Font)              `T1/SourceSansPro-TLF/regular/n' on input line 34.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 34.
+(Font)              scaled to size 12.0pt on input line 34.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 34.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
+(Font)              scaled to size 12.0pt on input line 34.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 34.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 9.0pt on input line 34.
+Missing character: There is no ¹ in font lmsy9!
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 35.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 7.3pt on input line 35.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 36.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 8.0pt on input line 36.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 43.
+(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 45.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
-(Font)              scaled to size 10.0pt on input line 43.
- [1{C:/Users/TC/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+(Font)              scaled to size 10.0pt on input line 45.
+ [1{C:/Users/Geiler Typ/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 ]
+Missing character: There is no ¹ in font lmsy10!
 
-Package biblatex-chicago Warning: Empty Ibidem citation on input line 56.
+Overfull \hbox (3.48888pt too wide) in paragraph at lines 58--59
+\T1/SourceSansPro-TLF/regular/n/10 opin-ion to an-other) is a com-po-nent of a 
+com-plex sys-tem of re-la-tions. The for-ma-tion (or lack thereof)
+ []
 
 [2]
 <citations_trans.pdf, id=112, 722.7pt x 722.7pt>
 File: citations_trans.pdf Graphic file (type pdf)
 <use citations_trans.pdf>
-Package pdftex.def Info: citations_trans.pdf  used on input line 69.
+Package pdftex.def Info: citations_trans.pdf  used on input line 71.
 (pdftex.def)             Requested size: 196.65192pt x 206.29483pt.
 <citations_recip.pdf, id=114, 722.7pt x 722.7pt>
 File: citations_recip.pdf Graphic file (type pdf)
 <use citations_recip.pdf>
-Package pdftex.def Info: citations_recip.pdf  used on input line 70.
+Package pdftex.def Info: citations_recip.pdf  used on input line 72.
 (pdftex.def)             Requested size: 196.65192pt x 206.29483pt.
  [3 <./citations_trans.pdf> <./citations_recip.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 97--100
+Overfull \hbox (18.77261pt too wide) in paragraph at lines 81--82
+\T1/SourceSansPro-TLF/regular/n/10 by min-i-miz-ing it as prece-dent un-mis-tak
+-ably re-quires, but by guar-an-tee-ing that in equipoise
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--102
 
  []
 
@@ -1386,121 +1490,190 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--100
 <citations_pop.pdf, id=160, 722.7pt x 722.7pt>
 File: citations_pop.pdf Graphic file (type pdf)
 <use citations_pop.pdf>
-Package pdftex.def Info: citations_pop.pdf  used on input line 110.
+Package pdftex.def Info: citations_pop.pdf  used on input line 112.
 (pdftex.def)             Requested size: 321.06198pt x 252.4582pt.
  [5]
 <daggish.pdf, id=175, 433.62pt x 361.35pt>
 File: daggish.pdf Graphic file (type pdf)
 <use daggish.pdf>
-Package pdftex.def Info: daggish.pdf  used on input line 130.
+Package pdftex.def Info: daggish.pdf  used on input line 132.
 (pdftex.def)             Requested size: 341.1295pt x 284.28894pt.
+Missing character: There is no ¹ in font lmsy9!
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no º in font lmsy10!
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no º in font lmsy10!
+Missing character: There is no Í in font lmex10!
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no º in font lmsy10!
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no º in font lmsy10!
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no º in font lmsy10!
  [6 <./citations_pop.pdf>]
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 147.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
-(Font)              scaled to size 8.0pt on input line 147.
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no º in font lmsy10!
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no º in font lmsy10!
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no º in font lmsy10!
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no º in font lmsy10!
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 147.
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 144.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 6.2pt on input line 147.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 147.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 8.0pt on input line 147.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 147.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 6.2pt on input line 147.
+(Font)              scaled to size 5.5pt on input line 144.
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no º in font lmsy10!
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no º in font lmsy10!
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no º in font lmsy10!
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no º in font lmsy10!
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no º in font lmsy10!
  [7 <./daggish.pdf>]
-<degree_distribution.pdf, id=225, 844.15375pt x 597.23125pt>
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 149.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
+(Font)              scaled to size 8.0pt on input line 149.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 149.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6.2> on input line 149.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 149.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
+(Font)              scaled to size 8.0pt on input line 149.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 149.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
+(Font)              scaled to size 6.2pt on input line 149.
+Missing character: There is no ¹ in font lmsy8!
+Missing character: There is no ¹ in font lmsy10!
+
+Overfull \hbox (7.58179pt too wide) in paragraph at lines 149--150
+\T1/SourceSansPro-TLF/regular/n/10 Our three data sources for this study in-clu
+de the Supreme Court Database (SCDB) ([]Spaeth \T1/SourceSansPro-TLF/regular/it
+/10 et al. [][]\T1/SourceSansPro-TLF/regular/n/10 2014[][]),
+ []
+
+<degree_distribution.pdf, id=229, 844.15375pt x 597.23125pt>
 File: degree_distribution.pdf Graphic file (type pdf)
 <use degree_distribution.pdf>
-Package pdftex.def Info: degree_distribution.pdf  used on input line 175.
+Package pdftex.def Info: degree_distribution.pdf  used on input line 177.
 (pdftex.def)             Requested size: 147.00455pt x 103.99759pt.
-<data_mat.png, id=226, 453.19313pt x 453.19313pt>
+<data_mat.png, id=230, 453.19313pt x 453.19313pt>
 File: data_mat.png Graphic file (type png)
 <use data_mat.png>
-Package pdftex.def Info: data_mat.png  used on input line 176.
+Package pdftex.def Info: data_mat.png  used on input line 178.
 (pdftex.def)             Requested size: 118.79135pt x 118.78864pt.
-<courts_layer.png, id=227, 1024.57782pt x 962.09438pt>
+<courts_layer.png, id=231, 1024.57782pt x 962.09438pt>
 File: courts_layer.png Graphic file (type png)
 <use courts_layer.png>
-Package pdftex.def Info: courts_layer.png  used on input line 179.
+Package pdftex.def Info: courts_layer.png  used on input line 181.
 (pdftex.def)             Requested size: 252.83731pt x 237.41077pt.
- [8] [9 <./degree_distribution.pdf> <./data_mat.png> <./courts_layer.png>] [10]
+Missing character: There is no ¹ in font lmsy9!
+[8]
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no º in font lmsy10!
+Missing character: There is no Í in font lmex10!
+ [9 <./degree_distribution.pdf> <./data_mat.png> <./courts_layer.png>]
+[10]
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no º in font lmsy10!
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no º in font lmsy10!
+Missing character: There is no Í in font lmex10!
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no º in font lmsy10!
+Missing character: There is no » in font lmsy10!
+Missing character: There is no ¼ in font lmsy10!
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no º in font lmsy10!
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no º in font lmsy10!
+Missing character: There is no ¹ in font lmsy10!
+Missing character: There is no º in font lmsy10!
  [11]
-<SCC_AIC_BIC.pdf, id=294, 844.15375pt x 597.23125pt>
+<SCC_AIC_BIC.pdf, id=299, 844.15375pt x 597.23125pt>
 File: SCC_AIC_BIC.pdf Graphic file (type pdf)
 <use SCC_AIC_BIC.pdf>
-Package pdftex.def Info: SCC_AIC_BIC.pdf  used on input line 288.
+Package pdftex.def Info: SCC_AIC_BIC.pdf  used on input line 290.
 (pdftex.def)             Requested size: 284.52756pt x 201.30623pt.
  [12 <./SCC_AIC_BIC.pdf>]
-<SCC_results_1.pdf, id=329, 597.23125pt x 844.15375pt>
+<SCC_results_1.pdf, id=332, 597.23125pt x 844.15375pt>
 File: SCC_results_1.pdf Graphic file (type pdf)
 <use SCC_results_1.pdf>
-Package pdftex.def Info: SCC_results_1.pdf  used on input line 314.
+Package pdftex.def Info: SCC_results_1.pdf  used on input line 316.
 (pdftex.def)             Requested size: 398.33858pt x 563.0297pt.
-<SCC_results_2.pdf, id=330, 597.23125pt x 844.15375pt>
+<SCC_results_2.pdf, id=333, 597.23125pt x 844.15375pt>
 File: SCC_results_2.pdf Graphic file (type pdf)
 <use SCC_results_2.pdf>
-Package pdftex.def Info: SCC_results_2.pdf  used on input line 322.
+Package pdftex.def Info: SCC_results_2.pdf  used on input line 324.
 (pdftex.def)             Requested size: 398.33858pt x 563.0297pt.
- [13] [14 <./SCC_results_1.pdf>] [15 <./SCC_results_2.pdf>]
-Overfull \hbox (92.24252pt too wide) in paragraph at lines 338--338
+
+Overfull \hbox (2.30453pt too wide) in paragraph at lines 336--337
+\T1/SourceSansPro-TLF/regular/n/10 We present a method-ol-ogy for study-ing ci-
+ta-tions be-tween US Supreme Court opin-ions at the dyadic
+ []
+
+[13] [14 <./SCC_results_1.pdf>] [15 <./SCC_results_2.pdf>] [16]
+Overfull \hbox (92.24252pt too wide) in paragraph at lines 340--340
 [][]\T1/SourceSansPro-TLF/regular/n/9 Handcock, M. S. 2003. \T1/SourceSansPro-T
 LF/regular/it/9 As-sess-ing de-gen-er-acy in sta-tis-ti-cal mod-els of so-cial 
 net-works: https://www.csss.washington.edu/Papers/wp39.pdf. 
  []
 
-[16]
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/sc' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/sc' on input line 337.
+(Font)              `T1/SourceSansPro-TLF/regular/sc' on input line 339.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/sc' will be
-(Font)              scaled to size 9.0pt on input line 337.
- [17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 338.
+(Font)              scaled to size 9.0pt on input line 339.
+[17]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 340.
  [18]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 338.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 340.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 338.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 338.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 340.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 340.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 562876C4346A39C91FB2A7E56737C09B;650.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23187 strings out of 481225
- 407935 string characters out of 2915938
- 1436513 words of memory out of 3000000
- 38149 multiletter control sequences out of 15000+200000
- 888811 words of font info for 275 fonts, out of 3000000 for 9000
+ 23358 strings out of 480790
+ 408935 string characters out of 2907038
+ 1434747 words of memory out of 3000000
+ 38841 multiletter control sequences out of 15000+200000
+ 861181 words of font info for 177 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,12n,72p,2150b,3855s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/sourcesanspro/a_4jropk.enc}{C:/Progr
-am Files/MiKTeX/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc}{C:/Program Files/Mi
-KTeX/fonts/enc/dvips/sourcesanspro/a_5ponh6.enc}<C:/Program Files/MiKTeX/fonts/
-type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb><C:/Program Files/MiKTeX/fonts
-/type1/adobe/sourcesanspro/SourceSansPro-BoldIt.pfb><C:/Program Files/MiKTeX/fo
-nts/type1/adobe/sourcesanspro/SourceSansPro-It.pfb><C:/Program Files/MiKTeX/fon
-ts/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb><C:/Program Files/MiKTeX
-/fonts/type1/public/txfonts/rtxmi.pfb><C:/Program Files/MiKTeX/fonts/type1/publ
-ic/newtx/txexs.pfb><C:/Program Files/MiKTeX/fonts/type1/public/newtx/txsys.pfb>
-<C:/Program Files/MiKTeX/fonts/type1/public/newtxsf/zsfmi-bol.pfb><C:/Program F
-iles/MiKTeX/fonts/type1/public/newtxsf/zsfmi-reg.pfb><C:/Program Files/MiKTeX/f
-onts/type1/public/newtxsf/zsfmia-reg.pfb>
-Output written on main.pdf (18 pages, 2071276 bytes).
+am Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX/fonts
+/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-math
+ex.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/
+MiKTeX/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc}{C:/Program Files/MiKTeX/font
+s/enc/dvips/sourcesanspro/a_5ponh6.enc}<C:/Program Files/MiKTeX/fonts/type1/ado
+be/sourcesanspro/SourceSansPro-Bold.pfb><C:/Program Files/MiKTeX/fonts/type1/ad
+obe/sourcesanspro/SourceSansPro-BoldIt.pfb><C:/Program Files/MiKTeX/fonts/type1
+/adobe/sourcesanspro/SourceSansPro-It.pfb><C:/Program Files/MiKTeX/fonts/type1/
+adobe/sourcesanspro/SourceSansPro-Regular.pfb><C:/Program Files/MiKTeX/fonts/ty
+pe1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi10.
+pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/
+MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
+lic/lm/lmmi9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/P
+rogram Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/f
+onts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/l
+msy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/newtxsf/zsfmi-bol.pfb><C:/
+Program Files/MiKTeX/fonts/type1/public/newtxsf/zsfmia-reg.pfb>
+Output written on main.pdf (18 pages, 2102345 bytes).
 PDF statistics:
- 453 PDF objects out of 1000 (max. 8388607)
+ 477 PDF objects out of 1000 (max. 8388607)
  85 named destinations out of 1000 (max. 500000)
- 20629 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 24725 words of extra memory for PDF output out of 24883 (max. 10000000)
 
