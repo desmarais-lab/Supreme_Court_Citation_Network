@@ -16,7 +16,7 @@ year.total <- scc1[,11]-1936 #-1936 => the first year 1937 is 1, 1938 is 2 aso, 
 set.seed(12123)
 #sampled.years <- c(14, 24, 34, 44, 54, 64, 74)
 
-t<-  79 # 79 stands for 2015, 14 for 1950
+t<-  14 # 79 stands for 2015, 14 for 1950
 print(t+1936)
 
 
@@ -100,8 +100,8 @@ unfixed.esp.osp<- esp
 
 
 # load simulated models
-#load("GOF_Deg_1950.RData")
-load("2015_GOF_Deg_just_deg.RData")
+load("GOF_Deg_1950.RData")
+#load("2015_GOF_Deg_just_deg.RData")
 
 odeg.matrix <- li[[1]]
 ideg.matrix <- li[[2]]
@@ -189,5 +189,5 @@ plot(sim[,6], main="GWESP", col="grey45", xlab="Iterations", ylab="GWESP", cex.m
 abline(h=erg.est[6],lwd=2)
 
 
-title('Degeneracy Check 2015', outer=TRUE, cex.main=3)
+title('Degeneracy Check 1950', outer=TRUE, cex.main=3)
 
