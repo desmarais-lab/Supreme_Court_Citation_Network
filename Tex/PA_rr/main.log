@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.14)  14 AUG 2020 12:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.9)  17 AUG 2020 04:27
 entering extended mode
 **./main.tex
 (main.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-06-18> (cup-pan.cls
+L3 programming layer <2020-07-17> (cup-pan.cls
 Document Class: cup-pan 2019/05/22 Cambridge University Press, Political Analys
 is submission template v1.0
 ("C:\Program Files\MiKTeX\tex/latex/base\article.cls"
@@ -11,29 +11,29 @@ Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
 ("C:\Program Files\MiKTeX\tex/latex/base\size10.clo"
 File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count167
-\c@section=\count168
-\c@subsection=\count169
-\c@subsubsection=\count170
-\c@paragraph=\count171
-\c@subparagraph=\count172
-\c@figure=\count173
-\c@table=\count174
+\c@part=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
 )
 ("C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty"
-Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count175
+Package: etoolbox 2020/07/15 v2.5i e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count176
 )
 ("C:\Program Files\MiKTeX\tex/latex/xpatch\xpatch.sty"
 ("C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty"
-Package: expl3 2020-06-18 L3 programming layer (loader) 
+Package: expl3 2020-07-17 L3 programming layer (loader) 
 
 ("C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count176
+\l__kernel_color_stack_int=\count177
 \l__pdf_internal_box=\box45
 ))
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
@@ -42,10 +42,10 @@ Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 Package: xparse 2020-05-15 L3 Experimental document command parser
 
 ("C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse-generic.tex"
-\l__xparse_current_arg_int=\count177
-\g__xparse_grabber_int=\count178
-\l__xparse_m_args_int=\count179
-\l__xparse_v_nesting_int=\count180
+\l__xparse_current_arg_int=\count178
+\g__xparse_grabber_int=\count179
+\l__xparse_m_args_int=\count180
+\l__xparse_v_nesting_int=\count181
 )))
 ("C:\Program Files\MiKTeX\tex/generic/iftex\ifxetex.sty"
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
@@ -86,7 +86,7 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \everycr=\toks16
 \minrowclearance=\skip51
 )
-\rownum=\count181
+\rownum=\count182
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -124,9 +124,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 ("C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty"
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count182
-\Gm@cntv=\count183
-\c@Gm@tempcnt=\count184
+\Gm@cnth=\count183
+\Gm@cntv=\count184
+\c@Gm@tempcnt=\count185
 \Gm@bindingoffset=\dimen139
 \Gm@wd@mp=\dimen140
 \Gm@odd@mp=\dimen141
@@ -144,7 +144,7 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 ("C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count185
+\c@r@tfl@t=\count186
 \rotFPtop=\skip52
 \rotFPbot=\skip53
 \rot@float@box=\box48
@@ -187,7 +187,7 @@ Package: abstract 2009/06/08 v1.2a configurable abstracts
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks21
 \footnotemargin=\dimen152
-\c@pp@next@reset=\count186
+\c@pp@next@reset=\count187
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -212,14 +212,14 @@ Package caption3 Info: TeX engine: e-TeX on input line 61.
 \caption@hangindent=\dimen159
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count187
-\c@continuedfloat=\count188
+\c@caption@flags=\count188
+\c@continuedfloat=\count189
 Package caption Info: rotating package is loaded.
 )
 ("C:\Program Files\MiKTeX\tex/latex/caption\subcaption.sty"
 Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
-\c@subfigure=\count189
-\c@subtable=\count190
+\c@subfigure=\count190
+\c@subtable=\count191
 )
 ("C:\Program Files\MiKTeX\tex/latex/enumitem\enumitem.sty"
 Package: enumitem 2019/06/20 v3.9 Customized lists
@@ -227,16 +227,16 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@outerparindent=\dimen160
 \enit@toks=\toks22
 \enit@inbox=\box50
-\enit@count@id=\count191
-\enitdp@description=\count192
+\enit@count@id=\count192
+\enitdp@description=\count193
 )
 ("C:\Program Files\MiKTeX\tex/latex/preprint\authblk.sty"
 Package: authblk 2001/02/27 1.3 (PWD)
 \affilsep=\skip71
 \@affilsep=\skip72
-\c@Maxaffil=\count193
-\c@authors=\count194
-\c@affil=\count195
+\c@Maxaffil=\count194
+\c@authors=\count195
+\c@affil=\count196
 )
 ("C:\Program Files\MiKTeX\tex/latex/base\textcomp.sty"
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
@@ -264,16 +264,16 @@ Grid set 16 x 16 = 38.39343pt x 49.68562pt
 TextBlockOrigin set to 0pt x 0pt
 ) ("C:\Program Files\MiKTeX\tex/latex/lineno\lineno.sty"
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count196
+\linenopenalty=\count197
 \output=\toks24
-\linenoprevgraf=\count197
+\linenoprevgraf=\count198
 \linenumbersep=\dimen169
 \linenumberwidth=\dimen170
-\c@linenumber=\count198
-\c@pagewiselinenumber=\count199
-\c@LN@truepage=\count266
-\c@internallinenumber=\count267
-\c@internallinenumbers=\count268
+\c@linenumber=\count199
+\c@pagewiselinenumber=\count266
+\c@LN@truepage=\count267
+\c@internallinenumber=\count268
+\c@internallinenumbers=\count269
 \quotelinenumbersep=\dimen171
 \bframerule=\dimen172
 \bframesep=\dimen173
@@ -300,13 +300,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ("C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count269
+\inf@bad=\count270
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count270
-\leftroot@=\count271
+\uproot@=\count271
+\leftroot@=\count272
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count272
-\DOTSCASE@=\count273
+\classnum@=\count273
+\DOTSCASE@=\count274
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
@@ -315,15 +315,15 @@ LaTeX Info: Redefining \cdots on input line 610.
 \big@size=\dimen176
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count274
-\c@MaxMatrixCols=\count275
+\macc@depth=\count275
+\c@MaxMatrixCols=\count276
 \dotsspace@=\muskip16
-\c@parentequation=\count276
-\dspbrk@lvl=\count277
+\c@parentequation=\count277
+\dspbrk@lvl=\count278
 \tag@help=\toks26
-\row@=\count278
-\column@=\count279
-\maxfields@=\count280
+\row@=\count279
+\column@=\count280
+\maxfields@=\count281
 \andhelp@=\toks27
 \eqnshift@=\dimen177
 \alignsep@=\dimen178
@@ -341,11 +341,11 @@ LaTeX Info: Redefining \] on input line 2860.
 ("C:\Program Files\MiKTeX\tex/latex/microtype\microtype.sty"
 Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
 \MT@toks=\toks30
-\MT@count=\count281
+\MT@count=\count282
 LaTeX Info: Redefining \textls on input line 790.
 \MT@outer@kern=\dimen183
 LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
-\MT@listname@count=\count282
+\MT@listname@count=\count283
 
 ("C:\Program Files\MiKTeX\tex/latex/microtype\microtype-pdftex.def"
 File: microtype-pdftex.def 2019/11/18 v2.7d Definitions specific to pdftex (RS)
@@ -378,7 +378,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks33
 \XKV@tempa@toks=\toks34
 )
-\XKV@depth=\count283
+\XKV@depth=\count284
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 ("C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty"
@@ -522,7 +522,7 @@ Package: newtxsf 2020/05/02 v1.052
 
 `newtxsf' v1.052, 2020/05/02 Math macros based on STIX sans serif and txfonts (
 msharpe) ("C:\Program Files\MiKTeX\tex/generic/binhex\binhex.tex")
-\tx@Isdigit=\count284
+\tx@Isdigit=\count285
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 47.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
 (Font)              `operators' in the math version `normal' on input line 47.
@@ -667,14 +667,14 @@ Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 ("C:\Program Files\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty"
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )))
-\c@section@level=\count285
+\c@section@level=\count286
 LaTeX Info: Redefining \ref on input line 356.
 LaTeX Info: Redefining \pageref on input line 356.
 )
 ("C:\Program Files\MiKTeX\tex/latex/xstring\xstring.sty"
 ("C:\Program Files\MiKTeX\tex/generic/xstring\xstring.tex"
-\integerpart=\count286
-\decimalpart=\count287
+\integerpart=\count287
+\decimalpart=\count288
 )
 Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 )
@@ -690,7 +690,7 @@ Package pdftexcmds Info: \pdfdraftmode found.
 )
 ("C:\Program Files\MiKTeX\tex/latex/logreq\logreq.sty"
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count288
+\lrq@indent=\count289
 
 ("C:\Program Files\MiKTeX\tex/latex/logreq\logreq.def"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -699,47 +699,47 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count289
-\c@listtotal=\count290
-\c@listcount=\count291
-\c@liststart=\count292
-\c@liststop=\count293
-\c@citecount=\count294
-\c@citetotal=\count295
-\c@multicitecount=\count296
-\c@multicitetotal=\count297
-\c@instcount=\count298
-\c@maxnames=\count299
-\c@minnames=\count300
-\c@maxitems=\count301
-\c@minitems=\count302
-\c@citecounter=\count303
-\c@maxcitecounter=\count304
-\c@savedcitecounter=\count305
-\c@uniquelist=\count306
-\c@uniquename=\count307
-\c@refsection=\count308
-\c@refsegment=\count309
-\c@maxextratitle=\count310
-\c@maxextratitleyear=\count311
-\c@maxextraname=\count312
-\c@maxextradate=\count313
-\c@maxextraalpha=\count314
-\c@abbrvpenalty=\count315
-\c@highnamepenalty=\count316
-\c@lownamepenalty=\count317
-\c@maxparens=\count318
-\c@parenlevel=\count319
-\blx@tempcnta=\count320
-\blx@tempcntb=\count321
-\blx@tempcntc=\count322
-\blx@maxsection=\count323
-\blx@maxsegment@0=\count324
-\blx@notetype=\count325
-\blx@parenlevel@text=\count326
-\blx@parenlevel@foot=\count327
-\blx@sectionciteorder@0=\count328
-\blx@entrysetcounter=\count329
+\c@tabx@nest=\count290
+\c@listtotal=\count291
+\c@listcount=\count292
+\c@liststart=\count293
+\c@liststop=\count294
+\c@citecount=\count295
+\c@citetotal=\count296
+\c@multicitecount=\count297
+\c@multicitetotal=\count298
+\c@instcount=\count299
+\c@maxnames=\count300
+\c@minnames=\count301
+\c@maxitems=\count302
+\c@minitems=\count303
+\c@citecounter=\count304
+\c@maxcitecounter=\count305
+\c@savedcitecounter=\count306
+\c@uniquelist=\count307
+\c@uniquename=\count308
+\c@refsection=\count309
+\c@refsegment=\count310
+\c@maxextratitle=\count311
+\c@maxextratitleyear=\count312
+\c@maxextraname=\count313
+\c@maxextradate=\count314
+\c@maxextraalpha=\count315
+\c@abbrvpenalty=\count316
+\c@highnamepenalty=\count317
+\c@lownamepenalty=\count318
+\c@maxparens=\count319
+\c@parenlevel=\count320
+\blx@tempcnta=\count321
+\blx@tempcntb=\count322
+\blx@tempcntc=\count323
+\blx@maxsection=\count324
+\blx@maxsegment@0=\count325
+\blx@notetype=\count326
+\blx@parenlevel@text=\count327
+\blx@parenlevel@foot=\count328
+\blx@sectionciteorder@0=\count329
+\blx@entrysetcounter=\count330
 \labelnumberwidth=\skip77
 \labelalphawidth=\skip78
 \biblabelsep=\skip79
@@ -751,9 +751,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@bcfin=\read2
 \blx@bcfout=\write3
 \blx@langwohyphens=\language79
-\c@mincomprange=\count330
-\c@maxcomprange=\count331
-\c@mincompwidth=\count332
+\c@mincomprange=\count331
+\c@maxcomprange=\count332
+\c@mincompwidth=\count333
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -764,74 +764,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'chicago-authordate.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count333
-\c@savedafterword=\count334
-\c@annotator=\count335
-\c@savedannotator=\count336
-\c@author=\count337
-\c@savedauthor=\count338
-\c@bookauthor=\count339
-\c@savedbookauthor=\count340
-\c@commentator=\count341
-\c@savedcommentator=\count342
-\c@editor=\count343
-\c@savededitor=\count344
-\c@editora=\count345
-\c@savededitora=\count346
-\c@editorb=\count347
-\c@savededitorb=\count348
-\c@editorc=\count349
-\c@savededitorc=\count350
-\c@foreword=\count351
-\c@savedforeword=\count352
-\c@holder=\count353
-\c@savedholder=\count354
-\c@introduction=\count355
-\c@savedintroduction=\count356
-\c@namea=\count357
-\c@savednamea=\count358
-\c@nameb=\count359
-\c@savednameb=\count360
-\c@namec=\count361
-\c@savednamec=\count362
-\c@translator=\count363
-\c@savedtranslator=\count364
-\c@shortauthor=\count365
-\c@savedshortauthor=\count366
-\c@shorteditor=\count367
-\c@savedshorteditor=\count368
-\c@labelname=\count369
-\c@savedlabelname=\count370
-\c@institution=\count371
-\c@savedinstitution=\count372
-\c@lista=\count373
-\c@savedlista=\count374
-\c@listb=\count375
-\c@savedlistb=\count376
-\c@listc=\count377
-\c@savedlistc=\count378
-\c@listd=\count379
-\c@savedlistd=\count380
-\c@liste=\count381
-\c@savedliste=\count382
-\c@listf=\count383
-\c@savedlistf=\count384
-\c@location=\count385
-\c@savedlocation=\count386
-\c@organization=\count387
-\c@savedorganization=\count388
-\c@origlocation=\count389
-\c@savedoriglocation=\count390
-\c@origpublisher=\count391
-\c@savedorigpublisher=\count392
-\c@publisher=\count393
-\c@savedpublisher=\count394
-\c@language=\count395
-\c@savedlanguage=\count396
-\c@origlanguage=\count397
-\c@savedoriglanguage=\count398
-\c@pageref=\count399
-\c@savedpageref=\count400
+\c@afterword=\count334
+\c@savedafterword=\count335
+\c@annotator=\count336
+\c@savedannotator=\count337
+\c@author=\count338
+\c@savedauthor=\count339
+\c@bookauthor=\count340
+\c@savedbookauthor=\count341
+\c@commentator=\count342
+\c@savedcommentator=\count343
+\c@editor=\count344
+\c@savededitor=\count345
+\c@editora=\count346
+\c@savededitora=\count347
+\c@editorb=\count348
+\c@savededitorb=\count349
+\c@editorc=\count350
+\c@savededitorc=\count351
+\c@foreword=\count352
+\c@savedforeword=\count353
+\c@holder=\count354
+\c@savedholder=\count355
+\c@introduction=\count356
+\c@savedintroduction=\count357
+\c@namea=\count358
+\c@savednamea=\count359
+\c@nameb=\count360
+\c@savednameb=\count361
+\c@namec=\count362
+\c@savednamec=\count363
+\c@translator=\count364
+\c@savedtranslator=\count365
+\c@shortauthor=\count366
+\c@savedshortauthor=\count367
+\c@shorteditor=\count368
+\c@savedshorteditor=\count369
+\c@labelname=\count370
+\c@savedlabelname=\count371
+\c@institution=\count372
+\c@savedinstitution=\count373
+\c@lista=\count374
+\c@savedlista=\count375
+\c@listb=\count376
+\c@savedlistb=\count377
+\c@listc=\count378
+\c@savedlistc=\count379
+\c@listd=\count380
+\c@savedlistd=\count381
+\c@liste=\count382
+\c@savedliste=\count383
+\c@listf=\count384
+\c@savedlistf=\count385
+\c@location=\count386
+\c@savedlocation=\count387
+\c@organization=\count388
+\c@savedorganization=\count389
+\c@origlocation=\count390
+\c@savedoriglocation=\count391
+\c@origpublisher=\count392
+\c@savedorigpublisher=\count393
+\c@publisher=\count394
+\c@savedpublisher=\count395
+\c@language=\count396
+\c@savedlanguage=\count397
+\c@origlanguage=\count398
+\c@savedoriglanguage=\count399
+\c@pageref=\count400
+\c@savedpageref=\count401
 \shorthandwidth=\skip85
 \shortjournalwidth=\skip86
 \shortserieswidth=\skip87
@@ -857,19 +857,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 ("C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.def"
 File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-\c@textcitecount=\count401
-\c@textcitetotal=\count402
-\c@textcitemaxnames=\count403
-\c@biburlbigbreakpenalty=\count404
-\c@biburlbreakpenalty=\count405
-\c@biburlnumpenalty=\count406
-\c@biburlucpenalty=\count407
-\c@biburllcpenalty=\count408
+\c@textcitecount=\count402
+\c@textcitetotal=\count403
+\c@textcitemaxnames=\count404
+\c@biburlbigbreakpenalty=\count405
+\c@biburlbreakpenalty=\count406
+\c@biburlnumpenalty=\count407
+\c@biburlucpenalty=\count408
+\c@biburllcpenalty=\count409
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count409
+\c@smartand=\count410
 )
 Package biblatex Info: Trying to load natbib compatibility...
 Package biblatex Info: ... file 'blx-natbib.def' found.
@@ -886,10 +886,10 @@ Package biblatex Info: ... file 'chicago-authordate.bbx' found.
 ("C:\Program Files\MiKTeX\tex/latex/biblatex-chicago\chicago-authordate.bbx"
 File: chicago-authordate.bbx 2020/04/20 v 3.14 biblatex bibliography style
 \lositemsep=\skip99
-\cms@tempcnta=\count410
-\cms@tempcntb=\count411
-\c@bbx:relatedcount=\count412
-\c@bbx:relatedtotal=\count413
+\cms@tempcnta=\count411
+\cms@tempcntb=\count412
+\c@bbx:relatedcount=\count413
+\c@bbx:relatedtotal=\count414
 )
 Package biblatex Info: Trying to load citation style 'chicago-authordate'...
 Package biblatex Info: ... file 'chicago-authordate.cbx' found.
@@ -941,8 +941,8 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen184
-\Hy@linkcounter=\count414
-\Hy@pagecounter=\count415
+\Hy@linkcounter=\count415
+\Hy@pagecounter=\count416
 
 ("C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def"
 File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
@@ -955,7 +955,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ("C:\Program Files\MiKTeX\tex/generic/etexcmds\etexcmds.sty"
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count416
+\Hy@SavedSpaceFactor=\count417
 Package hyperref Info: Hyper figures OFF on input line 4464.
 Package hyperref Info: Link nesting OFF on input line 4469.
 Package hyperref Info: Hyper index ON on input line 4472.
@@ -963,7 +963,7 @@ Package hyperref Info: Plain pages OFF on input line 4479.
 Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count417
+\c@Hy@tempcnt=\count418
 LaTeX Info: Redefining \url on input line 5076.
 \XeTeXLinkMargin=\dimen185
 
@@ -974,7 +974,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count418
+\Fld@menulength=\count419
 \Field@Width=\dimen186
 \Fld@charsize=\dimen187
 Package hyperref Info: Hyper figures OFF on input line 6347.
@@ -990,9 +990,9 @@ LaTeX Info: Redefining \pageref on input line 6421.
 ("C:\Program Files\MiKTeX\tex/generic/atbegshi\atbegshi.sty"
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count419
-\c@Item=\count420
-\c@Hfootnote=\count421
+\Hy@abspage=\count420
+\c@Item=\count421
+\c@Hfootnote=\count422
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -1002,8 +1002,8 @@ File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
 ("C:\Program Files\MiKTeX\tex/latex/atveryend\atveryend.sty"
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
-\Fld@listcount=\count422
-\c@bookmark@seq@number=\count423
+\Fld@listcount=\count423
+\c@bookmark@seq@number=\count424
 
 ("C:\Program Files\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty"
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -1024,24 +1024,24 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 ("C:\Program Files\MiKTeX\tex/latex/tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count424
-\c@Blindtext=\count425
-\c@blind@countparstart=\count426
-\blind@countxx=\count427
-\blindtext@numBlindtext=\count428
-\blind@countyy=\count429
-\c@blindlist=\count430
-\c@blindlistlevel=\count431
-\c@blindlist@level=\count432
-\blind@listitem=\count433
-\c@blind@listcount=\count434
-\c@blind@levelcount=\count435
-\blind@mathformula=\count436
-\blind@Mathformula=\count437
-\c@blind@randomcount=\count438
-\c@blind@randommax=\count439
-\c@blind@pangramcount=\count440
-\c@blind@pangrammax=\count441
+\c@blindtext=\count425
+\c@Blindtext=\count426
+\c@blind@countparstart=\count427
+\blind@countxx=\count428
+\blindtext@numBlindtext=\count429
+\blind@countyy=\count430
+\c@blindlist=\count431
+\c@blindlistlevel=\count432
+\c@blindlist@level=\count433
+\blind@listitem=\count434
+\c@blind@listcount=\count435
+\c@blind@levelcount=\count436
+\blind@mathformula=\count437
+\blind@Mathformula=\count438
+\c@blind@randomcount=\count439
+\c@blind@randommax=\count440
+\c@blind@pangramcount=\count441
+\c@blind@pangrammax=\count442
 )
 ("C:\Program Files\MiKTeX\tex/latex/tools\bm.sty"
 Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
@@ -1123,8 +1123,8 @@ ne 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  T1/cmtt/b/n --> OT1/lmtt/m/n on input line 38.
 )
-\@quotelevel=\count442
-\@quotereset=\count443
+\@quotelevel=\count443
+\@quotereset=\count444
  (main.aux)
 \openout1 = `main.aux'.
 
@@ -1178,16 +1178,16 @@ LaTeX Font Info:    ... okay on input line 30.
 
 ("C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count444
+\scratchcounter=\count445
 \scratchdimen=\dimen188
 \scratchbox=\box56
-\nofMPsegments=\count445
-\nofMParguments=\count446
+\nofMPsegments=\count446
+\nofMParguments=\count447
 \everyMPshowfont=\toks35
-\MPscratchCnt=\count447
+\MPscratchCnt=\count448
 \MPscratchDim=\dimen189
-\MPnumerator=\count448
-\makeMPintoPDFobject=\count449
+\MPnumerator=\count449
+\makeMPintoPDFobject=\count450
 \everyMPtoPDFconversion=\toks36
 ) ("C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1454,7 +1454,7 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
 (Font)              `T1/SourceSansPro-TLF/regular/it' on input line 45.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
 (Font)              scaled to size 10.0pt on input line 45.
- [1{C:/Users/Geiler Typ/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+ [1{C:/Users/TC/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 ]
 Missing character: There is no ¹ in font lmsy10!
@@ -1646,11 +1646,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23358 strings out of 480790
- 408935 string characters out of 2907038
- 1434747 words of memory out of 3000000
- 38841 multiletter control sequences out of 15000+200000
- 861181 words of font info for 177 fonts, out of 3000000 for 9000
+ 23359 strings out of 481225
+ 408918 string characters out of 2915938
+ 1437905 words of memory out of 3000000
+ 38407 multiletter control sequences out of 15000+200000
+ 863931 words of font info for 182 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,12n,72p,2150b,3855s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/sourcesanspro/a_4jropk.enc}{C:/Progr
@@ -1671,9 +1671,9 @@ rogram Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/f
 onts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/l
 msy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/newtxsf/zsfmi-bol.pfb><C:/
 Program Files/MiKTeX/fonts/type1/public/newtxsf/zsfmia-reg.pfb>
-Output written on main.pdf (18 pages, 2102345 bytes).
+Output written on main.pdf (18 pages, 2029199 bytes).
 PDF statistics:
- 477 PDF objects out of 1000 (max. 8388607)
+ 469 PDF objects out of 1000 (max. 8388607)
  85 named destinations out of 1000 (max. 500000)
  24725 words of extra memory for PDF output out of 24883 (max. 10000000)
 
