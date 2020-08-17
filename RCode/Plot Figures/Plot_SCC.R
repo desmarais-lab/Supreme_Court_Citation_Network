@@ -233,7 +233,7 @@ p1<- ggplot(data = data, aes(x = Year, y = Theta,  group=1)) +ggtitle('Edges')+
   scale_color_manual(values=c('21'=mkrzywinski[1], '24'=mkrzywinski[8], '22'=mkrzywinski[7], '23'='black'))
 
 p1<-p1+theme_minimal() + theme(legend.position='none', axis.text=element_text(size=10),axis.title=element_text(size=14),
-                               plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0), "cm"))
+                               plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0.1), "cm"))
 p1
 
 
@@ -260,7 +260,7 @@ p2<- ggplot(data = data, aes(x = Year, y = Theta,  group=1)) +ggtitle('Reciproci
   scale_color_manual(values=c('21'=mkrzywinski[1], '24'=mkrzywinski[8], '22'=mkrzywinski[7], '23'='black'))
 
 p2<-p2+theme_minimal() + theme(legend.position='none', axis.text=element_text(size=10),axis.title=element_text(size=14),
-                               plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0), "cm"))
+                               plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0.1), "cm"))
 p2
 
 
@@ -282,7 +282,7 @@ p3<- ggplot(data = data, aes(x = Year, y = Theta,  group=1)) +ggtitle('Receiver 
   scale_color_manual(values=c('21'=mkrzywinski[1], '24'=mkrzywinski[8], '22'=mkrzywinski[7], '23'='black'))
 
 p3<-p3+theme_minimal() + theme(legend.position='none', axis.text=element_text(size=10),axis.title=element_text(size=14),
-                               plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0), "cm"))
+                               plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0.1), "cm"))
 p3
 
 data<- data.frame(Year, coM[4,], P[4,])
@@ -301,7 +301,7 @@ p4<- ggplot(data = data, aes(x = Year, y = Theta,  group=1)) +ggtitle('Different
   scale_color_manual(values=c('21'=mkrzywinski[1], '24'=mkrzywinski[8], '22'=mkrzywinski[7], '23'='black'))
 
 p4<-p4+theme_minimal() + theme(legend.position='none', axis.text=element_text(size=10),axis.title=element_text(size=14),
-                               plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0), "cm"))
+                               plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0.1), "cm"))
 p4
 
 
@@ -321,7 +321,7 @@ p5<- ggplot(data = data, aes(x = Year, y = Theta,  group=1)) +ggtitle('GWIdegree
   scale_color_manual(values=c('21'=mkrzywinski[1], '24'=mkrzywinski[8], '22'=mkrzywinski[7], '23'='black'))
 
 p5<-p5+theme_minimal() + theme(legend.position='none', axis.text=element_text(size=10),axis.title=element_text(size=14),
-                               plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0), "cm"))
+                               plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0.1), "cm"))
 p5
 
 
@@ -342,7 +342,7 @@ p6<- ggplot(data = data, aes(x = Year, y = Theta,  group=1)) +ggtitle('GWESP')+
   scale_color_manual(values=c('21'=mkrzywinski[1], '24'=mkrzywinski[8], '22'=mkrzywinski[7], '23'='black'))
 
 p6<-p6+theme_minimal() + theme(legend.position='none', axis.text=element_text(size=10),axis.title=element_text(size=14),
-                               plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0), "cm"))
+                               plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0.1), "cm"))
 p6
 
 
@@ -362,7 +362,7 @@ p7<- ggplot(data = data, aes(x = Year, y = Theta,  group=1)) +ggtitle('Ideologic
   scale_color_manual(values=c('21'=mkrzywinski[1], '24'=mkrzywinski[8], '22'=mkrzywinski[7], '23'='black'))
 
 p7<-p7+theme_minimal() + theme(legend.position='none', axis.text=element_text(size=10),axis.title=element_text(size=14),
-                               plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0), "cm"))
+                               plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0.1), "cm"))
 p7
 
 
@@ -382,7 +382,7 @@ p8<- ggplot(data = data, aes(x = Year, y = Theta,  group=1)) +ggtitle('Year Diff
   scale_color_manual(values=c('21'=mkrzywinski[1], '24'=mkrzywinski[8], '22'=mkrzywinski[7], '23'='black'))
 
 p8<-p8+theme_minimal() + theme(legend.position='none', axis.text=element_text(size=10),axis.title=element_text(size=14),
-                               plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0), "cm"))
+                               plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0.1), "cm"))
 p8
 
 
@@ -402,7 +402,7 @@ p9<- ggplot(data = data, aes(x = Year, y = Theta,  group=1)) +ggtitle('Year Diff
   scale_color_manual(values=c('21'=mkrzywinski[1], '24'=mkrzywinski[8], '22'=mkrzywinski[7], '23'='black'))
 
 p9<-p9+theme_minimal() + theme(legend.position='none', axis.text=element_text(size=10),axis.title=element_text(size=14),
-                               plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0), "cm"))
+                               plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0.1), "cm"))
 p9
 
 
@@ -422,7 +422,7 @@ p10<- ggplot(data = data, aes(x = Year, y = Theta,  group=1)) +ggtitle('Ideologi
   scale_color_manual(values=c('21'=mkrzywinski[1], '24'=mkrzywinski[8], '22'=mkrzywinski[7], '23'='black'))
 
 p10<-p10+theme_minimal() + theme(legend.position='none', axis.text=element_text(size=10),axis.title=element_text(size=14),
-                               plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0), "cm"))
+                               plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0.1), "cm"))
 p10
 
 
@@ -443,7 +443,7 @@ p11<- ggplot(data = data, aes(x = Year, y = Theta,  group=1)) +ggtitle('Number o
   scale_color_manual(values=c('21'=mkrzywinski[1], '24'=mkrzywinski[8], '22'=mkrzywinski[7], '23'='black'))
 
 p11<-p11+theme_minimal() + theme(legend.position='none', axis.text=element_text(size=10),axis.title=element_text(size=14),
-                                 plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0), "cm"))
+                                 plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0.1), "cm"))
 p11
 
 # remove NA years
@@ -469,7 +469,7 @@ p12<- ggplot(data = data, aes(x = Year, y = Theta,  group=1)) +ggtitle('Overrule
   scale_color_manual(values=c('21'=mkrzywinski[1], '24'=mkrzywinski[8], '22'=mkrzywinski[7], '23'='black'))
 
 p12<-p12+theme_minimal() + theme(legend.position='none', axis.text=element_text(size=10),axis.title=element_text(size=14),
-                                 plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0), "cm"))
+                                 plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0.1), "cm"))
 p12
 
 Year<- 1950:2015
@@ -491,7 +491,7 @@ p13<- ggplot(data = data, aes(x = Year, y = Theta,  group=1)) +ggtitle('Same Opi
   scale_color_manual(values=c('21'=mkrzywinski[1], '24'=mkrzywinski[8], '22'=mkrzywinski[7], '23'='black'))
 
 p13<-p13+theme_minimal() + theme(legend.position='none', axis.text=element_text(size=10),axis.title=element_text(size=14),
-                                 plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0), "cm"))
+                                 plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0.1), "cm"))
 p13
 
 data<- data.frame(Year, coM[14,], P[14,])
@@ -510,7 +510,7 @@ p14<- ggplot(data = data, aes(x = Year, y = Theta,  group=1)) +ggtitle('Same Iss
   scale_color_manual(values=c('21'=mkrzywinski[1], '24'=mkrzywinski[8], '22'=mkrzywinski[7], '23'='black'))
 
 p14<-p14+theme_minimal() + theme(legend.position='none', axis.text=element_text(size=10),axis.title=element_text(size=14),
-                                 plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0), "cm"))
+                                 plot.title=element_text(size=16, face='bold'), plot.margin = unit(c(0.1,0,0.1,0.1), "cm"))
 p14
 
 
