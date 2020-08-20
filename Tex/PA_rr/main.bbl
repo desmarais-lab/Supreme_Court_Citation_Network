@@ -130,6 +130,37 @@
       \field{pages}{509\bibrangedash 512}
       \range{pages}{4}
     \endentry
+    \entry{basiak2006roberts}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4aa67b55594e882247c8fe0e9cfc3656}{%
+           family={Basiak\bibnamedelima Jr},
+           familyi={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={John\bibnamedelima F},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {HeinOnline}%
+      }
+      \strng{namehash}{4aa67b55594e882247c8fe0e9cfc3656}
+      \strng{fullhash}{4aa67b55594e882247c8fe0e9cfc3656}
+      \strng{bibnamehash}{4aa67b55594e882247c8fe0e9cfc3656}
+      \strng{authorbibnamehash}{4aa67b55594e882247c8fe0e9cfc3656}
+      \strng{authornamehash}{4aa67b55594e882247c8fe0e9cfc3656}
+      \strng{authorfullhash}{4aa67b55594e882247c8fe0e9cfc3656}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Whittier L. Rev.}
+      \field{title}{The Roberts Court and the Future of Substantive Due Process: The Demise of Split-the-Difference Jurisprudence}
+      \field{volume}{28}
+      \field{year}{2006}
+      \field{pages}{861}
+      \range{pages}{1}
+    \endentry
     \entry{benjamin2012standing}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=21f7c089fe40a42c1f1b86668939edb3}{%
@@ -451,6 +482,76 @@
       \field{year}{2010}
       \field{pages}{177\bibrangedash 202}
       \range{pages}{26}
+    \endentry
+    \entry{cross2005decisional}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f5ca6ef9d08e01a25e5c469904feafb9}{%
+           family={Cross},
+           familyi={C\bibinitperiod},
+           given={Frank\bibnamedelima B},
+           giveni={F\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95fe742f79eb4a9eeae2e00e5c089f7b}{%
+           family={Lindquist},
+           familyi={L\bibinitperiod},
+           given={Stefanie},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {HeinOnline}%
+      }
+      \strng{namehash}{773c3898b244405bbaf5b6a49ca7b67f}
+      \strng{fullhash}{773c3898b244405bbaf5b6a49ca7b67f}
+      \strng{bibnamehash}{773c3898b244405bbaf5b6a49ca7b67f}
+      \strng{authorbibnamehash}{773c3898b244405bbaf5b6a49ca7b67f}
+      \strng{authornamehash}{773c3898b244405bbaf5b6a49ca7b67f}
+      \strng{authorfullhash}{773c3898b244405bbaf5b6a49ca7b67f}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{U. Pa. L. Rev.}
+      \field{title}{The Decisional Significance of the Chief Justice}
+      \field{volume}{154}
+      \field{year}{2005}
+      \field{pages}{1665}
+      \range{pages}{1}
+    \endentry
+    \entry{danelski2016chief}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=276df55d8dd0fee1b00af1b4090026cc}{%
+           family={Danelski},
+           familyi={D\bibinitperiod},
+           given={David\bibnamedelima J},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc8baa5913f23564fa9c5c77572de84f}{%
+           family={Ward},
+           familyi={W\bibinitperiod},
+           given={Artemus},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {University of Michigan Press}%
+      }
+      \strng{namehash}{583cfcf8f587b1710503c31ffcb90b0e}
+      \strng{fullhash}{583cfcf8f587b1710503c31ffcb90b0e}
+      \strng{bibnamehash}{583cfcf8f587b1710503c31ffcb90b0e}
+      \strng{authorbibnamehash}{583cfcf8f587b1710503c31ffcb90b0e}
+      \strng{authornamehash}{583cfcf8f587b1710503c31ffcb90b0e}
+      \strng{authorfullhash}{583cfcf8f587b1710503c31ffcb90b0e}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Chief Justice: Appointment and Influence}
+      \field{year}{2016}
     \endentry
     \entry{duque2018recognizing}{article}{}
       \name{author}{1}{}{%
@@ -1306,6 +1407,37 @@
       \field{pages}{547\bibrangedash 564}
       \range{pages}{18}
     \endentry
+    \entry{pomerance2018center}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3fb03e3a2d26a832a0eba0fe39c230a7}{%
+           family={Pomerance},
+           familyi={P\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {HeinOnline}%
+      }
+      \strng{namehash}{3fb03e3a2d26a832a0eba0fe39c230a7}
+      \strng{fullhash}{3fb03e3a2d26a832a0eba0fe39c230a7}
+      \strng{bibnamehash}{3fb03e3a2d26a832a0eba0fe39c230a7}
+      \strng{authorbibnamehash}{3fb03e3a2d26a832a0eba0fe39c230a7}
+      \strng{authornamehash}{3fb03e3a2d26a832a0eba0fe39c230a7}
+      \strng{authorfullhash}{3fb03e3a2d26a832a0eba0fe39c230a7}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Alb. L. Rev.}
+      \field{title}{Center of Order: Chief Justice John Roberts and the Coming Struggle for a Respected Supreme Court}
+      \field{volume}{82}
+      \field{year}{2018}
+      \field{pages}{449}
+      \range{pages}{1}
+    \endentry
     \entry{richards2002jurisprudential}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=bd6e8f47becc0bfcc7d599920ff33025}{%
@@ -1525,6 +1657,37 @@
       \field{pages}{268}
       \range{pages}{1}
     \endentry
+    \entry{sunstein2008trimming}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7db9319b9972b60d9670001d1e4afa7d}{%
+           family={Sunstein},
+           familyi={S\bibinitperiod},
+           given={Cass\bibnamedelima R},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {HeinOnline}%
+      }
+      \strng{namehash}{7db9319b9972b60d9670001d1e4afa7d}
+      \strng{fullhash}{7db9319b9972b60d9670001d1e4afa7d}
+      \strng{bibnamehash}{7db9319b9972b60d9670001d1e4afa7d}
+      \strng{authorbibnamehash}{7db9319b9972b60d9670001d1e4afa7d}
+      \strng{authornamehash}{7db9319b9972b60d9670001d1e4afa7d}
+      \strng{authorfullhash}{7db9319b9972b60d9670001d1e4afa7d}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Harv. L. Rev.}
+      \field{title}{Trimming}
+      \field{volume}{122}
+      \field{year}{2008}
+      \field{pages}{1049}
+      \range{pages}{1}
+    \endentry
     \entry{senate2016constitution}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=8d631fe2282b18ccc523f78ba8248d57}{%
@@ -1548,6 +1711,37 @@
       \field{labeltitlesource}{title}
       \field{title}{Constitution of the United State of America: Analysis, and Interpretation -- Centennial Edition}
       \field{year}{2016}
+    \endentry
+    \entry{wilkinson2005rehnquist}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2b33ce8ed952d3f8daa5084e04efc2ec}{%
+           family={Wilkinson\bibnamedelima III},
+           familyi={W\bibinitperiod\bibinitdelim I\bibinitperiod},
+           given={J\bibnamedelima Harvie},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {HeinOnline}%
+      }
+      \strng{namehash}{2b33ce8ed952d3f8daa5084e04efc2ec}
+      \strng{fullhash}{2b33ce8ed952d3f8daa5084e04efc2ec}
+      \strng{bibnamehash}{2b33ce8ed952d3f8daa5084e04efc2ec}
+      \strng{authorbibnamehash}{2b33ce8ed952d3f8daa5084e04efc2ec}
+      \strng{authornamehash}{2b33ce8ed952d3f8daa5084e04efc2ec}
+      \strng{authorfullhash}{2b33ce8ed952d3f8daa5084e04efc2ec}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Stan. L. Rev.}
+      \field{title}{The Rehnquist Court at Twilight: The Lures and Perils of Split-the-Difference Jurisprudence}
+      \field{volume}{58}
+      \field{year}{2005}
+      \field{pages}{1969}
+      \range{pages}{1}
     \endentry
   \enddatalist
 \endrefsection

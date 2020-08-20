@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.9)  18 AUG 2020 06:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.9)  20 AUG 2020 08:47
 entering extended mode
 **./main.tex
 (main.tex
@@ -1465,12 +1465,12 @@ com-plex sys-tem of re-la-tions. The for-ma-tion (or lack thereof)
  []
 
 [2]
-<citations_trans.pdf, id=112, 722.7pt x 722.7pt>
+<citations_trans.pdf, id=120, 722.7pt x 722.7pt>
 File: citations_trans.pdf Graphic file (type pdf)
 <use citations_trans.pdf>
 Package pdftex.def Info: citations_trans.pdf  used on input line 71.
 (pdftex.def)             Requested size: 196.65192pt x 206.29483pt.
-<citations_recip.pdf, id=114, 722.7pt x 722.7pt>
+<citations_recip.pdf, id=122, 722.7pt x 722.7pt>
 File: citations_recip.pdf Graphic file (type pdf)
 <use citations_recip.pdf>
 Package pdftex.def Info: citations_recip.pdf  used on input line 72.
@@ -1487,13 +1487,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--102
  []
 
 [4]
-<citations_pop.pdf, id=160, 722.7pt x 722.7pt>
+<citations_pop.pdf, id=168, 722.7pt x 722.7pt>
 File: citations_pop.pdf Graphic file (type pdf)
 <use citations_pop.pdf>
 Package pdftex.def Info: citations_pop.pdf  used on input line 112.
 (pdftex.def)             Requested size: 321.06198pt x 252.4582pt.
  [5]
-<daggish.pdf, id=175, 433.62pt x 361.35pt>
+<daggish.pdf, id=183, 433.62pt x 361.35pt>
 File: daggish.pdf Graphic file (type pdf)
 <use daggish.pdf>
 Package pdftex.def Info: daggish.pdf  used on input line 132.
@@ -1560,17 +1560,17 @@ de the Supreme Court Database (SCDB) ([]Spaeth \T1/SourceSansPro-TLF/regular/it
 /10 et al. [][]\T1/SourceSansPro-TLF/regular/n/10 2014[][]),
  []
 
-<degree_distribution.pdf, id=229, 844.15375pt x 597.23125pt>
+<degree_distribution.pdf, id=237, 844.15375pt x 597.23125pt>
 File: degree_distribution.pdf Graphic file (type pdf)
 <use degree_distribution.pdf>
 Package pdftex.def Info: degree_distribution.pdf  used on input line 177.
 (pdftex.def)             Requested size: 147.00455pt x 103.99759pt.
-<data_mat.png, id=230, 453.19313pt x 453.19313pt>
+<data_mat.png, id=238, 453.19313pt x 453.19313pt>
 File: data_mat.png Graphic file (type png)
 <use data_mat.png>
 Package pdftex.def Info: data_mat.png  used on input line 178.
 (pdftex.def)             Requested size: 118.79135pt x 118.78864pt.
-<courts_layer.png, id=231, 1024.57782pt x 962.09438pt>
+<courts_layer.png, id=239, 1024.57782pt x 962.09438pt>
 File: courts_layer.png Graphic file (type png)
 <use courts_layer.png>
 Package pdftex.def Info: courts_layer.png  used on input line 181.
@@ -1599,57 +1599,57 @@ Missing character: There is no º in font lmsy10!
 Missing character: There is no ¹ in font lmsy10!
 Missing character: There is no º in font lmsy10!
  [11]
-<SCC_AIC_BIC.pdf, id=299, 844.15375pt x 597.23125pt>
+<SCC_AIC_BIC.pdf, id=307, 844.15375pt x 597.23125pt>
 File: SCC_AIC_BIC.pdf Graphic file (type pdf)
 <use SCC_AIC_BIC.pdf>
 Package pdftex.def Info: SCC_AIC_BIC.pdf  used on input line 290.
 (pdftex.def)             Requested size: 284.52756pt x 201.30623pt.
- [12 <./SCC_AIC_BIC.pdf>]
-<SCC_results_1.pdf, id=332, 597.23125pt x 844.15375pt>
+ [12 <./SCC_AIC_BIC.pdf>] [13]
+<SCC_results_1.pdf, id=354, 597.23125pt x 844.15375pt>
 File: SCC_results_1.pdf Graphic file (type pdf)
 <use SCC_results_1.pdf>
-Package pdftex.def Info: SCC_results_1.pdf  used on input line 317.
+Package pdftex.def Info: SCC_results_1.pdf  used on input line 325.
 (pdftex.def)             Requested size: 398.33858pt x 563.0297pt.
-<SCC_results_2.pdf, id=333, 597.23125pt x 844.15375pt>
+<SCC_results_2.pdf, id=355, 597.23125pt x 844.15375pt>
 File: SCC_results_2.pdf Graphic file (type pdf)
 <use SCC_results_2.pdf>
-Package pdftex.def Info: SCC_results_2.pdf  used on input line 325.
+Package pdftex.def Info: SCC_results_2.pdf  used on input line 333.
 (pdftex.def)             Requested size: 398.33858pt x 563.0297pt.
 
-Overfull \hbox (2.30453pt too wide) in paragraph at lines 337--338
+Overfull \hbox (2.30453pt too wide) in paragraph at lines 345--346
 \T1/SourceSansPro-TLF/regular/n/10 We present a method-ol-ogy for study-ing ci-
 ta-tions be-tween US Supreme Court opin-ions at the dyadic
  []
 
-[13] [14 <./SCC_results_1.pdf>] [15 <./SCC_results_2.pdf>] [16]
-Overfull \hbox (92.24252pt too wide) in paragraph at lines 341--341
+[14] [15 <./SCC_results_1.pdf>] [16 <./SCC_results_2.pdf>] [17]
+Overfull \hbox (92.24252pt too wide) in paragraph at lines 349--349
 [][]\T1/SourceSansPro-TLF/regular/n/9 Handcock, M. S. 2003. \T1/SourceSansPro-T
 LF/regular/it/9 As-sess-ing de-gen-er-acy in sta-tis-ti-cal mod-els of so-cial 
 net-works: https://www.csss.washington.edu/Papers/wp39.pdf. 
  []
 
-[17]
+[18]
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/sc' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/sc' on input line 340.
+(Font)              `T1/SourceSansPro-TLF/regular/sc' on input line 348.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/sc' will be
-(Font)              scaled to size 9.0pt on input line 340.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 341.
- [18]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 341.
+(Font)              scaled to size 9.0pt on input line 348.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 349.
+ [19]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 349.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 341.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 341.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 349.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 349.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 562876C4346A39C91FB2A7E56737C09B;650.
+(rerunfilecheck)             Checksum: A66A8BC1579E3B0E01F8FE368234B921;797.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23359 strings out of 481225
- 408918 string characters out of 2915938
- 1439174 words of memory out of 3000000
- 38407 multiletter control sequences out of 15000+200000
+ 23395 strings out of 481225
+ 409927 string characters out of 2915938
+ 1438641 words of memory out of 3000000
+ 38434 multiletter control sequences out of 15000+200000
  863931 words of font info for 182 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,12n,72p,2150b,3855s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1671,9 +1671,9 @@ rogram Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/f
 onts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/l
 msy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/newtxsf/zsfmi-bol.pfb><C:/
 Program Files/MiKTeX/fonts/type1/public/newtxsf/zsfmia-reg.pfb>
-Output written on main.pdf (18 pages, 2030442 bytes).
+Output written on main.pdf (19 pages, 2038299 bytes).
 PDF statistics:
- 469 PDF objects out of 1000 (max. 8388607)
- 85 named destinations out of 1000 (max. 500000)
- 24725 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 496 PDF objects out of 1000 (max. 8388607)
+ 94 named destinations out of 1000 (max. 500000)
+ 24741 words of extra memory for PDF output out of 24883 (max. 10000000)
 
