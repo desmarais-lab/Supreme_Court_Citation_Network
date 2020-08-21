@@ -103,3 +103,13 @@ roberts<- sum(scc1$Roberts==1) # 871
 roberts/10 #87.1
 
 
+# Some additional exploration
+cid <- which(scc1$usCite == '542 U.S. 507') # Getting row/col for specific case (this one is Hamdi v Rumsfeld)
+mqs <- mq.matrix[which(adjacency.matrix[cid,] == 1), cid] # Getting all the ideological distances to the cited opinions
+range(mqs)
+
+# Change first argument to subset data (currently rehnquist court); change function to get statistic of interest (currently range)
+mqdist <- sapply(which(scc1$Rehnquist == 1), function(x){range(mq.matrix[which(adjacency.matrix[x,] == 1), x])})
+plot(density(mqdist, na.rm = T)) # Plotting
+abline(v = range(mqs))
+
