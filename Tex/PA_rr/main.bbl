@@ -413,6 +413,38 @@
       \field{pages}{871\bibrangedash 890}
       \range{pages}{20}
     \endentry
+    \entry{collins2008amici}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e35af695ef771300fe8608dfe23b1736}{%
+           family={Collins\bibnamedelima Jr},
+           familyi={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Paul\bibnamedelima M},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{e35af695ef771300fe8608dfe23b1736}
+      \strng{fullhash}{e35af695ef771300fe8608dfe23b1736}
+      \strng{bibnamehash}{e35af695ef771300fe8608dfe23b1736}
+      \strng{authorbibnamehash}{e35af695ef771300fe8608dfe23b1736}
+      \strng{authornamehash}{e35af695ef771300fe8608dfe23b1736}
+      \strng{authorfullhash}{e35af695ef771300fe8608dfe23b1736}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Empirical Legal Studies}
+      \field{number}{1}
+      \field{title}{Amici curiae and dissensus on the US Supreme Court}
+      \field{volume}{5}
+      \field{year}{2008}
+      \field{pages}{143\bibrangedash 170}
+      \range{pages}{28}
+    \endentry
     \entry{cranmer2016critique}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=1943020c76fa441fb7abf5d166b25e10}{%
@@ -1107,6 +1139,50 @@
       \verb{doi}
       \verb 10.21105/joss.00036
       \endverb
+    \endentry
+    \entry{lindquist2007splitting}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b4c8081c535ec66732b34a88520dc5f7}{%
+           family={Lindquist},
+           familyi={L\bibinitperiod},
+           given={Stefanie\bibnamedelima A},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e1d4d25c04c73a5779851b0ceea981f}{%
+           family={Martinek},
+           familyi={M\bibinitperiod},
+           given={Wendy\bibnamedelima L},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=374c2646a00591292dc23f021e4a50c8}{%
+           family={Hettinger},
+           familyi={H\bibinitperiod},
+           given={Virginia\bibnamedelima A},
+           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{e08f39f639e1961629fc7be0cb301c75}
+      \strng{fullhash}{e08f39f639e1961629fc7be0cb301c75}
+      \strng{bibnamehash}{e08f39f639e1961629fc7be0cb301c75}
+      \strng{authorbibnamehash}{e08f39f639e1961629fc7be0cb301c75}
+      \strng{authornamehash}{e08f39f639e1961629fc7be0cb301c75}
+      \strng{authorfullhash}{e08f39f639e1961629fc7be0cb301c75}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Law \& Society Review}
+      \field{number}{2}
+      \field{title}{Splitting the difference: Modeling appellate court decisions with mixed outcomes}
+      \field{volume}{41}
+      \field{year}{2007}
+      \field{pages}{429\bibrangedash 456}
+      \range{pages}{28}
     \endentry
     \entry{CourtListener}{article}{}
       \name{author}{2}{}{%

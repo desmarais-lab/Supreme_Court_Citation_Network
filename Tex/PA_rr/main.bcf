@@ -4505,13 +4505,17 @@
     <bcf:citekey order="51">fowler2008authority</bcf:citekey>
     <bcf:citekey order="52">hunter2008goodness</bcf:citekey>
     <bcf:citekey order="53">mukherjee2020degeneracy</bcf:citekey>
-    <bcf:citekey order="54">cross2005decisional</bcf:citekey>
-    <bcf:citekey order="54">danelski2016chief</bcf:citekey>
+    <bcf:citekey order="54">collins2008amici</bcf:citekey>
+    <bcf:citekey order="54">lindquist2007splitting</bcf:citekey>
     <bcf:citekey order="55">wilkinson2005rehnquist</bcf:citekey>
-    <bcf:citekey order="55">basiak2006roberts</bcf:citekey>
-    <bcf:citekey order="56">pomerance2018center</bcf:citekey>
-    <bcf:citekey order="56">sunstein2008trimming</bcf:citekey>
-    <bcf:citekey order="57">wilkinson2005rehnquist</bcf:citekey>
+    <bcf:citekey order="56">spriggs2001explaining</bcf:citekey>
+    <bcf:citekey order="57">cross2005decisional</bcf:citekey>
+    <bcf:citekey order="57">danelski2016chief</bcf:citekey>
+    <bcf:citekey order="58">wilkinson2005rehnquist</bcf:citekey>
+    <bcf:citekey order="58">basiak2006roberts</bcf:citekey>
+    <bcf:citekey order="59">pomerance2018center</bcf:citekey>
+    <bcf:citekey order="59">sunstein2008trimming</bcf:citekey>
+    <bcf:citekey order="60">wilkinson2005rehnquist</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="cms">
