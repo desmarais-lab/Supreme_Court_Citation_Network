@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.9)  25 AUG 2020 03:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.9)  28 AUG 2020 06:42
 entering extended mode
 **./main.tex
 (main.tex
@@ -1066,115 +1066,286 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
 (Font)              scaled to size 10.0pt on input line 112.
 )
-("C:\Program Files\MiKTeX\tex/latex/lm\lmodern.sty"
-Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
-LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 22.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  T1/SourceSansPro-TLF/m/n --> OT1/lmr/m/n on input line 
-22.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/ntxsfmi/m/it --> OML/lmm/m/it on input line 23.
-LaTeX Font Info:    Encoding `LMS' has changed to `OMS' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 24.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  LMS/ntxsy/m/n --> OMS/lmsy/m/n on input line 24.
-LaTeX Font Info:    Encoding `LMX' has changed to `OMX' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 2
-5.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  LMX/ntxexx/m/n --> OMX/lmex/m/n on input line 25.
-LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 26.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  T1/SourceSansPro-TLF/b/n --> OT1/lmr/bx/n on input line
- 26.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/ntxsfmi/b/it --> OML/lmm/b/it on input line 27.
-LaTeX Font Info:    Encoding `LMS' has changed to `OMS' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 28.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  LMS/ntxsy/b/n --> OMS/lmsy/b/n on input line 28.
-LaTeX Font Info:    Encoding `LMX' has changed to `OMX' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 29.
+("C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  LMX/ntxexx/b/n --> OMX/lmex/m/n on input line 29.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  T1/SourceSansPro-TLF/b/n --> OT1/lmr/bx/n on input line
- 31.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  T1/SourceSansPro-TLF/m/n --> OT1/lmss/m/n on input line
- 32.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  T1/SourceSansPro-TLF/m/it --> OT1/lmr/m/it on input lin
-e 33.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  T1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/SourceSansPro-TLF/b/n --> OT1/lmr/bx/n on input line
- 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/SourceSansPro-TLF/b/n --> OT1/lmss/bx/n on input lin
-e 36.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/SourceSansPro-TLF/b/it --> OT1/lmr/bx/it on input li
-ne 37.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/b/n --> OT1/lmtt/m/n on input line 38.
+("C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup11
+\symAMSb=\mathgroup12
+LaTeX Font Info:    Redeclaring math delimiter \ulcorner on input line 74.
+LaTeX Font Info:    Redeclaring math delimiter \urcorner on input line 75.
+LaTeX Font Info:    Redeclaring math delimiter \llcorner on input line 76.
+LaTeX Font Info:    Redeclaring math delimiter \lrcorner on input line 77.
+LaTeX Font Info:    Redeclaring math symbol \square on input line 141.
+LaTeX Font Info:    Redeclaring math symbol \lozenge on input line 142.
+)
+LaTeX Font Info:    Redeclaring math symbol \boxdot on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \boxplus on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \boxtimes on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \blacksquare on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \centerdot on input line 49.
+LaTeX Font Info:    Redeclaring math symbol \blacklozenge on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \circlearrowright on input line 52.
+
+LaTeX Font Info:    Redeclaring math symbol \circlearrowleft on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \leftrightharpoons on input line 56
+.
+LaTeX Font Info:    Redeclaring math symbol \boxminus on input line 57.
+LaTeX Font Info:    Redeclaring math symbol \Vdash on input line 58.
+LaTeX Font Info:    Redeclaring math symbol \Vvdash on input line 59.
+LaTeX Font Info:    Redeclaring math symbol \vDash on input line 60.
+LaTeX Font Info:    Redeclaring math symbol \twoheadrightarrow on input line 61
+.
+LaTeX Font Info:    Redeclaring math symbol \twoheadleftarrow on input line 62.
+
+LaTeX Font Info:    Redeclaring math symbol \leftleftarrows on input line 63.
+LaTeX Font Info:    Redeclaring math symbol \rightrightarrows on input line 64.
+
+LaTeX Font Info:    Redeclaring math symbol \upuparrows on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \downdownarrows on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \upharpoonright on input line 67.
+LaTeX Font Info:    Redeclaring math symbol \downharpoonright on input line 69.
+
+LaTeX Font Info:    Redeclaring math symbol \upharpoonleft on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \downharpoonleft on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \rightarrowtail on input line 72.
+LaTeX Font Info:    Redeclaring math symbol \leftarrowtail on input line 73.
+LaTeX Font Info:    Redeclaring math symbol \leftrightarrows on input line 74.
+LaTeX Font Info:    Redeclaring math symbol \rightleftarrows on input line 75.
+LaTeX Font Info:    Redeclaring math symbol \Lsh on input line 76.
+LaTeX Font Info:    Redeclaring math symbol \Rsh on input line 77.
+LaTeX Font Info:    Redeclaring math symbol \leftrightsquigarrow on input line 
+79.
+LaTeX Font Info:    Redeclaring math symbol \looparrowleft on input line 80.
+LaTeX Font Info:    Redeclaring math symbol \looparrowright on input line 81.
+LaTeX Font Info:    Redeclaring math symbol \circeq on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \succsim on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \gtrsim on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \gtrapprox on input line 85.
+LaTeX Font Info:    Redeclaring math symbol \multimap on input line 86.
+LaTeX Font Info:    Redeclaring math symbol \therefore on input line 87.
+LaTeX Font Info:    Redeclaring math symbol \because on input line 88.
+LaTeX Font Info:    Redeclaring math symbol \doteqdot on input line 89.
+LaTeX Font Info:    Redeclaring math symbol \triangleq on input line 91.
+LaTeX Font Info:    Redeclaring math symbol \precsim on input line 92.
+LaTeX Font Info:    Redeclaring math symbol \lesssim on input line 93.
+LaTeX Font Info:    Redeclaring math symbol \lessapprox on input line 94.
+LaTeX Font Info:    Redeclaring math symbol \eqslantless on input line 95.
+LaTeX Font Info:    Redeclaring math symbol \eqslantgtr on input line 96.
+LaTeX Font Info:    Redeclaring math symbol \curlyeqprec on input line 97.
+LaTeX Font Info:    Redeclaring math symbol \curlyeqsucc on input line 98.
+LaTeX Font Info:    Redeclaring math symbol \preccurlyeq on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \leqq on input line 100.
+LaTeX Font Info:    Redeclaring math symbol \leqslant on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \lessgtr on input line 102.
+LaTeX Font Info:    Redeclaring math symbol \backprime on input line 103.
+LaTeX Font Info:    Redeclaring math symbol \risingdotseq on input line 104.
+LaTeX Font Info:    Redeclaring math symbol \fallingdotseq on input line 105.
+LaTeX Font Info:    Redeclaring math symbol \succcurlyeq on input line 106.
+LaTeX Font Info:    Redeclaring math symbol \geqq on input line 107.
+LaTeX Font Info:    Redeclaring math symbol \geqslant on input line 108.
+LaTeX Font Info:    Redeclaring math symbol \gtrless on input line 109.
+LaTeX Font Info:    Redeclaring math symbol \bigstar on input line 117.
+LaTeX Font Info:    Redeclaring math symbol \between on input line 118.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangledown on input line 11
+9.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleright on input line 1
+20.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleleft on input line 12
+1.
+LaTeX Font Info:    Redeclaring math symbol \vartriangle on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangle on input line 123.
+LaTeX Font Info:    Redeclaring math symbol \triangledown on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \eqcirc on input line 125.
+LaTeX Font Info:    Redeclaring math symbol \lesseqgtr on input line 126.
+LaTeX Font Info:    Redeclaring math symbol \gtreqless on input line 127.
+LaTeX Font Info:    Redeclaring math symbol \lesseqqgtr on input line 128.
+LaTeX Font Info:    Redeclaring math symbol \gtreqqless on input line 129.
+LaTeX Font Info:    Redeclaring math symbol \Rrightarrow on input line 130.
+LaTeX Font Info:    Redeclaring math symbol \Lleftarrow on input line 131.
+LaTeX Font Info:    Redeclaring math symbol \veebar on input line 132.
+LaTeX Font Info:    Redeclaring math symbol \barwedge on input line 133.
+LaTeX Font Info:    Redeclaring math symbol \doublebarwedge on input line 134.
+LaTeX Font Info:    Redeclaring math symbol \measuredangle on input line 137.
+LaTeX Font Info:    Redeclaring math symbol \sphericalangle on input line 138.
+LaTeX Font Info:    Redeclaring math symbol \varpropto on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \smallsmile on input line 140.
+LaTeX Font Info:    Redeclaring math symbol \smallfrown on input line 141.
+LaTeX Font Info:    Redeclaring math symbol \Subset on input line 142.
+LaTeX Font Info:    Redeclaring math symbol \Supset on input line 143.
+LaTeX Font Info:    Redeclaring math symbol \Cup on input line 144.
+LaTeX Font Info:    Redeclaring math symbol \Cap on input line 146.
+LaTeX Font Info:    Redeclaring math symbol \curlywedge on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \curlyvee on input line 149.
+LaTeX Font Info:    Redeclaring math symbol \leftthreetimes on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \rightthreetimes on input line 151.
+
+LaTeX Font Info:    Redeclaring math symbol \subseteqq on input line 152.
+LaTeX Font Info:    Redeclaring math symbol \supseteqq on input line 153.
+LaTeX Font Info:    Redeclaring math symbol \bumpeq on input line 154.
+LaTeX Font Info:    Redeclaring math symbol \Bumpeq on input line 155.
+LaTeX Font Info:    Redeclaring math symbol \lll on input line 156.
+LaTeX Font Info:    Redeclaring math symbol \ggg on input line 158.
+LaTeX Font Info:    Redeclaring math symbol \circledS on input line 160.
+LaTeX Font Info:    Redeclaring math symbol \pitchfork on input line 161.
+LaTeX Font Info:    Redeclaring math symbol \dotplus on input line 162.
+LaTeX Font Info:    Redeclaring math symbol \backsim on input line 163.
+LaTeX Font Info:    Redeclaring math symbol \backsimeq on input line 164.
+LaTeX Font Info:    Redeclaring math symbol \complement on input line 165.
+LaTeX Font Info:    Redeclaring math symbol \intercal on input line 166.
+LaTeX Font Info:    Redeclaring math symbol \circledcirc on input line 167.
+LaTeX Font Info:    Redeclaring math symbol \circledast on input line 168.
+LaTeX Font Info:    Redeclaring math symbol \circleddash on input line 169.
+LaTeX Font Info:    Redeclaring math symbol \lvertneqq on input line 171.
+LaTeX Font Info:    Redeclaring math symbol \gvertneqq on input line 172.
+LaTeX Font Info:    Redeclaring math symbol \nleq on input line 173.
+LaTeX Font Info:    Redeclaring math symbol \ngeq on input line 174.
+LaTeX Font Info:    Redeclaring math symbol \nless on input line 175.
+LaTeX Font Info:    Redeclaring math symbol \ngtr on input line 176.
+LaTeX Font Info:    Redeclaring math symbol \nprec on input line 177.
+LaTeX Font Info:    Redeclaring math symbol \nsucc on input line 178.
+LaTeX Font Info:    Redeclaring math symbol \lneqq on input line 179.
+LaTeX Font Info:    Redeclaring math symbol \gneqq on input line 180.
+LaTeX Font Info:    Redeclaring math symbol \nleqslant on input line 181.
+LaTeX Font Info:    Redeclaring math symbol \ngeqslant on input line 182.
+LaTeX Font Info:    Redeclaring math symbol \lneq on input line 183.
+LaTeX Font Info:    Redeclaring math symbol \gneq on input line 184.
+LaTeX Font Info:    Redeclaring math symbol \npreceq on input line 185.
+LaTeX Font Info:    Redeclaring math symbol \nsucceq on input line 186.
+LaTeX Font Info:    Redeclaring math symbol \precnsim on input line 187.
+LaTeX Font Info:    Redeclaring math symbol \succnsim on input line 188.
+LaTeX Font Info:    Redeclaring math symbol \lnsim on input line 189.
+LaTeX Font Info:    Redeclaring math symbol \gnsim on input line 190.
+LaTeX Font Info:    Redeclaring math symbol \nleqq on input line 191.
+LaTeX Font Info:    Redeclaring math symbol \ngeqq on input line 192.
+LaTeX Font Info:    Redeclaring math symbol \precneqq on input line 193.
+LaTeX Font Info:    Redeclaring math symbol \succneqq on input line 194.
+LaTeX Font Info:    Redeclaring math symbol \precnapprox on input line 195.
+LaTeX Font Info:    Redeclaring math symbol \succnapprox on input line 196.
+LaTeX Font Info:    Redeclaring math symbol \lnapprox on input line 197.
+LaTeX Font Info:    Redeclaring math symbol \gnapprox on input line 198.
+LaTeX Font Info:    Redeclaring math symbol \nsim on input line 199.
+LaTeX Font Info:    Redeclaring math symbol \ncong on input line 200.
+LaTeX Font Info:    Redeclaring math symbol \diagup on input line 201.
+LaTeX Font Info:    Redeclaring math symbol \diagdown on input line 202.
+LaTeX Font Info:    Redeclaring math symbol \varsubsetneq on input line 203.
+LaTeX Font Info:    Redeclaring math symbol \varsupsetneq on input line 204.
+LaTeX Font Info:    Redeclaring math symbol \nsubseteqq on input line 205.
+LaTeX Font Info:    Redeclaring math symbol \nsupseteqq on input line 206.
+LaTeX Font Info:    Redeclaring math symbol \subsetneqq on input line 207.
+LaTeX Font Info:    Redeclaring math symbol \supsetneqq on input line 208.
+LaTeX Font Info:    Redeclaring math symbol \varsubsetneqq on input line 209.
+LaTeX Font Info:    Redeclaring math symbol \varsupsetneqq on input line 210.
+LaTeX Font Info:    Redeclaring math symbol \subsetneq on input line 211.
+LaTeX Font Info:    Redeclaring math symbol \supsetneq on input line 212.
+LaTeX Font Info:    Redeclaring math symbol \nsubseteq on input line 213.
+LaTeX Font Info:    Redeclaring math symbol \nsupseteq on input line 214.
+LaTeX Font Info:    Redeclaring math symbol \nparallel on input line 215.
+LaTeX Font Info:    Redeclaring math symbol \nmid on input line 216.
+LaTeX Font Info:    Redeclaring math symbol \nshortmid on input line 217.
+LaTeX Font Info:    Redeclaring math symbol \nshortparallel on input line 218.
+LaTeX Font Info:    Redeclaring math symbol \nvdash on input line 219.
+LaTeX Font Info:    Redeclaring math symbol \nVdash on input line 220.
+LaTeX Font Info:    Redeclaring math symbol \nvDash on input line 221.
+LaTeX Font Info:    Redeclaring math symbol \nVDash on input line 222.
+LaTeX Font Info:    Redeclaring math symbol \ntrianglerighteq on input line 223
+.
+LaTeX Font Info:    Redeclaring math symbol \ntrianglelefteq on input line 224.
+
+LaTeX Font Info:    Redeclaring math symbol \ntriangleleft on input line 225.
+LaTeX Font Info:    Redeclaring math symbol \ntriangleright on input line 226.
+LaTeX Font Info:    Redeclaring math symbol \nleftarrow on input line 227.
+LaTeX Font Info:    Redeclaring math symbol \nrightarrow on input line 228.
+LaTeX Font Info:    Redeclaring math symbol \nLeftarrow on input line 229.
+LaTeX Font Info:    Redeclaring math symbol \nRightarrow on input line 230.
+LaTeX Font Info:    Redeclaring math symbol \nLeftrightarrow on input line 231.
+
+LaTeX Font Info:    Redeclaring math symbol \nleftrightarrow on input line 232.
+
+LaTeX Font Info:    Redeclaring math symbol \divideontimes on input line 233.
+LaTeX Font Info:    Redeclaring math symbol \varnothing on input line 234.
+LaTeX Font Info:    Redeclaring math symbol \nexists on input line 235.
+LaTeX Font Info:    Redeclaring math symbol \Finv on input line 236.
+LaTeX Font Info:    Redeclaring math symbol \Game on input line 237.
+LaTeX Font Info:    Redeclaring math symbol \eth on input line 240.
+LaTeX Font Info:    Redeclaring math symbol \eqsim on input line 241.
+LaTeX Font Info:    Redeclaring math symbol \beth on input line 242.
+LaTeX Font Info:    Redeclaring math symbol \gimel on input line 243.
+LaTeX Font Info:    Redeclaring math symbol \daleth on input line 244.
+LaTeX Font Info:    Redeclaring math symbol \lessdot on input line 245.
+LaTeX Font Info:    Redeclaring math symbol \gtrdot on input line 246.
+LaTeX Font Info:    Redeclaring math symbol \ltimes on input line 247.
+LaTeX Font Info:    Redeclaring math symbol \rtimes on input line 248.
+LaTeX Font Info:    Redeclaring math symbol \shortmid on input line 249.
+LaTeX Font Info:    Redeclaring math symbol \shortparallel on input line 250.
+LaTeX Font Info:    Redeclaring math symbol \smallsetminus on input line 251.
+LaTeX Font Info:    Redeclaring math symbol \thicksim on input line 252.
+LaTeX Font Info:    Redeclaring math symbol \thickapprox on input line 253.
+LaTeX Font Info:    Redeclaring math symbol \approxeq on input line 254.
+LaTeX Font Info:    Redeclaring math symbol \succapprox on input line 255.
+LaTeX Font Info:    Redeclaring math symbol \precapprox on input line 256.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowleft on input line 257.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowright on input line 258.
+
+LaTeX Font Info:    Redeclaring math symbol \digamma on input line 259.
+LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 260.
+LaTeX Font Info:    Redeclaring math symbol \Bbbk on input line 261.
+LaTeX Font Info:    Redeclaring math symbol \hslash on input line 262.
+LaTeX Font Info:    Redeclaring math symbol \backepsilon on input line 265.
 )
 \@quotelevel=\count443
 \@quotereset=\count444
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxsfmi/m/it on input line 30.
+LaTeX Font Info:    Checking defaults for OML/ntxsfmi/m/it on input line 39.
 LaTeX Font Info:    Trying to load font information for OML+ntxsfmi on input li
-ne 30.
+ne 39.
 
 ("C:\Program Files\MiKTeX\tex/latex/newtxsf\omlntxsfmi.fd"
 File: omlntxsfmi.fd 2014/11/16 Fontinst v1.933 font definitions for OML/ntxsfmi
 .
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 39.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-30.
+39.
 
 ("C:\Program Files\MiKTeX\tex/latex/newtx\untxexa.fd"
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 39.
 LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 3
-0.
+9.
 
 ("C:\Program Files\MiKTeX\tex/latex/ly1\ly1ptm.fd"
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 39.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 30.
+ 39.
 
 ("C:\Program Files\MiKTeX\tex/latex/newtx\lmsntxsy.fd"
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 
 ("C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1232,14 +1403,14 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \microtypecontext on input line 30.
+LaTeX Info: Redefining \microtypecontext on input line 39.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 30.
+LaTeX Info: Redefining \showhyphens on input line 39.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1277,212 +1448,182 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 30.
-Package biblatex Info: Reference segment=0 on input line 30.
+Package biblatex Info: Reference section=0 on input line 39.
+Package biblatex Info: Reference segment=0 on input line 39.
 \AtBeginShipoutBox=\box57
-Package hyperref Info: Link coloring ON on input line 30.
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+Package hyperref Info: Link coloring ON on input line 39.
+LaTeX Info: Redefining \ref on input line 39.
+LaTeX Info: Redefining \pageref on input line 39.
+LaTeX Info: Redefining \nameref on input line 39.
 
 (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 33.
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 7.0pt on input line 33.
+(Font)              scaled to size 7.0pt on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 33.
+(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
-(Font)              scaled to size 7.0pt on input line 33.
+(Font)              scaled to size 7.0pt on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/it' on input line 33.
+(Font)              `T1/SourceSansPro-TLF/bold/it' on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/it' will be
-(Font)              scaled to size 7.0pt on input line 33.
+(Font)              scaled to size 7.0pt on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 33.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 7.0pt on input line 33.
+(Font)              scaled to size 7.0pt on input line 42.
 LaTeX Font Info:    Trying to load font information for TS1+SourceSansPro-TLF o
-n input line 33.
+n input line 42.
 
 ("C:\Program Files\MiKTeX\tex/latex/sourcesanspro\ts1sourcesanspro-tlf.fd"
 File: TS1SourceSansPro-TLF.fd 2020/01/19 (autoinst) Font definitions for TS1/So
 urceSansPro-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `TS1/SourceSansPro-TLF/regular/n' on input line 33.
+(Font)              `TS1/SourceSansPro-TLF/regular/n' on input line 42.
 LaTeX Font Info:    Font shape `TS1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 7.0pt on input line 33.
+(Font)              scaled to size 7.0pt on input line 42.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `SourceSansPro-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 33.
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 17.28pt on input line 33.
+(Font)              scaled to size 17.28pt on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 33.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 17.28pt on input line 33.
+(Font)              scaled to size 17.28pt on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 33.
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 14.4pt on input line 33.
+(Font)              scaled to size 14.4pt on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 33.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 14.4pt on input line 33.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
-3.
-
-("C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd"
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-("C:\Program Files\MiKTeX\tex/latex/microtype\mt-cmr.cfg"
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
-(RS)
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
-3.
-
-("C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd"
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-33.
-
-("C:\Program Files\MiKTeX\tex/latex/lm\omslmsy.fd"
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-33.
-
-("C:\Program Files\MiKTeX\tex/latex/lm\omxlmex.fd"
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 33.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.5> on input line 33.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.9> on input line 33.
+(Font)              scaled to size 14.4pt on input line 42.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 42.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 10.5pt on input line 42.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 42.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 7.9pt on input line 42.
 LaTeX Font Info:    Trying to load font information for U+ntxsfmia on input lin
-e 33.
+e 42.
 
 ("C:\Program Files\MiKTeX\tex/latex/newtxsf\untxsfmia.fd"
 File: untxsfmia.fd 2014/11/16 Fontinst v1.933 font definitions for U/ntxsfmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-33.
+42.
 
 ("C:\Program Files\MiKTeX\tex/latex/newtx\untxsym.fd"
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 33.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 10.5pt on input line 33.
+(Font)              scaled to size 10.5pt on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 33.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 7.9pt on input line 33.
-Missing character: There is no ¹ in font lmsy10!
+(Font)              scaled to size 7.9pt on input line 42.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 42.
+
+
+("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+("C:\Program Files\MiKTeX\tex/latex/microtype\mt-msa.cfg"
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 42.
+
+
+("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+("C:\Program Files\MiKTeX\tex/latex/microtype\mt-msb.cfg"
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 33.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 9.0pt on input line 33.
+(Font)              scaled to size 9.0pt on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/it' on input line 33.
+(Font)              `T1/SourceSansPro-TLF/bold/it' on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/it' will be
-(Font)              scaled to size 9.0pt on input line 33.
+(Font)              scaled to size 9.0pt on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 33.
+(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
-(Font)              scaled to size 9.0pt on input line 33.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 33.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.3> on input line 33.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.5> on input line 33.
+(Font)              scaled to size 9.0pt on input line 42.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 42.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 9.0pt on input line 42.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 42.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 7.3pt on input line 42.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 42.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 5.5pt on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 33.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 7.3pt on input line 33.
+(Font)              scaled to size 7.3pt on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 33.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 5.5pt on input line 33.
-Missing character: There is no ¹ in font lmsy9!
+(Font)              scaled to size 5.5pt on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 33.
+(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
-(Font)              scaled to size 7.3pt on input line 33.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 33.
+(Font)              scaled to size 7.3pt on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 33.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 33.
-Missing character: There is no ¹ in font lmsy10!
+(Font)              scaled to size 10.0pt on input line 42.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 34.
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 43.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 12.0pt on input line 34.
+(Font)              scaled to size 12.0pt on input line 43.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 34.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 43.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 12.0pt on input line 34.
+(Font)              scaled to size 12.0pt on input line 43.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 34.
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 45.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 9.0pt on input line 34.
-Missing character: There is no ¹ in font lmsy9!
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 35.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 7.3pt on input line 35.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 36.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 36.
+(Font)              scaled to size 8.0pt on input line 45.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 45.
+(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 54.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
-(Font)              scaled to size 10.0pt on input line 45.
+(Font)              scaled to size 10.0pt on input line 54.
  [1{C:/Users/TC/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
-]
-Missing character: There is no ¹ in font lmsy10!
-
-Overfull \hbox (3.48888pt too wide) in paragraph at lines 58--59
-\T1/SourceSansPro-TLF/regular/n/10 opin-ion to an-other) is a com-po-nent of a 
-com-plex sys-tem of re-la-tions. The for-ma-tion (or lack thereof)
- []
-
-[2]
+] [2]
 <citations_trans.pdf, id=120, 722.7pt x 722.7pt>
 File: citations_trans.pdf Graphic file (type pdf)
 <use citations_trans.pdf>
-Package pdftex.def Info: citations_trans.pdf  used on input line 71.
+Package pdftex.def Info: citations_trans.pdf  used on input line 80.
 (pdftex.def)             Requested size: 196.65192pt x 206.29483pt.
 <citations_recip.pdf, id=122, 722.7pt x 722.7pt>
 File: citations_recip.pdf Graphic file (type pdf)
 <use citations_recip.pdf>
-Package pdftex.def Info: citations_recip.pdf  used on input line 72.
+Package pdftex.def Info: citations_recip.pdf  used on input line 81.
 (pdftex.def)             Requested size: 196.65192pt x 206.29483pt.
  [3 <./citations_trans.pdf> <./citations_recip.pdf>]
-Overfull \hbox (18.77261pt too wide) in paragraph at lines 81--82
-\T1/SourceSansPro-TLF/regular/n/10 by min-i-miz-ing it as prece-dent un-mis-tak
--ably re-quires, but by guar-an-tee-ing that in equipoise
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--102
+Underfull \hbox (badness 10000) in paragraph at lines 108--111
 
  []
 
@@ -1490,139 +1631,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--102
 <citations_pop.pdf, id=168, 722.7pt x 722.7pt>
 File: citations_pop.pdf Graphic file (type pdf)
 <use citations_pop.pdf>
-Package pdftex.def Info: citations_pop.pdf  used on input line 112.
+Package pdftex.def Info: citations_pop.pdf  used on input line 121.
 (pdftex.def)             Requested size: 321.06198pt x 252.4582pt.
  [5]
 <daggish.pdf, id=183, 433.62pt x 361.35pt>
 File: daggish.pdf Graphic file (type pdf)
 <use daggish.pdf>
-Package pdftex.def Info: daggish.pdf  used on input line 132.
+Package pdftex.def Info: daggish.pdf  used on input line 141.
 (pdftex.def)             Requested size: 341.1295pt x 284.28894pt.
-Missing character: There is no ¹ in font lmsy9!
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no º in font lmsy10!
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no º in font lmsy10!
-Missing character: There is no Í in font lmex10!
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no º in font lmsy10!
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no º in font lmsy10!
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no º in font lmsy10!
  [6 <./citations_pop.pdf>]
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no º in font lmsy10!
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no º in font lmsy10!
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no º in font lmsy10!
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no º in font lmsy10!
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 144.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 5.5pt on input line 144.
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no º in font lmsy10!
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no º in font lmsy10!
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no º in font lmsy10!
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no º in font lmsy10!
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no º in font lmsy10!
- [7 <./daggish.pdf>]
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 149.
+(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 158.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
-(Font)              scaled to size 8.0pt on input line 149.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 149.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.2> on input line 149.
+(Font)              scaled to size 8.0pt on input line 158.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 158.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 6.2pt on input line 158.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 149.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 158.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 8.0pt on input line 149.
+(Font)              scaled to size 8.0pt on input line 158.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 149.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 158.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 6.2pt on input line 149.
-Missing character: There is no ¹ in font lmsy8!
-Missing character: There is no ¹ in font lmsy10!
-
-Overfull \hbox (7.58179pt too wide) in paragraph at lines 149--150
-\T1/SourceSansPro-TLF/regular/n/10 Our three data sources for this study in-clu
-de the Supreme Court Database (SCDB) ([]Spaeth \T1/SourceSansPro-TLF/regular/it
-/10 et al. [][]\T1/SourceSansPro-TLF/regular/n/10 2014[][]),
+(Font)              scaled to size 6.2pt on input line 158.
+ [7 <./daggish.pdf>] [8]
+Overfull \hbox (5.14388pt too wide) in paragraph at lines 185--186
+[]\T1/SourceSansPro-TLF/regular/n/10 (-20) Estimation of the c-ERGM pa-ram-e-te
+rs, which is done with a computationally-intensive, simulation-
  []
 
-<degree_distribution.pdf, id=237, 844.15375pt x 597.23125pt>
+<degree_distribution.pdf, id=252, 844.15375pt x 597.23125pt>
 File: degree_distribution.pdf Graphic file (type pdf)
 <use degree_distribution.pdf>
-Package pdftex.def Info: degree_distribution.pdf  used on input line 177.
+Package pdftex.def Info: degree_distribution.pdf  used on input line 192.
 (pdftex.def)             Requested size: 147.00455pt x 103.99759pt.
-<data_mat.png, id=238, 453.19313pt x 453.19313pt>
+<data_mat.png, id=253, 453.19313pt x 453.19313pt>
 File: data_mat.png Graphic file (type png)
 <use data_mat.png>
-Package pdftex.def Info: data_mat.png  used on input line 178.
+Package pdftex.def Info: data_mat.png  used on input line 193.
 (pdftex.def)             Requested size: 118.79135pt x 118.78864pt.
-<courts_layer.png, id=239, 1024.57782pt x 962.09438pt>
+<courts_layer.png, id=254, 1024.57782pt x 962.09438pt>
 File: courts_layer.png Graphic file (type png)
 <use courts_layer.png>
-Package pdftex.def Info: courts_layer.png  used on input line 181.
+Package pdftex.def Info: courts_layer.png  used on input line 196.
 (pdftex.def)             Requested size: 252.83731pt x 237.41077pt.
-Missing character: There is no ¹ in font lmsy9!
-[8]
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no º in font lmsy10!
-Missing character: There is no Í in font lmex10!
- [9 <./degree_distribution.pdf> <./data_mat.png> <./courts_layer.png>]
-[10]
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no º in font lmsy10!
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no º in font lmsy10!
-Missing character: There is no Í in font lmex10!
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no º in font lmsy10!
-Missing character: There is no » in font lmsy10!
-Missing character: There is no ¼ in font lmsy10!
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no º in font lmsy10!
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no º in font lmsy10!
-Missing character: There is no ¹ in font lmsy10!
-Missing character: There is no º in font lmsy10!
- [11]
-<SCC_AIC_BIC.pdf, id=307, 844.15375pt x 597.23125pt>
+[9 <./degree_distribution.pdf> <./data_mat.png> <./courts_layer.png>] [10]
+[11]
+<SCC_AIC_BIC.pdf, id=310, 844.15375pt x 597.23125pt>
 File: SCC_AIC_BIC.pdf Graphic file (type pdf)
 <use SCC_AIC_BIC.pdf>
-Package pdftex.def Info: SCC_AIC_BIC.pdf  used on input line 290.
+Package pdftex.def Info: SCC_AIC_BIC.pdf  used on input line 305.
 (pdftex.def)             Requested size: 284.52756pt x 201.30623pt.
  [12 <./SCC_AIC_BIC.pdf>] [13] [14]
-<SCC_results_1.pdf, id=370, 597.23125pt x 844.15375pt>
+<SCC_results_1.pdf, id=374, 597.23125pt x 844.15375pt>
 File: SCC_results_1.pdf Graphic file (type pdf)
 <use SCC_results_1.pdf>
-Package pdftex.def Info: SCC_results_1.pdf  used on input line 327.
+Package pdftex.def Info: SCC_results_1.pdf  used on input line 342.
 (pdftex.def)             Requested size: 398.33858pt x 563.0297pt.
-<SCC_results_2.pdf, id=371, 597.23125pt x 844.15375pt>
+<SCC_results_2.pdf, id=375, 597.23125pt x 844.15375pt>
 File: SCC_results_2.pdf Graphic file (type pdf)
 <use SCC_results_2.pdf>
-Package pdftex.def Info: SCC_results_2.pdf  used on input line 335.
+Package pdftex.def Info: SCC_results_2.pdf  used on input line 350.
 (pdftex.def)             Requested size: 398.33858pt x 563.0297pt.
-
-Overfull \hbox (2.30453pt too wide) in paragraph at lines 347--348
-\T1/SourceSansPro-TLF/regular/n/10 We present a method-ol-ogy for study-ing ci-
-ta-tions be-tween US Supreme Court opin-ions at the dyadic
- []
-
-[15] [16 <./SCC_results_1.pdf>] [17 <./SCC_results_2.pdf>]
-Overfull \hbox (92.24252pt too wide) in paragraph at lines 351--351
+ [15] [16 <./SCC_results_1.pdf>]
+[17 <./SCC_results_2.pdf>]
+Overfull \hbox (92.24252pt too wide) in paragraph at lines 366--366
 [][]\T1/SourceSansPro-TLF/regular/n/9 Handcock, M. S. 2003. \T1/SourceSansPro-T
 LF/regular/it/9 As-sess-ing de-gen-er-acy in sta-tis-ti-cal mod-els of so-cial 
 net-works: https://www.csss.washington.edu/Papers/wp39.pdf. 
@@ -1630,15 +1705,16 @@ net-works: https://www.csss.washington.edu/Papers/wp39.pdf.
 
 [18]
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/sc' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/sc' on input line 350.
+(Font)              `T1/SourceSansPro-TLF/regular/sc' on input line 365.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/sc' will be
-(Font)              scaled to size 9.0pt on input line 350.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 351.
+(Font)              scaled to size 9.0pt on input line 365.
  [19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 351.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 366.
+ [20]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 366.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 351.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 351.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 366.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 366.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: A66A8BC1579E3B0E01F8FE368234B921;797.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1646,34 +1722,28 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23407 strings out of 481225
- 410257 string characters out of 2915938
- 1438805 words of memory out of 3000000
- 38444 multiletter control sequences out of 15000+200000
- 863931 words of font info for 182 fonts, out of 3000000 for 9000
+ 23462 strings out of 481225
+ 412902 string characters out of 2915938
+ 1439805 words of memory out of 3000000
+ 38380 multiletter control sequences out of 15000+200000
+ 892914 words of font info for 294 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,12n,72p,2150b,3855s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/sourcesanspro/a_4jropk.enc}{C:/Progr
-am Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX/fonts
-/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-math
-ex.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/
-MiKTeX/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc}{C:/Program Files/MiKTeX/font
-s/enc/dvips/sourcesanspro/a_5ponh6.enc}<C:/Program Files/MiKTeX/fonts/type1/ado
-be/sourcesanspro/SourceSansPro-Bold.pfb><C:/Program Files/MiKTeX/fonts/type1/ad
-obe/sourcesanspro/SourceSansPro-BoldIt.pfb><C:/Program Files/MiKTeX/fonts/type1
-/adobe/sourcesanspro/SourceSansPro-It.pfb><C:/Program Files/MiKTeX/fonts/type1/
-adobe/sourcesanspro/SourceSansPro-Regular.pfb><C:/Program Files/MiKTeX/fonts/ty
-pe1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi10.
-pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/
-MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
-lic/lm/lmmi9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/P
-rogram Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/f
-onts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/l
-msy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/newtxsf/zsfmi-bol.pfb><C:/
-Program Files/MiKTeX/fonts/type1/public/newtxsf/zsfmia-reg.pfb>
-Output written on main.pdf (19 pages, 2040300 bytes).
+am Files/MiKTeX/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc}{C:/Program Files/Mi
+KTeX/fonts/enc/dvips/sourcesanspro/a_5ponh6.enc}<C:/Program Files/MiKTeX/fonts/
+type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb><C:/Program Files/MiKTeX/fonts
+/type1/adobe/sourcesanspro/SourceSansPro-BoldIt.pfb><C:/Program Files/MiKTeX/fo
+nts/type1/adobe/sourcesanspro/SourceSansPro-It.pfb><C:/Program Files/MiKTeX/fon
+ts/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb><C:/Program Files/MiKTeX
+/fonts/type1/public/txfonts/rtxmi.pfb><C:/Program Files/MiKTeX/fonts/type1/publ
+ic/newtx/txexs.pfb><C:/Program Files/MiKTeX/fonts/type1/public/newtx/txsys.pfb>
+<C:/Program Files/MiKTeX/fonts/type1/public/newtxsf/zsfmi-bol.pfb><C:/Program F
+iles/MiKTeX/fonts/type1/public/newtxsf/zsfmi-reg.pfb><C:/Program Files/MiKTeX/f
+onts/type1/public/newtxsf/zsfmia-reg.pfb>
+Output written on main.pdf (20 pages, 2014941 bytes).
 PDF statistics:
- 502 PDF objects out of 1000 (max. 8388607)
- 96 named destinations out of 1000 (max. 500000)
- 24741 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 493 PDF objects out of 1000 (max. 8388607)
+ 101 named destinations out of 1000 (max. 500000)
+ 20645 words of extra memory for PDF output out of 20736 (max. 10000000)
 

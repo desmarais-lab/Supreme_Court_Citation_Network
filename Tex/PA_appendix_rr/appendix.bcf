@@ -4440,11 +4440,14 @@
     <bcf:citekey order="3">hummel2012improving</bcf:citekey>
     <bcf:citekey order="4">strauss1990pseudolikelihood</bcf:citekey>
     <bcf:citekey order="5">SchmidHunter2020</bcf:citekey>
-    <bcf:citekey order="6">shalizi2013consistency</bcf:citekey>
-    <bcf:citekey order="8">hummel2012improving</bcf:citekey>
+    <bcf:citekey order="6">hummel2012improving</bcf:citekey>
+    <bcf:citekey order="7">SchmidHunter2020</bcf:citekey>
+    <bcf:citekey order="8">SchmidHunter2020</bcf:citekey>
     <bcf:citekey order="9">SchmidHunter2020</bcf:citekey>
-    <bcf:citekey order="11">SchmidHunter2020</bcf:citekey>
-    <bcf:citekey order="13">Kirkpatrick83</bcf:citekey>
+    <bcf:citekey order="10">SchmidHunter2020</bcf:citekey>
+    <bcf:citekey order="11">Kirkpatrick83</bcf:citekey>
+    <bcf:citekey order="12">RCore</bcf:citekey>
+    <bcf:citekey order="13">hunter2008goodness</bcf:citekey>
     <bcf:citekey order="14">hunter2008goodness</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

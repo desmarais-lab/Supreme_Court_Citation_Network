@@ -1074,6 +1074,43 @@
       \field{pages}{565\bibrangedash 583}
       \range{pages}{19}
     \endentry
+    \entry{HunterDavidR..2008}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=93085a811066efd0cfb8924c0d2ba436}{%
+           family={{Hunter , David R.}},
+           familyi={H\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=1c27cfa50dbd42131d2335fa1310fb6d}{%
+           family={{Handcock , Mark S.}},
+           familyi={H\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=6643db6dfa78cabf76a34fde894fdd07}{%
+           family={{Butts , Carter T.}},
+           familyi={B\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=943c97abc48096bcea49b20360c89756}{%
+           family={{Goodreau , Steven M.}},
+           familyi={G\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=129292b03dbceb84ffb2158cd84fc974}{%
+           family={Morris},
+           familyi={M\bibinitperiod},
+           given={Martina},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2d9e49baca6cfec04bed44c09f6de506}
+      \strng{fullhash}{190bd8c90f932394ce481de73b2e50a2}
+      \strng{bibnamehash}{190bd8c90f932394ce481de73b2e50a2}
+      \strng{authorbibnamehash}{190bd8c90f932394ce481de73b2e50a2}
+      \strng{authornamehash}{2d9e49baca6cfec04bed44c09f6de506}
+      \strng{authorfullhash}{190bd8c90f932394ce481de73b2e50a2}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Statistical Software}
+      \field{title}{ergm: A Package to Fit, Simulate and Diagnose Exponential-Family Models for Networks}
+      \field{year}{2008}
+    \endentry
     \entry{knight1996norm}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=50b8950eed2c3c5901884b4ad2202ab6}{%
@@ -1514,6 +1551,39 @@
       \field{pages}{449}
       \range{pages}{1}
     \endentry
+    \entry{RCore}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dcdebb6b35bff7c0568bf8c50ef8626d}{%
+           family={{R Core Team}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Vienna, Austria}%
+      }
+      \list{organization}{1}{%
+        {R Foundation for Statistical Computing}%
+      }
+      \strng{namehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{fullhash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{bibnamehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{authorbibnamehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{authornamehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{authorfullhash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{R: A Language and Environment for Statistical Computing}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb http://www.R-project.org/
+      \endverb
+      \verb{url}
+      \verb http://www.R-project.org/
+      \endverb
+    \endentry
     \entry{richards2002jurisprudential}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=bd6e8f47becc0bfcc7d599920ff33025}{%
@@ -1551,6 +1621,44 @@
       \field{year}{2002}
       \field{pages}{305\bibrangedash 320}
       \range{pages}{16}
+    \endentry
+    \entry{shalizi2013consistency}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0ae11f627bd5628613d795a6799018a8}{%
+           family={Shalizi},
+           familyi={S\bibinitperiod},
+           given={Cosma\bibnamedelima Rohilla},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7512f80d6f525f9a779b62c4fe599e9d}{%
+           family={Rinaldo},
+           familyi={R\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {NIH Public Access}%
+      }
+      \strng{namehash}{e00e81c96e8a2d2d36a49877f2833556}
+      \strng{fullhash}{e00e81c96e8a2d2d36a49877f2833556}
+      \strng{bibnamehash}{e00e81c96e8a2d2d36a49877f2833556}
+      \strng{authorbibnamehash}{e00e81c96e8a2d2d36a49877f2833556}
+      \strng{authornamehash}{e00e81c96e8a2d2d36a49877f2833556}
+      \strng{authorfullhash}{e00e81c96e8a2d2d36a49877f2833556}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annals of statistics}
+      \field{number}{2}
+      \field{title}{Consistency under sampling of exponential random graph models}
+      \field{volume}{41}
+      \field{year}{2013}
+      \field{pages}{508}
+      \range{pages}{1}
     \endentry
     \entry{SnijdersTomA.B..2006}{article}{}
       \name{author}{4}{}{%

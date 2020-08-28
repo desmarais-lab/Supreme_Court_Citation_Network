@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.14)  25 AUG 2020 14:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.9)  28 AUG 2020 06:43
 entering extended mode
 **./PA_RnR_memo.tex
 (PA_RnR_memo.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-06-18> (texMemo.cls
+L3 programming layer <2020-07-17> (texMemo.cls
 Document Class: texMemo 2010/07/31 - Simple Memo Class, Including Logo
 ("C:\Program Files\MiKTeX\tex/latex/psnfss\palatino.sty"
 Package: palatino 2020/03/25 PSNFSS-v9.3 (SPQR) 
@@ -37,14 +37,14 @@ Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
 ("C:\Program Files\MiKTeX\tex/latex/base\size11.clo"
 File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count167
-\c@section=\count168
-\c@subsection=\count169
-\c@subsubsection=\count170
-\c@paragraph=\count171
-\c@subparagraph=\count172
-\c@figure=\count173
-\c@table=\count174
+\c@part=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen136
@@ -61,9 +61,9 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 ("C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty"
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count175
-\Gm@cntv=\count176
-\c@Gm@tempcnt=\count177
+\Gm@cnth=\count176
+\Gm@cntv=\count177
+\c@Gm@tempcnt=\count178
 \Gm@bindingoffset=\dimen137
 \Gm@wd@mp=\dimen138
 \Gm@odd@mp=\dimen139
@@ -76,18 +76,18 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 
 ("C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg")))
 ("C:\Program Files\MiKTeX\tex/generic/babel\babel.sty"
-Package: babel 2020/06/10 3.45 The Babel package
+Package: babel 2020/07/13 3.47 The Babel package
 
 ("C:\Program Files\MiKTeX\tex/generic/babel\babel.def"
-File: babel.def 2020/06/10 3.45 Babel common definitions
-\babel@savecnt=\count178
+File: babel.def 2020/07/13 3.47 Babel common definitions
+\babel@savecnt=\count179
 \U@D=\dimen145
 \l@babelnohyphens=\language79
 
 ("C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def")
 \bbl@readstream=\read2
 )
-\bbl@dirlevel=\count179
+\bbl@dirlevel=\count180
 
 *************************************
 * Local config file bblopts.cfg used
@@ -107,21 +107,21 @@ Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 ))
 ("C:\Program Files\MiKTeX\tex/latex/lipsum\lipsum.sty"
 ("C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty"
-Package: expl3 2020-06-18 L3 programming layer (loader) 
+Package: expl3 2020-07-17 L3 programming layer (loader) 
 
 ("C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count180
+\l__kernel_color_stack_int=\count181
 \l__pdf_internal_box=\box45
 ))
 ("C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse.sty"
 Package: xparse 2020-05-15 L3 Experimental document command parser
 
 ("C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse-generic.tex"
-\l__xparse_current_arg_int=\count181
-\g__xparse_grabber_int=\count182
-\l__xparse_m_args_int=\count183
-\l__xparse_v_nesting_int=\count184
+\l__xparse_current_arg_int=\count182
+\g__xparse_grabber_int=\count183
+\l__xparse_m_args_int=\count184
+\l__xparse_v_nesting_int=\count185
 ))
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 
@@ -154,8 +154,8 @@ Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
 ("C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty"
-Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count185
+Package: etoolbox 2020/07/15 v2.5i e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count186
 )
 ("C:\Program Files\MiKTeX\tex/latex/kvoptions\kvoptions.sty"
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
@@ -165,7 +165,7 @@ Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 ))
 ("C:\Program Files\MiKTeX\tex/latex/logreq\logreq.sty"
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count186
+\lrq@indent=\count187
 
 ("C:\Program Files\MiKTeX\tex/latex/logreq\logreq.def"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -174,47 +174,47 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count187
-\c@listtotal=\count188
-\c@listcount=\count189
-\c@liststart=\count190
-\c@liststop=\count191
-\c@citecount=\count192
-\c@citetotal=\count193
-\c@multicitecount=\count194
-\c@multicitetotal=\count195
-\c@instcount=\count196
-\c@maxnames=\count197
-\c@minnames=\count198
-\c@maxitems=\count199
-\c@minitems=\count266
-\c@citecounter=\count267
-\c@maxcitecounter=\count268
-\c@savedcitecounter=\count269
-\c@uniquelist=\count270
-\c@uniquename=\count271
-\c@refsection=\count272
-\c@refsegment=\count273
-\c@maxextratitle=\count274
-\c@maxextratitleyear=\count275
-\c@maxextraname=\count276
-\c@maxextradate=\count277
-\c@maxextraalpha=\count278
-\c@abbrvpenalty=\count279
-\c@highnamepenalty=\count280
-\c@lownamepenalty=\count281
-\c@maxparens=\count282
-\c@parenlevel=\count283
-\blx@tempcnta=\count284
-\blx@tempcntb=\count285
-\blx@tempcntc=\count286
-\blx@maxsection=\count287
-\blx@maxsegment@0=\count288
-\blx@notetype=\count289
-\blx@parenlevel@text=\count290
-\blx@parenlevel@foot=\count291
-\blx@sectionciteorder@0=\count292
-\blx@entrysetcounter=\count293
+\c@tabx@nest=\count188
+\c@listtotal=\count189
+\c@listcount=\count190
+\c@liststart=\count191
+\c@liststop=\count192
+\c@citecount=\count193
+\c@citetotal=\count194
+\c@multicitecount=\count195
+\c@multicitetotal=\count196
+\c@instcount=\count197
+\c@maxnames=\count198
+\c@minnames=\count199
+\c@maxitems=\count266
+\c@minitems=\count267
+\c@citecounter=\count268
+\c@maxcitecounter=\count269
+\c@savedcitecounter=\count270
+\c@uniquelist=\count271
+\c@uniquename=\count272
+\c@refsection=\count273
+\c@refsegment=\count274
+\c@maxextratitle=\count275
+\c@maxextratitleyear=\count276
+\c@maxextraname=\count277
+\c@maxextradate=\count278
+\c@maxextraalpha=\count279
+\c@abbrvpenalty=\count280
+\c@highnamepenalty=\count281
+\c@lownamepenalty=\count282
+\c@maxparens=\count283
+\c@parenlevel=\count284
+\blx@tempcnta=\count285
+\blx@tempcntb=\count286
+\blx@tempcntc=\count287
+\blx@maxsection=\count288
+\blx@maxsegment@0=\count289
+\blx@notetype=\count290
+\blx@parenlevel@text=\count291
+\blx@parenlevel@foot=\count292
+\blx@sectionciteorder@0=\count293
+\blx@entrysetcounter=\count294
 \labelnumberwidth=\skip49
 \labelalphawidth=\skip50
 \biblabelsep=\skip51
@@ -226,9 +226,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@bcfin=\read3
 \blx@bcfout=\write3
 \blx@langwohyphens=\language80
-\c@mincomprange=\count294
-\c@maxcomprange=\count295
-\c@mincompwidth=\count296
+\c@mincomprange=\count295
+\c@maxcomprange=\count296
+\c@mincompwidth=\count297
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -237,74 +237,74 @@ File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count297
-\c@savedafterword=\count298
-\c@annotator=\count299
-\c@savedannotator=\count300
-\c@author=\count301
-\c@savedauthor=\count302
-\c@bookauthor=\count303
-\c@savedbookauthor=\count304
-\c@commentator=\count305
-\c@savedcommentator=\count306
-\c@editor=\count307
-\c@savededitor=\count308
-\c@editora=\count309
-\c@savededitora=\count310
-\c@editorb=\count311
-\c@savededitorb=\count312
-\c@editorc=\count313
-\c@savededitorc=\count314
-\c@foreword=\count315
-\c@savedforeword=\count316
-\c@holder=\count317
-\c@savedholder=\count318
-\c@introduction=\count319
-\c@savedintroduction=\count320
-\c@namea=\count321
-\c@savednamea=\count322
-\c@nameb=\count323
-\c@savednameb=\count324
-\c@namec=\count325
-\c@savednamec=\count326
-\c@translator=\count327
-\c@savedtranslator=\count328
-\c@shortauthor=\count329
-\c@savedshortauthor=\count330
-\c@shorteditor=\count331
-\c@savedshorteditor=\count332
-\c@labelname=\count333
-\c@savedlabelname=\count334
-\c@institution=\count335
-\c@savedinstitution=\count336
-\c@lista=\count337
-\c@savedlista=\count338
-\c@listb=\count339
-\c@savedlistb=\count340
-\c@listc=\count341
-\c@savedlistc=\count342
-\c@listd=\count343
-\c@savedlistd=\count344
-\c@liste=\count345
-\c@savedliste=\count346
-\c@listf=\count347
-\c@savedlistf=\count348
-\c@location=\count349
-\c@savedlocation=\count350
-\c@organization=\count351
-\c@savedorganization=\count352
-\c@origlocation=\count353
-\c@savedoriglocation=\count354
-\c@origpublisher=\count355
-\c@savedorigpublisher=\count356
-\c@publisher=\count357
-\c@savedpublisher=\count358
-\c@language=\count359
-\c@savedlanguage=\count360
-\c@origlanguage=\count361
-\c@savedoriglanguage=\count362
-\c@pageref=\count363
-\c@savedpageref=\count364
+\c@afterword=\count298
+\c@savedafterword=\count299
+\c@annotator=\count300
+\c@savedannotator=\count301
+\c@author=\count302
+\c@savedauthor=\count303
+\c@bookauthor=\count304
+\c@savedbookauthor=\count305
+\c@commentator=\count306
+\c@savedcommentator=\count307
+\c@editor=\count308
+\c@savededitor=\count309
+\c@editora=\count310
+\c@savededitora=\count311
+\c@editorb=\count312
+\c@savededitorb=\count313
+\c@editorc=\count314
+\c@savededitorc=\count315
+\c@foreword=\count316
+\c@savedforeword=\count317
+\c@holder=\count318
+\c@savedholder=\count319
+\c@introduction=\count320
+\c@savedintroduction=\count321
+\c@namea=\count322
+\c@savednamea=\count323
+\c@nameb=\count324
+\c@savednameb=\count325
+\c@namec=\count326
+\c@savednamec=\count327
+\c@translator=\count328
+\c@savedtranslator=\count329
+\c@shortauthor=\count330
+\c@savedshortauthor=\count331
+\c@shorteditor=\count332
+\c@savedshorteditor=\count333
+\c@labelname=\count334
+\c@savedlabelname=\count335
+\c@institution=\count336
+\c@savedinstitution=\count337
+\c@lista=\count338
+\c@savedlista=\count339
+\c@listb=\count340
+\c@savedlistb=\count341
+\c@listc=\count342
+\c@savedlistc=\count343
+\c@listd=\count344
+\c@savedlistd=\count345
+\c@liste=\count346
+\c@savedliste=\count347
+\c@listf=\count348
+\c@savedlistf=\count349
+\c@location=\count350
+\c@savedlocation=\count351
+\c@organization=\count352
+\c@savedorganization=\count353
+\c@origlocation=\count354
+\c@savedoriglocation=\count355
+\c@origpublisher=\count356
+\c@savedorigpublisher=\count357
+\c@publisher=\count358
+\c@savedpublisher=\count359
+\c@language=\count360
+\c@savedlanguage=\count361
+\c@origlanguage=\count362
+\c@savedoriglanguage=\count363
+\c@pageref=\count364
+\c@savedpageref=\count365
 \shorthandwidth=\skip57
 \shortjournalwidth=\skip58
 \shortserieswidth=\skip59
@@ -340,19 +340,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  ("C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.def"
 File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-\c@textcitecount=\count365
-\c@textcitetotal=\count366
-\c@textcitemaxnames=\count367
-\c@biburlbigbreakpenalty=\count368
-\c@biburlbreakpenalty=\count369
-\c@biburlnumpenalty=\count370
-\c@biburlucpenalty=\count371
-\c@biburllcpenalty=\count372
+\c@textcitecount=\count366
+\c@textcitetotal=\count367
+\c@textcitemaxnames=\count368
+\c@biburlbigbreakpenalty=\count369
+\c@biburlbreakpenalty=\count370
+\c@biburlnumpenalty=\count371
+\c@biburlucpenalty=\count372
+\c@biburllcpenalty=\count373
 \biburlbigskip=\muskip17
 \biburlnumskip=\muskip18
 \biburlucskip=\muskip19
 \biburllcskip=\muskip20
-\c@smartand=\count373
+\c@smartand=\count374
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -364,8 +364,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 ("C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\standard.bbx"
 File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count374
-\c@bbx:relatedtotal=\count375
+\c@bbx:relatedcount=\count375
+\c@bbx:relatedtotal=\count376
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -394,8 +394,8 @@ File: biblatex.cfg
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count376
-\@quotereset=\count377
+\@quotelevel=\count377
+\@quotereset=\count378
 (PA_RnR_memo.aux)
 \openout1 = `PA_RnR_memo.aux'.
 
@@ -420,16 +420,16 @@ File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 ("C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count378
+\scratchcounter=\count379
 \scratchdimen=\dimen146
 \scratchbox=\box46
-\nofMPsegments=\count379
-\nofMParguments=\count380
+\nofMPsegments=\count380
+\nofMParguments=\count381
 \everyMPshowfont=\toks17
-\MPscratchCnt=\count381
+\MPscratchCnt=\count382
 \MPscratchDim=\dimen147
-\MPnumerator=\count382
-\makeMPintoPDFobject=\count383
+\MPnumerator=\count383
+\makeMPintoPDFobject=\count384
 \everyMPtoPDFconversion=\toks18
 ) ("C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -526,7 +526,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
 [1
 
-{C:/Users/Geiler Typ/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+{C:/Users/TC/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
@@ -627,18 +627,18 @@ Package logreq Info: Writing requests to 'PA_RnR_memo.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 10508 strings out of 480790
- 194441 string characters out of 2907038
- 751196 words of memory out of 3000000
- 26415 multiletter control sequences out of 15000+200000
- 537210 words of font info for 34 fonts, out of 3000000 for 9000
+ 10529 strings out of 481225
+ 194765 string characters out of 2915938
+ 753812 words of memory out of 3000000
+ 26001 multiletter control sequences out of 15000+200000
+ 539960 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,4n,45p,1712b,1601s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,4n,45p,1712b,1601s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX
 /fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/p
 alatino/uplr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pf
 b>
-Output written on PA_RnR_memo.pdf (4 pages, 73209 bytes).
+Output written on PA_RnR_memo.pdf (4 pages, 73434 bytes).
 PDF statistics:
  28 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

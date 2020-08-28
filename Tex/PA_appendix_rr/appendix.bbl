@@ -1,0 +1,370 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{hummel2012improving}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=566c7b66062d22273da1e444254a8e03}{%
+           family={Hummel},
+           familyi={H\bibinitperiod},
+           given={Ruth\bibnamedelima M},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b9441d8c82d7daf3f5c46522be09b12}{%
+           family={Hunter},
+           familyi={H\bibinitperiod},
+           given={David\bibnamedelima R},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=279407956525fc33169d45fb6000b0f3}{%
+           family={Handcock},
+           familyi={H\bibinitperiod},
+           given={Mark\bibnamedelima S},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{00db6e14dd9c1bc566c41f1dbdca6711}
+      \strng{fullhash}{00db6e14dd9c1bc566c41f1dbdca6711}
+      \strng{bibnamehash}{00db6e14dd9c1bc566c41f1dbdca6711}
+      \strng{authorbibnamehash}{00db6e14dd9c1bc566c41f1dbdca6711}
+      \strng{authornamehash}{00db6e14dd9c1bc566c41f1dbdca6711}
+      \strng{authorfullhash}{00db6e14dd9c1bc566c41f1dbdca6711}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational and Graphical Statistics}
+      \field{number}{4}
+      \field{title}{Improving simulation-based algorithms for fitting ERGMs}
+      \field{volume}{21}
+      \field{year}{2012}
+      \field{pages}{920\bibrangedash 939}
+      \range{pages}{20}
+    \endentry
+    \entry{hunter2008goodness}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=8b9441d8c82d7daf3f5c46522be09b12}{%
+           family={Hunter},
+           familyi={H\bibinitperiod},
+           given={David\bibnamedelima R},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e7389ce01e65cf4bb9c3ea43433bc1ea}{%
+           family={Goodreau},
+           familyi={G\bibinitperiod},
+           given={Steven\bibnamedelima M},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=279407956525fc33169d45fb6000b0f3}{%
+           family={Handcock},
+           familyi={H\bibinitperiod},
+           given={Mark\bibnamedelima S},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{5233b2a8127eac42e59b9a3915dd3b8d}
+      \strng{fullhash}{5233b2a8127eac42e59b9a3915dd3b8d}
+      \strng{bibnamehash}{5233b2a8127eac42e59b9a3915dd3b8d}
+      \strng{authorbibnamehash}{5233b2a8127eac42e59b9a3915dd3b8d}
+      \strng{authornamehash}{5233b2a8127eac42e59b9a3915dd3b8d}
+      \strng{authorfullhash}{5233b2a8127eac42e59b9a3915dd3b8d}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{481}
+      \field{title}{Goodness of fit of social network models}
+      \field{volume}{103}
+      \field{year}{2008}
+      \field{pages}{248\bibrangedash 258}
+      \range{pages}{11}
+    \endentry
+    \entry{hunter2006inference}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8b9441d8c82d7daf3f5c46522be09b12}{%
+           family={Hunter},
+           familyi={H\bibinitperiod},
+           given={David\bibnamedelima R},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=279407956525fc33169d45fb6000b0f3}{%
+           family={Handcock},
+           familyi={H\bibinitperiod},
+           given={Mark\bibnamedelima S},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{a4854c70133bea11387e6255fafd0c7e}
+      \strng{fullhash}{a4854c70133bea11387e6255fafd0c7e}
+      \strng{bibnamehash}{a4854c70133bea11387e6255fafd0c7e}
+      \strng{authorbibnamehash}{a4854c70133bea11387e6255fafd0c7e}
+      \strng{authornamehash}{a4854c70133bea11387e6255fafd0c7e}
+      \strng{authorfullhash}{a4854c70133bea11387e6255fafd0c7e}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational and Graphical Statistics}
+      \field{number}{3}
+      \field{title}{Inference in curved exponential family models for networks}
+      \field{volume}{15}
+      \field{year}{2006}
+      \field{pages}{565\bibrangedash 583}
+      \range{pages}{19}
+    \endentry
+    \entry{Kirkpatrick83}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=7872b231407c202bb66a9588eac3de57}{%
+           family={Kirkpatrick},
+           familyi={K\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e003731305cfe4ccfbfc1e00b8d98686}{%
+           family={Gelatt},
+           familyi={G\bibinitperiod},
+           given={C.\bibnamedelimi D.},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d96d611a1c8ced8032677fa2b5020b6}{%
+           family={Vecchi},
+           familyi={V\bibinitperiod},
+           given={M.\bibnamedelimi P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4e64604b17f2f25156bbf67444c2ae54}
+      \strng{fullhash}{4e64604b17f2f25156bbf67444c2ae54}
+      \strng{bibnamehash}{4e64604b17f2f25156bbf67444c2ae54}
+      \strng{authorbibnamehash}{4e64604b17f2f25156bbf67444c2ae54}
+      \strng{authornamehash}{4e64604b17f2f25156bbf67444c2ae54}
+      \strng{authorfullhash}{4e64604b17f2f25156bbf67444c2ae54}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0036-8075}
+      \field{journaltitle}{Science}
+      \field{number}{4598}
+      \field{title}{Optimization by Simulated Annealing}
+      \field{volume}{220}
+      \field{year}{1983}
+      \field{pages}{671\bibrangedash 680}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1126/science.220.4598.671
+      \endverb
+    \endentry
+    \entry{RCore}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dcdebb6b35bff7c0568bf8c50ef8626d}{%
+           family={{R Core Team}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Vienna, Austria}%
+      }
+      \list{organization}{1}{%
+        {R Foundation for Statistical Computing}%
+      }
+      \strng{namehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{fullhash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{bibnamehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{authorbibnamehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{authornamehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{authorfullhash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{R: A Language and Environment for Statistical Computing}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb http://www.R-project.org/
+      \endverb
+      \verb{url}
+      \verb http://www.R-project.org/
+      \endverb
+    \endentry
+    \entry{schmid2017exponential}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=6d8587692e3c6f94c02635c494f05f53}{%
+           family={Schmid},
+           familyi={S\bibinitperiod},
+           given={Christian\bibnamedelima S},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43c45e632831f3d129e0c4a3d158ce74}{%
+           family={Desmarais},
+           familyi={D\bibinitperiod},
+           given={Bruce\bibnamedelima A},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f79bfc59968f9c6f986cde851d1ad3e8}
+      \strng{fullhash}{f79bfc59968f9c6f986cde851d1ad3e8}
+      \strng{bibnamehash}{f79bfc59968f9c6f986cde851d1ad3e8}
+      \strng{authorbibnamehash}{f79bfc59968f9c6f986cde851d1ad3e8}
+      \strng{authornamehash}{f79bfc59968f9c6f986cde851d1ad3e8}
+      \strng{authorfullhash}{f79bfc59968f9c6f986cde851d1ad3e8}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE International Conference on Big Data, http://ieeexplore.ieee.org/document/8257919/}
+      \field{title}{Exponential Random Graph Models with Big Networks: Maximum Pseudolikelihood Estimation and the Parametric Bootstrap}
+      \field{year}{2017}
+      \field{pages}{116\bibrangedash 121}
+      \range{pages}{6}
+    \endentry
+    \entry{SchmidHunter2020}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=6d8587692e3c6f94c02635c494f05f53}{%
+           family={Schmid},
+           familyi={S\bibinitperiod},
+           given={Christian\bibnamedelima S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b9441d8c82d7daf3f5c46522be09b12}{%
+           family={Hunter},
+           familyi={H\bibinitperiod},
+           given={David\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5db6e9254aa9401babd49a7922f75905}
+      \strng{fullhash}{5db6e9254aa9401babd49a7922f75905}
+      \strng{bibnamehash}{5db6e9254aa9401babd49a7922f75905}
+      \strng{authorbibnamehash}{5db6e9254aa9401babd49a7922f75905}
+      \strng{authornamehash}{5db6e9254aa9401babd49a7922f75905}
+      \strng{authorfullhash}{5db6e9254aa9401babd49a7922f75905}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Working Paper, The Pennsylvania State University, Department of Statistics}
+      \field{number}{1}
+      \field{title}{Revisiting pseudolikelihood estimation for ERGMs}
+      \field{year}{2020}
+    \endentry
+    \entry{shalizi2013consistency}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0ae11f627bd5628613d795a6799018a8}{%
+           family={Shalizi},
+           familyi={S\bibinitperiod},
+           given={Cosma\bibnamedelima Rohilla},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7512f80d6f525f9a779b62c4fe599e9d}{%
+           family={Rinaldo},
+           familyi={R\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {NIH Public Access}%
+      }
+      \strng{namehash}{e00e81c96e8a2d2d36a49877f2833556}
+      \strng{fullhash}{e00e81c96e8a2d2d36a49877f2833556}
+      \strng{bibnamehash}{e00e81c96e8a2d2d36a49877f2833556}
+      \strng{authorbibnamehash}{e00e81c96e8a2d2d36a49877f2833556}
+      \strng{authornamehash}{e00e81c96e8a2d2d36a49877f2833556}
+      \strng{authorfullhash}{e00e81c96e8a2d2d36a49877f2833556}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annals of statistics}
+      \field{number}{2}
+      \field{title}{Consistency under sampling of exponential random graph models}
+      \field{volume}{41}
+      \field{year}{2013}
+      \field{pages}{508}
+      \range{pages}{1}
+    \endentry
+    \entry{strauss1990pseudolikelihood}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=4d5566c6a48860f54604f805e3f1c686}{%
+           family={Strauss},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a075c72732f631d92e6a17033ecf777e}{%
+           family={Ikeda},
+           familyi={I\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{6e56cbf8c92a020cb5e574fbf946558e}
+      \strng{fullhash}{6e56cbf8c92a020cb5e574fbf946558e}
+      \strng{bibnamehash}{6e56cbf8c92a020cb5e574fbf946558e}
+      \strng{authorbibnamehash}{6e56cbf8c92a020cb5e574fbf946558e}
+      \strng{authornamehash}{6e56cbf8c92a020cb5e574fbf946558e}
+      \strng{authorfullhash}{6e56cbf8c92a020cb5e574fbf946558e}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{number}{409}
+      \field{title}{Pseudolikelihood estimation for social networks}
+      \field{volume}{85}
+      \field{year}{1990}
+      \field{pages}{204\bibrangedash 212}
+      \range{pages}{9}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

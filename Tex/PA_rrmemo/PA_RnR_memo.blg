@@ -1,68 +1,28 @@
-This is BibTeX, Version 0.99d
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: PA_RnR_memo.aux
-Reallocating 'name_of_file' (item size: 1) to 9 items.
-The style file: biblatex.bst
-Reallocating 'name_of_file' (item size: 1) to 16 items.
-Reallocating 'name_of_file' (item size: 1) to 4 items.
-Reallocating 'glb_str_end' (item size: 4) to 20 items.
-Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
-Reallocating 'global_strs' (item size: 1) to 4000000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Database file #1: PA_RnR_memo-blx.bib
-Database file #2: bib.bib
-Biblatex version: 3.13
-Reallocating 'wiz_functions' (item size: 4) to 9000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 2 entries,
-            6365 wiz_defined-function locations,
-            1201 strings with 9103 characters,
-and the built_in function-call counts, 10649 in all, are:
-= -- 790
-> -- 226
-< -- 49
-+ -- 245
-- -- 90
-* -- 788
-:= -- 1332
-add.period$ -- 0
-call.type$ -- 2
-change.case$ -- 26
-chr.to.int$ -- 42
-cite$ -- 2
-duplicate$ -- 778
-empty$ -- 926
-format.name$ -- 88
-if$ -- 2251
-int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 0
-newline$ -- 58
-num.names$ -- 59
-pop$ -- 405
-preamble$ -- 1
-purify$ -- 34
-quote$ -- 0
-skip$ -- 316
-stack$ -- 0
-substring$ -- 1612
-swap$ -- 189
-text.length$ -- 55
-text.prefix$ -- 1
-top$ -- 1
-type$ -- 56
-warning$ -- 0
-while$ -- 167
-width$ -- 0
-write$ -- 57
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'PA_RnR_memo.blg'
+[81] biber-MSWIN64:322> INFO - === 
+[117] Biber.pm:415> INFO - Reading 'PA_RnR_memo.bcf'
+[239] Biber.pm:943> INFO - Found 1 citekeys in bib section 0
+[260] Biber.pm:4256> INFO - Processing section 0
+[260] Utils.pm:75> INFO - Globbing data source 'bib.bib'
+[271] Utils.pm:91> INFO - Globbed data source 'bib.bib' to bib.bib
+[288] Biber.pm:4455> INFO - Looking for bibtex format file 'bib.bib' for section 0
+[302] bibtex.pm:1653> INFO - LaTeX decoding ...
+[764] bibtex.pm:1471> INFO - Found BibTeX data source 'bib.bib'
+[775] Utils.pm:304> WARN - Duplicate entry key: 'lupu2012precedent' in file 'bib.bib', skipping ...
+[775] Utils.pm:304> WARN - Duplicate entry key: 'lupu2013strategic' in file 'bib.bib', skipping ...
+[775] Utils.pm:304> WARN - Duplicate entry key: 'pelc2014politics' in file 'bib.bib', skipping ...
+[775] Utils.pm:304> WARN - Duplicate entry key: 'knight1996norm' in file 'bib.bib', skipping ...
+[776] Utils.pm:304> WARN - Duplicate entry key: 'hinkle2016transmission' in file 'bib.bib', skipping ...
+[776] Utils.pm:304> WARN - Duplicate entry key: 'bommarito2010distance' in file 'bib.bib', skipping ...
+[776] Utils.pm:304> WARN - Duplicate entry key: 'fowler2008authority' in file 'bib.bib', skipping ...
+[776] Utils.pm:304> WARN - Duplicate entry key: 'fowler2007network' in file 'bib.bib', skipping ...
+[777] Utils.pm:304> WARN - Duplicate entry key: 'karrer2009random' in file 'bib.bib', skipping ...
+[782] Utils.pm:304> WARN - Duplicate entry key: 'lupu2012precedent' in file 'bib.bib', skipping ...
+[824] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[825] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[825] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[825] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[827] bbl.pm:652> INFO - Writing 'PA_RnR_memo.bbl' with encoding 'UTF-8'
+[828] bbl.pm:755> INFO - Output to PA_RnR_memo.bbl
+[834] Biber.pm:128> INFO - WARNINGS: 10
