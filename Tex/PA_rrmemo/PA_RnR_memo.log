@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  28 AUG 2020 14:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  28 AUG 2020 14:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -375,22 +375,7 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count279
 \@quotereset=\count280
-(./PA_RnR_memo.aux
-./PA_RnR_memo.aux:17: Undefined control sequence.
-l.17 \abx@aux@defaultlabelprefix
-                                {0}{hummel2012improving}{}
-? 
-
-./PA_RnR_memo.aux:17: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.17 \abx@aux@defaultlabelprefix{0
-                                  }{hummel2012improving}{}
-? 
-)
+(./PA_RnR_memo.aux)
 \openout1 = `PA_RnR_memo.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -406,7 +391,8 @@ LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 20.
- (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -486,39 +472,8 @@ Package biblatex Info: Data encoding 'ascii' specified.
 \openout4 = `PA_RnR_memo-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
-
-Package biblatex Warning: File 'PA_RnR_memo.bbl' is wrong format version - expe
-cted 2.8.
-
 Package biblatex Info: ... file 'PA_RnR_memo.bbl' found.
-(./PA_RnR_memo.bbl
-./PA_RnR_memo.bbl:21: Undefined control sequence.
-l.21   \datalist
-                [entry]{nty/global//global/global}
-? 
-./PA_RnR_memo.bbl:22: Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@slist@name 
-                                                  @\abx@field@entrykey }\csu...
-l.22     \entry{hummel2012improving}{article}{}
-                                               
-? 
-./PA_RnR_memo.bbl:60: Undefined control sequence.
-<argument> ...equal \expandafter {\blx@slist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.60     \endentry
-                  
-? 
-./PA_RnR_memo.bbl:60: Undefined control sequence.
-<argument> ...equal \expandafter {\blx@slist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.60     \endentry
-                  
-? 
-./PA_RnR_memo.bbl:61: Undefined control sequence.
-l.61   \enddatalist
-                   
-? 
-)
+(./PA_RnR_memo.bbl)
 Package biblatex Info: Reference section=0 on input line 20.
 Package biblatex Info: Reference segment=0 on input line 20.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.95> not available
@@ -528,16 +483,6 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
 
 Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
- []
-
-
-LaTeX Warning: Citation 'hummel2012improving' on page 1 undefined on input line
- 35.
-
-
-Overfull \hbox (7.59401pt too wide) in paragraph at lines 35--38
-\OT1/ppl/m/n/10.95 the MLE re-gard-less of the start-ing value, in prac-tice th
-is is not the case [[]]. 
  []
 
 
@@ -600,38 +545,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
-[2]
+
 Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
@@ -641,58 +581,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--80
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-
- []
-
-
-LaTeX Warning: Empty bibliography on input line 91.
 
 [4] (./PA_RnR_memo.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                PA_RnR_memo
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'PA_RnR_memo.run.xml'.
 \openout1 = `PA_RnR_memo.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 9142 strings out of 492995
- 155326 string characters out of 6132704
+ 9141 strings out of 492995
+ 155332 string characters out of 6132704
  513578 words of memory out of 5000000
- 12605 multiletter control sequences out of 15000+600000
+ 12604 multiletter control sequences out of 15000+600000
  8512 words of font info for 24 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,4n,37p,1710b,1468s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,4n,45p,1710b,1468s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/20
-17/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/texm
-f-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on PA_RnR_memo.pdf (4 pages, 82908 bytes).
+exlive/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/te
+xmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on PA_RnR_memo.pdf (4 pages, 70888 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
- 23 compressed objects within 1 object stream
+ 30 PDF objects out of 1000 (max. 8388607)
+ 20 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

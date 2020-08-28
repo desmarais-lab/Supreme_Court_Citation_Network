@@ -1,8 +1,64 @@
-[0] Config.pm:354> INFO - This is Biber 2.7
-[0] Config.pm:357> INFO - Logfile is 'PA_RnR_memo.blg'
-[42] biber-darwin:303> INFO - === Fri Aug 28, 2020, 14:21:53
-[81] Biber.pm:359> INFO - Reading 'PA_RnR_memo.bcf'
-[159] Utils.pm:180> ERROR - Error: Found biblatex control file version 3.7, expected version 3.3.
-This means that your biber (2.7) and biblatex (3.14) versions are incompatible.
-See compat matrix in biblatex or biber PDF documentation.
-[159] Biber.pm:113> INFO - ERRORS: 1
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: PA_RnR_memo.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: PA_RnR_memo-blx.bib
+Database file #2: bib.bib
+Biblatex version: 3.3
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 2 entries,
+            6256 wiz_defined-function locations,
+            1183 strings with 8748 characters,
+and the built_in function-call counts, 8957 in all, are:
+= -- 632
+> -- 208
+< -- 49
++ -- 221
+- -- 84
+* -- 661
+:= -- 1047
+add.period$ -- 0
+call.type$ -- 2
+change.case$ -- 26
+chr.to.int$ -- 30
+cite$ -- 2
+duplicate$ -- 730
+empty$ -- 782
+format.name$ -- 88
+if$ -- 1892
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 0
+newline$ -- 58
+num.names$ -- 59
+pop$ -- 387
+preamble$ -- 1
+purify$ -- 34
+quote$ -- 0
+skip$ -- 297
+stack$ -- 0
+substring$ -- 1187
+swap$ -- 189
+text.length$ -- 49
+text.prefix$ -- 1
+top$ -- 1
+type$ -- 56
+warning$ -- 0
+while$ -- 124
+width$ -- 0
+write$ -- 57
