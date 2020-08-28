@@ -1,28 +1,8 @@
-[0] Config.pm:304> INFO - This is Biber 2.14
-[0] Config.pm:307> INFO - Logfile is 'PA_RnR_memo.blg'
-[81] biber-MSWIN64:322> INFO - === 
-[117] Biber.pm:415> INFO - Reading 'PA_RnR_memo.bcf'
-[239] Biber.pm:943> INFO - Found 1 citekeys in bib section 0
-[260] Biber.pm:4256> INFO - Processing section 0
-[260] Utils.pm:75> INFO - Globbing data source 'bib.bib'
-[271] Utils.pm:91> INFO - Globbed data source 'bib.bib' to bib.bib
-[288] Biber.pm:4455> INFO - Looking for bibtex format file 'bib.bib' for section 0
-[302] bibtex.pm:1653> INFO - LaTeX decoding ...
-[764] bibtex.pm:1471> INFO - Found BibTeX data source 'bib.bib'
-[775] Utils.pm:304> WARN - Duplicate entry key: 'lupu2012precedent' in file 'bib.bib', skipping ...
-[775] Utils.pm:304> WARN - Duplicate entry key: 'lupu2013strategic' in file 'bib.bib', skipping ...
-[775] Utils.pm:304> WARN - Duplicate entry key: 'pelc2014politics' in file 'bib.bib', skipping ...
-[775] Utils.pm:304> WARN - Duplicate entry key: 'knight1996norm' in file 'bib.bib', skipping ...
-[776] Utils.pm:304> WARN - Duplicate entry key: 'hinkle2016transmission' in file 'bib.bib', skipping ...
-[776] Utils.pm:304> WARN - Duplicate entry key: 'bommarito2010distance' in file 'bib.bib', skipping ...
-[776] Utils.pm:304> WARN - Duplicate entry key: 'fowler2008authority' in file 'bib.bib', skipping ...
-[776] Utils.pm:304> WARN - Duplicate entry key: 'fowler2007network' in file 'bib.bib', skipping ...
-[777] Utils.pm:304> WARN - Duplicate entry key: 'karrer2009random' in file 'bib.bib', skipping ...
-[782] Utils.pm:304> WARN - Duplicate entry key: 'lupu2012precedent' in file 'bib.bib', skipping ...
-[824] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[825] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[825] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[825] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[827] bbl.pm:652> INFO - Writing 'PA_RnR_memo.bbl' with encoding 'UTF-8'
-[828] bbl.pm:755> INFO - Output to PA_RnR_memo.bbl
-[834] Biber.pm:128> INFO - WARNINGS: 10
+[0] Config.pm:354> INFO - This is Biber 2.7
+[0] Config.pm:357> INFO - Logfile is 'PA_RnR_memo.blg'
+[42] biber-darwin:303> INFO - === Fri Aug 28, 2020, 14:21:53
+[81] Biber.pm:359> INFO - Reading 'PA_RnR_memo.bcf'
+[159] Utils.pm:180> ERROR - Error: Found biblatex control file version 3.7, expected version 3.3.
+This means that your biber (2.7) and biblatex (3.14) versions are incompatible.
+See compat matrix in biblatex or biber PDF documentation.
+[159] Biber.pm:113> INFO - ERRORS: 1
