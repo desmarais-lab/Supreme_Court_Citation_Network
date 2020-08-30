@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  28 AUG 2020 14:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  30 AUG 2020 14:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -561,11 +561,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--71
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
@@ -580,12 +575,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
-
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
-[3]
+
 Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
@@ -603,7 +598,7 @@ Package logreq Info: Writing requests to 'PA_RnR_memo.run.xml'.
 Here is how much of TeX's memory you used:
  9141 strings out of 492995
  155332 string characters out of 6132704
- 513578 words of memory out of 5000000
+ 514578 words of memory out of 5000000
  12604 multiletter control sequences out of 15000+600000
  8512 words of font info for 24 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -612,7 +607,7 @@ Here is how much of TeX's memory you used:
 exlive/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/
 2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/te
 xmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on PA_RnR_memo.pdf (4 pages, 70888 bytes).
+Output written on PA_RnR_memo.pdf (4 pages, 71083 bytes).
 PDF statistics:
  30 PDF objects out of 1000 (max. 8388607)
  20 compressed objects within 1 object stream

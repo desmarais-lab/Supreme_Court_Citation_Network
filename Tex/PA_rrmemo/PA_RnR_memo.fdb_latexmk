@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex PA_RnR_memo"] 1598639080 "PA_RnR_memo.aux" "PA_RnR_memo.bbl" "PA_RnR_memo" 1598639081
+["bibtex PA_RnR_memo"] 1598639080 "PA_RnR_memo.aux" "PA_RnR_memo.bbl" "PA_RnR_memo" 1598810977
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1480098434 63002 075c3f13314e99e71e6ff0a472a98980 ""
-  "PA_RnR_memo-blx.bib" 1598639080 306 5c81b98dd64f8a491ca726a8d8060b23 "pdflatex"
-  "PA_RnR_memo.aux" 1598639081 1027 af46c8a6a454f33340b86d9f0aacf43d "pdflatex"
+  "PA_RnR_memo-blx.bib" 1598810977 306 5c81b98dd64f8a491ca726a8d8060b23 "pdflatex"
+  "PA_RnR_memo.aux" 1598810977 1027 af46c8a6a454f33340b86d9f0aacf43d "pdflatex"
   "bib.bib" 1598003359 62152 e6755b7eaf7200f6959a8514cb2e9c94 ""
   (generated)
   "PA_RnR_memo.blg"
   "PA_RnR_memo.bbl"
-["pdflatex"] 1598639080 "PA_RnR_memo.tex" "PA_RnR_memo.pdf" "PA_RnR_memo" 1598639081
+["pdflatex"] 1598810976 "PA_RnR_memo.tex" "PA_RnR_memo.pdf" "PA_RnR_memo" 1598810977
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1480098688 1616 371d1ee60c04b008c8fd760060cd34f1 ""
@@ -75,14 +75,14 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "PA_RnR_memo.aux" 1598639081 1027 af46c8a6a454f33340b86d9f0aacf43d "pdflatex"
+  "PA_RnR_memo.aux" 1598810977 1027 af46c8a6a454f33340b86d9f0aacf43d "pdflatex"
   "PA_RnR_memo.bbl" 1598639080 1679 03ca89a7d58c5d1a12163b97b29a2072 "bibtex PA_RnR_memo"
-  "PA_RnR_memo.run.xml" 1598639081 2578 56fd0e82d4b3e87dbb255753c3f72f23 "pdflatex"
-  "PA_RnR_memo.tex" 1598639073 13425 ed45e34c531ca57aa7cbd86c66b009e2 ""
+  "PA_RnR_memo.run.xml" 1598810977 2578 56fd0e82d4b3e87dbb255753c3f72f23 "pdflatex"
+  "PA_RnR_memo.tex" 1598810974 14097 d01998f3e585fb8b5cd000c6856d0627 ""
   "texMemo.cls" 1565110842 2012 21cad7e4fc45f08f518589d790e398d4 ""
   (generated)
-  "PA_RnR_memo.run.xml"
+  "PA_RnR_memo.aux"
   "PA_RnR_memo-blx.bib"
+  "PA_RnR_memo.run.xml"
   "PA_RnR_memo.log"
   "PA_RnR_memo.pdf"
-  "PA_RnR_memo.aux"

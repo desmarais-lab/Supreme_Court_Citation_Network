@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1598635130 "main.bcf" "main.bbl" "main" 1598638930
+["biber main"] 1598635130 "main.bcf" "main.bbl" "main" 1598810458
   "bib.bib" 1598634494 66822 3ed3c3bcf58d6adbee518cffe8319bfc ""
-  "main.bcf" 1598638930 134106 f92f60fca6dad7c83610ad992b5bf5e5 "pdflatex"
+  "main.bcf" 1598810458 134106 f92f60fca6dad7c83610ad992b5bf5e5 "pdflatex"
   (generated)
-  "main.blg"
   "main.bbl"
-["pdflatex"] 1598638926 "main.tex" "main.pdf" "main" 1598638930
+  "main.blg"
+["pdflatex"] 1598810453 "main.tex" "main.pdf" "main" 1598810458
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1480098666 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5tbsmu.enc" 1483484466 3011 d3d1ad05c983e0655023dd6d2f40e3b0 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/sourcesanspro/a_ggs4wk.enc" 1483484466 3005 0d6b678f4d9fa96bcea550609ec6c046 ""
@@ -223,15 +223,15 @@
   "daggish.pdf" 1598003358 6652 ea618ec6373ba27ec5eb87458447bc7c ""
   "data_mat.png" 1598003358 66570 37072726f35e0a0a4b3e47d63f3c8117 ""
   "degree_distribution.pdf" 1598003358 27637 3300260af50b92542ff918a00bf79f35 ""
-  "main.aux" 1598638930 23273 8ef2d384a23d496b7fe45f7552d91649 "pdflatex"
+  "main.aux" 1598810458 23273 2ebe644a254dfc60992ee28a238d3e6f "pdflatex"
   "main.bbl" 1598635131 80384 fab4f767d29f91421e60828d5a70d524 "biber main"
-  "main.out" 1598638930 797 a66a8bc1579e3b0e01f8fe368234b921 "pdflatex"
-  "main.run.xml" 1598638930 2434 d5d5fed8a560645ec6aebf2e6e4573da "pdflatex"
-  "main.tex" 1598638875 65985 3d705598f819317cbb3f7f9312dcce0d ""
+  "main.out" 1598810458 797 a66a8bc1579e3b0e01f8fe368234b921 "pdflatex"
+  "main.run.xml" 1598810458 2434 d5d5fed8a560645ec6aebf2e6e4573da "pdflatex"
+  "main.tex" 1598810441 69521 9460bdde326ae38098b4a237f83d78ca ""
   (generated)
-  "main.log"
+  "main.bcf"
+  "main.out"
   "main.aux"
   "main.pdf"
-  "main.bcf"
+  "main.log"
   "main.run.xml"
-  "main.out"
