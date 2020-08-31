@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  31 AUG 2020 06:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  31 AUG 2020 06:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1783,13 +1783,6 @@ Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-))
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
@@ -2018,6 +2011,32 @@ LaTeX Font Info:    Redeclaring math symbol \Bbbk on input line 261.
 LaTeX Font Info:    Redeclaring math symbol \hslash on input line 262.
 LaTeX Font Info:    Redeclaring math symbol \backepsilon on input line 265.
 )
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks34
+\thm@bodyfont=\toks35
+\thm@headfont=\toks36
+\thm@notefont=\toks37
+\thm@headpunct=\toks38
+\thm@preskip=\skip93
+\thm@postskip=\skip94
+\thm@headsep=\skip95
+\dth@everypar=\toks39
+
+
+/usr/local/texlive/2017/texmf-dist/tex/latex/amscls/amsthm.sty:417: LaTeX Error
+: Command \openbox already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.417   \vrule\hfil}}
+                     
+? 
+LaTeX Info: Redefining \textsquare on input line 418.
+)
 Package biblatex Info: Trying to load language 'english' -> 'cms-american'...
 Package biblatex Info: ... file 'cms-american.lbx' found.
 
@@ -2039,59 +2058,59 @@ File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxsfmi/m/it on input line 39.
+LaTeX Font Info:    Checking defaults for OML/ntxsfmi/m/it on input line 28.
 LaTeX Font Info:    Try loading font information for OML+ntxsfmi on input line 
-39.
+28.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/newtxsf/omlntxsfmi.fd
 File: omlntxsfmi.fd 2014/11/16 Fontinst v1.933 font definitions for OML/ntxsfmi
 .
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 39.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 39.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 28.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 28.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 39.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 28.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 39.
-LaTeX Font Info:    Try loading font information for LY1+ptm on input line 39.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 28.
+LaTeX Font Info:    Try loading font information for LY1+ptm on input line 28.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 39.
-LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 39
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 28.
+LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 28
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Try loading font information for T1+SourceSansPro-LF on inp
-ut line 39.
+ut line 28.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/sourcesanspro/T1SourceSansPro-LF.
 fd
@@ -2099,7 +2118,7 @@ File: T1SourceSansPro-LF.fd 2016/12/03 (autoinst) Font definitions for T1/Sourc
 eSansPro-LF.
 )
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 39.
+(Font)              scaled to size 10.0pt on input line 28.
  (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count381
@@ -2107,12 +2126,12 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
 \scratchbox=\box50
 \nofMPsegments=\count382
 \nofMParguments=\count383
-\everyMPshowfont=\toks34
+\everyMPshowfont=\toks40
 \MPscratchCnt=\count384
 \MPscratchDim=\dimen188
 \MPnumerator=\count385
 \makeMPintoPDFobject=\count386
-\everyMPtoPDFconversion=\toks35
+\everyMPtoPDFconversion=\toks41
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -2168,7 +2187,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \microtypecontext on input line 39.
+LaTeX Info: Redefining \microtypecontext on input line 28.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2188,13 +2207,13 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' found.
- (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 39.
-Package biblatex Info: Reference segment=0 on input line 39.
-\AtBeginShipoutBox=\box51
-Package hyperref Info: Link coloring ON on input line 39.
+Package biblatex Info: ... file 'main.bbl' not found.
 
+No file main.bbl.
+Package biblatex Info: Reference section=0 on input line 28.
+Package biblatex Info: Reference segment=0 on input line 28.
+\AtBeginShipoutBox=\box51
+Package hyperref Info: Link coloring ON on input line 28.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -2203,24 +2222,22 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count387
 )
-LaTeX Info: Redefining \ref on input line 39.
-LaTeX Info: Redefining \pageref on input line 39.
-LaTeX Info: Redefining \nameref on input line 39.
-
-(./main.out) (./main.out)
+LaTeX Info: Redefining \ref on input line 28.
+LaTeX Info: Redefining \pageref on input line 28.
+LaTeX Info: Redefining \nameref on input line 28.
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 42.
+(Font)              scaled to size 7.0pt on input line 31.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
-(Font)              scaled to size 7.0pt on input line 42.
+(Font)              scaled to size 7.0pt on input line 31.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/it' will be
-(Font)              scaled to size 7.0pt on input line 42.
+(Font)              scaled to size 7.0pt on input line 31.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
-(Font)              scaled to size 7.0pt on input line 42.
+(Font)              scaled to size 7.0pt on input line 31.
 LaTeX Font Info:    Try loading font information for TS1+SourceSansPro-LF on in
-put line 42.
+put line 31.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/sourcesanspro/TS1SourceSansPro-LF
 .fd
@@ -2228,39 +2245,39 @@ File: TS1SourceSansPro-LF.fd 2016/12/03 (autoinst) Font definitions for TS1/Sou
 rceSansPro-LF.
 )
 LaTeX Font Info:    Font shape `TS1/SourceSansPro-LF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 42.
+(Font)              scaled to size 7.0pt on input line 31.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `SourceSansPro-LF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 42.
+(Font)              scaled to size 17.28pt on input line 31.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 42.
+(Font)              scaled to size 17.28pt on input line 31.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 42.
+(Font)              scaled to size 14.4pt on input line 31.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 42.
+(Font)              scaled to size 14.4pt on input line 31.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
-(Font)              scaled to size 10.5pt on input line 42.
+(Font)              scaled to size 10.5pt on input line 31.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
-(Font)              scaled to size 7.9pt on input line 42.
-LaTeX Font Info:    Try loading font information for U+ntxsfmia on input line 4
-2.
+(Font)              scaled to size 7.9pt on input line 31.
+LaTeX Font Info:    Try loading font information for U+ntxsfmia on input line 3
+1.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/newtxsf/untxsfmia.fd
 File: untxsfmia.fd 2014/11/16 Fontinst v1.933 font definitions for U/ntxsfmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 42.
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 31.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
-(Font)              scaled to size 10.5pt on input line 42.
+(Font)              scaled to size 10.5pt on input line 31.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
-(Font)              scaled to size 7.9pt on input line 42.
-LaTeX Font Info:    Try loading font information for U+msa on input line 42.
+(Font)              scaled to size 7.9pt on input line 31.
+LaTeX Font Info:    Try loading font information for U+msa on input line 31.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -2268,6 +2285,504 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 42.
+LaTeX Font Info:    Try loading font information for U+msb on input line 31.
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfont
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 31.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/it' will be
+(Font)              scaled to size 9.0pt on input line 31.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 31.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 31.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 31.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 31.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
+(Font)              scaled to size 7.3pt on input line 31.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
+(Font)              scaled to size 5.5pt on input line 31.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
+(Font)              scaled to size 7.3pt on input line 31.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 31.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 32.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 32.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 34.
+
+
+LaTeX Warning: Citation 'knight1996norm' on page 1 undefined on input line 43.
+
+
+LaTeX Warning: Citation 'gillman2001s' on page 1 undefined on input line 43.
+
+
+LaTeX Warning: Citation 'richards2002jurisprudential' on page 1 undefined on in
+put line 43.
+
+
+LaTeX Warning: Citation 'hansford2006politics' on page 1 undefined on input lin
+e 43.
+
+
+LaTeX Warning: Citation 'bailey2008does' on page 1 undefined on input line 43.
+
+
+LaTeX Warning: Citation 'bailey2011constrained' on page 1 undefined on input li
+ne 43.
+
+
+LaTeX Warning: Citation 'pang2012endogenous' on page 1 undefined on input line 
+43.
+
+
+LaTeX Warning: Citation 'harris1982structural' on page 1 undefined on input lin
+e 43.
+
+
+LaTeX Warning: Citation 'caldeira1988legal' on page 1 undefined on input line 4
+3.
+
+
+LaTeX Warning: Citation 'fowler2007network' on page 1 undefined on input line 4
+3.
+
+
+LaTeX Warning: Citation 'fowler2008authority' on page 1 undefined on input line
+ 43.
+
+
+LaTeX Warning: Citation 'bommarito2009law' on page 1 undefined on input line 43
+.
+
+
+LaTeX Warning: Citation 'lupu2012precedent' on page 1 undefined on input line 4
+3.
+
+
+LaTeX Warning: Citation 'pelc2014politics' on page 1 undefined on input line 43
+.
+
+
+LaTeX Warning: Citation 'ethayarajh2018rose' on page 1 undefined on input line 
+43.
+
+
+Overfull \hbox (61.92572pt too wide) in paragraph at lines 43--44
+[]\T1/SourceSansPro-LF/m/n/10 (-20) ; []; []; []; [];
+ []
+
+
+LaTeX Warning: Citation 'cross2010determinants' on page 1 undefined on input li
+ne 45.
+
+
+LaTeX Warning: Citation 'benjamin2012standing' on page 1 undefined on input lin
+e 45.
+
+
+LaTeX Warning: Citation 'fix2019effect' on page 1 undefined on input line 45.
+
+
+LaTeX Warning: Citation 'black2013citation' on page 1 undefined on input line 4
+5.
+
+
+LaTeX Warning: Citation 'spriggs2001explaining' on page 1 undefined on input li
+ne 45.
+
+
+LaTeX Warning: Citation 'lupu2013strategic' on page 1 undefined on input line 4
+5.
+
+
+Overfull \hbox (58.06699pt too wide) in paragraph at lines 45--46
+\T1/SourceSansPro-LF/m/n/10 (-20) ([]; []; []), when an opin-ion is cited ([];
+ []
+
+[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+
+LaTeX Warning: Citation 'clark2010locating' on page 2 undefined on input line 4
+7.
+
+
+LaTeX Warning: Citation 'clark2010locating' on page 2 undefined on input line 4
+7.
+
+
+LaTeX Warning: Citation 'cranmer2016critique' on page 2 undefined on input line
+ 50.
+
+
+LaTeX Warning: Citation 'cranmer2016critique' on page 2 undefined on input line
+ 56.
+
+[2]
+
+LaTeX Warning: Citation 'holland1971transitivity' on page 3 undefined on input 
+line 60.
+
+<citations_trans.pdf, id=26, 722.7pt x 722.7pt>
+File: citations_trans.pdf Graphic file (type pdf)
+ <use citations_trans.pdf>
+Package pdftex.def Info: citations_trans.pdf used on input line 69.
+(pdftex.def)             Requested size: 196.65192pt x 206.29483pt.
+
+<citations_recip.pdf, id=28, 722.7pt x 722.7pt>
+File: citations_recip.pdf Graphic file (type pdf)
+ <use citations_recip.pdf>
+Package pdftex.def Info: citations_recip.pdf used on input line 70.
+(pdftex.def)             Requested size: 196.65192pt x 206.29483pt.
+
+[3 <./citations_trans.pdf> <./citations_recip.pdf>]
+
+LaTeX Warning: Reference `fig:transitivity' on page 4 undefined on input line 8
+1.
+
+
+LaTeX Warning: Reference `fig:transitivity' on page 4 undefined on input line 9
+5.
+
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/it' will be
+(Font)              scaled to size 10.0pt on input line 97.
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--100
+
+ []
+
+[4]
+
+LaTeX Warning: Citation 'barabasi1999emergence' on page 5 undefined on input li
+ne 102.
+
+
+LaTeX Warning: Reference `fig:popularity' on page 5 undefined on input line 102
+.
+
+<citations_pop.pdf, id=69, 722.7pt x 722.7pt>
+File: citations_pop.pdf Graphic file (type pdf)
+ <use citations_pop.pdf>
+Package pdftex.def Info: citations_pop.pdf used on input line 110.
+(pdftex.def)             Requested size: 321.06198pt x 252.4582pt.
+
+
+LaTeX Warning: Citation 'box2014evolution' on page 5 undefined on input line 12
+1.
+
+
+LaTeX Warning: Citation 'duque2018recognizing' on page 5 undefined on input lin
+e 121.
+
+
+LaTeX Warning: Citation 'osei2018elite' on page 5 undefined on input line 121.
+
+
+Overfull \hbox (10.95398pt too wide) in paragraph at lines 121--123
+\T1/SourceSansPro-LF/m/n/10 (-20) research---the ex-po-nen-tial ran-dom graph m
+odel (ERGM) ([]; [];
+ []
+
+
+LaTeX Warning: Reference `fig:ctergm' on page 5 undefined on input line 125.
+
+[5] <daggish.pdf, id=76, 433.62pt x 361.35pt>
+File: daggish.pdf Graphic file (type pdf)
+ <use daggish.pdf>
+Package pdftex.def Info: daggish.pdf used on input line 130.
+(pdftex.def)             Requested size: 341.1295pt x 284.28894pt.
+ [6 <./citations_pop.pdf>]
+
+LaTeX Warning: Citation 'goodreau2009birds' on page 7 undefined on input line 1
+43.
+
+
+LaTeX Warning: Citation 'spaeth2014supreme' on page 7 undefined on input line 1
+47.
+
+
+LaTeX Warning: Citation 'martin2002dynamic' on page 7 undefined on input line 1
+47.
+
+
+LaTeX Warning: Citation 'CourtListener' on page 7 undefined on input line 147.
+
+
+LaTeX Warning: Citation 'fowler2007network' on page 7 undefined on input line 1
+47.
+
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
+(Font)              scaled to size 8.0pt on input line 147.
+
+LaTeX Warning: Reference `tab:chiefs' on page 7 undefined on input line 147.
+
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
+(Font)              scaled to size 6.2pt on input line 147.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
+(Font)              scaled to size 6.2pt on input line 147.
+
+LaTeX Warning: Citation 'senate2016constitution' on page 7 undefined on input l
+ine 147.
+
+
+LaTeX Warning: Reference `degree_dist' on page 7 undefined on input line 147.
+
+
+Overfull \hbox (18.53722pt too wide) in paragraph at lines 147--148
+\T1/SourceSansPro-LF/m/n/10 (-20) Our three data sources for this study in-clud
+e the Supreme Court Database (SCDB) ([]),
+ []
+
+[7 <./daggish.pdf>]
+
+LaTeX Warning: Citation 'strogatz2001exploring' on page 8 undefined on input li
+ne 169.
+
+
+LaTeX Warning: Reference `degree_dist' on page 8 undefined on input line 169.
+
+
+Overfull \hbox (1.07317pt too wide) in paragraph at lines 169--170
+\T1/SourceSansPro-LF/m/n/10 (-20) stan-tial het-ero-gene-ity in the fea-tures t
+hat drive ci-ta-tions to and from cases ([]).
+ []
+
+<degree_distribution.pdf, id=116, 844.15375pt x 597.23125pt>
+File: degree_distribution.pdf Graphic file (type pdf)
+
+<use degree_distribution.pdf>
+Package pdftex.def Info: degree_distribution.pdf used on input line 175.
+(pdftex.def)             Requested size: 147.00455pt x 103.99759pt.
+
+<data_mat.png, id=117, 453.19313pt x 453.19313pt>
+File: data_mat.png Graphic file (type png)
+ <use data_mat.png>
+Package pdftex.def Info: data_mat.png used on input line 176.
+(pdftex.def)             Requested size: 118.79135pt x 118.78864pt.
+
+<courts_layer.png, id=118, 1024.57782pt x 962.09438pt>
+File: courts_layer.png Graphic file (type png)
+ <use courts_layer.png>
+Package pdftex.def Info: courts_layer.png used on input line 179.
+(pdftex.def)             Requested size: 252.83731pt x 237.41077pt.
+
+
+LaTeX Warning: Reference `fig:ctergm' on page 8 undefined on input line 182.
+
+[8]
+
+LaTeX Warning: Citation 'spriggs2001explaining' on page 9 undefined on input li
+ne 212.
+
+
+LaTeX Warning: Citation 'clark2010locating' on page 9 undefined on input line 2
+12.
+
+
+LaTeX Warning: Citation 'martin2002dynamic' on page 9 undefined on input line 2
+12.
+
+
+LaTeX Warning: Citation 'spaeth2014supreme' on page 9 undefined on input line 2
+17.
+
+
+LaTeX Warning: Citation 'cross2010determinants' on page 9 undefined on input li
+ne 217.
+
+
+LaTeX Warning: Reference `issue_area_coding' on page 9 undefined on input line 
+217.
+
+[9 <./degree_distribution.pdf> <./data_mat.png> <./courts_layer.png>]
+
+LaTeX Warning: Citation 'spaeth2014supreme' on page 10 undefined on input line 
+221.
+
+
+LaTeX Warning: Citation 'black2013citation' on page 10 undefined on input line 
+239.
+
+
+LaTeX Warning: Citation 'benjamin2012standing' on page 10 undefined on input li
+ne 241.
+
+
+LaTeX Warning: Citation 'fowler2008authority' on page 10 undefined on input lin
+e 243.
+
+
+LaTeX Warning: Citation 'Handcock.2003' on page 10 undefined on input line 250.
+
+
+[10]
+
+LaTeX Warning: Citation 'SnijdersTomA.B..2006' on page 11 undefined on input li
+ne 256.
+
+
+LaTeX Warning: Citation 'hunter2006inference' on page 11 undefined on input lin
+e 256.
+
+
+LaTeX Warning: Citation 'Levy2016' on page 11 undefined on input line 266.
+
+
+LaTeX Warning: Citation 'hunter2006inference' on page 11 undefined on input lin
+e 274.
+
+
+LaTeX Warning: Citation 'Butts.2008' on page 11 undefined on input line 274.
+
+[11]
+
+LaTeX Warning: Citation 'fowler2008authority' on page 12 undefined on input lin
+e 277.
+
+<SCC_AIC_BIC.pdf, id=162, 844.15375pt x 597.23125pt>
+File: SCC_AIC_BIC.pdf Graphic file (type pdf)
+ <use SCC_AIC_BIC.pdf>
+Package pdftex.def Info: SCC_AIC_BIC.pdf used on input line 288.
+(pdftex.def)             Requested size: 284.52756pt x 201.30623pt.
+
+
+LaTeX Warning: Reference `AIC_BIC' on page 12 undefined on input line 298.
+
+
+LaTeX Warning: Citation 'hunter2008goodness' on page 12 undefined on input line
+ 298.
+
+
+LaTeX Warning: Citation 'mukherjee2020degeneracy' on page 12 undefined on input
+ line 298.
+
+
+LaTeX Warning: Reference `SCC_results_1' on page 12 undefined on input line 303
+.
+
+
+LaTeX Warning: Reference `SCC_results_2' on page 12 undefined on input line 303
+.
+
+
+LaTeX Warning: Reference `covariate_terms' on page 12 undefined on input line 3
+03.
+
+
+LaTeX Warning: Reference `dependence_terms' on page 12 undefined on input line 
+303.
+
+
+LaTeX Warning: Reference `SCC_results_1' on page 12 undefined on input line 303
+.
+
+[12 <./SCC_AIC_BIC.pdf>]
+
+LaTeX Warning: Reference `SCC_results_2' on page 13 undefined on input line 308
+.
+
+
+./main.tex:312: LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.312 \begin{figure}[H]
+                       
+? 
+<SCC_results_1.pdf, id=186, 597.23125pt x 844.15375pt>
+File: SCC_results_1.pdf Graphic file (type pdf)
+ <use SCC_results_1.pdf>
+Package pdftex.def Info: SCC_results_1.pdf used on input line 314.
+(pdftex.def)             Requested size: 398.33858pt x 563.0297pt.
+
+
+./main.tex:320: LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.320 \begin{figure}[H]
+                       
+? 
+<SCC_results_2.pdf, id=187, 597.23125pt x 844.15375pt>
+File: SCC_results_2.pdf Graphic file (type pdf)
+ <use SCC_results_2.pdf>
+Package pdftex.def Info: SCC_results_2.pdf used on input line 322.
+(pdftex.def)             Requested size: 398.33858pt x 563.0297pt.
+
+
+LaTeX Warning: Empty bibliography on input line 337.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 338.
+[13] [14 <./SCC_results_1.pdf>] [15 <./SCC_results_2.pdf>] [16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 338.
+ (./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 338.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 338.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  562876C4346A39C91FB2A7E56737C09B;650.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 28723 strings out of 492995
+ 508398 string characters out of 6132704
+ 1136222 words of memory out of 5000000
+ 31572 multiletter control sequences out of 15000+600000
+ 353073 words of font info for 346 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 51i,12n,68p,10441b,1399s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5tbsmu.en
+c}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/sourcesanspro/a_sd7igg.en
+c}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/sourcesanspro/a_ggs4wk.en
+c}</usr/local/texlive/2017/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSan
+sPro-Bold.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/adobe/sourcesansp
+ro/SourceSansPro-BoldIt.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/ado
+be/sourcesanspro/SourceSansPro-It.pfb></usr/local/texlive/2017/texmf-dist/fonts
+/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2017/texmf-dist/font
+s/type1/public/newtx/txsys.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
+public/newtxsf/zsfmi-bol.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pu
+blic/newtxsf/zsfmi-reg.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
+ic/newtxsf/zsfmia-reg.pfb>
+Output written on main.pdf (16 pages, 1943748 bytes).
+PDF statistics:
+ 287 PDF objects out of 1000 (max. 8388607)
+ 223 compressed objects within 3 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 37445 words of extra memory for PDF output out of 42996 (max. 10000000)
+

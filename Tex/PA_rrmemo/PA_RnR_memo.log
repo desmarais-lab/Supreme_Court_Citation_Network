@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  30 AUG 2020 14:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  31 AUG 2020 06:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -561,6 +561,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--71
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
@@ -585,11 +590,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
-
- []
-
 [4] (./PA_RnR_memo.aux)
 Package logreq Info: Writing requests to 'PA_RnR_memo.run.xml'.
 \openout1 = `PA_RnR_memo.run.xml'.
@@ -607,7 +607,7 @@ Here is how much of TeX's memory you used:
 exlive/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/
 2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/te
 xmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on PA_RnR_memo.pdf (4 pages, 71083 bytes).
+Output written on PA_RnR_memo.pdf (4 pages, 69725 bytes).
 PDF statistics:
  30 PDF objects out of 1000 (max. 8388607)
  20 compressed objects within 1 object stream

@@ -3058,4 +3058,92 @@
     <bcf:citekey order="1">richards2002jurisprudential</bcf:citekey>
     <bcf:citekey order="1">hansford2006politics</bcf:citekey>
     <bcf:citekey order="1">bailey2008does</bcf:citekey>
-    <bcf:citekey order="1">bailey2011constrained</bcf:ci
+    <bcf:citekey order="1">bailey2011constrained</bcf:citekey>
+    <bcf:citekey order="1">pang2012endogenous</bcf:citekey>
+    <bcf:citekey order="2">harris1982structural</bcf:citekey>
+    <bcf:citekey order="2">caldeira1988legal</bcf:citekey>
+    <bcf:citekey order="2">fowler2007network</bcf:citekey>
+    <bcf:citekey order="2">fowler2008authority</bcf:citekey>
+    <bcf:citekey order="2">bommarito2009law</bcf:citekey>
+    <bcf:citekey order="2">lupu2012precedent</bcf:citekey>
+    <bcf:citekey order="2">pelc2014politics</bcf:citekey>
+    <bcf:citekey order="2">ethayarajh2018rose</bcf:citekey>
+    <bcf:citekey order="3">cross2010determinants</bcf:citekey>
+    <bcf:citekey order="3">benjamin2012standing</bcf:citekey>
+    <bcf:citekey order="3">fix2019effect</bcf:citekey>
+    <bcf:citekey order="4">black2013citation</bcf:citekey>
+    <bcf:citekey order="4">spriggs2001explaining</bcf:citekey>
+    <bcf:citekey order="5">lupu2013strategic</bcf:citekey>
+    <bcf:citekey order="6">clark2010locating</bcf:citekey>
+    <bcf:citekey order="8">clark2010locating</bcf:citekey>
+    <bcf:citekey order="10">cranmer2016critique</bcf:citekey>
+    <bcf:citekey order="11">cranmer2016critique</bcf:citekey>
+    <bcf:citekey order="12">holland1971transitivity</bcf:citekey>
+    <bcf:citekey order="13">barabasi1999emergence</bcf:citekey>
+    <bcf:citekey order="14">box2014evolution</bcf:citekey>
+    <bcf:citekey order="14">duque2018recognizing</bcf:citekey>
+    <bcf:citekey order="14">osei2018elite</bcf:citekey>
+    <bcf:citekey order="15">goodreau2009birds</bcf:citekey>
+    <bcf:citekey order="16">spaeth2014supreme</bcf:citekey>
+    <bcf:citekey order="17">martin2002dynamic</bcf:citekey>
+    <bcf:citekey order="18">CourtListener</bcf:citekey>
+    <bcf:citekey order="19">fowler2007network</bcf:citekey>
+    <bcf:citekey order="21">senate2016constitution</bcf:citekey>
+    <bcf:citekey order="23">strogatz2001exploring</bcf:citekey>
+    <bcf:citekey order="24">spriggs2001explaining</bcf:citekey>
+    <bcf:citekey order="26">clark2010locating</bcf:citekey>
+    <bcf:citekey order="28">martin2002dynamic</bcf:citekey>
+    <bcf:citekey order="29">spaeth2014supreme</bcf:citekey>
+    <bcf:citekey order="30">cross2010determinants</bcf:citekey>
+    <bcf:citekey order="32">spaeth2014supreme</bcf:citekey>
+    <bcf:citekey order="33">black2013citation</bcf:citekey>
+    <bcf:citekey order="35">benjamin2012standing</bcf:citekey>
+    <bcf:citekey order="37">fowler2008authority</bcf:citekey>
+    <bcf:citekey order="39">Handcock.2003</bcf:citekey>
+    <bcf:citekey order="40">SnijdersTomA.B..2006</bcf:citekey>
+    <bcf:citekey order="42">hunter2006inference</bcf:citekey>
+    <bcf:citekey order="44">Levy2016</bcf:citekey>
+    <bcf:citekey order="46">hunter2006inference</bcf:citekey>
+    <bcf:citekey order="48">Butts.2008</bcf:citekey>
+    <bcf:citekey order="50">fowler2008authority</bcf:citekey>
+    <bcf:citekey order="52">hunter2008goodness</bcf:citekey>
+    <bcf:citekey order="53">mukherjee2020degeneracy</bcf:citekey>
+  </bcf:section>
+  <bcf:sortlist section="0" name="cms/global/" type="entry" sortscheme="cms" sortnamekeyscheme="global" labelprefix="">
+  <bcf:sorting>
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">presort</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="2" final="1">
+      <bcf:sortitem order="1">sortkey</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="3">
+      <bcf:sortitem order="1">sortname</bcf:sortitem>
+      <bcf:sortitem order="2">author</bcf:sortitem>
+      <bcf:sortitem order="3">namea</bcf:sortitem>
+      <bcf:sortitem order="4">editor</bcf:sortitem>
+      <bcf:sortitem order="5">nameb</bcf:sortitem>
+      <bcf:sortitem order="6">translator</bcf:sortitem>
+      <bcf:sortitem order="7">namec</bcf:sortitem>
+      <bcf:sortitem order="8">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="9">journaltitle</bcf:sortitem>
+      <bcf:sortitem order="10">organization</bcf:sortitem>
+      <bcf:sortitem order="11">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="4">
+      <bcf:sortitem order="1">sortyear</bcf:sortitem>
+      <bcf:sortitem order="2">labelyear</bcf:sortitem>
+      <bcf:sortitem order="3">year</bcf:sortitem>
+      <bcf:sortitem order="4">origyear</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="5">
+      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="2">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="6">
+      <bcf:sortitem order="1" pad_side="left" pad_width="4" pad_char="0">volume</bcf:sortitem>
+      <bcf:sortitem order="2">0000</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sorting>
+  </bcf:sortlist>
+</bcf:controlfile>
