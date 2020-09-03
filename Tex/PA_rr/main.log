@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  3 SEP 2020 06:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  3 SEP 2020 07:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2419,11 +2419,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29302 strings out of 492995
- 523645 string characters out of 6132704
+ 29299 strings out of 492995
+ 523549 string characters out of 6132704
  1143025 words of memory out of 5000000
  31931 multiletter control sequences out of 15000+600000
- 386007 words of font info for 437 fonts, out of 8000000 for 9000
+ 385684 words of font info for 435 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,12n,68p,10441b,1664s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/sourcesanspro/a_mhce32.en
@@ -2443,7 +2443,7 @@ pe1/public/newtx/txsys.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
 ic/newtxsf/zsfmi-bol.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
 /newtxsf/zsfmi-reg.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/n
 ewtxsf/zsfmia-reg.pfb>
-Output written on main.pdf (21 pages, 1919189 bytes).
+Output written on main.pdf (21 pages, 1919207 bytes).
 PDF statistics:
  537 PDF objects out of 1000 (max. 8388607)
  471 compressed objects within 5 object streams
