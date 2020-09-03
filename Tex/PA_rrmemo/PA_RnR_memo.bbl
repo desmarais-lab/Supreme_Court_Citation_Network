@@ -16,7 +16,7 @@
   {}
 \endgroup
 
-\sortlist[entry]{nty/global/}
+\sortlist[entry]{cms/global/}
   \entry{hummel2012improving}{article}{}
     \name{author}{3}{}{%
       {{hash=HRM}{%
@@ -45,6 +45,7 @@
     \strng{fullhash}{HRMHDRHMS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
     \field{sortinit}{H}
     \field{sortinithash}{H}
     \field{number}{4}
@@ -53,6 +54,34 @@
     \field{volume}{21}
     \field{journaltitle}{Journal of Computational and Graphical Statistics}
     \field{year}{2012}
+  \endentry
+
+  \entry{SchmidHunter2020}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=SCS}{%
+         family={Schmid},
+         familyi={S\bibinitperiod},
+         given={Christian\bibnamedelima S.},
+         giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=HDR}{%
+         family={Hunter},
+         familyi={H\bibinitperiod},
+         given={David\bibnamedelima R.},
+         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SCSHDR1}
+    \strng{fullhash}{SCSHDR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{note}{arXiv:2009.01202}
+    \field{title}{Improving ERGM Starting Values Using Simulated Annealing}
+    \field{eprinttype}{arXiv}
+    \field{year}{2020}
   \endentry
 \endsortlist
 \endinput

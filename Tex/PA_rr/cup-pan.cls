@@ -184,7 +184,7 @@
 \newcommand{\thead}[1]{\bfseries #1\rule[-1.2ex]{0pt}{2em}}
 \renewcommand{\arraystretch}{1.2}
 
-\RequirePackage[backend=biber,authordate,giveninits=true,uniquename=mininit,natbib]{biblatex-chicago}
+\RequirePackage[backend=biber,authordate,uniquename=mininit,natbib]{biblatex-chicago}
 \xpatchbibmacro{name:andothers}{%
   \bibstring{andothers}%
 }{%
