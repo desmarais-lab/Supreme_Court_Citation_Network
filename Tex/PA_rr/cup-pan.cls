@@ -184,14 +184,14 @@
 \newcommand{\thead}[1]{\bfseries #1\rule[-1.2ex]{0pt}{2em}}
 \renewcommand{\arraystretch}{1.2}
 
-\RequirePackage[backend=biber,authordate,uniquename=mininit,natbib]{biblatex-chicago}
+\RequirePackage[backend=biber,authordate,giveninits=true,uniquename=mininit,natbib]{biblatex-chicago}
 \xpatchbibmacro{name:andothers}{%
   \bibstring{andothers}%
 }{%
   \bibstring[\emph]{andothers}%
 }{}{}
 
-\newcommand{\insert@supplmat}{\section*{Supplementary Material}For supplementary material accompanying this paper, please visit \url{https://doi.org/10.1017/pan.xxxx.xx.}}
+\newcommand{\insert@supplmat}{\section*{Supplementary Material}For supplementary material accompanying this paper, please visit \url{https://doi.org/10.1017/pan.xxxx.xx.}. For replication code and data see \citet{replicationdata}. }
 \if@suppmat
   \xpretocmd{\printbibliography}{\insert@supplmat}{}{}
   \AtBeginEnvironment{thebibliography}{\insert@supplmat}
