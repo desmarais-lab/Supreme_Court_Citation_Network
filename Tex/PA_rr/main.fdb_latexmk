@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1599128718 "main.bcf" "main.bbl" "main" 1599133013
-  "bib.bib" 1599128717 69022 add18f01acce7178c5b1e70ee5255632 ""
-  "main.bcf" 1599133013 134474 834e35eefac795b37b8c9b9be264c099 "pdflatex"
+["biber main"] 1610051043 "main.bcf" "main.bbl" "main" 1610051054
+  "bib.bib" 1610050785 69475 87d580176e8f0cf6ed7acfba273b83a4 ""
+  "main.bcf" 1610051054 134706 730934bb78749e9f072ceff7ce657af4 "pdflatex"
   (generated)
-  "main.bbl"
   "main.blg"
-["pdflatex"] 1599133008 "main.tex" "main.pdf" "main" 1599133013
+  "main.bbl"
+["pdflatex"] 1610051049 "main.tex" "main.pdf" "main" 1610051054
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1480098666 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5tbsmu.enc" 1483484466 3011 d3d1ad05c983e0655023dd6d2f40e3b0 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/sourcesanspro/a_ggs4wk.enc" 1483484466 3005 0d6b678f4d9fa96bcea550609ec6c046 ""
@@ -219,19 +219,19 @@
   "citations_recip.pdf" 1598003358 10455 3b04e8874d809fbfe7c85ae87795e621 ""
   "citations_trans.pdf" 1598003358 62168 9f681ee272f9412bc2aa4c4f9f17a0ff ""
   "courts_layer.png" 1598003358 1291135 b06f2747a500d122a1904b65b1ffbbdb ""
-  "cup-pan.cls" 1599125006 6512 1874b362a216b9427b6fcaef221fd565 ""
+  "cup-pan.cls" 1610050785 6529 83fb7f01f2f0d617ffb8cb8ef10984bf ""
   "daggish.pdf" 1598003358 6652 ea618ec6373ba27ec5eb87458447bc7c ""
   "data_mat.png" 1598003358 66570 37072726f35e0a0a4b3e47d63f3c8117 ""
   "degree_distribution.pdf" 1598003358 27637 3300260af50b92542ff918a00bf79f35 ""
-  "main.aux" 1599133013 24348 9e03fd47293529c43bb361fa516858c3 "pdflatex"
-  "main.bbl" 1599128720 88601 240e1a75f696ea9ff6c2caed97c816d7 "biber main"
-  "main.out" 1599133013 795 d24cde4505515c468828937d60ca2cef "pdflatex"
-  "main.run.xml" 1599133013 2434 d5d5fed8a560645ec6aebf2e6e4573da "pdflatex"
-  "main.tex" 1599133001 70119 ceb55dca9b3d4146371d8b594e1d4c95 ""
+  "main.aux" 1610051054 24658 266517ae9489a65a2703aefd7362966b "pdflatex"
+  "main.bbl" 1610051044 90291 819435f3177b6d21fe9ef8bfd0d8ad2b "biber main"
+  "main.out" 1610051054 795 d24cde4505515c468828937d60ca2cef "pdflatex"
+  "main.run.xml" 1610051054 2434 d5d5fed8a560645ec6aebf2e6e4573da "pdflatex"
+  "main.tex" 1610051013 70459 dfafad64e424713e9dd37569067b8586 ""
   (generated)
+  "main.log"
+  "main.bcf"
+  "main.run.xml"
   "main.aux"
   "main.out"
   "main.pdf"
-  "main.bcf"
-  "main.log"
-  "main.run.xml"
