@@ -191,7 +191,7 @@
   \bibstring[\emph]{andothers}%
 }{}{}
 
-\newcommand{\insert@supplmat}{\section*{Supplementary Material}For supplementary material accompanying this paper, please visit \url{https://doi.org/10.1017/pan.xxxx.xx.}. For replication code and data see \citet{replicationdata}. }
+\newcommand{\insert@supplmat}{\section*{Supplementary Material}For supplementary material accompanying this paper, please visit \url{https://doi.org/10.1017/pan.xxxx.xx.} }
 \if@suppmat
   \xpretocmd{\printbibliography}{\insert@supplmat}{}{}
   \AtBeginEnvironment{thebibliography}{\insert@supplmat}
