@@ -1,0 +1,87 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: accepted.aux
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Reallocating 'name_of_file' (item size: 1) to 5 items.
+The style file: apsr.bst
+Database file #1: bib.bib
+Repeated entry---line 1298 of file bib.bib
+ : @article{lupu2012precedent
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1308 of file bib.bib
+ : @article{lupu2013strategic
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1318 of file bib.bib
+ : @article{pelc2014politics
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1328 of file bib.bib
+ : @article{knight1996norm
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1344 of file bib.bib
+ : @article{hinkle2016transmission
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1384 of file bib.bib
+ : @article{fowler2008authority
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1394 of file bib.bib
+ : @article{fowler2007network
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2008 of file bib.bib
+ : @article{lupu2012precedent
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2208 of file bib.bib
+ : @article{sunstein2008trimming
+ :                              ,
+I'm skipping whatever remains of this entry
+Warning--empty publisher in Handcock.2003
+Warning--there's a number but no volume in SchmidHunter2020
+You've used 73 entries,
+            2874 wiz_defined-function locations,
+            1079 strings with 17177 characters,
+and the built_in function-call counts, 328104 in all, are:
+= -- 54053
+> -- 3758
+< -- 0
++ -- 25512
+- -- 1327
+* -- 28160
+:= -- 65409
+add.period$ -- 292
+call.type$ -- 73
+change.case$ -- 949
+chr.to.int$ -- 73
+cite$ -- 75
+duplicate$ -- 1132
+empty$ -- 2487
+format.name$ -- 1387
+if$ -- 59008
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 74
+newline$ -- 307
+num.names$ -- 854
+pop$ -- 272
+preamble$ -- 1
+purify$ -- 1095
+quote$ -- 0
+skip$ -- 1006
+stack$ -- 0
+substring$ -- 76557
+swap$ -- 185
+text.length$ -- 1022
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 282
+warning$ -- 2
+while$ -- 1749
+width$ -- 0
+write$ -- 998
+(There were 9 error messages)

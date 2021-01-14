@@ -1,0 +1,940 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.9)  14 JAN 2021 19:37
+entering extended mode
+**./accepted.tex
+(accepted.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-07-17>
+("C:\Program Files\MiKTeX\tex/latex/koma-script\scrartcl.cls"
+Document Class: scrartcl 2020/09/21 v3.32 KOMA-Script document class (article)
+("C:\Program Files\MiKTeX\tex/latex/koma-script\scrkbase.sty"
+Package: scrkbase 2020/09/21 v3.32 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+("C:\Program Files\MiKTeX\tex/latex/koma-script\scrbase.sty"
+Package: scrbase 2020/09/21 v3.32 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+("C:\Program Files\MiKTeX\tex/latex/koma-script\scrlfile.sty"
+Package: scrlfile 2020/09/21 v3.32 KOMA-Script package (file load hooks)
+
+("C:\Program Files\MiKTeX\tex/latex/koma-script\scrlfile-patcholdlatex.sty"
+Package: scrlfile-patcholdlatex 2020/09/21 v3.32 KOMA-Script package (patching 
+old LaTeX kernels)
+
+("C:\Program Files\MiKTeX\tex/latex/koma-script\scrlogo.sty"
+Package: scrlogo 2020/09/21 v3.32 KOMA-Script package (logo)
+))
+("C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse.sty"
+("C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty"
+Package: expl3 2020-07-17 L3 programming layer (loader) 
+
+("C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdfmode.def"
+File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count168
+\l__pdf_internal_box=\box45
+))
+Package: xparse 2020-05-15 L3 Experimental document command parser
+
+("C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse-generic.tex"
+\l__xparse_current_arg_int=\count169
+\g__xparse_grabber_int=\count170
+\l__xparse_m_args_int=\count171
+\l__xparse_v_nesting_int=\count172
+)))
+("C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)))
+("C:\Program Files\MiKTeX\tex/latex/koma-script\tocbasic.sty"
+Package: tocbasic 2020/09/21 v3.32 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip47
+\scr@dte@tocline@numbox=\box46
+)
+Package tocbasic Info: babel extension for `toc' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 135.
+
+
+Class scrartcl Warning: You've used obsolete option `abstracton'.
+(scrartcl)              Usage of this option indicates an old document
+(scrartcl)              and changes compatibility level using
+(scrartcl)              `abstract=true,version=first,
+(scrartcl)              enabledeprecatedfontcommands' that may result
+(scrartcl)              in further warnings.
+(scrartcl)              If you don't want this, you should simply
+(scrartcl)              replace option `abstracton' by `abstract=true'.
+
+Class scrartcl Info: Switching compatibility level to `first'.
+
+Class scrartcl Warning: deprecated option `enabledeprecatedfontcommands'.
+(scrartcl)              Note, that this option was already depreacted when
+(scrartcl)              it has been defined. Support for old font commands
+(scrartcl)              has been removed from KOMA-Script more than one
+(scrartcl)              decade ago. It is not recommended to use them any
+(scrartcl)              longer. Therefore usage of this class option also
+(scrartcl)              is not recommended.
+
+Class scrartcl Info: File `scrsize11pt.clo' used instead of
+(scrartcl)           file `scrsize11.clo' to setup font sizes on input line 222
+2.
+("C:\Program Files\MiKTeX\tex/latex/koma-script\scrsize11pt.clo"
+File: scrsize11pt.clo 2020/09/21 v3.32 KOMA-Script font size class option (11pt
+)
+)
+("C:\Program Files\MiKTeX\tex/latex/koma-script\typearea.sty"
+Package: typearea 2020/09/21 v3.32 KOMA-Script package (type area)
+\ta@bcor=\skip48
+\ta@div=\count173
+\ta@hblk=\skip49
+\ta@vblk=\skip50
+\ta@temp=\skip51
+\footheight=\skip52
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 10
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 418.25555pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 17.3562pt
+(typearea)              \oddsidemargin  = 17.3562pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 555.00024pt
+(typearea)              \topmargin      = 12.2347pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 1740.
+)
+\c@part=\count174
+\c@section=\count175
+\c@subsection=\count176
+\c@subsubsection=\count177
+\c@paragraph=\count178
+\c@subparagraph=\count179
+\scr@dte@section@maxnumwidth=\skip53
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\section on input line 4795.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\section on input line 4795.
+\scr@dte@part@maxnumwidth=\skip54
+Class scrartcl Info: using compatibility default `afterindent=false'
+(scrartcl)           for `\part on input line 4803.
+\scr@dte@subsection@maxnumwidth=\skip55
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsection on input line 4813.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsection on input line 4813.
+\scr@dte@subsubsection@maxnumwidth=\skip56
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsubsection on input line 4823.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsubsection on input line 4823.
+\scr@dte@paragraph@maxnumwidth=\skip57
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\paragraph on input line 4834.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\paragraph on input line 4834.
+\scr@dte@subparagraph@maxnumwidth=\skip58
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subparagraph on input line 4844.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subparagraph on input line 4844.
+\abovecaptionskip=\skip59
+\belowcaptionskip=\skip60
+\c@pti@nb@sid@b@x=\box47
+Package tocbasic Info: babel extension for `lof' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 6076.
+
+\scr@dte@figure@maxnumwidth=\skip61
+\c@figure=\count180
+Package tocbasic Info: babel extension for `lot' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 6088.
+
+\scr@dte@table@maxnumwidth=\skip62
+\c@table=\count181
+Class scrartcl Info: Using old \@makefntext due to compatibility level
+(scrartcl)           less than 3.22 on input line 6239.
+Class scrartcl Info: Redefining `\numberline' on input line 6252.
+\bibindent=\dimen134
+)
+("C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+)
+("C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks18
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty"
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip63
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen135
+))
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen136
+)
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count182
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count183
+\leftroot@=\count184
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count185
+\DOTSCASE@=\count186
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box48
+\strutbox@=\box49
+\big@size=\dimen137
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count187
+\c@MaxMatrixCols=\count188
+\dotsspace@=\muskip16
+\c@parentequation=\count189
+\dspbrk@lvl=\count190
+\tag@help=\toks20
+\row@=\count191
+\column@=\count192
+\maxfields@=\count193
+\andhelp@=\toks21
+\eqnshift@=\dimen138
+\alignsep@=\dimen139
+\tagshift@=\dimen140
+\tagwidth@=\dimen141
+\totwidth@=\dimen142
+\lineht@=\dimen143
+\@envbody=\toks22
+\multlinegap=\skip64
+\multlinetaggap=\skip65
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+("C:\Program Files\MiKTeX\tex/latex/amscls\amsthm.sty"
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks24
+\thm@bodyfont=\toks25
+\thm@headfont=\toks26
+\thm@notefont=\toks27
+\thm@headpunct=\toks28
+\thm@preskip=\skip66
+\thm@postskip=\skip67
+\thm@headsep=\skip68
+\dth@everypar=\toks29
+)
+("C:\Program Files\MiKTeX\tex/latex/xpatch\xpatch.sty"
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+
+("C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty"
+Package: etoolbox 2020/07/15 v2.5i e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count194
+))
+Class scrartcl Info: amsthm's \deferred@thm@head patched.
+
+("C:\Program Files\MiKTeX\tex/latex/tools\bm.sty"
+Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 209.
+)
+("C:\Program Files\MiKTeX\tex/latex/natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip69
+\bibsep=\skip70
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count195
+)
+("C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty"
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty"
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+("C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty"
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+("C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty"
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX\tex/generic/infwarerr\infwarerr.sty"
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty"
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+("C:\Program Files\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty"
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+("C:\Program Files\MiKTeX\tex/generic/pdfescape\pdfescape.sty"
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+("C:\Program Files\MiKTeX\tex/latex/hycolor\hycolor.sty"
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty"
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+("C:\Program Files\MiKTeX\tex/latex/auxhook\auxhook.sty"
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+("C:\Program Files\MiKTeX\tex/latex/kvoptions\kvoptions.sty"
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen144
+\Hy@linkcounter=\count196
+\Hy@pagecounter=\count197
+
+("C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def"
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+("C:\Program Files\MiKTeX\tex/generic/intcalc\intcalc.sty"
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+("C:\Program Files\MiKTeX\tex/generic/etexcmds\etexcmds.sty"
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count198
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count199
+
+("C:\Program Files\MiKTeX\tex/latex/url\url.sty"
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen145
+
+("C:\Program Files\MiKTeX\tex/generic/bitset\bitset.sty"
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+("C:\Program Files\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty"
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count266
+\Field@Width=\dimen146
+\Fld@charsize=\dimen147
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+
+("C:\Program Files\MiKTeX\tex/generic/atbegshi\atbegshi.sty"
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count267
+\c@Item=\count268
+\c@Hfootnote=\count269
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+("C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def"
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+
+("C:\Program Files\MiKTeX\tex/latex/atveryend\atveryend.sty"
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+)
+\Fld@listcount=\count270
+\c@bookmark@seq@number=\count271
+
+("C:\Program Files\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty"
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+("C:\Program Files\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty"
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip71
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 13.
+
+("C:\Program Files\MiKTeX\tex/latex/savetrees\savetrees.sty"
+Package: savetrees 2016/04/13 v2.4 Pack as much text as possible onto each page
+
+
+("C:\Program Files\MiKTeX\tex/latex/xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files\MiKTeX\tex/generic/xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX\tex/generic/xkeyval\xkvutils.tex"
+\XKV@toks=\toks30
+\XKV@tempa@toks=\toks31
+)
+\XKV@depth=\count272
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Program Files\MiKTeX\tex/generic/iftex\ifpdf.sty"
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+("C:\Program Files\MiKTeX\tex/generic/iftex\ifluatex.sty"
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+\everypar=\toks32
+)
+("C:\Program Files\MiKTeX\tex/latex/tools\calc.sty"
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count273
+\calc@Bcount=\count274
+\calc@Adimen=\dimen148
+\calc@Bdimen=\dimen149
+\calc@Askip=\skip72
+\calc@Bskip=\skip73
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count275
+\calc@Cskip=\skip74
+)
+("C:\Program Files\MiKTeX\tex/latex/microtype\microtype.sty"
+Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
+\MT@toks=\toks33
+\MT@count=\count276
+LaTeX Info: Redefining \textls on input line 790.
+\MT@outer@kern=\dimen150
+LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
+\MT@listname@count=\count277
+
+("C:\Program Files\MiKTeX\tex/latex/microtype\microtype-pdftex.def"
+File: microtype-pdftex.def 2019/11/18 v2.7d Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 914.
+LaTeX Info: Redefining \lslig on input line 914.
+\MT@outer@space=\skip75
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+("C:\Program Files\MiKTeX\tex/latex/microtype\microtype.cfg"
+File: microtype.cfg 2019/11/18 v2.7d microtype main configuration file (RS)
+))
+("C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
+("C:\Program Files\MiKTeX\tex/latex/colortbl\colortbl.sty"
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+
+("C:\Program Files\MiKTeX\tex/latex/tools\array.sty"
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen151
+\ar@mcellbox=\box50
+\extrarowheight=\dimen152
+\NC@list=\toks34
+\extratabsurround=\skip76
+\backup@length=\skip77
+\ar@cellbox=\box51
+)
+\everycr=\toks35
+\minrowclearance=\skip78
+)
+\rownum=\count278
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty"
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty"
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen153
+\Gin@req@width=\dimen154
+)
+("C:\Program Files\MiKTeX\tex/latex/float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count279
+\float@exts=\toks36
+\float@box=\box52
+\@float@everytoks=\toks37
+\@floatcapt=\box53
+)
+("C:\Program Files\MiKTeX\tex/latex/setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Program Files\MiKTeX\tex/latex/geometry\geometry.sty"
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+("C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty"
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count280
+\Gm@cntv=\count281
+\c@Gm@tempcnt=\count282
+\Gm@bindingoffset=\dimen155
+\Gm@wd@mp=\dimen156
+\Gm@odd@mp=\dimen157
+\Gm@even@mp=\dimen158
+\Gm@layoutwidth=\dimen159
+\Gm@layoutheight=\dimen160
+\Gm@layouthoffset=\dimen161
+\Gm@layoutvoffset=\dimen162
+\Gm@dimlist=\toks38
+
+("C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg")) (accepted.aux)
+\openout1 = `accepted.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+Package scrbase Info: activating english \contentsname on input line 34.
+Package scrbase Info: activating english \listfigurename on input line 34.
+Package scrbase Info: activating english \listtablename on input line 34.
+\AtBeginShipoutBox=\box54
+Package hyperref Info: Link coloring ON on input line 34.
+
+("C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty"
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX\tex/latex/refcount\refcount.sty"
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+("C:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty"
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count283
+)
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
+
+(accepted.out) (accepted.out)
+\@outlinefile=\write3
+\openout3 = `accepted.out'.
+
+Class scrartcl Info: loading recommended package `bookmark'.
+(scrartcl)           Using `bookmark' together with `hyperref' is recommended,
+(scrartcl)           because of handling of possible bookmark level gaps.
+(scrartcl)           You can avoid loading `bookmark' with KOMA-Script option
+(scrartcl)           `bookmarkpackage=false' before \begin{document} and
+(scrartcl)           you can avoid this message adding:
+(scrartcl)             \usepackage{bookmark}
+(scrartcl)           before \begin{document} on input line 34.
+
+("C:\Program Files\MiKTeX\tex/latex/bookmark\bookmark.sty"
+Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
+
+("C:\Program Files\MiKTeX\tex/latex/bookmark\bkm-pdftex-2019-12-03.def"
+File: bkm-pdftex.def 2019/12/03 v1.28 bookmark driver for pdfTeX (HO)
+Package auxhook Info: \AddLineBeginMainAux comes a little late,
+(auxhook)             because the main .aux file is already opened on input lin
+e 169.
+\BKM@id=\count284
+))
+LaTeX Info: Redefining \microtypecontext on input line 34.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 0, shrink: 50, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+LaTeX Info: Redefining \showhyphens on input line 34.
+Package microtype Info: Tracking enabled.
+Package microtype Info: Using tracking set `all'.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+
+("C:\Program Files\MiKTeX\tex/latex/microtype\mt-cmr.cfg"
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+("C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count285
+\scratchdimen=\dimen163
+\scratchbox=\box55
+\nofMPsegments=\count286
+\nofMParguments=\count287
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count288
+\MPscratchDim=\dimen164
+\MPnumerator=\count289
+\makeMPintoPDFobject=\count290
+\everyMPtoPDFconversion=\toks40
+) ("C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.6271pt, 418.25372pt, 89.6271pt)
+* v-part:(T,H,B)=(101.40665pt, 591.53027pt, 152.11002pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=418.25372pt
+* \textheight=591.53027pt
+* \oddsidemargin=17.35712pt
+* \evensidemargin=17.35712pt
+* \topmargin=-8.26335pt
+* \headheight=17.0pt
+* \headsep=20.40001pt
+* \topskip=11.0pt
+* \footskip=47.6pt
+* \marginparwidth=59.7508pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmss' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
+
+("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+("C:\Program Files\MiKTeX\tex/latex/microtype\mt-msa.cfg"
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
+
+
+("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+("C:\Program Files\MiKTeX\tex/latex/microtype\mt-msb.cfg"
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
+69.
+
+("C:\Program Files\MiKTeX\tex/latex/base\ts1cmss.fd"
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmss' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [1
+
+
+{C:/Users/TC/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3] [4]
+<citations_trans.pdf, id=156, 722.7pt x 722.7pt>
+File: citations_trans.pdf Graphic file (type pdf)
+<use citations_trans.pdf>
+Package pdftex.def Info: citations_trans.pdf  used on input line 104.
+(pdftex.def)             Requested size: 204.94661pt x 214.9911pt.
+<citations_recip.pdf, id=158, 722.7pt x 722.7pt>
+File: citations_recip.pdf Graphic file (type pdf)
+<use citations_recip.pdf>
+Package pdftex.def Info: citations_recip.pdf  used on input line 105.
+(pdftex.def)             Requested size: 204.94661pt x 214.9911pt.
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.121 \end{quotation}
+                     % https://supreme.justia.com/cases/federal/us/517/44/ca...
+ <./citations_trans.pdf> <./citations_recip.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 132--135
+
+ []
+
+[6]
+<citations_pop.pdf, id=210, 722.7pt x 722.7pt>
+File: citations_pop.pdf Graphic file (type pdf)
+<use citations_pop.pdf>
+Package pdftex.def Info: citations_pop.pdf  used on input line 145.
+(pdftex.def)             Requested size: 334.60425pt x 263.10677pt.
+ [7] [8pdfTeX warning (ext4): destination with the same identifier (name{figure
+.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.161 
+       <./citations_pop.pdf>]
+<daggish.pdf, id=253, 433.62pt x 361.35pt>
+File: daggish.pdf Graphic file (type pdf)
+<use daggish.pdf>
+Package pdftex.def Info: daggish.pdf  used on input line 165.
+(pdftex.def)             Requested size: 324.14407pt x 270.13515pt.
+ [9] [10pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.183 
+       <./daggish.pdf>]
+Class scrartcl Info: Workaround for not recommended usage of \\ or
+(scrartcl)           \newlinein caption text  on input line 197.
+Class scrartcl Info: Workaround for not recommended usage of \\ or
+(scrartcl)           \newlinein caption text  on input line 197.
+ [11pdfTeX warning (ext4): destination with the same identifier (name{table.1})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.207 
+      ]
+<degree_distribution.pdf, id=326, 844.15375pt x 597.23125pt>
+File: degree_distribution.pdf Graphic file (type pdf)
+<use degree_distribution.pdf>
+Package pdftex.def Info: degree_distribution.pdf  used on input line 215.
+(pdftex.def)             Requested size: 153.20515pt x 108.39006pt.
+<data_mat.png, id=327, 453.19313pt x 453.19313pt>
+File: data_mat.png Graphic file (type png)
+<use data_mat.png>
+Package pdftex.def Info: data_mat.png  used on input line 216.
+(pdftex.def)             Requested size: 123.80193pt x 123.80212pt.
+<courts_layer.png, id=328, 1024.57782pt x 962.09438pt>
+File: courts_layer.png Graphic file (type png)
+<use courts_layer.png>
+Package pdftex.def Info: courts_layer.png  used on input line 219.
+(pdftex.def)             Requested size: 263.50188pt x 247.42278pt.
+ [12] [13pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.258 
+       <./degree_distribution.pdf> <./data_mat.png> <./courts_layer.png>]
+[14pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.290 
+      ] [15] [16]
+<SCC_AIC_BIC.pdf, id=417, 844.15375pt x 597.23125pt>
+File: SCC_AIC_BIC.pdf Graphic file (type pdf)
+<use SCC_AIC_BIC.pdf>
+Package pdftex.def Info: SCC_AIC_BIC.pdf  used on input line 321.
+(pdftex.def)             Requested size: 284.52756pt x 201.30623pt.
+ [17] [18pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.335 
+       <./SCC_AIC_BIC.pdf>] [19] [20]
+<SCC_results_1.pdf, id=496, 597.23125pt x 844.15375pt>
+File: SCC_results_1.pdf Graphic file (type pdf)
+<use SCC_results_1.pdf>
+Package pdftex.def Info: SCC_results_1.pdf  used on input line 355.
+(pdftex.def)             Requested size: 398.33858pt x 563.0297pt.
+
+
+LaTeX Warning: Float too large for page by 36.89943pt on input line 358.
+
+<SCC_results_2.pdf, id=497, 597.23125pt x 844.15375pt>
+File: SCC_results_2.pdf Graphic file (type pdf)
+<use SCC_results_2.pdf>
+Package pdftex.def Info: SCC_results_2.pdf  used on input line 363.
+(pdftex.def)             Requested size: 398.33858pt x 563.0297pt.
+
+LaTeX Warning: Float too large for page by 36.89943pt on input line 366.
+
+[21] [22pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.382 
+       <./SCC_results_1.pdf>] [23pdfTeX warning (ext4): destination with the sa
+me identifier (name{figure.7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.382 
+       <./SCC_results_2.pdf>] (accepted.bbl [24] [25] [26] [27] [28]
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+) [29]
+[30]
+<GOF_1950.pdf, id=602, 844.15375pt x 597.23125pt>
+File: GOF_1950.pdf Graphic file (type pdf)
+<use GOF_1950.pdf>
+Package pdftex.def Info: GOF_1950.pdf  used on input line 410.
+(pdftex.def)             Requested size: 376.4258pt x 266.3184pt.
+<GOF_2015.pdf, id=603, 844.15375pt x 597.23125pt>
+File: GOF_2015.pdf Graphic file (type pdf)
+<use GOF_2015.pdf>
+Package pdftex.def Info: GOF_2015.pdf  used on input line 414.
+(pdftex.def)             Requested size: 376.4258pt x 266.3184pt.
+
+
+LaTeX Warning: Float too large for page by 5.97159pt on input line 420.
+
+<Deg_1950.pdf, id=606, 597.23125pt x 844.15375pt>
+File: Deg_1950.pdf Graphic file (type pdf)
+<use Deg_1950.pdf>
+Package pdftex.def Info: Deg_1950.pdf  used on input line 434.
+(pdftex.def)             Requested size: 418.25372pt x 591.18698pt.
+
+LaTeX Warning: Float too large for page by 45.82358pt on input line 439.
+
+<Deg_2015.pdf, id=607, 597.23125pt x 844.15375pt>
+File: Deg_2015.pdf Graphic file (type pdf)
+<use Deg_2015.pdf>
+Package pdftex.def Info: Deg_2015.pdf  used on input line 445.
+(pdftex.def)             Requested size: 418.25372pt x 591.18698pt.
+
+LaTeX Warning: Float too large for page by 45.82358pt on input line 450.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 453.
+[31] [32pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.453 \end{document}
+                     <./GOF_1950.pdf> <./GOF_2015.pdf>] [33pdfTeX warning (ext4
+): destination with the same identifier (name{figure.9}) has been already used,
+ duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.453 \end{document}
+                     <./Deg_1950.pdf>] [34pdfTeX warning (ext4): destination wi
+th the same identifier (name{figure.10}) has been already used, duplicate ignor
+ed
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.453 \end{document}
+                     <./Deg_2015.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 453.
+ (accepted.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 453.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 453.
+Package rerunfilecheck Info: File `accepted.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+ ) 
+Here is how much of TeX's memory you used:
+ 15133 strings out of 481225
+ 261373 string characters out of 2915938
+ 679771 words of memory out of 3000000
+ 29914 multiletter control sequences out of 15000+200000
+ 591813 words of font info for 378 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 68i,13n,85p,10605b,599s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
+
+ <C:\Users\TC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0600.
+pk> <C:\Users\TC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm10
+00.pk> <C:\Users\TC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcs
+x1000.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:
+/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fil
+es/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmmib10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pf
+b><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program
+ Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Progr
+am Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmtt10.pfb>
+Output written on accepted.pdf (34 pages, 2497046 bytes).
+PDF statistics:
+ 827 PDF objects out of 1000 (max. 8388607)
+ 141 named destinations out of 1000 (max. 500000)
+ 65233 words of extra memory for PDF output out of 74296 (max. 10000000)
+
