@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.9)  14 JAN 2021 19:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.9)  14 JAN 2021 19:48
 entering extended mode
 **./accepted.tex
 (accepted.tex
@@ -897,11 +897,11 @@ Package rerunfilecheck Info: File `accepted.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15133 strings out of 481225
- 261373 string characters out of 2915938
+ 15131 strings out of 481225
+ 261349 string characters out of 2915938
  679771 words of memory out of 3000000
  29914 multiletter control sequences out of 15000+200000
- 591813 words of font info for 378 fonts, out of 3000000 for 9000
+ 591762 words of font info for 377 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,13n,85p,10605b,599s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
@@ -932,7 +932,7 @@ am Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmtt10.pfb>
-Output written on accepted.pdf (34 pages, 2497046 bytes).
+Output written on accepted.pdf (34 pages, 2497060 bytes).
 PDF statistics:
  827 PDF objects out of 1000 (max. 8388607)
  141 named destinations out of 1000 (max. 500000)
